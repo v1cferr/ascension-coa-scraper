@@ -205,6 +205,12 @@ class ClassInfo(Model):
     id: int
     name: str
     slug: str
+    class_file: str | None = Field(
+        default=None, description="Upstream internal name; drives the emblem sprite key"
+    )
+    color: str | None = Field(
+        default=None, description="Theme colour the builder uses, as CSS rgb()"
+    )
     max_talent_essence: int | None = None
     max_ability_essence: int | None = None
     icon: Icon | None = Field(
