@@ -26,12 +26,8 @@ SPRITE_BASE_CLASS = "coa-builder-icon"
 FALLBACK_ICON_KEY = "inv_misc_questionmark"
 
 _CSS_LINK_RE = re.compile(r'href="(/_next/static/chunks/[^"]+\.css)"')
-_BASE_RULE_RE = re.compile(
-    rf"\.{SPRITE_BASE_CLASS}\{{[^}}]*?url\((?P<url>[^)]+)\)", re.IGNORECASE
-)
-_CELL_RULE_RE = re.compile(
-    rf"\.{SPRITE_BASE_CLASS}\.(?P<key>[A-Za-z0-9_-]+)\{{(?P<body>[^}}]*)\}}"
-)
+_BASE_RULE_RE = re.compile(rf"\.{SPRITE_BASE_CLASS}\{{[^}}]*?url\((?P<url>[^)]+)\)", re.IGNORECASE)
+_CELL_RULE_RE = re.compile(rf"\.{SPRITE_BASE_CLASS}\.(?P<key>[A-Za-z0-9_-]+)\{{(?P<body>[^}}]*)\}}")
 _POSITION_RE = re.compile(
     r"background-position:\s*(?P<x>-?[\d.]+)(?P<xu>%?)\s+(?P<y>-?[\d.]+)(?P<yu>%?)"
 )

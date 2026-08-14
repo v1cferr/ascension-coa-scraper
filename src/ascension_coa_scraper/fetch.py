@@ -24,8 +24,7 @@ DEFAULT_REALM = "voljin"
 
 # Identify the client honestly so the operators can see who is calling and why.
 USER_AGENT = (
-    f"ascension-coa-scraper/{__version__} "
-    "(+https://github.com/v1cferr/ascension-coa-scraper)"
+    f"ascension-coa-scraper/{__version__} (+https://github.com/v1cferr/ascension-coa-scraper)"
 )
 
 
