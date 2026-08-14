@@ -25,6 +25,12 @@ def test_extract_payload_rejects_a_page_without_flight_data():
         extract_payload("<html><body>nothing here</body></html>")
 
 
+def test_extract_payload_tolerates_whitespace_after_the_comma():
+    html = '<script>self.__next_f.push([1, "9:{\\"ok\\":true}\\n"])</script>'
+
+    assert extract_payload(html) == '9:{"ok":true}\n'
+
+
 def test_extract_payload_ignores_non_string_pushes():
     html = _page('1:"a"\n').replace("</body>", "<script>self.__next_f.push([1,0])</script></body>")
     assert extract_payload(html) == '1:"a"\n'

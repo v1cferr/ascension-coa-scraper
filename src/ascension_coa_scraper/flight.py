@@ -80,7 +80,12 @@ def extract_payload(html: str) -> str:
         start = html.find(_PUSH_PREFIX, cursor)
         if start < 0:
             break
+        # `raw_decode` will not skip leading whitespace, and the emitted call could be
+        # `push([1, "..."])` with a space after the comma.
         value_at = start + len(_PUSH_PREFIX)
+        while value_at < len(html) and html[value_at].isspace():
+            value_at += 1
+
         try:
             fragment, cursor = decoder.raw_decode(html, value_at)
         except ValueError:
