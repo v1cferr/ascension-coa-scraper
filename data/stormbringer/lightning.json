@@ -1,0 +1,2233 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-14T00:58:19+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:7927c93ebf3d994a6d12cedd54dd1f89beb72498ec865a710bcf0c811918dc93",
+    "talent_count": 156,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 16,
+    "name": "Stormbringer",
+    "slug": "stormbringer",
+    "class_file": "stormbringer",
+    "color": "rgb(0, 125, 237)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:stormbringer",
+      "key": "class-stormbringer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 43,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 42,
+    "name": "Lightning",
+    "slug": "lightning",
+    "sort_order": 1,
+    "class_id": 16,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31163,
+        "name": "Arm of Thorim",
+        "slug": "arm-of-thorim",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4013,
+            29138
+          ]
+        },
+        "spell_id": 801847,
+        "spell_ids": [
+          801847
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes All Static</span><br />Call down a terrible beam of lightning upon an enemy, dealing <span class=\"item-number\">135</span> + <span class=\"item-number\">120% nature SP</span> Nature damage and stunning them for <span class=\"item-number\">1</span> seconds.<br /><br />Damage and cast time increased based on <span style=\"color: #cc99ff; display: inline\">Static</span> level.",
+        "description": "Depletes All Static\nCall down a terrible beam of lightning upon an enemy, dealing 135 + 120% nature SP Nature damage and stunning them for 1 seconds.\n\nDamage and cast time increased based on Static level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801847,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes All Static</span><br />Call down a terrible beam of lightning upon an enemy, dealing <span class=\"item-number\">135</span> + <span class=\"item-number\">120% nature SP</span> Nature damage and stunning them for <span class=\"item-number\">1</span> seconds.<br /><br />Damage and cast time increased based on <span style=\"color: #cc99ff; display: inline\">Static</span> level.",
+            "description": "Depletes All Static\nCall down a terrible beam of lightning upon an enemy, dealing 135 + 120% nature SP Nature damage and stunning them for 1 seconds.\n\nDamage and cast time increased based on Static level."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_wind_icon_0002s_0000_lightning_Border",
+          "key": "epic_rpg_icon_pack_wind_icon_0002s_0000_lightning_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4013,
+        "name": "Electrocutioner",
+        "slug": "electrocutioner",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            29138
+          ]
+        },
+        "spell_id": 92096,
+        "spell_ids": [
+          92096
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Dealing spell damage now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Electrocutioner</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_frozenlightning_border\" /><span class=\"name\">Electrocutioner (Proc)</span></div><span class=\"desc\">Resets the cooldown of <span style=\"color: #ffffff; display: inline\">Electrocute</span> and makes your next usable regardless of the target's health percentage.</span></div><br /><br />Chance increases based on <span style=\"color: #cc99ff; display: inline\">Static</span> level.",
+        "description": "Level 10 Passive\nDealing spell damage now has a 5% chance to grant you Electrocutioner.Electrocutioner (Proc)Resets the cooldown of Electrocute and makes your next usable regardless of the target's health percentage.\n\nChance increases based on Static level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92096,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Dealing spell damage now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Electrocutioner</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_frozenlightning_border\" /><span class=\"name\">Electrocutioner (Proc)</span></div><span class=\"desc\">Resets the cooldown of <span style=\"color: #ffffff; display: inline\">Electrocute</span> and makes your next usable regardless of the target's health percentage.</span></div><br /><br />Chance increases based on <span style=\"color: #cc99ff; display: inline\">Static</span> level.",
+            "description": "Level 10 Passive\nDealing spell damage now has a 5% chance to grant you Electrocutioner.Electrocutioner (Proc)Resets the cooldown of Electrocute and makes your next usable regardless of the target's health percentage.\n\nChance increases based on Static level."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frozenlightning_Border",
+          "key": "nhi_frozenlightning_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29837,
+        "name": "Superconductor",
+        "slug": "superconductor",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705646,
+        "spell_ids": [
+          705646
+        ],
+        "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> per <span style=\"color: #cc99ff; display: inline\">Static</span> depleted.",
+        "description": "Increases the damage of your Arm of Thorim by an additional 1% per Static depleted.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705646,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> per <span style=\"color: #cc99ff; display: inline\">Static</span> depleted.",
+            "description": "Increases the damage of your Arm of Thorim by an additional 1% per Static depleted."
+          }
+        ],
+        "connections": [
+          31163
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_siege_engineer_magnetic_crush",
+          "key": "ability_siege_engineer_magnetic_crush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29833,
+        "name": "Forked Lightning",
+        "slug": "forked-lightning",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801851,
+        "spell_ids": [
+          801851
+        ],
+        "description_html": "Shoot lightning at an enemy, dealing <span class=\"item-number\">69</span> + <span class=\"item-number\">49% SP</span> Nature damage, bouncing to up to <span class=\"item-number\">4</span> enemies.<br /><br />Generates <span class=\"item-number\">5</span> <span style=\"color: #cc99ff; display: inline\">Static</span> for each enemy struck.",
+        "description": "Shoot lightning at an enemy, dealing 69 + 49% SP Nature damage, bouncing to up to 4 enemies.\n\nGenerates 5 Static for each enemy struck.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801851,
+            "description_html": "Shoot lightning at an enemy, dealing <span class=\"item-number\">69</span> + <span class=\"item-number\">49% SP</span> Nature damage, bouncing to up to <span class=\"item-number\">4</span> enemies.<br /><br />Generates <span class=\"item-number\">5</span> <span style=\"color: #cc99ff; display: inline\">Static</span> for each enemy struck.",
+            "description": "Shoot lightning at an enemy, dealing 69 + 49% SP Nature damage, bouncing to up to 4 enemies.\n\nGenerates 5 Static for each enemy struck."
+          }
+        ],
+        "connections": [
+          29837
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_lightningoverload",
+          "key": "spell_nature_lightningoverload",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29290,
+        "name": "Volt",
+        "slug": "volt",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500928,
+        "spell_ids": [
+          500928
+        ],
+        "description_html": "Fuse lightning into an enemy, dealing <span class=\"item-number\">150</span> + <span class=\"item-number\">114% nature SP</span> Nature damage over <span class=\"item-number\">18</span> seconds and slowing them by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>.<br /><br />Generates <span class=\"item-number\">2</span> <span style=\"color: #cc99ff; display: inline\">Static</span> per tick.",
+        "description": "Fuse lightning into an enemy, dealing 150 + 114% nature SP Nature damage over 18 seconds and slowing them by -40%.\n\nGenerates 2 Static per tick.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500928,
+            "description_html": "Fuse lightning into an enemy, dealing <span class=\"item-number\">150</span> + <span class=\"item-number\">114% nature SP</span> Nature damage over <span class=\"item-number\">18</span> seconds and slowing them by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>.<br /><br />Generates <span class=\"item-number\">2</span> <span style=\"color: #cc99ff; display: inline\">Static</span> per tick.",
+            "description": "Fuse lightning into an enemy, dealing 150 + 114% nature SP Nature damage over 18 seconds and slowing them by -40%.\n\nGenerates 2 Static per tick."
+          }
+        ],
+        "connections": [
+          29837
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\shaman_pvp_staticcling",
+          "key": "shaman_pvp_staticcling",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9253,
+        "name": "Thunderous",
+        "slug": "thunderous",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 804827,
+        "spell_ids": [
+          804827
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases the critical damage of your spells by <span class=\"item-number\">150</span><span class=\"item-number\">%</span>.",
+        "description": "Level 20 Passive\nIncreases the critical damage of your spells by 150%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804827,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases the critical damage of your spells by <span class=\"item-number\">150</span><span class=\"item-number\">%</span>.",
+            "description": "Level 20 Passive\nIncreases the critical damage of your spells by 150%."
+          }
+        ],
+        "connections": [
+          4013
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_leather_raidmonkmythic_r_01_bracer",
+          "key": "inv_leather_raidmonkmythic_r_01_bracer",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34692,
+        "name": "Thorim's Gift",
+        "slug": "thorims-gift",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570173,
+        "spell_ids": [
+          570173
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> now leaves unstable electricity beneath the target, dealing damage equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of its damage dealt to enemies within every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.",
+        "description": "Your Arm of Thorim now leaves unstable electricity beneath the target, dealing damage equal to 15% of its damage dealt to enemies within every 1 sec for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570173,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> now leaves unstable electricity beneath the target, dealing damage equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of its damage dealt to enemies within every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.",
+            "description": "Your Arm of Thorim now leaves unstable electricity beneath the target, dealing damage equal to 15% of its damage dealt to enemies within every 1 sec for 3 seconds."
+          }
+        ],
+        "connections": [
+          29833
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Boss_Thorim",
+          "key": "achievement_boss_thorim",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34691,
+        "name": "Titanic Thunderbolt",
+        "slug": "titanic-thunderbolt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705653,
+        "spell_ids": [
+          705653,
+          707794
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Conjure Storm</span>, and <span style=\"color: #FFFFFF; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Shock, Conjure Storm, and Eye of the Storm by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705653,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Conjure Storm</span>, and <span style=\"color: #FFFFFF; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Shock, Conjure Storm, and Eye of the Storm by 4%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707794,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Conjure Storm</span>, and <span style=\"color: #FFFFFF; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Shock, Conjure Storm, and Eye of the Storm by 8%."
+          }
+        ],
+        "connections": [
+          29290,
+          29833
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_lightning",
+          "key": "spell_nature_lightning",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9641,
+        "name": "Fulmination",
+        "slug": "fulmination",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707055,
+        "spell_ids": [
+          707055,
+          707792
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Call Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against targets affected by your <span style=\"color: #ffffff; display: inline\">Volt</span>.",
+        "description": "Increases the critical strike chance of Call Lightning and Arm of Thorim by 15% against targets affected by your Volt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707055,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Call Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against targets affected by your <span style=\"color: #ffffff; display: inline\">Volt</span>.",
+            "description": "Increases the critical strike chance of Call Lightning and Arm of Thorim by 15% against targets affected by your Volt."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707792,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Call Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against targets affected by your <span style=\"color: #ffffff; display: inline\">Volt</span>.",
+            "description": "Increases the critical strike chance of Call Lightning and Arm of Thorim by 30% against targets affected by your Volt."
+          }
+        ],
+        "connections": [
+          29290
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(79)_Border",
+          "key": "novart_magicspell__79__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34641,
+        "name": "Improved Forked Lightning",
+        "slug": "improved-forked-lightning",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300597,
+        "spell_ids": [
+          300597
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> now affects <span class=\"item-number\">1</span> additional enemy.",
+        "description": "Your Forked Lightning now affects 1 additional enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300597,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> now affects <span class=\"item-number\">1</span> additional enemy.",
+            "description": "Your Forked Lightning now affects 1 additional enemy."
+          }
+        ],
+        "connections": [
+          29833,
+          34692
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_normal26biglightning_Border",
+          "key": "_5_normal26biglightning_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30126,
+        "name": "Electric Energy",
+        "slug": "electric-energy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804278,
+        "spell_ids": [
+          804278
+        ],
+        "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of your Shock, Call Lightning, and Arm of Thorim by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804278,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Shock, Call Lightning, and Arm of Thorim by 20%."
+          }
+        ],
+        "connections": [
+          34691
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_atom_Border",
+          "key": "_5_atom_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7766,
+        "name": "Electrifying Aura",
+        "slug": "electrifying-aura",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560568,
+        "spell_ids": [
+          560568
+        ],
+        "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+        "description": "Increases critical strike chance of all party and raid members by 3%.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560568,
+            "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+            "description": "Increases critical strike chance of all party and raid members by 3%.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          34691
+        ],
+        "choice_group": 732125,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_thunderking_rockfalllow",
+          "key": "ability_thunderking_rockfalllow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34673,
+        "name": "Tome of Lightning",
+        "slug": "tome-of-lightning",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300606,
+        "spell_ids": [
+          300606
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces the duration of interrupt and silence effects against you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance by 2% and reduces the duration of interrupt and silence effects against you by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300606,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces the duration of interrupt and silence effects against you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 2% and reduces the duration of interrupt and silence effects against you by -20%."
+          }
+        ],
+        "connections": [
+          34691
+        ],
+        "choice_group": 732125,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_books_(6)_Border",
+          "key": "novart_books__6__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9930,
+        "name": "Wicked Storms",
+        "slug": "wicked-storms",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705650,
+        "spell_ids": [
+          705650
+        ],
+        "description_html": "Increases your Nature damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Nature damage dealt by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705650,
+            "description_html": "Increases your Nature damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Nature damage dealt by 5%."
+          }
+        ],
+        "connections": [
+          9641,
+          29290
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_mindblow_Border",
+          "key": "nhi_mindblow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9255,
+        "name": "Fast as Lightning",
+        "slug": "fast-as-lightning",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 570057,
+        "spell_ids": [
+          570057
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />While <span style=\"color: #ffffff; display: inline\">Electrocutioner</span> is active, your <span style=\"color: #ffffff; display: inline\">Electrocute</span> now gains <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage.",
+        "description": "Level 30 Passive\nWhile Electrocutioner is active, your Electrocute now gains 20% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570057,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />While <span style=\"color: #ffffff; display: inline\">Electrocutioner</span> is active, your <span style=\"color: #ffffff; display: inline\">Electrocute</span> now gains <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage.",
+            "description": "Level 30 Passive\nWhile Electrocutioner is active, your Electrocute now gains 20% increased damage."
+          }
+        ],
+        "connections": [
+          9253
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Purge",
+          "key": "spell_nature_purge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7769,
+        "name": "Stormy Days",
+        "slug": "stormy-days",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705655,
+        "spell_ids": [
+          705655
+        ],
+        "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Conjure Storm</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the tick rate of Conjure Storm by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705655,
+            "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Conjure Storm</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the tick rate of Conjure Storm by -25%."
+          }
+        ],
+        "connections": [
+          34641
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_alchemy_ghostironrod",
+          "key": "trade_alchemy_ghostironrod",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34674,
+        "name": "Invoking Storms",
+        "slug": "invoking-storms",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705667,
+        "spell_ids": [
+          705667,
+          707793
+        ],
+        "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell power scaling of Shock, Call Lightning, and Arm of Thorim by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705667,
+            "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell power scaling of Shock, Call Lightning, and Arm of Thorim by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707793,
+            "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Shock</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell power scaling of Shock, Call Lightning, and Arm of Thorim by 30%."
+          }
+        ],
+        "connections": [
+          30126,
+          34641
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_CallStorm",
+          "key": "spell_nature_callstorm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7473,
+        "name": "Lightning Cage",
+        "slug": "lightning-cage",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560030,
+        "spell_ids": [
+          560030
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Generates <span class=\"item-number\">50</span> Static</span><br />Ascend into the air and cage yourself in lightning for <span class=\"item-number\">30</span> seconds, locking yourself in place.<br /><br />While inside the cage, damaging spells generate <span class=\"item-number\">20</span> <span style=\"color: #cc99ff; display: inline\">Static</span> and their range is doubled.",
+        "description": "Generates 50 Static\nAscend into the air and cage yourself in lightning for 30 seconds, locking yourself in place.\n\nWhile inside the cage, damaging spells generate 20 Static and their range is doubled.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560030,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Generates <span class=\"item-number\">50</span> Static</span><br />Ascend into the air and cage yourself in lightning for <span class=\"item-number\">30</span> seconds, locking yourself in place.<br /><br />While inside the cage, damaging spells generate <span class=\"item-number\">20</span> <span style=\"color: #cc99ff; display: inline\">Static</span> and their range is doubled.",
+            "description": "Generates 50 Static\nAscend into the air and cage yourself in lightning for 30 seconds, locking yourself in place.\n\nWhile inside the cage, damaging spells generate 20 Static and their range is doubled."
+          }
+        ],
+        "connections": [
+          7766,
+          30126,
+          34673
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_thunderking_thunderstruck",
+          "key": "ability_thunderking_thunderstruck",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34696,
+        "name": "Never Strikes Twice?",
+        "slug": "never-strikes-twice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804828,
+        "spell_ids": [
+          804828
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again.",
+        "description": "Your Electrocute now has a 25% chance to strike again.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804828,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again.",
+            "description": "Your Electrocute now has a 25% chance to strike again."
+          }
+        ],
+        "connections": [
+          7766,
+          9930,
+          34673
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3electrocute",
+          "key": "d3electrocute",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34911,
+        "name": "Jolt",
+        "slug": "jolt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707054,
+        "spell_ids": [
+          707054,
+          707859
+        ],
+        "description_html": "Increases the damage and critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage and critical strike chance of Electrocute by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707054,
+            "description_html": "Increases the damage and critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage and critical strike chance of Electrocute by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707859,
+            "description_html": "Increases the damage and critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage and critical strike chance of Electrocute by 30%."
+          }
+        ],
+        "connections": [
+          9930
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(74)_Border",
+          "key": "novart_magicspell__74__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6851,
+        "name": "Lightning Rod",
+        "slug": "lightning-rod",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300609,
+        "spell_ids": [
+          300609
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to spread an active <span style=\"color: #ffffff; display: inline\">Volt</span> on your target to each affected enemy.<br /><br />Chance increases based on <span style=\"color: #cc99ff; display: inline\">Static</span> level.",
+        "description": "Damage dealt by Forked Lightning now has a 15% chance to spread an active Volt on your target to each affected enemy.\n\nChance increases based on Static level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300609,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to spread an active <span style=\"color: #ffffff; display: inline\">Volt</span> on your target to each affected enemy.<br /><br />Chance increases based on <span style=\"color: #cc99ff; display: inline\">Static</span> level.",
+            "description": "Damage dealt by Forked Lightning now has a 15% chance to spread an active Volt on your target to each affected enemy.\n\nChance increases based on Static level."
+          }
+        ],
+        "connections": [
+          7769,
+          34674
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_rod_enchantedcobalt",
+          "key": "inv_rod_enchantedcobalt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34937,
+        "name": "Thundershocker",
+        "slug": "thundershocker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300610,
+        "spell_ids": [
+          300610
+        ],
+        "description_html": "While rooted by <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span>, affected enemies now take <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage from you.",
+        "description": "While rooted by Eye of the Storm, affected enemies now take 30% increased damage from you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300610,
+            "description_html": "While rooted by <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span>, affected enemies now take <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage from you.",
+            "description": "While rooted by Eye of the Storm, affected enemies now take 30% increased damage from you."
+          }
+        ],
+        "connections": [
+          34674
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_manawave_Border",
+          "key": "nhi_manawave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34646,
+        "name": "Storm Barrier",
+        "slug": "storm-barrier",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707204,
+        "spell_ids": [
+          707204
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Lightning Cage</span> is active your Magic Damage taken is now reduced by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and you are unable to be hit by ranged attacks.",
+        "description": "While Lightning Cage is active your Magic Damage taken is now reduced by -25% and you are unable to be hit by ranged attacks.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707204,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Lightning Cage</span> is active your Magic Damage taken is now reduced by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and you are unable to be hit by ranged attacks.",
+            "description": "While Lightning Cage is active your Magic Damage taken is now reduced by -25% and you are unable to be hit by ranged attacks."
+          }
+        ],
+        "connections": [
+          7473
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_LightningShield",
+          "key": "spell_nature_lightningshield",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34930,
+        "name": "Critical Circuit",
+        "slug": "critical-circuit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807314,
+        "spell_ids": [
+          807314
+        ],
+        "description_html": "Direct critical strikes with <span style=\"color: #cc99ff; display: inline\">Static</span> spenders now refund <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>.",
+        "description": "Direct critical strikes with Static spenders now refund 10 Static.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807314,
+            "description_html": "Direct critical strikes with <span style=\"color: #cc99ff; display: inline\">Static</span> spenders now refund <span class=\"item-number\">10</span> <span style=\"color: #cc99ff; display: inline\">Static</span>.",
+            "description": "Direct critical strikes with Static spenders now refund 10 Static."
+          }
+        ],
+        "connections": [
+          34696
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill39_Border",
+          "key": "_5_druideskill39_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7763,
+        "name": "Sparks",
+        "slug": "sparks",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301298,
+        "spell_ids": [
+          301298
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> now increase the target's chance to be critically hit by spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Damage dealt by Electrocute and Arm of Thorim now increase the target's chance to be critically hit by spells by 3% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301298,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> and <span style=\"color: #FFFFFF; display: inline\">Arm of Thorim</span> now increase the target's chance to be critically hit by spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Damage dealt by Electrocute and Arm of Thorim now increase the target's chance to be critically hit by spells by 3% for 10 seconds."
+          }
+        ],
+        "connections": [
+          34696,
+          34911
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_arcaneburst_Border",
+          "key": "nhi_arcaneburst_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9755,
+        "name": "Piercing Lightning",
+        "slug": "piercing-lightning",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 578302,
+        "spell_ids": [
+          578302
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your Nature spell penetration by <span class=\"item-number\">20</span>, scaling with your level.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Stormbreaker</span> now dispels <span class=\"item-number\">1</span> additional magic effect.",
+        "description": "Level 40 Passive\nIncreases your Nature spell penetration by 20, scaling with your level.\n\nIn addition, Stormbreaker now dispels 1 additional magic effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 578302,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your Nature spell penetration by <span class=\"item-number\">20</span>, scaling with your level.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Stormbreaker</span> now dispels <span class=\"item-number\">1</span> additional magic effect.",
+            "description": "Level 40 Passive\nIncreases your Nature spell penetration by 20, scaling with your level.\n\nIn addition, Stormbreaker now dispels 1 additional magic effect."
+          }
+        ],
+        "connections": [
+          9255
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_lightning_bolt_Border",
+          "key": "nhi_lightning_bolt_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30408,
+        "name": "High Voltage",
+        "slug": "high-voltage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570191,
+        "spell_ids": [
+          570191
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Arm of Thorim's</span> stun effect by <span class=\"item-number\">1</span> sec.",
+        "description": "Increases the duration of Arm of Thorim's stun effect by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570191,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Arm of Thorim's</span> stun effect by <span class=\"item-number\">1</span> sec.",
+            "description": "Increases the duration of Arm of Thorim's stun effect by 1 sec."
+          }
+        ],
+        "connections": [
+          6851,
+          34937
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_eng_electroshockmountmotivator",
+          "key": "inv_eng_electroshockmountmotivator",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5738,
+        "name": "Voltaic Bursts",
+        "slug": "voltaic-bursts",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705639,
+        "spell_ids": [
+          705639
+        ],
+        "description_html": "Increases the periodic damage of <span style=\"color: #FFFFFF; display: inline\">Shock</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the periodic damage of Shock by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705639,
+            "description_html": "Increases the periodic damage of <span style=\"color: #FFFFFF; display: inline\">Shock</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the periodic damage of Shock by 50%."
+          }
+        ],
+        "connections": [
+          34646,
+          34937
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_azerite_empowered_state",
+          "key": "inv_azerite_empowered_state",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5475,
+        "name": "Titanstorm",
+        "slug": "titanstorm",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801869,
+        "spell_ids": [
+          801869
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Call Lightning</span> or <span style=\"color: #ffffff; display: inline\">Electrocute</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> and <span style=\"color: #ffffff; display: inline\">Lightning Cage</span> by <span class=\"item-number\">-1.5</span> sec.",
+        "description": "Casting Call Lightning or Electrocute now reduces the cooldown of Arm of Thorim and Lightning Cage by -1.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801869,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Call Lightning</span> or <span style=\"color: #ffffff; display: inline\">Electrocute</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> and <span style=\"color: #ffffff; display: inline\">Lightning Cage</span> by <span class=\"item-number\">-1.5</span> sec.",
+            "description": "Casting Call Lightning or Electrocute now reduces the cooldown of Arm of Thorim and Lightning Cage by -1.5 sec."
+          }
+        ],
+        "connections": [
+          34646,
+          34930
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_ulduarraid_titan_01",
+          "key": "achievement_dungeon_ulduarraid_titan_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34635,
+        "name": "Dark Skies",
+        "slug": "dark-skies",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300593,
+        "spell_ids": [
+          300593
+        ],
+        "description_html": "When your direct damage spells fail to critically strike, your critical strike chance is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">5</span> times.<br /><br />Critically striking removes this effect.",
+        "description": "When your direct damage spells fail to critically strike, your critical strike chance is increased by 2% for 10 seconds, stacking up to 5 times.\n\nCritically striking removes this effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300593,
+            "description_html": "When your direct damage spells fail to critically strike, your critical strike chance is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">5</span> times.<br /><br />Critically striking removes this effect.",
+            "description": "When your direct damage spells fail to critically strike, your critical strike chance is increased by 2% for 10 seconds, stacking up to 5 times.\n\nCritically striking removes this effect."
+          }
+        ],
+        "connections": [
+          7763,
+          34930
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_stormsongvalley",
+          "key": "inv_stormsongvalley",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1930,
+        "name": "Flux Arc",
+        "slug": "flux-arc",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705643,
+        "spell_ids": [
+          705643
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> now marks enemies for <span class=\"item-number\">10</span> sec. <br /><br />Your <span style=\"color: #FFFFFF; display: inline\">Call Lightning</span> against marked enemies deals an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of its damage to them and nearby enemies.",
+        "description": "Your Forked Lightning and Arm of Thorim now marks enemies for 10 sec.\n\nYour Call Lightning against marked enemies deals an additional 15% of its damage to them and nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705643,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Forked Lightning</span> and <span style=\"color: #ffffff; display: inline\">Arm of Thorim</span> now marks enemies for <span class=\"item-number\">10</span> sec. <br /><br />Your <span style=\"color: #FFFFFF; display: inline\">Call Lightning</span> against marked enemies deals an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of its damage to them and nearby enemies.",
+            "description": "Your Forked Lightning and Arm of Thorim now marks enemies for 10 sec.\n\nYour Call Lightning against marked enemies deals an additional 15% of its damage to them and nearby enemies."
+          }
+        ],
+        "connections": [
+          5738,
+          30408
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_03",
+          "key": "inv_sword_1h_artifactvigfus_d_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34687,
+        "name": "Crackling Devastation",
+        "slug": "crackling-devastation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705645,
+        "spell_ids": [
+          705645
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Electrocute by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705645,
+            "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Electrocute by 30%."
+          }
+        ],
+        "connections": [
+          5475,
+          5738
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_WispHeal",
+          "key": "spell_nature_wispheal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7768,
+        "name": "Electrical Charge",
+        "slug": "electrical-charge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704149,
+        "spell_ids": [
+          704149
+        ],
+        "description_html": "Standing still grants you <span style=\"color: #FFFFFF; display: inline\">Electrical Charge</span> every second, increasing your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>. Upon reaching <span class=\"item-number\">20</span> stacks, your spells dont deplete <span style=\"color: #cc99ff; display: inline\">Static</span> for <span class=\"item-number\">10</span> seconds, after which the charges are depleted.",
+        "description": "Standing still grants you Electrical Charge every second, increasing your haste by 1%. Upon reaching 20 stacks, your spells dont deplete Static for 10 seconds, after which the charges are depleted.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704149,
+            "description_html": "Standing still grants you <span style=\"color: #FFFFFF; display: inline\">Electrical Charge</span> every second, increasing your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>. Upon reaching <span class=\"item-number\">20</span> stacks, your spells dont deplete <span style=\"color: #cc99ff; display: inline\">Static</span> for <span class=\"item-number\">10</span> seconds, after which the charges are depleted.",
+            "description": "Standing still grants you Electrical Charge every second, increasing your haste by 1%. Upon reaching 20 stacks, your spells dont deplete Static for 10 seconds, after which the charges are depleted."
+          }
+        ],
+        "connections": [
+          5475,
+          34635
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3fistsofthunder",
+          "key": "d3fistsofthunder",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 10755,
+        "name": "Ascension",
+        "slug": "ascension",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 301260,
+        "spell_ids": [
+          301260
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Storm Ascendance</span> by <span class=\"item-number\">10</span> sec.",
+        "description": "Level 50 Passive\nIncreases the duration of your Storm Ascendance by 10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301260,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Storm Ascendance</span> by <span class=\"item-number\">10</span> sec.",
+            "description": "Level 50 Passive\nIncreases the duration of your Storm Ascendance by 10 sec."
+          }
+        ],
+        "connections": [
+          9755
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill37_Border",
+          "key": "_5_druideskill37_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 9050,
+        "name": "Lord of Lightning",
+        "slug": "lord-of-lightning",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707618,
+        "spell_ids": [
+          707618
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Storm Ascendance</span> now additionally grants you <span style=\"color: #ffffff; display: inline\">Lord of Lightning</span> for <span class=\"item-number\">20</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_shield_1h_artifactstormfist_d_06\" /><span class=\"name\">Lord of Lightning</span></div><span class=\"desc\">Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Forked Lightning</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> by an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allows <span style=\"color: #ffffff; display: inline\">Electrocute</span> to strike <span class=\"item-number\">3</span> additional enemies.</span></div>",
+        "description": "Storm Ascendance now additionally grants you Lord of Lightning for 20 seconds.Lord of LightningIncreases the damage dealt by Forked Lightning, Call Lightning, and Electrocute by an additional 30% and allows Electrocute to strike 3 additional enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707618,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Storm Ascendance</span> now additionally grants you <span style=\"color: #ffffff; display: inline\">Lord of Lightning</span> for <span class=\"item-number\">20</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_shield_1h_artifactstormfist_d_06\" /><span class=\"name\">Lord of Lightning</span></div><span class=\"desc\">Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Forked Lightning</span>, <span style=\"color: #ffffff; display: inline\">Call Lightning</span>, and <span style=\"color: #FFFFFF; display: inline\">Electrocute</span> by an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allows <span style=\"color: #ffffff; display: inline\">Electrocute</span> to strike <span class=\"item-number\">3</span> additional enemies.</span></div>",
+            "description": "Storm Ascendance now additionally grants you Lord of Lightning for 20 seconds.Lord of LightningIncreases the damage dealt by Forked Lightning, Call Lightning, and Electrocute by an additional 30% and allows Electrocute to strike 3 additional enemies."
+          }
+        ],
+        "connections": [
+          1930
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_06",
+          "key": "inv_shield_1h_artifactstormfist_d_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29828,
+        "name": "Ride the Lightning",
+        "slug": "ride-the-lightning",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800099,
+        "spell_ids": [
+          800099
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">40</span> Static</span><br />Infuse yourself with lightning and blink forward a long distance, dealing <span class=\"item-number\">540</span> + <span class=\"item-number\">50% SP</span> Nature damage to all enemies in your path.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Discharge</span>",
+        "description": "Depletes 40 Static\nInfuse yourself with lightning and blink forward a long distance, dealing 540 + 50% SP Nature damage to all enemies in your path.\n\nScales with modifiers to Discharge",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800099,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">40</span> Static</span><br />Infuse yourself with lightning and blink forward a long distance, dealing <span class=\"item-number\">540</span> + <span class=\"item-number\">50% SP</span> Nature damage to all enemies in your path.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Discharge</span>",
+            "description": "Depletes 40 Static\nInfuse yourself with lightning and blink forward a long distance, dealing 540 + 50% SP Nature damage to all enemies in your path.\n\nScales with modifiers to Discharge"
+          }
+        ],
+        "connections": [
+          1930,
+          7768,
+          34687
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_crashlightning",
+          "key": "spell_shaman_crashlightning",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30127,
+        "name": "Thunder Wave",
+        "slug": "thunder-wave",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 42,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705692,
+        "spell_ids": [
+          705692
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Forked Lightning</span> has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to transform it into <span style=\"color: #FFFFFF; display: inline\">Thunder Wave</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shaman_hightide\" /><span class=\"name\">Thunder Wave (Spell)</span></div><span class=\"desc\">Bring lightning down upon an enemy and nearby enemies, dealing <span class=\"item-number\">406</span> + <span class=\"item-number\">65% arcane SP</span> Spellstorm Damage and refreshing the duration of <span style=\"color: #ffffff; display: inline\">Volt</span> on enemies struck.<br /><br />Deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Volt</span>.</span></div>",
+        "description": "Damage dealt by Forked Lightning has a 5% chance to transform it into Thunder Wave.Thunder Wave (Spell)Bring lightning down upon an enemy and nearby enemies, dealing 406 + 65% arcane SP Spellstorm Damage and refreshing the duration of Volt on enemies struck.\n\nDeals 50% increased damage to enemies affected by Volt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705692,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Forked Lightning</span> has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to transform it into <span style=\"color: #FFFFFF; display: inline\">Thunder Wave</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shaman_hightide\" /><span class=\"name\">Thunder Wave (Spell)</span></div><span class=\"desc\">Bring lightning down upon an enemy and nearby enemies, dealing <span class=\"item-number\">406</span> + <span class=\"item-number\">65% arcane SP</span> Spellstorm Damage and refreshing the duration of <span style=\"color: #ffffff; display: inline\">Volt</span> on enemies struck.<br /><br />Deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Volt</span>.</span></div>",
+            "description": "Damage dealt by Forked Lightning has a 5% chance to transform it into Thunder Wave.Thunder Wave (Spell)Bring lightning down upon an enemy and nearby enemies, dealing 406 + 65% arcane SP Spellstorm Damage and refreshing the duration of Volt on enemies struck.\n\nDeals 50% increased damage to enemies affected by Volt."
+          }
+        ],
+        "connections": [
+          7768
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_hightide",
+          "key": "spell_shaman_hightide",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

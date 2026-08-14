@@ -105,15 +105,20 @@ Notes on the schema:
 - **`icon.sprite`** — the builder has no per-icon URLs, only cells of one sheet, so an
   icon is a sheet URL plus integer cell coordinates. `null` for the ~79 icons the sheet
   does not define (broken on the site too). `icon.file` is set only by `--download-assets`.
-- **`meta.content_hash`** — SHA-256 over the normalized trees only, so it is stable
-  across re-runs and changes exactly when talent data changes. This is what makes patch
-  diffing possible.
+- **`meta.content_hash`** — SHA-256 over the normalized trees, computed before local
+  asset paths are applied, so it is unaffected by `--download-assets` and changes exactly
+  when upstream talent data changes. This is what makes patch diffing possible.
+
+The dataset committed to this repo is generated without `--download-assets`, so its
+`icon.file` values are `null` and it stays self-consistent — extracted icons are build
+output and are not versioned.
 
 ## Re-running
 
-Extraction is fully unattended and deterministic: same upstream data in, byte-identical
-JSON out. `content_hash` is the cheap way to tell whether a re-run actually changed
-anything.
+Extraction is fully unattended and deterministic: same upstream data in, identical JSON
+out apart from `meta.scraped_at`, which is a fresh timestamp every run. So a re-run
+always shows a diff — compare `meta.content_hash` instead to tell whether the talent
+data actually changed.
 
 ## Development
 

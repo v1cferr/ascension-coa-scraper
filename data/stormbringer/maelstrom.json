@@ -1,0 +1,2261 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-14T00:58:19+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:7927c93ebf3d994a6d12cedd54dd1f89beb72498ec865a710bcf0c811918dc93",
+    "talent_count": 156,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 16,
+    "name": "Stormbringer",
+    "slug": "stormbringer",
+    "class_file": "stormbringer",
+    "color": "rgb(0, 125, 237)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:stormbringer",
+      "key": "class-stormbringer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 43,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 44,
+    "name": "Maelstrom",
+    "slug": "maelstrom",
+    "sort_order": 3,
+    "class_id": 16,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31165,
+        "name": "Tempest Sovereign",
+        "slug": "tempest-sovereign",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            4015,
+            29814
+          ]
+        },
+        "spell_id": 560020,
+        "spell_ids": [
+          560020
+        ],
+        "description_html": "$11a",
+        "description": "$11a",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560020,
+            "description_html": "$11b",
+            "description": "$11b"
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_LiquidStone_Water",
+          "key": "liquidstone_water",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4015,
+        "name": "Conductive",
+        "slug": "conductive",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            29814
+          ]
+        },
+        "spell_id": 92098,
+        "spell_ids": [
+          92098
+        ],
+        "description_html": "$11e",
+        "description": "$11e",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92098,
+            "description_html": "$11f",
+            "description": "$11f"
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_shawaterelemental_reform",
+          "key": "ability_shawaterelemental_reform",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 34676,
+        "name": "Stormflow",
+        "slug": "stormflow",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 567555,
+        "spell_ids": [
+          567555
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">20</span> Static</span><br />Channel a storm beam upon an enemy, dealing <span class=\"item-number\">112</span> + <span class=\"item-number\">160% SP</span> Frost Damage over <span class=\"item-number\">8</span> seconds, scaling with your spell haste.<br /><br /><span style=\"color: #ffffff; display: inline\">Shock</span> can be instantly cast while channeling.",
+        "description": "Depletes 20 Static\nChannel a storm beam upon an enemy, dealing 112 + 160% SP Frost Damage over 8 seconds, scaling with your spell haste.\n\nShock can be instantly cast while channeling.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 567555,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">20</span> Static</span><br />Channel a storm beam upon an enemy, dealing <span class=\"item-number\">112</span> + <span class=\"item-number\">160% SP</span> Frost Damage over <span class=\"item-number\">8</span> seconds, scaling with your spell haste.<br /><br /><span style=\"color: #ffffff; display: inline\">Shock</span> can be instantly cast while channeling.",
+            "description": "Depletes 20 Static\nChannel a storm beam upon an enemy, dealing 112 + 160% SP Frost Damage over 8 seconds, scaling with your spell haste.\n\nShock can be instantly cast while channeling."
+          }
+        ],
+        "connections": [
+          31165
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_waterjet",
+          "key": "ability_mage_waterjet",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34685,
+        "name": "Torrential Rage",
+        "slug": "torrential-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807196,
+        "spell_ids": [
+          807196,
+          807884
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Torrential Wrath and Stormflow by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807196,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Torrential Wrath and Stormflow by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807884,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Torrential Wrath and Stormflow by 30%."
+          }
+        ],
+        "connections": [
+          34676
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_herb_stormvine",
+          "key": "inv_misc_herb_stormvine",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29836,
+        "name": "Conduit",
+        "slug": "conduit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806374,
+        "spell_ids": [
+          806374
+        ],
+        "description_html": "Dealing Frost damage now has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to increase the damage the target takes from <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">4</span> times.",
+        "description": "Dealing Frost damage now has a 60% chance to increase the damage the target takes from Electrocute by 15% for 10 seconds, stacking up to 4 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806374,
+            "description_html": "Dealing Frost damage now has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to increase the damage the target takes from <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">4</span> times.",
+            "description": "Dealing Frost damage now has a 60% chance to increase the damage the target takes from Electrocute by 15% for 10 seconds, stacking up to 4 times."
+          }
+        ],
+        "connections": [
+          34676
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_stormpeaks_12",
+          "key": "achievement_zone_stormpeaks_12",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34686,
+        "name": "Disciple of Thorim",
+        "slug": "disciple-of-thorim",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705727,
+        "spell_ids": [
+          705727,
+          707795,
+          707798
+        ],
+        "description_html": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.2</span> sec and increases your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of your Torrential Wrath by -0.2 sec and increases your hit chance by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705727,
+            "description_html": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.2</span> sec and increases your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of your Torrential Wrath by -0.2 sec and increases your hit chance by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707795,
+            "description_html": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.4</span> sec and increases your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of your Torrential Wrath by -0.4 sec and increases your hit chance by 4%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 707798,
+            "description_html": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> by <span class=\"item-number\">-0.6</span> sec and increases your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of your Torrential Wrath by -0.6 sec and increases your hit chance by 6%."
+          }
+        ],
+        "connections": [
+          34676
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\shaman_pvp_leaderclan",
+          "key": "shaman_pvp_leaderclan",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9250,
+        "name": "Whirling Maelstrom",
+        "slug": "whirling-maelstrom",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 705725,
+        "spell_ids": [
+          705725
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your spell haste by 20% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705725,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your spell haste by 20% of your Intellect."
+          }
+        ],
+        "connections": [
+          4015
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_shamanskill30_Border",
+          "key": "_5_shamanskill30_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6850,
+        "name": "Prodigy of Lei Shen",
+        "slug": "prodigy-of-lei-shen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560023,
+        "spell_ids": [
+          560023
+        ],
+        "description_html": "Allows your <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> to critically strike.",
+        "description": "Allows your Stormflow to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560023,
+            "description_html": "Allows your <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> to critically strike.",
+            "description": "Allows your Stormflow to critically strike."
+          }
+        ],
+        "connections": [
+          34685
+        ],
+        "choice_group": 561228,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_stormreach",
+          "key": "spell_nature_stormreach",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11151,
+        "name": "Blessing of Lei Shen",
+        "slug": "blessing-of-lei-shen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561228,
+        "spell_ids": [
+          561228
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> now heals you equal to the damage dealt.",
+        "description": "Damage dealt by Stormflow now heals you equal to the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561228,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> now heals you equal to the damage dealt.",
+            "description": "Damage dealt by Stormflow now heals you equal to the damage dealt."
+          }
+        ],
+        "connections": [
+          34685
+        ],
+        "choice_group": 561228,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_leishen",
+          "key": "achievement_boss_leishen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30945,
+        "name": "Drown",
+        "slug": "drown",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806407,
+        "spell_ids": [
+          806407
+        ],
+        "description_html": "Attempt to drown an enemy, reducing their healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds. At the end of the duration, unleash a creature from the depths dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1)</span> Frost Damage.<br /><br />Each time you generate a stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span> you increase their damage taken from this effect, stacking up to <span class=\"item-number\">8</span> times.",
+        "description": "Attempt to drown an enemy, reducing their healing received by -20% for 8 seconds. At the end of the duration, unleash a creature from the depths dealing cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1) Frost Damage.\n\nEach time you generate a stack of Conductive you increase their damage taken from this effect, stacking up to 8 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806407,
+            "description_html": "Attempt to drown an enemy, reducing their healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds. At the end of the duration, unleash a creature from the depths dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1)</span> Frost Damage.<br /><br />Each time you generate a stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span> you increase their damage taken from this effect, stacking up to <span class=\"item-number\">8</span> times.",
+            "description": "Attempt to drown an enemy, reducing their healing received by -20% for 8 seconds. At the end of the duration, unleash a creature from the depths dealing cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1) Frost Damage.\n\nEach time you generate a stack of Conductive you increase their damage taken from this effect, stacking up to 8 times."
+          }
+        ],
+        "connections": [
+          29836,
+          34685,
+          34686
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_element(water)_b_01_Border",
+          "key": "custom_element_water__b_01_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34679,
+        "name": "Raining and Pouring",
+        "slug": "raining-and-pouring",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706660,
+        "spell_ids": [
+          706660
+        ],
+        "description_html": "Increases the critical damage of your <span style=\"color: #FFFFFF; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of your Torrential Wrath and Electrocute by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706660,
+            "description_html": "Increases the critical damage of your <span style=\"color: #FFFFFF; display: inline\">Torrential Wrath</span> and <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of your Torrential Wrath and Electrocute by 30%."
+          }
+        ],
+        "connections": [
+          34686
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(54)_Border",
+          "key": "novart_magicspell__54__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29518,
+        "name": "Deluge",
+        "slug": "deluge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806400,
+        "spell_ids": [
+          806400
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Envelop enemies in the target area in water, dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3)</span> Frost damage, triggering <span style=\"color: #4fd1c5; display: inline\">Conduction</span> and reducing their attack power by <span class=\"item-number\">-24</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_shawaterelemental_reform\" /><span class=\"name\">Conduction (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPFR, SPN), 302*1+SPFR*0.585, 302*1+SPN*0.35)</span> Frost Damage, increased for each stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.</span></div>",
+        "description": "Depletes 50 Static\nEnvelop enemies in the target area in water, dealing cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3) Frost damage, triggering Conduction and reducing their attack power by -24 for 10 seconds.Conduction (Damage)Deals cond(gt(SPFR, SPN), 302*1+SPFR*0.585, 302*1+SPN*0.35) Frost Damage, increased for each stack of Conductive.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806400,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Envelop enemies in the target area in water, dealing <span class=\"item-number\">cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3)</span> Frost damage, triggering <span style=\"color: #4fd1c5; display: inline\">Conduction</span> and reducing their attack power by <span class=\"item-number\">-24</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_shawaterelemental_reform\" /><span class=\"name\">Conduction (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPFR, SPN), 302*1+SPFR*0.585, 302*1+SPN*0.35)</span> Frost Damage, increased for each stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.</span></div>",
+            "description": "Depletes 50 Static\nEnvelop enemies in the target area in water, dealing cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3) Frost damage, triggering Conduction and reducing their attack power by -24 for 10 seconds.Conduction (Damage)Deals cond(gt(SPFR, SPN), 302*1+SPFR*0.585, 302*1+SPN*0.35) Frost Damage, increased for each stack of Conductive."
+          }
+        ],
+        "connections": [
+          6850,
+          11151
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Frost_SummonWaterElemental",
+          "key": "spell_frost_summonwaterelemental",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30940,
+        "name": "Flow of Wrath",
+        "slug": "flow-of-wrath",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801855,
+        "spell_ids": [
+          801855
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #ffffff; display: inline\">Drown</span>.",
+        "description": "Increases your critical strike chance by 15% against enemies affected by Drown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801855,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #ffffff; display: inline\">Drown</span>.",
+            "description": "Increases your critical strike chance by 15% against enemies affected by Drown."
+          }
+        ],
+        "connections": [
+          30945
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\priest_icon_chakra_blue",
+          "key": "priest_icon_chakra_blue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8613,
+        "name": "Undertow",
+        "slug": "undertow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705666,
+        "spell_ids": [
+          705666,
+          707796
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Drown</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Drown by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705666,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Drown</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Drown by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707796,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Drown</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Drown by 50%."
+          }
+        ],
+        "connections": [
+          30945
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_azerite_fireball",
+          "key": "inv_azerite_fireball",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6466,
+        "name": "Mystic Thunder",
+        "slug": "mystic-thunder",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504846,
+        "spell_ids": [
+          504846
+        ],
+        "description_html": "Interrupt the target's current spell cast and then mark them for <span class=\"item-number\">5</span> seconds.<br /><br />If they cast again while marked they are silenced for <span class=\"item-number\">3</span> seconds.",
+        "description": "Interrupt the target's current spell cast and then mark them for 5 seconds.\n\nIf they cast again while marked they are silenced for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504846,
+            "description_html": "Interrupt the target's current spell cast and then mark them for <span class=\"item-number\">5</span> seconds.<br /><br />If they cast again while marked they are silenced for <span class=\"item-number\">3</span> seconds.",
+            "description": "Interrupt the target's current spell cast and then mark them for 5 seconds.\n\nIf they cast again while marked they are silenced for 3 seconds."
+          }
+        ],
+        "connections": [
+          34679
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_manaentagle_Border",
+          "key": "nhi_manaentagle_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9251,
+        "name": "Unbridled Flow",
+        "slug": "unbridled-flow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 578299,
+        "spell_ids": [
+          578299
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Shock</span> is now increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> while channeling <span style=\"color: #ffffff; display: inline\">Stormflow</span>.",
+        "description": "Level 30 Passive\nDamage dealt by Shock is now increased by 15% while channeling Stormflow.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 578299,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Shock</span> is now increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> while channeling <span style=\"color: #ffffff; display: inline\">Stormflow</span>.",
+            "description": "Level 30 Passive\nDamage dealt by Shock is now increased by 15% while channeling Stormflow."
+          }
+        ],
+        "connections": [
+          9250
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frozenwhirl_Border",
+          "key": "nhi_frozenwhirl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6467,
+        "name": "Voltaic Mastery",
+        "slug": "voltaic-mastery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706661,
+        "spell_ids": [
+          706661
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Deluge</span> is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.",
+        "description": "Damage dealt by Deluge is increased by 5% for each stack of Conductive.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706661,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Deluge</span> is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.",
+            "description": "Damage dealt by Deluge is increased by 5% for each stack of Conductive."
+          }
+        ],
+        "connections": [
+          29518
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(55)_Border",
+          "key": "novart_magicspell__55__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34918,
+        "name": "Stormcaller",
+        "slug": "stormcaller",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300611,
+        "spell_ids": [
+          300611,
+          300615
+        ],
+        "description_html": "Reduces the cooldown and mana cost of <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown and mana cost of Eye of the Storm by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300611,
+            "description_html": "Reduces the cooldown and mana cost of <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown and mana cost of Eye of the Storm by -15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 300615,
+            "description_html": "Reduces the cooldown and mana cost of <span style=\"color: #ffffff; display: inline\">Eye of the Storm</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown and mana cost of Eye of the Storm by -30%."
+          }
+        ],
+        "connections": [
+          29518,
+          30940
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_IceBall_Border",
+          "key": "custom_t_iceball_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6468,
+        "name": "Bursting",
+        "slug": "bursting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806397,
+        "spell_ids": [
+          806397
+        ],
+        "description_html": "Increases the stack value of <span style=\"color: #FFFFFF; display: inline\">Drowning</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the stack value of Drowning by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806397,
+            "description_html": "Increases the stack value of <span style=\"color: #FFFFFF; display: inline\">Drowning</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the stack value of Drowning by 20%."
+          }
+        ],
+        "connections": [
+          8613,
+          30940
+        ],
+        "choice_group": 807657,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_WaterBomb_Border",
+          "key": "custom_t_waterbomb_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11468,
+        "name": "Washed Away",
+        "slug": "washed-away",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807657,
+        "spell_ids": [
+          807657
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Drown</span> by <span class=\"item-number\">-15</span> sec.",
+        "description": "Reduces the cooldown of Drown by -15 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807657,
+            "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Drown</span> by <span class=\"item-number\">-15</span> sec.",
+            "description": "Reduces the cooldown of Drown by -15 sec."
+          }
+        ],
+        "connections": [
+          8613,
+          30940
+        ],
+        "choice_group": 807657,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sulfurelemental_water",
+          "key": "inv_sulfurelemental_water",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30288,
+        "name": "Cloudsurfer",
+        "slug": "cloudsurfer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806414,
+        "spell_ids": [
+          806414
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shock</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Shock by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806414,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Shock</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Shock by 15%."
+          }
+        ],
+        "connections": [
+          6466,
+          8613
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(57)_Border",
+          "key": "novart_magicspell__57__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29141,
+        "name": "Lethal Current",
+        "slug": "lethal-current",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705663,
+        "spell_ids": [
+          705663,
+          707797
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Increases the critical strike chance of Electrocute by 30% against enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705663,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Increases the critical strike chance of Electrocute by 30% against enemies below 20% health."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707797,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Electrocute</span> by <span class=\"item-number\">60</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Increases the critical strike chance of Electrocute by 60% against enemies below 20% health."
+          }
+        ],
+        "connections": [
+          6466
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_lightningshield",
+          "key": "spell_nature_lightningshield",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30946,
+        "name": "Unstable",
+        "slug": "unstable",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705723,
+        "spell_ids": [
+          705723
+        ],
+        "description_html": "Your direct damage critical strikes cause your <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> to tick <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster for <span class=\"item-number\">3</span> seconds.",
+        "description": "Your direct damage critical strikes cause your Stormflow to tick -20% faster for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705723,
+            "description_html": "Your direct damage critical strikes cause your <span style=\"color: #FFFFFF; display: inline\">Stormflow</span> to tick <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster for <span class=\"item-number\">3</span> seconds.",
+            "description": "Your direct damage critical strikes cause your Stormflow to tick -20% faster for 3 seconds."
+          }
+        ],
+        "connections": [
+          6467,
+          6468,
+          11468,
+          34918
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_EnergeticOrbLightBlue",
+          "key": "energeticorblightblue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34958,
+        "name": "Thunder Ward",
+        "slug": "thunder-ward",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800098,
+        "spell_ids": [
+          800098
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes All Static</span><br />Encase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for <span class=\"item-number\">10</span> seconds.<br /><br />Cannot generate <span style=\"color: #cc99ff; display: inline\">Static</span> for the duration.",
+        "description": "Depletes All Static\nEncase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for 10 seconds.\n\nCannot generate Static for the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800098,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes All Static</span><br />Encase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for <span class=\"item-number\">10</span> seconds.<br /><br />Cannot generate <span style=\"color: #cc99ff; display: inline\">Static</span> for the duration.",
+            "description": "Depletes All Static\nEncase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for 10 seconds.\n\nCannot generate Static for the duration."
+          }
+        ],
+        "connections": [
+          6468,
+          11468
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_AntiMagicZone",
+          "key": "spell_deathknight_antimagiczone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30947,
+        "name": "Kinetic Energy",
+        "slug": "kinetic-energy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806409,
+        "spell_ids": [
+          806409
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> or <span style=\"color: #ffffff; display: inline\">Deluge</span> now grants you a stack of <span style=\"color: #ffffff; display: inline\">Kinetic Energy</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_lightning_empower_border\" /><span class=\"name\">Kinetic Energy</span></div><span class=\"desc\">Critical strike chance increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">3</span> times, for <span class=\"item-number\">12</span> seconds.<br /><br />Additional applications do not refresh the duration.</span></div>",
+        "description": "Casting Torrential Wrath or Deluge now grants you a stack of Kinetic Energy.Kinetic EnergyCritical strike chance increased by 2%, stacking 3 times, for 12 seconds.\n\nAdditional applications do not refresh the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806409,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> or <span style=\"color: #ffffff; display: inline\">Deluge</span> now grants you a stack of <span style=\"color: #ffffff; display: inline\">Kinetic Energy</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_lightning_empower_border\" /><span class=\"name\">Kinetic Energy</span></div><span class=\"desc\">Critical strike chance increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">3</span> times, for <span class=\"item-number\">12</span> seconds.<br /><br />Additional applications do not refresh the duration.</span></div>",
+            "description": "Casting Torrential Wrath or Deluge now grants you a stack of Kinetic Energy.Kinetic EnergyCritical strike chance increased by 2%, stacking 3 times, for 12 seconds.\n\nAdditional applications do not refresh the duration."
+          }
+        ],
+        "connections": [
+          6468,
+          11468,
+          29141,
+          30288
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_lightning_empower_Border",
+          "key": "nhi_lightning_empower_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11252,
+        "name": "Storm Synergy",
+        "slug": "storm-synergy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 578300,
+        "spell_ids": [
+          578300
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Electrocute</span> can now be used while channeling <span style=\"color: #ffffff; display: inline\">Stormflow</span> and causes it to apply <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.",
+        "description": "Level 40 Passive\nYour Electrocute can now be used while channeling Stormflow and causes it to apply Conductive.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 578300,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Electrocute</span> can now be used while channeling <span style=\"color: #ffffff; display: inline\">Stormflow</span> and causes it to apply <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.",
+            "description": "Level 40 Passive\nYour Electrocute can now be used while channeling Stormflow and causes it to apply Conductive."
+          }
+        ],
+        "connections": [
+          9250
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_staticshock",
+          "key": "spell_shaman_staticshock",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29834,
+        "name": "Amped Flow",
+        "slug": "amped-flow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806411,
+        "spell_ids": [
+          806411
+        ],
+        "description_html": "While channeling <span style=\"color: #FFFFFF; display: inline\">Stormflow</span>, your <span style=\"color: #ffffff; display: inline\">Shock</span> now strikes <span class=\"item-number\">1</span> additional target at <span class=\"item-number\">75</span><span class=\"item-number\">%</span> value.",
+        "description": "While channeling Stormflow, your Shock now strikes 1 additional target at 75% value.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806411,
+            "description_html": "While channeling <span style=\"color: #FFFFFF; display: inline\">Stormflow</span>, your <span style=\"color: #ffffff; display: inline\">Shock</span> now strikes <span class=\"item-number\">1</span> additional target at <span class=\"item-number\">75</span><span class=\"item-number\">%</span> value.",
+            "description": "While channeling Stormflow, your Shock now strikes 1 additional target at 75% value."
+          }
+        ],
+        "connections": [
+          30946
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_94",
+          "key": "inv_staff_94",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30944,
+        "name": "Static Electricity",
+        "slug": "static-electricity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524954,
+        "spell_ids": [
+          524954
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> now spawn an <span style=\"color: #ffffff; display: inline\">Electrified Water Elemental</span> to aid you in combat for <span class=\"item-number\">20</span> sec.<br /><br />When an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> dissipates, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Drown</span> is reduced by <span class=\"item-number\">-2</span> sec.",
+        "description": "Critical strikes with Torrential Wrath now spawn an Electrified Water Elemental to aid you in combat for 20 sec.\n\nWhen an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524954,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> now spawn an <span style=\"color: #ffffff; display: inline\">Electrified Water Elemental</span> to aid you in combat for <span class=\"item-number\">20</span> sec.<br /><br />When an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> dissipates, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Drown</span> is reduced by <span class=\"item-number\">-2</span> sec.",
+            "description": "Critical strikes with Torrential Wrath now spawn an Electrified Water Elemental to aid you in combat for 20 sec.\n\nWhen an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -2 sec."
+          }
+        ],
+        "connections": [
+          30946,
+          34958
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_MonkAbility_CracklingLightning_XuenWhite",
+          "key": "monkability_cracklinglightning_xuenwhite",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6469,
+        "name": "Conductor In Charge",
+        "slug": "conductor-in-charge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300961,
+        "spell_ids": [
+          300961
+        ],
+        "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your Frost damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+        "description": "Increases all damage dealt by party and raid members by 3% and your Frost damage dealt by 5%.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300961,
+            "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your Frost damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+            "description": "Increases all damage dealt by party and raid members by 3% and your Frost damage dealt by 5%.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          30947,
+          34958
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_thunderking_balllightning",
+          "key": "ability_thunderking_balllightning",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34960,
+        "name": "Hydro Powered",
+        "slug": "hydro-powered",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300616,
+        "spell_ids": [
+          300616
+        ],
+        "description_html": "Increases your spell critical damage by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your spell critical damage by 35%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300616,
+            "description_html": "Increases your spell critical damage by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your spell critical damage by 35%."
+          }
+        ],
+        "connections": [
+          30947
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicStorm_Border",
+          "key": "custom_t_nhance_rpg_icons_magicstorm_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30934,
+        "name": "Binder of Storms",
+        "slug": "binder-of-storms",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707542,
+        "spell_ids": [
+          707542
+        ],
+        "description_html": "$11c",
+        "description": "$11c",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707542,
+            "description_html": "$11d",
+            "description": "$11d"
+          }
+        ],
+        "connections": [
+          29834,
+          30944
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\shaman_pvp_staticcling",
+          "key": "shaman_pvp_staticcling",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7184,
+        "name": "Electrified Waters",
+        "slug": "electrified-waters",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 573436,
+        "spell_ids": [
+          573436
+        ],
+        "description_html": "Your direct critical strikes against an enemy affected by <span style=\"color: #FFFFFF; display: inline\">Drown</span> spawn an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />When an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> dissipates, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Drown</span> is reduced by <span class=\"item-number\">-2</span> sec.",
+        "description": "Your direct critical strikes against an enemy affected by Drown spawn an Electrified Water Elemental to aid you in combat for 20 seconds.\n\nWhen an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573436,
+            "description_html": "Your direct critical strikes against an enemy affected by <span style=\"color: #FFFFFF; display: inline\">Drown</span> spawn an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />When an <span style=\"color: #FFFFFF; display: inline\">Electrified Water Elemental</span> dissipates, the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Drown</span> is reduced by <span class=\"item-number\">-2</span> sec.",
+            "description": "Your direct critical strikes against an enemy affected by Drown spawn an Electrified Water Elemental to aid you in combat for 20 seconds.\n\nWhen an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -2 sec."
+          }
+        ],
+        "connections": [
+          6469,
+          30944
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_deathelementalmount_blue",
+          "key": "inv_deathelementalmount_blue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29835,
+        "name": "Stormfury",
+        "slug": "stormfury",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 532751,
+        "spell_ids": [
+          532751
+        ],
+        "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Summon a flurry of rain, wind, and lightning from the sky for <span class=\"item-number\">20</span> seconds. Every <span class=\"item-number\">2</span> sec, enemies within <span class=\"item-number\">30</span> yds of the caster are zapped with lightning, dealing <span class=\"item-number\">540</span> + <span class=\"item-number\">55% nature SP</span> Nature damage.",
+        "description": "Depletes 50 Static\nSummon a flurry of rain, wind, and lightning from the sky for 20 seconds. Every 2 sec, enemies within 30 yds of the caster are zapped with lightning, dealing 540 + 55% nature SP Nature damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 532751,
+            "description_html": "<span style=\"color: #cc99ff; display: inline\">Depletes <span class=\"item-number\">50</span> Static</span><br />Summon a flurry of rain, wind, and lightning from the sky for <span class=\"item-number\">20</span> seconds. Every <span class=\"item-number\">2</span> sec, enemies within <span class=\"item-number\">30</span> yds of the caster are zapped with lightning, dealing <span class=\"item-number\">540</span> + <span class=\"item-number\">55% nature SP</span> Nature damage.",
+            "description": "Depletes 50 Static\nSummon a flurry of rain, wind, and lightning from the sky for 20 seconds. Every 2 sec, enemies within 30 yds of the caster are zapped with lightning, dealing 540 + 55% nature SP Nature damage."
+          }
+        ],
+        "connections": [
+          6469,
+          34960
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_28_Storm2_Border",
+          "key": "custom_28_storm2_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11253,
+        "name": "Hydromatic",
+        "slug": "hydromatic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 300619,
+        "spell_ids": [
+          300619
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Electrocute</span> is now affected by <span style=\"color: #4fd1c5; display: inline\">Conductive</span>, increasing its damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> per stack.",
+        "description": "Level 50 Passive\nYour Electrocute is now affected by Conductive, increasing its damage by 10% per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300619,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Electrocute</span> is now affected by <span style=\"color: #4fd1c5; display: inline\">Conductive</span>, increasing its damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> per stack.",
+            "description": "Level 50 Passive\nYour Electrocute is now affected by Conductive, increasing its damage by 10% per stack."
+          }
+        ],
+        "connections": [
+          11252
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_wind_icon_0002s_0000_lightning_Border",
+          "key": "epic_rpg_icon_pack_wind_icon_0002s_0000_lightning_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5934,
+        "name": "Spheres of Power",
+        "slug": "spheres-of-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706434,
+        "spell_ids": [
+          706434
+        ],
+        "description_html": "Your direct damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #ffffff; display: inline\">Power Sphere</span> that will move towards your target. Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Power Sphere</span> up at a time.<br /><br /><span style=\"color: #ffffff; display: inline\">Power Sphere</span> will redirect its movement towards enemies you cast <span style=\"color: #ffffff; display: inline\">Stormflow</span> on.<br /><br />Upon reaching the target, it deals <span class=\"item-number\">cond(gt(SPA, SPN), 997+33+SPA*0.485, 997+33+SPN*0.485)</span> Spellstorm Damage to them and enemies within <span class=\"item-number\">5</span> yds.",
+        "description": "Your direct damage dealt now has a 25% chance to summon a Power Sphere that will move towards your target. Can only have 1 Power Sphere up at a time.\n\nPower Sphere will redirect its movement towards enemies you cast Stormflow on.\n\nUpon reaching the target, it deals cond(gt(SPA, SPN), 997+33+SPA*0.485, 997+33+SPN*0.485) Spellstorm Damage to them and enemies within 5 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706434,
+            "description_html": "Your direct damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to summon a <span style=\"color: #ffffff; display: inline\">Power Sphere</span> that will move towards your target. Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Power Sphere</span> up at a time.<br /><br /><span style=\"color: #ffffff; display: inline\">Power Sphere</span> will redirect its movement towards enemies you cast <span style=\"color: #ffffff; display: inline\">Stormflow</span> on.<br /><br />Upon reaching the target, it deals <span class=\"item-number\">cond(gt(SPA, SPN), 997+33+SPA*0.485, 997+33+SPN*0.485)</span> Spellstorm Damage to them and enemies within <span class=\"item-number\">5</span> yds.",
+            "description": "Your direct damage dealt now has a 25% chance to summon a Power Sphere that will move towards your target. Can only have 1 Power Sphere up at a time.\n\nPower Sphere will redirect its movement towards enemies you cast Stormflow on.\n\nUpon reaching the target, it deals cond(gt(SPA, SPN), 997+33+SPA*0.485, 997+33+SPN*0.485) Spellstorm Damage to them and enemies within 5 yds."
+          }
+        ],
+        "connections": [
+          7184,
+          30934
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_forcesphere",
+          "key": "ability_monk_forcesphere",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34684,
+        "name": "Stormcloud",
+        "slug": "stormcloud",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801859,
+        "spell_ids": [
+          801859
+        ],
+        "description_html": "Summon a cloud above an enemy target's head for <span class=\"item-number\">15</span> seconds, causing them to take <span class=\"item-number\">20</span><span class=\"item-number\">%</span> additional damage from your spells.<br /><br />Using <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> on an enemy affected by <span style=\"color: #ffffff; display: inline\">Stormcloud</span> causes a <span style=\"color: #ffffff; display: inline\">Geyser</span> to erupt beneath them, dealing <span class=\"item-number\">571</span> + <span class=\"item-number\">25% frost SP</span> Frost damage and knocking them up slightly.",
+        "description": "Summon a cloud above an enemy target's head for 15 seconds, causing them to take 20% additional damage from your spells.\n\nUsing Torrential Wrath on an enemy affected by Stormcloud causes a Geyser to erupt beneath them, dealing 571 + 25% frost SP Frost damage and knocking them up slightly.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801859,
+            "description_html": "Summon a cloud above an enemy target's head for <span class=\"item-number\">15</span> seconds, causing them to take <span class=\"item-number\">20</span><span class=\"item-number\">%</span> additional damage from your spells.<br /><br />Using <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> on an enemy affected by <span style=\"color: #ffffff; display: inline\">Stormcloud</span> causes a <span style=\"color: #ffffff; display: inline\">Geyser</span> to erupt beneath them, dealing <span class=\"item-number\">571</span> + <span class=\"item-number\">25% frost SP</span> Frost damage and knocking them up slightly.",
+            "description": "Summon a cloud above an enemy target's head for 15 seconds, causing them to take 20% additional damage from your spells.\n\nUsing Torrential Wrath on an enemy affected by Stormcloud causes a Geyser to erupt beneath them, dealing 571 + 25% frost SP Frost damage and knocking them up slightly."
+          }
+        ],
+        "connections": [
+          7184
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_SnowWhirlwind_Border",
+          "key": "custom_t_snowwhirlwind_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19684,
+        "name": "Shockingly Powerful",
+        "slug": "shockingly-powerful",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 16,
+        "tree_id": 44,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572310,
+        "spell_ids": [
+          572310
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> now trigger <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.<br /><br />Increases the damage of <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Critical strikes with Torrential Wrath now trigger Conductive.\n\nIncreases the damage of Stormflow by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572310,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Torrential Wrath</span> now trigger <span style=\"color: #4fd1c5; display: inline\">Conductive</span>.<br /><br />Increases the damage of <span style=\"color: #ffffff; display: inline\">Stormflow</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Critical strikes with Torrential Wrath now trigger Conductive.\n\nIncreases the damage of Stormflow by 50%."
+          }
+        ],
+        "connections": [
+          7184,
+          29835
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pandarenserpentmount_lightning_blue",
+          "key": "inv_pandarenserpentmount_lightning_blue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}
