@@ -1,11 +1,22 @@
 # ascension-coa-scraper
 
-Extract and normalize [Project Ascension — Conquest of Azeroth](https://ascension.gg/en/v2/coa-builder/voljin)
-talent trees into a structured, reusable JSON dataset.
+Extract [Project Ascension](https://ascension.gg) into structured, reusable JSON —
+talent trees from the website, and the spells, visual effects and sounds behind them
+from the installed game client.
 
-The builder ships its entire talent dataset inside the server-rendered page, so this is
-plain HTTP — **no browser automation**. How that was determined, and how to re-validate
-it after a site update, is in [`docs/DATA_SOURCE.md`](docs/DATA_SOURCE.md).
+The two halves answer different questions and neither is sufficient alone. The builder
+says a Stormbringer talent grants spell 500041; the client says that spell is *Body of
+Lightning*, draws `shaman_lightningbolt_impact_v2.mdx` in both hands on cast, and plays
+`lightningbolt_saurfang_01.ogg`.
+
+**The Ascension realms close in September 2026.** The website half of this data
+disappears with them; the client half survives only as long as an installed copy does,
+and the launcher rewrites its archives on patch day.
+
+| | Source | Documented in |
+|---|---|---|
+| Talent trees | `ascension.gg`, one HTTP GET, no browser | [`docs/DATA_SOURCE.md`](docs/DATA_SOURCE.md) |
+| Spells, effects, sounds, icons | The installed client's MPQ archives | [`docs/CLIENT_DATA.md`](docs/CLIENT_DATA.md) |
 
 Tracked in [V1C-74](https://v1cferr.atlassian.net/browse/V1C-74).
 
@@ -16,36 +27,71 @@ uv sync                  # core
 uv sync --extra assets   # adds Pillow, required for --download-assets
 ```
 
-## Usage
+Reading the game client additionally needs StormLib, which is loaded at runtime and
+never compiled here:
 
 ```bash
-uv run ascension-coa scrape stormbringer
-uv run ascension-coa scrape stormbringer --download-assets
+export ASCENSION_STORMLIB=$(nix build --no-link --print-out-paths nixpkgs#stormlib)/lib/libstorm.so
+```
+
+## Usage
+
+### Talent trees, from the website
+
+```bash
 uv run ascension-coa list-classes
+uv run ascension-coa scrape stormbringer --out data/voljin
+uv run ascension-coa scrape stormbringer --realm-slug voljin-alpha --out data/voljin-alpha
 ```
 
 `scrape` takes a class name, slug, or numeric id, and is not special-cased for any
 class — `scrape necromancer` or `scrape 23` work the same way.
 
-| Option | Default | |
-|---|---|---|
-| `--out` | `data` | Output directory |
-| `--realm` | `voljin` | Realm slug in the builder URL |
-| `--realm-slug` | same as `--realm` | Realm to read from the payload; a page lists several (e.g. `voljin-alpha`) |
-| `--download-assets` | off | Crop this class's icons out of the sprite sheet |
-| `--cache-dir` | `.cache` | Cached HTTP responses |
-| `--no-cache` | off | Always re-download |
+| Option              | Default           |                                                                            |
+| ------------------- | ----------------- | -------------------------------------------------------------------------- |
+| `--out`             | `data`            | Output directory                                                           |
+| `--realm`           | `voljin`          | Realm slug in the builder URL                                              |
+| `--realm-slug`      | same as `--realm` | Realm to read from the payload; a page lists several (e.g. `voljin-alpha`) |
+| `--download-assets` | off               | Crop this class's icons out of the sprite sheet                            |
+| `--cache-dir`       | `.cache`          | Cached HTTP responses                                                      |
+| `--no-cache`        | off               | Always re-download                                                         |
+
+### Spells, effects and sounds, from the client
+
+```bash
+uv run ascension-coa client inventory                 # what the archives hold
+uv run ascension-coa client dump-dbc                  # decode tables to JSON
+uv run ascension-coa client effects  --dataset data/voljin/stormbringer \
+                                     --out data/client/effects/stormbringer.json
+uv run ascension-coa client extract  --from-effects data/client/effects/stormbringer.json \
+                                     --icons --out data/client/assets
+```
+
+`effects` takes its spell ids from a scraped dataset, which is what joins the two
+halves: the builder says which spells a class has, the client says what they look and
+sound like. `extract` then writes those files out — resolving each model's `.skin`
+geometry and `.blp` textures, so what lands on disk actually opens in a viewer.
+
+The client is autodetected under Wine/Bottles prefixes; override with `--client` or
+`$ASCENSION_CLIENT`. The archive index is cached in `.cache/`, since building it opens
+77 archives; pass `--reindex` after the launcher patches.
 
 ## Output
 
-```
-data/stormbringer/
+```bash
+data/voljin/stormbringer/
 ├── stormbringer.json     index: metadata, class info, pointers to trees
 ├── class.json            shared baseline tab
 ├── lightning.json
 ├── wind.json
 ├── maelstrom.json
 └── assets/icons/*.webp   only with --download-assets
+
+data/client/
+├── inventory.json                 archives, their contents, conflict count
+├── effects/stormbringer.json      spell -> models, sounds, icon, per cast moment
+└── assets/                        the model, texture and sound files themselves
+                                   (not versioned; extracted from your own install)
 ```
 
 Each tree file repeats `meta` and `class`, so it stands alone — a consumer that wants one
@@ -112,6 +158,38 @@ Notes on the schema:
 The dataset committed to this repo is generated without `--download-assets`, so its
 `icon.file` values are `null` and it stays self-consistent — extracted icons are build
 output and are not versioned.
+
+### Effects output
+
+```jsonc
+{
+  "source_archives": { "Spell": "patch-D.MPQ", "SpellVisual": "patch-S.MPQ", "…": "…" },
+  "spell_count": 173,
+  "missing_spell_ids": [],          // referenced by the builder, absent from Spell.dbc
+  "spells": [
+    {
+      "spell_id": 500041, "name": "Body of Lightning",
+      "talents": ["Body of Lightning"],
+      "icon": "Interface\\Icons\\_D3stormarmor",
+      "models": ["shaman_lightningbolt_impact_v2.mdx", "leishen_lightning_precast.m2"],
+      "sounds": ["Sound\\Spells\\lightningbolt_saurfang_01.ogg"],
+      "kits": [
+        { "slot": "cast", "kit_id": 21038,
+          "models": { "left_hand": "shaman_lightningbolt_impact_v2.mdx",
+                      "right_hand": "shaman_lightningbolt_impact_v2.mdx" },
+          "sound": { "id": 44032, "name": "…", "files": ["Sound\\…\\lightningbolt_saurfang_01.ogg"] } },
+        { "slot": "state", "kit_id": 21040,
+          "models": { "chest": "leishen_lightning_precast.m2" }, "sound": null }
+      ],
+      "missile_model": null, "missile_sound": null
+    }
+  ]
+}
+```
+
+`slot` is the moment of the cast (`precast`, `cast`, `impact`, `channel`, `state`,
+`persistent_area`, …) and the keys under `models` are attachment points. Kits that
+resolve to neither a model nor a sound are dropped rather than padding every spell.
 
 ## Re-running
 

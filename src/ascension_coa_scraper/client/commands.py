@@ -15,6 +15,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from . import schema
+from .assets import expand
 from .dbc import DbcError
 from .effects import EffectResolver, SpellEffects
 from .install import PATCH_ORDER_RULE, Install, InstallError, find_install
@@ -211,18 +212,43 @@ def run_effects(args: argparse.Namespace) -> int:
 def run_extract(args: argparse.Namespace) -> int:
     _, client = _open(args)
 
-    paths: list[str] = list(args.path or [])
-    if args.from_effects:
-        payload = json.loads(args.from_effects.read_text(encoding="utf-8"))
+    models: list[str] = []
+    others: list[str] = []
+    for path in args.path or []:
+        (models if path.lower().endswith((".m2", ".mdx")) else others).append(path)
+    for source in args.from_effects or []:
+        payload = json.loads(source.read_text(encoding="utf-8"))
         for spell in payload.get("spells", []):
-            paths.extend(spell.get("models") or [])
-            paths.extend(spell.get("sounds") or [])
+            models.extend(spell.get("models") or [])
+            others.extend(spell.get("sounds") or [])
             if args.icons and spell.get("icon"):
-                paths.append(spell["icon"] + ".blp")
+                others.append(spell["icon"] + ".blp")
 
     # Order-preserving dedup: the same model is referenced by many spells.
     seen: dict[str, None] = {}
-    for path in paths:
+    unresolved: list[str] = []
+
+    def exists(path: str) -> bool:
+        return client.provider(path) is not None
+
+    if args.bare:
+        for path in models:
+            seen.setdefault(path.replace("/", "\\"), None)
+    else:
+        # A model path alone is not loadable: the extension may need swapping, geometry
+        # lives in sibling .skin files, and texture names are inside the M2 itself.
+        expanded: dict[str, None] = {}
+        for path in models:
+            if path.replace("/", "\\") in expanded:
+                continue
+            expanded[path.replace("/", "\\")] = None
+            files = expand(path, exists, client.read)
+            if files.model is None:
+                unresolved.append(path)
+                continue
+            for companion in files.all_paths:
+                seen.setdefault(companion, None)
+    for path in others:
         seen.setdefault(path.replace("/", "\\"), None)
 
     written = failed = absent = 0
@@ -247,6 +273,9 @@ def run_extract(args: argparse.Namespace) -> int:
         written += 1
 
     print(f"  {written:,} files written to {args.out}")
+    if unresolved:
+        print(f"  {len(unresolved):,} model paths resolve to nothing under either "
+              f"extension: {unresolved[:4]}{' ...' if len(unresolved) > 4 else ''}")
     if absent:
         print(f"  {absent:,} referenced paths are in no archive "
               f"(broken references exist in the client too)")
@@ -302,8 +331,12 @@ def add_parser(subcommands: argparse._SubParsersAction) -> None:
     extract = verbs.add_parser("extract", parents=[common],
                                help="write asset files out of the archives")
     extract.add_argument("path", nargs="*", help="in-archive path (repeatable)")
-    extract.add_argument("--from-effects", type=Path, default=None,
-                         help="extract every model and sound named by an effects.json")
+    extract.add_argument("--from-effects", type=Path, action="append",
+                         help="extract every model and sound named by an effects.json "
+                              "(repeatable)")
+    extract.add_argument("--bare", action="store_true",
+                         help="write only the named model files, without resolving "
+                              "their .skin geometry and .blp textures")
     extract.add_argument("--icons", action="store_true",
                          help="also extract spell icon textures")
     extract.add_argument("--out", type=Path, default=Path("data/client/assets"))
