@@ -2,6 +2,8 @@
 
     ascension-coa scrape stormbringer [--download-assets]
     ascension-coa list-classes
+    ascension-coa client inventory
+    ascension-coa client effects --dataset data/voljin/stormbringer
 
 `scrape` is class-agnostic: any class name, slug, or id present in the payload works, so
 adding support for a new class is a matter of naming it.
@@ -15,6 +17,7 @@ from pathlib import Path
 
 from . import __version__, classmeta
 from .assets import AssetError, download_icons
+from .client import commands as client_commands
 from .discovery import DatasetNotFoundError, find_realms, select_realm
 from .export import write_dataset
 from .fetch import DEFAULT_REALM, Fetcher, FetchError
@@ -34,6 +37,7 @@ _EXPECTED_ERRORS = (
     FlightParseError,
     NormalizeError,
     SpriteError,
+    *client_commands.CLIENT_ERRORS,
 )
 
 
@@ -93,6 +97,8 @@ def build_parser() -> argparse.ArgumentParser:
     subcommands.add_parser(
         "list-classes", parents=[common], help="list the classes available in a realm"
     )
+
+    client_commands.add_parser(subcommands)
 
     return parser
 
@@ -154,6 +160,16 @@ def _run_scrape(args: argparse.Namespace, fetcher: Fetcher) -> int:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+
+    # The client subcommands read local archives; they need no HTTP session, and
+    # building one would make an offline run fail for no reason.
+    if args.command == "client":
+        try:
+            return args.func(args)
+        except _EXPECTED_ERRORS as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+
     cache_dir = None if args.no_cache else args.cache_dir
 
     try:

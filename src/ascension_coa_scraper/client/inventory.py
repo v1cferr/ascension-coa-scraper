@@ -9,9 +9,10 @@ is fast relative to the 26 GB it describes.
 from __future__ import annotations
 
 import ctypes
+import json
 from collections import Counter
 from dataclasses import dataclass
-from pathlib import PurePosixPath
+from pathlib import Path, PurePosixPath
 
 from .install import Chain
 from .mpq import Archive, MpqError
@@ -52,6 +53,41 @@ class InventoryResult:
 
     def paths_in(self, archive: str) -> list[str]:
         return sorted(p for p, names in self.providers.items() if archive in names)
+
+    def save(self, path: Path) -> None:
+        """Persist the index.
+
+        Building it opens all 77 archives and takes the better part of a minute, which
+        is long enough that every command would otherwise pay it. The index depends
+        only on the archives, so it is safe to reuse until the launcher patches them.
+        """
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({
+            "version": 1,
+            "archives": [
+                {
+                    "name": s.name, "role": s.role, "order": s.order, "size": s.size,
+                    "file_count": s.file_count, "listed": s.listed, "error": s.error,
+                    "by_extension": dict(s.by_extension or {}),
+                }
+                for s in self.scans
+            ],
+            "providers": self.providers,
+        }), encoding="utf-8")
+
+    @classmethod
+    def load(cls, path: Path) -> InventoryResult:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if raw.get("version") != 1:
+            raise ValueError(f"{path} is an index of version {raw.get('version')}, not 1")
+        scans = [
+            ArchiveScan(
+                a["name"], a["role"], a["order"], a["size"], a["file_count"],
+                a["listed"], a["error"], Counter(a["by_extension"]),
+            )
+            for a in raw["archives"]
+        ]
+        return cls(scans, raw["providers"])
 
     def find(self, *fragments: str) -> dict[str, list[str]]:
         """Every indexed path containing all ``fragments`` (case-insensitive)."""
