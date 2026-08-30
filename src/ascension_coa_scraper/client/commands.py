@@ -63,10 +63,16 @@ def run_inventory(args: argparse.Namespace) -> int:
         payload = {
             "client": str(install.root),
             "patch_order_rule": PATCH_ORDER_RULE,
+            "path_count": len(inventory.providers),
+            "conflict_count": len(conflicts),
             "archives": [asdict(s) | {"by_extension": dict(s.by_extension or {})}
                          for s in inventory.scans],
-            "conflicts": conflicts,
         }
+        # The full conflict map is ~112,000 entries and 14 MB of JSON. It is a debugging
+        # aid, regenerated from the cached index in seconds, so it is opt-in rather than
+        # something every summary carries.
+        if args.with_conflicts:
+            payload["conflicts"] = conflicts
         print("wrote", _write(args.out, payload))
     client.close()
     return 0
@@ -270,6 +276,8 @@ def add_parser(subcommands: argparse._SubParsersAction) -> None:
     inventory = verbs.add_parser("inventory", parents=[common],
                                  help="list archives, their contents and contested paths")
     inventory.add_argument("--out", type=Path, default=None, help="also write JSON here")
+    inventory.add_argument("--with-conflicts", action="store_true",
+                           help="include the full path-conflict map (large)")
     inventory.set_defaults(func=run_inventory)
 
     dump = verbs.add_parser("dump-dbc", parents=[common],
