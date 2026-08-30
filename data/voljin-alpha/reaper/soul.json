@@ -1,0 +1,2350 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:25+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:65f74e980350a40b127dc7b385cb04d0c584ec7eacfe11426a96efd6b370e074",
+    "talent_count": 153,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 30,
+    "name": "Reaper",
+    "slug": "reaper",
+    "class_file": "reaper",
+    "color": "rgb(10, 135, 107)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:reaper",
+      "key": "class-reaper",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 39,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 80,
+    "name": "Soul",
+    "slug": "soul",
+    "sort_order": 2,
+    "class_id": 30,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29689,
+        "name": "Deathchaser",
+        "slug": "deathchaser",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805190,
+        "spell_ids": [
+          805190
+        ],
+        "description_html": "Force death upon an enemy, dealing <span class=\"item-number\">13</span> + <span class=\"item-number\">8% AP</span> Shadowfrost Damage, repeating every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">1</span> seconds, and generates Runic Power.",
+        "description": "Force death upon an enemy, dealing 13 + 8% AP Shadowfrost Damage, repeating every 0 sec for 1 seconds, and generates Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805190,
+            "description_html": "Force death upon an enemy, dealing <span class=\"item-number\">13</span> + <span class=\"item-number\">8% AP</span> Shadowfrost Damage, repeating every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">1</span> seconds, and generates Runic Power.",
+            "description": "Force death upon an enemy, dealing 13 + 8% AP Shadowfrost Damage, repeating every 0 sec for 1 seconds, and generates Runic Power."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritstab_Border",
+          "key": "nhi_spiritstab_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 4056,
+        "name": "Weakened Souls",
+        "slug": "weakened-souls",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30107
+          ]
+        },
+        "spell_id": 92146,
+        "spell_ids": [
+          92146
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Soulrend</span> now also applies <span style=\"color: #ffffff; display: inline\">Weakened Soul</span>, increasing the target's Shadow and Frost damage taken from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Level 10 Passive\nYour Soulrend now also applies Weakened Soul, increasing the target's Shadow and Frost damage taken from you by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92146,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Soulrend</span> now also applies <span style=\"color: #ffffff; display: inline\">Weakened Soul</span>, increasing the target's Shadow and Frost damage taken from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Level 10 Passive\nYour Soulrend now also applies Weakened Soul, increasing the target's Shadow and Frost damage taken from you by 10%."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_souldarkening_Border",
+          "key": "nhi_souldarkening_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6716,
+        "name": "Soulforged Weaponry",
+        "slug": "soulforged-weaponry",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561127,
+        "spell_ids": [
+          561127,
+          561340
+        ],
+        "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />While dual-wielding, your auto attacks now have a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Murder</span> free of cost.",
+        "description": "Increases your off-hand weapon damage by 25%.\n\nWhile dual-wielding, your auto attacks now have a 8% chance to make your next Murder free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561127,
+            "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />While dual-wielding, your auto attacks now have a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Murder</span> free of cost.",
+            "description": "Increases your off-hand weapon damage by 25%.\n\nWhile dual-wielding, your auto attacks now have a 8% chance to make your next Murder free of cost."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561340,
+            "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.<br /><br />While dual-wielding, your auto attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Murder</span> free of cost.",
+            "description": "Increases your off-hand weapon damage by 50%.\n\nWhile dual-wielding, your auto attacks now have a 15% chance to make your next Murder free of cost."
+          }
+        ],
+        "connections": [
+          29689
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_weapon_shortblade_105",
+          "key": "inv_weapon_shortblade_105",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34466,
+        "name": "Mark of Death",
+        "slug": "mark-of-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560917,
+        "spell_ids": [
+          560917
+        ],
+        "description_html": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage dealt by Deathchaser by 15% and your hit chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560917,
+            "description_html": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage dealt by Deathchaser by 15% and your hit chance by 3%."
+          }
+        ],
+        "connections": [
+          29689
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_ghoststone_Border",
+          "key": "nhi_ghoststone_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9831,
+        "name": "Dirge",
+        "slug": "dirge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801328,
+        "spell_ids": [
+          801328
+        ],
+        "description_html": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">2</span> Soul Fragments</span><br />Strike the enemy with both weapons, dealing <span class=\"item-number\">70</span><span class=\"item-number\">%</span> (<span class=\"item-number\">130</span><span class=\"item-number\">%</span> if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.",
+        "description": "Generates 2 Soul Fragments\nStrike the enemy with both weapons, dealing 70% (130% if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801328,
+            "description_html": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">2</span> Soul Fragments</span><br />Strike the enemy with both weapons, dealing <span class=\"item-number\">70</span><span class=\"item-number\">%</span> (<span class=\"item-number\">130</span><span class=\"item-number\">%</span> if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.",
+            "description": "Generates 2 Soul Fragments\nStrike the enemy with both weapons, dealing 70% (130% if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power."
+          }
+        ],
+        "connections": [
+          6716
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_soulcleave4",
+          "key": "ability_demonhunter_soulcleave4",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6643,
+        "name": "Ghostly Weapon",
+        "slug": "ghostly-weapon",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803997,
+        "spell_ids": [
+          803997
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">40</span> sec recharge</span><br />Imbue your weapon with ghostly power for <span class=\"item-number\">15</span> seconds, causing melee attacks to deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> additional damage as Frost damage.",
+        "description": "2 Charges, 40 sec recharge\nImbue your weapon with ghostly power for 15 seconds, causing melee attacks to deal 25% additional damage as Frost damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803997,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">40</span> sec recharge</span><br />Imbue your weapon with ghostly power for <span class=\"item-number\">15</span> seconds, causing melee attacks to deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> additional damage as Frost damage.",
+            "description": "2 Charges, 40 sec recharge\nImbue your weapon with ghostly power for 15 seconds, causing melee attacks to deal 25% additional damage as Frost damage."
+          }
+        ],
+        "connections": [
+          6716,
+          34466
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_66_spirit_sword_Border",
+          "key": "custom_66_spirit_sword_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6723,
+        "name": "Shattered Souls",
+        "slug": "shattered-souls",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705441,
+        "spell_ids": [
+          705441
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Wraithblade</span> now deals double damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Soulrend</span>.",
+        "description": "Your Wraithblade now deals double damage to enemies affected by Soulrend.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705441,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Wraithblade</span> now deals double damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Soulrend</span>.",
+            "description": "Your Wraithblade now deals double damage to enemies affected by Soulrend."
+          }
+        ],
+        "connections": [
+          34466
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_RagedSpirit_Border",
+          "key": "custom_t_nhance_rpg_icons_ragedspirit_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9430,
+        "name": "Spirit Render",
+        "slug": "spirit-render",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 570338,
+        "spell_ids": [
+          570338
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">20</span>, scaling with your level.",
+        "description": "Level 20 Passive\nIncreases your spell penetration by 20, scaling with your level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570338,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">20</span>, scaling with your level.",
+            "description": "Level 20 Passive\nIncreases your spell penetration by 20, scaling with your level."
+          }
+        ],
+        "connections": [
+          4056
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_mawraid_01_blue",
+          "key": "inv_trinket_mawraid_01_blue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30315,
+        "name": "Soul Generator",
+        "slug": "soul-generator",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520056,
+        "spell_ids": [
+          520056
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Dirge</span> now generate <span class=\"item-number\">10</span> Runic Power.<br /><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Murder</span> now generate <span class=\"item-number\">1</span> additional <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>.",
+        "description": "Critical strikes with Dirge now generate 10 Runic Power.\n\nCritical strikes with Murder now generate 1 additional Reaped Soul.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520056,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Dirge</span> now generate <span class=\"item-number\">10</span> Runic Power.<br /><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Murder</span> now generate <span class=\"item-number\">1</span> additional <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>.",
+            "description": "Critical strikes with Dirge now generate 10 Runic Power.\n\nCritical strikes with Murder now generate 1 additional Reaped Soul."
+          }
+        ],
+        "connections": [
+          6643,
+          9831
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\item_icecrownringd",
+          "key": "item_icecrownringd",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34464,
+        "name": "Lamenting",
+        "slug": "lamenting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705397,
+        "spell_ids": [
+          705397
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ghostly Weapon</span> now heals for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.",
+        "description": "Damage dealt by Ghostly Weapon now heals for 50% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705397,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ghostly Weapon</span> now heals for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.",
+            "description": "Damage dealt by Ghostly Weapon now heals for 50% of the damage dealt."
+          }
+        ],
+        "connections": [
+          6643
+        ],
+        "choice_group": 977768,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_PsychicScream",
+          "key": "spell_shadow_psychicscream",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34465,
+        "name": "Death Dealer",
+        "slug": "death-dealer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705401,
+        "spell_ids": [
+          705401
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> and <span style=\"color: #ffffff; display: inline\">Soulrend</span> by <span class=\"item-number\">5</span> sec.",
+        "description": "Increases the duration of Ghostly Weapon and Soulrend by 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705401,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> and <span style=\"color: #ffffff; display: inline\">Soulrend</span> by <span class=\"item-number\">5</span> sec.",
+            "description": "Increases the duration of Ghostly Weapon and Soulrend by 5 sec."
+          }
+        ],
+        "connections": [
+          6643
+        ],
+        "choice_group": 977768,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_TwistedFaith",
+          "key": "spell_shadow_twistedfaith",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30111,
+        "name": "Deathwail",
+        "slug": "deathwail",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300791,
+        "spell_ids": [
+          300791
+        ],
+        "description_html": "Reduces the Runic Power cost of <span style=\"color: #ffffff; display: inline\">Wraithblade</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the Runic Power cost of Wraithblade by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300791,
+            "description_html": "Reduces the Runic Power cost of <span style=\"color: #ffffff; display: inline\">Wraithblade</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the Runic Power cost of Wraithblade by -50%."
+          }
+        ],
+        "connections": [
+          6723,
+          6643
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_spirit_Border",
+          "key": "_5_spirit_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30118,
+        "name": "Ghostly Magic",
+        "slug": "ghostly-magic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803998,
+        "spell_ids": [
+          803998,
+          807889
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Dirge</span>, and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Reap, Dirge, and Reliquary of the Lost by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803998,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Dirge</span>, and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Reap, Dirge, and Reliquary of the Lost by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807889,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Dirge</span>, and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Reap, Dirge, and Reliquary of the Lost by 20%."
+          }
+        ],
+        "connections": [
+          30315,
+          34464,
+          34465
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_shadowfurytga",
+          "key": "ability_warlock_shadowfurytga",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34507,
+        "name": "Ghastly Hilt",
+        "slug": "ghastly-hilt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560927,
+        "spell_ids": [
+          560927
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Ghostly Weapon</span> now causes your melee abilities to strike up to <span class=\"item-number\">2</span> additional targets near the primary target.",
+        "description": "Ghostly Weapon now causes your melee abilities to strike up to 2 additional targets near the primary target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560927,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Ghostly Weapon</span> now causes your melee abilities to strike up to <span class=\"item-number\">2</span> additional targets near the primary target.",
+            "description": "Ghostly Weapon now causes your melee abilities to strike up to 2 additional targets near the primary target."
+          }
+        ],
+        "connections": [
+          34464,
+          34465
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_qiraj_hiltornate",
+          "key": "inv_qiraj_hiltornate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6755,
+        "name": "Soulbender",
+        "slug": "soulbender",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804004,
+        "spell_ids": [
+          804004
+        ],
+        "description_html": "Significantly increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Deathchaser</span>.",
+        "description": "Significantly increases the Runic Power generated by Deathchaser.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804004,
+            "description_html": "Significantly increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Deathchaser</span>.",
+            "description": "Significantly increases the Runic Power generated by Deathchaser."
+          }
+        ],
+        "connections": [
+          30111,
+          34464,
+          34465
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spirittranquility_Border",
+          "key": "nhi_spirittranquility_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9267,
+        "name": "Spectre",
+        "slug": "spectre",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 561170,
+        "spell_ids": [
+          561170
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Underwalk</span> by <span class=\"item-number\">-10</span> sec.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Withering Touch</span> will now always apply <span style=\"color: #FFFFFF; display: inline\">Ghost Claw</span> to the target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warlock_spelldrain\" /><span class=\"name\">Ghost Claw (Speed)</span></div><span class=\"desc\">Chill an enemy with a ghostly claw, slowing and stealing <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> of their movement speed for <span class=\"item-number\">8</span> seconds.</span></div>",
+        "description": "Level 30 Passive\nReduces the cooldown of Underwalk by -10 sec.\n\nIn addition, Withering Touch will now always apply Ghost Claw to the target.Ghost Claw (Speed)Chill an enemy with a ghostly claw, slowing and stealing -40% of their movement speed for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561170,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Underwalk</span> by <span class=\"item-number\">-10</span> sec.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Withering Touch</span> will now always apply <span style=\"color: #FFFFFF; display: inline\">Ghost Claw</span> to the target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warlock_spelldrain\" /><span class=\"name\">Ghost Claw (Speed)</span></div><span class=\"desc\">Chill an enemy with a ghostly claw, slowing and stealing <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> of their movement speed for <span class=\"item-number\">8</span> seconds.</span></div>",
+            "description": "Level 30 Passive\nReduces the cooldown of Underwalk by -10 sec.\n\nIn addition, Withering Touch will now always apply Ghost Claw to the target.Ghost Claw (Speed)Chill an enemy with a ghostly claw, slowing and stealing -40% of their movement speed for 8 seconds."
+          }
+        ],
+        "connections": [
+          9430
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_WispSplode",
+          "key": "spell_nature_wispsplode",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30112,
+        "name": "Anima Ambusher",
+        "slug": "anima-ambusher",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705424,
+        "spell_ids": [
+          705424
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Spectre Stride</span> now deals an additional <span class=\"item-number\">125</span><span class=\"item-number\">%</span> of its damage dealt over <span class=\"item-number\">5</span> seconds.",
+        "description": "Spectre Stride now deals an additional 125% of its damage dealt over 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705424,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Spectre Stride</span> now deals an additional <span class=\"item-number\">125</span><span class=\"item-number\">%</span> of its damage dealt over <span class=\"item-number\">5</span> seconds.",
+            "description": "Spectre Stride now deals an additional 125% of its damage dealt over 5 seconds."
+          }
+        ],
+        "connections": [
+          30118
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_darkarts",
+          "key": "ability_warlock_darkarts",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 10543,
+        "name": "Fleeting Soul",
+        "slug": "fleeting-soul",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 712683,
+        "spell_ids": [
+          712683
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Soulslam</span> by <span class=\"item-number\">-15</span> sec.",
+        "description": "Reduces the cooldown of Soulslam by -15 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 712683,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Soulslam</span> by <span class=\"item-number\">-15</span> sec.",
+            "description": "Reduces the cooldown of Soulslam by -15 sec."
+          }
+        ],
+        "connections": [
+          30118
+        ],
+        "choice_group": 712683,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Magic_LesserInvisibilty",
+          "key": "spell_magic_lesserinvisibilty",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30543,
+        "name": "Soul Piercer",
+        "slug": "soul-piercer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 712484,
+        "spell_ids": [
+          712484
+        ],
+        "description_html": "Striking at least <span class=\"item-number\">1</span> enemy with <span style=\"color: #ffffff; display: inline\">Soulslam</span> now refunds its <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span>.",
+        "description": "Striking at least 1 enemy with Soulslam now refunds its Reaped Souls.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 712484,
+            "description_html": "Striking at least <span class=\"item-number\">1</span> enemy with <span style=\"color: #ffffff; display: inline\">Soulslam</span> now refunds its <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span>.",
+            "description": "Striking at least 1 enemy with Soulslam now refunds its Reaped Souls."
+          }
+        ],
+        "connections": [
+          30118
+        ],
+        "choice_group": 712683,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_soulbats_Border",
+          "key": "nhi_soulbats_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34469,
+        "name": "Reaver",
+        "slug": "reaver",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807419,
+        "spell_ids": [
+          807419
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Deathstalker</span>, <span style=\"color: #ffffff; display: inline\">Soul Shear</span>, and <span style=\"color: #ffffff; display: inline\">Soulstone Lure</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of Deathstalker, Soul Shear, and Soulstone Lure by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807419,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Deathstalker</span>, <span style=\"color: #ffffff; display: inline\">Soul Shear</span>, and <span style=\"color: #ffffff; display: inline\">Soulstone Lure</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of Deathstalker, Soul Shear, and Soulstone Lure by -50%."
+          }
+        ],
+        "connections": [
+          34507
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritualsummoning_Border",
+          "key": "nhi_spiritualsummoning_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6390,
+        "name": "Essence Harvest",
+        "slug": "essence-harvest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707908,
+        "spell_ids": [
+          707908
+        ],
+        "description_html": "Increases the additional Frost damage dealt by <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the additional Frost damage dealt by Ghostly Weapon by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707908,
+            "description_html": "Increases the additional Frost damage dealt by <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the additional Frost damage dealt by Ghostly Weapon by 10%."
+          }
+        ],
+        "connections": [
+          34507
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_alchemist_81_spiritedalchemiststone",
+          "key": "inv_alchemist_81_spiritedalchemiststone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6709,
+        "name": "Chasing Death",
+        "slug": "chasing-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707455,
+        "spell_ids": [
+          707455
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> used against a target below <span class=\"item-number\">20%</span> health will now reapply itself at the end of its duration until they die or until <span class=\"item-number\">5</span> seconds passes.",
+        "description": "Deathchaser used against a target below 20% health will now reapply itself at the end of its duration until they die or until 5 seconds passes.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707455,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> used against a target below <span class=\"item-number\">20%</span> health will now reapply itself at the end of its duration until they die or until <span class=\"item-number\">5</span> seconds passes.",
+            "description": "Deathchaser used against a target below 20% health will now reapply itself at the end of its duration until they die or until 5 seconds passes."
+          }
+        ],
+        "connections": [
+          6755
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Ice_Lament",
+          "key": "spell_ice_lament",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5470,
+        "name": "Spirit Chaser",
+        "slug": "spirit-chaser",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560434,
+        "spell_ids": [
+          560434
+        ],
+        "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Deathchaser</span>, and <span style=\"color: #FFFFFF; display: inline\">Wraithblade</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance and critical damage of Reap, Deathchaser, and Wraithblade by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560434,
+            "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Reap</span>, <span style=\"color: #ffffff; display: inline\">Deathchaser</span>, and <span style=\"color: #FFFFFF; display: inline\">Wraithblade</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance and critical damage of Reap, Deathchaser, and Wraithblade by 10%."
+          }
+        ],
+        "connections": [
+          6755
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritwraith_Border",
+          "key": "nhi_spiritwraith_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7315,
+        "name": "Apparition",
+        "slug": "apparition",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705389,
+        "spell_ids": [
+          705389
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Spectre Stride</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and reduces the chance for enemies to see you while stealthed.",
+        "description": "Increases the damage of Spectre Stride by 30% and reduces the chance for enemies to see you while stealthed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705389,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Spectre Stride</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and reduces the chance for enemies to see you while stealthed.",
+            "description": "Increases the damage of Spectre Stride by 30% and reduces the chance for enemies to see you while stealthed."
+          }
+        ],
+        "connections": [
+          10543,
+          30112,
+          30543
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_NightOfTheDead",
+          "key": "spell_shadow_nightofthedead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12843,
+        "name": "Shade",
+        "slug": "shade",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 573038,
+        "spell_ids": [
+          573038
+        ],
+        "description_html": "Become a shade, entering an improved stealth mode for <span class=\"item-number\">10</span> seconds and entering <span style=\"color: #ffffff; display: inline\">Underwalk</span>. Removes all movement impairing effects.",
+        "description": "Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573038,
+            "description_html": "Become a shade, entering an improved stealth mode for <span class=\"item-number\">10</span> seconds and entering <span style=\"color: #ffffff; display: inline\">Underwalk</span>. Removes all movement impairing effects.",
+            "description": "Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects."
+          }
+        ],
+        "connections": [
+          10543,
+          30543,
+          34469
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Shadow_LightBlue",
+          "key": "shadow_lightblue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6521,
+        "name": "Purgatory",
+        "slug": "purgatory",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504046,
+        "spell_ids": [
+          504046
+        ],
+        "description_html": "When you gain <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span>, the damage of your <span style=\"color: #ffffff; display: inline\">Soulrend</span> and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+        "description": "When you gain Soul Infusion, the damage of your Soulrend and Reliquary of the Lost is increased by 20% for 6 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504046,
+            "description_html": "When you gain <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span>, the damage of your <span style=\"color: #ffffff; display: inline\">Soulrend</span> and <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+            "description": "When you gain Soul Infusion, the damage of your Soulrend and Reliquary of the Lost is increased by 20% for 6 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [
+          6390,
+          6709
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_improvedsoulleech",
+          "key": "ability_warlock_improvedsoulleech",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34470,
+        "name": "Soul Bane",
+        "slug": "soul-bane",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705392,
+        "spell_ids": [
+          705392
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Reduces the cooldown of Reliquary of the Lost by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705392,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Reduces the cooldown of Reliquary of the Lost by -5 sec."
+          }
+        ],
+        "connections": [
+          5470,
+          6709
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_detectlesserinvisibility",
+          "key": "spell_shadow_detectlesserinvisibility",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4267,
+        "name": "Beyond the Veil",
+        "slug": "beyond-the-veil",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 804053,
+        "spell_ids": [
+          804053
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Entering <span style=\"color: #ffffff; display: inline\">Underwalk</span> now grants you <span style=\"color: #ffffff; display: inline\">Beyond the Veil</span>, increasing movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allowing you to walk on water.",
+        "description": "Level 40 Passive\nEntering Underwalk now grants you Beyond the Veil, increasing movement speed by 30% and allowing you to walk on water.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804053,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Entering <span style=\"color: #ffffff; display: inline\">Underwalk</span> now grants you <span style=\"color: #ffffff; display: inline\">Beyond the Veil</span>, increasing movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allowing you to walk on water.",
+            "description": "Level 40 Passive\nEntering Underwalk now grants you Beyond the Veil, increasing movement speed by 30% and allowing you to walk on water."
+          }
+        ],
+        "connections": [
+          9267
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SoulHarvest2_Blue",
+          "key": "soulharvest2_blue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30536,
+        "name": "The Jailer's Call",
+        "slug": "the-jailers-call",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805195,
+        "spell_ids": [
+          805195
+        ],
+        "description_html": "Attacks against enemies below <span class=\"item-number\">20%</span> health deal an additional <span class=\"item-number\">140</span> + <span class=\"item-number\">18% AP</span> Shadow damage.",
+        "description": "Attacks against enemies below 20% health deal an additional 140 + 18% AP Shadow damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805195,
+            "description_html": "Attacks against enemies below <span class=\"item-number\">20%</span> health deal an additional <span class=\"item-number\">140</span> + <span class=\"item-number\">18% AP</span> Shadow damage.",
+            "description": "Attacks against enemies below 20% health deal an additional 140 + 18% AP Shadow damage."
+          }
+        ],
+        "connections": [
+          7315,
+          10543,
+          30543
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mawrat",
+          "key": "inv_mawrat",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8292,
+        "name": "Spiritual Reflexes",
+        "slug": "spiritual-reflexes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705436,
+        "spell_ids": [
+          705436
+        ],
+        "description_html": "While below <span class=\"item-number\">35%</span> maximum health, your chance to dodge attacks is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and dodging an attack unleashes <span style=\"color: #ffffff; display: inline\">Soul Harvest</span> on the target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritfire_border\" /><span class=\"name\">Soul Harvest (Damage)</span></div><span class=\"desc\">Blasts your target for <span class=\"item-number\">1</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% shadow SP</span> Shadow Damage, healing for <span class=\"item-number\">100%</span> of the damage dealt.</span></div>",
+        "description": "While below 35% maximum health, your chance to dodge attacks is increased by 25% and dodging an attack unleashes Soul Harvest on the target.Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705436,
+            "description_html": "While below <span class=\"item-number\">35%</span> maximum health, your chance to dodge attacks is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and dodging an attack unleashes <span style=\"color: #ffffff; display: inline\">Soul Harvest</span> on the target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritfire_border\" /><span class=\"name\">Soul Harvest (Damage)</span></div><span class=\"desc\">Blasts your target for <span class=\"item-number\">1</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% shadow SP</span> Shadow Damage, healing for <span class=\"item-number\">100%</span> of the damage dealt.</span></div>",
+            "description": "While below 35% maximum health, your chance to dodge attacks is increased by 25% and dodging an attack unleashes Soul Harvest on the target.Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt."
+          }
+        ],
+        "connections": [
+          6521,
+          12843
+        ],
+        "choice_group": 99414,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_curseweak_Border",
+          "key": "nhi_curseweak_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30549,
+        "name": "Death's Presence",
+        "slug": "deaths-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520371,
+        "spell_ids": [
+          520371
+        ],
+        "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+        "description": "Increases all damage dealt by party and raid members by 3%.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520371,
+            "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+            "description": "Increases all damage dealt by party and raid members by 3%.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          6521,
+          12843
+        ],
+        "choice_group": 99414,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritamulet_Border",
+          "key": "nhi_spiritamulet_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6724,
+        "name": "Spectre's Call",
+        "slug": "spectres-call",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705386,
+        "spell_ids": [
+          705386,
+          707802
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Deathwind</span>, <span style=\"color: #ffffff; display: inline\">Murder</span>, and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Deathwind, Murder, and Soul Strike by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705386,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Deathwind</span>, <span style=\"color: #ffffff; display: inline\">Murder</span>, and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Deathwind, Murder, and Soul Strike by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707802,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Deathwind</span>, <span style=\"color: #ffffff; display: inline\">Murder</span>, and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Deathwind, Murder, and Soul Strike by 30%."
+          }
+        ],
+        "connections": [
+          6709,
+          34470
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_ghostlycharger",
+          "key": "inv_ghostlycharger",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29601,
+        "name": "Endbringer",
+        "slug": "endbringer",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800922,
+        "spell_ids": [
+          800922
+        ],
+        "description_html": "Become an <span style=\"color: #ffffff; display: inline\">Endbringer</span> for <span class=\"item-number\">15</span> seconds, increasing the damage of <span style=\"color: #ffffff; display: inline\">Dirge</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, the range by <span class=\"item-number\">20</span> yds, and causes it to generate <span class=\"item-number\">3</span> <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span>.<br /><br />For the duration, <span style=\"color: #ffffff; display: inline\">Dirge</span> will heal you for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of its damage dealt.",
+        "description": "Become an Endbringer for 15 seconds, increasing the damage of Dirge by 30%, the range by 20 yds, and causes it to generate 3 Reaped Souls.\n\nFor the duration, Dirge will heal you for 75% of its damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800922,
+            "description_html": "Become an <span style=\"color: #ffffff; display: inline\">Endbringer</span> for <span class=\"item-number\">15</span> seconds, increasing the damage of <span style=\"color: #ffffff; display: inline\">Dirge</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, the range by <span class=\"item-number\">20</span> yds, and causes it to generate <span class=\"item-number\">3</span> <span style=\"color: #5ee2ff; display: inline\">Reaped Souls</span>.<br /><br />For the duration, <span style=\"color: #ffffff; display: inline\">Dirge</span> will heal you for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of its damage dealt.",
+            "description": "Become an Endbringer for 15 seconds, increasing the damage of Dirge by 30%, the range by 20 yds, and causes it to generate 3 Reaped Souls.\n\nFor the duration, Dirge will heal you for 75% of its damage dealt."
+          }
+        ],
+        "connections": [
+          8292,
+          30536,
+          30549
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frozenghost_Border",
+          "key": "nhi_frozenghost_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31366,
+        "name": "The End Is Near",
+        "slug": "the-end-is-near",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680996,
+        "spell_ids": [
+          680996
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Wraithblade</span> now creates a spectral version of yourself for <span class=\"item-number\">12</span> seconds that casts <span style=\"color: #ffffff; display: inline\">Dirge</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> on enemies.",
+        "description": "Wraithblade now creates a spectral version of yourself for 12 seconds that casts Dirge and Murder on enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680996,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Wraithblade</span> now creates a spectral version of yourself for <span class=\"item-number\">12</span> seconds that casts <span style=\"color: #ffffff; display: inline\">Dirge</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> on enemies.",
+            "description": "Wraithblade now creates a spectral version of yourself for 12 seconds that casts Dirge and Murder on enemies."
+          }
+        ],
+        "connections": [
+          8292,
+          30549
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_soullink",
+          "key": "ability_warlock_soullink",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30548,
+        "name": "Lord of Death",
+        "slug": "lord-of-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805194,
+        "spell_ids": [
+          805194
+        ],
+        "description_html": "Abilities affected by <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> now deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more damage per additional target.",
+        "description": "Abilities affected by Ghostly Weapon now deal 25% more damage per additional target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805194,
+            "description_html": "Abilities affected by <span style=\"color: #FFFFFF; display: inline\">Ghostly Weapon</span> now deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more damage per additional target.",
+            "description": "Abilities affected by Ghostly Weapon now deal 25% more damage per additional target."
+          }
+        ],
+        "connections": [
+          6724,
+          8292,
+          30549
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_cloth_raidpriest_r_01",
+          "key": "inv_helm_cloth_raidpriest_r_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4266,
+        "name": "Sepulchral Renewal",
+        "slug": "sepulchral-renewal",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 561102,
+        "spell_ids": [
+          561102
+        ],
+        "description_html": "Resets the cooldown of <span style=\"color: #ffffff; display: inline\">Limbo</span>, <span style=\"color: #ffffff; display: inline\">Soulslam</span>, and <span style=\"color: #ffffff; display: inline\">Shade</span>.<br /><br />Usable while stealthed.",
+        "description": "Resets the cooldown of Limbo, Soulslam, and Shade.\n\nUsable while stealthed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561102,
+            "description_html": "Resets the cooldown of <span style=\"color: #ffffff; display: inline\">Limbo</span>, <span style=\"color: #ffffff; display: inline\">Soulslam</span>, and <span style=\"color: #ffffff; display: inline\">Shade</span>.<br /><br />Usable while stealthed.",
+            "description": "Resets the cooldown of Limbo, Soulslam, and Shade.\n\nUsable while stealthed."
+          }
+        ],
+        "connections": [
+          4267
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_soulblessing_Border",
+          "key": "nhi_soulblessing_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5182,
+        "name": "Gravesite",
+        "slug": "gravesite",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572213,
+        "spell_ids": [
+          572213
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Endbringer</span> now marks the ground beneath you as your <span style=\"color: #ffffff; display: inline\">Gravesite</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Direct critical strikes made against enemies within a <span style=\"color: #ffffff; display: inline\">Gravesite</span> now deals <span class=\"item-number\">530</span> + <span class=\"item-number\">36% AP</span> Shadow damage.<br /><br />",
+        "description": "Casting Endbringer now marks the ground beneath you as your Gravesite for 15 seconds.\n\nDirect critical strikes made against enemies within a Gravesite now deals 530 + 36% AP Shadow damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572213,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Endbringer</span> now marks the ground beneath you as your <span style=\"color: #ffffff; display: inline\">Gravesite</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Direct critical strikes made against enemies within a <span style=\"color: #ffffff; display: inline\">Gravesite</span> now deals <span class=\"item-number\">530</span> + <span class=\"item-number\">36% AP</span> Shadow damage.<br /><br />",
+            "description": "Casting Endbringer now marks the ground beneath you as your Gravesite for 15 seconds.\n\nDirect critical strikes made against enemies within a Gravesite now deals 530 + 36% AP Shadow damage."
+          }
+        ],
+        "connections": [
+          29601
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_soulgrave_Border",
+          "key": "nhi_soulgrave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7782,
+        "name": "Soulrot",
+        "slug": "soulrot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805196,
+        "spell_ids": [
+          805196
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> now applies <span style=\"color: #FFFFFF; display: inline\">Soulrot</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_souldrain_border\" /><span class=\"name\">Soulrot</span></div><span class=\"desc\">Rot the soul of your target, cursing them for <span class=\"item-number\">15</span> seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. <br /><br />Each instance of damage from <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> adds <span class=\"item-number\">1</span> stack to this effect, up to <span class=\"item-number\">20</span> stacks. Dispelling this effect causes the dispeller to instantly take <span class=\"item-number\">1200</span> + <span class=\"item-number\">200% AP</span> Shadow Damage.</span></div>",
+        "description": "Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued.\n\nEach instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805196,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> now applies <span style=\"color: #FFFFFF; display: inline\">Soulrot</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_souldrain_border\" /><span class=\"name\">Soulrot</span></div><span class=\"desc\">Rot the soul of your target, cursing them for <span class=\"item-number\">15</span> seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. <br /><br />Each instance of damage from <span style=\"color: #FFFFFF; display: inline\">Deathchaser</span> adds <span class=\"item-number\">1</span> stack to this effect, up to <span class=\"item-number\">20</span> stacks. Dispelling this effect causes the dispeller to instantly take <span class=\"item-number\">1200</span> + <span class=\"item-number\">200% AP</span> Shadow Damage.</span></div>",
+            "description": "Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued.\n\nEach instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage."
+          }
+        ],
+        "connections": [
+          31366
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_souldrain_Border",
+          "key": "nhi_souldrain_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34460,
+        "name": "Beyond Death",
+        "slug": "beyond-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 80,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301193,
+        "spell_ids": [
+          301193
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Reliquary of the Lost</span> now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to launch an additional <span style=\"color: #FFFFFF; display: inline\">Soul Bolt</span>.",
+        "description": "Dealing damage with Reliquary of the Lost now has a 8% chance to launch an additional Soul Bolt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301193,
+            "description_html": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Reliquary of the Lost</span> now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to launch an additional <span style=\"color: #FFFFFF; display: inline\">Soul Bolt</span>.",
+            "description": "Dealing damage with Reliquary of the Lost now has a 8% chance to launch an additional Soul Bolt."
+          }
+        ],
+        "connections": [
+          30548
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowentagle_Border",
+          "key": "nhi_shadowentagle_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,2334 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:21+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:3243d987696a056b8094fc412e54ce2833374e6fe629e5dd55a2d9b1760bf815",
+    "talent_count": 160,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 23,
+    "name": "Necromancer",
+    "slug": "necromancer",
+    "class_file": "necromancer",
+    "color": "rgb(69, 219, 156)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:necromancer",
+      "key": "class-necromancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 35,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 59,
+    "name": "Death",
+    "slug": "death",
+    "sort_order": 1,
+    "class_id": 23,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29866,
+        "name": "Flesh to Worms",
+        "slug": "flesh-to-worms",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500338,
+        "spell_ids": [
+          500338
+        ],
+        "description_html": "Disease an enemy, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">11.06% shadow SP</span> Plague damage and generating Runic Power every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds.<br /><br />",
+        "description": "Disease an enemy, dealing 15 + 11.06% shadow SP Plague damage and generating Runic Power every 3 sec for 18 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500338,
+            "description_html": "Disease an enemy, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">11.06% shadow SP</span> Plague damage and generating Runic Power every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds.<br /><br />",
+            "description": "Disease an enemy, dealing 15 + 11.06% shadow SP Plague damage and generating Runic Power every 3 sec for 18 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pet_batpetmaldraxxus",
+          "key": "inv_pet_batpetmaldraxxus",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4034,
+        "name": "Crypt Plague",
+        "slug": "crypt-plague",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            29244
+          ]
+        },
+        "spell_id": 92121,
+        "spell_ids": [
+          92121
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now applies <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> and <span style=\"color: #ffffff; display: inline\">Lichfrost</span> applies <span class=\"item-number\">2</span> stacks.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_natureswrath_border\" /><span class=\"name\">Crypt Plague (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">2</span> + <span class=\"item-number\">6% SP</span> Plague Damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+        "description": "Level 10 Passive\nDamage dealt by Crypt Swarm now applies 1 stack of Crypt Plague and Lichfrost applies 2 stacks.Crypt Plague (Damage)Deals 2 + 6% SP Plague Damage every 2 sec for 10 seconds, stacking 10 times.\n\nAdditional applications do not refresh duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92121,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now applies <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> and <span style=\"color: #ffffff; display: inline\">Lichfrost</span> applies <span class=\"item-number\">2</span> stacks.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_natureswrath_border\" /><span class=\"name\">Crypt Plague (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">2</span> + <span class=\"item-number\">6% SP</span> Plague Damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+            "description": "Level 10 Passive\nDamage dealt by Crypt Swarm now applies 1 stack of Crypt Plague and Lichfrost applies 2 stacks.Crypt Plague (Damage)Deals 2 + 6% SP Plague Damage every 2 sec for 10 seconds, stacking 10 times.\n\nAdditional applications do not refresh duration."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_PlagueCloud",
+          "key": "spell_shadow_plaguecloud",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 11904,
+        "name": "Cycle of Death",
+        "slug": "cycle-of-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560727,
+        "spell_ids": [
+          560727
+        ],
+        "description_html": "Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your spell haste by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560727,
+            "description_html": "Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your spell haste by 5%."
+          }
+        ],
+        "connections": [
+          29866
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_holy_turnundead",
+          "key": "spell_holy_turnundead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33752,
+        "name": "Master of Death",
+        "slug": "master-of-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806328,
+        "spell_ids": [
+          806328
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #ffffff; display: inline\">Crypt Plague</span>.",
+        "description": "Casting Command spells on an enemy now applies Crypt Plague.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806328,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #ffffff; display: inline\">Crypt Plague</span>.",
+            "description": "Casting Command spells on an enemy now applies Crypt Plague."
+          }
+        ],
+        "connections": [
+          29866
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DeathAndDecay",
+          "key": "spell_shadow_deathanddecay",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7808,
+        "name": "Rotting Flesh",
+        "slug": "rotting-flesh",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301304,
+        "spell_ids": [
+          301304
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and allows its periodic damage to scale with your spell haste.",
+        "description": "Increases the damage of Flesh to Worms by 25% and allows its periodic damage to scale with your spell haste.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301304,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and allows its periodic damage to scale with your spell haste.",
+            "description": "Increases the damage of Flesh to Worms by 25% and allows its periodic damage to scale with your spell haste."
+          }
+        ],
+        "connections": [
+          11904
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_RaiseDead",
+          "key": "spell_shadow_raisedead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6904,
+        "name": "Swarmer",
+        "slug": "swarmer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704528,
+        "spell_ids": [
+          704528
+        ],
+        "description_html": "Increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">2</span> per tick.",
+        "description": "Increases the Runic Power generated by Crypt Swarm by 2 per tick.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704528,
+            "description_html": "Increases the Runic Power generated by <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">2</span> per tick.",
+            "description": "Increases the Runic Power generated by Crypt Swarm by 2 per tick."
+          }
+        ],
+        "connections": [
+          11904,
+          33752
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DarkSummoning",
+          "key": "spell_shadow_darksummoning",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6863,
+        "name": "Damnation",
+        "slug": "damnation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806149,
+        "spell_ids": [
+          806149,
+          807925
+        ],
+        "description_html": "Increases your Shadow damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, doubled against enemies below <span class=\"item-number\">35%</span> health.",
+        "description": "Increases your Shadow damage by 5%, doubled against enemies below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806149,
+            "description_html": "Increases your Shadow damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, doubled against enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Increases your Shadow damage by 5%, doubled against enemies below 35% health."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807925,
+            "description_html": "Increases your Shadow damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, doubled against enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Increases your Shadow damage by 10%, doubled against enemies below 35% health."
+          }
+        ],
+        "connections": [
+          33752
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_deathcoil_Border",
+          "key": "nhi_deathcoil_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19222,
+        "name": "Plague Science",
+        "slug": "plague-science",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 704163,
+        "spell_ids": [
+          704163
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Your diseases and <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now deal <span class=\"item-number\">125</span><span class=\"item-number\">%</span> increased damage to enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Level 20 Passive\nYour diseases and Crypt Swarm now deal 125% increased damage to enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704163,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Your diseases and <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now deal <span class=\"item-number\">125</span><span class=\"item-number\">%</span> increased damage to enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Level 20 Passive\nYour diseases and Crypt Swarm now deal 125% increased damage to enemies below 20% health."
+          }
+        ],
+        "connections": [
+          4034
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pet_diseasedsquirrel",
+          "key": "inv_pet_diseasedsquirrel",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 31245,
+        "name": "Plague of Undeath",
+        "slug": "plague-of-undeath",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801945,
+        "spell_ids": [
+          801945
+        ],
+        "description_html": "Disease an enemy dealing <span class=\"item-number\">32</span> + <span class=\"item-number\">25% shadow SP</span> Plague damage every <span class=\"item-number\">3</span> sec and reduces the targets Holy healing received by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />If <span style=\"color: #ffffff; display: inline\">Plague of Undeath</span> is dispelled, the enemy takes <span class=\"item-number\">456</span> + <span class=\"item-number\">125% shadow SP</span> Plague damage and is stunned for <span class=\"item-number\">5</span> seconds.<br /><br />",
+        "description": "Disease an enemy dealing 32 + 25% shadow SP Plague damage every 3 sec and reduces the targets Holy healing received by -40% for 20 seconds.\n\nIf Plague of Undeath is dispelled, the enemy takes 456 + 125% shadow SP Plague damage and is stunned for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801945,
+            "description_html": "Disease an enemy dealing <span class=\"item-number\">32</span> + <span class=\"item-number\">25% shadow SP</span> Plague damage every <span class=\"item-number\">3</span> sec and reduces the targets Holy healing received by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />If <span style=\"color: #ffffff; display: inline\">Plague of Undeath</span> is dispelled, the enemy takes <span class=\"item-number\">456</span> + <span class=\"item-number\">125% shadow SP</span> Plague damage and is stunned for <span class=\"item-number\">5</span> seconds.<br /><br />",
+            "description": "Disease an enemy dealing 32 + 25% shadow SP Plague damage every 3 sec and reduces the targets Holy healing received by -40% for 20 seconds.\n\nIf Plague of Undeath is dispelled, the enemy takes 456 + 125% shadow SP Plague damage and is stunned for 5 seconds."
+          }
+        ],
+        "connections": [
+          7808
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0000s_0000_spirits_Border",
+          "key": "epic_rpg_icon_pack_death_icon_0000s_0000_spirits_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6295,
+        "name": "Creeping Crypt",
+        "slug": "creeping-crypt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300960,
+        "spell_ids": [
+          300960
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> maximum health.",
+        "description": "Increases the critical strike chance of Flesh to Worms by 25% against enemies below 35% maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300960,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> maximum health.",
+            "description": "Increases the critical strike chance of Flesh to Worms by 25% against enemies below 35% maximum health."
+          }
+        ],
+        "connections": [
+          6904
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathwing_sealarmorbreachgreen",
+          "key": "ability_deathwing_sealarmorbreachgreen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30821,
+        "name": "Dark Harvester",
+        "slug": "dark-harvester",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807960,
+        "spell_ids": [
+          807960
+        ],
+        "description_html": "Increases your critical strike and hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike and hit chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807960,
+            "description_html": "Increases your critical strike and hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike and hit chance by 3%."
+          }
+        ],
+        "connections": [
+          6863
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+          "key": "spell_shadow_auraofdarkness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34982,
+        "name": "Expunge",
+        "slug": "expunge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705754,
+        "spell_ids": [
+          705754
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #ffffff; display: inline\">Expunge</span> if they are <span style=\"color: #7fff00; display: inline\">Diseased</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3acidcloud\" /><span class=\"name\">Expunge (Talent)</span></div><span class=\"desc\">Increases the target's damage taken from your Necromancer diseases by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times.</span></div>",
+        "description": "Casting Command spells on an enemy now applies Expunge if they are Diseased.Expunge (Talent)Increases the target's damage taken from your Necromancer diseases by 10% for 10 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705754,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #ffffff; display: inline\">Expunge</span> if they are <span style=\"color: #7fff00; display: inline\">Diseased</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3acidcloud\" /><span class=\"name\">Expunge (Talent)</span></div><span class=\"desc\">Increases the target's damage taken from your Necromancer diseases by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times.</span></div>",
+            "description": "Casting Command spells on an enemy now applies Expunge if they are Diseased.Expunge (Talent)Increases the target's damage taken from your Necromancer diseases by 10% for 10 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [
+          31245
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3acidcloud",
+          "key": "d3acidcloud",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30804,
+        "name": "Virulency",
+        "slug": "virulency",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801938,
+        "spell_ids": [
+          801938
+        ],
+        "description_html": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.<br /><br />You may use this abilty again within <span class=\"item-number\">10</span> sec to <span style=\"color: #FFFFFF; display: inline\">Infest</span> another target, applying the copied diseases.",
+        "description": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.\n\nYou may use this abilty again within 10 sec to Infest another target, applying the copied diseases.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801938,
+            "description_html": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.<br /><br />You may use this abilty again within <span class=\"item-number\">10</span> sec to <span style=\"color: #FFFFFF; display: inline\">Infest</span> another target, applying the copied diseases.",
+            "description": "Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.\n\nYou may use this abilty again within 10 sec to Infest another target, applying the copied diseases."
+          }
+        ],
+        "connections": [
+          6295,
+          30821,
+          31245
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_maldraxxus_shaman",
+          "key": "ability_maldraxxus_shaman",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6960,
+        "name": "Foul Contagion",
+        "slug": "foul-contagion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300965,
+        "spell_ids": [
+          300965
+        ],
+        "description_html": "Applying <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> on the target by <span class=\"item-number\">1</span> sec.",
+        "description": "Applying Crypt Plague now extends the duration of Flesh to Worms on the target by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300965,
+            "description_html": "Applying <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Flesh to Worms</span> on the target by <span class=\"item-number\">1</span> sec.",
+            "description": "Applying Crypt Plague now extends the duration of Flesh to Worms on the target by 1 sec."
+          }
+        ],
+        "connections": [
+          30821
+        ],
+        "choice_group": 802990,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_Explode_Ghoul",
+          "key": "spell_deathknight_explode_ghoul",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30835,
+        "name": "Necrosis",
+        "slug": "necrosis",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802990,
+        "spell_ids": [
+          802990
+        ],
+        "description_html": "Increases the duration of your diseases by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of your diseases by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802990,
+            "description_html": "Increases the duration of your diseases by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of your diseases by 25%."
+          }
+        ],
+        "connections": [
+          30821
+        ],
+        "choice_group": 802990,
+        "icon": {
+          "source_path": "Interface\\Icons\\artifactability_unholydeathknight_flagellation",
+          "key": "artifactability_unholydeathknight_flagellation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9223,
+        "name": "Rotting Flesh",
+        "slug": "rotting-flesh",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 574138,
+        "spell_ids": [
+          574138
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Applying <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> to an enemy now additionally adds <span style=\"color: #ffffff; display: inline\">Rotting Flesh</span> to your Undead minions, increasing their damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack for <span class=\"item-number\">5</span> sec.",
+        "description": "Level 30 Passive\nApplying Crypt Plague to an enemy now additionally adds Rotting Flesh to your Undead minions, increasing their damage dealt by 2% per stack for 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574138,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Applying <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> to an enemy now additionally adds <span style=\"color: #ffffff; display: inline\">Rotting Flesh</span> to your Undead minions, increasing their damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack for <span class=\"item-number\">5</span> sec.",
+            "description": "Level 30 Passive\nApplying Crypt Plague to an enemy now additionally adds Rotting Flesh to your Undead minions, increasing their damage dealt by 2% per stack for 5 sec."
+          }
+        ],
+        "connections": [
+          19222
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_decomposingaura",
+          "key": "ability_deathknight_decomposingaura",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6965,
+        "name": "Touch of Death",
+        "slug": "touch-of-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707113,
+        "spell_ids": [
+          707113
+        ],
+        "description_html": "Allows <span style=\"color: #FFFFFF; display: inline\">Expunge</span> to stack an additional time and increases the range of your Death spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Allows Expunge to stack an additional time and increases the range of your Death spells by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707113,
+            "description_html": "Allows <span style=\"color: #FFFFFF; display: inline\">Expunge</span> to stack an additional time and increases the range of your Death spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Allows Expunge to stack an additional time and increases the range of your Death spells by 20%."
+          }
+        ],
+        "connections": [
+          34982
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill47_Border",
+          "key": "_5_druideskill47_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29241,
+        "name": "Crypt Explosion",
+        "slug": "crypt-explosion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500572,
+        "spell_ids": [
+          500572
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> to <span class=\"item-number\">3</span> enemies near the primary target.",
+        "description": "Casting Command spells on an enemy now applies Crypt Plague to 3 enemies near the primary target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500572,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells on an enemy now applies <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> to <span class=\"item-number\">3</span> enemies near the primary target.",
+            "description": "Casting Command spells on an enemy now applies Crypt Plague to 3 enemies near the primary target."
+          }
+        ],
+        "connections": [
+          34982
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_necrolord_fleshcraft",
+          "key": "ability_necrolord_fleshcraft",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30917,
+        "name": "Creeping Plagues",
+        "slug": "creeping-plagues",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572130,
+        "spell_ids": [
+          572130
+        ],
+        "description_html": "You may now <span style=\"color: #ffffff; display: inline\">Infest</span> an additional target after using <span style=\"color: #ffffff; display: inline\">Virulency</span>.",
+        "description": "You may now Infest an additional target after using Virulency.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572130,
+            "description_html": "You may now <span style=\"color: #ffffff; display: inline\">Infest</span> an additional target after using <span style=\"color: #ffffff; display: inline\">Virulency</span>.",
+            "description": "You may now Infest an additional target after using Virulency."
+          }
+        ],
+        "connections": [
+          30804
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_necro_necroticsmash",
+          "key": "spell_necro_necroticsmash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33759,
+        "name": "Pandemic",
+        "slug": "pandemic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560798,
+        "spell_ids": [
+          560798
+        ],
+        "description_html": "Damage dealt by your Undead minions now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Virulency</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Damage dealt by your Undead minions now reduces the cooldown of Virulency by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560798,
+            "description_html": "Damage dealt by your Undead minions now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Virulency</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Damage dealt by your Undead minions now reduces the cooldown of Virulency by -1 sec."
+          }
+        ],
+        "connections": [
+          30804
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_sicklypolymorph",
+          "key": "spell_nature_sicklypolymorph",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6961,
+        "name": "Festering Decay",
+        "slug": "festering-decay",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806324,
+        "spell_ids": [
+          806324
+        ],
+        "description_html": "Reduces the cost of <span style=\"color: #90ee90; display: inline\">Command</span> spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and causes them to increase the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Reduces the cost of Command spells by -15% and causes them to increase the target's spell damage taken by 10% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806324,
+            "description_html": "Reduces the cost of <span style=\"color: #90ee90; display: inline\">Command</span> spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and causes them to increase the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Reduces the cost of Command spells by -15% and causes them to increase the target's spell damage taken by 10% for 15 seconds."
+          }
+        ],
+        "connections": [
+          6960,
+          30835
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DeathCoilV2_Cyan",
+          "key": "deathcoilv2_cyan",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33753,
+        "name": "Unholy Runes",
+        "slug": "unholy-runes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561353,
+        "spell_ids": [
+          561353
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> and <span style=\"color: #ffffff; display: inline\">Blight</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Blight</span> now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Corpse Explosion</span>.",
+        "description": "Increases the damage of Crypt Swarm and Blight by 15% and damage dealt by Blight now has a 5% chance to reset the cooldown of Corpse Explosion.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561353,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> and <span style=\"color: #ffffff; display: inline\">Blight</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Blight</span> now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Corpse Explosion</span>.",
+            "description": "Increases the damage of Crypt Swarm and Blight by 15% and damage dealt by Blight now has a 5% chance to reset the cooldown of Corpse Explosion."
+          }
+        ],
+        "connections": [
+          6960,
+          30835
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+          "key": "spell_deathknight_empowerruneblade",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33763,
+        "name": "Expediting Death",
+        "slug": "expediting-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300236,
+        "spell_ids": [
+          300236
+        ],
+        "description_html": "Each stack of <span style=\"color: #FFFFFF; display: inline\">Expunge</span> now increases the target's damage taken from your <span style=\"color: #FFFFFF; display: inline\">Plague of Undeath</span> by an additional <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Each stack of Expunge now increases the target's damage taken from your Plague of Undeath by an additional 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300236,
+            "description_html": "Each stack of <span style=\"color: #FFFFFF; display: inline\">Expunge</span> now increases the target's damage taken from your <span style=\"color: #FFFFFF; display: inline\">Plague of Undeath</span> by an additional <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Each stack of Expunge now increases the target's damage taken from your Plague of Undeath by an additional 5%."
+          }
+        ],
+        "connections": [
+          6965,
+          29241
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_fishing_bait_spineworm",
+          "key": "inv_fishing_bait_spineworm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4620,
+        "name": "Mutation",
+        "slug": "mutation",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500342,
+        "spell_ids": [
+          500342
+        ],
+        "description_html": "For the next <span class=\"item-number\">15</span> seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> faster.",
+        "description": "For the next 15 seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick -50% faster.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500342,
+            "description_html": "For the next <span class=\"item-number\">15</span> seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> faster.",
+            "description": "For the next 15 seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick -50% faster."
+          }
+        ],
+        "connections": [
+          30917,
+          33759
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_plaguefall_stradamamargrave",
+          "key": "achievement_dungeon_plaguefall_stradamamargrave",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29864,
+        "name": "Plague Revenant",
+        "slug": "plague-revenant",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806321,
+        "spell_ids": [
+          806321
+        ],
+        "description_html": "Critical strikes now apply a stack of <span style=\"color: #ffffff; display: inline\">Crypt Plague</span>.",
+        "description": "Critical strikes now apply a stack of Crypt Plague.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806321,
+            "description_html": "Critical strikes now apply a stack of <span style=\"color: #ffffff; display: inline\">Crypt Plague</span>.",
+            "description": "Critical strikes now apply a stack of Crypt Plague."
+          }
+        ],
+        "connections": [
+          6961,
+          33753
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_cloth_raidwarlockmythic_s_01",
+          "key": "inv_helm_cloth_raidwarlockmythic_s_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4623,
+        "name": "Withering",
+        "slug": "withering",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 301250,
+        "spell_ids": [
+          301250
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Allows <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> to stack <span class=\"item-number\">5</span> additional times.",
+        "description": "Level 40 Passive\nAllows Crypt Plague to stack 5 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301250,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Allows <span style=\"color: #ffffff; display: inline\">Crypt Plague</span> to stack <span class=\"item-number\">5</span> additional times.",
+            "description": "Level 40 Passive\nAllows Crypt Plague to stack 5 additional times."
+          }
+        ],
+        "connections": [
+          9223
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DeathCoil",
+          "key": "spell_shadow_deathcoil",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29946,
+        "name": "Parasite Plague",
+        "slug": "parasite-plague",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560730,
+        "spell_ids": [
+          560730
+        ],
+        "description_html": "Damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Parasites</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_worms_01\" /><span class=\"name\">Parasites</span></div><span class=\"desc\">Your Undead minions feast upon the parasites on hit, leeching <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of their damage dealt as Plague Damage to the target.</span></div>",
+        "description": "Damage dealt now has a 5% chance to apply Parasites for 8 seconds.ParasitesYour Undead minions feast upon the parasites on hit, leeching 15% of their damage dealt as Plague Damage to the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560730,
+            "description_html": "Damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Parasites</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_worms_01\" /><span class=\"name\">Parasites</span></div><span class=\"desc\">Your Undead minions feast upon the parasites on hit, leeching <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of their damage dealt as Plague Damage to the target.</span></div>",
+            "description": "Damage dealt now has a 5% chance to apply Parasites for 8 seconds.ParasitesYour Undead minions feast upon the parasites on hit, leeching 15% of their damage dealt as Plague Damage to the target."
+          }
+        ],
+        "connections": [
+          33763
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Creature_Disease_01",
+          "key": "ability_creature_disease_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33761,
+        "name": "Fleshcrafting",
+        "slug": "fleshcrafting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300941,
+        "spell_ids": [
+          300941
+        ],
+        "description_html": "Increases the duration <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">5</span> sec and casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now reduces its cooldown by <span class=\"item-number\">-1</span> sec.",
+        "description": "Increases the duration Unholy Frenzy by 5 sec and casting Command spells now reduces its cooldown by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300941,
+            "description_html": "Increases the duration <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">5</span> sec and casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now reduces its cooldown by <span class=\"item-number\">-1</span> sec.",
+            "description": "Increases the duration Unholy Frenzy by 5 sec and casting Command spells now reduces its cooldown by -1 sec."
+          }
+        ],
+        "connections": [
+          33763
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_unholybird_Border",
+          "key": "nhi_unholybird_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30919,
+        "name": "Apothecary's Cauldron",
+        "slug": "apothecarys-cauldron",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560537,
+        "spell_ids": [
+          560537
+        ],
+        "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your Magic damage dealt by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560537,
+            "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your Magic damage dealt by 3%."
+          }
+        ],
+        "connections": [
+          4620,
+          29241
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_nullifydisease",
+          "key": "spell_nature_nullifydisease",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 10918,
+        "name": "Death Commander",
+        "slug": "death-commander",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300235,
+        "spell_ids": [
+          300235
+        ],
+        "description_html": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to increase your and your Undead minion's haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Periodic damage dealt now has a 10% chance to increase your and your Undead minion's haste by 20% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300235,
+            "description_html": "Periodic damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to increase your and your Undead minion's haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Periodic damage dealt now has a 10% chance to increase your and your Undead minion's haste by 20% for 8 seconds."
+          }
+        ],
+        "connections": [
+          4620,
+          6961
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0005s_0000_grave_Border",
+          "key": "epic_rpg_icon_pack_death_icon_0005s_0000_grave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7807,
+        "name": "Fiend",
+        "slug": "fiend",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707627,
+        "spell_ids": [
+          707627
+        ],
+        "description_html": "Increases the damage and critical damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against against <span style=\"color: #7fff00; display: inline\">Diseased</span> targets.",
+        "description": "Increases the damage and critical damage of Lichfrost by 30% against against Diseased targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707627,
+            "description_html": "Increases the damage and critical damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against against <span style=\"color: #7fff00; display: inline\">Diseased</span> targets.",
+            "description": "Increases the damage and critical damage of Lichfrost by 30% against against Diseased targets."
+          }
+        ],
+        "connections": [
+          29864
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_Thrash_Ghoul",
+          "key": "spell_deathknight_thrash_ghoul",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29242,
+        "name": "Putricide's Formula",
+        "slug": "putricides-formula",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707001,
+        "spell_ids": [
+          707001,
+          707882
+        ],
+        "description_html": "Damage dealt by Undead minions has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to blast up to <span class=\"item-number\">3</span> nearby enemies for <span class=\"item-number\">71</span> + <span class=\"item-number\">30% SP</span> Plague damage.",
+        "description": "Damage dealt by Undead minions has a 10% chance to blast up to 3 nearby enemies for 71 + 30% SP Plague damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707001,
+            "description_html": "Damage dealt by Undead minions has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to blast up to <span class=\"item-number\">3</span> nearby enemies for <span class=\"item-number\">71</span> + <span class=\"item-number\">30% SP</span> Plague damage.",
+            "description": "Damage dealt by Undead minions has a 10% chance to blast up to 3 nearby enemies for 71 + 30% SP Plague damage."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707882,
+            "description_html": "Damage dealt by Undead minions has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to blast up to <span class=\"item-number\">3</span> nearby enemies for <span class=\"item-number\">71</span> + <span class=\"item-number\">30% SP</span> Plague damage.",
+            "description": "Damage dealt by Undead minions has a 20% chance to blast up to 3 nearby enemies for 71 + 30% SP Plague damage."
+          }
+        ],
+        "connections": [
+          29864
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_profputricide",
+          "key": "achievement_boss_profputricide",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30912,
+        "name": "Lichplague",
+        "slug": "lichplague",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802132,
+        "spell_ids": [
+          802132
+        ],
+        "description_html": "Disease an enemy, dealing <span class=\"item-number\">151</span> + <span class=\"item-number\">22% SP</span> Plague damage every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds. <br /><br />Damage increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for each Necromancer disease on the enemy.",
+        "description": "Disease an enemy, dealing 151 + 22% SP Plague damage every 3 sec for 18 seconds.\n\nDamage increased by 4% for each Necromancer disease on the enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802132,
+            "description_html": "Disease an enemy, dealing <span class=\"item-number\">151</span> + <span class=\"item-number\">22% SP</span> Plague damage every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds. <br /><br />Damage increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for each Necromancer disease on the enemy.",
+            "description": "Disease an enemy, dealing 151 + 22% SP Plague damage every 3 sec for 18 seconds.\n\nDamage increased by 4% for each Necromancer disease on the enemy."
+          }
+        ],
+        "connections": [
+          29946,
+          33761
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_warlock09_Border",
+          "key": "_5_warlock09_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29861,
+        "name": "Rot Fetishist",
+        "slug": "rot-fetishist",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805675,
+        "spell_ids": [
+          805675
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Virulency</span> now applies <span style=\"color: #FFFFFF; display: inline\">Rot Fetishist</span> for <span class=\"item-number\">10</span> seconds, causing you to replicate <span class=\"item-number\">20%</span> of your periodic damage dealt as direct damage.",
+        "description": "Your Virulency now applies Rot Fetishist for 10 seconds, causing you to replicate 20% of your periodic damage dealt as direct damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805675,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Virulency</span> now applies <span style=\"color: #FFFFFF; display: inline\">Rot Fetishist</span> for <span class=\"item-number\">10</span> seconds, causing you to replicate <span class=\"item-number\">20%</span> of your periodic damage dealt as direct damage.",
+            "description": "Your Virulency now applies Rot Fetishist for 10 seconds, causing you to replicate 20% of your periodic damage dealt as direct damage."
+          }
+        ],
+        "connections": [
+          10918,
+          30919
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_rotting_breath",
+          "key": "spell_rotting_breath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33760,
+        "name": "Wormfood",
+        "slug": "wormfood",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560800,
+        "spell_ids": [
+          560800
+        ],
+        "description_html": "Upon fully channeling <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span>, you summon a <span style=\"color: #ffffff; display: inline\">Rotling</span> that will run towards the enemy and explode after <span class=\"item-number\">5</span> sec for <span class=\"item-number\">320</span> + <span class=\"item-number\">33.5% SP</span> Plague damage.",
+        "description": "Upon fully channeling Crypt Swarm, you summon a Rotling that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560800,
+            "description_html": "Upon fully channeling <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span>, you summon a <span style=\"color: #ffffff; display: inline\">Rotling</span> that will run towards the enemy and explode after <span class=\"item-number\">5</span> sec for <span class=\"item-number\">320</span> + <span class=\"item-number\">33.5% SP</span> Plague damage.",
+            "description": "Upon fully channeling Crypt Swarm, you summon a Rotling that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage."
+          }
+        ],
+        "connections": [
+          7807,
+          29242
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_worm_b_01_Border",
+          "key": "custom_worm_b_01_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11623,
+        "name": "Unholy Erosion",
+        "slug": "unholy-erosion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 807700,
+        "spell_ids": [
+          807700
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">50</span>, scaling with your level.<br /><br />In addition, periodic damage dealt now has a chance to animate a <span style=\"color: #ffffff; display: inline\">Lesser Zombie</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Level 50 Passive\nIncreases your spell penetration by 50, scaling with your level.\n\nIn addition, periodic damage dealt now has a chance to animate a Lesser Zombie for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807700,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">50</span>, scaling with your level.<br /><br />In addition, periodic damage dealt now has a chance to animate a <span style=\"color: #ffffff; display: inline\">Lesser Zombie</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Level 50 Passive\nIncreases your spell penetration by 50, scaling with your level.\n\nIn addition, periodic damage dealt now has a chance to animate a Lesser Zombie for 10 seconds."
+          }
+        ],
+        "connections": [
+          4623
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_Cripple",
+          "key": "spell_shadow_cripple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 33750,
+        "name": "Waking Crypts",
+        "slug": "waking-crypts",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570136,
+        "spell_ids": [
+          570136
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span> now deals <span class=\"item-number\">4</span><span class=\"item-number\">%</span> more damage for each Necromancer disease you have on the target.",
+        "description": "Increases the damage of Crypt Plague by 50% and Crypt Swarm now deals 4% more damage for each Necromancer disease you have on the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570136,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Crypt Plague</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Crypt Swarm</span> now deals <span class=\"item-number\">4</span><span class=\"item-number\">%</span> more damage for each Necromancer disease you have on the target.",
+            "description": "Increases the damage of Crypt Plague by 50% and Crypt Swarm now deals 4% more damage for each Necromancer disease you have on the target."
+          }
+        ],
+        "connections": [
+          30912
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_maldraxxus",
+          "key": "inv_maldraxxus",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30822,
+        "name": "Raise: Gargoyle",
+        "slug": "raise-gargoyle",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500329,
+        "spell_ids": [
+          500329
+        ],
+        "description_html": "Raise a fallen <span style=\"color: #ffffff; display: inline\">Gargoyle</span> to aid you in combat, occupying <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Shoots necrotic bile at an enemy, dealing <span class=\"item-number\">473</span> + <span class=\"item-number\">65% SP</span> Plague damage, dealing <span class=\"item-number\">50%</span> increased damage for each of your diseases on the target.",
+        "description": "Raise a fallen Gargoyle to aid you in combat, occupying 3 Life Force.\n\nCommand: Shoots necrotic bile at an enemy, dealing 473 + 65% SP Plague damage, dealing 50% increased damage for each of your diseases on the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500329,
+            "description_html": "Raise a fallen <span style=\"color: #ffffff; display: inline\">Gargoyle</span> to aid you in combat, occupying <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Shoots necrotic bile at an enemy, dealing <span class=\"item-number\">473</span> + <span class=\"item-number\">65% SP</span> Plague damage, dealing <span class=\"item-number\">50%</span> increased damage for each of your diseases on the target.",
+            "description": "Raise a fallen Gargoyle to aid you in combat, occupying 3 Life Force.\n\nCommand: Shoots necrotic bile at an enemy, dealing 473 + 65% SP Plague damage, dealing 50% increased damage for each of your diseases on the target."
+          }
+        ],
+        "connections": [
+          29861,
+          30912,
+          33760
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_summongargoyle",
+          "key": "ability_deathknight_summongargoyle",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30915,
+        "name": "Muck Summoner",
+        "slug": "muck-summoner",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 59,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806086,
+        "spell_ids": [
+          806086
+        ],
+        "description_html": "Periodic damage dealt now has an <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to summon <span class=\"item-number\">2</span> to <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Rotlings</span> that will run towards the enemy and explode after <span class=\"item-number\">5</span> sec for <span class=\"item-number\">320</span> + <span class=\"item-number\">33.5% SP</span> Plague damage.",
+        "description": "Periodic damage dealt now has an 5% chance to summon 2 to 3 Rotlings that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806086,
+            "description_html": "Periodic damage dealt now has an <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to summon <span class=\"item-number\">2</span> to <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Rotlings</span> that will run towards the enemy and explode after <span class=\"item-number\">5</span> sec for <span class=\"item-number\">320</span> + <span class=\"item-number\">33.5% SP</span> Plague damage.",
+            "description": "Periodic damage dealt now has an 5% chance to summon 2 to 3 Rotlings that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage."
+          }
+        ],
+        "connections": [
+          33760
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_fishing_lure_worm",
+          "key": "inv_fishing_lure_worm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

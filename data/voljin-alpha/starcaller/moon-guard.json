@@ -1,0 +1,2160 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:26+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:9d99df9f29b42912de70da7d8b73babbe741576a11d50e28837e56ef0ad2aa74",
+    "talent_count": 192,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 26,
+    "name": "Starcaller",
+    "slug": "starcaller",
+    "class_file": "starcaller",
+    "color": "rgb(143, 255, 255)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:starcaller",
+      "key": "class-starcaller",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 42,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 67,
+    "name": "Moon Guard",
+    "slug": "moon-guard",
+    "sort_order": 1,
+    "class_id": 26,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29896,
+        "name": "Starburst",
+        "slug": "starburst",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801996,
+        "spell_ids": [
+          801996
+        ],
+        "description_html": "<span style=\"color: #66ccff; display: inline\">Applies <span class=\"item-number\">1</span> Scattered Star Per Hit</span><br />Smash up to <span class=\"item-number\">8</span> enemies, dealing <span class=\"item-number\">2</span> + <span class=\"item-number\">30% arcane SP</span> + <span class=\"item-number\">15% AP</span> Arcane damage, scaling with block value and maximum mana and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Consuming a <span style=\"color: #66ccff; display: inline\">Scattered Star</span> reduces the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Starburst</span> by <span class=\"item-number\">-2</span> sec.",
+        "description": "Applies 1 Scattered Star Per Hit\nSmash up to 8 enemies, dealing 2 + 30% arcane SP + 15% AP Arcane damage, scaling with block value and maximum mana and reducing their attack speed by -20% for 10 seconds.\n\nConsuming a Scattered Star reduces the remaining cooldown of Starburst by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801996,
+            "description_html": "<span style=\"color: #66ccff; display: inline\">Applies <span class=\"item-number\">1</span> Scattered Star Per Hit</span><br />Smash up to <span class=\"item-number\">8</span> enemies, dealing <span class=\"item-number\">2</span> + <span class=\"item-number\">30% arcane SP</span> + <span class=\"item-number\">15% AP</span> Arcane damage, scaling with block value and maximum mana and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Consuming a <span style=\"color: #66ccff; display: inline\">Scattered Star</span> reduces the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Starburst</span> by <span class=\"item-number\">-2</span> sec.",
+            "description": "Applies 1 Scattered Star Per Hit\nSmash up to 8 enemies, dealing 2 + 30% arcane SP + 15% AP Arcane damage, scaling with block value and maximum mana and reducing their attack speed by -20% for 10 seconds.\n\nConsuming a Scattered Star reduces the remaining cooldown of Starburst by -2 sec."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_argus_soulburst",
+          "key": "ability_argus_soulburst",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4043,
+        "name": "Moon Guard",
+        "slug": "moon-guard",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29642
+          ]
+        },
+        "spell_id": 92132,
+        "spell_ids": [
+          92132
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You now gain Intellect equal to your Strength and your maximum health now additionally scales with <span class=\"item-number\">10%</span> of your maximum mana.",
+        "description": "Level 10 Passive\nYou now gain Intellect equal to your Strength and your maximum health now additionally scales with 10% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92132,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You now gain Intellect equal to your Strength and your maximum health now additionally scales with <span class=\"item-number\">10%</span> of your maximum mana.",
+            "description": "Level 10 Passive\nYou now gain Intellect equal to your Strength and your maximum health now additionally scales with 10% of your maximum mana."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\artifactability_balancedruid_newmoon",
+          "key": "artifactability_balancedruid_newmoon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29656,
+        "name": "Blanket of Stars",
+        "slug": "blanket-of-stars",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804381,
+        "spell_ids": [
+          804381
+        ],
+        "description_html": "Cover your shield in a blanket of stars for <span class=\"item-number\">8</span> seconds, increasing your block chance and block value by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Cover your shield in a blanket of stars for 8 seconds, increasing your block chance and block value by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804381,
+            "description_html": "Cover your shield in a blanket of stars for <span class=\"item-number\">8</span> seconds, increasing your block chance and block value by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Cover your shield in a blanket of stars for 8 seconds, increasing your block chance and block value by 100%."
+          }
+        ],
+        "connections": [
+          29896
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_cosmicvoid_orb",
+          "key": "inv_cosmicvoid_orb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30665,
+        "name": "Starsweep",
+        "slug": "starsweep",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805550,
+        "spell_ids": [
+          805550
+        ],
+        "description_html": "<span style=\"color: #66ccff; display: inline\">Consumes Scattered Stars</span><br />Sweep an enemy and all nearby enemies with your astral blade, dealing <span class=\"item-number\">39</span> + <span class=\"item-number\">30% AP</span> + <span class=\"item-number\">35% SP</span> Arcane damage.<br /><br />Every <span style=\"color: #66ccff; display: inline\">Scattered Star</span> consumed reduces the cooldown of this spell by <span class=\"item-number\">-3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_arcaneshardsfall_border\" /><span class=\"name\">Consume Scattered Stars</span></div><span class=\"desc\">Deals <span class=\"item-number\">7</span> + <span class=\"item-number\">18.22% SP</span> Arcane Damage and restores <span class=\"item-number\">8</span><span class=\"item-number\">%</span> maximum mana for each <span style=\"color: #66ccff; display: inline\">Scattered Star</span>.</span></div>",
+        "description": "Consumes Scattered Stars\nSweep an enemy and all nearby enemies with your astral blade, dealing 39 + 30% AP + 35% SP Arcane damage.\n\nEvery Scattered Star consumed reduces the cooldown of this spell by -3 sec.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805550,
+            "description_html": "<span style=\"color: #66ccff; display: inline\">Consumes Scattered Stars</span><br />Sweep an enemy and all nearby enemies with your astral blade, dealing <span class=\"item-number\">39</span> + <span class=\"item-number\">30% AP</span> + <span class=\"item-number\">35% SP</span> Arcane damage.<br /><br />Every <span style=\"color: #66ccff; display: inline\">Scattered Star</span> consumed reduces the cooldown of this spell by <span class=\"item-number\">-3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_arcaneshardsfall_border\" /><span class=\"name\">Consume Scattered Stars</span></div><span class=\"desc\">Deals <span class=\"item-number\">7</span> + <span class=\"item-number\">18.22% SP</span> Arcane Damage and restores <span class=\"item-number\">8</span><span class=\"item-number\">%</span> maximum mana for each <span style=\"color: #66ccff; display: inline\">Scattered Star</span>.</span></div>",
+            "description": "Consumes Scattered Stars\nSweep an enemy and all nearby enemies with your astral blade, dealing 39 + 30% AP + 35% SP Arcane damage.\n\nEvery Scattered Star consumed reduces the cooldown of this spell by -3 sec.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star."
+          }
+        ],
+        "connections": [
+          29896
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_warfrontsnightelf_d_01",
+          "key": "inv_sword_1h_warfrontsnightelf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29651,
+        "name": "Dance In The Starlight",
+        "slug": "dance-in-the-starlight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503637,
+        "spell_ids": [
+          503637
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Blanket of Stars</span> by <span class=\"item-number\">-10</span> sec.",
+        "description": "Reduces the cooldown of Blanket of Stars by -10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503637,
+            "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Blanket of Stars</span> by <span class=\"item-number\">-10</span> sec.",
+            "description": "Reduces the cooldown of Blanket of Stars by -10 sec."
+          }
+        ],
+        "connections": [
+          29656
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
+          "key": "inv_helm_mask_fittedalpha_b_01_nightborne_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6770,
+        "name": "Moonstone Hilt",
+        "slug": "moonstone-hilt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300250,
+        "spell_ids": [
+          300250,
+          680757
+        ],
+        "description_html": "Increases your parry chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and block value by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your parry chance by 2% and block value by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300250,
+            "description_html": "Increases your parry chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and block value by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your parry chance by 2% and block value by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 680757,
+            "description_html": "Increases your parry chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and block value by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your parry chance by 5% and block value by 50%."
+          }
+        ],
+        "connections": [
+          29656,
+          30665
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelcrafting_starofelune_02",
+          "key": "inv_jewelcrafting_starofelune_02",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33858,
+        "name": "Nebula",
+        "slug": "nebula",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300992,
+        "spell_ids": [
+          300992
+        ],
+        "description_html": "Blocking enemy attacks now applies <span style=\"color: #66ccff; display: inline\">Scattered Stars</span> to the attacker.",
+        "description": "Blocking enemy attacks now applies Scattered Stars to the attacker.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300992,
+            "description_html": "Blocking enemy attacks now applies <span style=\"color: #66ccff; display: inline\">Scattered Stars</span> to the attacker.",
+            "description": "Blocking enemy attacks now applies Scattered Stars to the attacker."
+          }
+        ],
+        "connections": [
+          30665
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_manashield_Border",
+          "key": "nhi_manashield_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9245,
+        "name": "Asteroid Belt",
+        "slug": "asteroid-belt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 574349,
+        "spell_ids": [
+          574349
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />You now gain <span style=\"color: #ffffff; display: inline\">Asteroid Belt</span>.<br /><br />In addition, your hit rating is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Intellect and your expertise is increased by <span class=\"item-number\">8</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3arcaneorb\" /><span class=\"name\">Asteroid Belt</span></div><span class=\"desc\">Block rating, parry rating, and block value increased based on your current mana.</span></div>",
+        "description": "Level 20 Passive\nYou now gain Asteroid Belt.\n\nIn addition, your hit rating is increased by 5% of your Intellect and your expertise is increased by 8.Asteroid BeltBlock rating, parry rating, and block value increased based on your current mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574349,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />You now gain <span style=\"color: #ffffff; display: inline\">Asteroid Belt</span>.<br /><br />In addition, your hit rating is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Intellect and your expertise is increased by <span class=\"item-number\">8</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3arcaneorb\" /><span class=\"name\">Asteroid Belt</span></div><span class=\"desc\">Block rating, parry rating, and block value increased based on your current mana.</span></div>",
+            "description": "Level 20 Passive\nYou now gain Asteroid Belt.\n\nIn addition, your hit rating is increased by 5% of your Intellect and your expertise is increased by 8.Asteroid BeltBlock rating, parry rating, and block value increased based on your current mana."
+          }
+        ],
+        "connections": [
+          4043
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3arcaneorb",
+          "key": "d3arcaneorb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7701,
+        "name": "Improved Eclipse of Fury",
+        "slug": "improved-eclipse-of-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 0.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704793,
+        "spell_ids": [
+          704793
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Eclipse of Fury</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Eclipse of Fury by 40%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704793,
+            "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Eclipse of Fury</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Eclipse of Fury by 40%."
+          }
+        ],
+        "connections": [
+          29651
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_arcane_arcane01",
+          "key": "spell_arcane_arcane01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29641,
+        "name": "Starlit Finesse",
+        "slug": "starlit-finesse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 574350,
+        "spell_ids": [
+          574350
+        ],
+        "description_html": "Increases your hit and critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your hit and critical strike chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574350,
+            "description_html": "Increases your hit and critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your hit and critical strike chance by 3%."
+          }
+        ],
+        "connections": [
+          6770
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactelune_d_06",
+          "key": "inv_staff_2h_artifactelune_d_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7703,
+        "name": "Celestial Divination",
+        "slug": "celestial-divination",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 8.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560319,
+        "spell_ids": [
+          560319
+        ],
+        "description_html": "Increases your chance to dodge by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your chance to dodge by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560319,
+            "description_html": "Increases your chance to dodge by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to dodge by 5%."
+          }
+        ],
+        "connections": [
+          33858
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_faction_celestials",
+          "key": "achievement_faction_celestials",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33856,
+        "name": "Tyrande's Guidance",
+        "slug": "tyrandes-guidance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704788,
+        "spell_ids": [
+          704788
+        ],
+        "description_html": "Increases the critical strike chance of your <span style=\"color: #FFFFFF; display: inline\">Starburst</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of your Starburst by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704788,
+            "description_html": "Increases the critical strike chance of your <span style=\"color: #FFFFFF; display: inline\">Starburst</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of your Starburst by 10%."
+          }
+        ],
+        "connections": [
+          29641,
+          29651
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Weapon_Shortblade_79",
+          "key": "inv_weapon_shortblade_79",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30239,
+        "name": "Astral Reconstitution",
+        "slug": "astral-reconstitution",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801155,
+        "spell_ids": [
+          801155
+        ],
+        "description_html": "Surround yourself with lunar light, causing <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of damage taken to be converted into mana for <span class=\"item-number\">10</span> seconds.",
+        "description": "Surround yourself with lunar light, causing 30% of damage taken to be converted into mana for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801155,
+            "description_html": "Surround yourself with lunar light, causing <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of damage taken to be converted into mana for <span class=\"item-number\">10</span> seconds.",
+            "description": "Surround yourself with lunar light, causing 30% of damage taken to be converted into mana for 10 seconds."
+          }
+        ],
+        "connections": [
+          29641
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_cosmicvoid_buff",
+          "key": "inv_cosmicvoid_buff",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7704,
+        "name": "Moonflares",
+        "slug": "moonflares",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560501,
+        "spell_ids": [
+          560501
+        ],
+        "description_html": "Avoiding melee attacks will call down a <span style=\"color: #FFFFFF; display: inline\">Moonflare</span> at the attacker, dealing <span class=\"item-number\">66</span> Arcane damage.<br /><br />Can occur only once per second.",
+        "description": "Avoiding melee attacks will call down a Moonflare at the attacker, dealing 66 Arcane damage.\n\nCan occur only once per second.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560501,
+            "description_html": "Avoiding melee attacks will call down a <span style=\"color: #FFFFFF; display: inline\">Moonflare</span> at the attacker, dealing <span class=\"item-number\">66</span> Arcane damage.<br /><br />Can occur only once per second.",
+            "description": "Avoiding melee attacks will call down a Moonflare at the attacker, dealing 66 Arcane damage.\n\nCan occur only once per second."
+          }
+        ],
+        "connections": [
+          29641,
+          33858
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_moon_Border",
+          "key": "_5_moon_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9247,
+        "name": "Crystal Shield",
+        "slug": "crystal-shield",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 680748,
+        "spell_ids": [
+          680748
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases your spell damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your attack power.",
+        "description": "Level 30 Passive\nIncreases your Stamina by 10% and increases your spell damage by 25% of your attack power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680748,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases your spell damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your attack power.",
+            "description": "Level 30 Passive\nIncreases your Stamina by 10% and increases your spell damage by 25% of your attack power."
+          }
+        ],
+        "connections": [
+          9245
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactheartofkure_d_01",
+          "key": "inv_staff_2h_artifactheartofkure_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 33851,
+        "name": "Starcovered Night",
+        "slug": "starcovered-night",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503639,
+        "spell_ids": [
+          503639
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Blanket of Stars</span> by <span class=\"item-number\">4</span> sec.",
+        "description": "Increases the duration of Blanket of Stars by 4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503639,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Blanket of Stars</span> by <span class=\"item-number\">4</span> sec.",
+            "description": "Increases the duration of Blanket of Stars by 4 sec."
+          }
+        ],
+        "connections": [
+          7701,
+          33856
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_warfrontsnightelf_d_01",
+          "key": "inv_staff_2h_warfrontsnightelf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33855,
+        "name": "Pulsar Explosion",
+        "slug": "pulsar-explosion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704794,
+        "spell_ids": [
+          704794,
+          707894
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Celestial Cleave</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows it to affect <span class=\"item-number\">1</span> additional enemies.",
+        "description": "Increases the damage of Celestial Cleave by 10% and allows it to affect 1 additional enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704794,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Celestial Cleave</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows it to affect <span class=\"item-number\">1</span> additional enemies.",
+            "description": "Increases the damage of Celestial Cleave by 10% and allows it to affect 1 additional enemies."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707894,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Celestial Cleave</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and allows it to affect <span class=\"item-number\">2</span> additional enemies.",
+            "description": "Increases the damage of Celestial Cleave by 20% and allows it to affect 2 additional enemies."
+          }
+        ],
+        "connections": [
+          33856
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_121",
+          "key": "inv_sword_121",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33799,
+        "name": "Shrouded Stars",
+        "slug": "shrouded-stars",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704785,
+        "spell_ids": [
+          704785
+        ],
+        "description_html": "Reduces damage taken by all party and raid members by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.<br /><br />In addition, you delay <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of direct magical damage taken, instead taking it over <span class=\"item-number\">10</span> seconds.<br /><br />Does not stack with similar effects.",
+        "description": "Reduces damage taken by all party and raid members by -3%.\n\nIn addition, you delay 30% of direct magical damage taken, instead taking it over 10 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704785,
+            "description_html": "Reduces damage taken by all party and raid members by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.<br /><br />In addition, you delay <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of direct magical damage taken, instead taking it over <span class=\"item-number\">10</span> seconds.<br /><br />Does not stack with similar effects.",
+            "description": "Reduces damage taken by all party and raid members by -3%.\n\nIn addition, you delay 30% of direct magical damage taken, instead taking it over 10 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          30239
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_ElunesGrace",
+          "key": "spell_holy_elunesgrace",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33848,
+        "name": "Moonveil Screen",
+        "slug": "moonveil-screen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680779,
+        "spell_ids": [
+          680779
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Starsunder</span> and <span style=\"color: #FFFFFF; display: inline\">Moonflare</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Starsunder and Moonflare by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680779,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Starsunder</span> and <span style=\"color: #FFFFFF; display: inline\">Moonflare</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Starsunder and Moonflare by 20%."
+          }
+        ],
+        "connections": [
+          7704
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_MoonGlow",
+          "key": "spell_nature_moonglow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7702,
+        "name": "Blade of the Moon",
+        "slug": "blade-of-the-moon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802680,
+        "spell_ids": [
+          802680
+        ],
+        "description_html": "Consuming <span style=\"color: #66ccff; display: inline\">Scattered Stars</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to transform <span style=\"color: #ffffff; display: inline\">Celestial Strike</span> into <span style=\"color: #ffffff; display: inline\">Moonblade</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_staff_2h_artifactelune_d_01\" /><span class=\"name\">Moonblade</span></div><span class=\"desc\">Devastate an enemy, dealing <span class=\"item-number\">130</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">100% Intellect</span> Arcane damage and regenerating <span class=\"item-number\">15%</span> missing mana.</span></div>",
+        "description": "Consuming Scattered Stars now has a 15% chance to transform Celestial Strike into Moonblade for 8 seconds.MoonbladeDevastate an enemy, dealing 130% Weapon Damage plus 100% Intellect Arcane damage and regenerating 15% missing mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802680,
+            "description_html": "Consuming <span style=\"color: #66ccff; display: inline\">Scattered Stars</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to transform <span style=\"color: #ffffff; display: inline\">Celestial Strike</span> into <span style=\"color: #ffffff; display: inline\">Moonblade</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_staff_2h_artifactelune_d_01\" /><span class=\"name\">Moonblade</span></div><span class=\"desc\">Devastate an enemy, dealing <span class=\"item-number\">130</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">100% Intellect</span> Arcane damage and regenerating <span class=\"item-number\">15%</span> missing mana.</span></div>",
+            "description": "Consuming Scattered Stars now has a 15% chance to transform Celestial Strike into Moonblade for 8 seconds.MoonbladeDevastate an enemy, dealing 130% Weapon Damage plus 100% Intellect Arcane damage and regenerating 15% missing mana."
+          }
+        ],
+        "connections": [
+          7703,
+          7704
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactelune_d_01",
+          "key": "inv_staff_2h_artifactelune_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33857,
+        "name": "Starburst Invigoration",
+        "slug": "starburst-invigoration",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704792,
+        "spell_ids": [
+          704792
+        ],
+        "description_html": "Increases your Energy regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Energy regeneration by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704792,
+            "description_html": "Increases your Energy regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Energy regeneration by 15%."
+          }
+        ],
+        "connections": [
+          33851,
+          33855
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ManaBurn",
+          "key": "spell_shadow_manaburn",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7713,
+        "name": "Cosmic Crown",
+        "slug": "cosmic-crown",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804385,
+        "spell_ids": [
+          804385,
+          807936
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Aegis</span> spells by <span class=\"item-number\">3</span> sec.",
+        "description": "Increases the duration of Aegis spells by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804385,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Aegis</span> spells by <span class=\"item-number\">3</span> sec.",
+            "description": "Increases the duration of Aegis spells by 3 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807936,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Aegis</span> spells by <span class=\"item-number\">6</span> sec.",
+            "description": "Increases the duration of Aegis spells by 6 sec."
+          }
+        ],
+        "connections": [
+          33799,
+          33855
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelcrafting_70_cutgem03_blue",
+          "key": "inv_jewelcrafting_70_cutgem03_blue",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29895,
+        "name": "Enduring Moon",
+        "slug": "enduring-moon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560440,
+        "spell_ids": [
+          560440
+        ],
+        "description_html": "Critical strikes now increase the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Critical strikes now increase the target's spell damage taken by 10% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560440,
+            "description_html": "Critical strikes now increase the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Critical strikes now increase the target's spell damage taken by 10% for 15 seconds."
+          }
+        ],
+        "connections": [
+          33799,
+          33848
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_magicalresistance",
+          "key": "ability_racial_magicalresistance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30241,
+        "name": "Vengeful Inspiration",
+        "slug": "vengeful-inspiration",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680784,
+        "spell_ids": [
+          680784
+        ],
+        "description_html": "Increases your attack speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and causes critical strikes with melee attacks to apply a <span style=\"color: #66ccff; display: inline\">Scattered Star</span>.",
+        "description": "Increases your attack speed by 30% and causes critical strikes with melee attacks to apply a Scattered Star.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680784,
+            "description_html": "Increases your attack speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and causes critical strikes with melee attacks to apply a <span style=\"color: #66ccff; display: inline\">Scattered Star</span>.",
+            "description": "Increases your attack speed by 30% and causes critical strikes with melee attacks to apply a Scattered Star."
+          }
+        ],
+        "connections": [
+          7702,
+          33848
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_thenighthold_highbotanisttelam",
+          "key": "achievement_thenighthold_highbotanisttelam",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9248,
+        "name": "Dancing in the Moonlight",
+        "slug": "dancing-in-the-moonlight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 807659,
+        "spell_ids": [
+          807659
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Parrying an attack now regenerates <span class=\"item-number\">15</span> of your Energy and deals <span class=\"item-number\">65</span><span class=\"item-number\">%</span> Weapon Damage to the attacker. Can only occur once per sec.<br /><br />In addition, increases the effectiveness of consuming <span style=\"color: #66ccff; display: inline\">Scattered Stars</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Level 40 Passive\nParrying an attack now regenerates 15 of your Energy and deals 65% Weapon Damage to the attacker. Can only occur once per sec.\n\nIn addition, increases the effectiveness of consuming Scattered Stars by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807659,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Parrying an attack now regenerates <span class=\"item-number\">15</span> of your Energy and deals <span class=\"item-number\">65</span><span class=\"item-number\">%</span> Weapon Damage to the attacker. Can only occur once per sec.<br /><br />In addition, increases the effectiveness of consuming <span style=\"color: #66ccff; display: inline\">Scattered Stars</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Level 40 Passive\nParrying an attack now regenerates 15 of your Energy and deals 65% Weapon Damage to the attacker. Can only occur once per sec.\n\nIn addition, increases the effectiveness of consuming Scattered Stars by 50%."
+          }
+        ],
+        "connections": [
+          9247
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_arcane_starfire",
+          "key": "spell_arcane_starfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7027,
+        "name": "Will of Elune",
+        "slug": "will-of-elune",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680788,
+        "spell_ids": [
+          680788
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Aspect of the Stars</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies.",
+        "description": "Damage dealt by Aspect of the Stars now strikes 2 additional nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680788,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Aspect of the Stars</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies.",
+            "description": "Damage dealt by Aspect of the Stars now strikes 2 additional nearby enemies."
+          }
+        ],
+        "connections": [
+          33857
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_cloth_warfrontsnightelfmythic_d_01",
+          "key": "inv_helm_cloth_warfrontsnightelfmythic_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7706,
+        "name": "Starbound",
+        "slug": "starbound",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704787,
+        "spell_ids": [
+          704787
+        ],
+        "description_html": "Increases your healing done and received by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, doubled while below <span class=\"item-number\">50%</span> health.",
+        "description": "Increases your healing done and received by 10%, doubled while below 50% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704787,
+            "description_html": "Increases your healing done and received by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, doubled while below <span class=\"item-number\">50%</span> health.",
+            "description": "Increases your healing done and received by 10%, doubled while below 50% health."
+          }
+        ],
+        "connections": [
+          7713
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_socererking_arcanereplication",
+          "key": "ability_socererking_arcanereplication",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30654,
+        "name": "Enchanted Aegis",
+        "slug": "enchanted-aegis",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704795,
+        "spell_ids": [
+          704795
+        ],
+        "description_html": "Your successful blocks now have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to critically block for twice the normal amount.",
+        "description": "Your successful blocks now have a 50% chance to critically block for twice the normal amount.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704795,
+            "description_html": "Your successful blocks now have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to critically block for twice the normal amount.",
+            "description": "Your successful blocks now have a 50% chance to critically block for twice the normal amount."
+          }
+        ],
+        "connections": [
+          29895
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_arcane_arcaneresilience",
+          "key": "spell_arcane_arcaneresilience",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7707,
+        "name": "Starlight Duelist",
+        "slug": "starlight-duelist",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805505,
+        "spell_ids": [
+          805505
+        ],
+        "description_html": "Blocking or parrying an attack now increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.",
+        "description": "Blocking or parrying an attack now increases your damage dealt by 10% for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805505,
+            "description_html": "Blocking or parrying an attack now increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.",
+            "description": "Blocking or parrying an attack now increases your damage dealt by 10% for 6 seconds."
+          }
+        ],
+        "connections": [
+          30241
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_06",
+          "key": "inv_sword_1h_artifactfelomelorn_d_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7705,
+        "name": "Coalesced Resilience",
+        "slug": "coalesced-resilience",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680786,
+        "spell_ids": [
+          680786
+        ],
+        "description_html": "Reduces your damage taken by an amount equal to <span class=\"item-number\">1.5%</span> of your maximum mana.",
+        "description": "Reduces your damage taken by an amount equal to 1.5% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680786,
+            "description_html": "Reduces your damage taken by an amount equal to <span class=\"item-number\">1.5%</span> of your maximum mana.",
+            "description": "Reduces your damage taken by an amount equal to 1.5% of your maximum mana."
+          }
+        ],
+        "connections": [
+          7027,
+          7706
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_armor_nightborne_d_01",
+          "key": "inv_belt_armor_nightborne_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7712,
+        "name": "Font of Magic",
+        "slug": "font-of-magic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680742,
+        "spell_ids": [
+          680742
+        ],
+        "description_html": "Each time you spend a cumulative <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your maximum mana, you heal for <span class=\"item-number\">4</span><span class=\"item-number\">%</span> of your maximum health.",
+        "description": "Each time you spend a cumulative 100% of your maximum mana, you heal for 4% of your maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680742,
+            "description_html": "Each time you spend a cumulative <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your maximum mana, you heal for <span class=\"item-number\">4</span><span class=\"item-number\">%</span> of your maximum health.",
+            "description": "Each time you spend a cumulative 100% of your maximum mana, you heal for 4% of your maximum health."
+          }
+        ],
+        "connections": [
+          7706,
+          30654
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_gizmo_manasyphon",
+          "key": "inv_gizmo_manasyphon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7715,
+        "name": "Lunar Knight",
+        "slug": "lunar-knight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680791,
+        "spell_ids": [
+          680791
+        ],
+        "description_html": "Increases the damage of your <span style=\"color: #FFFFFF; display: inline\">Moonblade</span> and <span style=\"color: #FFFFFF; display: inline\">Starsweep</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and their chance to critically strike by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of your Moonblade and Starsweep by 50% and their chance to critically strike by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680791,
+            "description_html": "Increases the damage of your <span style=\"color: #FFFFFF; display: inline\">Moonblade</span> and <span style=\"color: #FFFFFF; display: inline\">Starsweep</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and their chance to critically strike by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Moonblade and Starsweep by 50% and their chance to critically strike by 20%."
+          }
+        ],
+        "connections": [
+          7707,
+          30654
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_plate_raiddeathknight_s_01",
+          "key": "inv_helm_plate_raiddeathknight_s_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13248,
+        "name": "Celestial Guard",
+        "slug": "celestial-guard",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 574351,
+        "spell_ids": [
+          574351
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />You are protected by the Light of Elune. You absorb and convert <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the damage to mana from attacks that deal more than <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your maximum health.",
+        "description": "Level 50 Passive\nYou are protected by the Light of Elune. You absorb and convert 15% of the damage to mana from attacks that deal more than 20% of your maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574351,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />You are protected by the Light of Elune. You absorb and convert <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the damage to mana from attacks that deal more than <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your maximum health.",
+            "description": "Level 50 Passive\nYou are protected by the Light of Elune. You absorb and convert 15% of the damage to mana from attacks that deal more than 20% of your maximum health."
+          }
+        ],
+        "connections": [
+          9248
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_nightborneracialmount",
+          "key": "inv_nightborneracialmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7717,
+        "name": "Chosen of the Moon",
+        "slug": "chosen-of-the-moon",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680755,
+        "spell_ids": [
+          680755
+        ],
+        "description_html": "Become the chosen of the moon, reducing all Physical damage taken by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> and taunting all enemies within <span class=\"item-number\">8</span> yds for <span class=\"item-number\">10</span> seconds.",
+        "description": "Become the chosen of the moon, reducing all Physical damage taken by -60% and taunting all enemies within 8 yds for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680755,
+            "description_html": "Become the chosen of the moon, reducing all Physical damage taken by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> and taunting all enemies within <span class=\"item-number\">8</span> yds for <span class=\"item-number\">10</span> seconds.",
+            "description": "Become the chosen of the moon, reducing all Physical damage taken by -60% and taunting all enemies within 8 yds for 10 seconds."
+          }
+        ],
+        "connections": [
+          7705
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_plate_kthirrelic_d_01",
+          "key": "inv_helm_plate_kthirrelic_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19699,
+        "name": "Moonlit Bulwark",
+        "slug": "moonlit-bulwark",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805433,
+        "spell_ids": [
+          805433
+        ],
+        "description_html": "Grants you a shield for an amount equal to your maximum mana for <span class=\"item-number\">10</span> seconds. <br /><br />Usable while stunned.",
+        "description": "Grants you a shield for an amount equal to your maximum mana for 10 seconds.\n\nUsable while stunned.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805433,
+            "description_html": "Grants you a shield for an amount equal to your maximum mana for <span class=\"item-number\">10</span> seconds. <br /><br />Usable while stunned.",
+            "description": "Grants you a shield for an amount equal to your maximum mana for 10 seconds.\n\nUsable while stunned."
+          }
+        ],
+        "connections": [
+          7705,
+          7712,
+          7715
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_argus_blightorb",
+          "key": "ability_argus_blightorb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30240,
+        "name": "Mooncharged Blades",
+        "slug": "mooncharged-blades",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 26,
+        "tree_id": 67,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 536216,
+        "spell_ids": [
+          536216
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Starsunder</span> or <span style=\"color: #ffffff; display: inline\">Starsweep</span> now guarantee you to parry the next attack against you.<br /><br />In addition, reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Starsunder</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Critical strikes with Starsunder or Starsweep now guarantee you to parry the next attack against you.\n\nIn addition, reduces the mana cost of Starsunder by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 536216,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Starsunder</span> or <span style=\"color: #ffffff; display: inline\">Starsweep</span> now guarantee you to parry the next attack against you.<br /><br />In addition, reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Starsunder</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Critical strikes with Starsunder or Starsweep now guarantee you to parry the next attack against you.\n\nIn addition, reduces the mana cost of Starsunder by -30%."
+          }
+        ],
+        "connections": [
+          7715
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_2h_warfrontsnightelf_d_01",
+          "key": "inv_sword_2h_warfrontsnightelf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

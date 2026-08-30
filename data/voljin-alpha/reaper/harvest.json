@@ -1,0 +1,2403 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:25+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:65f74e980350a40b127dc7b385cb04d0c584ec7eacfe11426a96efd6b370e074",
+    "talent_count": 153,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 30,
+    "name": "Reaper",
+    "slug": "reaper",
+    "class_file": "reaper",
+    "color": "rgb(10, 135, 107)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:reaper",
+      "key": "class-reaper",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 39,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 79,
+    "name": "Harvest",
+    "slug": "harvest",
+    "sort_order": 1,
+    "class_id": 30,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29378,
+        "name": "Doomrend",
+        "slug": "doomrend",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800172,
+        "spell_ids": [
+          800172
+        ],
+        "description_html": "Rend an enemy dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">17</span> + <span class=\"item-number\">35% AP</span>, causing you to apply a dark shield to them that absorbs the next <span class=\"item-number\">75</span> healing done to them for <span class=\"item-number\">5</span> seconds, and generates Runic Power.",
+        "description": "Rend an enemy dealing 140% Weapon Damage plus 17 + 35% AP, causing you to apply a dark shield to them that absorbs the next 75 healing done to them for 5 seconds, and generates Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800172,
+            "description_html": "Rend an enemy dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">17</span> + <span class=\"item-number\">35% AP</span>, causing you to apply a dark shield to them that absorbs the next <span class=\"item-number\">75</span> healing done to them for <span class=\"item-number\">5</span> seconds, and generates Runic Power.",
+            "description": "Rend an enemy dealing 140% Weapon Damage plus 17 + 35% AP, causing you to apply a dark shield to them that absorbs the next 75 healing done to them for 5 seconds, and generates Runic Power."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_knife_1h_revendrethquest_b_03",
+          "key": "inv_knife_1h_revendrethquest_b_03",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4055,
+        "name": "Harvester",
+        "slug": "harvester",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29248
+          ]
+        },
+        "spell_id": 92145,
+        "spell_ids": [
+          92145
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You now heal yourself equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of all damage dealt.",
+        "description": "Level 10 Passive\nYou now heal yourself equal to 15% of all damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92145,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You now heal yourself equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of all damage dealt.",
+            "description": "Level 10 Passive\nYou now heal yourself equal to 15% of all damage dealt."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_deathknight",
+          "key": "ability_revendreth_deathknight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29246,
+        "name": "Maw Knight",
+        "slug": "maw-knight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805204,
+        "spell_ids": [
+          805204,
+          807888
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Doomrend</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Doomrend by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805204,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Doomrend</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Doomrend by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807888,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Doomrend</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Doomrend by 10%."
+          }
+        ],
+        "connections": [
+          29378
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helmet_plate_deathknight_m_01",
+          "key": "inv_helmet_plate_deathknight_m_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9270,
+        "name": "Bountiful Harvest",
+        "slug": "bountiful-harvest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706576,
+        "spell_ids": [
+          706576
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Reap</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Reap and Murder by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706576,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Reap</span> and <span style=\"color: #ffffff; display: inline\">Murder</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Reap and Murder by 25%."
+          }
+        ],
+        "connections": [
+          29378
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_harvestgolempet",
+          "key": "inv_harvestgolempet",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34480,
+        "name": "Crow's Harvest",
+        "slug": "crows-harvest",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504011,
+        "spell_ids": [
+          504011
+        ],
+        "description_html": "Strike all nearby enemies for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">8</span>.<br /><br />Damage dealt harvests a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>, up to a maximum of <span class=\"item-number\">3</span>.",
+        "description": "Strike all nearby enemies for 75% Weapon Damage plus 8.\n\nDamage dealt harvests a Soul Fragment, up to a maximum of 3.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504011,
+            "description_html": "Strike all nearby enemies for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">8</span>.<br /><br />Damage dealt harvests a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>, up to a maximum of <span class=\"item-number\">3</span>.",
+            "description": "Strike all nearby enemies for 75% Weapon Damage plus 8.\n\nDamage dealt harvests a Soul Fragment, up to a maximum of 3."
+          }
+        ],
+        "connections": [
+          29246
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_polearm_2h_warfrontshorde_c_01red",
+          "key": "inv_polearm_2h_warfrontshorde_c_01red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31371,
+        "name": "Slaughter",
+        "slug": "slaughter",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500373,
+        "spell_ids": [
+          500373
+        ],
+        "description_html": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">1</span> Reaped Soul</span><br />Eradicate an enemy with your scythe, dealing <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">17</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health.",
+        "description": "Generates 1 Reaped Soul\nEradicate an enemy with your scythe, dealing 150% Weapon Damage plus 17.\n\nOnly usable on enemies below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500373,
+            "description_html": "<span style=\"color: #5ee2ff; display: inline\">Generates <span class=\"item-number\">1</span> Reaped Soul</span><br />Eradicate an enemy with your scythe, dealing <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">17</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Generates 1 Reaped Soul\nEradicate an enemy with your scythe, dealing 150% Weapon Damage plus 17.\n\nOnly usable on enemies below 35% health."
+          }
+        ],
+        "connections": [
+          9270,
+          29246
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_warrior",
+          "key": "ability_revendreth_warrior",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5767,
+        "name": "Haunter",
+        "slug": "haunter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705410,
+        "spell_ids": [
+          705410
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> by <span class=\"item-number\">10</span> sec.",
+        "description": "Increases the duration of Soulrend by 10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705410,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> by <span class=\"item-number\">10</span> sec.",
+            "description": "Increases the duration of Soulrend by 10 sec."
+          }
+        ],
+        "connections": [
+          9270
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_vengefulretreat",
+          "key": "ability_demonhunter_vengefulretreat",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9269,
+        "name": "Extinction",
+        "slug": "extinction",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 573039,
+        "spell_ids": [
+          573039
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Direct Physical damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Extinction</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for each <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> active.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_physical_ability__2__border\" /><span class=\"name\">Extinction</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Slaughter</span> is usable regardless of the target's health and costs <span class=\"item-number\">-10</span> less Runic Power.</span></div>",
+        "description": "Level 20 Passive\nDirect Physical damage dealt now has a 5% chance to grant you Extinction for 10 seconds.\n\nChance to trigger this effect is increased by 10% for each Reaped Soul active.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573039,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Direct Physical damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Extinction</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for each <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span> active.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_physical_ability__2__border\" /><span class=\"name\">Extinction</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Slaughter</span> is usable regardless of the target's health and costs <span class=\"item-number\">-10</span> less Runic Power.</span></div>",
+            "description": "Level 20 Passive\nDirect Physical damage dealt now has a 5% chance to grant you Extinction for 10 seconds.\n\nChance to trigger this effect is increased by 10% for each Reaped Soul active.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power."
+          }
+        ],
+        "connections": [
+          4055
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_2h_revendreth_d_01",
+          "key": "inv_sword_2h_revendreth_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34481,
+        "name": "Dark Fate",
+        "slug": "dark-fate",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 0.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504037,
+        "spell_ids": [
+          504037
+        ],
+        "description_html": "Reduces the cost of <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> by <span class=\"item-number\">-10</span> Runic Power and the cooldown of <span style=\"color: #FFFFFF; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">-10</span> sec.",
+        "description": "Reduces the cost of Crow's Harvest by -10 Runic Power and the cooldown of Reliquary of the Lost by -10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504037,
+            "description_html": "Reduces the cost of <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> by <span class=\"item-number\">-10</span> Runic Power and the cooldown of <span style=\"color: #FFFFFF; display: inline\">Reliquary of the Lost</span> by <span class=\"item-number\">-10</span> sec.",
+            "description": "Reduces the cost of Crow's Harvest by -10 Runic Power and the cooldown of Reliquary of the Lost by -10 sec."
+          }
+        ],
+        "connections": [
+          34480
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_blood_spell_10_Border",
+          "key": "uico_blood_spell_10_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5762,
+        "name": "Red Wake",
+        "slug": "red-wake",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707707,
+        "spell_ids": [
+          707707
+        ],
+        "description_html": "Direct damage critical strikes now generate an additional <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>.",
+        "description": "Direct damage critical strikes now generate an additional Soul Fragment.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707707,
+            "description_html": "Direct damage critical strikes now generate an additional <span style=\"color: #ffffff; display: inline\">Soul Fragment</span>.",
+            "description": "Direct damage critical strikes now generate an additional Soul Fragment."
+          }
+        ],
+        "connections": [
+          31371
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_shaman",
+          "key": "ability_revendreth_shaman",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30551,
+        "name": "Crimson Death",
+        "slug": "crimson-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705414,
+        "spell_ids": [
+          705414
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Slaughter</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to cast an additional time free of cost.",
+        "description": "Your Slaughter now has a 20% chance to cast an additional time free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705414,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Slaughter</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to cast an additional time free of cost.",
+            "description": "Your Slaughter now has a 20% chance to cast an additional time free of cost."
+          }
+        ],
+        "connections": [
+          31371
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_rogue",
+          "key": "ability_revendreth_rogue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7259,
+        "name": "Callous Soul",
+        "slug": "callous-soul",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 8.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705418,
+        "spell_ids": [
+          705418
+        ],
+        "description_html": "Increases the amount of armor <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> causes you to ignore by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the amount of armor Soulrend causes you to ignore by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705418,
+            "description_html": "Increases the amount of armor <span style=\"color: #FFFFFF; display: inline\">Soulrend</span> causes you to ignore by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the amount of armor Soulrend causes you to ignore by 10%."
+          }
+        ],
+        "connections": [
+          5767
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_animarevendreth_orb",
+          "key": "spell_animarevendreth_orb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6766,
+        "name": "Hungering Scythe",
+        "slug": "hungering-scythe",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801335,
+        "spell_ids": [
+          801335
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Deathwind</span> by <span class=\"item-number\">4</span> sec and <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> now deals <span class=\"item-number\">15</span><span class=\"item-number\">%</span> additional damage to enemies inside.",
+        "description": "Increases the duration of Deathwind by 4 sec and Crow's Harvest now deals 15% additional damage to enemies inside.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801335,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Deathwind</span> by <span class=\"item-number\">4</span> sec and <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> now deals <span class=\"item-number\">15</span><span class=\"item-number\">%</span> additional damage to enemies inside.",
+            "description": "Increases the duration of Deathwind by 4 sec and Crow's Harvest now deals 15% additional damage to enemies inside."
+          }
+        ],
+        "connections": [
+          5762,
+          34481
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_artifact_thalkielsdiscord",
+          "key": "inv_artifact_thalkielsdiscord",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34476,
+        "name": "Blood Fueled",
+        "slug": "blood-fueled",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705416,
+        "spell_ids": [
+          705416
+        ],
+        "description_html": "Increases the healing absorbed by <span style=\"color: #FFFFFF; display: inline\">Doomrend</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the healing absorbed by Doomrend by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705416,
+            "description_html": "Increases the healing absorbed by <span style=\"color: #FFFFFF; display: inline\">Doomrend</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the healing absorbed by Doomrend by 30%."
+          }
+        ],
+        "connections": [
+          5762
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_BloodTap",
+          "key": "spell_deathknight_bloodtap",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30715,
+        "name": "Genocide",
+        "slug": "genocide",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560924,
+        "spell_ids": [
+          560924
+        ],
+        "description_html": "Increases the critical damage and critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage and critical strike chance of Slaughter by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560924,
+            "description_html": "Increases the critical damage and critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage and critical strike chance of Slaughter by 10%."
+          }
+        ],
+        "connections": [
+          31371
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(2)_Border",
+          "key": "novart_physical_ability__2__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6838,
+        "name": "Hemorrhage",
+        "slug": "hemorrhage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705432,
+        "spell_ids": [
+          705432
+        ],
+        "description_html": "Increases the damage and critical strike chance of your abilities by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> health.",
+        "description": "Increases the damage and critical strike chance of your abilities by 20% against enemies below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705432,
+            "description_html": "Increases the damage and critical strike chance of your abilities by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Increases the damage and critical strike chance of your abilities by 20% against enemies below 35% health."
+          }
+        ],
+        "connections": [
+          30551
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_bloodsplatter",
+          "key": "ability_rogue_bloodsplatter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30517,
+        "name": "Sanguine Harvester",
+        "slug": "sanguine-harvester",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560892,
+        "spell_ids": [
+          560892,
+          561339
+        ],
+        "description_html": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your melee haste by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560892,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee haste by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561339,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee haste by 20%."
+          }
+        ],
+        "connections": [
+          7259,
+          30551
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodhand_Border",
+          "key": "nhi_bloodhand_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12269,
+        "name": "Mortal's End",
+        "slug": "mortals-end",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 705437,
+        "spell_ids": [
+          705437
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Allows <span style=\"color: #ffffff; display: inline\">Extinction</span> to stack an additional time and allows <span style=\"color: #ffffff; display: inline\">Wraithblade</span> to grant you <span style=\"color: #ffffff; display: inline\">Extinction</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_physical_ability__2__border\" /><span class=\"name\">Extinction</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Slaughter</span> is usable regardless of the target's health and costs <span class=\"item-number\">-10</span> less Runic Power.</span></div>",
+        "description": "Level 30 Passive\nAllows Extinction to stack an additional time and allows Wraithblade to grant you Extinction.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705437,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Allows <span style=\"color: #ffffff; display: inline\">Extinction</span> to stack an additional time and allows <span style=\"color: #ffffff; display: inline\">Wraithblade</span> to grant you <span style=\"color: #ffffff; display: inline\">Extinction</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_physical_ability__2__border\" /><span class=\"name\">Extinction</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Slaughter</span> is usable regardless of the target's health and costs <span class=\"item-number\">-10</span> less Runic Power.</span></div>",
+            "description": "Level 30 Passive\nAllows Extinction to stack an additional time and allows Wraithblade to grant you Extinction.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power."
+          }
+        ],
+        "connections": [
+          9269
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_murderofcrows",
+          "key": "ability_hunter_murderofcrows",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 31370,
+        "name": "Crimson Wraith",
+        "slug": "crimson-wraith",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504560,
+        "spell_ids": [
+          504560,
+          504880
+        ],
+        "description_html": "Increases your critical stike damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical stike damage by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504560,
+            "description_html": "Increases your critical stike damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical stike damage by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504880,
+            "description_html": "Increases your critical stike damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical stike damage by 20%."
+          }
+        ],
+        "connections": [
+          6766,
+          34476
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_arcanewraith_Border",
+          "key": "nhi_arcanewraith_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31373,
+        "name": "Harvest Time",
+        "slug": "harvest-time",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803995,
+        "spell_ids": [
+          803995
+        ],
+        "description_html": "Increases your damage and critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and gives your spells that require <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span> a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> to not consume the effect for <span class=\"item-number\">15</span> seconds.",
+        "description": "Increases your damage and critical strike chance by 15% and gives your spells that require Soul Infusion a -50% to not consume the effect for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803995,
+            "description_html": "Increases your damage and critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and gives your spells that require <span style=\"color: #5ee2ff; display: inline\">Soul Infusion</span> a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> to not consume the effect for <span class=\"item-number\">15</span> seconds.",
+            "description": "Increases your damage and critical strike chance by 15% and gives your spells that require Soul Infusion a -50% to not consume the effect for 15 seconds."
+          }
+        ],
+        "connections": [
+          6838,
+          30715,
+          34476
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_1h_revendreth_d_01",
+          "key": "inv_mace_1h_revendreth_d_01",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29250,
+        "name": "Souls for the Slaughter",
+        "slug": "souls-for-the-slaughter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705428,
+        "spell_ids": [
+          705428
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> now cause your auto attacks to deal an additional <span class=\"item-number\">85</span><span class=\"item-number\">%</span> Shadow damage for <span class=\"item-number\">5</span> seconds.",
+        "description": "Critical strikes with Slaughter now cause your auto attacks to deal an additional 85% Shadow damage for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705428,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Slaughter</span> now cause your auto attacks to deal an additional <span class=\"item-number\">85</span><span class=\"item-number\">%</span> Shadow damage for <span class=\"item-number\">5</span> seconds.",
+            "description": "Critical strikes with Slaughter now cause your auto attacks to deal an additional 85% Shadow damage for 5 seconds."
+          }
+        ],
+        "connections": [
+          6838,
+          30517
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_helmet_(7)_Border",
+          "key": "novart_helmet__7__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31369,
+        "name": "Harvesting Grounds",
+        "slug": "harvesting-grounds",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705413,
+        "spell_ids": [
+          705413
+        ],
+        "description_html": "Create a harvesting ground at the target location for <span class=\"item-number\">15</span> seconds, enemies inside have their melee and ranged haste and movement speed reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span><br /><br />For the duration, enemies that try to exit the harvesting ground will be pulled back to its center.",
+        "description": "Create a harvesting ground at the target location for 15 seconds, enemies inside have their melee and ranged haste and movement speed reduced by -20%\n\nFor the duration, enemies that try to exit the harvesting ground will be pulled back to its center.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705413,
+            "description_html": "Create a harvesting ground at the target location for <span class=\"item-number\">15</span> seconds, enemies inside have their melee and ranged haste and movement speed reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span><br /><br />For the duration, enemies that try to exit the harvesting ground will be pulled back to its center.",
+            "description": "Create a harvesting ground at the target location for 15 seconds, enemies inside have their melee and ranged haste and movement speed reduced by -20%\n\nFor the duration, enemies that try to exit the harvesting ground will be pulled back to its center."
+          }
+        ],
+        "connections": [
+          31370,
+          31373
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shoulder_plate_raiddeathknightmythic_s_01",
+          "key": "inv_shoulder_plate_raiddeathknightmythic_s_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29617,
+        "name": "Blood Harvester",
+        "slug": "blood-harvester",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300889,
+        "spell_ids": [
+          300889
+        ],
+        "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+        "description": "Increases critical strike chance of all party and raid members by 3%.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300889,
+            "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+            "description": "Increases critical strike chance of all party and raid members by 3%.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          31373
+        ],
+        "choice_group": 572879,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_ironmaidens_whirlofblood",
+          "key": "ability_ironmaidens_whirlofblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34477,
+        "name": "The Time Has Come",
+        "slug": "the-time-has-come",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572879,
+        "spell_ids": [
+          572879
+        ],
+        "description_html": "Your abilities now deal <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more damage against slowed targets.",
+        "description": "Your abilities now deal 10% more damage against slowed targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572879,
+            "description_html": "Your abilities now deal <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more damage against slowed targets.",
+            "description": "Your abilities now deal 10% more damage against slowed targets."
+          }
+        ],
+        "connections": [
+          31373
+        ],
+        "choice_group": 572879,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_Subversion",
+          "key": "spell_deathknight_subversion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6684,
+        "name": "Siphon Essence",
+        "slug": "siphon-essence",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806125,
+        "spell_ids": [
+          806125
+        ],
+        "description_html": "Attempt to drain an enemies vitals, leeching <span class=\"item-number\">22</span> + <span class=\"item-number\">31.03% AP</span> health, interrupting casting and preventing any spell from that school from being cast for <span class=\"item-number\">3</span> seconds.",
+        "description": "Attempt to drain an enemies vitals, leeching 22 + 31.03% AP health, interrupting casting and preventing any spell from that school from being cast for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806125,
+            "description_html": "Attempt to drain an enemies vitals, leeching <span class=\"item-number\">22</span> + <span class=\"item-number\">31.03% AP</span> health, interrupting casting and preventing any spell from that school from being cast for <span class=\"item-number\">3</span> seconds.",
+            "description": "Attempt to drain an enemies vitals, leeching 22 + 31.03% AP health, interrupting casting and preventing any spell from that school from being cast for 3 seconds."
+          }
+        ],
+        "connections": [
+          29250,
+          31373
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Virus_Red",
+          "key": "virus_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9268,
+        "name": "Executioner",
+        "slug": "executioner",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 500542,
+        "spell_ids": [
+          500542
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Strength.<br /><br />In addition, increases your Armor penetration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> health.",
+        "description": "Level 40 Passive\nIncreases your critical strike rating by 20% of your Strength.\n\nIn addition, increases your Armor penetration by 30% against enemies below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500542,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Strength.<br /><br />In addition, increases your Armor penetration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Level 40 Passive\nIncreases your critical strike rating by 20% of your Strength.\n\nIn addition, increases your Armor penetration by 30% against enemies below 35% health."
+          }
+        ],
+        "connections": [
+          12269
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Sword_2H_Blood_C_01",
+          "key": "inv_sword_2h_blood_c_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6762,
+        "name": "Blood Knight",
+        "slug": "blood-knight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704552,
+        "spell_ids": [
+          704552
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Doomrend</span> now refund a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>.",
+        "description": "Critical strikes with Doomrend now refund a Reaped Soul.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704552,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Doomrend</span> now refund a <span style=\"color: #5ee2ff; display: inline\">Reaped Soul</span>.",
+            "description": "Critical strikes with Doomrend now refund a Reaped Soul."
+          }
+        ],
+        "connections": [
+          31369,
+          31370
+        ],
+        "choice_group": 723411,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodstrike_Border",
+          "key": "nhi_bloodstrike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29247,
+        "name": "Blood Wraith",
+        "slug": "blood-wraith",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707305,
+        "spell_ids": [
+          707305
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Wraithblade</span> now deals an additional <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage and its Runic Power cost is reduced by <span class=\"item-number\">-20</span>.",
+        "description": "Wraithblade now deals an additional 100% Weapon Damage and its Runic Power cost is reduced by -20.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707305,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Wraithblade</span> now deals an additional <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage and its Runic Power cost is reduced by <span class=\"item-number\">-20</span>.",
+            "description": "Wraithblade now deals an additional 100% Weapon Damage and its Runic Power cost is reduced by -20."
+          }
+        ],
+        "connections": [
+          31369,
+          31370
+        ],
+        "choice_group": 723411,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathwing_bloodcorruption_death",
+          "key": "ability_deathwing_bloodcorruption_death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30545,
+        "name": "Doomer",
+        "slug": "doomer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704556,
+        "spell_ids": [
+          704556
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #ffffff; display: inline\">Slaughter</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Doomrend and Slaughter by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704556,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #ffffff; display: inline\">Slaughter</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Doomrend and Slaughter by 30%."
+          }
+        ],
+        "connections": [
+          29617,
+          31369,
+          34477
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_warfrontshorde_c_01",
+          "key": "inv_sword_1h_warfrontshorde_c_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7266,
+        "name": "Unbound",
+        "slug": "unbound",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706785,
+        "spell_ids": [
+          706785
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> is now guaranteed to critically strike for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage on enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Your Reliquary of the Lost is now guaranteed to critically strike for 25% increased damage on enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706785,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Reliquary of the Lost</span> is now guaranteed to critically strike for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage on enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Your Reliquary of the Lost is now guaranteed to critically strike for 25% increased damage on enemies below 20% health."
+          }
+        ],
+        "connections": [
+          6684,
+          29617,
+          34477
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(2)_Border",
+          "key": "novart_magicspell__2__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7267,
+        "name": "The Grim Reaper",
+        "slug": "the-grim-reaper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504269,
+        "spell_ids": [
+          504269
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Ghost Claw</span> transforms into <span style=\"color: #ffffff; display: inline\">Wraith Claw</span> and now has <span class=\"item-number\">2</span> charges.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_ghostclaw_border\" /><span class=\"name\">Wraith Claw</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges,<span class=\"item-number\">15</span> sec recharge</span><br />Chill an enemy with a ghostly claw, slowing and stealing <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> of their movement speed for <span class=\"item-number\">8</span> seconds.<br /><br />Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Ghost Claw</span>.</span></div>",
+        "description": "Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec recharge\nChill an enemy with a ghostly claw, slowing and stealing -40% of their movement speed for 8 seconds.\n\nWhenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504269,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Ghost Claw</span> transforms into <span style=\"color: #ffffff; display: inline\">Wraith Claw</span> and now has <span class=\"item-number\">2</span> charges.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_ghostclaw_border\" /><span class=\"name\">Wraith Claw</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges,<span class=\"item-number\">15</span> sec recharge</span><br />Chill an enemy with a ghostly claw, slowing and stealing <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> of their movement speed for <span class=\"item-number\">8</span> seconds.<br /><br />Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Ghost Claw</span>.</span></div>",
+            "description": "Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec recharge\nChill an enemy with a ghostly claw, slowing and stealing -40% of their movement speed for 8 seconds.\n\nWhenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw."
+          }
+        ],
+        "connections": [
+          6684,
+          29250
+        ],
+        "choice_group": 705409,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodrage_Border",
+          "key": "nhi_bloodrage_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29604,
+        "name": "Ravenous Thirst",
+        "slug": "ravenous-thirst",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705409,
+        "spell_ids": [
+          705409
+        ],
+        "description_html": "Reduces the Runic Power cost of <span style=\"color: #ffffff; display: inline\">Ghastly Screech</span> and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">-10</span>.",
+        "description": "Reduces the Runic Power cost of Ghastly Screech and Soul Strike by -10.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705409,
+            "description_html": "Reduces the Runic Power cost of <span style=\"color: #ffffff; display: inline\">Ghastly Screech</span> and <span style=\"color: #ffffff; display: inline\">Soul Strike</span> by <span class=\"item-number\">-10</span>.",
+            "description": "Reduces the Runic Power cost of Ghastly Screech and Soul Strike by -10."
+          }
+        ],
+        "connections": [
+          6684,
+          29250
+        ],
+        "choice_group": 705409,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SoulHarvest2__Red",
+          "key": "soulharvest2__red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30038,
+        "name": "Darkrend Scythe",
+        "slug": "darkrend-scythe",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805205,
+        "spell_ids": [
+          805205
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> now applies a bleed, dealing <span class=\"item-number\">56</span> + <span class=\"item-number\">8.5% AP</span> Physical damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh the duration.",
+        "description": "Damage dealt by Doomrend and Crow's Harvest now applies a bleed, dealing 56 + 8.5% AP Physical damage every 2 sec for 10 seconds, stacking 5 times.\n\nAdditional applications do not refresh the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805205,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Doomrend</span> and <span style=\"color: #ffffff; display: inline\">Crow's Harvest</span> now applies a bleed, dealing <span class=\"item-number\">56</span> + <span class=\"item-number\">8.5% AP</span> Physical damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh the duration.",
+            "description": "Damage dealt by Doomrend and Crow's Harvest now applies a bleed, dealing 56 + 8.5% AP Physical damage every 2 sec for 10 seconds, stacking 5 times.\n\nAdditional applications do not refresh the duration."
+          }
+        ],
+        "connections": [
+          6762,
+          29247,
+          30545
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_114",
+          "key": "inv_staff_114",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29688,
+        "name": "Blood Frenzy",
+        "slug": "blood-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707899,
+        "spell_ids": [
+          707899
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Harvest Time</span> with an enemy targeted within <span class=\"item-number\">20</span> yds of you now unleashes a <span style=\"color: #ffffff; display: inline\">Blood Frenzy</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3mantraofretribution\" /><span class=\"name\">Blood Frenzy</span></div><span class=\"desc\">Deals <span class=\"item-number\">1</span> + <span class=\"item-number\">36% AP</span> Shadow Damage to your target every <span class=\"item-number\">0.75</span> sec for <span class=\"item-number\">7.5</span> seconds. At the end of the duration, the target takes an additional <span class=\"item-number\">457</span> + <span class=\"item-number\">45% AP</span> Shadow Damage.</span></div>",
+        "description": "Casting Harvest Time with an enemy targeted within 20 yds of you now unleashes a Blood Frenzy.Blood FrenzyDeals 1 + 36% AP Shadow Damage to your target every 0.75 sec for 7.5 seconds. At the end of the duration, the target takes an additional 457 + 45% AP Shadow Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707899,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Harvest Time</span> with an enemy targeted within <span class=\"item-number\">20</span> yds of you now unleashes a <span style=\"color: #ffffff; display: inline\">Blood Frenzy</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _d3mantraofretribution\" /><span class=\"name\">Blood Frenzy</span></div><span class=\"desc\">Deals <span class=\"item-number\">1</span> + <span class=\"item-number\">36% AP</span> Shadow Damage to your target every <span class=\"item-number\">0.75</span> sec for <span class=\"item-number\">7.5</span> seconds. At the end of the duration, the target takes an additional <span class=\"item-number\">457</span> + <span class=\"item-number\">45% AP</span> Shadow Damage.</span></div>",
+            "description": "Casting Harvest Time with an enemy targeted within 20 yds of you now unleashes a Blood Frenzy.Blood FrenzyDeals 1 + 36% AP Shadow Damage to your target every 0.75 sec for 7.5 seconds. At the end of the duration, the target takes an additional 457 + 45% AP Shadow Damage."
+          }
+        ],
+        "connections": [
+          7266,
+          30545
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3mantraofretribution",
+          "key": "d3mantraofretribution",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31368,
+        "name": "Ruin",
+        "slug": "ruin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805198,
+        "spell_ids": [
+          805198
+        ],
+        "description_html": "$dd",
+        "description": "$dd",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805198,
+            "description_html": "$de",
+            "description": "$de"
+          }
+        ],
+        "connections": [
+          7266,
+          7267,
+          29604
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_Rupture",
+          "key": "ability_rogue_rupture",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11268,
+        "name": "This Is My Domain",
+        "slug": "this-is-my-domain",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 500584,
+        "spell_ids": [
+          500584
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases the amount healed through the <span style=\"color: #FFFFFF; display: inline\">Harvest - Level <span class=\"item-number\">10</span> Passive</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causes being in your <span style=\"color: #ffffff; display: inline\">Harvesting Grounds</span> to increase this effect by an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Level 50 Passive\nIncreases the amount healed through the Harvest - Level 10 Passive by 10% and causes being in your Harvesting Grounds to increase this effect by an additional 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500584,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases the amount healed through the <span style=\"color: #FFFFFF; display: inline\">Harvest - Level <span class=\"item-number\">10</span> Passive</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causes being in your <span style=\"color: #ffffff; display: inline\">Harvesting Grounds</span> to increase this effect by an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Level 50 Passive\nIncreases the amount healed through the Harvest - Level 10 Passive by 10% and causes being in your Harvesting Grounds to increase this effect by an additional 30%."
+          }
+        ],
+        "connections": [
+          9268
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_bloodsplatter",
+          "key": "ability_rogue_bloodsplatter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30546,
+        "name": "Redshade",
+        "slug": "redshade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524735,
+        "spell_ids": [
+          524735
+        ],
+        "description_html": "$db",
+        "description": "$db",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524735,
+            "description_html": "$dc",
+            "description": "$dc"
+          }
+        ],
+        "connections": [
+          29688,
+          30038
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_2h_blood_c_02",
+          "key": "inv_sword_2h_blood_c_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6765,
+        "name": "Deathbringer",
+        "slug": "deathbringer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 573040,
+        "spell_ids": [
+          573040
+        ],
+        "description_html": "Doubles the duration of <span style=\"color: #ffffff; display: inline\">Blood Frenzy</span>, <span style=\"color: #ffffff; display: inline\">Harvest Time</span>, and <span style=\"color: #ffffff; display: inline\">Harvesting Grounds</span>.",
+        "description": "Doubles the duration of Blood Frenzy, Harvest Time, and Harvesting Grounds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573040,
+            "description_html": "Doubles the duration of <span style=\"color: #ffffff; display: inline\">Blood Frenzy</span>, <span style=\"color: #ffffff; display: inline\">Harvest Time</span>, and <span style=\"color: #ffffff; display: inline\">Harvesting Grounds</span>.",
+            "description": "Doubles the duration of Blood Frenzy, Harvest Time, and Harvesting Grounds."
+          }
+        ],
+        "connections": [
+          29688
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_bloodsword_Border",
+          "key": "nhi_bloodsword_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5562,
+        "name": "Shudder Scythe",
+        "slug": "shudder-scythe",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805708,
+        "spell_ids": [
+          805708
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Murder</span> is transformed into <span style=\"color: #ffffff; display: inline\">Shudder Scythe</span>, which costs additional Runic Power but deals increased damage and generates <span style=\"color: #FFFFFF; display: inline\">Soul Fragments</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_xavius_crushingshadows\" /><span class=\"name\">Shudder Scythe (Transform)</span></div><span class=\"desc\">Strike an enemy <span class=\"item-number\">5</span> times, each dealing <span class=\"item-number\">40</span><span class=\"item-number\">%</span> Weapon Damage and granting you a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span> with each strike.</span></div>",
+        "description": "Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 40% Weapon Damage and granting you a Soul Fragment with each strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805708,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Murder</span> is transformed into <span style=\"color: #ffffff; display: inline\">Shudder Scythe</span>, which costs additional Runic Power but deals increased damage and generates <span style=\"color: #FFFFFF; display: inline\">Soul Fragments</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_xavius_crushingshadows\" /><span class=\"name\">Shudder Scythe (Transform)</span></div><span class=\"desc\">Strike an enemy <span class=\"item-number\">5</span> times, each dealing <span class=\"item-number\">40</span><span class=\"item-number\">%</span> Weapon Damage and granting you a <span style=\"color: #ffffff; display: inline\">Soul Fragment</span> with each strike.</span></div>",
+            "description": "Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 40% Weapon Damage and granting you a Soul Fragment with each strike."
+          }
+        ],
+        "connections": [
+          29688,
+          31368
+        ],
+        "choice_group": 841112,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_xavius_crushingshadows",
+          "key": "ability_xavius_crushingshadows",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11262,
+        "name": "Crimson Thirst",
+        "slug": "crimson-thirst",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 30,
+        "tree_id": 79,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807415,
+        "spell_ids": [
+          807415
+        ],
+        "description_html": "Your Physical damage dealt to enemies now grants <span style=\"color: #ffffff; display: inline\">Crimson Thirst</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_engineerskill03_border\" /><span class=\"name\">Crimson Thirst (Stacks)</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Murder</span> within <span class=\"item-number\">15</span> seconds deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage and costs <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> less Runic Power per stack. At <span class=\"item-number\">5</span> stacks, it also heals you equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.</span></div>",
+        "description": "Your Physical damage dealt to enemies now grants Crimson Thirst for 20 seconds, stacking 5 times.Crimson Thirst (Stacks)Your next Murder within 15 seconds deals 10% increased damage and costs -10% less Runic Power per stack. At 5 stacks, it also heals you equal to 50% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807415,
+            "description_html": "Your Physical damage dealt to enemies now grants <span style=\"color: #ffffff; display: inline\">Crimson Thirst</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_engineerskill03_border\" /><span class=\"name\">Crimson Thirst (Stacks)</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Murder</span> within <span class=\"item-number\">15</span> seconds deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage and costs <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> less Runic Power per stack. At <span class=\"item-number\">5</span> stacks, it also heals you equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.</span></div>",
+            "description": "Your Physical damage dealt to enemies now grants Crimson Thirst for 20 seconds, stacking 5 times.Crimson Thirst (Stacks)Your next Murder within 15 seconds deals 10% increased damage and costs -10% less Runic Power per stack. At 5 stacks, it also heals you equal to 50% of the damage dealt."
+          }
+        ],
+        "connections": [
+          29688,
+          31368
+        ],
+        "choice_group": 841112,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_engineerskill03_Border",
+          "key": "_5_engineerskill03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

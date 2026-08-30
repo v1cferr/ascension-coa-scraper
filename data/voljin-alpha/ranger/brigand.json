@@ -1,0 +1,2481 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:24+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:80c24ab32dfb01fb9258c2576f5e97035c0728e2687e408daca6ee32fe41613e",
+    "talent_count": 165,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 21,
+    "name": "Ranger",
+    "slug": "ranger",
+    "class_file": "ranger",
+    "color": "rgb(191, 240, 107)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:ranger",
+      "key": "class-ranger",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 38,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 55,
+    "name": "Brigand",
+    "slug": "brigand",
+    "sort_order": 2,
+    "class_id": 21,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31179,
+        "name": "Ravage",
+        "slug": "ravage",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4029,
+            29337
+          ]
+        },
+        "spell_id": 803851,
+        "spell_ids": [
+          803851
+        ],
+        "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">1</span> Advantage</span><br />Ravage an enemy, causing them to bleed out dealing <span class=\"item-number\">140</span> + <span class=\"item-number\">32.02% AP</span> Physical damage over <span class=\"item-number\">12</span> seconds.",
+        "description": "Generates 1 Advantage\nRavage an enemy, causing them to bleed out dealing 140 + 32.02% AP Physical damage over 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803851,
+            "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">1</span> Advantage</span><br />Ravage an enemy, causing them to bleed out dealing <span class=\"item-number\">140</span> + <span class=\"item-number\">32.02% AP</span> Physical damage over <span class=\"item-number\">12</span> seconds.",
+            "description": "Generates 1 Advantage\nRavage an enemy, causing them to bleed out dealing 140 + 32.02% AP Physical damage over 12 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_mongoosebite",
+          "key": "ability_hunter_mongoosebite",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4029,
+        "name": "Ravager",
+        "slug": "ravager",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29337
+          ]
+        },
+        "spell_id": 92116,
+        "spell_ids": [
+          92116
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Wild Strike</span> now generates <span class=\"item-number\">1</span> additional <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Removes the minimum range of your ranged abilities.",
+        "description": "Level 10 Passive\nYour Wild Strike now generates 1 additional Advantage.\n\nRemoves the minimum range of your ranged abilities.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92116,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Wild Strike</span> now generates <span class=\"item-number\">1</span> additional <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Removes the minimum range of your ranged abilities.",
+            "description": "Level 10 Passive\nYour Wild Strike now generates 1 additional Advantage.\n\nRemoves the minimum range of your ranged abilities."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_energeticrecovery",
+          "key": "ability_rogue_energeticrecovery",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 1389,
+        "name": "Banditry",
+        "slug": "banditry",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520574,
+        "spell_ids": [
+          520574,
+          520879
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and Focus regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance by 2% and Focus regeneration by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520574,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and Focus regeneration by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 2% and Focus regeneration by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 520879,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and Focus regeneration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 4% and Focus regeneration by 30%."
+          }
+        ],
+        "connections": [
+          31179
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_CheatDeath",
+          "key": "ability_rogue_cheatdeath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29328,
+        "name": "Knuckleduster",
+        "slug": "knuckleduster",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806957,
+        "spell_ids": [
+          806957
+        ],
+        "description_html": "Periodic damage dealt now generates <span class=\"item-number\">5</span> Focus.<br /><br />In addition, the range of your <span style=\"color: #FFFFFF; display: inline\">Bushwhack</span> is increased by <span class=\"item-number\">10</span> yds.",
+        "description": "Periodic damage dealt now generates 5 Focus.\n\nIn addition, the range of your Bushwhack is increased by 10 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806957,
+            "description_html": "Periodic damage dealt now generates <span class=\"item-number\">5</span> Focus.<br /><br />In addition, the range of your <span style=\"color: #FFFFFF; display: inline\">Bushwhack</span> is increased by <span class=\"item-number\">10</span> yds.",
+            "description": "Periodic damage dealt now generates 5 Focus.\n\nIn addition, the range of your Bushwhack is increased by 10 yds."
+          }
+        ],
+        "connections": [
+          31179
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_leather_a_03defias",
+          "key": "inv_leather_a_03defias",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34166,
+        "name": "Jagged Cuts",
+        "slug": "jagged-cuts",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807668,
+        "spell_ids": [
+          807668
+        ],
+        "description_html": "Increases the damage and duration of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> and <span style=\"color: #ffffff; display: inline\">Ravage</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage and duration of Toxic Dart and Ravage by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807668,
+            "description_html": "Increases the damage and duration of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> and <span style=\"color: #ffffff; display: inline\">Ravage</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage and duration of Toxic Dart and Ravage by 25%."
+          }
+        ],
+        "connections": [
+          1389
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_SwiftStrike",
+          "key": "ability_hunter_swiftstrike",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12449,
+        "name": "Assassin",
+        "slug": "assassin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807626,
+        "spell_ids": [
+          807626
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Knockout</span> and <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> by <span class=\"item-number\">1</span> sec.",
+        "description": "Increases the duration of Knockout and Crippling Shot by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807626,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Knockout</span> and <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> by <span class=\"item-number\">1</span> sec.",
+            "description": "Increases the duration of Knockout and Crippling Shot by 1 sec."
+          }
+        ],
+        "connections": [
+          1389,
+          29328
+        ],
+        "choice_group": 807626,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_deadliness",
+          "key": "ability_rogue_deadliness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29449,
+        "name": "Excessive But Necessary",
+        "slug": "excessive-but-necessary",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804939,
+        "spell_ids": [
+          804939
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Elude</span> and <span style=\"color: #ffffff; display: inline\">Knockout</span> by <span class=\"item-number\">-4</span> sec.",
+        "description": "Reduces the cooldown of Elude and Knockout by -4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804939,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Elude</span> and <span style=\"color: #ffffff; display: inline\">Knockout</span> by <span class=\"item-number\">-4</span> sec.",
+            "description": "Reduces the cooldown of Elude and Knockout by -4 sec."
+          }
+        ],
+        "connections": [
+          1389,
+          29328
+        ],
+        "choice_group": 807626,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_MindSteal",
+          "key": "spell_shadow_mindsteal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6672,
+        "name": "Close Quarters",
+        "slug": "close-quarters",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301146,
+        "spell_ids": [
+          301146,
+          301248
+        ],
+        "description_html": "Increases your attack power and Agility by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your attack power and Agility by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301146,
+            "description_html": "Increases your attack power and Agility by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your attack power and Agility by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301248,
+            "description_html": "Increases your attack power and Agility by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your attack power and Agility by 6%."
+          }
+        ],
+        "connections": [
+          29328
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Cleave",
+          "key": "ability_warrior_cleave",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31357,
+        "name": "Beatdown",
+        "slug": "beatdown",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 705047,
+        "spell_ids": [
+          705047
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Auto attacks now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reveal a fault in the enemy's defenses, causing your next instance of Physical ability damage to ignore Armor.<br /><br />Chance increased by <span class=\"item-number\">15%</span> while wielding a polearm.<br /><br />In addition, increases your chance to hit by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Level 20 Passive\nAuto attacks now have a 5% chance to reveal a fault in the enemy's defenses, causing your next instance of Physical ability damage to ignore Armor.\n\nChance increased by 15% while wielding a polearm.\n\nIn addition, increases your chance to hit by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705047,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Auto attacks now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reveal a fault in the enemy's defenses, causing your next instance of Physical ability damage to ignore Armor.<br /><br />Chance increased by <span class=\"item-number\">15%</span> while wielding a polearm.<br /><br />In addition, increases your chance to hit by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Level 20 Passive\nAuto attacks now have a 5% chance to reveal a fault in the enemy's defenses, causing your next instance of Physical ability damage to ignore Armor.\n\nChance increased by 15% while wielding a polearm.\n\nIn addition, increases your chance to hit by 5%."
+          }
+        ],
+        "connections": [
+          4029
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_KidneyShot",
+          "key": "ability_rogue_kidneyshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5430,
+        "name": "Assault",
+        "slug": "assault",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803108,
+        "spell_ids": [
+          803108
+        ],
+        "description_html": "Assault a low health enemy, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage (<span class=\"item-number\">175</span><span class=\"item-number\">%</span> with a dagger equipped) plus an additional <span class=\"item-number\">8</span> + <span class=\"item-number\">100% AP</span> Physical damage. If the target is bleeding, this deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Assault a low health enemy, dealing 100% Weapon Damage (175% with a dagger equipped) plus an additional 8 + 100% AP Physical damage. If the target is bleeding, this deals 50% increased damage.\n\nDamage increased for each stack of Advantage.\n\nOnly usable on enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803108,
+            "description_html": "Assault a low health enemy, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage (<span class=\"item-number\">175</span><span class=\"item-number\">%</span> with a dagger equipped) plus an additional <span class=\"item-number\">8</span> + <span class=\"item-number\">100% AP</span> Physical damage. If the target is bleeding, this deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Assault a low health enemy, dealing 100% Weapon Damage (175% with a dagger equipped) plus an additional 8 + 100% AP Physical damage. If the target is bleeding, this deals 50% increased damage.\n\nDamage increased for each stack of Advantage.\n\nOnly usable on enemies below 20% health."
+          }
+        ],
+        "connections": [
+          34166
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_ruthlessness",
+          "key": "ability_rogue_ruthlessness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30049,
+        "name": "Dirty Blades",
+        "slug": "dirty-blades",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680276,
+        "spell_ids": [
+          680276
+        ],
+        "description_html": "For <span class=\"item-number\">4</span> seconds, your melee auto attacks deal an additional <span class=\"item-number\">70</span><span class=\"item-number\">%</span> of the damage dealt as Nature damage and reduces your target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br />Duration increased by <span class=\"item-number\">4</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+        "description": "For 4 seconds, your melee auto attacks deal an additional 70% of the damage dealt as Nature damage and reduces your target's healing received by -20% for 8 seconds, stacking 2 times.\n\nDuration increased by 4 sec for each stack of Advantage.\n\nUsable while in Elude.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680276,
+            "description_html": "For <span class=\"item-number\">4</span> seconds, your melee auto attacks deal an additional <span class=\"item-number\">70</span><span class=\"item-number\">%</span> of the damage dealt as Nature damage and reduces your target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br />Duration increased by <span class=\"item-number\">4</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+            "description": "For 4 seconds, your melee auto attacks deal an additional 70% of the damage dealt as Nature damage and reduces your target's healing received by -20% for 8 seconds, stacking 2 times.\n\nDuration increased by 4 sec for each stack of Advantage.\n\nUsable while in Elude."
+          }
+        ],
+        "connections": [
+          6672
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_rollthebones02",
+          "key": "ability_rogue_rollthebones02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6673,
+        "name": "Bounty Hunter",
+        "slug": "bounty-hunter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803114,
+        "spell_ids": [
+          803114
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Flank</span> and <span style=\"color: #FFFFFF; display: inline\">Rusty Shiv</span> now increases the target's damage taken from your <span style=\"color: #8fff7a; display: inline\">Advantage</span> spenders by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Damage dealt by Flank and Rusty Shiv now increases the target's damage taken from your Advantage spenders by 25% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803114,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Flank</span> and <span style=\"color: #FFFFFF; display: inline\">Rusty Shiv</span> now increases the target's damage taken from your <span style=\"color: #8fff7a; display: inline\">Advantage</span> spenders by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Damage dealt by Flank and Rusty Shiv now increases the target's damage taken from your Advantage spenders by 25% for 8 seconds."
+          }
+        ],
+        "connections": [
+          5430
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_polearm_2h_pandariaquest_b_01",
+          "key": "inv_polearm_2h_pandariaquest_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34139,
+        "name": "Dice Games",
+        "slug": "dice-games",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801438,
+        "spell_ids": [
+          801438
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Wild Strike</span> and <span style=\"color: #ffffff; display: inline\">Assault</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Wild Strike and Assault by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801438,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Wild Strike</span> and <span style=\"color: #ffffff; display: inline\">Assault</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Wild Strike and Assault by 10%."
+          }
+        ],
+        "connections": [
+          5430
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_rollthebones",
+          "key": "ability_rogue_rollthebones",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30461,
+        "name": "Hookshot",
+        "slug": "hookshot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800360,
+        "spell_ids": [
+          800360
+        ],
+        "description_html": "Launch a hook at a target attempting to lodge it into an open wound, dealing <span class=\"item-number\">99</span> + <span class=\"item-number\">47.85% AP</span> Physical damage. <br /><br />If the target is bleeding, you can reactivate this to pull yourself to them, dealing <span class=\"item-number\">300</span><span class=\"item-number\">%</span> Weapon Damage and generating <span class=\"item-number\">2</span> <span style=\"color: #8fff7a; display: inline\">Advantage</span>",
+        "description": "Launch a hook at a target attempting to lodge it into an open wound, dealing 99 + 47.85% AP Physical damage.\n\nIf the target is bleeding, you can reactivate this to pull yourself to them, dealing 300% Weapon Damage and generating 2 Advantage",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800360,
+            "description_html": "Launch a hook at a target attempting to lodge it into an open wound, dealing <span class=\"item-number\">99</span> + <span class=\"item-number\">47.85% AP</span> Physical damage. <br /><br />If the target is bleeding, you can reactivate this to pull yourself to them, dealing <span class=\"item-number\">300</span><span class=\"item-number\">%</span> Weapon Damage and generating <span class=\"item-number\">2</span> <span style=\"color: #8fff7a; display: inline\">Advantage</span>",
+            "description": "Launch a hook at a target attempting to lodge it into an open wound, dealing 99 + 47.85% AP Physical damage.\n\nIf the target is bleeding, you can reactivate this to pull yourself to them, dealing 300% Weapon Damage and generating 2 Advantage"
+          }
+        ],
+        "connections": [
+          12449,
+          29449
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_versatility",
+          "key": "ability_rogue_versatility",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6671,
+        "name": "Highwayman",
+        "slug": "highwayman",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707744,
+        "spell_ids": [
+          707744
+        ],
+        "description_html": "Direct critical strikes while behind your target increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, or for your next <span class=\"item-number\">2</span> attacks.",
+        "description": "Direct critical strikes while behind your target increase your haste by 15% for 5 seconds, or for your next 2 attacks.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707744,
+            "description_html": "Direct critical strikes while behind your target increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, or for your next <span class=\"item-number\">2</span> attacks.",
+            "description": "Direct critical strikes while behind your target increase your haste by 15% for 5 seconds, or for your next 2 attacks."
+          }
+        ],
+        "connections": [
+          30049
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill44_Border",
+          "key": "_5_druideskill44_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30459,
+        "name": "Ambuscade",
+        "slug": "ambuscade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705053,
+        "spell_ids": [
+          705053
+        ],
+        "description_html": "Increases the base damage of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Flank</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, plus an additional <span class=\"item-number\">35</span><span class=\"item-number\">%</span> if you have a polearm equipped.",
+        "description": "Increases the base damage of Skullpiercer and Flank by 20%, plus an additional 35% if you have a polearm equipped.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705053,
+            "description_html": "Increases the base damage of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Flank</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, plus an additional <span class=\"item-number\">35</span><span class=\"item-number\">%</span> if you have a polearm equipped.",
+            "description": "Increases the base damage of Skullpiercer and Flank by 20%, plus an additional 35% if you have a polearm equipped."
+          }
+        ],
+        "connections": [
+          30049
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_throwdown_2",
+          "key": "ability_warrior_throwdown_2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 3871,
+        "name": "Rub It In",
+        "slug": "rub-it-in",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 705085,
+        "spell_ids": [
+          705085
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> spent now gives you a <span class=\"item-number\">20%</span> chance to refund <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Level 30 Passive\nEach stack of Advantage spent now gives you a 20% chance to refund 1 stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705085,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> spent now gives you a <span class=\"item-number\">20%</span> chance to refund <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Level 30 Passive\nEach stack of Advantage spent now gives you a 20% chance to refund 1 stack of Advantage."
+          }
+        ],
+        "connections": [
+          31357
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Warriorskill_02_Border",
+          "key": "custom_warriorskill_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7428,
+        "name": "Throatpunch",
+        "slug": "throatpunch",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500617,
+        "spell_ids": [
+          500617
+        ],
+        "description_html": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for <span class=\"item-number\">2</span> seconds.",
+        "description": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for 2 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500617,
+            "description_html": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for <span class=\"item-number\">2</span> seconds.",
+            "description": "Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for 2 seconds."
+          }
+        ],
+        "connections": [
+          6673,
+          34139
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_Warriorskill_05_Border",
+          "key": "custom_warriorskill_05_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8010,
+        "name": "Trueshot Lodge Training",
+        "slug": "trueshot-lodge-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803113,
+        "spell_ids": [
+          803113,
+          803855
+        ],
+        "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />While wielding a polearm, the damage of your bleed effects is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your off-hand weapon damage by 25%.\n\nWhile wielding a polearm, the damage of your bleed effects is increased by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803113,
+            "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.<br /><br />While wielding a polearm, the damage of your bleed effects is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your off-hand weapon damage by 25%.\n\nWhile wielding a polearm, the damage of your bleed effects is increased by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 803855,
+            "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.<br /><br />While wielding a polearm, the damage of your bleed effects is increased by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your off-hand weapon damage by 50%.\n\nWhile wielding a polearm, the damage of your bleed effects is increased by 50%."
+          }
+        ],
+        "connections": [
+          30461,
+          34139
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_improvedmoonkinform",
+          "key": "ability_druid_improvedmoonkinform",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6676,
+        "name": "Focused Fighter",
+        "slug": "focused-fighter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807206,
+        "spell_ids": [
+          807206
+        ],
+        "description_html": "Reduces the Focus cost of <span style=\"color: #ffffff; display: inline\">Flank</span>, <span style=\"color: #ffffff; display: inline\">Blackjack</span>, and <span style=\"color: #ffffff; display: inline\">Wild Strike</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the Focus cost of Flank, Blackjack, and Wild Strike by -10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807206,
+            "description_html": "Reduces the Focus cost of <span style=\"color: #ffffff; display: inline\">Flank</span>, <span style=\"color: #ffffff; display: inline\">Blackjack</span>, and <span style=\"color: #ffffff; display: inline\">Wild Strike</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the Focus cost of Flank, Blackjack, and Wild Strike by -10%."
+          }
+        ],
+        "connections": [
+          6671,
+          30461
+        ],
+        "choice_group": 807206,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_CheapShot",
+          "key": "ability_cheapshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34175,
+        "name": "Wild Man",
+        "slug": "wild-man",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560344,
+        "spell_ids": [
+          560344
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Wild Strike</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies, but deals reduced damage with each enemy struck.",
+        "description": "Your Wild Strike now strikes 2 additional nearby enemies, but deals reduced damage with each enemy struck.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560344,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Wild Strike</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies, but deals reduced damage with each enemy struck.",
+            "description": "Your Wild Strike now strikes 2 additional nearby enemies, but deals reduced damage with each enemy struck."
+          }
+        ],
+        "connections": [
+          6671,
+          30461
+        ],
+        "choice_group": 807206,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_supriseattack",
+          "key": "ability_druid_supriseattack",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7048,
+        "name": "Assassin",
+        "slug": "assassin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803871,
+        "spell_ids": [
+          803871
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Instinct</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Instinct by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803871,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Instinct</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Instinct by 25%."
+          }
+        ],
+        "connections": [
+          6671,
+          30459
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_hunter_assassinate",
+          "key": "ability_hunter_assassinate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34141,
+        "name": "Stalker",
+        "slug": "stalker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561110,
+        "spell_ids": [
+          561110
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Cutthroat</span> by <span class=\"item-number\">-15</span> sec, but reduces the range of <span style=\"color: #ffffff; display: inline\">Cutthroat</span> by <span class=\"item-number\">-10</span> yds.",
+        "description": "Reduces the cooldown of Cutthroat by -15 sec, but reduces the range of Cutthroat by -10 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561110,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Cutthroat</span> by <span class=\"item-number\">-15</span> sec, but reduces the range of <span style=\"color: #ffffff; display: inline\">Cutthroat</span> by <span class=\"item-number\">-10</span> yds.",
+            "description": "Reduces the cooldown of Cutthroat by -15 sec, but reduces the range of Cutthroat by -10 yds."
+          }
+        ],
+        "connections": [
+          7428
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Diablo3_Execute_Hunter",
+          "key": "diablo3_execute_hunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6675,
+        "name": "'Tactical' Advantage",
+        "slug": "tactical-advantage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706748,
+        "spell_ids": [
+          706748
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Knockout</span> and <span style=\"color: #ffffff; display: inline\">Bushwhack</span> now increases your damage dealt against the target by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Knockout and Bushwhack now increases your damage dealt against the target by 15% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706748,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Knockout</span> and <span style=\"color: #ffffff; display: inline\">Bushwhack</span> now increases your damage dealt against the target by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Knockout and Bushwhack now increases your damage dealt against the target by 15% for 8 seconds."
+          }
+        ],
+        "connections": [
+          7428,
+          34139
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_passivemastery_(10)_Border",
+          "key": "novart_passivemastery__10__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29701,
+        "name": "Quills",
+        "slug": "quills",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560966,
+        "spell_ids": [
+          560966
+        ],
+        "description_html": "Launch darts at up to <span class=\"item-number\">5</span> nearby enemies, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">30% AP</span> Ranged Physical damage.<br /><br />Damage increased and strikes <span class=\"item-number\">1</span> additional target for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Launch darts at up to 5 nearby enemies, dealing 15 + 30% AP Ranged Physical damage.\n\nDamage increased and strikes 1 additional target for each stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560966,
+            "description_html": "Launch darts at up to <span class=\"item-number\">5</span> nearby enemies, dealing <span class=\"item-number\">15</span> + <span class=\"item-number\">30% AP</span> Ranged Physical damage.<br /><br />Damage increased and strikes <span class=\"item-number\">1</span> additional target for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Launch darts at up to 5 nearby enemies, dealing 15 + 30% AP Ranged Physical damage.\n\nDamage increased and strikes 1 additional target for each stack of Advantage."
+          }
+        ],
+        "connections": [
+          6676,
+          8010,
+          34175
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_FanOfKnives_Yellow",
+          "key": "fanofknives_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34140,
+        "name": "Underhanded",
+        "slug": "underhanded",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705061,
+        "spell_ids": [
+          705061,
+          707884
+        ],
+        "description_html": "Increases the attack power scaling of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the attack power scaling of Skullpiercer and Serrated Shot by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705061,
+            "description_html": "Increases the attack power scaling of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the attack power scaling of Skullpiercer and Serrated Shot by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707884,
+            "description_html": "Increases the attack power scaling of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the attack power scaling of Skullpiercer and Serrated Shot by 30%."
+          }
+        ],
+        "connections": [
+          6671,
+          7048
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_cobrashot",
+          "key": "ability_hunter_cobrashot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13164,
+        "name": "Polearm Craft",
+        "slug": "polearm-craft",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707885,
+        "spell_ids": [
+          707885
+        ],
+        "description_html": "While a polearm is equipped, your chance to trigger your <span style=\"color: #ffffff; display: inline\">Weapon Crafts</span> and their damage dealt is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "While a polearm is equipped, your chance to trigger your Weapon Crafts and their damage dealt is increased by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707885,
+            "description_html": "While a polearm is equipped, your chance to trigger your <span style=\"color: #ffffff; display: inline\">Weapon Crafts</span> and their damage dealt is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "While a polearm is equipped, your chance to trigger your Weapon Crafts and their damage dealt is increased by 25%."
+          }
+        ],
+        "connections": [
+          7048
+        ],
+        "choice_group": 707885,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Spear_02",
+          "key": "inv_spear_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34164,
+        "name": "Pilfering",
+        "slug": "pilfering",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705087,
+        "spell_ids": [
+          705087
+        ],
+        "description_html": "Adds <span class=\"item-number\">10</span><span class=\"item-number\">%</span> to the damage dealt by <span style=\"color: #ffffff; display: inline\">Dirty Blades</span> and causes its damage dealt to heal you equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the value.",
+        "description": "Adds 10% to the damage dealt by Dirty Blades and causes its damage dealt to heal you equal to 50% of the value.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705087,
+            "description_html": "Adds <span class=\"item-number\">10</span><span class=\"item-number\">%</span> to the damage dealt by <span style=\"color: #ffffff; display: inline\">Dirty Blades</span> and causes its damage dealt to heal you equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the value.",
+            "description": "Adds 10% to the damage dealt by Dirty Blades and causes its damage dealt to heal you equal to 50% of the value."
+          }
+        ],
+        "connections": [
+          7048
+        ],
+        "choice_group": 707885,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_edwinvancleef",
+          "key": "achievement_boss_edwinvancleef",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9275,
+        "name": "Lacerations",
+        "slug": "lacerations",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 573044,
+        "spell_ids": [
+          573044
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Allows the periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Ravage</span> to critically strike.",
+        "description": "Level 40 Passive\nAllows the periodic damage dealt by Ravage to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573044,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Allows the periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Ravage</span> to critically strike.",
+            "description": "Level 40 Passive\nAllows the periodic damage dealt by Ravage to critically strike."
+          }
+        ],
+        "connections": [
+          3871
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_CriticalStrike",
+          "key": "ability_criticalstrike",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 11349,
+        "name": "Quick-Witted",
+        "slug": "quick-witted",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704311,
+        "spell_ids": [
+          704311
+        ],
+        "description_html": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">100% AP</span> Physical damage and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing 1 + 100% AP Physical damage and reducing their attack speed by -20% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704311,
+            "description_html": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">100% AP</span> Physical damage and reducing their attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing 1 + 100% AP Physical damage and reducing their attack speed by -20% for 8 seconds."
+          }
+        ],
+        "connections": [
+          34141,
+          6675
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_quiver_05",
+          "key": "inv_misc_quiver_05",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11167,
+        "name": "Tip of the Spear",
+        "slug": "tip-of-the-spear",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807023,
+        "spell_ids": [
+          807023
+        ],
+        "description_html": "While you have a polearm equipped, your <span style=\"color: #FFFFFF; display: inline\">Wild Strike</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">3</span> additional times.",
+        "description": "While you have a polearm equipped, your Wild Strike now has a 15% chance to strike 3 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807023,
+            "description_html": "While you have a polearm equipped, your <span style=\"color: #FFFFFF; display: inline\">Wild Strike</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">3</span> additional times.",
+            "description": "While you have a polearm equipped, your Wild Strike now has a 15% chance to strike 3 additional times."
+          }
+        ],
+        "connections": [
+          6675,
+          29701,
+          34140
+        ],
+        "choice_group": 807023,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_spear_01",
+          "key": "inv_spear_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34167,
+        "name": "Marked for Death",
+        "slug": "marked-for-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806973,
+        "spell_ids": [
+          806973
+        ],
+        "description_html": "While you have daggers equipped, direct critical strikes on enemies below <span class=\"item-number\">35%</span> health now have a chance to allow the use of abilities as if you were in <span style=\"color: #ffffff; display: inline\">Elude</span> for <span class=\"item-number\">5</span> seconds.",
+        "description": "While you have daggers equipped, direct critical strikes on enemies below 35% health now have a chance to allow the use of abilities as if you were in Elude for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806973,
+            "description_html": "While you have daggers equipped, direct critical strikes on enemies below <span class=\"item-number\">35%</span> health now have a chance to allow the use of abilities as if you were in <span style=\"color: #ffffff; display: inline\">Elude</span> for <span class=\"item-number\">5</span> seconds.",
+            "description": "While you have daggers equipped, direct critical strikes on enemies below 35% health now have a chance to allow the use of abilities as if you were in Elude for 5 seconds."
+          }
+        ],
+        "connections": [
+          6675,
+          29701,
+          34140
+        ],
+        "choice_group": 807023,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_thiefsbargain",
+          "key": "ability_rogue_thiefsbargain",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1387,
+        "name": "Guile of the Cutthroat",
+        "slug": "guile-of-the-cutthroat",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560531,
+        "spell_ids": [
+          560531
+        ],
+        "description_html": "Increases party and raid member's melee and ranged attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases party and raid member's melee and ranged attack power by 5%. Does not stack with similar effects.\n\nIn addition, increases your damage dealt by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560531,
+            "description_html": "Increases party and raid member's melee and ranged attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases party and raid member's melee and ranged attack power by 5%. Does not stack with similar effects.\n\nIn addition, increases your damage dealt by 3%."
+          }
+        ],
+        "connections": [
+          13164,
+          34140,
+          34164
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shoulder_mail_raidhunter_l_01",
+          "key": "inv_shoulder_mail_raidhunter_l_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1388,
+        "name": "Dirty Fighter",
+        "slug": "dirty-fighter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806978,
+        "spell_ids": [
+          806978
+        ],
+        "description_html": "$97",
+        "description": "$97",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806978,
+            "description_html": "$98",
+            "description": "$98"
+          }
+        ],
+        "connections": [
+          11349,
+          34167,
+          11167
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_quipunch",
+          "key": "ability_monk_quipunch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5045,
+        "name": "Outmaneuver",
+        "slug": "outmaneuver",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 557325,
+        "spell_ids": [
+          557325
+        ],
+        "description_html": "Teleport to an enemy, summon a decoy beneath them, and mark them for <span class=\"item-number\">8</span> seconds. Dealing melee damage to them adds a stack to this effect, up to <span class=\"item-number\">20</span> stacks.<br /><br />Reactivating this ability within <span class=\"item-number\">8</span> seconds deals <span class=\"item-number\">851</span> + <span class=\"item-number\">55% AP</span> Physical damage to your target, increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for each stack on the target, and then teleports you back to your decoy.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+        "description": "Teleport to an enemy, summon a decoy beneath them, and mark them for 8 seconds. Dealing melee damage to them adds a stack to this effect, up to 20 stacks.\n\nReactivating this ability within 8 seconds deals 851 + 55% AP Physical damage to your target, increased by 30% for each stack on the target, and then teleports you back to your decoy.\n\nUsable while in Elude.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 557325,
+            "description_html": "Teleport to an enemy, summon a decoy beneath them, and mark them for <span class=\"item-number\">8</span> seconds. Dealing melee damage to them adds a stack to this effect, up to <span class=\"item-number\">20</span> stacks.<br /><br />Reactivating this ability within <span class=\"item-number\">8</span> seconds deals <span class=\"item-number\">851</span> + <span class=\"item-number\">55% AP</span> Physical damage to your target, increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for each stack on the target, and then teleports you back to your decoy.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+            "description": "Teleport to an enemy, summon a decoy beneath them, and mark them for 8 seconds. Dealing melee damage to them adds a stack to this effect, up to 20 stacks.\n\nReactivating this ability within 8 seconds deals 851 + 55% AP Physical damage to your target, increased by 30% for each stack on the target, and then teleports you back to your decoy.\n\nUsable while in Elude."
+          }
+        ],
+        "connections": [
+          34167,
+          11167
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_findweakness",
+          "key": "ability_rogue_findweakness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34176,
+        "name": "Stonemason's Secret",
+        "slug": "stonemasons-secret",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524654,
+        "spell_ids": [
+          524654
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Assault</span> used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Dirty Blades</span> by <span class=\"item-number\">6</span> sec.",
+        "description": "Your Skullpiercer and Assault used with 5 stacks of Advantage now extends the duration of Dirty Blades by 6 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524654,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Assault</span> used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Dirty Blades</span> by <span class=\"item-number\">6</span> sec.",
+            "description": "Your Skullpiercer and Assault used with 5 stacks of Advantage now extends the duration of Dirty Blades by 6 sec."
+          }
+        ],
+        "connections": [
+          1387,
+          34167,
+          11167
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_inscription_runescrolloffortitude_green",
+          "key": "inv_inscription_runescrolloffortitude_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9277,
+        "name": "Dastardly",
+        "slug": "dastardly",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 706483,
+        "spell_ids": [
+          706483
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your critical damage dealt by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">80%</span> health or below <span class=\"item-number\">20%</span> health.",
+        "description": "Level 50 Passive\nIncreases your critical damage dealt by 15% on enemies above 80% health or below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706483,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your critical damage dealt by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">80%</span> health or below <span class=\"item-number\">20%</span> health.",
+            "description": "Level 50 Passive\nIncreases your critical damage dealt by 15% on enemies above 80% health or below 20% health."
+          }
+        ],
+        "connections": [
+          9275
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_HungerforBlood",
+          "key": "ability_rogue_hungerforblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7429,
+        "name": "Viper's Bite",
+        "slug": "vipers-bite",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803104,
+        "spell_ids": [
+          803104
+        ],
+        "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Unleash <span class=\"item-number\">4</span> quick strikes over <span class=\"item-number\">1</span> seconds to an enemy, each dealing <span class=\"item-number\">110</span><span class=\"item-number\">%</span> Weapon Damage.<br /><br />If the target is bleeding, each strike deals an additional <span class=\"item-number\">600</span> + <span class=\"item-number\">25% AP</span> Physical damage.<br /><br />If the target is poisoned, each strike deals Nature damage instead of Physical damage.",
+        "description": "Generates 2 Advantage\nUnleash 4 quick strikes over 1 seconds to an enemy, each dealing 110% Weapon Damage.\n\nIf the target is bleeding, each strike deals an additional 600 + 25% AP Physical damage.\n\nIf the target is poisoned, each strike deals Nature damage instead of Physical damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803104,
+            "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Unleash <span class=\"item-number\">4</span> quick strikes over <span class=\"item-number\">1</span> seconds to an enemy, each dealing <span class=\"item-number\">110</span><span class=\"item-number\">%</span> Weapon Damage.<br /><br />If the target is bleeding, each strike deals an additional <span class=\"item-number\">600</span> + <span class=\"item-number\">25% AP</span> Physical damage.<br /><br />If the target is poisoned, each strike deals Nature damage instead of Physical damage.",
+            "description": "Generates 2 Advantage\nUnleash 4 quick strikes over 1 seconds to an enemy, each dealing 110% Weapon Damage.\n\nIf the target is bleeding, each strike deals an additional 600 + 25% AP Physical damage.\n\nIf the target is poisoned, each strike deals Nature damage instead of Physical damage."
+          }
+        ],
+        "connections": [
+          1388,
+          11349
+        ],
+        "choice_group": 800093,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_poisonedknife",
+          "key": "ability_rogue_poisonedknife",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 17429,
+        "name": "Skewer",
+        "slug": "skewer",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800093,
+        "spell_ids": [
+          800093
+        ],
+        "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">1</span> Advantage</span><br />Swing your spear at all enemies in front of you dealing <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage and marking them for <span class=\"item-number\">10</span> seconds.<br /><br />You may reactivate the ability to pull all marked enemies to your location. Each enemy pulled reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Hookshot</span> by <span class=\"item-number\">3</span> sec.",
+        "description": "Generates 1 Advantage\nSwing your spear at all enemies in front of you dealing 200% Weapon Damage and marking them for 10 seconds.\n\nYou may reactivate the ability to pull all marked enemies to your location. Each enemy pulled reduces the cooldown of your Hookshot by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800093,
+            "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">1</span> Advantage</span><br />Swing your spear at all enemies in front of you dealing <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage and marking them for <span class=\"item-number\">10</span> seconds.<br /><br />You may reactivate the ability to pull all marked enemies to your location. Each enemy pulled reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Hookshot</span> by <span class=\"item-number\">3</span> sec.",
+            "description": "Generates 1 Advantage\nSwing your spear at all enemies in front of you dealing 200% Weapon Damage and marking them for 10 seconds.\n\nYou may reactivate the ability to pull all marked enemies to your location. Each enemy pulled reduces the cooldown of your Hookshot by 3 sec."
+          }
+        ],
+        "connections": [
+          1388,
+          11349
+        ],
+        "choice_group": 800093,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Spear_02",
+          "key": "inv_spear_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30045,
+        "name": "Instinctual Combatant",
+        "slug": "instinctual-combatant",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707319,
+        "spell_ids": [
+          707319
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Instinct</span> now also restores <span class=\"item-number\">40</span> extra Focus and guarantees your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Skullpiercers</span> or <span style=\"color: #FFFFFF; display: inline\">Assaults</span> within <span class=\"item-number\">20</span> seconds to critically strike.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Instinct</span> now grants you an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Agility as melee attack power.",
+        "description": "Casting Instinct now also restores 40 extra Focus and guarantees your next 3 Skullpiercers or Assaults within 20 seconds to critically strike.\n\nIn addition, Instinct now grants you an additional 10% of your Agility as melee attack power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707319,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Instinct</span> now also restores <span class=\"item-number\">40</span> extra Focus and guarantees your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Skullpiercers</span> or <span style=\"color: #FFFFFF; display: inline\">Assaults</span> within <span class=\"item-number\">20</span> seconds to critically strike.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Instinct</span> now grants you an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Agility as melee attack power.",
+            "description": "Casting Instinct now also restores 40 extra Focus and guarantees your next 3 Skullpiercers or Assaults within 20 seconds to critically strike.\n\nIn addition, Instinct now grants you an additional 10% of your Agility as melee attack power."
+          }
+        ],
+        "connections": [
+          1388,
+          5045,
+          34176
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_MirrorImage",
+          "key": "spell_nature_mirrorimage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30462,
+        "name": "Barbed Quills",
+        "slug": "barbed-quills",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 55,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800077,
+        "spell_ids": [
+          800077
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Wild Strike</span>, <span style=\"color: #ffffff; display: inline\">Flank</span> and <span style=\"color: #ffffff; display: inline\">Quills</span> will now tear into enemies, causing them to bleed for <span class=\"item-number\">78</span> Physical damage over <span class=\"item-number\">9</span> seconds, stacking <span class=\"item-number\">4</span> times.<br /><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Quills</span> now spreads your periodic effects to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">10</span> yds and extends their duration by <span class=\"item-number\">2</span> sec.",
+        "description": "Damage dealt by Wild Strike, Flank and Quills will now tear into enemies, causing them to bleed for 78 Physical damage over 9 seconds, stacking 4 times.\n\nDamage dealt by Quills now spreads your periodic effects to 5 enemies within 10 yds and extends their duration by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800077,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Wild Strike</span>, <span style=\"color: #ffffff; display: inline\">Flank</span> and <span style=\"color: #ffffff; display: inline\">Quills</span> will now tear into enemies, causing them to bleed for <span class=\"item-number\">78</span> Physical damage over <span class=\"item-number\">9</span> seconds, stacking <span class=\"item-number\">4</span> times.<br /><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Quills</span> now spreads your periodic effects to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">10</span> yds and extends their duration by <span class=\"item-number\">2</span> sec.",
+            "description": "Damage dealt by Wild Strike, Flank and Quills will now tear into enemies, causing them to bleed for 78 Physical damage over 9 seconds, stacking 4 times.\n\nDamage dealt by Quills now spreads your periodic effects to 5 enemies within 10 yds and extends their duration by 2 sec."
+          }
+        ],
+        "connections": [
+          34176,
+          1387
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Gouge",
+          "key": "ability_gouge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

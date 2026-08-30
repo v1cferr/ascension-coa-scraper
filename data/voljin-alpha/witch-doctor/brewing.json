@@ -1,0 +1,2476 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:31+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:43f0865a2b102810378367fa609bb1532b04737652c76f20518dfdd3ddf65f0f",
+    "talent_count": 159,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 13,
+    "name": "Witch Doctor",
+    "slug": "witch-doctor",
+    "class_file": "witchdoctor",
+    "color": "rgb(245, 0, 255)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:witchdoctor",
+      "key": "class-witchdoctor",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 47,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 35,
+    "name": "Brewing",
+    "slug": "brewing",
+    "sort_order": 2,
+    "class_id": 13,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 12645,
+        "name": "Ingredient: Jungle Shrooms",
+        "slug": "ingredient-jungle-shrooms",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 3.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4005,
+            29744
+          ]
+        },
+        "spell_id": 801660,
+        "spell_ids": [
+          801660
+        ],
+        "description_html": "Brew <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Heal up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">91</span> + <span class=\"item-number\">20% healing</span> every <span class=\"item-number\">6</span> sec.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion Toss</span>: Heal the target ally for <span class=\"item-number\">-3.75</span> to <span class=\"item-number\">-2.75</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds.",
+        "description": "Brew Jungle Shrooms into your Cauldron.\n\nCauldron: Heal up to 8 allies within 30 yds for 91 + 20% healing every 6 sec.\n\nPotion Toss: Heal the target ally for -3.75 to -2.75 every 3 sec for 18 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801660,
+            "description_html": "Brew <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Heal up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">91</span> + <span class=\"item-number\">20% healing</span> every <span class=\"item-number\">6</span> sec.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion Toss</span>: Heal the target ally for <span class=\"item-number\">-3.75</span> to <span class=\"item-number\">-2.75</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">18</span> seconds.",
+            "description": "Brew Jungle Shrooms into your Cauldron.\n\nCauldron: Heal up to 8 allies within 30 yds for 91 + 20% healing every 6 sec.\n\nPotion Toss: Heal the target ally for -3.75 to -2.75 every 3 sec for 18 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Mushroom_07",
+          "key": "inv_mushroom_07",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 12646,
+        "name": "Potion Toss",
+        "slug": "potion-toss",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 5.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4005,
+            29744
+          ]
+        },
+        "spell_id": 801661,
+        "spell_ids": [
+          801661
+        ],
+        "description_html": "Fill a potion from your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, and toss it at a friendly target, healing them for <span class=\"item-number\">108</span> + <span class=\"item-number\">28% healing</span> + <span class=\"item-number\">10% Spirit</span>.<br /><br />The effect of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> will change based on your active <span style=\"color: #ffffff; display: inline\">Ingredients</span>.",
+        "description": "Fill a potion from your Cauldron, and toss it at a friendly target, healing them for 108 + 28% healing + 10% Spirit.\n\nThe effect of Potion Toss will change based on your active Ingredients.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801661,
+            "description_html": "Fill a potion from your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, and toss it at a friendly target, healing them for <span class=\"item-number\">108</span> + <span class=\"item-number\">28% healing</span> + <span class=\"item-number\">10% Spirit</span>.<br /><br />The effect of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> will change based on your active <span style=\"color: #ffffff; display: inline\">Ingredients</span>.",
+            "description": "Fill a potion from your Cauldron, and toss it at a friendly target, healing them for 108 + 28% healing + 10% Spirit.\n\nThe effect of Potion Toss will change based on your active Ingredients."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Potion_99",
+          "key": "inv_potion_99",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4005,
+        "name": "Cauldron Brewer",
+        "slug": "cauldron-brewer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29744
+          ]
+        },
+        "spell_id": 92085,
+        "spell_ids": [
+          92085
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You may now prepare <span style=\"color: #ffffff; display: inline\">Ingredients</span> into a <span style=\"color: #ffffff; display: inline\">Cauldron</span>, crafting a brew. <br /><br />Nearby allies are buffed based on the active brew.<br /><br />Only <span class=\"item-number\">1</span> of each <span style=\"color: #ffffff; display: inline\">Ingredient</span> can be active at a time.",
+        "description": "Level 10 Passive\nYou may now prepare Ingredients into a Cauldron, crafting a brew.\n\nNearby allies are buffed based on the active brew.\n\nOnly 1 of each Ingredient can be active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92085,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You may now prepare <span style=\"color: #ffffff; display: inline\">Ingredients</span> into a <span style=\"color: #ffffff; display: inline\">Cauldron</span>, crafting a brew. <br /><br />Nearby allies are buffed based on the active brew.<br /><br />Only <span class=\"item-number\">1</span> of each <span style=\"color: #ffffff; display: inline\">Ingredient</span> can be active at a time.",
+            "description": "Level 10 Passive\nYou may now prepare Ingredients into a Cauldron, crafting a brew.\n\nNearby allies are buffed based on the active brew.\n\nOnly 1 of each Ingredient can be active at a time."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Cauldron_Nature",
+          "key": "inv_misc_cauldron_nature",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6645,
+        "name": "Mixologist",
+        "slug": "mixologist",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561069,
+        "spell_ids": [
+          561069
+        ],
+        "description_html": "$5d",
+        "description": "$5d",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561069,
+            "description_html": "$5e",
+            "description": "$5e"
+          }
+        ],
+        "connections": [
+          12645,
+          12646
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Potion_119",
+          "key": "inv_potion_119",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7131,
+        "name": "Potent Mixes",
+        "slug": "potent-mixes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503748,
+        "spell_ids": [
+          503748,
+          504888
+        ],
+        "description_html": "Increases your healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the threat generated by your spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your healing done by 4% and reduces the threat generated by your spells by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503748,
+            "description_html": "Increases your healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the threat generated by your spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your healing done by 4% and reduces the threat generated by your spells by -15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504888,
+            "description_html": "Increases your healing done by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and reduces the threat generated by your spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your healing done by 8% and reduces the threat generated by your spells by -30%."
+          }
+        ],
+        "connections": [
+          6645
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Potion_110",
+          "key": "inv_potion_110",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30884,
+        "name": "Mojo Addiction",
+        "slug": "mojo-addiction",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503696,
+        "spell_ids": [
+          503696,
+          504889
+        ],
+        "description_html": "Increases your Spirit and maximum mana by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Spirit and maximum mana by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503696,
+            "description_html": "Increases your Spirit and maximum mana by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit and maximum mana by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504889,
+            "description_html": "Increases your Spirit and maximum mana by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit and maximum mana by 10%."
+          }
+        ],
+        "connections": [
+          6645
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_crackedcrystalvial",
+          "key": "trade_archaeology_crackedcrystalvial",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29736,
+        "name": "Brewmaster",
+        "slug": "brewmaster",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704512,
+        "spell_ids": [
+          704512,
+          707856
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> by <span class=\"item-number\">0.25</span> sec.",
+        "description": "Reduces the cast time of Loa's Brew by 0.25 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704512,
+            "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> by <span class=\"item-number\">0.25</span> sec.",
+            "description": "Reduces the cast time of Loa's Brew by 0.25 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707856,
+            "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> by <span class=\"item-number\">0.25</span> sec.",
+            "description": "Reduces the cast time of Loa's Brew by 0.25 sec."
+          }
+        ],
+        "connections": [
+          6645
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_2h_zandalarquest_b_01",
+          "key": "inv_axe_2h_zandalarquest_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9311,
+        "name": "Spirit Healer",
+        "slug": "spirit-healer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 560280,
+        "spell_ids": [
+          560280
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases healing power by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of Spirit and increases mana regeneration rate by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of Spirit.",
+        "description": "Level 20 Passive\nIncreases healing power by 40% of Spirit and increases mana regeneration rate by 100% of Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560280,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases healing power by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of Spirit and increases mana regeneration rate by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of Spirit.",
+            "description": "Level 20 Passive\nIncreases healing power by 40% of Spirit and increases mana regeneration rate by 100% of Spirit."
+          }
+        ],
+        "connections": [
+          4005
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_SlowingTotem",
+          "key": "spell_nature_slowingtotem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5055,
+        "name": "Presence of the Loa",
+        "slug": "presence-of-the-loa",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572871,
+        "spell_ids": [
+          572871
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572871,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 4%."
+          }
+        ],
+        "connections": [
+          7131
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_earthmask_Border",
+          "key": "nhi_earthmask_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7128,
+        "name": "Splash Potion",
+        "slug": "splash-potion",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802710,
+        "spell_ids": [
+          802710
+        ],
+        "description_html": "Fill a splash potion from your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, and toss it at a location, healing up to <span class=\"item-number\">8</span> allies for <span class=\"item-number\">54</span> + <span class=\"item-number\">22.45% healing</span> + <span class=\"item-number\">8% Spirit</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span> effects from <span style=\"color: #ffffff; display: inline\">Ingredients</span> used this way have reduced effectiveness.",
+        "description": "Fill a splash potion from your Cauldron, and toss it at a location, healing up to 8 allies for 54 + 22.45% healing + 8% Spirit.\n\nPotion effects from Ingredients used this way have reduced effectiveness.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802710,
+            "description_html": "Fill a splash potion from your <span style=\"color: #ffffff; display: inline\">Cauldron</span>, and toss it at a location, healing up to <span class=\"item-number\">8</span> allies for <span class=\"item-number\">54</span> + <span class=\"item-number\">22.45% healing</span> + <span class=\"item-number\">8% Spirit</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span> effects from <span style=\"color: #ffffff; display: inline\">Ingredients</span> used this way have reduced effectiveness.",
+            "description": "Fill a splash potion from your Cauldron, and toss it at a location, healing up to 8 allies for 54 + 22.45% healing + 8% Spirit.\n\nPotion effects from Ingredients used this way have reduced effectiveness."
+          }
+        ],
+        "connections": [
+          7131,
+          29736,
+          30884
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_potion_101",
+          "key": "inv_potion_101",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7129,
+        "name": "Plentiful Potions",
+        "slug": "plentiful-potions",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803463,
+        "spell_ids": [
+          803463
+        ],
+        "description_html": "Reduces the cost of your <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Hexbreak</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cost of your Loa's Brew and Hexbreak by -10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803463,
+            "description_html": "Reduces the cost of your <span style=\"color: #FFFFFF; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Hexbreak</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cost of your Loa's Brew and Hexbreak by -10%."
+          }
+        ],
+        "connections": [
+          29736
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_drink_32_disgustingrotgut",
+          "key": "inv_drink_32_disgustingrotgut",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29741,
+        "name": "Ingredient: Frog Bones",
+        "slug": "ingredient-frog-bones",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801663,
+        "spell_ids": [
+          801663
+        ],
+        "description_html": "Brew <span style=\"color: #ffffff; display: inline\">Frog Bones</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Grants allies within <span class=\"item-number\">40</span> yds <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> reduced damage taken.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Grants target ally an absorption shield, absorbing <span class=\"item-number\">100</span> + <span class=\"item-number\">35% Spirit</span> + <span class=\"item-number\">80% healing</span> damage, scaling with Spirit.",
+        "description": "Brew Frog Bones into your Cauldron.\n\nCauldron: Grants allies within 40 yds -3% reduced damage taken.\n\nPotion: Grants target ally an absorption shield, absorbing 100 + 35% Spirit + 80% healing damage, scaling with Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801663,
+            "description_html": "Brew <span style=\"color: #ffffff; display: inline\">Frog Bones</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Grants allies within <span class=\"item-number\">40</span> yds <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> reduced damage taken.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Grants target ally an absorption shield, absorbing <span class=\"item-number\">100</span> + <span class=\"item-number\">35% Spirit</span> + <span class=\"item-number\">80% healing</span> damage, scaling with Spirit.",
+            "description": "Brew Frog Bones into your Cauldron.\n\nCauldron: Grants allies within 40 yds -3% reduced damage taken.\n\nPotion: Grants target ally an absorption shield, absorbing 100 + 35% Spirit + 80% healing damage, scaling with Spirit."
+          }
+        ],
+        "connections": [
+          5055
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_boneshield",
+          "key": "ability_deathknight_boneshield",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29303,
+        "name": "Potion Boss",
+        "slug": "potion-boss",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561072,
+        "spell_ids": [
+          561072
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and your tossed <span style=\"color: #FFFFFF; display: inline\">Ingredients</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Potion Toss and your tossed Ingredients by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561072,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and your tossed <span style=\"color: #FFFFFF; display: inline\">Ingredients</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Potion Toss and your tossed Ingredients by 20%."
+          }
+        ],
+        "connections": [
+          7128
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_alchemy_potione3",
+          "key": "trade_alchemy_potione3",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6022,
+        "name": "Splash On 'Em",
+        "slug": "splash-on-em",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707212,
+        "spell_ids": [
+          707212
+        ],
+        "description_html": "When you heal with <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> your <span style=\"color: #ffffff; display: inline\">Effigies</span> will now heal an additional ally within <span class=\"item-number\">20</span> yds for <span class=\"item-number\">35</span><span class=\"item-number\">%</span> of the healing done, prioritizing allies with low health.",
+        "description": "When you heal with Loa's Brew your Effigies will now heal an additional ally within 20 yds for 35% of the healing done, prioritizing allies with low health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707212,
+            "description_html": "When you heal with <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> your <span style=\"color: #ffffff; display: inline\">Effigies</span> will now heal an additional ally within <span class=\"item-number\">20</span> yds for <span class=\"item-number\">35</span><span class=\"item-number\">%</span> of the healing done, prioritizing allies with low health.",
+            "description": "When you heal with Loa's Brew your Effigies will now heal an additional ally within 20 yds for 35% of the healing done, prioritizing allies with low health."
+          }
+        ],
+        "connections": [
+          7128
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_food_cooked_jadewitchbrew",
+          "key": "inv_misc_food_cooked_jadewitchbrew",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6021,
+        "name": "Ingredient: Bloodthistle",
+        "slug": "ingredient-bloodthistle",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801664,
+        "spell_ids": [
+          801664
+        ],
+        "description_html": "Brew <span style=\"color: #ffffff; display: inline\">Bloodthistle</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">8</span><span class=\"item-number\">%</span> increased healing.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Causes target ally to leech <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of all damage they deal for <span class=\"item-number\">15</span> seconds. Can only occur once every <span class=\"item-number\">0.5</span> sec.",
+        "description": "Brew Bloodthistle into your Cauldron.\n\nCauldron: Allies within 40 yds receive 8% increased healing.\n\nPotion: Causes target ally to leech 5% of all damage they deal for 15 seconds. Can only occur once every 0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801664,
+            "description_html": "Brew <span style=\"color: #ffffff; display: inline\">Bloodthistle</span> into your <span style=\"color: #ffffff; display: inline\">Cauldron</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Cauldron</span>: Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">8</span><span class=\"item-number\">%</span> increased healing.<br /><br /><span style=\"color: #ffffff; display: inline\">Potion</span>: Causes target ally to leech <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of all damage they deal for <span class=\"item-number\">15</span> seconds. Can only occur once every <span class=\"item-number\">0.5</span> sec.",
+            "description": "Brew Bloodthistle into your Cauldron.\n\nCauldron: Allies within 40 yds receive 8% increased healing.\n\nPotion: Causes target ally to leech 5% of all damage they deal for 15 seconds. Can only occur once every 0.5 sec."
+          }
+        ],
+        "connections": [
+          7129
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Herb_11a",
+          "key": "inv_misc_herb_11a",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4715,
+        "name": "Loa's Blessing",
+        "slug": "loas-blessing",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 705848,
+        "spell_ids": [
+          705848
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Healing done by <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> now applies a random empowerment to the target ally.<br />",
+        "description": "Level 30 Passive\nHealing done by Loa's Brew now applies a random empowerment to the target ally.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705848,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Healing done by <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> now applies a random empowerment to the target ally.<br />",
+            "description": "Level 30 Passive\nHealing done by Loa's Brew now applies a random empowerment to the target ally."
+          }
+        ],
+        "connections": [
+          9311
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_fish_turtle_03",
+          "key": "inv_misc_fish_turtle_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6498,
+        "name": "Fresh Ingredients",
+        "slug": "fresh-ingredients",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705856,
+        "spell_ids": [
+          705856,
+          707858
+        ],
+        "description_html": "Increases the healing of your <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the healing of your Jungle Shrooms from your Cauldron by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705856,
+            "description_html": "Increases the healing of your <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the healing of your Jungle Shrooms from your Cauldron by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707858,
+            "description_html": "Increases the healing of your <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the healing of your Jungle Shrooms from your Cauldron by 30%."
+          }
+        ],
+        "connections": [
+          29741
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_thanksgiving_turkey_act",
+          "key": "inv_thanksgiving_turkey_act",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6013,
+        "name": "Spirit Out Of The Bottle",
+        "slug": "spirit-out-of-the-bottle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301175,
+        "spell_ids": [
+          301175
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> now grants <span style=\"color: #FFFFFF; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div><br /><br />@ifknown:500950:In addition, channeling <span style=\"color: #FFFFFF; display: inline\">Mojo Beam</span> causes <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> to affect <span class=\"item-number\">3</span> additional allies near the primary target.:ifknown@",
+        "description": "Casting Spirit in a Bottle now grants Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.\n\n@ifknown:500950:In addition, channeling Mojo Beam causes Spirit in a Bottle to affect 3 additional allies near the primary target.:ifknown@",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301175,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> now grants <span style=\"color: #FFFFFF; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div><br /><br />@ifknown:500950:In addition, channeling <span style=\"color: #FFFFFF; display: inline\">Mojo Beam</span> causes <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> to affect <span class=\"item-number\">3</span> additional allies near the primary target.:ifknown@",
+            "description": "Casting Spirit in a Bottle now grants Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.\n\n@ifknown:500950:In addition, channeling Mojo Beam causes Spirit in a Bottle to affect 3 additional allies near the primary target.:ifknown@"
+          }
+        ],
+        "connections": [
+          29303,
+          29741
+        ],
+        "choice_group": 578295,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_soothingmists",
+          "key": "ability_monk_soothingmists",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7948,
+        "name": "Touch of the Spirits",
+        "slug": "touch-of-the-spirits",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 578295,
+        "spell_ids": [
+          578295
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Spirit In a Bottle</span> causes the enemies to take <span class=\"item-number\">3</span><span class=\"item-number\">%</span> more damage and deal <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> less damage for <span class=\"item-number\">15</span> seconds.",
+        "description": "Damage dealt by Spirit In a Bottle causes the enemies to take 3% more damage and deal -3% less damage for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 578295,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Spirit In a Bottle</span> causes the enemies to take <span class=\"item-number\">3</span><span class=\"item-number\">%</span> more damage and deal <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> less damage for <span class=\"item-number\">15</span> seconds.",
+            "description": "Damage dealt by Spirit In a Bottle causes the enemies to take 3% more damage and deal -3% less damage for 15 seconds."
+          }
+        ],
+        "connections": [
+          29303,
+          29741
+        ],
+        "choice_group": 578295,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Shaman_CleanseSpirit",
+          "key": "ability_shaman_cleansespirit",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30823,
+        "name": "Mojo Beam",
+        "slug": "mojo-beam",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500950,
+        "spell_ids": [
+          500950
+        ],
+        "description_html": "Bring mojo to an ally, healing for <span class=\"item-number\">126</span> + <span class=\"item-number\">10.73% SP</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">8</span> seconds.<br /><br />Each time Mojo Beam heals a target it will grow a new branch. Each new branch immediately heals and continues healing. For every sprouted the branch, you consume more and more mana.<br /><br />While channeling, you can instantly cast <span style=\"color: #FFFFFF; display: inline\">Potion Toss</span>, <span style=\"color: #FFFFFF; display: inline\">Splash Potion</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> at a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased cost.<br /><br />",
+        "description": "Bring mojo to an ally, healing for 126 + 10.73% SP every 1 sec for 8 seconds.\n\nEach time Mojo Beam heals a target it will grow a new branch. Each new branch immediately heals and continues healing. For every sprouted the branch, you consume more and more mana.\n\nWhile channeling, you can instantly cast Potion Toss, Splash Potion and Spirit in a Bottle at a 20% increased cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500950,
+            "description_html": "Bring mojo to an ally, healing for <span class=\"item-number\">126</span> + <span class=\"item-number\">10.73% SP</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">8</span> seconds.<br /><br />Each time Mojo Beam heals a target it will grow a new branch. Each new branch immediately heals and continues healing. For every sprouted the branch, you consume more and more mana.<br /><br />While channeling, you can instantly cast <span style=\"color: #FFFFFF; display: inline\">Potion Toss</span>, <span style=\"color: #FFFFFF; display: inline\">Splash Potion</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> at a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased cost.<br /><br />",
+            "description": "Bring mojo to an ally, healing for 126 + 10.73% SP every 1 sec for 8 seconds.\n\nEach time Mojo Beam heals a target it will grow a new branch. Each new branch immediately heals and continues healing. For every sprouted the branch, you consume more and more mana.\n\nWhile channeling, you can instantly cast Potion Toss, Splash Potion and Spirit in a Bottle at a 20% increased cost."
+          }
+        ],
+        "connections": [
+          6022,
+          7128,
+          29303
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_unholybeam_Border",
+          "key": "nhi_unholybeam_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6015,
+        "name": "Mojo: Fish Bones",
+        "slug": "mojo-fish-bones",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705850,
+        "spell_ids": [
+          705850
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Fish Bones</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Fish Oil</span> and <span style=\"color: #ffffff; display: inline\">Frog Bones</span>.<br />",
+        "description": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Fish Bones to affected allies.\n\nInstantly swaps your Ingredients to Fish Oil and Frog Bones.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705850,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Fish Bones</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Fish Oil</span> and <span style=\"color: #ffffff; display: inline\">Frog Bones</span>.<br />",
+            "description": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Fish Bones to affected allies.\n\nInstantly swaps your Ingredients to Fish Oil and Frog Bones."
+          }
+        ],
+        "connections": [
+          6021,
+          6022
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_fish_bone",
+          "key": "inv_ascend_fish_bone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4112,
+        "name": "Spice: Peacebloom",
+        "slug": "spice-peacebloom",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803700,
+        "spell_ids": [
+          803700
+        ],
+        "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Spice: Peacebloom</span>.<br /><br />Reduces the duration of roots, stuns, and snares against allies within <span class=\"item-number\">40</span> yds by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Infuse your Cauldron with Spice: Peacebloom.\n\nReduces the duration of roots, stuns, and snares against allies within 40 yds by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803700,
+            "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Spice: Peacebloom</span>.<br /><br />Reduces the duration of roots, stuns, and snares against allies within <span class=\"item-number\">40</span> yds by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Infuse your Cauldron with Spice: Peacebloom.\n\nReduces the duration of roots, stuns, and snares against allies within 40 yds by -25%."
+          }
+        ],
+        "connections": [
+          6021
+        ],
+        "choice_group": 73434,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Flower_02",
+          "key": "inv_misc_flower_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7130,
+        "name": "Spice: Earthroot",
+        "slug": "spice-earthroot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504424,
+        "spell_ids": [
+          504424
+        ],
+        "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Spice: Earthbloom</span>.<br /><br />Increases effectiveness of all <span style=\"color: #FFFFFF; display: inline\">Cauldron</span> effects and <span style=\"color: #FFFFFF; display: inline\">Ingredients</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Infuse your Cauldron with Spice: Earthbloom.\n\nIncreases effectiveness of all Cauldron effects and Ingredients by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504424,
+            "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Spice: Earthbloom</span>.<br /><br />Increases effectiveness of all <span style=\"color: #FFFFFF; display: inline\">Cauldron</span> effects and <span style=\"color: #FFFFFF; display: inline\">Ingredients</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Infuse your Cauldron with Spice: Earthbloom.\n\nIncreases effectiveness of all Cauldron effects and Ingredients by 30%."
+          }
+        ],
+        "connections": [
+          6021
+        ],
+        "choice_group": 73434,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Herb_07",
+          "key": "inv_misc_herb_07",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6016,
+        "name": "Mojo: Frog Shrooms",
+        "slug": "mojo-frog-shrooms",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705851,
+        "spell_ids": [
+          705851
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Frog Shrooms</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> and <span style=\"color: #ffffff; display: inline\">Frog Bones</span>.<br />",
+        "description": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Frog Shrooms to affected allies.\n\nInstantly swaps your Ingredients to Jungle Shrooms and Frog Bones.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705851,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Frog Shrooms</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> and <span style=\"color: #ffffff; display: inline\">Frog Bones</span>.<br />",
+            "description": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Frog Shrooms to affected allies.\n\nInstantly swaps your Ingredients to Jungle Shrooms and Frog Bones."
+          }
+        ],
+        "connections": [
+          6013,
+          6498,
+          7948,
+          29741
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_mushroom_01",
+          "key": "inv_ascend_mushroom_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31137,
+        "name": "Jungle Secrets",
+        "slug": "jungle-secrets",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802219,
+        "spell_ids": [
+          802219
+        ],
+        "description_html": "Effective healing done by <span style=\"color: #ffffff; display: inline\">Mojo Beam</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> by <span class=\"item-number\">1</span> sec.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mojo Beam</span> by <span class=\"item-number\">2</span> sec.",
+        "description": "Effective healing done by Mojo Beam now reduces the cooldown of Potion Toss and Splash Potion by 1 sec.\n\nCasting Loa's Brew now reduces the cooldown of Mojo Beam by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802219,
+            "description_html": "Effective healing done by <span style=\"color: #ffffff; display: inline\">Mojo Beam</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> by <span class=\"item-number\">1</span> sec.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mojo Beam</span> by <span class=\"item-number\">2</span> sec.",
+            "description": "Effective healing done by Mojo Beam now reduces the cooldown of Potion Toss and Splash Potion by 1 sec.\n\nCasting Loa's Brew now reduces the cooldown of Mojo Beam by 2 sec."
+          }
+        ],
+        "connections": [
+          30823
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_GhostWater_Border",
+          "key": "custom_t_ghostwater_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7132,
+        "name": "Rage Brew",
+        "slug": "rage-brew",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503750,
+        "spell_ids": [
+          503750
+        ],
+        "description_html": "Throw your <span style=\"color: #ffffff; display: inline\">Rage Brew</span> at an ally, regenerating <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their maximum Rage, Energy, and Focus. <br /><br />Increases their attack power and ranged attack power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Throw your Rage Brew at an ally, regenerating 50% of their maximum Rage, Energy, and Focus.\n\nIncreases their attack power and ranged attack power by 15% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503750,
+            "description_html": "Throw your <span style=\"color: #ffffff; display: inline\">Rage Brew</span> at an ally, regenerating <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their maximum Rage, Energy, and Focus. <br /><br />Increases their attack power and ranged attack power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Throw your Rage Brew at an ally, regenerating 50% of their maximum Rage, Energy, and Focus.\n\nIncreases their attack power and ranged attack power by 15% for 10 seconds."
+          }
+        ],
+        "connections": [
+          30823
+        ],
+        "choice_group": 988867,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_Potion_11",
+          "key": "inv_ascend_potion_11",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29753,
+        "name": "Arcane Brew",
+        "slug": "arcane-brew",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801689,
+        "spell_ids": [
+          801689
+        ],
+        "description_html": "Throw your <span style=\"color: #ffffff; display: inline\">Arcane Brew</span> at an ally, increasing their spell power and Spirit by <span class=\"item-number\">30</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Spell power scales with caster level.",
+        "description": "Throw your Arcane Brew at an ally, increasing their spell power and Spirit by 30 for 10 seconds.\n\nSpell power scales with caster level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801689,
+            "description_html": "Throw your <span style=\"color: #ffffff; display: inline\">Arcane Brew</span> at an ally, increasing their spell power and Spirit by <span class=\"item-number\">30</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Spell power scales with caster level.",
+            "description": "Throw your Arcane Brew at an ally, increasing their spell power and Spirit by 30 for 10 seconds.\n\nSpell power scales with caster level."
+          }
+        ],
+        "connections": [
+          30823
+        ],
+        "choice_group": 988867,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_Potion_12",
+          "key": "inv_ascend_potion_12",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6009,
+        "name": "Mojo: Jungle Thistle",
+        "slug": "mojo-jungle-thistle",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500472,
+        "spell_ids": [
+          500472
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Jungle Thistle</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> and <span style=\"color: #ffffff; display: inline\">Bloodthistle</span>.<br />",
+        "description": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Jungle Thistle to affected allies.\n\nInstantly swaps your Ingredients to Jungle Shrooms and Bloodthistle.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500472,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #ffffff; display: inline\">Splash Potion</span> cooldown is reset, and the next use within <span class=\"item-number\">5</span> seconds now applies <span style=\"color: #ffffff; display: inline\">Jungle Thistle</span> to affected allies.<br /><br />Instantly swaps your <span style=\"color: #ffffff; display: inline\">Ingredients</span> to <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> and <span style=\"color: #ffffff; display: inline\">Bloodthistle</span>.<br />",
+            "description": "Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Jungle Thistle to affected allies.\n\nInstantly swaps your Ingredients to Jungle Shrooms and Bloodthistle."
+          }
+        ],
+        "connections": [
+          4112,
+          6015,
+          6021,
+          7130
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_herb_tigerlily",
+          "key": "inv_misc_herb_tigerlily",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4733,
+        "name": "Mojo Wave",
+        "slug": "mojo-wave",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 707617,
+        "spell_ids": [
+          707617
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Healing with <span style=\"color: #ffffff; display: inline\">Mojo Beam</span> now heals up to <span class=\"item-number\">2</span> of the lowest health nearby allies for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the healing done and casting it grants allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Level 40 Passive\nHealing with Mojo Beam now heals up to 2 of the lowest health nearby allies for 50% of the healing done and casting it grants allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707617,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Healing with <span style=\"color: #ffffff; display: inline\">Mojo Beam</span> now heals up to <span class=\"item-number\">2</span> of the lowest health nearby allies for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the healing done and casting it grants allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Level 40 Passive\nHealing with Mojo Beam now heals up to 2 of the lowest health nearby allies for 50% of the healing done and casting it grants allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds."
+          }
+        ],
+        "connections": [
+          4715
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_naturewave_Border",
+          "key": "nhi_naturewave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6020,
+        "name": "Jungle Booms",
+        "slug": "jungle-booms",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705859,
+        "spell_ids": [
+          705859
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> used from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> now heal for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> more, but heals <span class=\"item-number\">-3</span> less targets.",
+        "description": "Jungle Shrooms used from your Cauldron now heal for 100% more, but heals -3 less targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705859,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> used from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> now heal for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> more, but heals <span class=\"item-number\">-3</span> less targets.",
+            "description": "Jungle Shrooms used from your Cauldron now heal for 100% more, but heals -3 less targets."
+          }
+        ],
+        "connections": [
+          6016,
+          31137
+        ],
+        "choice_group": 706545,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_chiwave",
+          "key": "ability_monk_chiwave",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29737,
+        "name": "Doctor of the Jungle",
+        "slug": "doctor-of-the-jungle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706545,
+        "spell_ids": [
+          706545
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> used from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> now ticks <span class=\"item-number\">-2</span> sec faster.",
+        "description": "Jungle Shrooms used from your Cauldron now ticks -2 sec faster.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706545,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> used from your <span style=\"color: #ffffff; display: inline\">Cauldron</span> now ticks <span class=\"item-number\">-2</span> sec faster.",
+            "description": "Jungle Shrooms used from your Cauldron now ticks -2 sec faster."
+          }
+        ],
+        "connections": [
+          6016,
+          31137
+        ],
+        "choice_group": 706545,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_tanaanjungle",
+          "key": "achievement_zone_tanaanjungle",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6014,
+        "name": "Sen'jin's Presence",
+        "slug": "senjins-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560544,
+        "spell_ids": [
+          560544
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> now reduce the cast time of your next <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Loa's Brews</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Casting Potion Toss and Spirit in a Bottle now reduce the cast time of your next 2 Loa's Brews by -20% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560544,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Potion Toss</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> now reduce the cast time of your next <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Loa's Brews</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Casting Potion Toss and Spirit in a Bottle now reduce the cast time of your next 2 Loa's Brews by -20% for 10 seconds."
+          }
+        ],
+        "connections": [
+          31137
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_mail_raidshamanmythic_s_01",
+          "key": "inv_belt_mail_raidshamanmythic_s_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6023,
+        "name": "Disciple of Sseratus",
+        "slug": "disciple-of-sseratus",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300660,
+        "spell_ids": [
+          300660
+        ],
+        "description_html": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>. <br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Hexbreak</span> now affects an additional nearby ally, and has a <span class=\"item-number\">0</span>.5s reduced global cooldown.",
+        "description": "Increases the bonus healing scaling of Loa's Brew and Spirit in a Bottle by 15%.\n\nIn addition, your Hexbreak now affects an additional nearby ally, and has a 0.5s reduced global cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300660,
+            "description_html": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> and <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>. <br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Hexbreak</span> now affects an additional nearby ally, and has a <span class=\"item-number\">0</span>.5s reduced global cooldown.",
+            "description": "Increases the bonus healing scaling of Loa's Brew and Spirit in a Bottle by 15%.\n\nIn addition, your Hexbreak now affects an additional nearby ally, and has a 0.5s reduced global cooldown."
+          }
+        ],
+        "connections": [
+          7132,
+          29753
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_sumsnakearmy_Border",
+          "key": "_5_sumsnakearmy_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29310,
+        "name": "Base: Beast Blood",
+        "slug": "base-beast-blood",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705870,
+        "spell_ids": [
+          705870
+        ],
+        "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Beast Blood</span> for <span class=\"item-number\">10</span> seconds, causing <span class=\"item-number\">15%</span> of the direct Physical damage taken by party and raid members within <span class=\"item-number\">40</span> yds to instead be dealt over time.<br /><br />Only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Base</span> can be active at a time.",
+        "description": "Infuse your Cauldron with Beast Blood for 10 seconds, causing 15% of the direct Physical damage taken by party and raid members within 40 yds to instead be dealt over time.\n\nOnly 1 Base can be active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705870,
+            "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Beast Blood</span> for <span class=\"item-number\">10</span> seconds, causing <span class=\"item-number\">15%</span> of the direct Physical damage taken by party and raid members within <span class=\"item-number\">40</span> yds to instead be dealt over time.<br /><br />Only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Base</span> can be active at a time.",
+            "description": "Infuse your Cauldron with Beast Blood for 10 seconds, causing 15% of the direct Physical damage taken by party and raid members within 40 yds to instead be dealt over time.\n\nOnly 1 Base can be active at a time."
+          }
+        ],
+        "connections": [
+          6009,
+          7132,
+          29753
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_blooddrop_Border",
+          "key": "nhi_blooddrop_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30333,
+        "name": "Voodoo Cauldron",
+        "slug": "voodoo-cauldron",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804684,
+        "spell_ids": [
+          804684
+        ],
+        "description_html": "Place down a <span style=\"color: #ffffff; display: inline\">Voodoo Cauldron</span> for <span class=\"item-number\">15</span> seconds, increasing allies' healing received by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> while near the cauldron.<br /><br />Allies within <span class=\"item-number\">15</span> yds are healed for <span class=\"item-number\">300</span> + <span class=\"item-number\">60% healing</span> every <span class=\"item-number\">1.5</span> sec for <span class=\"item-number\">15</span> seconds.",
+        "description": "Place down a Voodoo Cauldron for 15 seconds, increasing allies' healing received by 20% while near the cauldron.\n\nAllies within 15 yds are healed for 300 + 60% healing every 1.5 sec for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804684,
+            "description_html": "Place down a <span style=\"color: #ffffff; display: inline\">Voodoo Cauldron</span> for <span class=\"item-number\">15</span> seconds, increasing allies' healing received by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> while near the cauldron.<br /><br />Allies within <span class=\"item-number\">15</span> yds are healed for <span class=\"item-number\">300</span> + <span class=\"item-number\">60% healing</span> every <span class=\"item-number\">1.5</span> sec for <span class=\"item-number\">15</span> seconds.",
+            "description": "Place down a Voodoo Cauldron for 15 seconds, increasing allies' healing received by 20% while near the cauldron.\n\nAllies within 15 yds are healed for 300 + 60% healing every 1.5 sec for 15 seconds."
+          }
+        ],
+        "connections": [
+          6014,
+          6020,
+          29737
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_enchanting_70_pet_cauldron",
+          "key": "inv_enchanting_70_pet_cauldron",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6026,
+        "name": "Master of Concoctions",
+        "slug": "master-of-concoctions",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801690,
+        "spell_ids": [
+          801690
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ingredients</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and causes allies affected by <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> to heal for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage they deal with their next <span class=\"item-number\">3</span> offensive abilities or spells for <span class=\"item-number\">15</span> seconds.",
+        "description": "Increases the duration of Ingredients by 20% and causes allies affected by Jungle Shrooms to heal for 5% of the damage they deal with their next 3 offensive abilities or spells for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801690,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ingredients</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and causes allies affected by <span style=\"color: #ffffff; display: inline\">Jungle Shrooms</span> to heal for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage they deal with their next <span class=\"item-number\">3</span> offensive abilities or spells for <span class=\"item-number\">15</span> seconds.",
+            "description": "Increases the duration of Ingredients by 20% and causes allies affected by Jungle Shrooms to heal for 5% of the damage they deal with their next 3 offensive abilities or spells for 15 seconds."
+          }
+        ],
+        "connections": [
+          6014,
+          6023
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_ironskinbrew",
+          "key": "ability_monk_ironskinbrew",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29754,
+        "name": "Base: Crystal Water",
+        "slug": "base-crystal-water",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500962,
+        "spell_ids": [
+          500962
+        ],
+        "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Crystal Water</span> for <span class=\"item-number\">10</span> seconds, causing party and raid members within <span class=\"item-number\">40</span> yds to be shielded for <span class=\"item-number\">20%</span> of their healing taken for <span class=\"item-number\">5</span> seconds.<br /><br />Only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Base</span> can be active at a time.",
+        "description": "Infuse your Cauldron with Crystal Water for 10 seconds, causing party and raid members within 40 yds to be shielded for 20% of their healing taken for 5 seconds.\n\nOnly 1 Base can be active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500962,
+            "description_html": "Infuse your <span style=\"color: #ffffff; display: inline\">Cauldron</span> with <span style=\"color: #ffffff; display: inline\">Crystal Water</span> for <span class=\"item-number\">10</span> seconds, causing party and raid members within <span class=\"item-number\">40</span> yds to be shielded for <span class=\"item-number\">20%</span> of their healing taken for <span class=\"item-number\">5</span> seconds.<br /><br />Only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Base</span> can be active at a time.",
+            "description": "Infuse your Cauldron with Crystal Water for 10 seconds, causing party and raid members within 40 yds to be shielded for 20% of their healing taken for 5 seconds.\n\nOnly 1 Base can be active at a time."
+          }
+        ],
+        "connections": [
+          6023,
+          29310
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_IceWaterBlast_Border",
+          "key": "custom_t_nhance_rpg_icons_icewaterblast_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13133,
+        "name": "Spirit Link Idol",
+        "slug": "spirit-link-idol",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 706369,
+        "spell_ids": [
+          706369
+        ],
+        "description_html": "Drop a <span style=\"color: #FFFFFF; display: inline\">Spirit Link Idol</span> for <span class=\"item-number\">14</span> seconds. The idol redistributes the health of all party and raid members every <span class=\"item-number\">2</span> sec, such that each player ends up with the same percentage of their maximum health.<br /><br />",
+        "description": "Drop a Spirit Link Idol for 14 seconds. The idol redistributes the health of all party and raid members every 2 sec, such that each player ends up with the same percentage of their maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706369,
+            "description_html": "Drop a <span style=\"color: #FFFFFF; display: inline\">Spirit Link Idol</span> for <span class=\"item-number\">14</span> seconds. The idol redistributes the health of all party and raid members every <span class=\"item-number\">2</span> sec, such that each player ends up with the same percentage of their maximum health.<br /><br />",
+            "description": "Drop a Spirit Link Idol for 14 seconds. The idol redistributes the health of all party and raid members every 2 sec, such that each player ends up with the same percentage of their maximum health."
+          }
+        ],
+        "connections": [
+          4733
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_giftofthewaterspirit",
+          "key": "spell_nature_giftofthewaterspirit",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6027,
+        "name": "Unstable Concoction",
+        "slug": "unstable-concoction",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802487,
+        "spell_ids": [
+          802487
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Potion Toss</span> now applies <span style=\"color: #FFFFFF; display: inline\">Unstable Concoction</span> to the target for <span class=\"item-number\">20</span> seconds. <br /><br />Using <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> or <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> on the target will trigger an explosion of mojo around the target, healing nearby allies within <span class=\"item-number\">20</span> yds for <span class=\"item-number\">177</span> + <span class=\"item-number\">40% healing</span>.",
+        "description": "Potion Toss now applies Unstable Concoction to the target for 20 seconds.\n\nUsing Loa's Brew or Spirit in a Bottle on the target will trigger an explosion of mojo around the target, healing nearby allies within 20 yds for 177 + 40% healing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802487,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Potion Toss</span> now applies <span style=\"color: #FFFFFF; display: inline\">Unstable Concoction</span> to the target for <span class=\"item-number\">20</span> seconds. <br /><br />Using <span style=\"color: #ffffff; display: inline\">Loa's Brew</span> or <span style=\"color: #FFFFFF; display: inline\">Spirit in a Bottle</span> on the target will trigger an explosion of mojo around the target, healing nearby allies within <span class=\"item-number\">20</span> yds for <span class=\"item-number\">177</span> + <span class=\"item-number\">40% healing</span>.",
+            "description": "Potion Toss now applies Unstable Concoction to the target for 20 seconds.\n\nUsing Loa's Brew or Spirit in a Bottle on the target will trigger an explosion of mojo around the target, healing nearby allies within 20 yds for 177 + 40% healing."
+          }
+        ],
+        "connections": [
+          30333
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_alchemy_dpotion_c16",
+          "key": "trade_alchemy_dpotion_c16",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29740,
+        "name": "Master Mixologist",
+        "slug": "master-mixologist",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705864,
+        "spell_ids": [
+          705864
+        ],
+        "description_html": "For <span class=\"item-number\">10</span> seconds, the effectiveness of all <span style=\"color: #ffffff; display: inline\">Cauldron</span> effects and <span style=\"color: #ffffff; display: inline\">Ingredients</span> is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and you can cast <span style=\"color: #ffffff; display: inline\">Spirit in a Bottle</span> while moving.",
+        "description": "For 10 seconds, the effectiveness of all Cauldron effects and Ingredients is increased by 100% and you can cast Spirit in a Bottle while moving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705864,
+            "description_html": "For <span class=\"item-number\">10</span> seconds, the effectiveness of all <span style=\"color: #ffffff; display: inline\">Cauldron</span> effects and <span style=\"color: #ffffff; display: inline\">Ingredients</span> is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and you can cast <span style=\"color: #ffffff; display: inline\">Spirit in a Bottle</span> while moving.",
+            "description": "For 10 seconds, the effectiveness of all Cauldron effects and Ingredients is increased by 100% and you can cast Spirit in a Bottle while moving."
+          }
+        ],
+        "connections": [
+          6026
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_AlchemyIngred_8",
+          "key": "inv_ascend_alchemyingred_8",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7133,
+        "name": "Tiki Splash",
+        "slug": "tiki-splash",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 35,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500053,
+        "spell_ids": [
+          500053
+        ],
+        "description_html": "$5b",
+        "description": "$5b",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500053,
+            "description_html": "$5c",
+            "description": "$5c"
+          }
+        ],
+        "connections": [
+          29754
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_enchant_alchemistcauldron",
+          "key": "inv_enchant_alchemistcauldron",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

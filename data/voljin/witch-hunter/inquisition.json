@@ -1,0 +1,2413 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:31+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:359ad95a2daa58ec09c75ab6715586c048e0c32f00e25d0642fe88a20b4d803e",
+    "talent_count": 192,
+    "tree_count": 6
+  },
+  "class": {
+    "id": 15,
+    "name": "Witch Hunter",
+    "slug": "witch-hunter",
+    "class_file": "witchhunter",
+    "color": "rgb(84, 51, 207)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:witchhunter",
+      "key": "class-witchhunter",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 48,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 41,
+    "name": "Inquisition",
+    "slug": "inquisition",
+    "sort_order": 3,
+    "class_id": 15,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 12263,
+        "name": "Hunt",
+        "slug": "hunt",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4012,
+            6622
+          ]
+        },
+        "spell_id": 802006,
+        "spell_ids": [
+          802006
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">25</span> sec recharge</span><br />Charge an enemy, slowing their movement speed by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">2</span> seconds and generating <span class=\"item-number\">20</span> Rage.",
+        "description": "2 Charges, 25 sec recharge\nCharge an enemy, slowing their movement speed by -70% for 2 seconds and generating 20 Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802006,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">25</span> sec recharge</span><br />Charge an enemy, slowing their movement speed by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">2</span> seconds and generating <span class=\"item-number\">20</span> Rage.",
+            "description": "2 Charges, 25 sec recharge\nCharge an enemy, slowing their movement speed by -70% for 2 seconds and generating 20 Rage."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_run_Border",
+          "key": "_5_run_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4012,
+        "name": "Flames of Sin",
+        "slug": "flames-of-sin",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            6622
+          ]
+        },
+        "spell_id": 92094,
+        "spell_ids": [
+          92094
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Using <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> now grants you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> for <span class=\"item-number\">3</span> sec, causing your auto attacks to deal an additional <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage.<br /><br />Granting yourself <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> in this way while it's already active will increase the current duration by <span class=\"item-number\">3</span> sec.",
+        "description": "Level 10 Passive\nUsing Dawn Blade now grants you Flames of Sin for 3 sec, causing your auto attacks to deal an additional 40% of the damage dealt as Fire damage.\n\nGranting yourself Flames of Sin in this way while it's already active will increase the current duration by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92094,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Using <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> now grants you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> for <span class=\"item-number\">3</span> sec, causing your auto attacks to deal an additional <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage.<br /><br />Granting yourself <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> in this way while it's already active will increase the current duration by <span class=\"item-number\">3</span> sec.",
+            "description": "Level 10 Passive\nUsing Dawn Blade now grants you Flames of Sin for 3 sec, causing your auto attacks to deal an additional 40% of the damage dealt as Fire damage.\n\nGranting yourself Flames of Sin in this way while it's already active will increase the current duration by 3 sec."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ShadowandFlame",
+          "key": "spell_shadow_shadowandflame",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7097,
+        "name": "Dusk Blade",
+        "slug": "dusk-blade",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802020,
+        "spell_ids": [
+          802020
+        ],
+        "description_html": "Strike an enemy with both weapons, dealing Weapon Damage plus <span class=\"item-number\">10</span> + <span class=\"item-number\">15% shadow SP</span> Shadow damage, piercing resistances. Heals for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of damage dealt.",
+        "description": "Strike an enemy with both weapons, dealing Weapon Damage plus 10 + 15% shadow SP Shadow damage, piercing resistances. Heals for 25% of damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802020,
+            "description_html": "Strike an enemy with both weapons, dealing Weapon Damage plus <span class=\"item-number\">10</span> + <span class=\"item-number\">15% shadow SP</span> Shadow damage, piercing resistances. Heals for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of damage dealt.",
+            "description": "Strike an enemy with both weapons, dealing Weapon Damage plus 10 + 15% shadow SP Shadow damage, piercing resistances. Heals for 25% of damage dealt."
+          }
+        ],
+        "connections": [
+          12263
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_passivemastery_(6)_Border",
+          "key": "novart_passivemastery__6__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30851,
+        "name": "Sermon of Flame",
+        "slug": "sermon-of-flame",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503655,
+        "spell_ids": [
+          503655,
+          504890
+        ],
+        "description_html": "Increases your Fire damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Fire damage dealt by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503655,
+            "description_html": "Increases your Fire damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Fire damage dealt by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504890,
+            "description_html": "Increases your Fire damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Fire damage dealt by 10%."
+          }
+        ],
+        "connections": [
+          7097
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_T_Nhance_RPG_Icons_SwordOfFlame_Border",
+          "key": "custom_t_nhance_rpg_icons_swordofflame_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29951,
+        "name": "Brooding Hatred",
+        "slug": "brooding-hatred",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301251,
+        "spell_ids": [
+          301251,
+          301362
+        ],
+        "description_html": "Increases your off-hand Weapon Damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your off-hand Weapon Damage by 20% and increases your chance to hit by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301251,
+            "description_html": "Increases your off-hand Weapon Damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your off-hand Weapon Damage by 20% and increases your chance to hit by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301362,
+            "description_html": "Increases your off-hand Weapon Damage by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> and increases your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your off-hand Weapon Damage by 40% and increases your chance to hit by 6%."
+          }
+        ],
+        "connections": [
+          7097
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+          "key": "spell_shadow_metamorphosis",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12852,
+        "name": "Interrogator",
+        "slug": "interrogator",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 806188,
+        "spell_ids": [
+          806188
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Dawn Blade</span> now deals an additional <span class=\"item-number\">100%</span> of the damage dealt over <span class=\"item-number\">10</span> seconds as Fire damage.",
+        "description": "Level 20 Passive\nDamage dealt by Dawn Blade now deals an additional 100% of the damage dealt over 10 seconds as Fire damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806188,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Dawn Blade</span> now deals an additional <span class=\"item-number\">100%</span> of the damage dealt over <span class=\"item-number\">10</span> seconds as Fire damage.",
+            "description": "Level 20 Passive\nDamage dealt by Dawn Blade now deals an additional 100% of the damage dealt over 10 seconds as Fire damage."
+          }
+        ],
+        "connections": [
+          4012
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_RetributionAura",
+          "key": "spell_holy_retributionaura",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29907,
+        "name": "Purifier's Edge",
+        "slug": "purifiers-edge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802019,
+        "spell_ids": [
+          802019
+        ],
+        "description_html": "Strike an enemy with searing blades, dealing Weapon Damage plus <span class=\"item-number\">20</span> with both weapons as Fire damage.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> or increases the duration by <span class=\"item-number\">3</span> sec.",
+        "description": "Strike an enemy with searing blades, dealing Weapon Damage plus 20 with both weapons as Fire damage.\n\nGrants Flames of Sin or increases the duration by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802019,
+            "description_html": "Strike an enemy with searing blades, dealing Weapon Damage plus <span class=\"item-number\">20</span> with both weapons as Fire damage.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> or increases the duration by <span class=\"item-number\">3</span> sec.",
+            "description": "Strike an enemy with searing blades, dealing Weapon Damage plus 20 with both weapons as Fire damage.\n\nGrants Flames of Sin or increases the duration by 3 sec."
+          }
+        ],
+        "connections": [
+          30851
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_assassinskill28_Border",
+          "key": "_5_assassinskill28_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29953,
+        "name": "Flexible Fighter",
+        "slug": "flexible-fighter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681341,
+        "spell_ids": [
+          681341
+        ],
+        "description_html": "Increases your Agility by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Agility by 6%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681341,
+            "description_html": "Increases your Agility by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility by 6%."
+          }
+        ],
+        "connections": [
+          30851
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_rollthebones02",
+          "key": "ability_rogue_rollthebones02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7598,
+        "name": "Protector of Darkshire",
+        "slug": "protector-of-darkshire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300575,
+        "spell_ids": [
+          300575
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> and <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Dawn Blade and Dusk Blade by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300575,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> and <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Dawn Blade and Dusk Blade by 15%."
+          }
+        ],
+        "connections": [
+          29951,
+          30851
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Diablo3_Cleave_Rogue",
+          "key": "diablo3_cleave_rogue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7063,
+        "name": "Refined Combatant",
+        "slug": "refined-combatant",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572770,
+        "spell_ids": [
+          572770
+        ],
+        "description_html": "Increases your expertise by <span class=\"item-number\">10</span>.",
+        "description": "Increases your expertise by 10.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572770,
+            "description_html": "Increases your expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases your expertise by 10."
+          }
+        ],
+        "connections": [
+          29951
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_OffensiveStance",
+          "key": "ability_warrior_offensivestance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29988,
+        "name": "Smite Evil",
+        "slug": "smite-evil",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802004,
+        "spell_ids": [
+          802004
+        ],
+        "description_html": "Strike an enemy with your blade, dealing Weapon Damage plus <span class=\"item-number\">25</span> as Holy damage to them and <span class=\"item-number\">5</span> nearby enemies.",
+        "description": "Strike an enemy with your blade, dealing Weapon Damage plus 25 as Holy damage to them and 5 nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802004,
+            "description_html": "Strike an enemy with your blade, dealing Weapon Damage plus <span class=\"item-number\">25</span> as Holy damage to them and <span class=\"item-number\">5</span> nearby enemies.",
+            "description": "Strike an enemy with your blade, dealing Weapon Damage plus 25 as Holy damage to them and 5 nearby enemies."
+          }
+        ],
+        "connections": [
+          29951
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_BlessedResillience",
+          "key": "spell_holy_blessedresillience",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34544,
+        "name": "Searing Hilt",
+        "slug": "searing-hilt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705480,
+        "spell_ids": [
+          705480
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> now grants you <span style=\"color: #ffffff; display: inline\">Searing Hilt</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_sword_1h_pvppandarias1_c_02\" /><span class=\"name\">Searing Hilt</span></div><span class=\"desc\">Increases your melee attack speed by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div>",
+        "description": "Purifier's Edge now grants you Searing Hilt for 10 seconds.Searing HiltIncreases your melee attack speed by 10% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705480,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> now grants you <span style=\"color: #ffffff; display: inline\">Searing Hilt</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_sword_1h_pvppandarias1_c_02\" /><span class=\"name\">Searing Hilt</span></div><span class=\"desc\">Increases your melee attack speed by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.</span></div>",
+            "description": "Purifier's Edge now grants you Searing Hilt for 10 seconds.Searing HiltIncreases your melee attack speed by 10% for 10 seconds."
+          }
+        ],
+        "connections": [
+          29907
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_pvppandarias1_c_02",
+          "key": "inv_sword_1h_pvppandarias1_c_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29901,
+        "name": "Fiery Judgement",
+        "slug": "fiery-judgement",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802140,
+        "spell_ids": [
+          802140
+        ],
+        "description_html": "Judge an enemy, dealing <span class=\"item-number\">361</span> + <span class=\"item-number\">40% AP</span> + <span class=\"item-number\">100% fire SP</span> Fire damage to them and nearby enemies.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> or increases the duration by <span class=\"item-number\">3</span> sec.",
+        "description": "Judge an enemy, dealing 361 + 40% AP + 100% fire SP Fire damage to them and nearby enemies.\n\nGrants Flames of Sin or increases the duration by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802140,
+            "description_html": "Judge an enemy, dealing <span class=\"item-number\">361</span> + <span class=\"item-number\">40% AP</span> + <span class=\"item-number\">100% fire SP</span> Fire damage to them and nearby enemies.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> or increases the duration by <span class=\"item-number\">3</span> sec.",
+            "description": "Judge an enemy, dealing 361 + 40% AP + 100% fire SP Fire damage to them and nearby enemies.\n\nGrants Flames of Sin or increases the duration by 3 sec."
+          }
+        ],
+        "connections": [
+          29907,
+          29953
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(37)_Border",
+          "key": "novart_physical_ability__37__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7096,
+        "name": "Duskwood Renegade",
+        "slug": "duskwood-renegade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504677,
+        "spell_ids": [
+          504677,
+          504891
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Reduces the cooldown of Burrow Bolt by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504677,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Reduces the cooldown of Burrow Bolt by -5 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504891,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow Bolt</span> by <span class=\"item-number\">-10</span> sec.",
+            "description": "Reduces the cooldown of Burrow Bolt by -10 sec."
+          }
+        ],
+        "connections": [
+          7598
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_duskwood",
+          "key": "achievement_zone_duskwood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34550,
+        "name": "Brushin' Off The Dusk",
+        "slug": "brushin-off-the-dusk",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681329,
+        "spell_ids": [
+          681329,
+          681488
+        ],
+        "description_html": "Your off-hand auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times and grant allies <span style=\"color: #FFFFFF; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Your off-hand auto attacks now have a 10% chance to strike 2 additional times and grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681329,
+            "description_html": "Your off-hand auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times and grant allies <span style=\"color: #FFFFFF; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Your off-hand auto attacks now have a 10% chance to strike 2 additional times and grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681488,
+            "description_html": "Your off-hand auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times and grant allies <span style=\"color: #FFFFFF; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Your off-hand auto attacks now have a 20% chance to strike 2 additional times and grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds."
+          }
+        ],
+        "connections": [
+          7598
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DarkHand_Fire",
+          "key": "darkhand_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29950,
+        "name": "Darkslayer's Lantern",
+        "slug": "darkslayers-lantern",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802139,
+        "spell_ids": [
+          802139
+        ],
+        "description_html": "Empower a lantern with your <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and let it shine, dealing <span class=\"item-number\">291</span> + <span class=\"item-number\">15% AP</span> Fire damage and stunning all nearby enemies for <span class=\"item-number\">5</span> seconds and interrupting non-player spellcasting for <span class=\"item-number\">3</span> seconds.",
+        "description": "Empower a lantern with your Flames of Sin and let it shine, dealing 291 + 15% AP Fire damage and stunning all nearby enemies for 5 seconds and interrupting non-player spellcasting for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802139,
+            "description_html": "Empower a lantern with your <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and let it shine, dealing <span class=\"item-number\">291</span> + <span class=\"item-number\">15% AP</span> Fire damage and stunning all nearby enemies for <span class=\"item-number\">5</span> seconds and interrupting non-player spellcasting for <span class=\"item-number\">3</span> seconds.",
+            "description": "Empower a lantern with your Flames of Sin and let it shine, dealing 291 + 15% AP Fire damage and stunning all nearby enemies for 5 seconds and interrupting non-player spellcasting for 3 seconds."
+          }
+        ],
+        "connections": [
+          7063,
+          29988
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_trinket6oih_lanternb1",
+          "key": "inv_misc_trinket6oih_lanternb1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6618,
+        "name": "Flames of the Sinned",
+        "slug": "flames-of-the-sinned",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560207,
+        "spell_ids": [
+          560207
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Smite Evil</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again.<br /><br />While you have <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> active, the chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Your Smite Evil now has a 25% chance to strike again.\n\nWhile you have Flames of Sin active, the chance to trigger this effect is increased by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560207,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Smite Evil</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again.<br /><br />While you have <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> active, the chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Your Smite Evil now has a 25% chance to strike again.\n\nWhile you have Flames of Sin active, the chance to trigger this effect is increased by 10%."
+          }
+        ],
+        "connections": [
+          29988
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_AuraCloak_Fire",
+          "key": "auracloak_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4317,
+        "name": "Malice",
+        "slug": "malice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 707535,
+        "spell_ids": [
+          707535
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your Fire spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Agility and your attack power by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 30 Passive\nIncreases your Fire spell damage by 50% of your Agility and your attack power by 100% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707535,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your Fire spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Agility and your attack power by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 30 Passive\nIncreases your Fire spell damage by 50% of your Agility and your attack power by 100% of your Intellect."
+          }
+        ],
+        "connections": [
+          12852
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\sha_spell_shaman_lavaburst_nightborne",
+          "key": "sha_spell_shaman_lavaburst_nightborne",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6857,
+        "name": "Cinder and Ashes",
+        "slug": "cinder-and-ashes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707317,
+        "spell_ids": [
+          707317
+        ],
+        "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> and <span style=\"color: #ffffff; display: inline\">Fiery Judgement</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell power scaling of Purifier's Edge and Fiery Judgement by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707317,
+            "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> and <span style=\"color: #ffffff; display: inline\">Fiery Judgement</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell power scaling of Purifier's Edge and Fiery Judgement by 25%."
+          }
+        ],
+        "connections": [
+          34544
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill26_Border",
+          "key": "_5_druideskill26_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7599,
+        "name": "Scarlet Inquisitor",
+        "slug": "scarlet-inquisitor",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301338,
+        "spell_ids": [
+          301338
+        ],
+        "description_html": "Reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Traps</span> and <span style=\"color: #ffffff; display: inline\">Brands</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the mana cost of your Traps and Brands by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301338,
+            "description_html": "Reduces the mana cost of your <span style=\"color: #ffffff; display: inline\">Traps</span> and <span style=\"color: #ffffff; display: inline\">Brands</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the mana cost of your Traps and Brands by -50%."
+          }
+        ],
+        "connections": [
+          29901
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+          "key": "inv_misc_token_scarletcrusade",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6614,
+        "name": "Pyro Tonic",
+        "slug": "pyro-tonic",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802277,
+        "spell_ids": [
+          802277
+        ],
+        "description_html": "Drink a fiery tonic, increasing your Fire damage dealt by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your critical damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />",
+        "description": "Drink a fiery tonic, increasing your Fire damage dealt by 30% and your critical damage by 20% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802277,
+            "description_html": "Drink a fiery tonic, increasing your Fire damage dealt by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your critical damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />",
+            "description": "Drink a fiery tonic, increasing your Fire damage dealt by 30% and your critical damage by 20% for 10 seconds."
+          }
+        ],
+        "connections": [
+          7096,
+          34550
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_alchemy_potione6",
+          "key": "trade_alchemy_potione6",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5393,
+        "name": "The Hunt Continues",
+        "slug": "the-hunt-continues",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560219,
+        "spell_ids": [
+          560219
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Hunt</span> now generates an additional <span class=\"item-number\">15</span> Rage and the mana cost is reduced by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Hunt now generates an additional 15 Rage and the mana cost is reduced by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560219,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Hunt</span> now generates an additional <span class=\"item-number\">15</span> Rage and the mana cost is reduced by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Hunt now generates an additional 15 Rage and the mana cost is reduced by -15%."
+          }
+        ],
+        "connections": [
+          29950
+        ],
+        "choice_group": 324782,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3spiritwalk",
+          "key": "d3spiritwalk",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 2097152
+      },
+      {
+        "id": 11393,
+        "name": "Evil Never Sleeps",
+        "slug": "evil-never-sleeps",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561210,
+        "spell_ids": [
+          561210
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Hunt</span> now slows movement speed by an additional <span class=\"item-number\">2</span> sec.",
+        "description": "Hunt now slows movement speed by an additional 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561210,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Hunt</span> now slows movement speed by an additional <span class=\"item-number\">2</span> sec.",
+            "description": "Hunt now slows movement speed by an additional 2 sec."
+          }
+        ],
+        "connections": [
+          29950
+        ],
+        "choice_group": 324782,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_fishing_nethooks01",
+          "key": "inv_fishing_nethooks01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 2097152
+      },
+      {
+        "id": 34545,
+        "name": "Flourish",
+        "slug": "flourish",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805365,
+        "spell_ids": [
+          805365
+        ],
+        "description_html": "Perform an advanced flourish, dealing <span class=\"item-number\">207</span> + <span class=\"item-number\">100% AP</span> Fire damage to nearby enemies, repeating every <span class=\"item-number\">4</span> sec, and causing your <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> to cleave up to <span class=\"item-number\">3</span> additional enemies for <span class=\"item-number\">20</span> seconds.<br /><br />Grants you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increases the duration by <span class=\"item-number\">10</span> sec.",
+        "description": "Perform an advanced flourish, dealing 207 + 100% AP Fire damage to nearby enemies, repeating every 4 sec, and causing your Flames of Sin to cleave up to 3 additional enemies for 20 seconds.\n\nGrants you Flames of Sin and increases the duration by 10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805365,
+            "description_html": "Perform an advanced flourish, dealing <span class=\"item-number\">207</span> + <span class=\"item-number\">100% AP</span> Fire damage to nearby enemies, repeating every <span class=\"item-number\">4</span> sec, and causing your <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> to cleave up to <span class=\"item-number\">3</span> additional enemies for <span class=\"item-number\">20</span> seconds.<br /><br />Grants you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increases the duration by <span class=\"item-number\">10</span> sec.",
+            "description": "Perform an advanced flourish, dealing 207 + 100% AP Fire damage to nearby enemies, repeating every 4 sec, and causing your Flames of Sin to cleave up to 3 additional enemies for 20 seconds.\n\nGrants you Flames of Sin and increases the duration by 10 sec."
+          }
+        ],
+        "connections": [
+          6618
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_UnfairAdvantage",
+          "key": "ability_rogue_unfairadvantage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7066,
+        "name": "Torchlight",
+        "slug": "torchlight",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503662,
+        "spell_ids": [
+          503662
+        ],
+        "description_html": "Throw a torch at an enemy, dealing <span class=\"item-number\">166</span> + <span class=\"item-number\">30% AP</span> + <span class=\"item-number\">45% fire SP</span> Fire damage, and causing up to <span class=\"item-number\">5</span> of the next attacks you make against them to grant you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increasing the duration by <span class=\"item-number\">2</span> sec.",
+        "description": "Throw a torch at an enemy, dealing 166 + 30% AP + 45% fire SP Fire damage, and causing up to 5 of the next attacks you make against them to grant you Flames of Sin and increasing the duration by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503662,
+            "description_html": "Throw a torch at an enemy, dealing <span class=\"item-number\">166</span> + <span class=\"item-number\">30% AP</span> + <span class=\"item-number\">45% fire SP</span> Fire damage, and causing up to <span class=\"item-number\">5</span> of the next attacks you make against them to grant you <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increasing the duration by <span class=\"item-number\">2</span> sec.",
+            "description": "Throw a torch at an enemy, dealing 166 + 30% AP + 45% fire SP Fire damage, and causing up to 5 of the next attacks you make against them to grant you Flames of Sin and increasing the duration by 2 sec."
+          }
+        ],
+        "connections": [
+          6857,
+          7599
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_enchanting_70_pet_torch",
+          "key": "inv_enchanting_70_pet_torch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6610,
+        "name": "Holy Frenzy",
+        "slug": "holy-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681327,
+        "spell_ids": [
+          681327
+        ],
+        "description_html": "Increases your melee haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your melee haste by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681327,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee haste by 15%."
+          }
+        ],
+        "connections": [
+          6614
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Challange_yellow",
+          "key": "ability_warrior_challange_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11197,
+        "name": "Stake",
+        "slug": "stake",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680537,
+        "spell_ids": [
+          680537
+        ],
+        "description_html": "Drive a stake through the chest of an injured enemy, dealing <span class=\"item-number\">279</span> + <span class=\"item-number\">67.5% AP</span> Physical damage, ignoring enemy armor.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increases the duration by <span class=\"item-number\">3</span> sec.<br /><br />Only usable on enemies at or below <span class=\"item-number\">35%</span> health.",
+        "description": "Drive a stake through the chest of an injured enemy, dealing 279 + 67.5% AP Physical damage, ignoring enemy armor.\n\nGrants Flames of Sin and increases the duration by 3 sec.\n\nOnly usable on enemies at or below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680537,
+            "description_html": "Drive a stake through the chest of an injured enemy, dealing <span class=\"item-number\">279</span> + <span class=\"item-number\">67.5% AP</span> Physical damage, ignoring enemy armor.<br /><br />Grants <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> and increases the duration by <span class=\"item-number\">3</span> sec.<br /><br />Only usable on enemies at or below <span class=\"item-number\">35%</span> health.",
+            "description": "Drive a stake through the chest of an injured enemy, dealing 279 + 67.5% AP Physical damage, ignoring enemy armor.\n\nGrants Flames of Sin and increases the duration by 3 sec.\n\nOnly usable on enemies at or below 35% health."
+          }
+        ],
+        "connections": [
+          5393,
+          11393,
+          34545
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_stake_02_b",
+          "key": "inv_ascend_stake_02_b",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4319,
+        "name": "Heartstopper",
+        "slug": "heartstopper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 680540,
+        "spell_ids": [
+          680540
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> or <span style=\"color: #ffffff; display: inline\">Fiery Judgement</span> now allows the use of <span style=\"color: #ffffff; display: inline\">Stake</span> within <span class=\"item-number\">8</span> seconds regardless of the target's health percentage.",
+        "description": "Level 40 Passive\nCasting Purifier's Edge or Fiery Judgement now allows the use of Stake within 8 seconds regardless of the target's health percentage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680540,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> or <span style=\"color: #ffffff; display: inline\">Fiery Judgement</span> now allows the use of <span style=\"color: #ffffff; display: inline\">Stake</span> within <span class=\"item-number\">8</span> seconds regardless of the target's health percentage.",
+            "description": "Level 40 Passive\nCasting Purifier's Edge or Fiery Judgement now allows the use of Stake within 8 seconds regardless of the target's health percentage."
+          }
+        ],
+        "connections": [
+          4317
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_devilmark_Border",
+          "key": "_5_devilmark_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 12546,
+        "name": "Sinner",
+        "slug": "sinner",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681411,
+        "spell_ids": [
+          681411
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torchlight</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Torchlight by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681411,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Torchlight</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Torchlight by 100%."
+          }
+        ],
+        "connections": [
+          7066
+        ],
+        "choice_group": 584221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_SealOfFire",
+          "key": "spell_fire_sealoffire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34546,
+        "name": "Sin Eater",
+        "slug": "sin-eater",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680542,
+        "spell_ids": [
+          680542
+        ],
+        "description_html": "Increases the amount of next attacks that grant <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> through <span style=\"color: #ffffff; display: inline\">Torchlight</span> by <span class=\"item-number\">5</span>.",
+        "description": "Increases the amount of next attacks that grant Flames of Sin through Torchlight by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680542,
+            "description_html": "Increases the amount of next attacks that grant <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> through <span style=\"color: #ffffff; display: inline\">Torchlight</span> by <span class=\"item-number\">5</span>.",
+            "description": "Increases the amount of next attacks that grant Flames of Sin through Torchlight by 5."
+          }
+        ],
+        "connections": [
+          7066
+        ],
+        "choice_group": 584221,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_animarevendreth_debuff",
+          "key": "spell_animarevendreth_debuff",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34541,
+        "name": "Dawn",
+        "slug": "dawn",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705484,
+        "spell_ids": [
+          705484
+        ],
+        "description_html": "Dealing Fire damage now increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Torchlight</span> and <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Dealing Fire damage now increases the damage dealt by Torchlight and Dusk Blade by 2% for 5 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705484,
+            "description_html": "Dealing Fire damage now increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Torchlight</span> and <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Dealing Fire damage now increases the damage dealt by Torchlight and Dusk Blade by 2% for 5 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6610,
+          7066
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_SunOrb_Border",
+          "key": "custom_t_sunorb_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34547,
+        "name": "Dusk",
+        "slug": "dusk",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300571,
+        "spell_ids": [
+          300571
+        ],
+        "description_html": "Dealing Physical damage now increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Stake</span> and <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Dealing Physical damage now increases the damage dealt by Stake and Dawn Blade by 2% for 5 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300571,
+            "description_html": "Dealing Physical damage now increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Stake</span> and <span style=\"color: #ffffff; display: inline\">Dawn Blade</span> by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Dealing Physical damage now increases the damage dealt by Stake and Dawn Blade by 2% for 5 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6610,
+          11197
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\World_Marker_Moon",
+          "key": "world_marker_moon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4589,
+        "name": "Monster Hunting",
+        "slug": "monster-hunting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300872,
+        "spell_ids": [
+          300872
+        ],
+        "description_html": "Increases melee and ranged haste of party and raid members within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt against Undead and Demons by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases melee and ranged haste of party and raid members within 100 yds by 10%. Does not stack with similar effects.\n\nIn addition, increases your damage dealt against Undead and Demons by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300872,
+            "description_html": "Increases melee and ranged haste of party and raid members within <span class=\"item-number\">100</span> yds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt against Undead and Demons by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases melee and ranged haste of party and raid members within 100 yds by 10%. Does not stack with similar effects.\n\nIn addition, increases your damage dealt against Undead and Demons by 10%."
+          }
+        ],
+        "connections": [
+          11197
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(44)_Border",
+          "key": "novart_physical_ability__44__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7605,
+        "name": "Lightbringer",
+        "slug": "lightbringer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680538,
+        "spell_ids": [
+          680538
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reduce the mana cost of your next <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>. This effect has a <span class=\"item-number\">25%</span> chance to not be consumed by <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span>.",
+        "description": "Damage dealt by Dusk Blade now has a 15% chance to reduce the mana cost of your next Purifier's Edge by -100%. This effect has a 25% chance to not be consumed by Purifier's Edge.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680538,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Dusk Blade</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reduce the mana cost of your next <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>. This effect has a <span class=\"item-number\">25%</span> chance to not be consumed by <span style=\"color: #ffffff; display: inline\">Purifier's Edge</span>.",
+            "description": "Damage dealt by Dusk Blade now has a 15% chance to reduce the mana cost of your next Purifier's Edge by -100%. This effect has a 25% chance to not be consumed by Purifier's Edge."
+          }
+        ],
+        "connections": [
+          12546,
+          34541,
+          34546
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyThrow_Border",
+          "key": "custom_t_nhance_rpg_icons_holythrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6625,
+        "name": "Torch the Wicked!",
+        "slug": "torch-the-wicked",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560226,
+        "spell_ids": [
+          560226
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> now grants <span class=\"item-number\">2</span><span class=\"item-number\">%</span> attack speed, stacking up to <span class=\"item-number\">12</span> times for <span class=\"item-number\">6</span> seconds. Application of this effect does not refresh the duration.<br /><br />Additionally, <span style=\"color: #FFFFFF; display: inline\">Pyro Tonic</span> now also resets the cooldown of <span style=\"color: #FFFFFF; display: inline\">Torchlight</span>.",
+        "description": "Dealing damage with Flames of Sin now grants 2% attack speed, stacking up to 12 times for 6 seconds. Application of this effect does not refresh the duration.\n\nAdditionally, Pyro Tonic now also resets the cooldown of Torchlight.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560226,
+            "description_html": "Dealing damage with <span style=\"color: #ff7a24; display: inline\">Flames of Sin</span> now grants <span class=\"item-number\">2</span><span class=\"item-number\">%</span> attack speed, stacking up to <span class=\"item-number\">12</span> times for <span class=\"item-number\">6</span> seconds. Application of this effect does not refresh the duration.<br /><br />Additionally, <span style=\"color: #FFFFFF; display: inline\">Pyro Tonic</span> now also resets the cooldown of <span style=\"color: #FFFFFF; display: inline\">Torchlight</span>.",
+            "description": "Dealing damage with Flames of Sin now grants 2% attack speed, stacking up to 12 times for 6 seconds. Application of this effect does not refresh the duration.\n\nAdditionally, Pyro Tonic now also resets the cooldown of Torchlight."
+          }
+        ],
+        "connections": [
+          34541,
+          34547
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_fishing_nethooks01",
+          "key": "inv_fishing_nethooks01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7068,
+        "name": "Burned Alive",
+        "slug": "burned-alive",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705478,
+        "spell_ids": [
+          705478
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Increases your critical strike chance by 25% on enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705478,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Increases your critical strike chance by 25% on enemies below 20% health."
+          }
+        ],
+        "connections": [
+          4589,
+          34547
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FlameBlades",
+          "key": "spell_fire_flameblades",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4318,
+        "name": "Evil Doers, Beware!",
+        "slug": "evil-doers-beware",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 681328,
+        "spell_ids": [
+          681328
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Stake</span> is now guaranteed to critically strike enemies above <span class=\"item-number\">75%</span> health.",
+        "description": "Level 50 Passive\nStake is now guaranteed to critically strike enemies above 75% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681328,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Stake</span> is now guaranteed to critically strike enemies above <span class=\"item-number\">75%</span> health.",
+            "description": "Level 50 Passive\nStake is now guaranteed to critically strike enemies above 75% health."
+          }
+        ],
+        "connections": [
+          4319
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_archerskill05_Border",
+          "key": "_5_archerskill05_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7604,
+        "name": "Purity & Wickedness",
+        "slug": "purity-wickedness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680544,
+        "spell_ids": [
+          680544
+        ],
+        "description_html": "Main-hand auto attacks now apply a stack of <span style=\"color: #FFFFFF; display: inline\">Purity</span> to the target, increasing the Fire and Holy damage you deal to them by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack, stacking <span class=\"item-number\">6</span> times.<br /><br />Off-hand auto attacks now apply a stack of <span style=\"color: #FFFFFF; display: inline\">Wickedness</span> to the target, increasing the Shadow and Physical damage you deal to them by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack, stacking <span class=\"item-number\">6</span> times.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Torchlight</span> can now consume these stacks to deal <span class=\"item-number\">1028</span> + <span class=\"item-number\">25% holy SP</span> + <span class=\"item-number\">45% AP</span> Holyflame or Shadowstrike damage to the target.",
+        "description": "Main-hand auto attacks now apply a stack of Purity to the target, increasing the Fire and Holy damage you deal to them by 2% per stack, stacking 6 times.\n\nOff-hand auto attacks now apply a stack of Wickedness to the target, increasing the Shadow and Physical damage you deal to them by 2% per stack, stacking 6 times.\n\nTorchlight can now consume these stacks to deal 1028 + 25% holy SP + 45% AP Holyflame or Shadowstrike damage to the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680544,
+            "description_html": "Main-hand auto attacks now apply a stack of <span style=\"color: #FFFFFF; display: inline\">Purity</span> to the target, increasing the Fire and Holy damage you deal to them by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack, stacking <span class=\"item-number\">6</span> times.<br /><br />Off-hand auto attacks now apply a stack of <span style=\"color: #FFFFFF; display: inline\">Wickedness</span> to the target, increasing the Shadow and Physical damage you deal to them by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> per stack, stacking <span class=\"item-number\">6</span> times.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Torchlight</span> can now consume these stacks to deal <span class=\"item-number\">1028</span> + <span class=\"item-number\">25% holy SP</span> + <span class=\"item-number\">45% AP</span> Holyflame or Shadowstrike damage to the target.",
+            "description": "Main-hand auto attacks now apply a stack of Purity to the target, increasing the Fire and Holy damage you deal to them by 2% per stack, stacking 6 times.\n\nOff-hand auto attacks now apply a stack of Wickedness to the target, increasing the Shadow and Physical damage you deal to them by 2% per stack, stacking 6 times.\n\nTorchlight can now consume these stacks to deal 1028 + 25% holy SP + 45% AP Holyflame or Shadowstrike damage to the target."
+          }
+        ],
+        "connections": [
+          7605
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_01dual",
+          "key": "inv_sword_1h_artifactfelomelorn_d_01dual",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7601,
+        "name": "Cycle of Despair",
+        "slug": "cycle-of-despair",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503664,
+        "spell_ids": [
+          503664
+        ],
+        "description_html": "Increases the amount of stacks of <span style=\"color: #ffffff; display: inline\">Dawn</span> and <span style=\"color: #ffffff; display: inline\">Dusk</span> by <span class=\"item-number\">10</span>.<br /><br />In addition, reaching <span class=\"item-number\">20</span> stacks with both buffs will consume them to grant you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage, melee haste, movement speed, and critical strike chance for <span class=\"item-number\">6</span> seconds.",
+        "description": "Increases the amount of stacks of Dawn and Dusk by 10.\n\nIn addition, reaching 20 stacks with both buffs will consume them to grant you 20% increased damage, melee haste, movement speed, and critical strike chance for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503664,
+            "description_html": "Increases the amount of stacks of <span style=\"color: #ffffff; display: inline\">Dawn</span> and <span style=\"color: #ffffff; display: inline\">Dusk</span> by <span class=\"item-number\">10</span>.<br /><br />In addition, reaching <span class=\"item-number\">20</span> stacks with both buffs will consume them to grant you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage, melee haste, movement speed, and critical strike chance for <span class=\"item-number\">6</span> seconds.",
+            "description": "Increases the amount of stacks of Dawn and Dusk by 10.\n\nIn addition, reaching 20 stacks with both buffs will consume them to grant you 20% increased damage, melee haste, movement speed, and critical strike chance for 6 seconds."
+          }
+        ],
+        "connections": [
+          6625
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_moon_Border",
+          "key": "_5_moon_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7074,
+        "name": "Hatred & Vitriol",
+        "slug": "hatred-vitriol",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 41,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504470,
+        "spell_ids": [
+          504470
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Stake</span> and reduces its mana cost by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />In addition, critical strikes with <span style=\"color: #ffffff; display: inline\">Stake</span> now refund half of its cost.",
+        "description": "Increases the damage of Stake and reduces its mana cost by -30%.\n\nIn addition, critical strikes with Stake now refund half of its cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504470,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Stake</span> and reduces its mana cost by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />In addition, critical strikes with <span style=\"color: #ffffff; display: inline\">Stake</span> now refund half of its cost.",
+            "description": "Increases the damage of Stake and reduces its mana cost by -30%.\n\nIn addition, critical strikes with Stake now refund half of its cost."
+          }
+        ],
+        "connections": [
+          7068
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Diablo3_CursedMonster_Yellow",
+          "key": "diablo3_cursedmonster_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

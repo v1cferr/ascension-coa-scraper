@@ -1,0 +1,2479 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:22+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:3243d987696a056b8094fc412e54ce2833374e6fe629e5dd55a2d9b1760bf815",
+    "talent_count": 160,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 23,
+    "name": "Necromancer",
+    "slug": "necromancer",
+    "class_file": "necromancer",
+    "color": "rgb(69, 219, 156)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:necromancer",
+      "key": "class-necromancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 35,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 60,
+    "name": "Rime",
+    "slug": "rime",
+    "sort_order": 2,
+    "class_id": 23,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31185,
+        "name": "Ice Barrage",
+        "slug": "ice-barrage",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4035,
+            29787
+          ]
+        },
+        "spell_id": 801760,
+        "spell_ids": [
+          801760
+        ],
+        "description_html": "Unleash a relentless volley of glacial shards, dealing <span class=\"item-number\">26</span> + <span class=\"item-number\">59.71% SP</span> Frost damage every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">1</span> seconds.<br /><br />At the end of the duration, you entomb your target in ice, freezing them for <span class=\"item-number\">4</span> seconds.",
+        "description": "Unleash a relentless volley of glacial shards, dealing 26 + 59.71% SP Frost damage every 0 sec for 1 seconds.\n\nAt the end of the duration, you entomb your target in ice, freezing them for 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801760,
+            "description_html": "Unleash a relentless volley of glacial shards, dealing <span class=\"item-number\">26</span> + <span class=\"item-number\">59.71% SP</span> Frost damage every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">1</span> seconds.<br /><br />At the end of the duration, you entomb your target in ice, freezing them for <span class=\"item-number\">4</span> seconds.",
+            "description": "Unleash a relentless volley of glacial shards, dealing 26 + 59.71% SP Frost damage every 0 sec for 1 seconds.\n\nAt the end of the duration, you entomb your target in ice, freezing them for 4 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_frost_spell_09_Border",
+          "key": "uico_frost_spell_09_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4035,
+        "name": "Tundra Warriors",
+        "slug": "tundra-warriors",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            29787
+          ]
+        },
+        "spell_id": 92122,
+        "spell_ids": [
+          92122
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Casting any spell now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Tundra Warriors</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_bladeofjusticeblue\" /><span class=\"name\">Tundra Warriors (Proc)</span></div><span class=\"desc\">For <span class=\"item-number\">10</span> seconds, the critical strike chance of your Undead minions is increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">3</span> times.</span></div>",
+        "description": "Level 10 Passive\nCasting any spell now has a 25% chance to grant you Tundra Warriors.Tundra Warriors (Proc)For 10 seconds, the critical strike chance of your Undead minions is increased by 4%, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92122,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Casting any spell now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Tundra Warriors</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_bladeofjusticeblue\" /><span class=\"name\">Tundra Warriors (Proc)</span></div><span class=\"desc\">For <span class=\"item-number\">10</span> seconds, the critical strike chance of your Undead minions is increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">3</span> times.</span></div>",
+            "description": "Level 10 Passive\nCasting any spell now has a 25% chance to grant you Tundra Warriors.Tundra Warriors (Proc)For 10 seconds, the critical strike chance of your Undead minions is increased by 4%, stacking 3 times."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\WC3LichOriginal",
+          "key": "wc3lichoriginal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6901,
+        "name": "Refreshing Chill",
+        "slug": "refreshing-chill",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300940,
+        "spell_ids": [
+          300940
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> and make your cast next within <span class=\"item-number\">15</span> seconds instant cast.",
+        "description": "Casting Command spells now has a 20% chance to reset the cooldown of Ice Barrage and make your cast next within 15 seconds instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300940,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> and make your cast next within <span class=\"item-number\">15</span> seconds instant cast.",
+            "description": "Casting Command spells now has a 20% chance to reset the cooldown of Ice Barrage and make your cast next within 15 seconds instant cast."
+          }
+        ],
+        "connections": [
+          31185
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_mageskill32_Border",
+          "key": "_5_mageskill32_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7213,
+        "name": "Frigid Winds",
+        "slug": "frigid-winds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504357,
+        "spell_ids": [
+          504357
+        ],
+        "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Refreshing Chill</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance to trigger Refreshing Chill by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504357,
+            "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Refreshing Chill</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance to trigger Refreshing Chill by 5%."
+          }
+        ],
+        "connections": [
+          6901
+        ],
+        "choice_group": 988800,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_IceWave_Border",
+          "key": "custom_t_nhance_rpg_icons_icewave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34976,
+        "name": "Piercing Icicles",
+        "slug": "piercing-icicles",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524687,
+        "spell_ids": [
+          524687
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Ice Barrage by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524687,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Ice Barrage by 20%."
+          }
+        ],
+        "connections": [
+          6901
+        ],
+        "choice_group": 988800,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_IceSpear_Border",
+          "key": "custom_t_icespear_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6893,
+        "name": "Glacial Impact",
+        "slug": "glacial-impact",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704355,
+        "spell_ids": [
+          704355
+        ],
+        "description_html": "<span style=\"color: #3399ff; display: inline\">Requires Frozen Target</span><br />Call down icy boulders onto a <span style=\"color: #3399ff; display: inline\">Frozen</span> enemy, dealing <span class=\"item-number\">142</span> + <span class=\"item-number\">140.5% frost SP</span> Frost damage.<br /><br />",
+        "description": "Requires Frozen Target\nCall down icy boulders onto a Frozen enemy, dealing 142 + 140.5% frost SP Frost damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704355,
+            "description_html": "<span style=\"color: #3399ff; display: inline\">Requires Frozen Target</span><br />Call down icy boulders onto a <span style=\"color: #3399ff; display: inline\">Frozen</span> enemy, dealing <span class=\"item-number\">142</span> + <span class=\"item-number\">140.5% frost SP</span> Frost damage.<br /><br />",
+            "description": "Requires Frozen Target\nCall down icy boulders onto a Frozen enemy, dealing 142 + 140.5% frost SP Frost damage."
+          }
+        ],
+        "connections": [
+          6901
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill23_Border",
+          "key": "skill_icon_skill23_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4436,
+        "name": "Ice Mastery",
+        "slug": "ice-mastery",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 560045,
+        "spell_ids": [
+          560045
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell power by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your spell power by 30% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560045,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell power by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your spell power by 30% of your Intellect."
+          }
+        ],
+        "connections": [
+          4035
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_AuraCloak_Ice",
+          "key": "auracloak_ice",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 33725,
+        "name": "Bone Legion",
+        "slug": "bone-legion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707006,
+        "spell_ids": [
+          707006,
+          707881
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its Runic Power generated by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Lichfrost by 10% and its Runic Power generated by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707006,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its Runic Power generated by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Lichfrost by 10% and its Runic Power generated by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707881,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Lichfrost</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and its Runic Power generated by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Lichfrost by 20% and its Runic Power generated by 50%."
+          }
+        ],
+        "connections": [
+          7213,
+          34976
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(38)_Border",
+          "key": "novart_physical_ability__38__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34978,
+        "name": "Curse of the Lich",
+        "slug": "curse-of-the-lich",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300240,
+        "spell_ids": [
+          300240
+        ],
+        "description_html": "Increases the range of your Rime spells by <span class=\"item-number\">6</span> yds and increases the Frost critical strike chance of you and your summons by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the range of your Rime spells by 6 yds and increases the Frost critical strike chance of you and your summons by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300240,
+            "description_html": "Increases the range of your Rime spells by <span class=\"item-number\">6</span> yds and increases the Frost critical strike chance of you and your summons by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the range of your Rime spells by 6 yds and increases the Frost critical strike chance of you and your summons by 3%."
+          }
+        ],
+        "connections": [
+          7213,
+          34976
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_CasterCloak_Ice",
+          "key": "castercloak_ice",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33720,
+        "name": "Runic Reservoir",
+        "slug": "runic-reservoir",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704670,
+        "spell_ids": [
+          704670,
+          803850
+        ],
+        "description_html": "Increases your Frost damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your maximum Runic Power by <span class=\"item-number\">15</span>.",
+        "description": "Increases your Frost damage by 5% and your maximum Runic Power by 15.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704670,
+            "description_html": "Increases your Frost damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your maximum Runic Power by <span class=\"item-number\">15</span>.",
+            "description": "Increases your Frost damage by 5% and your maximum Runic Power by 15."
+          },
+          {
+            "rank": 2,
+            "spell_id": 803850,
+            "description_html": "Increases your Frost damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your maximum Runic Power by <span class=\"item-number\">30</span>.",
+            "description": "Increases your Frost damage by 10% and your maximum Runic Power by 30."
+          }
+        ],
+        "connections": [
+          6893,
+          7213,
+          34976
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_frostemblem_01",
+          "key": "inv_misc_frostemblem_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6488,
+        "name": "Hoarfrost Hands",
+        "slug": "hoarfrost-hands",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803291,
+        "spell_ids": [
+          803291
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Lichfrost's</span> movement speed slow by <span class=\"item-number\">4</span> sec and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of Lichfrost's movement speed slow by 4 sec and your hit chance by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803291,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Lichfrost's</span> movement speed slow by <span class=\"item-number\">4</span> sec and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of Lichfrost's movement speed slow by 4 sec and your hit chance by 4%."
+          }
+        ],
+        "connections": [
+          6893
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Call_of_the_Sepulcher_64x64",
+          "key": "call_of_the_sepulcher_64x64",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5605,
+        "name": "Frigid Death",
+        "slug": "frigid-death",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560851,
+        "spell_ids": [
+          560851
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Glacial Impact by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560851,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Glacial Impact by 50%."
+          }
+        ],
+        "connections": [
+          6893
+        ],
+        "choice_group": 362123,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Ice_Lament",
+          "key": "spell_ice_lament",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30605,
+        "name": "Freeze Dry",
+        "slug": "freeze-dry",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704680,
+        "spell_ids": [
+          704680
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> now generates <span class=\"item-number\">20</span> Runic Power.",
+        "description": "Your Glacial Impact now generates 20 Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704680,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> now generates <span class=\"item-number\">20</span> Runic Power.",
+            "description": "Your Glacial Impact now generates 20 Runic Power."
+          }
+        ],
+        "connections": [
+          6893
+        ],
+        "choice_group": 362123,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_coldasice",
+          "key": "ability_mage_coldasice",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7214,
+        "name": "Heartchill",
+        "slug": "heartchill",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801739,
+        "spell_ids": [
+          801739
+        ],
+        "description_html": "Chill an enemy's heart, interrupting their current spell cast.<br /><br />Successfully interrupting a spell also reduces their movement speed and haste by <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.",
+        "description": "Chill an enemy's heart, interrupting their current spell cast.\n\nSuccessfully interrupting a spell also reduces their movement speed and haste by -80% for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801739,
+            "description_html": "Chill an enemy's heart, interrupting their current spell cast.<br /><br />Successfully interrupting a spell also reduces their movement speed and haste by <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.",
+            "description": "Chill an enemy's heart, interrupting their current spell cast.\n\nSuccessfully interrupting a spell also reduces their movement speed and haste by -80% for 3 seconds."
+          }
+        ],
+        "connections": [
+          33725
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_heartstopaura",
+          "key": "ability_deathknight_heartstopaura",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6891,
+        "name": "Necrotic Chains",
+        "slug": "necrotic-chains",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801733,
+        "spell_ids": [
+          801733
+        ],
+        "description_html": "Every 3rd <span style=\"color: #90ee90; display: inline\">Command</span> spell now freezes the target in place for <span class=\"item-number\">5</span> seconds. Damage dealt may end this effect.",
+        "description": "Every 3rd Command spell now freezes the target in place for 5 seconds. Damage dealt may end this effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801733,
+            "description_html": "Every 3rd <span style=\"color: #90ee90; display: inline\">Command</span> spell now freezes the target in place for <span class=\"item-number\">5</span> seconds. Damage dealt may end this effect.",
+            "description": "Every 3rd Command spell now freezes the target in place for 5 seconds. Damage dealt may end this effect."
+          }
+        ],
+        "connections": [
+          33725,
+          34978
+        ],
+        "choice_group": 803797,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_lichking",
+          "key": "achievement_boss_lichking",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12891,
+        "name": "Ner'zhul's Blessing",
+        "slug": "nerzhuls-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803797,
+        "spell_ids": [
+          803797
+        ],
+        "description_html": "Every 3rd <span style=\"color: #90ee90; display: inline\">Command</span> spell now makes your next <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> within <span class=\"item-number\">10</span> seconds guaranteed to critically strike.",
+        "description": "Every 3rd Command spell now makes your next Lichfrost within 10 seconds guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803797,
+            "description_html": "Every 3rd <span style=\"color: #90ee90; display: inline\">Command</span> spell now makes your next <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> within <span class=\"item-number\">10</span> seconds guaranteed to critically strike.",
+            "description": "Every 3rd Command spell now makes your next Lichfrost within 10 seconds guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          33725,
+          34978
+        ],
+        "choice_group": 803797,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_freeze",
+          "key": "ability_mage_freeze",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29778,
+        "name": "Giant Bones",
+        "slug": "giant-bones",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805427,
+        "spell_ids": [
+          805427
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> now summons a <span style=\"color: #ffffff; display: inline\">Rotting Frost Giant</span> to aid you in combat for the duration.",
+        "description": "Casting Unholy Frenzy now summons a Rotting Frost Giant to aid you in combat for the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805427,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> now summons a <span style=\"color: #ffffff; display: inline\">Rotting Frost Giant</span> to aid you in combat for the duration.",
+            "description": "Casting Unholy Frenzy now summons a Rotting Frost Giant to aid you in combat for the duration."
+          }
+        ],
+        "connections": [
+          6488,
+          33720,
+          34978
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_ulduarraid_icegiant_01",
+          "key": "achievement_dungeon_ulduarraid_icegiant_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29773,
+        "name": "Glacier Lord",
+        "slug": "glacier-lord",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560852,
+        "spell_ids": [
+          560852
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> is now guaranteed to critically strike against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+        "description": "Your Glacial Impact is now guaranteed to critically strike against Frozen targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560852,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> is now guaranteed to critically strike against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+            "description": "Your Glacial Impact is now guaranteed to critically strike against Frozen targets."
+          }
+        ],
+        "connections": [
+          5605,
+          6488,
+          30605
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_frost_spell_03_Border",
+          "key": "uico_frost_spell_03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30621,
+        "name": "Icecrown",
+        "slug": "icecrown",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 531135,
+        "spell_ids": [
+          531135
+        ],
+        "description_html": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by 1% for 10 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 531135,
+            "description_html": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Your Frost damage dealt now increases your allies' critical strike chance against the enemy by 1% for 10 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          5605,
+          30605
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_eternalwinter_d_01",
+          "key": "inv_helm_eternalwinter_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4437,
+        "name": "Frigidness",
+        "slug": "frigidness",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 704669,
+        "spell_ids": [
+          704669
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your critical damage by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+        "description": "Level 30 Passive\nIncreases your critical damage by 100% against Frozen targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704669,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your critical damage by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+            "description": "Level 30 Passive\nIncreases your critical damage by 100% against Frozen targets."
+          }
+        ],
+        "connections": [
+          4436
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_forgemaster",
+          "key": "achievement_boss_forgemaster",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30622,
+        "name": "Raise: Skeletal Mage",
+        "slug": "raise-skeletal-mage",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500331,
+        "spell_ids": [
+          500331
+        ],
+        "description_html": "Raise a <span style=\"color: #ffffff; display: inline\">Skeletal Mage</span> to aid you in combat, occupying <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Unleashes ice at your target and enemies within <span class=\"item-number\">6</span> yds, dealing <span class=\"item-number\">51</span> + <span class=\"item-number\">80% frost SP</span> Frost damage.",
+        "description": "Raise a Skeletal Mage to aid you in combat, occupying 2 Life Force.\n\nCommand: Unleashes ice at your target and enemies within 6 yds, dealing 51 + 80% frost SP Frost damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500331,
+            "description_html": "Raise a <span style=\"color: #ffffff; display: inline\">Skeletal Mage</span> to aid you in combat, occupying <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Unleashes ice at your target and enemies within <span class=\"item-number\">6</span> yds, dealing <span class=\"item-number\">51</span> + <span class=\"item-number\">80% frost SP</span> Frost damage.",
+            "description": "Raise a Skeletal Mage to aid you in combat, occupying 2 Life Force.\n\nCommand: Unleashes ice at your target and enemies within 6 yds, dealing 51 + 80% frost SP Frost damage."
+          }
+        ],
+        "connections": [
+          6891,
+          7214,
+          12891
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\SkeletalIceMage2",
+          "key": "skeletalicemage2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30599,
+        "name": "Dominion of Frost",
+        "slug": "dominion-of-frost",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 537208,
+        "spell_ids": [
+          537208
+        ],
+        "description_html": "Critical strikes dealt by your Undead minions now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">-3</span> sec. Can only occur once per sec.",
+        "description": "Critical strikes dealt by your Undead minions now reduce the cooldown of Unholy Frenzy by -3 sec. Can only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 537208,
+            "description_html": "Critical strikes dealt by your Undead minions now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">-3</span> sec. Can only occur once per sec.",
+            "description": "Critical strikes dealt by your Undead minions now reduce the cooldown of Unholy Frenzy by -3 sec. Can only occur once per sec."
+          }
+        ],
+        "connections": [
+          29778
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Frost_FreezingBreath",
+          "key": "spell_frost_freezingbreath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29779,
+        "name": "Frozen Power",
+        "slug": "frozen-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301303,
+        "spell_ids": [
+          301303
+        ],
+        "description_html": "Increases your critical damage with Frost spells by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical damage with Frost spells by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301303,
+            "description_html": "Increases your critical damage with Frost spells by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical damage with Frost spells by 50%."
+          }
+        ],
+        "connections": [
+          29778
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_IceSkull_Border",
+          "key": "custom_t_iceskull_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33731,
+        "name": "Frigid Power",
+        "slug": "frigid-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560620,
+        "spell_ids": [
+          560620
+        ],
+        "description_html": "Increases the spell power scaling of <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> and <span style=\"color: #FFFFFF; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell power scaling of Lichfrost and Ice Barrage by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560620,
+            "description_html": "Increases the spell power scaling of <span style=\"color: #FFFFFF; display: inline\">Lichfrost</span> and <span style=\"color: #FFFFFF; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell power scaling of Lichfrost and Ice Barrage by 20%."
+          }
+        ],
+        "connections": [
+          29773,
+          30621
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Frost_Frostbolt",
+          "key": "spell_frost_frostbolt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12212,
+        "name": "Command: Bonefreeze",
+        "slug": "command-bonefreeze",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504489,
+        "spell_ids": [
+          504489
+        ],
+        "description_html": "Command your <span style=\"color: #ffffff; display: inline\">Skeletal Mages</span> to freeze enemies at target location for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players). Damage taken may end the effect.<br /><br />",
+        "description": "Command your Skeletal Mages to freeze enemies at target location for 40 seconds (8 sec vs players). Damage taken may end the effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504489,
+            "description_html": "Command your <span style=\"color: #ffffff; display: inline\">Skeletal Mages</span> to freeze enemies at target location for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players). Damage taken may end the effect.<br /><br />",
+            "description": "Command your Skeletal Mages to freeze enemies at target location for 40 seconds (8 sec vs players). Damage taken may end the effect."
+          }
+        ],
+        "connections": [
+          30622
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DarkRitual",
+          "key": "spell_shadow_darkritual",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4615,
+        "name": "Blood and Ice",
+        "slug": "blood-and-ice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561164,
+        "spell_ids": [
+          561164
+        ],
+        "description_html": "Each <span style=\"color: #ffffff; display: inline\">Skeletal Warrior</span> or <span style=\"color: #ffffff; display: inline\">Skeletal Rogue</span> now increases the damage of your <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+        "description": "Each Skeletal Warrior or Skeletal Rogue now increases the damage of your Ice Barrage by 8%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561164,
+            "description_html": "Each <span style=\"color: #ffffff; display: inline\">Skeletal Warrior</span> or <span style=\"color: #ffffff; display: inline\">Skeletal Rogue</span> now increases the damage of your <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Each Skeletal Warrior or Skeletal Rogue now increases the damage of your Ice Barrage by 8%."
+          }
+        ],
+        "connections": [
+          30599,
+          30622
+        ],
+        "choice_group": 782311,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_herb_frostweedbranch",
+          "key": "inv_misc_herb_frostweedbranch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30355,
+        "name": "Death and Ice",
+        "slug": "death-and-ice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560012,
+        "spell_ids": [
+          560012
+        ],
+        "description_html": "While a <span style=\"color: #ffffff; display: inline\">Skeletal Mage</span> is active the critical strike chance of your Undead minions is now increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "While a Skeletal Mage is active the critical strike chance of your Undead minions is now increased by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560012,
+            "description_html": "While a <span style=\"color: #ffffff; display: inline\">Skeletal Mage</span> is active the critical strike chance of your Undead minions is now increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "While a Skeletal Mage is active the critical strike chance of your Undead minions is now increased by 10%."
+          }
+        ],
+        "connections": [
+          30599,
+          30622
+        ],
+        "choice_group": 782311,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_frostjaw",
+          "key": "ability_mage_frostjaw",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19778,
+        "name": "Frozen Bodies",
+        "slug": "frozen-bodies",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707562,
+        "spell_ids": [
+          707562
+        ],
+        "description_html": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of <span style=\"color: #ffffff; display: inline\">Frozen Bodies</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_senseundead\" /><span class=\"name\">Frozen Bodies</span></div><span class=\"desc\">Increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Glacial Impact</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Reaching <span class=\"item-number\">10</span> stacks causes your next <span style=\"color: #FFFFFF; display: inline\">Glacial Impact</span> to critically strike for <span class=\"item-number\">50%</span> increased damage.</span></div>",
+        "description": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of Frozen Bodies.Frozen BodiesIncreases the damage of your next Glacial Impact by 3% for 20 seconds, stacking 10 times.\n\nReaching 10 stacks causes your next Glacial Impact to critically strike for 50% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707562,
+            "description_html": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of <span style=\"color: #ffffff; display: inline\">Frozen Bodies</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_senseundead\" /><span class=\"name\">Frozen Bodies</span></div><span class=\"desc\">Increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Glacial Impact</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Reaching <span class=\"item-number\">10</span> stacks causes your next <span style=\"color: #FFFFFF; display: inline\">Glacial Impact</span> to critically strike for <span class=\"item-number\">50%</span> increased damage.</span></div>",
+            "description": "When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of Frozen Bodies.Frozen BodiesIncreases the damage of your next Glacial Impact by 3% for 20 seconds, stacking 10 times.\n\nReaching 10 stacks causes your next Glacial Impact to critically strike for 50% increased damage."
+          }
+        ],
+        "connections": [
+          29779,
+          30599
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_senseundead",
+          "key": "spell_holy_senseundead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29772,
+        "name": "Champion of Kel'thuzad",
+        "slug": "champion-of-kelthuzad",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704676,
+        "spell_ids": [
+          704676
+        ],
+        "description_html": "While your <span style=\"color: #ffffff; display: inline\">Lich Form</span> is active, your <span style=\"color: #ffffff; display: inline\">Champion</span> spells will now cooldown faster.",
+        "description": "While your Lich Form is active, your Champion spells will now cooldown faster.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704676,
+            "description_html": "While your <span style=\"color: #ffffff; display: inline\">Lich Form</span> is active, your <span style=\"color: #ffffff; display: inline\">Champion</span> spells will now cooldown faster.",
+            "description": "While your Lich Form is active, your Champion spells will now cooldown faster."
+          }
+        ],
+        "connections": [
+          29779,
+          33731
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_frost_spell_06_Border",
+          "key": "uico_frost_spell_06_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30619,
+        "name": "Deathly Chill",
+        "slug": "deathly-chill",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805424,
+        "spell_ids": [
+          805424
+        ],
+        "description_html": "Reduces the channel and cast time of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the channel and cast time of Ice Barrage by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805424,
+            "description_html": "Reduces the channel and cast time of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the channel and cast time of Ice Barrage by -25%."
+          }
+        ],
+        "connections": [
+          33731
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frost_beam_Border",
+          "key": "nhi_frost_beam_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4438,
+        "name": "Lich Form",
+        "slug": "lich-form",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 500981,
+        "spell_ids": [
+          500981
+        ],
+        "description_html": "Transform into a <span style=\"color: #FFFFFF; display: inline\">Lich</span>, becoming Undead increasing your Frost damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />While active you generate <span class=\"item-number\">3</span> Runic Power every <span class=\"item-number\">5</span> sec.<br /><br />",
+        "description": "Transform into a Lich, becoming Undead increasing your Frost damage dealt by 10%.\n\nWhile active you generate 3 Runic Power every 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500981,
+            "description_html": "Transform into a <span style=\"color: #FFFFFF; display: inline\">Lich</span>, becoming Undead increasing your Frost damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />While active you generate <span class=\"item-number\">3</span> Runic Power every <span class=\"item-number\">5</span> sec.<br /><br />",
+            "description": "Transform into a Lich, becoming Undead increasing your Frost damage dealt by 10%.\n\nWhile active you generate 3 Runic Power every 5 sec."
+          }
+        ],
+        "connections": [
+          4437
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Boss_Amnennar_the_Coldbringer",
+          "key": "achievement_boss_amnennar_the_coldbringer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30617,
+        "name": "Crown's Call",
+        "slug": "crowns-call",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805429,
+        "spell_ids": [
+          805429,
+          807924
+        ],
+        "description_html": "Increases your Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and the Frost damage dealt by your Undead minions by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Intellect by 5% and the Frost damage dealt by your Undead minions by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805429,
+            "description_html": "Increases your Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and the Frost damage dealt by your Undead minions by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Intellect by 5% and the Frost damage dealt by your Undead minions by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807924,
+            "description_html": "Increases your Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and the Frost damage dealt by your Undead minions by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Intellect by 10% and the Frost damage dealt by your Undead minions by 20%."
+          }
+        ],
+        "connections": [
+          4615,
+          12212,
+          30355
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\expansionicon_wrathofthelichking",
+          "key": "expansionicon_wrathofthelichking",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33723,
+        "name": "Chilling Presence",
+        "slug": "chilling-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300958,
+        "spell_ids": [
+          300958
+        ],
+        "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+        "description": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases the critical strike chance of Ice Barrage by 20% against Frozen targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300958,
+            "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Ice Barrage</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+            "description": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases the critical strike chance of Ice Barrage by 20% against Frozen targets."
+          }
+        ],
+        "connections": [
+          4615,
+          19778,
+          29772,
+          30355
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+          "key": "spell_deathknight_iceboundfortitude",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8100,
+        "name": "Arch Lich",
+        "slug": "arch-lich",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707588,
+        "spell_ids": [
+          707588
+        ],
+        "description_html": "Critical strikes with Frost spells now refund <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana.",
+        "description": "Critical strikes with Frost spells now refund 3% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707588,
+            "description_html": "Critical strikes with Frost spells now refund <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana.",
+            "description": "Critical strikes with Frost spells now refund 3% of your maximum mana."
+          }
+        ],
+        "connections": [
+          29772,
+          30619
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_food_109_honeylichen",
+          "key": "inv_misc_food_109_honeylichen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6892,
+        "name": "Raising the Kirin Tor",
+        "slug": "raising-the-kirin-tor",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805649,
+        "spell_ids": [
+          805649
+        ],
+        "description_html": "Your <span style=\"color: #90ee90; display: inline\">Command</span> spells now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund a portion of their Runic Power cost.",
+        "description": "Your Command spells now have a 40% chance to refund a portion of their Runic Power cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805649,
+            "description_html": "Your <span style=\"color: #90ee90; display: inline\">Command</span> spells now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund a portion of their Runic Power cost.",
+            "description": "Your Command spells now have a 40% chance to refund a portion of their Runic Power cost."
+          }
+        ],
+        "connections": [
+          30617,
+          33723
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Brilliance",
+          "key": "spell_nature_brilliance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30620,
+        "name": "Harrowing Winds",
+        "slug": "harrowing-winds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705745,
+        "spell_ids": [
+          705745
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> now deals an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt as Frost damage to enemies within <span class=\"item-number\">6</span> yds of the primary target.",
+        "description": "Damage dealt by Glacial Impact now deals an additional 50% of the damage dealt as Frost damage to enemies within 6 yds of the primary target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705745,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Glacial Impact</span> now deals an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt as Frost damage to enemies within <span class=\"item-number\">6</span> yds of the primary target.",
+            "description": "Damage dealt by Glacial Impact now deals an additional 50% of the damage dealt as Frost damage to enemies within 6 yds of the primary target."
+          }
+        ],
+        "connections": [
+          33723
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_14_big_frost_arrow_Border",
+          "key": "custom_14_big_frost_arrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29317,
+        "name": "Soulfreeze",
+        "slug": "soulfreeze",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572023,
+        "spell_ids": [
+          572023
+        ],
+        "description_html": "All Frost damage you deal to <span style=\"color: #3399ff; display: inline\">Frozen</span> targets now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #FFFFFF; display: inline\">Soulfreeze</span> on them.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_mage_rayoffrost\" /><span class=\"name\">Soulfreeze</span></div><span class=\"desc\">Launch a chain of frost at an enemy, dealing <span class=\"item-number\">354</span> + <span class=\"item-number\">35% frost SP</span> Frost Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />Each tick generates <span class=\"item-number\">3</span> to <span class=\"item-number\">8</span> Runic Power.</span></div>",
+        "description": "All Frost damage you deal to Frozen targets now has a 25% chance to unleash Soulfreeze on them.SoulfreezeLaunch a chain of frost at an enemy, dealing 354 + 35% frost SP Frost Damage every 1 sec for 3 seconds.\n\nEach tick generates 3 to 8 Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572023,
+            "description_html": "All Frost damage you deal to <span style=\"color: #3399ff; display: inline\">Frozen</span> targets now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #FFFFFF; display: inline\">Soulfreeze</span> on them.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_mage_rayoffrost\" /><span class=\"name\">Soulfreeze</span></div><span class=\"desc\">Launch a chain of frost at an enemy, dealing <span class=\"item-number\">354</span> + <span class=\"item-number\">35% frost SP</span> Frost Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />Each tick generates <span class=\"item-number\">3</span> to <span class=\"item-number\">8</span> Runic Power.</span></div>",
+            "description": "All Frost damage you deal to Frozen targets now has a 25% chance to unleash Soulfreeze on them.SoulfreezeLaunch a chain of frost at an enemy, dealing 354 + 35% frost SP Frost Damage every 1 sec for 3 seconds.\n\nEach tick generates 3 to 8 Runic Power."
+          }
+        ],
+        "connections": [
+          8100,
+          33723
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_rayoffrost",
+          "key": "ability_mage_rayoffrost",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11438,
+        "name": "Permafrost",
+        "slug": "permafrost",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 704681,
+        "spell_ids": [
+          704681
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Gives your spells a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you the <span style=\"color: #FFFFFF; display: inline\">Permafrost</span>, which treats your next <span class=\"item-number\">2</span> spells cast as if the target were <span style=\"color: #3399ff; display: inline\">Frozen</span>. Lasts <span class=\"item-number\">12</span> seconds.",
+        "description": "Level 50 Passive\nGives your spells a 15% chance to grant you the Permafrost, which treats your next 2 spells cast as if the target were Frozen. Lasts 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704681,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Gives your spells a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you the <span style=\"color: #FFFFFF; display: inline\">Permafrost</span>, which treats your next <span class=\"item-number\">2</span> spells cast as if the target were <span style=\"color: #3399ff; display: inline\">Frozen</span>. Lasts <span class=\"item-number\">12</span> seconds.",
+            "description": "Level 50 Passive\nGives your spells a 15% chance to grant you the Permafrost, which treats your next 2 spells cast as if the target were Frozen. Lasts 12 seconds."
+          }
+        ],
+        "connections": [
+          4438
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_ManaBurn_Frost",
+          "key": "manaburn_frost",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6900,
+        "name": "Grave Mages",
+        "slug": "grave-mages",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807937,
+        "spell_ids": [
+          807937
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Skeletal Mages</span> now only cost <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.",
+        "description": "Your Skeletal Mages now only cost 1 Life Force.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807937,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Skeletal Mages</span> now only cost <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>.",
+            "description": "Your Skeletal Mages now only cost 1 Life Force."
+          }
+        ],
+        "connections": [
+          6892
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_MindFreeze",
+          "key": "spell_deathknight_mindfreeze",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5892,
+        "name": "Army of the North",
+        "slug": "army-of-the-north",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561138,
+        "spell_ids": [
+          561138
+        ],
+        "description_html": "Chant a powerful ritual that brings forth <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Rotting Frost Giant</span> near you to aid you in combat for <span class=\"item-number\">30</span> seconds and generate <span class=\"item-number\">30</span> Runic Power, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />For the duration, your Undead minions are guaranteed to critically strike.",
+        "description": "Chant a powerful ritual that brings forth 1 Rotting Frost Giant near you to aid you in combat for 30 seconds and generate 30 Runic Power, repeating every 3 sec for 15 seconds.\n\nFor the duration, your Undead minions are guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561138,
+            "description_html": "Chant a powerful ritual that brings forth <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Rotting Frost Giant</span> near you to aid you in combat for <span class=\"item-number\">30</span> seconds and generate <span class=\"item-number\">30</span> Runic Power, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />For the duration, your Undead minions are guaranteed to critically strike.",
+            "description": "Chant a powerful ritual that brings forth 1 Rotting Frost Giant near you to aid you in combat for 30 seconds and generate 30 Runic Power, repeating every 3 sec for 15 seconds.\n\nFor the duration, your Undead minions are guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          6892,
+          29317,
+          30620
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_frost_runedweapon_Border",
+          "key": "nhi_frost_runedweapon_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33738,
+        "name": "Master Lich",
+        "slug": "master-lich",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 60,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560848,
+        "spell_ids": [
+          560848
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Soulfreeze</span> now increases the enemy's Frost damage taken by you by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> per tick for <span class=\"item-number\">8</span> sec, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Soulfreeze now increases the enemy's Frost damage taken by you by 5% per tick for 8 sec, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560848,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Soulfreeze</span> now increases the enemy's Frost damage taken by you by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> per tick for <span class=\"item-number\">8</span> sec, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Soulfreeze now increases the enemy's Frost damage taken by you by 5% per tick for 8 sec, stacking 3 times."
+          }
+        ],
+        "connections": [
+          29317
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_frost_0000s_0000_figure_Border",
+          "key": "epic_rpg_icon_pack_frost_0000s_0000_figure_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

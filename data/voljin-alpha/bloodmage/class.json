@@ -1,0 +1,2405 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:17+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:16a8df5d8926842787818d9e6fe78f66f93952302ef52b3edb397da5ee31452a",
+    "talent_count": 208,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 20,
+    "name": "Bloodmage",
+    "slug": "bloodmage",
+    "class_file": "sonofarugal",
+    "color": "rgb(163, 0, 0)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:sonofarugal",
+      "key": "class-sonofarugal",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 40,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 87,
+    "name": "Class",
+    "slug": "class",
+    "sort_order": 0,
+    "class_id": 20,
+    "is_shared": true,
+    "talents": [
+      {
+        "id": 29543,
+        "name": "Scarlet Delirium",
+        "slug": "scarlet-delirium",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801074,
+        "spell_ids": [
+          801074
+        ],
+        "description_html": "Requires Mortal Form</span><br />Flood the minds of up to <span class=\"item-number\">5</span> nearby enemies with visions of unraveling flesh, fearing them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec versus players) while draining their life essence, siphoning <span class=\"item-number\">8</span> + <span class=\"item-number\">15% SP</span> health every <span class=\"item-number\">3</span> sec.<br /><br />Damage caused may interrupt the effect.",
+        "description": "Requires Mortal Form\nFlood the minds of up to 5 nearby enemies with visions of unraveling flesh, fearing them for 40 seconds (8 sec versus players) while draining their life essence, siphoning 8 + 15% SP health every 3 sec.\n\nDamage caused may interrupt the effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801074,
+            "description_html": "Requires Mortal Form</span><br />Flood the minds of up to <span class=\"item-number\">5</span> nearby enemies with visions of unraveling flesh, fearing them for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec versus players) while draining their life essence, siphoning <span class=\"item-number\">8</span> + <span class=\"item-number\">15% SP</span> health every <span class=\"item-number\">3</span> sec.<br /><br />Damage caused may interrupt the effect.",
+            "description": "Requires Mortal Form\nFlood the minds of up to 5 nearby enemies with visions of unraveling flesh, fearing them for 40 seconds (8 sec versus players) while draining their life essence, siphoning 8 + 15% SP health every 3 sec.\n\nDamage caused may interrupt the effect."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_blooddrop_(2)_Border",
+          "key": "nhi_blooddrop__2__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 29629,
+        "name": "Fleshcraft",
+        "slug": "fleshcraft",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801952,
+        "spell_ids": [
+          801952
+        ],
+        "description_html": "Mend blood and bone, healing an ally for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their maximum health and applies <span style=\"color: #ffffff; display: inline\">Sated</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_bloodtear_border\" /><span class=\"name\">Sated</span></div><span class=\"desc\">Cannot be affected by <span style=\"color: #FFFFFF; display: inline\">Fleshcraft</span> for <span class=\"item-number\">3</span> minutes.</span></div>",
+        "description": "Mend blood and bone, healing an ally for 50% of their maximum health and applies Sated.\nSatedCannot be affected by Fleshcraft for 3 minutes.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801952,
+            "description_html": "Mend blood and bone, healing an ally for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their maximum health and applies <span style=\"color: #ffffff; display: inline\">Sated</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_bloodtear_border\" /><span class=\"name\">Sated</span></div><span class=\"desc\">Cannot be affected by <span style=\"color: #FFFFFF; display: inline\">Fleshcraft</span> for <span class=\"item-number\">3</span> minutes.</span></div>",
+            "description": "Mend blood and bone, healing an ally for 50% of their maximum health and applies Sated.\nSatedCannot be affected by Fleshcraft for 3 minutes."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodtear_Border",
+          "key": "nhi_bloodtear_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31117,
+        "name": "Blood Pact",
+        "slug": "blood-pact",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801955,
+        "spell_ids": [
+          801955
+        ],
+        "description_html": "Invoke a blood pact, exchanging health for enhanced reflexes, increasing your chance to dodge and reducing the chance for ranged attacks to hit you by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.<br /><br />While active you can dodge or parry while casting.",
+        "description": "Invoke a blood pact, exchanging health for enhanced reflexes, increasing your chance to dodge and reducing the chance for ranged attacks to hit you by 50% for 12 seconds.\n\nWhile active you can dodge or parry while casting.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801955,
+            "description_html": "Invoke a blood pact, exchanging health for enhanced reflexes, increasing your chance to dodge and reducing the chance for ranged attacks to hit you by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.<br /><br />While active you can dodge or parry while casting.",
+            "description": "Invoke a blood pact, exchanging health for enhanced reflexes, increasing your chance to dodge and reducing the chance for ranged attacks to hit you by 50% for 12 seconds.\n\nWhile active you can dodge or parry while casting."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_xavius_darkeningsoul",
+          "key": "ability_xavius_darkeningsoul",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 7288,
+        "name": "Night Stalker",
+        "slug": "night-stalker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807774,
+        "spell_ids": [
+          807774
+        ],
+        "description_html": "All damage and healing done is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> at night, while indoors, or in a dungeon.",
+        "description": "All damage and healing done is increased by 5% at night, while indoors, or in a dungeon.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807774,
+            "description_html": "All damage and healing done is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> at night, while indoors, or in a dungeon.",
+            "description": "All damage and healing done is increased by 5% at night, while indoors, or in a dungeon."
+          }
+        ],
+        "connections": [
+          29543
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_eye_04",
+          "key": "inv_misc_eye_04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29871,
+        "name": "Alacrity",
+        "slug": "alacrity",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504285,
+        "spell_ids": [
+          504285,
+          504893
+        ],
+        "description_html": "Increases all primary stats by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases all primary stats by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504285,
+            "description_html": "Increases all primary stats by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all primary stats by 4%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504893,
+            "description_html": "Increases all primary stats by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all primary stats by 8%."
+          }
+        ],
+        "connections": [
+          29543,
+          29629,
+          31117
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_run_Border",
+          "key": "_5_run_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 5384,
+        "name": "Blood Runs Cold",
+        "slug": "blood-runs-cold",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560257,
+        "spell_ids": [
+          560257
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Blood Pact</span> now also increases your healing received by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Your Blood Pact now also increases your healing received by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560257,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Blood Pact</span> now also increases your healing received by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Your Blood Pact now also increases your healing received by 20%."
+          }
+        ],
+        "connections": [
+          31117
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\sha_ability_warrior_bloodnova",
+          "key": "sha_ability_warrior_bloodnova",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34628,
+        "name": "Bloody Sacrifice",
+        "slug": "bloody-sacrifice",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705742,
+        "spell_ids": [
+          705742
+        ],
+        "description_html": "Increases your healing received by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your healing received by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705742,
+            "description_html": "Increases your healing received by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your healing received by 15%."
+          }
+        ],
+        "connections": [
+          7288,
+          29871
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SacrificialDagger_Blood",
+          "key": "sacrificialdagger_blood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8352,
+        "name": "Dark Curse",
+        "slug": "dark-curse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704649,
+        "spell_ids": [
+          704649,
+          560252
+        ],
+        "description_html": "Increases critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases critical strike chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704649,
+            "description_html": "Increases critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases critical strike chance by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 560252,
+            "description_html": "Increases critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases critical strike chance by 6%."
+          }
+        ],
+        "connections": [
+          5384,
+          29871
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_Cannibalize",
+          "key": "ability_racial_cannibalize",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33688,
+        "name": "Liquify",
+        "slug": "liquify",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806310,
+        "spell_ids": [
+          806310
+        ],
+        "description_html": "Requires Mortal Form</span><br />Dissipate into a pool of blood, making you immune to damage from spells and attacks, but preventing you from attacking or casting spells and slowing your movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.<br /><br />Usable while stunned, feared or confused.",
+        "description": "Requires Mortal Form\nDissipate into a pool of blood, making you immune to damage from spells and attacks, but preventing you from attacking or casting spells and slowing your movement speed by -30% for 6 seconds.\n\nUsable while stunned, feared or confused.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806310,
+            "description_html": "Requires Mortal Form</span><br />Dissipate into a pool of blood, making you immune to damage from spells and attacks, but preventing you from attacking or casting spells and slowing your movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.<br /><br />Usable while stunned, feared or confused.",
+            "description": "Requires Mortal Form\nDissipate into a pool of blood, making you immune to damage from spells and attacks, but preventing you from attacking or casting spells and slowing your movement speed by -30% for 6 seconds.\n\nUsable while stunned, feared or confused."
+          }
+        ],
+        "connections": [
+          34628
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_ironmaidens_corruptedblood",
+          "key": "ability_ironmaidens_corruptedblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6630,
+        "name": "Blood Rush",
+        "slug": "blood-rush",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560254,
+        "spell_ids": [
+          560254
+        ],
+        "description_html": "Periodic damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Blood Rush</span>. Can only occur once every <span class=\"item-number\">5</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_rogue_bloodyeye\" /><span class=\"name\">Blood Rush</span></div><span class=\"desc\">Increases your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+        "description": "Periodic damage dealt now has a 20% chance to grant you Blood Rush. Can only occur once every 5 sec.Blood RushIncreases your haste by 20% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560254,
+            "description_html": "Periodic damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Blood Rush</span>. Can only occur once every <span class=\"item-number\">5</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_rogue_bloodyeye\" /><span class=\"name\">Blood Rush</span></div><span class=\"desc\">Increases your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+            "description": "Periodic damage dealt now has a 20% chance to grant you Blood Rush. Can only occur once every 5 sec.Blood RushIncreases your haste by 20% for 5 seconds."
+          }
+        ],
+        "connections": [
+          8352,
+          29871,
+          34628
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_BloodyEye",
+          "key": "ability_rogue_bloodyeye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33715,
+        "name": "Shadow Howl",
+        "slug": "shadow-howl",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806177,
+        "spell_ids": [
+          806177
+        ],
+        "description_html": "Let loose a dark howl that inspires your allies, granting immunity to movement impairing effects to all allies for <span class=\"item-number\">6</span> seconds.",
+        "description": "Let loose a dark howl that inspires your allies, granting immunity to movement impairing effects to all allies for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806177,
+            "description_html": "Let loose a dark howl that inspires your allies, granting immunity to movement impairing effects to all allies for <span class=\"item-number\">6</span> seconds.",
+            "description": "Let loose a dark howl that inspires your allies, granting immunity to movement impairing effects to all allies for 6 seconds."
+          }
+        ],
+        "connections": [
+          8352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_howlofterror",
+          "key": "ability_warlock_howlofterror",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7661,
+        "name": "Blood Clot",
+        "slug": "blood-clot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680657,
+        "spell_ids": [
+          680657
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Scarlet Delirium</span> now deals <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased damage.",
+        "description": "Your Scarlet Delirium now deals 100% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680657,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Scarlet Delirium</span> now deals <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased damage.",
+            "description": "Your Scarlet Delirium now deals 100% increased damage."
+          }
+        ],
+        "connections": [
+          33688
+        ],
+        "choice_group": 681444,
+        "icon": {
+          "source_path": "Interface\\Icons\\_EnslaveSpell_Blood",
+          "key": "enslavespell_blood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11661,
+        "name": "Mucking Around",
+        "slug": "mucking-around",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681444,
+        "spell_ids": [
+          681444
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Scarlet Delirium</span> by <span class=\"item-number\">-1</span> sec, but increases the health cost by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of Scarlet Delirium by -1 sec, but increases the health cost by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681444,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Scarlet Delirium</span> by <span class=\"item-number\">-1</span> sec, but increases the health cost by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of Scarlet Delirium by -1 sec, but increases the health cost by 100%."
+          }
+        ],
+        "connections": [
+          33688
+        ],
+        "choice_group": 681444,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
+          "key": "spell_shadow_abominationexplosion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7289,
+        "name": "Bloodbender",
+        "slug": "bloodbender",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704635,
+        "spell_ids": [
+          704635
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Offerings</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Offerings by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704635,
+            "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Offerings</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Offerings by 20%."
+          }
+        ],
+        "connections": [
+          33688,
+          34628
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_handsofblood_Border",
+          "key": "nhi_handsofblood_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7287,
+        "name": "Hemostasis",
+        "slug": "hemostasis",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681304,
+        "spell_ids": [
+          681304
+        ],
+        "description_html": "Trap an enemy in a blood orb, horrifying them in place for <span class=\"item-number\">4</span> seconds.<br /><br />Reactivating this ability within <span class=\"item-number\">4</span> seconds, instantly pops the <span style=\"color: #ffffff; display: inline\">Hemostasis</span>, dealing <span class=\"item-number\">137</span> + <span class=\"item-number\">43% AP</span> + <span class=\"item-number\">103% shadow SP</span> Shadow damage and reducing their healing received by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Trap an enemy in a blood orb, horrifying them in place for 4 seconds.\n\nReactivating this ability within 4 seconds, instantly pops the Hemostasis, dealing 137 + 43% AP + 103% shadow SP Shadow damage and reducing their healing received by -60% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681304,
+            "description_html": "Trap an enemy in a blood orb, horrifying them in place for <span class=\"item-number\">4</span> seconds.<br /><br />Reactivating this ability within <span class=\"item-number\">4</span> seconds, instantly pops the <span style=\"color: #ffffff; display: inline\">Hemostasis</span>, dealing <span class=\"item-number\">137</span> + <span class=\"item-number\">43% AP</span> + <span class=\"item-number\">103% shadow SP</span> Shadow damage and reducing their healing received by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Trap an enemy in a blood orb, horrifying them in place for 4 seconds.\n\nReactivating this ability within 4 seconds, instantly pops the Hemostasis, dealing 137 + 43% AP + 103% shadow SP Shadow damage and reducing their healing received by -60% for 10 seconds."
+          }
+        ],
+        "connections": [
+          6630
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodvision_Border",
+          "key": "nhi_bloodvision_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30846,
+        "name": "Mortal Wounds",
+        "slug": "mortal-wounds",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504292,
+        "spell_ids": [
+          504292
+        ],
+        "description_html": "Your direct harmful critical strikes with spells and abilities now cause the target to bleed for <span class=\"item-number\">306</span> + <span class=\"item-number\">6% AP</span> + <span class=\"item-number\">30% SP</span> over <span class=\"item-number\">6</span> seconds.",
+        "description": "Your direct harmful critical strikes with spells and abilities now cause the target to bleed for 306 + 6% AP + 30% SP over 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504292,
+            "description_html": "Your direct harmful critical strikes with spells and abilities now cause the target to bleed for <span class=\"item-number\">306</span> + <span class=\"item-number\">6% AP</span> + <span class=\"item-number\">30% SP</span> over <span class=\"item-number\">6</span> seconds.",
+            "description": "Your direct harmful critical strikes with spells and abilities now cause the target to bleed for 306 + 6% AP + 30% SP over 6 seconds."
+          }
+        ],
+        "connections": [
+          8352,
+          33715
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathwing_bloodcorruption_death",
+          "key": "ability_deathwing_bloodcorruption_death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8357,
+        "name": "Crimson Etchings",
+        "slug": "crimson-etchings",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570735,
+        "spell_ids": [
+          570735
+        ],
+        "description_html": "Removes the health cost of your <span style=\"color: #ffffff; display: inline\">Blood Shield</span> and <span style=\"color: #ffffff; display: inline\">Vital Shield</span>.",
+        "description": "Removes the health cost of your Blood Shield and Vital Shield.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570735,
+            "description_html": "Removes the health cost of your <span style=\"color: #ffffff; display: inline\">Blood Shield</span> and <span style=\"color: #ffffff; display: inline\">Vital Shield</span>.",
+            "description": "Removes the health cost of your Blood Shield and Vital Shield."
+          }
+        ],
+        "connections": [
+          33715
+        ],
+        "choice_group": 570735,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_engineerskill03_Border",
+          "key": "_5_engineerskill03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12357,
+        "name": "Bloodbound Etchings",
+        "slug": "bloodbound-etchings",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570758,
+        "spell_ids": [
+          570758
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Blood Shield</span> now increases your health regeneration by an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Your Blood Shield now increases your health regeneration by an additional 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570758,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Blood Shield</span> now increases your health regeneration by an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Your Blood Shield now increases your health regeneration by an additional 50%."
+          }
+        ],
+        "connections": [
+          33715
+        ],
+        "choice_group": 570735,
+        "icon": {
+          "source_path": "Interface\\Icons\\_StoneTablet_StainedBlood",
+          "key": "stonetablet_stainedblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30334,
+        "name": "Veins of Vengeance",
+        "slug": "veins-of-vengeance",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560074,
+        "spell_ids": [
+          560074
+        ],
+        "description_html": "Increases your chance to resist curse effects by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your chance to resist curse effects by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560074,
+            "description_html": "Increases your chance to resist curse effects by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to resist curse effects by 15%."
+          }
+        ],
+        "connections": [
+          7289,
+          7661,
+          11661
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_sanguinaryvein",
+          "key": "ability_rogue_sanguinaryvein",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6629,
+        "name": "Dark Mending",
+        "slug": "dark-mending",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561278,
+        "spell_ids": [
+          561278
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Sanguine Mend</span> by <span class=\"item-number\">-0.5</span> sec.",
+        "description": "Reduces the cast time of Sanguine Mend by -0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561278,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Sanguine Mend</span> by <span class=\"item-number\">-0.5</span> sec.",
+            "description": "Reduces the cast time of Sanguine Mend by -0.5 sec."
+          }
+        ],
+        "connections": [
+          7287,
+          7289
+        ],
+        "choice_group": 733221,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowtouch_Border",
+          "key": "nhi_shadowtouch_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34965,
+        "name": "Saturating Sutures",
+        "slug": "saturating-sutures",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504098,
+        "spell_ids": [
+          504098
+        ],
+        "description_html": "Your periodic damage and healing has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reduce the cost your next <span style=\"color: #ffffff; display: inline\">Sanguine Mend</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Your periodic damage and healing has a 15% chance to reduce the cost your next Sanguine Mend by -100% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504098,
+            "description_html": "Your periodic damage and healing has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reduce the cost your next <span style=\"color: #ffffff; display: inline\">Sanguine Mend</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Your periodic damage and healing has a 15% chance to reduce the cost your next Sanguine Mend by -100% for 8 seconds."
+          }
+        ],
+        "connections": [
+          7287,
+          7289
+        ],
+        "choice_group": 733221,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_bloodysatyrscepter",
+          "key": "trade_archaeology_bloodysatyrscepter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29484,
+        "name": "Blood Moon",
+        "slug": "blood-moon",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804199,
+        "spell_ids": [
+          804199
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Animated Blood</span> now spawns an additional amalgam.",
+        "description": "Your Animated Blood now spawns an additional amalgam.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804199,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Animated Blood</span> now spawns an additional amalgam.",
+            "description": "Your Animated Blood now spawns an additional amalgam."
+          }
+        ],
+        "connections": [
+          7287,
+          30846
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathwing_bloodcorruption_earth",
+          "key": "ability_deathwing_bloodcorruption_earth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7285,
+        "name": "Infected Blood",
+        "slug": "infected-blood",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805035,
+        "spell_ids": [
+          805035
+        ],
+        "description_html": "Periodic damage dealt now reduces the enemy's movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Periodic damage dealt now reduces the enemy's movement speed by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805035,
+            "description_html": "Periodic damage dealt now reduces the enemy's movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Periodic damage dealt now reduces the enemy's movement speed by -30%."
+          }
+        ],
+        "connections": [
+          8357,
+          12357,
+          30846
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_yorsahj_bloodboil_orangeoil",
+          "key": "spell_yorsahj_bloodboil_orangeoil",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34969,
+        "name": "Blood Veil",
+        "slug": "blood-veil",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504263,
+        "spell_ids": [
+          504263
+        ],
+        "description_html": "Create a magical veil around an ally, absorbing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of incoming damage, up to a maximum of <span class=\"item-number\">511</span> + <span class=\"item-number\">150% Spirit</span> + <span class=\"item-number\">75% AP</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Create a magical veil around an ally, absorbing 50% of incoming damage, up to a maximum of 511 + 150% Spirit + 75% AP for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504263,
+            "description_html": "Create a magical veil around an ally, absorbing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of incoming damage, up to a maximum of <span class=\"item-number\">511</span> + <span class=\"item-number\">150% Spirit</span> + <span class=\"item-number\">75% AP</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Create a magical veil around an ally, absorbing 50% of incoming damage, up to a maximum of 511 + 150% Spirit + 75% AP for 15 seconds."
+          }
+        ],
+        "connections": [
+          6629,
+          30334,
+          34965
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_blood_drain_Border",
+          "key": "nhi_blood_drain_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5907,
+        "name": "Easy Prey",
+        "slug": "easy-prey",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704621,
+        "spell_ids": [
+          704621
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hemostasis</span> by <span class=\"item-number\">1</span> sec.",
+        "description": "Increases the duration of Hemostasis by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704621,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hemostasis</span> by <span class=\"item-number\">1</span> sec.",
+            "description": "Increases the duration of Hemostasis by 1 sec."
+          }
+        ],
+        "connections": [
+          7287
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mount_epicbatmount",
+          "key": "ability_mount_epicbatmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29173,
+        "name": "Wicked Howl",
+        "slug": "wicked-howl",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804207,
+        "spell_ids": [
+          804207
+        ],
+        "description_html": "Let loose a wicked howl, increasing your maximum health by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Let loose a wicked howl, increasing your maximum health by 30% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804207,
+            "description_html": "Let loose a wicked howl, increasing your maximum health by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Let loose a wicked howl, increasing your maximum health by 30% for 15 seconds."
+          }
+        ],
+        "connections": [
+          7285,
+          29484
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_BloodMaw_Border",
+          "key": "custom_t_bloodmaw_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7283,
+        "name": "Vampiric Pools",
+        "slug": "vampiric-pools",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504088,
+        "spell_ids": [
+          504088
+        ],
+        "description_html": "When <span style=\"color: #ffffff; display: inline\">Liquify</span> ends, you now leech <span class=\"item-number\">474</span> + <span class=\"item-number\">100% SP</span> health from nearby enemies.",
+        "description": "When Liquify ends, you now leech 474 + 100% SP health from nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504088,
+            "description_html": "When <span style=\"color: #ffffff; display: inline\">Liquify</span> ends, you now leech <span class=\"item-number\">474</span> + <span class=\"item-number\">100% SP</span> health from nearby enemies.",
+            "description": "When Liquify ends, you now leech 474 + 100% SP health from nearby enemies."
+          }
+        ],
+        "connections": [
+          34969
+        ],
+        "choice_group": 955599,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_bloodstone",
+          "key": "warlock_bloodstone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29876,
+        "name": "Bloodmoon Power",
+        "slug": "bloodmoon-power",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801961,
+        "spell_ids": [
+          801961
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Liquify</span> now cleanses all negative effects when used.",
+        "description": "Your Liquify now cleanses all negative effects when used.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801961,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Liquify</span> now cleanses all negative effects when used.",
+            "description": "Your Liquify now cleanses all negative effects when used."
+          }
+        ],
+        "connections": [
+          34969
+        ],
+        "choice_group": 955599,
+        "icon": {
+          "source_path": "Interface\\Icons\\sha_ability_rogue_bloodyeye_nightmare",
+          "key": "sha_ability_rogue_bloodyeye_nightmare",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33737,
+        "name": "Adrenaline",
+        "slug": "adrenaline",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300986,
+        "spell_ids": [
+          300986
+        ],
+        "description_html": "Reduces the duration of bleed, root, and movement slowing effects against you by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the duration of bleed, root, and movement slowing effects against you by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300986,
+            "description_html": "Reduces the duration of bleed, root, and movement slowing effects against you by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the duration of bleed, root, and movement slowing effects against you by -25%."
+          }
+        ],
+        "connections": [
+          34969
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Reincarnation",
+          "key": "spell_nature_reincarnation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9970,
+        "name": "Life Scent",
+        "slug": "life-scent",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706617,
+        "spell_ids": [
+          706617
+        ],
+        "description_html": "Increases your stealth detection significantly.",
+        "description": "Increases your stealth detection significantly.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706617,
+            "description_html": "Increases your stealth detection significantly.",
+            "description": "Increases your stealth detection significantly."
+          }
+        ],
+        "connections": [
+          5907,
+          6629,
+          34965
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_Garrote",
+          "key": "ability_rogue_garrote",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5354,
+        "name": "Visceral Magic",
+        "slug": "visceral-magic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707371,
+        "spell_ids": [
+          707371
+        ],
+        "description_html": "Adds <span class=\"item-number\">40</span><span class=\"item-number\">%</span> to the Armor contribution from items by <span style=\"color: #ffffff; display: inline\">Blood Shield</span>.",
+        "description": "Adds 40% to the Armor contribution from items by Blood Shield.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707371,
+            "description_html": "Adds <span class=\"item-number\">40</span><span class=\"item-number\">%</span> to the Armor contribution from items by <span style=\"color: #ffffff; display: inline\">Blood Shield</span>.",
+            "description": "Adds 40% to the Armor contribution from items by Blood Shield."
+          }
+        ],
+        "connections": [
+          5907,
+          29484
+        ],
+        "choice_group": 234211,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+          "key": "spell_deathknight_bloodpresence",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7354,
+        "name": "Coagulation",
+        "slug": "coagulation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706258,
+        "spell_ids": [
+          706258
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Blood Shield</span> now also dispels <span class=\"item-number\">1</span> bleed effect from you every <span class=\"item-number\">5</span> sec.",
+        "description": "Your Blood Shield now also dispels 1 bleed effect from you every 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706258,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Blood Shield</span> now also dispels <span class=\"item-number\">1</span> bleed effect from you every <span class=\"item-number\">5</span> sec.",
+            "description": "Your Blood Shield now also dispels 1 bleed effect from you every 5 sec."
+          }
+        ],
+        "connections": [
+          5907,
+          29484
+        ],
+        "choice_group": 234211,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_maldraxxusslime_red",
+          "key": "inv_maldraxxusslime_red",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34963,
+        "name": "Crimson Curse",
+        "slug": "crimson-curse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706656,
+        "spell_ids": [
+          706656
+        ],
+        "description_html": "Your direct damage critical strikes increase the damage the target takes from bleed effects by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Your direct damage critical strikes increase the damage the target takes from bleed effects by 30% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706656,
+            "description_html": "Your direct damage critical strikes increase the damage the target takes from bleed effects by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Your direct damage critical strikes increase the damage the target takes from bleed effects by 30% for 15 seconds."
+          }
+        ],
+        "connections": [
+          29173
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(14)_Border",
+          "key": "novart_physical_ability__14__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4969,
+        "name": "Bloodleaper",
+        "slug": "bloodleaper",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806423,
+        "spell_ids": [
+          806423
+        ],
+        "description_html": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Lunge</span> by <span class=\"item-number\">-10</span> sec.",
+        "description": "Reduces the cooldown of your Lunge by -10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806423,
+            "description_html": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Lunge</span> by <span class=\"item-number\">-10</span> sec.",
+            "description": "Reduces the cooldown of your Lunge by -10 sec."
+          }
+        ],
+        "connections": [
+          29173
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_boot_cloth_raidwarlock_r_01",
+          "key": "inv_boot_cloth_raidwarlock_r_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8191,
+        "name": "Everhungry",
+        "slug": "everhungry",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804599,
+        "spell_ids": [
+          804599
+        ],
+        "description_html": "Direct critical strikes now increase your haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+        "description": "Direct critical strikes now increase your haste by 10% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804599,
+            "description_html": "Direct critical strikes now increase your haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+            "description": "Direct critical strikes now increase your haste by 10% for 5 seconds."
+          }
+        ],
+        "connections": [
+          7283,
+          29876,
+          33737
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_food_legion_heartyfeast",
+          "key": "inv_misc_food_legion_heartyfeast",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34964,
+        "name": "Predator",
+        "slug": "predator",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300590,
+        "spell_ids": [
+          300590
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Sanguine Mend</span> now heals <span class=\"item-number\">1</span> additional nearby target.<br /><br />Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> and <span style=\"color: #ffffff; display: inline\">Sanguine Rupture</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Your Sanguine Mend now heals 1 additional nearby target.\n\nIncreases the critical damage of Claw Sweep and Sanguine Rupture by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300590,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Sanguine Mend</span> now heals <span class=\"item-number\">1</span> additional nearby target.<br /><br />Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> and <span style=\"color: #ffffff; display: inline\">Sanguine Rupture</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Your Sanguine Mend now heals 1 additional nearby target.\n\nIncreases the critical damage of Claw Sweep and Sanguine Rupture by 10%."
+          }
+        ],
+        "connections": [
+          5354,
+          7354,
+          9970
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_SummonFelHunter",
+          "key": "spell_shadow_summonfelhunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31215,
+        "name": "Blood Trails",
+        "slug": "blood-trails",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804858,
+        "spell_ids": [
+          804858
+        ],
+        "description_html": "Periodic damage and healing now causes targets to spill a pool of blood beneath them.<br /><br />Allies in a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> who move through the pools of blood gain <span style=\"color: #ffffff; display: inline\">Trail of Blood</span> for <span class=\"item-number\">6</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _scrollofspeed_fire\" /><span class=\"name\">Trail of Blood</span></div><span class=\"desc\">Movement speed cannot be reduced below <span class=\"item-number\">80</span><span class=\"item-number\">%</span>. Movement speed increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>. Damage dealt increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Periodic damage and healing now causes targets to spill a pool of blood beneath them.\n\nAllies in a Cursed Form who move through the pools of blood gain Trail of Blood for 6 seconds.Trail of BloodMovement speed cannot be reduced below 80%. Movement speed increased by 20%. Damage dealt increased by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804858,
+            "description_html": "Periodic damage and healing now causes targets to spill a pool of blood beneath them.<br /><br />Allies in a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> who move through the pools of blood gain <span style=\"color: #ffffff; display: inline\">Trail of Blood</span> for <span class=\"item-number\">6</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _scrollofspeed_fire\" /><span class=\"name\">Trail of Blood</span></div><span class=\"desc\">Movement speed cannot be reduced below <span class=\"item-number\">80</span><span class=\"item-number\">%</span>. Movement speed increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>. Damage dealt increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Periodic damage and healing now causes targets to spill a pool of blood beneath them.\n\nAllies in a Cursed Form who move through the pools of blood gain Trail of Blood for 6 seconds.Trail of BloodMovement speed cannot be reduced below 80%. Movement speed increased by 20%. Damage dealt increased by 5%."
+          }
+        ],
+        "connections": [
+          4969,
+          34963
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_blood_spell_07_Border",
+          "key": "uico_blood_spell_07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34966,
+        "name": "Transfusion",
+        "slug": "transfusion",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705734,
+        "spell_ids": [
+          705734
+        ],
+        "description_html": "Swap health percentages with an ally.<br /><br />Increases the lower health percentage of the two to <span class=\"item-number\">40</span><span class=\"item-number\">%</span>, if below that amount.",
+        "description": "Swap health percentages with an ally.\n\nIncreases the lower health percentage of the two to 40%, if below that amount.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705734,
+            "description_html": "Swap health percentages with an ally.<br /><br />Increases the lower health percentage of the two to <span class=\"item-number\">40</span><span class=\"item-number\">%</span>, if below that amount.",
+            "description": "Swap health percentages with an ally.\n\nIncreases the lower health percentage of the two to 40%, if below that amount."
+          }
+        ],
+        "connections": [
+          7283,
+          8191,
+          29876
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodboil_Border",
+          "key": "nhi_bloodboil_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29370,
+        "name": "Nightmare",
+        "slug": "nightmare",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300226,
+        "spell_ids": [
+          300226
+        ],
+        "description_html": "While above <span class=\"item-number\">50%</span> maximum health, abilities that cost Rage now consume <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum health to damage or heal your target for an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the value.",
+        "description": "While above 50% maximum health, abilities that cost Rage now consume 2% of your maximum health to damage or heal your target for an additional 10% of the value.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300226,
+            "description_html": "While above <span class=\"item-number\">50%</span> maximum health, abilities that cost Rage now consume <span class=\"item-number\">2</span><span class=\"item-number\">%</span> of your maximum health to damage or heal your target for an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the value.",
+            "description": "While above 50% maximum health, abilities that cost Rage now consume 2% of your maximum health to damage or heal your target for an additional 10% of the value."
+          }
+        ],
+        "connections": [
+          8191,
+          31215,
+          34964
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DeathCoilV2_Blood",
+          "key": "deathcoilv2_blood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8215,
+        "name": "Blood Bond",
+        "slug": "blood-bond",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504627,
+        "spell_ids": [
+          504627
+        ],
+        "description_html": "Bond yourself to an ally for <span class=\"item-number\">30</span> minutes, causing direct damage taken by the ally to generate <span class=\"item-number\">1</span> Rage and <span class=\"item-number\">3</span><span class=\"item-number\">%</span> base health and redirect <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> of their threat generated to you.<br /><br />In addition, while out of combat, you and your bonded ally have <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased movement speed.",
+        "description": "Bond yourself to an ally for 30 minutes, causing direct damage taken by the ally to generate 1 Rage and 3% base health and redirect -10% of their threat generated to you.\n\nIn addition, while out of combat, you and your bonded ally have 30% increased movement speed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504627,
+            "description_html": "Bond yourself to an ally for <span class=\"item-number\">30</span> minutes, causing direct damage taken by the ally to generate <span class=\"item-number\">1</span> Rage and <span class=\"item-number\">3</span><span class=\"item-number\">%</span> base health and redirect <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> of their threat generated to you.<br /><br />In addition, while out of combat, you and your bonded ally have <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased movement speed.",
+            "description": "Bond yourself to an ally for 30 minutes, causing direct damage taken by the ally to generate 1 Rage and 3% base health and redirect -10% of their threat generated to you.\n\nIn addition, while out of combat, you and your bonded ally have 30% increased movement speed."
+          }
+        ],
+        "connections": [
+          4969,
+          31215
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodsacrifice_Border",
+          "key": "nhi_bloodsacrifice_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

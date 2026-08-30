@@ -1,0 +1,2468 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:25+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:7246bed8e307eac6f0bc34f08414823a68c9ff4b0fdf9b84718b72ba42052b5a",
+    "talent_count": 160,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 32,
+    "name": "Runemaster",
+    "slug": "runemaster",
+    "class_file": "spiritmage",
+    "color": "rgb(64, 199, 235)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:spiritmage",
+      "key": "class-spiritmage",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 41,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 86,
+    "name": "Riftblade",
+    "slug": "riftblade",
+    "sort_order": 0,
+    "class_id": 32,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31212,
+        "name": "Smolder",
+        "slug": "smolder",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4063,
+            29218
+          ]
+        },
+        "spell_id": 801087,
+        "spell_ids": [
+          801087
+        ],
+        "description_html": "Ignite your blade and strike an enemy, dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">19</span> Fire Damage.",
+        "description": "Ignite your blade and strike an enemy, dealing 140% Weapon Damage plus 19 Fire Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801087,
+            "description_html": "Ignite your blade and strike an enemy, dealing <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">19</span> Fire Damage.",
+            "description": "Ignite your blade and strike an enemy, dealing 140% Weapon Damage plus 19 Fire Damage."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_fire_spell_02_Border",
+          "key": "uico_fire_spell_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4063,
+        "name": "Riftblade",
+        "slug": "riftblade",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29218
+          ]
+        },
+        "spell_id": 92154,
+        "spell_ids": [
+          92154
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #FFFFFF; display: inline\">Primordial Blast</span> and <span style=\"color: #FFFFFF; display: inline\">Smolder</span> now refresh a charge of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span>.<br /><br />In addition, every 3rd <span style=\"color: #ffffff; display: inline\">Runeblade</span> now restores <span class=\"item-number\">388</span> + <span class=\"item-number\">30% AP</span> mana, increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> while <span style=\"color: #ffffff; display: inline\">Runic Tattoos: Water</span> is active.",
+        "description": "Level 10 Passive\nYour Primordial Blast and Smolder now refresh a charge of Runeblade.\n\nIn addition, every 3rd Runeblade now restores 388 + 30% AP mana, increased by 20% while Runic Tattoos: Water is active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92154,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #FFFFFF; display: inline\">Primordial Blast</span> and <span style=\"color: #FFFFFF; display: inline\">Smolder</span> now refresh a charge of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span>.<br /><br />In addition, every 3rd <span style=\"color: #ffffff; display: inline\">Runeblade</span> now restores <span class=\"item-number\">388</span> + <span class=\"item-number\">30% AP</span> mana, increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> while <span style=\"color: #ffffff; display: inline\">Runic Tattoos: Water</span> is active.",
+            "description": "Level 10 Passive\nYour Primordial Blast and Smolder now refresh a charge of Runeblade.\n\nIn addition, every 3rd Runeblade now restores 388 + 30% AP mana, increased by 20% while Runic Tattoos: Water is active."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_zinrokh_sword",
+          "key": "trade_archaeology_zinrokh_sword",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 34624,
+        "name": "Runic Omen",
+        "slug": "runic-omen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705580,
+        "spell_ids": [
+          705580
+        ],
+        "description_html": "Every 3rd cast of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> now deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage.",
+        "description": "Every 3rd cast of Runeblade now deals 30% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705580,
+            "description_html": "Every 3rd cast of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> now deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage.",
+            "description": "Every 3rd cast of Runeblade now deals 30% increased damage."
+          }
+        ],
+        "connections": [
+          31212
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicRune_Border",
+          "key": "custom_t_nhance_rpg_icons_magicrune_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6474,
+        "name": "Unbound Energy",
+        "slug": "unbound-energy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705570,
+        "spell_ids": [
+          705570,
+          707877
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>.",
+        "description": "Increases your critical strike chance by 3% and your expertise by 4.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705570,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>.",
+            "description": "Increases your critical strike chance by 3% and your expertise by 4."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707877,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">8</span>.",
+            "description": "Increases your critical strike chance by 6% and your expertise by 8."
+          }
+        ],
+        "connections": [
+          31212
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_ScrollofEarth_Border",
+          "key": "custom_t_scrollofearth_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34599,
+        "name": "Hurricane",
+        "slug": "hurricane",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 645435,
+        "spell_ids": [
+          645435
+        ],
+        "description_html": "Strike an enemy <span class=\"item-number\">5</span> times over <span class=\"item-number\">2</span> seconds, each strike dealing <span class=\"item-number\">152</span><span class=\"item-number\">%</span> (<span class=\"item-number\">122</span><span class=\"item-number\">%</span> versus players) Weapon Damage as Nature Damage, scaling with level.<br /><br />While striking your target, your chance to dodge is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>, but you cannot use any spells or abilities.",
+        "description": "Strike an enemy 5 times over 2 seconds, each strike dealing 152% (122% versus players) Weapon Damage as Nature Damage, scaling with level.\n\nWhile striking your target, your chance to dodge is increased by 100%, but you cannot use any spells or abilities.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 645435,
+            "description_html": "Strike an enemy <span class=\"item-number\">5</span> times over <span class=\"item-number\">2</span> seconds, each strike dealing <span class=\"item-number\">152</span><span class=\"item-number\">%</span> (<span class=\"item-number\">122</span><span class=\"item-number\">%</span> versus players) Weapon Damage as Nature Damage, scaling with level.<br /><br />While striking your target, your chance to dodge is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>, but you cannot use any spells or abilities.",
+            "description": "Strike an enemy 5 times over 2 seconds, each strike dealing 152% (122% versus players) Weapon Damage as Nature Damage, scaling with level.\n\nWhile striking your target, your chance to dodge is increased by 100%, but you cannot use any spells or abilities."
+          }
+        ],
+        "connections": [
+          34624
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill153_Border",
+          "key": "skill_icon_skill153_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6470,
+        "name": "Cinderstorm Runes",
+        "slug": "cinderstorm-runes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706458,
+        "spell_ids": [
+          706458
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Hurricane</span> and <span style=\"color: #ffffff; display: inline\">Smolder</span> now deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more damage against enemies below <span class=\"item-number\">20%</span> maximum health.",
+        "description": "Hurricane and Smolder now deal 50% more damage against enemies below 20% maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706458,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Hurricane</span> and <span style=\"color: #ffffff; display: inline\">Smolder</span> now deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more damage against enemies below <span class=\"item-number\">20%</span> maximum health.",
+            "description": "Hurricane and Smolder now deal 50% more damage against enemies below 20% maximum health."
+          }
+        ],
+        "connections": [
+          6474,
+          34624
+        ],
+        "choice_group": 356211,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_firetwist_Border",
+          "key": "nhi_firetwist_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30031,
+        "name": "Melting Runes",
+        "slug": "melting-runes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803013,
+        "spell_ids": [
+          803013
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Weapon Engraving: Fire</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage against <span style=\"color: #3399ff; display: inline\">Frozen</span> enemies.",
+        "description": "Weapon Engraving: Fire now deals 25% increased damage against Frozen enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803013,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Weapon Engraving: Fire</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage against <span style=\"color: #3399ff; display: inline\">Frozen</span> enemies.",
+            "description": "Weapon Engraving: Fire now deals 25% increased damage against Frozen enemies."
+          }
+        ],
+        "connections": [
+          6474,
+          34624
+        ],
+        "choice_group": 356211,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(44)_Border",
+          "key": "novart_magicspell__44__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30026,
+        "name": "Hoarfrost",
+        "slug": "hoarfrost",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801104,
+        "spell_ids": [
+          801104
+        ],
+        "description_html": "Slash in a frozen fury in front of you, dealing <span class=\"item-number\">13</span> + <span class=\"item-number\">33% AP</span> Frost Damage to up to <span class=\"item-number\">3</span> nearby enemies, plus an additional <span class=\"item-number\">13</span> + <span class=\"item-number\">33% AP</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">21</span> seconds.<br /><br />Enemies hit by the initial strike are frozen in place for <span class=\"item-number\">3</span> seconds.",
+        "description": "Slash in a frozen fury in front of you, dealing 13 + 33% AP Frost Damage to up to 3 nearby enemies, plus an additional 13 + 33% AP every 3 sec for 21 seconds.\n\nEnemies hit by the initial strike are frozen in place for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801104,
+            "description_html": "Slash in a frozen fury in front of you, dealing <span class=\"item-number\">13</span> + <span class=\"item-number\">33% AP</span> Frost Damage to up to <span class=\"item-number\">3</span> nearby enemies, plus an additional <span class=\"item-number\">13</span> + <span class=\"item-number\">33% AP</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">21</span> seconds.<br /><br />Enemies hit by the initial strike are frozen in place for <span class=\"item-number\">3</span> seconds.",
+            "description": "Slash in a frozen fury in front of you, dealing 13 + 33% AP Frost Damage to up to 3 nearby enemies, plus an additional 13 + 33% AP every 3 sec for 21 seconds.\n\nEnemies hit by the initial strike are frozen in place for 3 seconds."
+          }
+        ],
+        "connections": [
+          6474
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_iceempower_Border",
+          "key": "nhi_iceempower_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4251,
+        "name": "Elemental Assassin",
+        "slug": "elemental-assassin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 705541,
+        "spell_ids": [
+          705541
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility, your spell critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Agility, and your hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Agility.",
+        "description": "Level 20 Passive\nIncreases your spell damage by 20% of your Agility, your spell critical strike chance by 10% of your Agility, and your hit rating by 5% of your Agility.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705541,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility, your spell critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Agility, and your hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Agility.",
+            "description": "Level 20 Passive\nIncreases your spell damage by 20% of your Agility, your spell critical strike chance by 10% of your Agility, and your hit rating by 5% of your Agility."
+          }
+        ],
+        "connections": [
+          4063
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_smallazeritefragment",
+          "key": "inv_smallazeritefragment",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 1774,
+        "name": "Spellblade",
+        "slug": "spellblade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705540,
+        "spell_ids": [
+          705540,
+          707878
+        ],
+        "description_html": "Increases your Agility and Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Agility and Intellect by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705540,
+            "description_html": "Increases your Agility and Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility and Intellect by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707878,
+            "description_html": "Increases your Agility and Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility and Intellect by 10%."
+          }
+        ],
+        "connections": [
+          34599
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_SwordOfFlame_Border",
+          "key": "custom_t_nhance_rpg_icons_swordofflame_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5451,
+        "name": "Frozen Earth",
+        "slug": "frozen-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705592,
+        "spell_ids": [
+          705592
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ice Rune</span> and the stun effect from <span style=\"color: #ffffff; display: inline\">Palm Sigil: Earth</span> by <span class=\"item-number\">1</span> sec.",
+        "description": "Increases the duration of Ice Rune and the stun effect from Palm Sigil: Earth by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705592,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ice Rune</span> and the stun effect from <span style=\"color: #ffffff; display: inline\">Palm Sigil: Earth</span> by <span class=\"item-number\">1</span> sec.",
+            "description": "Increases the duration of Ice Rune and the stun effect from Palm Sigil: Earth by 1 sec."
+          }
+        ],
+        "connections": [
+          6470,
+          30031
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frost_staff_Border",
+          "key": "nhi_frost_staff_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30027,
+        "name": "Runic Invocation",
+        "slug": "runic-invocation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807204,
+        "spell_ids": [
+          807204
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows its periodic damage to critically strike.",
+        "description": "Increases the critical strike chance of Hoarfrost by 10% and allows its periodic damage to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807204,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows its periodic damage to critically strike.",
+            "description": "Increases the critical strike chance of Hoarfrost by 10% and allows its periodic damage to critically strike."
+          }
+        ],
+        "connections": [
+          30026
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_rune_06_b",
+          "key": "inv_ascend_rune_06_b",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30030,
+        "name": "Wind Runes",
+        "slug": "wind-runes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706672,
+        "spell_ids": [
+          706672
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hurricane</span> by <span class=\"item-number\">1</span> sec, allowing it to strike <span class=\"item-number\">2</span> additional times.",
+        "description": "Increases the duration of Hurricane by 1 sec, allowing it to strike 2 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706672,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hurricane</span> by <span class=\"item-number\">1</span> sec, allowing it to strike <span class=\"item-number\">2</span> additional times.",
+            "description": "Increases the duration of Hurricane by 1 sec, allowing it to strike 2 additional times."
+          }
+        ],
+        "connections": [
+          1774
+        ],
+        "choice_group": 235212,
+        "icon": {
+          "source_path": "Interface\\Icons\\_StoneTablet_ShamanAir",
+          "key": "stonetablet_shamanair",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34598,
+        "name": "Water Runes",
+        "slug": "water-runes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707150,
+        "spell_ids": [
+          707150
+        ],
+        "description_html": "Each strike from <span style=\"color: #ffffff; display: inline\">Hurricane</span> is now guaranteed to apply <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Water</span> or <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Ice</span> to your target while they are active.",
+        "description": "Each strike from Hurricane is now guaranteed to apply Weapon Engraving: Water or Weapon Engraving: Ice to your target while they are active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707150,
+            "description_html": "Each strike from <span style=\"color: #ffffff; display: inline\">Hurricane</span> is now guaranteed to apply <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Water</span> or <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Ice</span> to your target while they are active.",
+            "description": "Each strike from Hurricane is now guaranteed to apply Weapon Engraving: Water or Weapon Engraving: Ice to your target while they are active."
+          }
+        ],
+        "connections": [
+          1774
+        ],
+        "choice_group": 235212,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Rune_09",
+          "key": "inv_misc_rune_09",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30603,
+        "name": "Residual Power",
+        "slug": "residual-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560040,
+        "spell_ids": [
+          560040
+        ],
+        "description_html": "Increases the damage replicated by <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Air</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> (<span class=\"item-number\">40%</span> versus players) and increases the attack speed granted by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage replicated by Weapon Engraving: Air by 100% (40% versus players) and increases the attack speed granted by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560040,
+            "description_html": "Increases the damage replicated by <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Air</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> (<span class=\"item-number\">40%</span> versus players) and increases the attack speed granted by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage replicated by Weapon Engraving: Air by 100% (40% versus players) and increases the attack speed granted by 15%."
+          }
+        ],
+        "connections": [
+          1774
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(17)_Border",
+          "key": "novart_magicspell__17__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9619,
+        "name": "Rift Clones",
+        "slug": "rift-clones",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707463,
+        "spell_ids": [
+          707463
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Phase Out</span> now summons <span class=\"item-number\">10</span> clones of yourself that run in a random direction for <span class=\"item-number\">5</span> seconds.<br /><br /><span style=\"color: #ffffff; display: inline\">Rift Clones</span> periodically explode dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">19.5% AP</span> Arcane damage to all enemies within <span class=\"item-number\">5</span> yds of them.",
+        "description": "Casting Phase Out now summons 10 clones of yourself that run in a random direction for 5 seconds.\n\nRift Clones periodically explode dealing 1 + 19.5% AP Arcane damage to all enemies within 5 yds of them.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707463,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Phase Out</span> now summons <span class=\"item-number\">10</span> clones of yourself that run in a random direction for <span class=\"item-number\">5</span> seconds.<br /><br /><span style=\"color: #ffffff; display: inline\">Rift Clones</span> periodically explode dealing <span class=\"item-number\">1</span> + <span class=\"item-number\">19.5% AP</span> Arcane damage to all enemies within <span class=\"item-number\">5</span> yds of them.",
+            "description": "Casting Phase Out now summons 10 clones of yourself that run in a random direction for 5 seconds.\n\nRift Clones periodically explode dealing 1 + 19.5% AP Arcane damage to all enemies within 5 yds of them."
+          }
+        ],
+        "connections": [
+          5451
+        ],
+        "choice_group": 845630,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_mirrorimage",
+          "key": "spell_nature_mirrorimage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34619,
+        "name": "Phaser",
+        "slug": "phaser",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706518,
+        "spell_ids": [
+          706518
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Phase Out</span> by <span class=\"item-number\">-30</span> sec and removes its mana cost.",
+        "description": "Reduces the cooldown of Phase Out by -30 sec and removes its mana cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706518,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Phase Out</span> by <span class=\"item-number\">-30</span> sec and removes its mana cost.",
+            "description": "Reduces the cooldown of Phase Out by -30 sec and removes its mana cost."
+          }
+        ],
+        "connections": [
+          5451
+        ],
+        "choice_group": 845630,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_invisibility",
+          "key": "ability_mage_invisibility",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6473,
+        "name": "Frost Spectre",
+        "slug": "frost-spectre",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560039,
+        "spell_ids": [
+          560039,
+          561350
+        ],
+        "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span> and <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance and critical damage of Smolder and Primordial Blast against Frozen targets by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560039,
+            "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span> and <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance and critical damage of Smolder and Primordial Blast against Frozen targets by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561350,
+            "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span> and <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance and critical damage of Smolder and Primordial Blast against Frozen targets by 50%."
+          }
+        ],
+        "connections": [
+          30027
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(3)_Border",
+          "key": "novart_magicspell__3__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6487,
+        "name": "Leyfrost",
+        "slug": "leyfrost",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 712308,
+        "spell_ids": [
+          712308
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> now cause your next spell within <span class=\"item-number\">15</span> seconds to cast as if the target were <span style=\"color: #3399ff; display: inline\">Frozen</span>.",
+        "description": "Critical strikes with Hoarfrost now cause your next spell within 15 seconds to cast as if the target were Frozen.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 712308,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> now cause your next spell within <span class=\"item-number\">15</span> seconds to cast as if the target were <span style=\"color: #3399ff; display: inline\">Frozen</span>.",
+            "description": "Critical strikes with Hoarfrost now cause your next spell within 15 seconds to cast as if the target were Frozen."
+          }
+        ],
+        "connections": [
+          30027
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_magicstrike_Border",
+          "key": "nhi_magicstrike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4475,
+        "name": "Windsage",
+        "slug": "windsage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 705568,
+        "spell_ids": [
+          705568
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br /><span style=\"color: #FFFFFF; display: inline\">Smolder</span> now envelops you in wind, causing your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Runeblades</span> to strike an additional time equal to <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of the damage dealt as Nature damage.",
+        "description": "Level 30 Passive\nSmolder now envelops you in wind, causing your next 3 Runeblades to strike an additional time equal to 75% of the damage dealt as Nature damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705568,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br /><span style=\"color: #FFFFFF; display: inline\">Smolder</span> now envelops you in wind, causing your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Runeblades</span> to strike an additional time equal to <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of the damage dealt as Nature damage.",
+            "description": "Level 30 Passive\nSmolder now envelops you in wind, causing your next 3 Runeblades to strike an additional time equal to 75% of the damage dealt as Nature damage."
+          }
+        ],
+        "connections": [
+          4251
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_weapon_shortblade_83",
+          "key": "inv_weapon_shortblade_83",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30032,
+        "name": "Echo Rune",
+        "slug": "echo-rune",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500270,
+        "spell_ids": [
+          500270
+        ],
+        "description_html": "Mark your current location with an echo rune for <span class=\"item-number\">20</span> seconds.<br /><br />At the end of the duration or upon reactivation, warp back to the marked location and heal for <span class=\"item-number\">880</span> + <span class=\"item-number\">150% AP</span> health.",
+        "description": "Mark your current location with an echo rune for 20 seconds.\n\nAt the end of the duration or upon reactivation, warp back to the marked location and heal for 880 + 150% AP health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500270,
+            "description_html": "Mark your current location with an echo rune for <span class=\"item-number\">20</span> seconds.<br /><br />At the end of the duration or upon reactivation, warp back to the marked location and heal for <span class=\"item-number\">880</span> + <span class=\"item-number\">150% AP</span> health.",
+            "description": "Mark your current location with an echo rune for 20 seconds.\n\nAt the end of the duration or upon reactivation, warp back to the marked location and heal for 880 + 150% AP health."
+          }
+        ],
+        "connections": [
+          30030,
+          30603,
+          34598
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\EchoRune",
+          "key": "echorune",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2253,
+        "name": "Primordial Fury",
+        "slug": "primordial-fury",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806543,
+        "spell_ids": [
+          806543
+        ],
+        "description_html": "Your runic tattoos flare up for <span class=\"item-number\">15</span> seconds, causing <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> to strike up to <span class=\"item-number\">5</span> additional enemies.<br /><br />For the duration, your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> have <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased effectiveness.",
+        "description": "Your runic tattoos flare up for 15 seconds, causing Runeblade to strike up to 5 additional enemies.\n\nFor the duration, your Runic Tattoos have 100% increased effectiveness.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806543,
+            "description_html": "Your runic tattoos flare up for <span class=\"item-number\">15</span> seconds, causing <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> to strike up to <span class=\"item-number\">5</span> additional enemies.<br /><br />For the duration, your <span style=\"color: #ffffff; display: inline\">Runic Tattoos</span> have <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased effectiveness.",
+            "description": "Your runic tattoos flare up for 15 seconds, causing Runeblade to strike up to 5 additional enemies.\n\nFor the duration, your Runic Tattoos have 100% increased effectiveness."
+          }
+        ],
+        "connections": [
+          6473,
+          9619,
+          30603,
+          34619
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_mageskill04_Border",
+          "key": "_5_mageskill04_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34622,
+        "name": "Elements, Heed My Call!",
+        "slug": "elements-heed-my-call",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706670,
+        "spell_ids": [
+          706670
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span>, <span style=\"color: #ffffff; display: inline\">Hurricane</span>, and <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Smolder, Hurricane, and Hoarfrost by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706670,
+            "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Smolder</span>, <span style=\"color: #ffffff; display: inline\">Hurricane</span>, and <span style=\"color: #ffffff; display: inline\">Hoarfrost</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Smolder, Hurricane, and Hoarfrost by 15%."
+          }
+        ],
+        "connections": [
+          6473,
+          6487
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_ElementalAbsorption",
+          "key": "spell_nature_elementalabsorption",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6486,
+        "name": "Mind Over Matter",
+        "slug": "mind-over-matter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802669,
+        "spell_ids": [
+          802669
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ley Lock</span> by <span class=\"item-number\">0.5</span> sec.",
+        "description": "Increases the duration of Ley Lock by 0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802669,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Ley Lock</span> by <span class=\"item-number\">0.5</span> sec.",
+            "description": "Increases the duration of Ley Lock by 0.5 sec."
+          }
+        ],
+        "connections": [
+          30032
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_arcane_mindmastery",
+          "key": "spell_arcane_mindmastery",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1756,
+        "name": "Windbreaker",
+        "slug": "windbreaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804094,
+        "spell_ids": [
+          804094
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Air</span> is active, the damage of each strike of your <span style=\"color: #ffffff; display: inline\">Hurricane</span> is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "While Weapon Engraving: Air is active, the damage of each strike of your Hurricane is increased by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804094,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Weapon Engraving: Air</span> is active, the damage of each strike of your <span style=\"color: #ffffff; display: inline\">Hurricane</span> is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "While Weapon Engraving: Air is active, the damage of each strike of your Hurricane is increased by 30%."
+          }
+        ],
+        "connections": [
+          30032,
+          30603
+        ],
+        "choice_group": 32623,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(28)_Border",
+          "key": "novart_magicspell__28__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6481,
+        "name": "Magebreaker",
+        "slug": "magebreaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804061,
+        "spell_ids": [
+          804061
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Hurricane</span> now also reduces the targets Magic damage dealt by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds and dispels <span class=\"item-number\">1</span> harmful magic effect from you with each strike.",
+        "description": "Dealing damage with Hurricane now also reduces the targets Magic damage dealt by -15% for 8 seconds and dispels 1 harmful magic effect from you with each strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804061,
+            "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Hurricane</span> now also reduces the targets Magic damage dealt by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds and dispels <span class=\"item-number\">1</span> harmful magic effect from you with each strike.",
+            "description": "Dealing damage with Hurricane now also reduces the targets Magic damage dealt by -15% for 8 seconds and dispels 1 harmful magic effect from you with each strike."
+          }
+        ],
+        "connections": [
+          30032,
+          30603
+        ],
+        "choice_group": 32623,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_magemount",
+          "key": "inv_magemount",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1598,
+        "name": "Elemental Acuity",
+        "slug": "elemental-acuity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706671,
+        "spell_ids": [
+          706671
+        ],
+        "description_html": "Increases all Fire, Frost, and Nature damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and adds <span class=\"item-number\">25</span><span class=\"item-number\">%</span> to the attack power scaling of <span style=\"color: #ffffff; display: inline\">Runeblade</span>.",
+        "description": "Increases all Fire, Frost, and Nature damage dealt by 5% and adds 25% to the attack power scaling of Runeblade.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706671,
+            "description_html": "Increases all Fire, Frost, and Nature damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and adds <span class=\"item-number\">25</span><span class=\"item-number\">%</span> to the attack power scaling of <span style=\"color: #ffffff; display: inline\">Runeblade</span>.",
+            "description": "Increases all Fire, Frost, and Nature damage dealt by 5% and adds 25% to the attack power scaling of Runeblade."
+          }
+        ],
+        "connections": [
+          2253
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_shockinglava",
+          "key": "spell_shaman_shockinglava",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30029,
+        "name": "Primordial Echoes",
+        "slug": "primordial-echoes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705572,
+        "spell_ids": [
+          705572
+        ],
+        "description_html": "Your critical strikes dealt with <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to strike an additional time.",
+        "description": "Your critical strikes dealt with Primordial Blast now have a 40% chance to strike an additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705572,
+            "description_html": "Your critical strikes dealt with <span style=\"color: #ffffff; display: inline\">Primordial Blast</span> now have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to strike an additional time.",
+            "description": "Your critical strikes dealt with Primordial Blast now have a 40% chance to strike an additional time."
+          }
+        ],
+        "connections": [
+          6473,
+          34622
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_MagicVortex_Border",
+          "key": "custom_t_nhance_rpg_icons_magicvortex_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6478,
+        "name": "Earthen Codex",
+        "slug": "earthen-codex",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707460,
+        "spell_ids": [
+          707460
+        ],
+        "description_html": "When you active a <span style=\"color: #ffffff; display: inline\">Palm Sigil</span>, you are now guaranteed to critically strike for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased critical damage for <span class=\"item-number\">10</span> seconds or your next <span class=\"item-number\">3</span> attacks.",
+        "description": "When you active a Palm Sigil, you are now guaranteed to critically strike for 20% increased critical damage for 10 seconds or your next 3 attacks.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707460,
+            "description_html": "When you active a <span style=\"color: #ffffff; display: inline\">Palm Sigil</span>, you are now guaranteed to critically strike for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased critical damage for <span class=\"item-number\">10</span> seconds or your next <span class=\"item-number\">3</span> attacks.",
+            "description": "When you active a Palm Sigil, you are now guaranteed to critically strike for 20% increased critical damage for 10 seconds or your next 3 attacks."
+          }
+        ],
+        "connections": [
+          34622
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_book_10_b_Border",
+          "key": "custom_book_10_b_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6475,
+        "name": "Glyph of Disappearance",
+        "slug": "glyph-of-disappearance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 560037,
+        "spell_ids": [
+          560037
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Phase Out</span> can now be used <span class=\"item-number\">1</span> additional time within <span class=\"item-number\">15</span> seconds before incurring a cooldown.",
+        "description": "Level 40 Passive\nYour Phase Out can now be used 1 additional time within 15 seconds before incurring a cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560037,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Phase Out</span> can now be used <span class=\"item-number\">1</span> additional time within <span class=\"item-number\">15</span> seconds before incurring a cooldown.",
+            "description": "Level 40 Passive\nYour Phase Out can now be used 1 additional time within 15 seconds before incurring a cooldown."
+          }
+        ],
+        "connections": [
+          4475
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3familiar",
+          "key": "d3familiar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34621,
+        "name": "Swift Etching",
+        "slug": "swift-etching",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705600,
+        "spell_ids": [
+          705600
+        ],
+        "description_html": "After <span style=\"color: #ffffff; display: inline\">Hurricane</span> ends, your melee attack speed is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "After Hurricane ends, your melee attack speed is increased by 15% and critical strike chance by 10% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705600,
+            "description_html": "After <span style=\"color: #ffffff; display: inline\">Hurricane</span> ends, your melee attack speed is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "After Hurricane ends, your melee attack speed is increased by 15% and critical strike chance by 10% for 10 seconds."
+          }
+        ],
+        "connections": [
+          1756,
+          6481,
+          6486
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_rune_14",
+          "key": "inv_misc_rune_14",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30033,
+        "name": "Runic Power",
+        "slug": "runic-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300944,
+        "spell_ids": [
+          300944
+        ],
+        "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, <span style=\"color: #FFFFFF; display: inline\">Primordial Blast</span> now increases the chance for the target to be critically struck by your spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.",
+        "description": "Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, Primordial Blast now increases the chance for the target to be critically struck by your spells by 3% for 20 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300944,
+            "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, <span style=\"color: #FFFFFF; display: inline\">Primordial Blast</span> now increases the chance for the target to be critically struck by your spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.",
+            "description": "Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, Primordial Blast now increases the chance for the target to be critically struck by your spells by 3% for 20 seconds."
+          }
+        ],
+        "connections": [
+          1598,
+          1756,
+          6481
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_arcane_scroll_Border",
+          "key": "nhi_arcane_scroll_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1722,
+        "name": "Frostburn",
+        "slug": "frostburn",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705594,
+        "spell_ids": [
+          705594
+        ],
+        "description_html": "Removes the cast time of <span style=\"color: #ffffff; display: inline\">Glacial Rune</span> and <span style=\"color: #ffffff; display: inline\">Permafrost Rune</span>.",
+        "description": "Removes the cast time of Glacial Rune and Permafrost Rune.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705594,
+            "description_html": "Removes the cast time of <span style=\"color: #ffffff; display: inline\">Glacial Rune</span> and <span style=\"color: #ffffff; display: inline\">Permafrost Rune</span>.",
+            "description": "Removes the cast time of Glacial Rune and Permafrost Rune."
+          }
+        ],
+        "connections": [
+          1598,
+          30029
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frost_knife_Border",
+          "key": "nhi_frost_knife_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31242,
+        "name": "Freezing Codex",
+        "slug": "freezing-codex",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705577,
+        "spell_ids": [
+          705577
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Ice Rune</span> by <span class=\"item-number\">-20</span> sec and increases the mana cost by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but reduces its range by <span class=\"item-number\">-10</span> yds.",
+        "description": "Reduces the cooldown of Ice Rune by -20 sec and increases the mana cost by 50%, but reduces its range by -10 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705577,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Ice Rune</span> by <span class=\"item-number\">-20</span> sec and increases the mana cost by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but reduces its range by <span class=\"item-number\">-10</span> yds.",
+            "description": "Reduces the cooldown of Ice Rune by -20 sec and increases the mana cost by 50%, but reduces its range by -10 yds."
+          }
+        ],
+        "connections": [
+          6478,
+          30029
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\item_icecrownringd",
+          "key": "item_icecrownringd",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7382,
+        "name": "Fracture",
+        "slug": "fracture",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803018,
+        "spell_ids": [
+          803018
+        ],
+        "description_html": "Strike an enemy with frozen fury, dealing <span class=\"item-number\">921</span> + <span class=\"item-number\">150% AP</span> Frost damage and burning <span class=\"item-number\">25</span> + <span class=\"item-number\">35% AP</span> of the target's mana.<br /><br />Damage dealt is guaranteed to critically strike against frozen targets.",
+        "description": "Strike an enemy with frozen fury, dealing 921 + 150% AP Frost damage and burning 25 + 35% AP of the target's mana.\n\nDamage dealt is guaranteed to critically strike against frozen targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803018,
+            "description_html": "Strike an enemy with frozen fury, dealing <span class=\"item-number\">921</span> + <span class=\"item-number\">150% AP</span> Frost damage and burning <span class=\"item-number\">25</span> + <span class=\"item-number\">35% AP</span> of the target's mana.<br /><br />Damage dealt is guaranteed to critically strike against frozen targets.",
+            "description": "Strike an enemy with frozen fury, dealing 921 + 150% AP Frost damage and burning 25 + 35% AP of the target's mana.\n\nDamage dealt is guaranteed to critically strike against frozen targets."
+          }
+        ],
+        "connections": [
+          30033,
+          34621
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_manaspike_Border",
+          "key": "nhi_manaspike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31136,
+        "name": "Spellfire Runes",
+        "slug": "spellfire-runes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801511,
+        "spell_ids": [
+          801511
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Runeblade</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance, and <span style=\"color: #ffffff; display: inline\">Warpdagger</span> a <span class=\"item-number\">100</span><span class=\"item-number\">%</span> chance, to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Smolder</span>, and increase the damage of your next <span style=\"color: #ffffff; display: inline\">Smolder</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Your Runeblade now has a 20% chance, and Warpdagger a 100% chance, to reset the cooldown of Smolder, and increase the damage of your next Smolder by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801511,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Runeblade</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance, and <span style=\"color: #ffffff; display: inline\">Warpdagger</span> a <span class=\"item-number\">100</span><span class=\"item-number\">%</span> chance, to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Smolder</span>, and increase the damage of your next <span style=\"color: #ffffff; display: inline\">Smolder</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Your Runeblade now has a 20% chance, and Warpdagger a 100% chance, to reset the cooldown of Smolder, and increase the damage of your next Smolder by 20%."
+          }
+        ],
+        "connections": [
+          1722,
+          30033
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireRune_Border",
+          "key": "custom_t_nhance_rpg_icons_firerune_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34640,
+        "name": "Elemental Inscription",
+        "slug": "elemental-inscription",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806737,
+        "spell_ids": [
+          806737
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Smolder</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Primordial Fury</span> by <span class=\"item-number\">-10</span> sec and <span style=\"color: #ffffff; display: inline\">Zenith</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Casting Smolder now reduces the cooldown of Primordial Fury by -10 sec and Zenith by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806737,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Smolder</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Primordial Fury</span> by <span class=\"item-number\">-10</span> sec and <span style=\"color: #ffffff; display: inline\">Zenith</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Casting Smolder now reduces the cooldown of Primordial Fury by -10 sec and Zenith by -5 sec."
+          }
+        ],
+        "connections": [
+          1722,
+          31242
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Scroll3_Frostfire",
+          "key": "scroll3_frostfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9975,
+        "name": "Surging Slash",
+        "slug": "surging-slash",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 705579,
+        "spell_ids": [
+          705579
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Every 3rd cast of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> now transforms your next <span style=\"color: #ffffff; display: inline\">Runeblade</span> within <span class=\"item-number\">15</span> seconds into <span style=\"color: #FFFFFF; display: inline\">Surging Slash</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 runeblade2\" /><span class=\"name\">Surging Slash (Transform)</span></div><span class=\"desc\">Strike an enemy and all nearby enemies with a rune-infused weapon, dealing <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">160</span> Elemental Damage, dealing less damage with each bounce.<br /><br /></span></div>",
+        "description": "Level 50 Passive\nEvery 3rd cast of Runeblade now transforms your next Runeblade within 15 seconds into Surging Slash.\nSurging Slash (Transform)Strike an enemy and all nearby enemies with a rune-infused weapon, dealing 150% Weapon Damage plus 160 Elemental Damage, dealing less damage with each bounce.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705579,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Every 3rd cast of <span style=\"color: #FFFFFF; display: inline\">Runeblade</span> now transforms your next <span style=\"color: #ffffff; display: inline\">Runeblade</span> within <span class=\"item-number\">15</span> seconds into <span style=\"color: #FFFFFF; display: inline\">Surging Slash</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 runeblade2\" /><span class=\"name\">Surging Slash (Transform)</span></div><span class=\"desc\">Strike an enemy and all nearby enemies with a rune-infused weapon, dealing <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">160</span> Elemental Damage, dealing less damage with each bounce.<br /><br /></span></div>",
+            "description": "Level 50 Passive\nEvery 3rd cast of Runeblade now transforms your next Runeblade within 15 seconds into Surging Slash.\nSurging Slash (Transform)Strike an enemy and all nearby enemies with a rune-infused weapon, dealing 150% Weapon Damage plus 160 Elemental Damage, dealing less damage with each bounce."
+          }
+        ],
+        "connections": [
+          6475
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "interface\\icons\\Runeblade2",
+          "key": "runeblade2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30034,
+        "name": "Waveforged",
+        "slug": "waveforged",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705565,
+        "spell_ids": [
+          705565
+        ],
+        "description_html": "After <span style=\"color: #ffffff; display: inline\">Hurricane</span> ends, you may now use abilties that require <span style=\"color: #ffffff; display: inline\">Runeshroud</span> for <span class=\"item-number\">4</span> seconds.",
+        "description": "After Hurricane ends, you may now use abilties that require Runeshroud for 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705565,
+            "description_html": "After <span style=\"color: #ffffff; display: inline\">Hurricane</span> ends, you may now use abilties that require <span style=\"color: #ffffff; display: inline\">Runeshroud</span> for <span class=\"item-number\">4</span> seconds.",
+            "description": "After Hurricane ends, you may now use abilties that require Runeshroud for 4 seconds."
+          }
+        ],
+        "connections": [
+          7382,
+          31136
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_watersword_Border",
+          "key": "nhi_watersword_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29633,
+        "name": "Genesis",
+        "slug": "genesis",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500501,
+        "spell_ids": [
+          500501
+        ],
+        "description_html": "Apply a runic brand to an enemy for <span class=\"item-number\">8</span> seconds, accumulating <span class=\"item-number\">50%</span> of your damage dealt, and unleashing after <span class=\"item-number\">8</span> seconds as Elemental Damage.<br /><br />When this deals damage, it triggers your <span style=\"color: #ffffff; display: inline\">Weapon Engraving</span>.",
+        "description": "Apply a runic brand to an enemy for 8 seconds, accumulating 50% of your damage dealt, and unleashing after 8 seconds as Elemental Damage.\n\nWhen this deals damage, it triggers your Weapon Engraving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500501,
+            "description_html": "Apply a runic brand to an enemy for <span class=\"item-number\">8</span> seconds, accumulating <span class=\"item-number\">50%</span> of your damage dealt, and unleashing after <span class=\"item-number\">8</span> seconds as Elemental Damage.<br /><br />When this deals damage, it triggers your <span style=\"color: #ffffff; display: inline\">Weapon Engraving</span>.",
+            "description": "Apply a runic brand to an enemy for 8 seconds, accumulating 50% of your damage dealt, and unleashing after 8 seconds as Elemental Damage.\n\nWhen this deals damage, it triggers your Weapon Engraving."
+          }
+        ],
+        "connections": [
+          31136
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(60)_Border",
+          "key": "novart_magicspell__60__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6472,
+        "name": "Turbulence",
+        "slug": "turbulence",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 32,
+        "tree_id": 86,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705575,
+        "spell_ids": [
+          705575
+        ],
+        "description_html": "Send out a gust of wind from your weapon that strikes nearby enemies in a <span class=\"item-number\">6</span> yd radius for <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage as Nature damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />While active, you leave behind a <span style=\"color: #ffffff; display: inline\">Turbulent Spiral</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">6</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_snowwhirlwind_border\" /><span class=\"name\">Turbulent Spiral (Damage)</span></div><span class=\"desc\">Enemies in the area take an additional <span class=\"item-number\">97</span> + <span class=\"item-number\">13.5% AP</span> Nature Damage every <span class=\"item-number\">1</span> sec.</span></div>",
+        "description": "Send out a gust of wind from your weapon that strikes nearby enemies in a 6 yd radius for 200% Weapon Damage as Nature damage every 1 sec for 3 seconds.\n\nWhile active, you leave behind a Turbulent Spiral every 1 sec for 6 seconds.\nTurbulent Spiral (Damage)Enemies in the area take an additional 97 + 13.5% AP Nature Damage every 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705575,
+            "description_html": "Send out a gust of wind from your weapon that strikes nearby enemies in a <span class=\"item-number\">6</span> yd radius for <span class=\"item-number\">200</span><span class=\"item-number\">%</span> Weapon Damage as Nature damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />While active, you leave behind a <span style=\"color: #ffffff; display: inline\">Turbulent Spiral</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">6</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_snowwhirlwind_border\" /><span class=\"name\">Turbulent Spiral (Damage)</span></div><span class=\"desc\">Enemies in the area take an additional <span class=\"item-number\">97</span> + <span class=\"item-number\">13.5% AP</span> Nature Damage every <span class=\"item-number\">1</span> sec.</span></div>",
+            "description": "Send out a gust of wind from your weapon that strikes nearby enemies in a 6 yd radius for 200% Weapon Damage as Nature damage every 1 sec for 3 seconds.\n\nWhile active, you leave behind a Turbulent Spiral every 1 sec for 6 seconds.\nTurbulent Spiral (Damage)Enemies in the area take an additional 97 + 13.5% AP Nature Damage every 1 sec."
+          }
+        ],
+        "connections": [
+          31136,
+          34640
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill79_Border",
+          "key": "skill_icon_skill79_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

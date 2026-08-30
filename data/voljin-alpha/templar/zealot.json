@@ -1,0 +1,2423 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:29+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:6481e62d2930050cc15784ef4d7ea0ce45ce6b25dbc56b593b22bb4cae1021e6",
+    "talent_count": 157,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 19,
+    "name": "Templar",
+    "slug": "templar",
+    "class_file": "monk",
+    "color": "rgb(255, 250, 179)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:monk",
+      "key": "class-monk",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 34,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 50,
+    "name": "Zealot",
+    "slug": "zealot",
+    "sort_order": 1,
+    "class_id": 19,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31172,
+        "name": "Vindication",
+        "slug": "vindication",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4022,
+            29704
+          ]
+        },
+        "spell_id": 801446,
+        "spell_ids": [
+          801446
+        ],
+        "description_html": "Strike an enemy with zeal, dealing <span class=\"item-number\">40</span> + <span class=\"item-number\">28.5% AP</span> + <span class=\"item-number\">75% SP</span> Physical damage, triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span>, and granting an <span style=\"color: #ffffff; display: inline\">Oath</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Oath:</span> Your damaging abilities have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #ffffff; display: inline\">Zealotry</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+        "description": "Strike an enemy with zeal, dealing 40 + 28.5% AP + 75% SP Physical damage, triggering Zealotry, and granting an Oath.\n\nOath: Your damaging abilities have a 20% chance to trigger Zealotry.\nZealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801446,
+            "description_html": "Strike an enemy with zeal, dealing <span class=\"item-number\">40</span> + <span class=\"item-number\">28.5% AP</span> + <span class=\"item-number\">75% SP</span> Physical damage, triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span>, and granting an <span style=\"color: #ffffff; display: inline\">Oath</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Oath:</span> Your damaging abilities have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #ffffff; display: inline\">Zealotry</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+            "description": "Strike an enemy with zeal, dealing 40 + 28.5% AP + 75% SP Physical damage, triggering Zealotry, and granting an Oath.\n\nOath: Your damaging abilities have a 20% chance to trigger Zealotry.\nZealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_holystrike_Border",
+          "key": "nhi_holystrike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4022,
+        "name": "Zealotry",
+        "slug": "zealotry",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29704
+          ]
+        },
+        "spell_id": 92108,
+        "spell_ids": [
+          92108
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your off-hand auto attacks now trigger <span style=\"color: #FFFFFF; display: inline\">Zealotry</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+        "description": "Level 10 Passive\nYour off-hand auto attacks now trigger Zealotry.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92108,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your off-hand auto attacks now trigger <span style=\"color: #FFFFFF; display: inline\">Zealotry</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+            "description": "Level 10 Passive\nYour off-hand auto attacks now trigger Zealotry.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_Paladinskill_24_Border",
+          "key": "custom_paladinskill_24_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29255,
+        "name": "Righteous Upheaval",
+        "slug": "righteous-upheaval",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 501562,
+        "spell_ids": [
+          501562
+        ],
+        "description_html": "Unleash a dominating <span style=\"color: #FFFFFF; display: inline\">Oath Breaker</span>, dealing <span class=\"item-number\">72</span> + <span class=\"item-number\">45% AP</span> + <span class=\"item-number\">45% SP</span> Physical damage, increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for each time you triggered <span style=\"color: #ffffff; display: inline\">Zealotry</span> during your <span style=\"color: #ffffff; display: inline\">Oath Chain</span>.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed.",
+        "description": "Unleash a dominating Oath Breaker, dealing 72 + 45% AP + 45% SP Physical damage, increased by 10% for each time you triggered Zealotry during your Oath Chain.\n\nConsumes your Oaths, dealing additional damage for each consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 501562,
+            "description_html": "Unleash a dominating <span style=\"color: #FFFFFF; display: inline\">Oath Breaker</span>, dealing <span class=\"item-number\">72</span> + <span class=\"item-number\">45% AP</span> + <span class=\"item-number\">45% SP</span> Physical damage, increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for each time you triggered <span style=\"color: #ffffff; display: inline\">Zealotry</span> during your <span style=\"color: #ffffff; display: inline\">Oath Chain</span>.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed.",
+            "description": "Unleash a dominating Oath Breaker, dealing 72 + 45% AP + 45% SP Physical damage, increased by 10% for each time you triggered Zealotry during your Oath Chain.\n\nConsumes your Oaths, dealing additional damage for each consumed."
+          }
+        ],
+        "connections": [
+          31172
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_MonkAbility_Uplift_Yellow",
+          "key": "monkability_uplift_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6401,
+        "name": "Solemn Soldier",
+        "slug": "solemn-soldier",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572546,
+        "spell_ids": [
+          572546,
+          572555
+        ],
+        "description_html": "Increases your melee haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">5</span>.",
+        "description": "Increases your melee haste by 5% and expertise by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572546,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">5</span>.",
+            "description": "Increases your melee haste by 5% and expertise by 5."
+          },
+          {
+            "rank": 2,
+            "spell_id": 572555,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases your melee haste by 10% and expertise by 10."
+          }
+        ],
+        "connections": [
+          29255
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_assassinskill27_Border",
+          "key": "_5_assassinskill27_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34334,
+        "name": "Combat Training",
+        "slug": "combat-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706320,
+        "spell_ids": [
+          706320
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oaths</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Oaths by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706320,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oaths</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Oaths by 20%."
+          }
+        ],
+        "connections": [
+          29255
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_quipunch",
+          "key": "ability_monk_quipunch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11288,
+        "name": "Calm Combatant",
+        "slug": "calm-combatant",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 705281,
+        "spell_ids": [
+          705281
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your Holy spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your attack power and your Armor penetration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your Holy spell damage by 50% of your attack power and your Armor penetration by 50% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705281,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your Holy spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your attack power and your Armor penetration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your Holy spell damage by 50% of your attack power and your Armor penetration by 50% of your Intellect."
+          }
+        ],
+        "connections": [
+          4022
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_AuraMastery",
+          "key": "spell_holy_auramastery",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34355,
+        "name": "Oath Flow",
+        "slug": "oath-flow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705283,
+        "spell_ids": [
+          705283
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Oath Chain</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of Oath Chain by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705283,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Oath Chain</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of Oath Chain by 20%."
+          }
+        ],
+        "connections": [
+          6401
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_BlindingHeal",
+          "key": "spell_holy_blindingheal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33166,
+        "name": "Radiance",
+        "slug": "radiance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706318,
+        "spell_ids": [
+          706318
+        ],
+        "description_html": "Reduces the Energy cost of <span style=\"color: #FFFFFF; display: inline\">Vindication</span> by <span class=\"item-number\">-5</span>.",
+        "description": "Reduces the Energy cost of Vindication by -5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706318,
+            "description_html": "Reduces the Energy cost of <span style=\"color: #FFFFFF; display: inline\">Vindication</span> by <span class=\"item-number\">-5</span>.",
+            "description": "Reduces the Energy cost of Vindication by -5."
+          }
+        ],
+        "connections": [
+          6401
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Sword_49",
+          "key": "inv_sword_49",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4253,
+        "name": "Battle Hardened",
+        "slug": "battle-hardened",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706309,
+        "spell_ids": [
+          706309
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Reduces the cooldown of Righteous Upheaval by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706309,
+            "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Reduces the cooldown of Righteous Upheaval by -5 sec."
+          }
+        ],
+        "connections": [
+          34334
+        ],
+        "choice_group": 351261,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyArrow_Border",
+          "key": "custom_t_nhance_rpg_icons_holyarrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31253,
+        "name": "Upheave!",
+        "slug": "upheave",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520442,
+        "spell_ids": [
+          520442
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Righteous Upheaval by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520442,
+            "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Righteous Upheaval by 20%."
+          }
+        ],
+        "connections": [
+          34334
+        ],
+        "choice_group": 351261,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holyswirl_Border",
+          "key": "nhi_holyswirl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34338,
+        "name": "Martial Paladin",
+        "slug": "martial-paladin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705250,
+        "spell_ids": [
+          705250,
+          705251
+        ],
+        "description_html": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Agility by 5% and your chance to hit by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705250,
+            "description_html": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility by 5% and your chance to hit by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 705251,
+            "description_html": "Increases your Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility by 10% and your chance to hit by 6%."
+          }
+        ],
+        "connections": [
+          34334
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01dual",
+          "key": "inv_glaive_1h_artifactaldrochi_d_01dual",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34339,
+        "name": "Bursting Impact",
+        "slug": "bursting-impact",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705276,
+        "spell_ids": [
+          705276
+        ],
+        "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your off-hand weapon damage by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705276,
+            "description_html": "Increases your off-hand weapon damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your off-hand weapon damage by 25%."
+          }
+        ],
+        "connections": [
+          34355
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_paladin_lightshammer",
+          "key": "spell_paladin_lightshammer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29715,
+        "name": "Libram of Zeal",
+        "slug": "libram-of-zeal",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801466,
+        "spell_ids": [
+          801466
+        ],
+        "description_html": "Read from your <span style=\"color: #ffffff; display: inline\">Libram of Mortal Abdication</span>, increasing your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and causes your damaging abilities to reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">-2</span> sec for <span class=\"item-number\">20</span> seconds.<br /><br />",
+        "description": "Read from your Libram of Mortal Abdication, increasing your melee haste by 20% and causes your damaging abilities to reduce the cooldown of Righteous Upheaval by -2 sec for 20 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801466,
+            "description_html": "Read from your <span style=\"color: #ffffff; display: inline\">Libram of Mortal Abdication</span>, increasing your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and causes your damaging abilities to reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> by <span class=\"item-number\">-2</span> sec for <span class=\"item-number\">20</span> seconds.<br /><br />",
+            "description": "Read from your Libram of Mortal Abdication, increasing your melee haste by 20% and causes your damaging abilities to reduce the cooldown of Righteous Upheaval by -2 sec for 20 seconds."
+          }
+        ],
+        "connections": [
+          4253,
+          31253,
+          33166
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Book2Motif_BloodElf1",
+          "key": "book2motif_bloodelf1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30960,
+        "name": "Chakra of Power",
+        "slug": "chakra-of-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803158,
+        "spell_ids": [
+          803158
+        ],
+        "description_html": "Melee attacks now restore <span class=\"item-number\">1</span> Energy, plus an additional <span class=\"item-number\">2</span> Energy when they critically strike.",
+        "description": "Melee attacks now restore 1 Energy, plus an additional 2 Energy when they critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803158,
+            "description_html": "Melee attacks now restore <span class=\"item-number\">1</span> Energy, plus an additional <span class=\"item-number\">2</span> Energy when they critically strike.",
+            "description": "Melee attacks now restore 1 Energy, plus an additional 2 Energy when they critically strike."
+          }
+        ],
+        "connections": [
+          34338
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\priest_icon_chakra_red",
+          "key": "priest_icon_chakra_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9289,
+        "name": "Holy Upheaval",
+        "slug": "holy-upheaval",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 572547,
+        "spell_ids": [
+          572547
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases the effectiveness <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> gains per trigger of <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Level 30 Passive\nIncreases the effectiveness Righteous Upheaval gains per trigger of Zealotry by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572547,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases the effectiveness <span style=\"color: #FFFFFF; display: inline\">Righteous Upheaval</span> gains per trigger of <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Level 30 Passive\nIncreases the effectiveness Righteous Upheaval gains per trigger of Zealotry by 100%."
+          }
+        ],
+        "connections": [
+          11288
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyHand_Border",
+          "key": "custom_t_nhance_rpg_icons_holyhand_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5438,
+        "name": "Holy Light",
+        "slug": "holy-light",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706449,
+        "spell_ids": [
+          706449
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Benediction</span> now has a <span class=\"item-number\">1.5</span> sec cast time, but now heals for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> more.",
+        "description": "Your Benediction now has a 1.5 sec cast time, but now heals for 100% more.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706449,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Benediction</span> now has a <span class=\"item-number\">1.5</span> sec cast time, but now heals for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> more.",
+            "description": "Your Benediction now has a 1.5 sec cast time, but now heals for 100% more."
+          }
+        ],
+        "connections": [
+          34355
+        ],
+        "choice_group": 732471,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holy_tornado_Border",
+          "key": "nhi_holy_tornado_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30438,
+        "name": "Light's Guidance",
+        "slug": "lights-guidance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524765,
+        "spell_ids": [
+          524765
+        ],
+        "description_html": "Healing with <span style=\"color: #ffffff; display: inline\">Benediction</span> now causes your next <span style=\"color: #ffffff; display: inline\">Benediction</span> to heal for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more for <span class=\"item-number\">30</span> seconds.",
+        "description": "Healing with Benediction now causes your next Benediction to heal for 25% more for 30 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524765,
+            "description_html": "Healing with <span style=\"color: #ffffff; display: inline\">Benediction</span> now causes your next <span style=\"color: #ffffff; display: inline\">Benediction</span> to heal for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more for <span class=\"item-number\">30</span> seconds.",
+            "description": "Healing with Benediction now causes your next Benediction to heal for 25% more for 30 seconds."
+          }
+        ],
+        "connections": [
+          34355
+        ],
+        "choice_group": 732471,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holyfire_00_Border",
+          "key": "nhi_holyfire_00_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30449,
+        "name": "Blade Sermon",
+        "slug": "blade-sermon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572548,
+        "spell_ids": [
+          572548,
+          572554
+        ],
+        "description_html": "Increases the Weapon Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and gives it a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to trigger twice.",
+        "description": "Increases the Weapon Damage dealt by Zealotry by 10% and gives it a 5% chance to trigger twice.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572548,
+            "description_html": "Increases the Weapon Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and gives it a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to trigger twice.",
+            "description": "Increases the Weapon Damage dealt by Zealotry by 10% and gives it a 5% chance to trigger twice."
+          },
+          {
+            "rank": 2,
+            "spell_id": 572554,
+            "description_html": "Increases the Weapon Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Zealotry</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and gives it a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to trigger twice.",
+            "description": "Increases the Weapon Damage dealt by Zealotry by 20% and gives it a 10% chance to trigger twice."
+          }
+        ],
+        "connections": [
+          34339
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill26_Border",
+          "key": "_5_druideskill26_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11455,
+        "name": "Paladin Training",
+        "slug": "paladin-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504808,
+        "spell_ids": [
+          504808
+        ],
+        "description_html": "Triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to grant you an additional auto attack on your next strike.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+        "description": "Triggering Zealotry now has an 8% chance to grant you an additional auto attack on your next strike.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504808,
+            "description_html": "Triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to grant you an additional auto attack on your next strike.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+            "description": "Triggering Zealotry now has an 8% chance to grant you an additional auto attack on your next strike.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage."
+          }
+        ],
+        "connections": [
+          29715
+        ],
+        "choice_group": 504808,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Paladinskill_24_Border",
+          "key": "custom_paladinskill_24_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30455,
+        "name": "Priest Training",
+        "slug": "priest-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504561,
+        "spell_ids": [
+          504561
+        ],
+        "description_html": "Triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> now also heals you for <span class=\"item-number\">50</span> + <span class=\"item-number\">6% SP</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+        "description": "Triggering Zealotry now also heals you for 50 + 6% SP.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504561,
+            "description_html": "Triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> now also heals you for <span class=\"item-number\">50</span> + <span class=\"item-number\">6% SP</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+            "description": "Triggering Zealotry now also heals you for 50 + 6% SP.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage."
+          }
+        ],
+        "connections": [
+          29715
+        ],
+        "choice_group": 504808,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_priestskill07_Border",
+          "key": "_5_priestskill07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30066,
+        "name": "One-Punch Man",
+        "slug": "one-punch-man",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705284,
+        "spell_ids": [
+          705284
+        ],
+        "description_html": "Increases the the damage of <span style=\"color: #ffffff; display: inline\">Oath Breakers</span>, <span style=\"color: #ffffff; display: inline\">Condemn</span>, and <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the the damage of Oath Breakers, Condemn, and Titanstrike by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705284,
+            "description_html": "Increases the the damage of <span style=\"color: #ffffff; display: inline\">Oath Breakers</span>, <span style=\"color: #ffffff; display: inline\">Condemn</span>, and <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the the damage of Oath Breakers, Condemn, and Titanstrike by 20%."
+          }
+        ],
+        "connections": [
+          30960
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_gauntlets_25",
+          "key": "inv_gauntlets_25",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30836,
+        "name": "Chakra of Light",
+        "slug": "chakra-of-light",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803159,
+        "spell_ids": [
+          803159,
+          803844
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">-15</span> sec and <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now heal allies around the target for <span class=\"item-number\">20</span> + <span class=\"item-number\">35% SP</span>.",
+        "description": "Reduces the cooldown of Testaments by -15 sec and Oath Breakers now heal allies around the target for 20 + 35% SP.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803159,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">-15</span> sec and <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now heal allies around the target for <span class=\"item-number\">20</span> + <span class=\"item-number\">35% SP</span>.",
+            "description": "Reduces the cooldown of Testaments by -15 sec and Oath Breakers now heal allies around the target for 20 + 35% SP."
+          },
+          {
+            "rank": 2,
+            "spell_id": 803844,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Testaments</span> by <span class=\"item-number\">-30</span> sec and <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now heal allies around the target for <span class=\"item-number\">50</span> + <span class=\"item-number\">35% SP</span>.",
+            "description": "Reduces the cooldown of Testaments by -30 sec and Oath Breakers now heal allies around the target for 50 + 35% SP."
+          }
+        ],
+        "connections": [
+          34338
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\priest_icon_chakra",
+          "key": "priest_icon_chakra",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34346,
+        "name": "Force of Golganneth",
+        "slug": "force-of-golganneth",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500694,
+        "spell_ids": [
+          500694
+        ],
+        "description_html": "Explode with holy power, dealing <span class=\"item-number\">310</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">25% holy SP</span> Holy damage and triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> every <span class=\"item-number\">1</span> sec to nearby enemies for <span class=\"item-number\">5</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div><br /><br />While active, your <span style=\"color: #ffffff; display: inline\">Temple Guardian</span> spell has its Energy cost reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Explode with holy power, dealing 310 + 25% AP + 25% holy SP Holy damage and triggering Zealotry every 1 sec to nearby enemies for 5 seconds.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.\n\nWhile active, your Temple Guardian spell has its Energy cost reduced by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500694,
+            "description_html": "Explode with holy power, dealing <span class=\"item-number\">310</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">25% holy SP</span> Holy damage and triggering <span style=\"color: #ffffff; display: inline\">Zealotry</span> every <span class=\"item-number\">1</span> sec to nearby enemies for <span class=\"item-number\">5</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div><br /><br />While active, your <span style=\"color: #ffffff; display: inline\">Temple Guardian</span> spell has its Energy cost reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Explode with holy power, dealing 310 + 25% AP + 25% holy SP Holy damage and triggering Zealotry every 1 sec to nearby enemies for 5 seconds.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.\n\nWhile active, your Temple Guardian spell has its Energy cost reduced by -50%."
+          }
+        ],
+        "connections": [
+          5438,
+          30438,
+          30449
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holyinfusion_Border",
+          "key": "nhi_holyinfusion_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34358,
+        "name": "Deliverance",
+        "slug": "deliverance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704116,
+        "spell_ids": [
+          704116
+        ],
+        "description_html": "Critically striking with <span style=\"color: #ffffff; display: inline\">Vindication</span> or <span style=\"color: #FFFFFF; display: inline\">Righteous Lunge</span> now deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> additional Physical damage.",
+        "description": "Critically striking with Vindication or Righteous Lunge now deals 50% additional Physical damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704116,
+            "description_html": "Critically striking with <span style=\"color: #ffffff; display: inline\">Vindication</span> or <span style=\"color: #FFFFFF; display: inline\">Righteous Lunge</span> now deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> additional Physical damage.",
+            "description": "Critically striking with Vindication or Righteous Lunge now deals 50% additional Physical damage."
+          }
+        ],
+        "connections": [
+          11455,
+          30449,
+          30455
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_GreaterBlessingofSalvation",
+          "key": "spell_holy_greaterblessingofsalvation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30443,
+        "name": "Condemnation",
+        "slug": "condemnation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704175,
+        "spell_ids": [
+          704175
+        ],
+        "description_html": "Increases the critical strike chance gained through <span style=\"color: #FFFFFF; display: inline\">Condemn</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and allows its periodic damage to critically strike.",
+        "description": "Increases the critical strike chance gained through Condemn by 3% and allows its periodic damage to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704175,
+            "description_html": "Increases the critical strike chance gained through <span style=\"color: #FFFFFF; display: inline\">Condemn</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and allows its periodic damage to critically strike.",
+            "description": "Increases the critical strike chance gained through Condemn by 3% and allows its periodic damage to critically strike."
+          }
+        ],
+        "connections": [
+          11455,
+          30066,
+          30455
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Heal",
+          "key": "spell_holy_heal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34359,
+        "name": "Iron Penance",
+        "slug": "iron-penance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 523712,
+        "spell_ids": [
+          523712
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Zealotry</span> now applies <span style=\"color: #ffffff; display: inline\">Iron Penance</span> to the target, increasing their Physical damage taken by you by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Dealing damage with Zealotry now applies Iron Penance to the target, increasing their Physical damage taken by you by 1% for 3 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 523712,
+            "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Zealotry</span> now applies <span style=\"color: #ffffff; display: inline\">Iron Penance</span> to the target, increasing their Physical damage taken by you by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Dealing damage with Zealotry now applies Iron Penance to the target, increasing their Physical damage taken by you by 1% for 3 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          30066,
+          30836
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Paladinskill_25_nobg_Border",
+          "key": "custom_paladinskill_25_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9290,
+        "name": "Divine Fury",
+        "slug": "divine-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 504107,
+        "spell_ids": [
+          504107
+        ],
+        "description_html": "$7f",
+        "description": "$7f",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504107,
+            "description_html": "$80",
+            "description": "$80"
+          }
+        ],
+        "connections": [
+          9289
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_hammeroflight_Border",
+          "key": "nhi_hammeroflight_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30067,
+        "name": "Pious Sweep",
+        "slug": "pious-sweep",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520034,
+        "spell_ids": [
+          520034
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Chastise</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">75%</span> health or affected by <span style=\"color: #ffffff; display: inline\">Tranquil Circle</span>.",
+        "description": "Increases the damage of Chastise by 25% on enemies above 75% health or affected by Tranquil Circle.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520034,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Chastise</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">75%</span> health or affected by <span style=\"color: #ffffff; display: inline\">Tranquil Circle</span>.",
+            "description": "Increases the damage of Chastise by 25% on enemies above 75% health or affected by Tranquil Circle."
+          }
+        ],
+        "connections": [
+          5438,
+          30438,
+          34346
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_2h_lightforged_c_01",
+          "key": "inv_sword_2h_lightforged_c_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31254,
+        "name": "Heaven's Finest",
+        "slug": "heavens-finest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806516,
+        "spell_ids": [
+          806516
+        ],
+        "description_html": "Damaging abilities now grant <span style=\"color: #ffffff; display: inline\">Heaven's Finest</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">6</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_holymeditation_border\" /><span class=\"name\">Heaven&#39;s Finest</span></div><span class=\"desc\">Increases your movement speed by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />At <span class=\"item-number\">6</span> stacks, increases your Energy regeneration by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Additional applications do not refresh the duration.</span></div>",
+        "description": "Damaging abilities now grant Heaven's Finest for 12 seconds, stacking 6 times.Heaven's FinestIncreases your movement speed by 5%.\n\nAt 6 stacks, increases your Energy regeneration by 100% for 8 seconds.\n\nAdditional applications do not refresh the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806516,
+            "description_html": "Damaging abilities now grant <span style=\"color: #ffffff; display: inline\">Heaven's Finest</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">6</span> times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_nhance_rpg_icons_holymeditation_border\" /><span class=\"name\">Heaven&#39;s Finest</span></div><span class=\"desc\">Increases your movement speed by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />At <span class=\"item-number\">6</span> stacks, increases your Energy regeneration by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.<br /><br />Additional applications do not refresh the duration.</span></div>",
+            "description": "Damaging abilities now grant Heaven's Finest for 12 seconds, stacking 6 times.Heaven's FinestIncreases your movement speed by 5%.\n\nAt 6 stacks, increases your Energy regeneration by 100% for 8 seconds.\n\nAdditional applications do not refresh the duration."
+          }
+        ],
+        "connections": [
+          34346,
+          34358
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyMeditation_Border",
+          "key": "custom_t_nhance_rpg_icons_holymeditation_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31256,
+        "name": "Transcending Strikes",
+        "slug": "transcending-strikes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804897,
+        "spell_ids": [
+          804897
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Divine Force</span> will now trigger a <span class=\"item-number\">-30</span> sec reduced cooldown when used on enemies affected by <span style=\"color: #ffffff; display: inline\">Blade of Faith</span>.",
+        "description": "Your Divine Force will now trigger a -30 sec reduced cooldown when used on enemies affected by Blade of Faith.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804897,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Divine Force</span> will now trigger a <span class=\"item-number\">-30</span> sec reduced cooldown when used on enemies affected by <span style=\"color: #ffffff; display: inline\">Blade of Faith</span>.",
+            "description": "Your Divine Force will now trigger a -30 sec reduced cooldown when used on enemies affected by Blade of Faith."
+          }
+        ],
+        "connections": [
+          30443,
+          34358
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_beaconofinsight",
+          "key": "ability_paladin_beaconofinsight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30070,
+        "name": "Devotion of Khaz'goroth",
+        "slug": "devotion-of-khazgoroth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560096,
+        "spell_ids": [
+          560096
+        ],
+        "description_html": "Increases all party and raid member's melee and ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />Damage dealt with auto attacks reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Libram</span> spells by <span class=\"item-number\">-0.5</span> sec.",
+        "description": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.\n\nDamage dealt with auto attacks reduce the cooldown of Libram spells by -0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560096,
+            "description_html": "Increases all party and raid member's melee and ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />Damage dealt with auto attacks reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Libram</span> spells by <span class=\"item-number\">-0.5</span> sec.",
+            "description": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.\n\nDamage dealt with auto attacks reduce the cooldown of Libram spells by -0.5 sec."
+          }
+        ],
+        "connections": [
+          30443,
+          34359
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_IronSentinel_01",
+          "key": "achievement_dungeon_ulduarraid_ironsentinel_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11384,
+        "name": "Fervent Castigation",
+        "slug": "fervent-castigation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707606,
+        "spell_ids": [
+          707606
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Righteous Upheaval</span> or <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> now grants you <span style=\"color: #ffffff; display: inline\">Oath: Retribution</span> and starts your <span style=\"color: #FFFFFF; display: inline\">Oath Chain</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_artofwar\" /><span class=\"name\">Oath: Retribution</span></div><span class=\"desc\">Critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Casting Righteous Upheaval or Blade of Faith now grants you Oath: Retribution and starts your Oath Chain.Oath: RetributionCritical damage increased by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707606,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Righteous Upheaval</span> or <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> now grants you <span style=\"color: #ffffff; display: inline\">Oath: Retribution</span> and starts your <span style=\"color: #FFFFFF; display: inline\">Oath Chain</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_artofwar\" /><span class=\"name\">Oath: Retribution</span></div><span class=\"desc\">Critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Casting Righteous Upheaval or Blade of Faith now grants you Oath: Retribution and starts your Oath Chain.Oath: RetributionCritical damage increased by 5%."
+          }
+        ],
+        "connections": [
+          30836,
+          34359
+        ],
+        "choice_group": 707606,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_AuraOfLight",
+          "key": "spell_holy_auraoflight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34384,
+        "name": "Condemnation",
+        "slug": "condemnation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706325,
+        "spell_ids": [
+          706325
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Condemn</span>, <span style=\"color: #FFFFFF; display: inline\">Holy Cleave</span>, or <span style=\"color: #FFFFFF; display: inline\">Blade of Faith</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #ffffff; display: inline\">Zealotry</span> if you are within melee range of your target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+        "description": "Dealing damage with Condemn, Holy Cleave, or Blade of Faith now has a 15% chance to trigger Zealotry if you are within melee range of your target.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706325,
+            "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Condemn</span>, <span style=\"color: #FFFFFF; display: inline\">Holy Cleave</span>, or <span style=\"color: #FFFFFF; display: inline\">Blade of Faith</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #ffffff; display: inline\">Zealotry</span> if you are within melee range of your target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+            "description": "Dealing damage with Condemn, Holy Cleave, or Blade of Faith now has a 15% chance to trigger Zealotry if you are within melee range of your target.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage."
+          }
+        ],
+        "connections": [
+          30836,
+          34359
+        ],
+        "choice_group": 707606,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_2h_pvppandarias2_c_01green",
+          "key": "inv_axe_2h_pvppandarias2_c_01green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7757,
+        "name": "One With The Light",
+        "slug": "one-with-the-light",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504807,
+        "spell_ids": [
+          504807
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now triggers <span style=\"color: #ffffff; display: inline\">Zealotry</span> on your target and reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Librams</span>, <span style=\"color: #ffffff; display: inline\">Force of Golganneth</span>, <span style=\"color: #ffffff; display: inline\">Divine Force</span>, and <span style=\"color: #ffffff; display: inline\">Testament of Will</span> by <span class=\"item-number\">-1</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+        "description": "Casting Oath Breakers now triggers Zealotry on your target and reduces the cooldown of Librams, Force of Golganneth, Divine Force, and Testament of Will by -1 sec.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504807,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Oath Breakers</span> now triggers <span style=\"color: #ffffff; display: inline\">Zealotry</span> on your target and reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Librams</span>, <span style=\"color: #ffffff; display: inline\">Force of Golganneth</span>, <span style=\"color: #ffffff; display: inline\">Divine Force</span>, and <span style=\"color: #ffffff; display: inline\">Testament of Will</span> by <span class=\"item-number\">-1</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_paladinskill_24_border\" /><span class=\"name\">Zealotry (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">80</span><span class=\"item-number\">%</span> off-hand Weapon Damage as Holy Damage.</span></div>",
+            "description": "Casting Oath Breakers now triggers Zealotry on your target and reduces the cooldown of Librams, Force of Golganneth, Divine Force, and Testament of Will by -1 sec.Zealotry (Proc)Deals 80% off-hand Weapon Damage as Holy Damage."
+          }
+        ],
+        "connections": [
+          30067,
+          31254
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Paladinskill_01_Border",
+          "key": "custom_paladinskill_01_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7813,
+        "name": "Might of Aggramar",
+        "slug": "might-of-aggramar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803163,
+        "spell_ids": [
+          803163
+        ],
+        "description_html": "Physical damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the tick rate of your <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> and <span style=\"color: #ffffff; display: inline\">Condemn</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">5</span> times.",
+        "description": "Physical damage dealt now has a 25% chance to increase the tick rate of your Blade of Faith and Condemn by -10%, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803163,
+            "description_html": "Physical damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the tick rate of your <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> and <span style=\"color: #ffffff; display: inline\">Condemn</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">5</span> times.",
+            "description": "Physical damage dealt now has a 25% chance to increase the tick rate of your Blade of Faith and Condemn by -10%, stacking 5 times."
+          }
+        ],
+        "connections": [
+          30070,
+          31254,
+          31256
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_InnerFire",
+          "key": "spell_holy_innerfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34335,
+        "name": "Blessing of Eonar",
+        "slug": "blessing-of-eonar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705290,
+        "spell_ids": [
+          705290
+        ],
+        "description_html": "Using <span style=\"color: #ffffff; display: inline\">Libram</span> spells now increases your damage dealt and healing done by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Using Libram spells now increases your damage dealt and healing done by 10% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705290,
+            "description_html": "Using <span style=\"color: #ffffff; display: inline\">Libram</span> spells now increases your damage dealt and healing done by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Using Libram spells now increases your damage dealt and healing done by 10% for 15 seconds."
+          }
+        ],
+        "connections": [
+          11384,
+          30070,
+          34384
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_argus_eonar",
+          "key": "achievement_boss_argus_eonar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11290,
+        "name": "Unbroken Creed",
+        "slug": "unbroken-creed",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 804932,
+        "spell_ids": [
+          804932
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Damaging abilities now grants you <span style=\"color: #ffffff; display: inline\">Unbroken Creed</span> for <span class=\"item-number\">15</span> seconds, stacking up to <span class=\"item-number\">3</span> times.<br /><br />When you use a damaging <span style=\"color: #ffffff; display: inline\">Oath Breaker</span> or <span style=\"color: #ffffff; display: inline\">Divine Fury</span> you now consume the stacks and auto attack your target an amount of times equal to your stack count.",
+        "description": "Level 50 Passive\nDamaging abilities now grants you Unbroken Creed for 15 seconds, stacking up to 3 times.\n\nWhen you use a damaging Oath Breaker or Divine Fury you now consume the stacks and auto attack your target an amount of times equal to your stack count.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804932,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Damaging abilities now grants you <span style=\"color: #ffffff; display: inline\">Unbroken Creed</span> for <span class=\"item-number\">15</span> seconds, stacking up to <span class=\"item-number\">3</span> times.<br /><br />When you use a damaging <span style=\"color: #ffffff; display: inline\">Oath Breaker</span> or <span style=\"color: #ffffff; display: inline\">Divine Fury</span> you now consume the stacks and auto attack your target an amount of times equal to your stack count.",
+            "description": "Level 50 Passive\nDamaging abilities now grants you Unbroken Creed for 15 seconds, stacking up to 3 times.\n\nWhen you use a damaging Oath Breaker or Divine Fury you now consume the stacks and auto attack your target an amount of times equal to your stack count."
+          }
+        ],
+        "connections": [
+          9290
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_lightportal_Border",
+          "key": "nhi_lightportal_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 9757,
+        "name": "Norgannon's Wrath",
+        "slug": "norgannons-wrath",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524739,
+        "spell_ids": [
+          524739
+        ],
+        "description_html": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing <span class=\"item-number\">1506</span> + <span class=\"item-number\">100% holy SP</span> + <span class=\"item-number\">100% AP</span> Holy damage to up to <span class=\"item-number\">10</span> enemies within <span class=\"item-number\">5</span> yds and reduces their damage and healing done by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Damage dealt pierces all immunities, resistances, and damage absorption effects.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Chastise</span>.",
+        "description": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.\n\nDamage dealt pierces all immunities, resistances, and damage absorption effects.\n\nScales with modifiers to Chastise.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524739,
+            "description_html": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing <span class=\"item-number\">1506</span> + <span class=\"item-number\">100% holy SP</span> + <span class=\"item-number\">100% AP</span> Holy damage to up to <span class=\"item-number\">10</span> enemies within <span class=\"item-number\">5</span> yds and reduces their damage and healing done by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Damage dealt pierces all immunities, resistances, and damage absorption effects.<br /><br />Scales with modifiers to <span style=\"color: #ffffff; display: inline\">Chastise</span>.",
+            "description": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.\n\nDamage dealt pierces all immunities, resistances, and damage absorption effects.\n\nScales with modifiers to Chastise."
+          }
+        ],
+        "connections": [
+          7757
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holywhirlpool_Border",
+          "key": "nhi_holywhirlpool_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31255,
+        "name": "Blessing of Aggramar",
+        "slug": "blessing-of-aggramar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300502,
+        "spell_ids": [
+          300502
+        ],
+        "description_html": "Casting an <span style=\"color: #ffffff; display: inline\">Oath Breaker</span> with <span class=\"item-number\">10</span> stacks of your <span style=\"color: #ffffff; display: inline\">Oath Chain</span> now refreshes the duration of <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> on all nearby enemies.",
+        "description": "Casting an Oath Breaker with 10 stacks of your Oath Chain now refreshes the duration of Blade of Faith on all nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300502,
+            "description_html": "Casting an <span style=\"color: #ffffff; display: inline\">Oath Breaker</span> with <span class=\"item-number\">10</span> stacks of your <span style=\"color: #ffffff; display: inline\">Oath Chain</span> now refreshes the duration of <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> on all nearby enemies.",
+            "description": "Casting an Oath Breaker with 10 stacks of your Oath Chain now refreshes the duration of Blade of Faith on all nearby enemies."
+          }
+        ],
+        "connections": [
+          7757,
+          7813,
+          34335
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Titan_01",
+          "key": "achievement_dungeon_ulduarraid_titan_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29720,
+        "name": "Fury of Aggramar",
+        "slug": "fury-of-aggramar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 50,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801480,
+        "spell_ids": [
+          801480
+        ],
+        "description_html": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Libram of Consecration</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.<br /><br />In addition, increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Librams</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and reduces their cooldown by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage dealt by Libram of Consecration by 100%.\n\nIn addition, increases the effectiveness of your Librams by 100% and reduces their cooldown by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801480,
+            "description_html": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Libram of Consecration</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.<br /><br />In addition, increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Librams</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and reduces their cooldown by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage dealt by Libram of Consecration by 100%.\n\nIn addition, increases the effectiveness of your Librams by 100% and reduces their cooldown by -25%."
+          }
+        ],
+        "connections": [
+          34335
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_argus_aggramar",
+          "key": "achievement_boss_argus_aggramar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

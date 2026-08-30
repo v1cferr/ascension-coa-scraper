@@ -1,0 +1,2409 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:16+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:6f7e4cf0298c3522dcc70f9b5d16b3a3ca985a72518dbe60492a942827ae8fd8",
+    "talent_count": 162,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 12,
+    "name": "Barbarian",
+    "slug": "barbarian",
+    "class_file": "barbarian",
+    "color": "rgb(138, 51, 3)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:barbarian",
+      "key": "class-barbarian",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 28,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 31,
+    "name": "Brutality",
+    "slug": "brutality",
+    "sort_order": 1,
+    "class_id": 12,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 5744,
+        "name": "Decapitate",
+        "slug": "decapitate",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804414,
+        "spell_ids": [
+          804414
+        ],
+        "description_html": "Attempt to decapitate an injured enemy, dealing <span class=\"item-number\">220</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">27</span>. After paying its base cost, Decapitate consumes half of your remaining Energy, up to <span class=\"item-number\">55</span> additional Energy. Against monsters, each additional Energy spent increases its damage by <span class=\"item-number\">1%</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health.",
+        "description": "Attempt to decapitate an injured enemy, dealing 220% Weapon Damage plus 27. After paying its base cost, Decapitate consumes half of your remaining Energy, up to 55 additional Energy. Against monsters, each additional Energy spent increases its damage by 1%.\n\nOnly usable on enemies below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804414,
+            "description_html": "Attempt to decapitate an injured enemy, dealing <span class=\"item-number\">220</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">27</span>. After paying its base cost, Decapitate consumes half of your remaining Energy, up to <span class=\"item-number\">55</span> additional Energy. Against monsters, each additional Energy spent increases its damage by <span class=\"item-number\">1%</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Attempt to decapitate an injured enemy, dealing 220% Weapon Damage plus 27. After paying its base cost, Decapitate consumes half of your remaining Energy, up to 55 additional Energy. Against monsters, each additional Energy spent increases its damage by 1%.\n\nOnly usable on enemies below 35% health."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(47)_Border",
+          "key": "novart_physical_ability__47__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4001,
+        "name": "Excessive Power",
+        "slug": "excessive-power",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            29783
+          ]
+        },
+        "spell_id": 92081,
+        "spell_ids": [
+          92081
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Increases your maximum Energy by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Level 10 Passive\nIncreases your maximum Energy by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92081,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Increases your maximum Energy by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Level 10 Passive\nIncreases your maximum Energy by 100%."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Orc_06",
+          "key": "orc_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6744,
+        "name": "Beheader",
+        "slug": "beheader",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705222,
+        "spell_ids": [
+          705222
+        ],
+        "description_html": "Scoring a kill blow with <span style=\"color: #ffffff; display: inline\">Decapitate</span> now refunds <span class=\"item-number\">100%</span> of your maximum Energy.",
+        "description": "Scoring a kill blow with Decapitate now refunds 100% of your maximum Energy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705222,
+            "description_html": "Scoring a kill blow with <span style=\"color: #ffffff; display: inline\">Decapitate</span> now refunds <span class=\"item-number\">100%</span> of your maximum Energy.",
+            "description": "Scoring a kill blow with Decapitate now refunds 100% of your maximum Energy."
+          }
+        ],
+        "connections": [
+          5744
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_archaeology_ogres_warmaul_chieftain",
+          "key": "inv_archaeology_ogres_warmaul_chieftain",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30792,
+        "name": "Reckless Movements",
+        "slug": "reckless-movements",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705204,
+        "spell_ids": [
+          705204
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Ancestral Strike and Barbaric Whirl by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705204,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Ancestral Strike and Barbaric Whirl by 20%."
+          }
+        ],
+        "connections": [
+          6744
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_blackhand",
+          "key": "achievement_boss_blackhand",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29281,
+        "name": "Killing Spree",
+        "slug": "killing-spree",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 850021,
+        "spell_ids": [
+          850021
+        ],
+        "description_html": "Charge at an enemy, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">30% AP</span> Physical damage.<br /><br />Can only be used within <span class=\"item-number\">6</span> seconds of scoring a killing blow or applying <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.",
+        "description": "Charge at an enemy, dealing 25 + 30% AP Physical damage.\n\nCan only be used within 6 seconds of scoring a killing blow or applying Born in Blood.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 850021,
+            "description_html": "Charge at an enemy, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">30% AP</span> Physical damage.<br /><br />Can only be used within <span class=\"item-number\">6</span> seconds of scoring a killing blow or applying <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.",
+            "description": "Charge at an enemy, dealing 25 + 30% AP Physical damage.\n\nCan only be used within 6 seconds of scoring a killing blow or applying Born in Blood."
+          }
+        ],
+        "connections": [
+          6744
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3leapattack",
+          "key": "d3leapattack",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6742,
+        "name": "Pure Power",
+        "slug": "pure-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705173,
+        "spell_ids": [
+          705173,
+          707761
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>.",
+        "description": "Increases the damage of Smash by 15% and your expertise by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705173,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>.",
+            "description": "Increases the damage of Smash by 15% and your expertise by 5."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707761,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases the damage of Smash by 30% and your expertise by 10."
+          }
+        ],
+        "connections": [
+          6744
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_rogue",
+          "key": "ability_revendreth_rogue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9170,
+        "name": "Relentless",
+        "slug": "relentless",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 300505,
+        "spell_ids": [
+          300505
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> now refund <span class=\"item-number\">10</span> Energy.",
+        "description": "Level 20 Passive\nCritical strikes with Ancestral Strike and Brutal Swing now refund 10 Energy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300505,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Critical strikes with <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> now refund <span class=\"item-number\">10</span> Energy.",
+            "description": "Level 20 Passive\nCritical strikes with Ancestral Strike and Brutal Swing now refund 10 Energy."
+          }
+        ],
+        "connections": [
+          4001
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_warriorskill07_Border",
+          "key": "_5_warriorskill07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34268,
+        "name": "Brutal Swing",
+        "slug": "brutal-swing",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500913,
+        "spell_ids": [
+          500913
+        ],
+        "description_html": "Your next attack causes you to swing violently at an enemy and up to <span class=\"item-number\">2</span> nearby enemies, dealing <span class=\"item-number\">135</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">10</span>.",
+        "description": "Your next attack causes you to swing violently at an enemy and up to 2 nearby enemies, dealing 135% Weapon Damage plus 10.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500913,
+            "description_html": "Your next attack causes you to swing violently at an enemy and up to <span class=\"item-number\">2</span> nearby enemies, dealing <span class=\"item-number\">135</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">10</span>.",
+            "description": "Your next attack causes you to swing violently at an enemy and up to 2 nearby enemies, dealing 135% Weapon Damage plus 10."
+          }
+        ],
+        "connections": [
+          30792
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_axe_Border",
+          "key": "_5_axe_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29791,
+        "name": "Overkill",
+        "slug": "overkill",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560444,
+        "spell_ids": [
+          560444
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Decapitate</span> and <span style=\"color: #ffffff; display: inline\">Headhunter's Spear</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against targets below <span class=\"item-number\">20%</span> health.",
+        "description": "Increases the critical strike chance of Decapitate and Headhunter's Spear by 30% against targets below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560444,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Decapitate</span> and <span style=\"color: #ffffff; display: inline\">Headhunter's Spear</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against targets below <span class=\"item-number\">20%</span> health.",
+            "description": "Increases the critical strike chance of Decapitate and Headhunter's Spear by 30% against targets below 20% health."
+          }
+        ],
+        "connections": [
+          6742,
+          29281,
+          30792
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(16)_Border",
+          "key": "novart_magicspell__16__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31151,
+        "name": "Crush",
+        "slug": "crush",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4001,
+            29783
+          ]
+        },
+        "spell_id": 500915,
+        "spell_ids": [
+          500915
+        ],
+        "description_html": "Crush enemies in a frontal cone, dealing <span class=\"item-number\">275</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">30</span>, stunning them for <span class=\"item-number\">3</span> seconds.",
+        "description": "Crush enemies in a frontal cone, dealing 275% Weapon Damage plus 30, stunning them for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500915,
+            "description_html": "Crush enemies in a frontal cone, dealing <span class=\"item-number\">275</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">30</span>, stunning them for <span class=\"item-number\">3</span> seconds.",
+            "description": "Crush enemies in a frontal cone, dealing 275% Weapon Damage plus 30, stunning them for 3 seconds."
+          }
+        ],
+        "connections": [
+          6742
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Mace_69",
+          "key": "inv_mace_69",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6750,
+        "name": "Bloody Fighter",
+        "slug": "bloody-fighter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705167,
+        "spell_ids": [
+          705167,
+          707760
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Brutal Swing and Smash by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705167,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Brutal Swing and Smash by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707760,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Brutal Swing and Smash by 10%."
+          }
+        ],
+        "connections": [
+          34268
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_1h_pvpcataclysms3_c_02",
+          "key": "inv_mace_1h_pvpcataclysms3_c_02",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6350,
+        "name": "Headlopper",
+        "slug": "headlopper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300499,
+        "spell_ids": [
+          300499
+        ],
+        "description_html": "Your critical strikes with <span style=\"color: #ffffff; display: inline\">Decapitate</span> now cause the enemy to bleed, dealing an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">5</span> seconds.",
+        "description": "Your critical strikes with Decapitate now cause the enemy to bleed, dealing an additional 30% of the damage dealt over 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300499,
+            "description_html": "Your critical strikes with <span style=\"color: #ffffff; display: inline\">Decapitate</span> now cause the enemy to bleed, dealing an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">5</span> seconds.",
+            "description": "Your critical strikes with Decapitate now cause the enemy to bleed, dealing an additional 30% of the damage dealt over 5 seconds."
+          }
+        ],
+        "connections": [
+          29791
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(10)_Border",
+          "key": "novart_physical_ability__10__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30042,
+        "name": "Spiked Weapons",
+        "slug": "spiked-weapons",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705186,
+        "spell_ids": [
+          705186
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Crush</span>, <span style=\"color: #FFFFFF; display: inline\">Brutal Swing</span>, and <span style=\"color: #FFFFFF; display: inline\">Decapitate</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Crush, Brutal Swing, and Decapitate by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705186,
+            "description_html": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Crush</span>, <span style=\"color: #FFFFFF; display: inline\">Brutal Swing</span>, and <span style=\"color: #FFFFFF; display: inline\">Decapitate</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Crush, Brutal Swing, and Decapitate by 20%."
+          }
+        ],
+        "connections": [
+          29791
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_1h_draenorhonors2_c_01",
+          "key": "inv_mace_1h_draenorhonors2_c_01",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6739,
+        "name": "Horde Breaker",
+        "slug": "horde-breaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804745,
+        "spell_ids": [
+          804745
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Crush</span> now applies <span style=\"color: #FFFFFF; display: inline\">Wounded</span> to enemies for <span class=\"item-number\">1</span> minute and is now guaranteed to critically strike enemies affected by <span style=\"color: #ffffff; display: inline\">Headbutt</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_wild_strike\" /><span class=\"name\">Wounded (Proc)</span></div><span class=\"desc\">Increases Physical Damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">1</span> minute.</span></div>",
+        "description": "Your Crush now applies Wounded to enemies for 1 minute and is now guaranteed to critically strike enemies affected by Headbutt.Wounded (Proc)Increases Physical Damage taken by 4% for 1 minute.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804745,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Crush</span> now applies <span style=\"color: #FFFFFF; display: inline\">Wounded</span> to enemies for <span class=\"item-number\">1</span> minute and is now guaranteed to critically strike enemies affected by <span style=\"color: #ffffff; display: inline\">Headbutt</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_wild_strike\" /><span class=\"name\">Wounded (Proc)</span></div><span class=\"desc\">Increases Physical Damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">1</span> minute.</span></div>",
+            "description": "Your Crush now applies Wounded to enemies for 1 minute and is now guaranteed to critically strike enemies affected by Headbutt.Wounded (Proc)Increases Physical Damage taken by 4% for 1 minute."
+          }
+        ],
+        "connections": [
+          31151
+        ],
+        "choice_group": 707762,
+        "icon": {
+          "source_path": "Interface\\Icons\\warrior_skullbanner",
+          "key": "warrior_skullbanner",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12739,
+        "name": "Power Swings",
+        "slug": "power-swings",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707762,
+        "spell_ids": [
+          707762
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Reduces the cooldown of Crush by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707762,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Reduces the cooldown of Crush by -5 sec."
+          }
+        ],
+        "connections": [
+          31151
+        ],
+        "choice_group": 707762,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_OffensiveStance",
+          "key": "ability_warrior_offensivestance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4720,
+        "name": "Thirst for Battle",
+        "slug": "thirst-for-battle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 570236,
+        "spell_ids": [
+          570236
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now regenerate <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your maximum Energy.",
+        "description": "Your Smash now regenerate 25% of your maximum Energy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570236,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now regenerate <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your maximum Energy.",
+            "description": "Your Smash now regenerate 25% of your maximum Energy."
+          }
+        ],
+        "connections": [
+          9170
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_BloodRage",
+          "key": "ability_racial_bloodrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30760,
+        "name": "Rancor",
+        "slug": "rancor",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704876,
+        "spell_ids": [
+          704876
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> triggers <span class=\"item-number\">2</span> extra auto attacks against your current target for each target hit.",
+        "description": "Your Brutal Swing triggers 2 extra auto attacks against your current target for each target hit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704876,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Brutal Swing</span> triggers <span class=\"item-number\">2</span> extra auto attacks against your current target for each target hit.",
+            "description": "Your Brutal Swing triggers 2 extra auto attacks against your current target for each target hit."
+          }
+        ],
+        "connections": [
+          6750
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_generalbeauregardslaststand",
+          "key": "trade_archaeology_generalbeauregardslaststand",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34271,
+        "name": "Battering Ram",
+        "slug": "battering-ram",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561326,
+        "spell_ids": [
+          561326,
+          561331
+        ],
+        "description_html": "Your melee attacks bypass <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of enemy armor while a two-handed weapon is equipped.",
+        "description": "Your melee attacks bypass 10% of enemy armor while a two-handed weapon is equipped.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561326,
+            "description_html": "Your melee attacks bypass <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of enemy armor while a two-handed weapon is equipped.",
+            "description": "Your melee attacks bypass 10% of enemy armor while a two-handed weapon is equipped."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561331,
+            "description_html": "Your melee attacks bypass <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of enemy armor while a two-handed weapon is equipped.",
+            "description": "Your melee attacks bypass 20% of enemy armor while a two-handed weapon is equipped."
+          }
+        ],
+        "connections": [
+          6350,
+          30042
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_engineerskill03_Border",
+          "key": "_5_engineerskill03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 14265,
+        "name": "Crusher",
+        "slug": "crusher",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807183,
+        "spell_ids": [
+          807183
+        ],
+        "description_html": "Removes the cast time of <span style=\"color: #ffffff; display: inline\">Crush</span>, but its damage is reduced by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and it no longer stuns the enemy.",
+        "description": "Removes the cast time of Crush, but its damage is reduced by -15% and it no longer stuns the enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807183,
+            "description_html": "Removes the cast time of <span style=\"color: #ffffff; display: inline\">Crush</span>, but its damage is reduced by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> and it no longer stuns the enemy.",
+            "description": "Removes the cast time of Crush, but its damage is reduced by -15% and it no longer stuns the enemy."
+          }
+        ],
+        "connections": [
+          6739,
+          12739
+        ],
+        "choice_group": 807183,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_hammer_1h_jiro_b_01",
+          "key": "inv_hammer_1h_jiro_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34265,
+        "name": "Hail of Hammers",
+        "slug": "hail-of-hammers",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807047,
+        "spell_ids": [
+          807047
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Crush</span> by <span class=\"item-number\">1</span> sec and increases its damage against monsters by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of Crush by 1 sec and increases its damage against monsters by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807047,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Crush</span> by <span class=\"item-number\">1</span> sec and increases its damage against monsters by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of Crush by 1 sec and increases its damage against monsters by 15%."
+          }
+        ],
+        "connections": [
+          6739,
+          12739
+        ],
+        "choice_group": 807183,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_iron_hammer_b_Border",
+          "key": "custom_iron_hammer_b_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6834,
+        "name": "Anger Issues",
+        "slug": "anger-issues",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560450,
+        "spell_ids": [
+          560450
+        ],
+        "description_html": "Scoring a critical strike against an enemy now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Carnage</span> by <span class=\"item-number\">-4</span> sec.",
+        "description": "Scoring a critical strike against an enemy now reduces the cooldown of Carnage by -4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560450,
+            "description_html": "Scoring a critical strike against an enemy now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Carnage</span> by <span class=\"item-number\">-4</span> sec.",
+            "description": "Scoring a critical strike against an enemy now reduces the cooldown of Carnage by -4 sec."
+          }
+        ],
+        "connections": [
+          6750
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0005s_0000_characterb_Border",
+          "key": "epic_rpg_icon_pack_brutal_icon_0005s_0000_characterb_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30377,
+        "name": "Whirling Assault",
+        "slug": "whirling-assault",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560563,
+        "spell_ids": [
+          560563
+        ],
+        "description_html": "Hitting at least <span class=\"item-number\">3</span> targets with <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> resets its cooldown.<br /><br />This can not occur more than once per <span class=\"item-number\">6</span> seconds.",
+        "description": "Hitting at least 3 targets with Barbaric Whirl resets its cooldown.\n\nThis can not occur more than once per 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560563,
+            "description_html": "Hitting at least <span class=\"item-number\">3</span> targets with <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> resets its cooldown.<br /><br />This can not occur more than once per <span class=\"item-number\">6</span> seconds.",
+            "description": "Hitting at least 3 targets with Barbaric Whirl resets its cooldown.\n\nThis can not occur more than once per 6 seconds."
+          }
+        ],
+        "connections": [
+          30760
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_butcher_whirl",
+          "key": "ability_butcher_whirl",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34266,
+        "name": "Efficient Killer",
+        "slug": "efficient-killer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803085,
+        "spell_ids": [
+          803085
+        ],
+        "description_html": "Reduces the Energy cost of your spells and abilities by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the Energy cost of your spells and abilities by -10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803085,
+            "description_html": "Reduces the Energy cost of your spells and abilities by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the Energy cost of your spells and abilities by -10%."
+          }
+        ],
+        "connections": [
+          30760,
+          34265,
+          34271,
+          14265
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_warriorskill41_Border",
+          "key": "_5_warriorskill41_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6737,
+        "name": "Mounting Fury",
+        "slug": "mounting-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805927,
+        "spell_ids": [
+          805927
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Born in Blood</span> by <span class=\"item-number\">2</span> sec.",
+        "description": "Increases the duration of Born in Blood by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805927,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Born in Blood</span> by <span class=\"item-number\">2</span> sec.",
+            "description": "Increases the duration of Born in Blood by 2 sec."
+          }
+        ],
+        "connections": [
+          34265,
+          14265
+        ],
+        "choice_group": 560450,
+        "icon": {
+          "source_path": "Interface\\Icons\\warrior_talent_icon_furyintheblood",
+          "key": "warrior_talent_icon_furyintheblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12737,
+        "name": "Savage",
+        "slug": "savage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560441,
+        "spell_ids": [
+          560441
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now also increases your critical damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Unbridled Rage now also increases your critical damage by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560441,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now also increases your critical damage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Unbridled Rage now also increases your critical damage by 10%."
+          }
+        ],
+        "connections": [
+          34265,
+          14265
+        ],
+        "choice_group": 560450,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_ruthlessness",
+          "key": "ability_rogue_ruthlessness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33958,
+        "name": "Ancestral Trauma",
+        "slug": "ancestral-trauma",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560446,
+        "spell_ids": [
+          560446
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Crush</span> now scales with your Strength.",
+        "description": "Damage dealt by Ancestral Strike and Crush now scales with your Strength.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560446,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Crush</span> now scales with your Strength.",
+            "description": "Damage dealt by Ancestral Strike and Crush now scales with your Strength."
+          }
+        ],
+        "connections": [
+          6739,
+          12739
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_blood_spell_10_Border",
+          "key": "uico_blood_spell_10_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 14171,
+        "name": "Ogre's Strength",
+        "slug": "ogres-strength",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 561160,
+        "spell_ids": [
+          561160
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your Strength by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Level 40 Passive\nIncreases your Strength by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561160,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your Strength by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Level 40 Passive\nIncreases your Strength by 25%."
+          }
+        ],
+        "connections": [
+          4720
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_reputation_ogre",
+          "key": "achievement_reputation_ogre",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34313,
+        "name": "Reckful",
+        "slug": "reckful",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681063,
+        "spell_ids": [
+          681063,
+          681466
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to not trigger a cooldown.",
+        "description": "Your Smash now has a 30% chance to not trigger a cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681063,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to not trigger a cooldown.",
+            "description": "Your Smash now has a 30% chance to not trigger a cooldown."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681466,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Smash</span> now has a <span class=\"item-number\">60</span><span class=\"item-number\">%</span> chance to not trigger a cooldown.",
+            "description": "Your Smash now has a 60% chance to not trigger a cooldown."
+          }
+        ],
+        "connections": [
+          6834,
+          30377
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_BullRush",
+          "key": "ability_warrior_bullrush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2277,
+        "name": "Incredibly Strong",
+        "slug": "incredibly-strong",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804749,
+        "spell_ids": [
+          804749
+        ],
+        "description_html": "Removes the minimum range from <span style=\"color: #ffffff; display: inline\">Maiming Spear</span> and increases its duration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Removes the minimum range from Maiming Spear and increases its duration by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804749,
+            "description_html": "Removes the minimum range from <span style=\"color: #ffffff; display: inline\">Maiming Spear</span> and increases its duration by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Removes the minimum range from Maiming Spear and increases its duration by 30%."
+          }
+        ],
+        "connections": [
+          30377
+        ],
+        "choice_group": 807863,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Devastate",
+          "key": "ability_warrior_devastate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12277,
+        "name": "Giant Tosser",
+        "slug": "giant-tosser",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807863,
+        "spell_ids": [
+          807863
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Headhunter's Spear</span> now restores <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum Energy and deals <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased damage when you strike an enemy that is more than <span class=\"item-number\">20</span> yds away.",
+        "description": "Your Headhunter's Spear now restores 15% of your maximum Energy and deals 100% increased damage when you strike an enemy that is more than 20 yds away.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807863,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Headhunter's Spear</span> now restores <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum Energy and deals <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased damage when you strike an enemy that is more than <span class=\"item-number\">20</span> yds away.",
+            "description": "Your Headhunter's Spear now restores 15% of your maximum Energy and deals 100% increased damage when you strike an enemy that is more than 20 yds away."
+          }
+        ],
+        "connections": [
+          30377
+        ],
+        "choice_group": 807863,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_ability_packleaderhunter_vicioushunt",
+          "key": "inv_ability_packleaderhunter_vicioushunt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30374,
+        "name": "Symbol of the Warspear",
+        "slug": "symbol-of-the-warspear",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804730,
+        "spell_ids": [
+          804730
+        ],
+        "description_html": "You are marked by the Warspear symbol, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased attack power to party and raid members. Does not stack with similar effects.<br /><br />In addition, reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Spears</span> by <span class=\"item-number\">-2</span> sec.",
+        "description": "You are marked by the Warspear symbol, granting 10% increased attack power to party and raid members. Does not stack with similar effects.\n\nIn addition, reduces the cooldown of Spears by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804730,
+            "description_html": "You are marked by the Warspear symbol, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased attack power to party and raid members. Does not stack with similar effects.<br /><br />In addition, reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Spears</span> by <span class=\"item-number\">-2</span> sec.",
+            "description": "You are marked by the Warspear symbol, granting 10% increased attack power to party and raid members. Does not stack with similar effects.\n\nIn addition, reduces the cooldown of Spears by -2 sec."
+          }
+        ],
+        "connections": [
+          34266
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_banner_warspear",
+          "key": "inv_banner_warspear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34274,
+        "name": "Brutal Spirit",
+        "slug": "brutal-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706653,
+        "spell_ids": [
+          706653
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Spirit spells by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706653,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Spirit spells by 25%."
+          }
+        ],
+        "connections": [
+          6737,
+          12737
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Helmet_08",
+          "key": "inv_helmet_08",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13958,
+        "name": "Crusher",
+        "slug": "crusher",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803817,
+        "spell_ids": [
+          803817,
+          807875
+        ],
+        "description_html": "Melee auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span>.",
+        "description": "Melee auto attacks now have a 10% chance to reset the cooldown of Crush.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803817,
+            "description_html": "Melee auto attacks now have a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span>.",
+            "description": "Melee auto attacks now have a 10% chance to reset the cooldown of Crush."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807875,
+            "description_html": "Melee auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Crush</span>.",
+            "description": "Melee auto attacks now have a 20% chance to reset the cooldown of Crush."
+          }
+        ],
+        "connections": [
+          6737,
+          12737,
+          33958
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3seismicslam",
+          "key": "d3seismicslam",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6706,
+        "name": "Maximum Carnage",
+        "slug": "maximum-carnage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561359,
+        "spell_ids": [
+          561359
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now causes you to begin swinging your weapon around you dealing <span class=\"item-number\">152</span> + <span class=\"item-number\">30% AP</span> Physical damage to up to <span class=\"item-number\">5</span> nearby enemies over <span class=\"item-number\">6</span> seconds.",
+        "description": "Casting Unbridled Rage now causes you to begin swinging your weapon around you dealing 152 + 30% AP Physical damage to up to 5 nearby enemies over 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561359,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now causes you to begin swinging your weapon around you dealing <span class=\"item-number\">152</span> + <span class=\"item-number\">30% AP</span> Physical damage to up to <span class=\"item-number\">5</span> nearby enemies over <span class=\"item-number\">6</span> seconds.",
+            "description": "Casting Unbridled Rage now causes you to begin swinging your weapon around you dealing 152 + 30% AP Physical damage to up to 5 nearby enemies over 6 seconds."
+          }
+        ],
+        "connections": [
+          2277,
+          12277,
+          30374,
+          34313
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_warrior_paintrain",
+          "key": "spell_warrior_paintrain",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29514,
+        "name": "Storm of Steel",
+        "slug": "storm-of-steel",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800637,
+        "spell_ids": [
+          800637
+        ],
+        "description_html": "Begin striking your target every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">90</span><span class=\"item-number\">%</span> Weapon Damage for <span class=\"item-number\">3</span> seconds.",
+        "description": "Begin striking your target every 1 sec for 90% Weapon Damage for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800637,
+            "description_html": "Begin striking your target every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">90</span><span class=\"item-number\">%</span> Weapon Damage for <span class=\"item-number\">3</span> seconds.",
+            "description": "Begin striking your target every 1 sec for 90% Weapon Damage for 3 seconds."
+          }
+        ],
+        "connections": [
+          13958,
+          30374,
+          34274
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Warriorskill_21_Border",
+          "key": "custom_warriorskill_21_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9171,
+        "name": "Body Builder",
+        "slug": "body-builder",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 706481,
+        "spell_ids": [
+          706481
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your size by <span class=\"item-number\">7</span><span class=\"item-number\">%</span> and your melee attack power by <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of your Strength.",
+        "description": "Level 50 Passive\nIncreases your size by 7% and your melee attack power by 75% of your Strength.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706481,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your size by <span class=\"item-number\">7</span><span class=\"item-number\">%</span> and your melee attack power by <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of your Strength.",
+            "description": "Level 50 Passive\nIncreases your size by 7% and your melee attack power by 75% of your Strength."
+          }
+        ],
+        "connections": [
+          14171
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Strength",
+          "key": "spell_nature_strength",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30378,
+        "name": "Steelslinger",
+        "slug": "steelslinger",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804750,
+        "spell_ids": [
+          804750
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> by <span class=\"item-number\">-2</span> sec and increases its damage dealt by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">35%</span> health.",
+        "description": "Reduces the cooldown of Barbaric Whirl by -2 sec and increases its damage dealt by 100% on enemies below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804750,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> by <span class=\"item-number\">-2</span> sec and increases its damage dealt by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">35%</span> health.",
+            "description": "Reduces the cooldown of Barbaric Whirl by -2 sec and increases its damage dealt by 100% on enemies below 35% health."
+          }
+        ],
+        "connections": [
+          6706
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Bladestorm",
+          "key": "ability_warrior_bladestorm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6740,
+        "name": "Utter Devastation",
+        "slug": "utter-devastation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 3.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560910,
+        "spell_ids": [
+          560910
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Maximum Carnage</span> by <span class=\"item-number\">1</span> sec and it now grants <span style=\"color: #ffffff; display: inline\">Utter Devastation</span> for <span class=\"item-number\">6</span> seconds. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_endlessrage\" /><span class=\"name\">Utter Devastation</span></div><span class=\"desc\">Instantly removes all movement impairing effects, increases your movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and makes you immune to slows.<br /><br />Can be consumed by <span style=\"color: #ffffff; display: inline\">Decapitate</span> or <span style=\"color: #ffffff; display: inline\">Crush</span> to guarantee them to critically strike.</span></div>",
+        "description": "Increases the duration of Maximum Carnage by 1 sec and it now grants Utter Devastation for 6 seconds. Utter DevastationInstantly removes all movement impairing effects, increases your movement speed by 25%, and makes you immune to slows.\n\nCan be consumed by Decapitate or Crush to guarantee them to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560910,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Maximum Carnage</span> by <span class=\"item-number\">1</span> sec and it now grants <span style=\"color: #ffffff; display: inline\">Utter Devastation</span> for <span class=\"item-number\">6</span> seconds. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_warrior_endlessrage\" /><span class=\"name\">Utter Devastation</span></div><span class=\"desc\">Instantly removes all movement impairing effects, increases your movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and makes you immune to slows.<br /><br />Can be consumed by <span style=\"color: #ffffff; display: inline\">Decapitate</span> or <span style=\"color: #ffffff; display: inline\">Crush</span> to guarantee them to critically strike.</span></div>",
+            "description": "Increases the duration of Maximum Carnage by 1 sec and it now grants Utter Devastation for 6 seconds. Utter DevastationInstantly removes all movement impairing effects, increases your movement speed by 25%, and makes you immune to slows.\n\nCan be consumed by Decapitate or Crush to guarantee them to critically strike."
+          }
+        ],
+        "connections": [
+          6706
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_EndlessRage",
+          "key": "ability_warrior_endlessrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34314,
+        "name": "Steel Fury",
+        "slug": "steel-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 5.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704240,
+        "spell_ids": [
+          704240
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Storm of Steel</span> increases the damage of its subsequent strikes by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.<br /><br />In addition, the duration of <span style=\"color: #ffffff; display: inline\">Storm of Steel</span> is increased by <span class=\"item-number\">2.5</span> sec.",
+        "description": "Dealing damage with Storm of Steel increases the damage of its subsequent strikes by 4%, stacking 10 times.\n\nIn addition, the duration of Storm of Steel is increased by 2.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704240,
+            "description_html": "Dealing damage with <span style=\"color: #ffffff; display: inline\">Storm of Steel</span> increases the damage of its subsequent strikes by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.<br /><br />In addition, the duration of <span style=\"color: #ffffff; display: inline\">Storm of Steel</span> is increased by <span class=\"item-number\">2.5</span> sec.",
+            "description": "Dealing damage with Storm of Steel increases the damage of its subsequent strikes by 4%, stacking 10 times.\n\nIn addition, the duration of Storm of Steel is increased by 2.5 sec."
+          }
+        ],
+        "connections": [
+          29514
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Warbringer",
+          "key": "ability_warrior_warbringer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6741,
+        "name": "Sustaining Swings",
+        "slug": "sustaining-swings",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 31,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520539,
+        "spell_ids": [
+          520539
+        ],
+        "description_html": "Melee attacks now have an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to heal you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt and cause your next <span style=\"color: #FFFFFF; display: inline\">Ancestral Strike</span> to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage.",
+        "description": "Melee attacks now have an 8% chance to heal you for 10% of the damage dealt and cause your next Ancestral Strike to deal 50% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520539,
+            "description_html": "Melee attacks now have an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to heal you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt and cause your next <span style=\"color: #FFFFFF; display: inline\">Ancestral Strike</span> to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage.",
+            "description": "Melee attacks now have an 8% chance to heal you for 10% of the damage dealt and cause your next Ancestral Strike to deal 50% increased damage."
+          }
+        ],
+        "connections": [
+          29514
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Warriorskill_42_nobg_Border",
+          "key": "custom_warriorskill_42_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

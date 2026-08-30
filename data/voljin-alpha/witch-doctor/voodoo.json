@@ -1,0 +1,2254 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:31+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:43f0865a2b102810378367fa609bb1532b04737652c76f20518dfdd3ddf65f0f",
+    "talent_count": 159,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 13,
+    "name": "Witch Doctor",
+    "slug": "witch-doctor",
+    "class_file": "witchdoctor",
+    "color": "rgb(245, 0, 255)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:witchdoctor",
+      "key": "class-witchdoctor",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 47,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 34,
+    "name": "Voodoo",
+    "slug": "voodoo",
+    "sort_order": 1,
+    "class_id": 13,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31154,
+        "name": "Shadow Puppets",
+        "slug": "shadow-puppets",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4004,
+            29301
+          ]
+        },
+        "spell_id": 500015,
+        "spell_ids": [
+          500015
+        ],
+        "description_html": "Summon a <span style=\"color: #ffffff; display: inline\">Shadow Puppet</span> that collects a <span style=\"color: #ffffff; display: inline\">Spirit</span> and rushes towards your target, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">22% shadow SP</span> Shadow damage, repeating every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br />",
+        "description": "Summon a Shadow Puppet that collects a Spirit and rushes towards your target, dealing 25 + 22% shadow SP Shadow damage, repeating every 1 sec for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500015,
+            "description_html": "Summon a <span style=\"color: #ffffff; display: inline\">Shadow Puppet</span> that collects a <span style=\"color: #ffffff; display: inline\">Spirit</span> and rushes towards your target, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">22% shadow SP</span> Shadow damage, repeating every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br />",
+            "description": "Summon a Shadow Puppet that collects a Spirit and rushes towards your target, dealing 25 + 22% shadow SP Shadow damage, repeating every 1 sec for 3 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_45_voodoo_Border",
+          "key": "custom_45_voodoo_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4004,
+        "name": "Puppeteer's Threads",
+        "slug": "puppeteers-threads",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29301
+          ]
+        },
+        "spell_id": 92084,
+        "spell_ids": [
+          92084
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Damaging abilities now leave behind <span style=\"color: #FFFFFF; display: inline\">Puppeteer's Threads</span> on enemies for <span class=\"item-number\">10</span> seconds. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_archaeology_troll_voodoodoll\" /><span class=\"name\">Puppeteer’s Threads (Debuff)</span></div><span class=\"desc\">Damage taken from the Witch Doctor stores <span class=\"item-number\">15%</span> of its value. When the effect ends the damage stored is dealt instantly.</span></div>",
+        "description": "Level 10 Passive\nDamaging abilities now leave behind Puppeteer's Threads on enemies for 10 seconds. Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 15% of its value. When the effect ends the damage stored is dealt instantly.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92084,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Damaging abilities now leave behind <span style=\"color: #FFFFFF; display: inline\">Puppeteer's Threads</span> on enemies for <span class=\"item-number\">10</span> seconds. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_archaeology_troll_voodoodoll\" /><span class=\"name\">Puppeteer’s Threads (Debuff)</span></div><span class=\"desc\">Damage taken from the Witch Doctor stores <span class=\"item-number\">15%</span> of its value. When the effect ends the damage stored is dealt instantly.</span></div>",
+            "description": "Level 10 Passive\nDamaging abilities now leave behind Puppeteer's Threads on enemies for 10 seconds. Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 15% of its value. When the effect ends the damage stored is dealt instantly."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_troll_voodoodoll",
+          "key": "trade_archaeology_troll_voodoodoll",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 31345,
+        "name": "Loa Spirits",
+        "slug": "loa-spirits",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804620,
+        "spell_ids": [
+          804620,
+          807904
+        ],
+        "description_html": "Damage dealt and healing done now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to collect a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<br /><br />In addition, each active <span style=\"color: #ffffff; display: inline\">Spirit</span> now increases your Spirit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Damage dealt and healing done now has a 8% chance to collect a Spirit.\n\nIn addition, each active Spirit now increases your Spirit by 2%.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804620,
+            "description_html": "Damage dealt and healing done now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to collect a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<br /><br />In addition, each active <span style=\"color: #ffffff; display: inline\">Spirit</span> now increases your Spirit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Damage dealt and healing done now has a 8% chance to collect a Spirit.\n\nIn addition, each active Spirit now increases your Spirit by 2%.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807904,
+            "description_html": "Damage dealt and healing done now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to collect a <span style=\"color: #ffffff; display: inline\">Spirit</span>.<br /><br />In addition, each active <span style=\"color: #ffffff; display: inline\">Spirit</span> now increases your Spirit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Damage dealt and healing done now has a 15% chance to collect a Spirit.\n\nIn addition, each active Spirit now increases your Spirit by 4%.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          31154
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritualrage_Border",
+          "key": "nhi_spiritualrage_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31344,
+        "name": "Stranglethorn Style",
+        "slug": "stranglethorn-style",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705877,
+        "spell_ids": [
+          705877
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces threat generated by your Voodoo spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance by 4% and reduces threat generated by your Voodoo spells by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705877,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces threat generated by your Voodoo spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 4% and reduces threat generated by your Voodoo spells by -20%."
+          }
+        ],
+        "connections": [
+          31154
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_tanaanjungle",
+          "key": "achievement_zone_tanaanjungle",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29928,
+        "name": "Bad Juju",
+        "slug": "bad-juju",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802087,
+        "spell_ids": [
+          802087
+        ],
+        "description_html": "Hurl a bolt of dark magic at an enemy, dealing <span class=\"item-number\">191</span> + <span class=\"item-number\">100% SP</span> + <span class=\"item-number\">30% Spirit</span> Shadow damage.<br /><br />If the target is affected by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> it also reduces the target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Hurl a bolt of dark magic at an enemy, dealing 191 + 100% SP + 30% Spirit Shadow damage.\n\nIf the target is affected by Hex of Malice it also reduces the target's healing received by -20% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802087,
+            "description_html": "Hurl a bolt of dark magic at an enemy, dealing <span class=\"item-number\">191</span> + <span class=\"item-number\">100% SP</span> + <span class=\"item-number\">30% Spirit</span> Shadow damage.<br /><br />If the target is affected by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> it also reduces the target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Hurl a bolt of dark magic at an enemy, dealing 191 + 100% SP + 30% Spirit Shadow damage.\n\nIf the target is affected by Hex of Malice it also reduces the target's healing received by -20% for 8 seconds."
+          }
+        ],
+        "connections": [
+          31345
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill5_Border",
+          "key": "skill_icon_skill5_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31340,
+        "name": "Zalazane's Malice",
+        "slug": "zalazanes-malice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705902,
+        "spell_ids": [
+          705902
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and the duration of <span style=\"color: #ffffff; display: inline\">Jinxes</span> by <span class=\"item-number\">2</span> sec.",
+        "description": "Increases the damage of Hex of Malice by 15% and the duration of Jinxes by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705902,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and the duration of <span style=\"color: #ffffff; display: inline\">Jinxes</span> by <span class=\"item-number\">2</span> sec.",
+            "description": "Increases the damage of Hex of Malice by 15% and the duration of Jinxes by 2 sec."
+          }
+        ],
+        "connections": [
+          31344,
+          31345
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ImpPhaseShift",
+          "key": "spell_shadow_impphaseshift",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7157,
+        "name": "Hexfire",
+        "slug": "hexfire",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807042,
+        "spell_ids": [
+          807042
+        ],
+        "description_html": "Blast an enemy with hexfire, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5)</span> Fire damage, scaling with your Spirit.",
+        "description": "Blast an enemy with hexfire, dealing cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5) Fire damage, scaling with your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807042,
+            "description_html": "Blast an enemy with hexfire, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5)</span> Fire damage, scaling with your Spirit.",
+            "description": "Blast an enemy with hexfire, dealing cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5) Fire damage, scaling with your Spirit."
+          }
+        ],
+        "connections": [
+          31344
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_nightmarepuppet_Border",
+          "key": "nhi_nightmarepuppet_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4533,
+        "name": "Voodoo Power",
+        "slug": "voodoo-power",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 706482,
+        "spell_ids": [
+          706482
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Spirit and your spell hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Level 20 Passive\nIncreases your spell damage by 50% of your Spirit and your spell hit rating by 5% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706482,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Spirit and your spell hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Level 20 Passive\nIncreases your spell damage by 50% of your Spirit and your spell hit rating by 5% of your Spirit."
+          }
+        ],
+        "connections": [
+          4004
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_FaerieFire",
+          "key": "spell_nature_faeriefire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6058,
+        "name": "Dark Magic",
+        "slug": "dark-magic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705922,
+        "spell_ids": [
+          705922
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #FFFFFF; display: inline\">Bad Juju</span> by <span class=\"item-number\">-0.5</span> sec.",
+        "description": "Reduces the cast time of Malefic Wrath and Bad Juju by -0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705922,
+            "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #FFFFFF; display: inline\">Bad Juju</span> by <span class=\"item-number\">-0.5</span> sec.",
+            "description": "Reduces the cast time of Malefic Wrath and Bad Juju by -0.5 sec."
+          }
+        ],
+        "connections": [
+          29928,
+          31340
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_troll_tablet",
+          "key": "trade_archaeology_troll_tablet",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30973,
+        "name": "Staff of the Coven",
+        "slug": "staff-of-the-coven",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806563,
+        "spell_ids": [
+          806563,
+          807905,
+          807915
+        ],
+        "description_html": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Spirit by 8% and your hit chance by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806563,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 8% and your hit chance by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807905,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">16</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 16% and your hit chance by 4%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 807915,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 25% and your hit chance by 6%."
+          }
+        ],
+        "connections": [
+          7157,
+          31340
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_zandalarquest_b_02",
+          "key": "inv_staff_2h_zandalarquest_b_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6062,
+        "name": "Ritual Hexing",
+        "slug": "ritual-hexing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705840,
+        "spell_ids": [
+          705840,
+          705841
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bad Juju</span>, <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span>.",
+        "description": "Increases the damage of Bad Juju, Malefic Wrath and Hexfire by 10% against enemies affected by Hex of Malice.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705840,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bad Juju</span>, <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span>.",
+            "description": "Increases the damage of Bad Juju, Malefic Wrath and Hexfire by 10% against enemies affected by Hex of Malice."
+          },
+          {
+            "rank": 2,
+            "spell_id": 705841,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bad Juju</span>, <span style=\"color: #FFFFFF; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against enemies affected by <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span>.",
+            "description": "Increases the damage of Bad Juju, Malefic Wrath and Hexfire by 20% against enemies affected by Hex of Malice."
+          }
+        ],
+        "connections": [
+          29928
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SpellCasting_Shadow",
+          "key": "spellcasting_shadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30596,
+        "name": "Puppeteer's Grasp",
+        "slug": "puppeteers-grasp",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707209,
+        "spell_ids": [
+          707209
+        ],
+        "description_html": "Transform into a malignant spirit for <span class=\"item-number\">30</span> seconds, allowing you to cast <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> while moving, and periodically granting you a <span style=\"color: #ffffff; display: inline\">Spirit</span> every <span class=\"item-number\">2</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Transform into a malignant spirit for 30 seconds, allowing you to cast Malefic Wrath and Bad Juju while moving, and periodically granting you a Spirit every 2 sec.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707209,
+            "description_html": "Transform into a malignant spirit for <span class=\"item-number\">30</span> seconds, allowing you to cast <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span> and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> while moving, and periodically granting you a <span style=\"color: #ffffff; display: inline\">Spirit</span> every <span class=\"item-number\">2</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Transform into a malignant spirit for 30 seconds, allowing you to cast Malefic Wrath and Bad Juju while moving, and periodically granting you a Spirit every 2 sec.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          6058,
+          30973
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_unholyspirit_Border",
+          "key": "nhi_unholyspirit_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6046,
+        "name": "Jin'do's Wrath",
+        "slug": "jindos-wrath",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707505,
+        "spell_ids": [
+          707505
+        ],
+        "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance and critical damage of Hexfire by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707505,
+            "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Hexfire</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance and critical damage of Hexfire by 25%."
+          }
+        ],
+        "connections": [
+          7157
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Troll_01",
+          "key": "troll_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4532,
+        "name": "Overflowing Juju",
+        "slug": "overflowing-juju",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 705844,
+        "spell_ids": [
+          705844
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> and <span style=\"color: #FFFFFF; display: inline\">Puppeteer's Threads</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and cause your next cast to incur an <span class=\"item-number\">-10</span> sec reduced cooldown.",
+        "description": "Level 30 Passive\nDamage dealt by your Shadow Puppets and Puppeteer's Threads now has a 15% chance to reset the cooldown of Bad Juju and cause your next cast to incur an -10 sec reduced cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705844,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> and <span style=\"color: #FFFFFF; display: inline\">Puppeteer's Threads</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and cause your next cast to incur an <span class=\"item-number\">-10</span> sec reduced cooldown.",
+            "description": "Level 30 Passive\nDamage dealt by your Shadow Puppets and Puppeteer's Threads now has a 15% chance to reset the cooldown of Bad Juju and cause your next cast to incur an -10 sec reduced cooldown."
+          }
+        ],
+        "connections": [
+          4533
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_BannishKT_Purple",
+          "key": "bannishkt_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 31343,
+        "name": "Overflowing Juju",
+        "slug": "overflowing-juju",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707405,
+        "spell_ids": [
+          707405
+        ],
+        "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span>, <span style=\"color: #ffffff; display: inline\">Shadowflare</span>, and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell power scaling of Malefic Wrath, Shadowflare, and Bad Juju by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707405,
+            "description_html": "Increases the spell power scaling of <span style=\"color: #ffffff; display: inline\">Malefic Wrath</span>, <span style=\"color: #ffffff; display: inline\">Shadowflare</span>, and <span style=\"color: #ffffff; display: inline\">Bad Juju</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell power scaling of Malefic Wrath, Shadowflare, and Bad Juju by 20%."
+          }
+        ],
+        "connections": [
+          6062
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Rejuvenation",
+          "key": "spell_nature_rejuvenation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31348,
+        "name": "Growing Malice",
+        "slug": "growing-malice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706551,
+        "spell_ids": [
+          706551
+        ],
+        "description_html": "Each tick of <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> increases the damage of the next tick on the enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Each tick of Hex of Malice increases the damage of the next tick on the enemy by 3%, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706551,
+            "description_html": "Each tick of <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> increases the damage of the next tick on the enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Each tick of Hex of Malice increases the damage of the next tick on the enemy by 3%, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6062,
+          30596
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_skullofhate_Border",
+          "key": "nhi_skullofhate_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6007,
+        "name": "Beware Da Voodoo",
+        "slug": "beware-da-voodoo",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707168,
+        "spell_ids": [
+          707168,
+          707857
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Mimic Ward</span> and <span style=\"color: #ffffff; display: inline\">Spirits</span> by <span class=\"item-number\">4</span> sec.",
+        "description": "Increases the duration of Mimic Ward and Spirits by 4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707168,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Mimic Ward</span> and <span style=\"color: #ffffff; display: inline\">Spirits</span> by <span class=\"item-number\">4</span> sec.",
+            "description": "Increases the duration of Mimic Ward and Spirits by 4 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707857,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Mimic Ward</span> and <span style=\"color: #ffffff; display: inline\">Spirits</span> by <span class=\"item-number\">8</span> sec.",
+            "description": "Increases the duration of Mimic Ward and Spirits by 8 sec."
+          }
+        ],
+        "connections": [
+          6046,
+          30596
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_ZG_Hexxer",
+          "key": "achievement_zg_hexxer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31347,
+        "name": "Hexplosion",
+        "slug": "hexplosion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704495,
+        "spell_ids": [
+          704495
+        ],
+        "description_html": "Your offensive critical strikes now increase your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.",
+        "description": "Your offensive critical strikes now increase your haste by 20% for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704495,
+            "description_html": "Your offensive critical strikes now increase your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.",
+            "description": "Your offensive critical strikes now increase your haste by 20% for 6 seconds."
+          }
+        ],
+        "connections": [
+          6046
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_ShamanTotam_Wind",
+          "key": "shamantotam_wind",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31350,
+        "name": "Voodoo Strings",
+        "slug": "voodoo-strings",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705910,
+        "spell_ids": [
+          705910
+        ],
+        "description_html": "When <span style=\"color: #ffffff; display: inline\">Bad Juju</span> is used on enemies affected by <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span>, it strikes an additional time every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds as Nature damage.",
+        "description": "When Bad Juju is used on enemies affected by Puppeteer's Threads, it strikes an additional time every 1 sec for 30% of the damage dealt over 3 seconds as Nature damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705910,
+            "description_html": "When <span style=\"color: #ffffff; display: inline\">Bad Juju</span> is used on enemies affected by <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span>, it strikes an additional time every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds as Nature damage.",
+            "description": "When Bad Juju is used on enemies affected by Puppeteer's Threads, it strikes an additional time every 1 sec for 30% of the damage dealt over 3 seconds as Nature damage."
+          }
+        ],
+        "connections": [
+          31343
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Thread_01",
+          "key": "inv_misc_thread_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6644,
+        "name": "Malignant",
+        "slug": "malignant",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704503,
+        "spell_ids": [
+          704503
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and <span style=\"color: #FFFFFF; display: inline\">Hexfire</span> now spreads <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> to up to <span class=\"item-number\">1</span> nearby enemy.",
+        "description": "Damage dealt by Bad Juju and Hexfire now spreads Hex of Malice to up to 1 nearby enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704503,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and <span style=\"color: #FFFFFF; display: inline\">Hexfire</span> now spreads <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> to up to <span class=\"item-number\">1</span> nearby enemy.",
+            "description": "Damage dealt by Bad Juju and Hexfire now spreads Hex of Malice to up to 1 nearby enemy."
+          }
+        ],
+        "connections": [
+          31348
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_archaeology_80_zandalari_sanguinetotem",
+          "key": "inv_archaeology_80_zandalari_sanguinetotem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6059,
+        "name": "Voodoo Mind",
+        "slug": "voodoo-mind",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504462,
+        "spell_ids": [
+          504462
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> now ticks <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> faster and lasts <span class=\"item-number\">10</span><span class=\"item-number\">%</span> longer for each <span style=\"color: #ffffff; display: inline\">Spirit</span> active on you.",
+        "description": "Shadow Puppets now ticks -10% faster and lasts 10% longer for each Spirit active on you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504462,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> now ticks <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> faster and lasts <span class=\"item-number\">10</span><span class=\"item-number\">%</span> longer for each <span style=\"color: #ffffff; display: inline\">Spirit</span> active on you.",
+            "description": "Shadow Puppets now ticks -10% faster and lasts 10% longer for each Spirit active on you."
+          }
+        ],
+        "connections": [
+          6007,
+          31348
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_QirajIdol_Death",
+          "key": "inv_qirajidol_death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6045,
+        "name": "Hollow Spirit",
+        "slug": "hollow-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705917,
+        "spell_ids": [
+          705917
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Shadowflare</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> now increases the chance enemies are critically struck by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+        "description": "Damage dealt by Shadowflare and Hexfire now increases the chance enemies are critically struck by 3% for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705917,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Shadowflare</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> now increases the chance enemies are critically struck by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+            "description": "Damage dealt by Shadowflare and Hexfire now increases the chance enemies are critically struck by 3% for 12 seconds."
+          }
+        ],
+        "connections": [
+          6007
+        ],
+        "choice_group": 705917,
+        "icon": {
+          "source_path": "Interface\\Icons\\_InstableAffliction_Purple",
+          "key": "instableaffliction_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31341,
+        "name": "It's Da Voodoo",
+        "slug": "its-da-voodoo",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560278,
+        "spell_ids": [
+          560278
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowflare</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Shadowflare by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560278,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowflare</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Shadowflare by 25%."
+          }
+        ],
+        "connections": [
+          6007
+        ],
+        "choice_group": 705917,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Regenerate",
+          "key": "spell_nature_regenerate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5333,
+        "name": "Voodoo Spirits",
+        "slug": "voodoo-spirits",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704511,
+        "spell_ids": [
+          704511
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Hexfire</span> now snaps your <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span> on your target, unleashing its damage on them instantly and collecting one <span style=\"color: #FFFFFF; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Hexfire now snaps your Puppeteer's Threads on your target, unleashing its damage on them instantly and collecting one Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704511,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Hexfire</span> now snaps your <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span> on your target, unleashing its damage on them instantly and collecting one <span style=\"color: #FFFFFF; display: inline\">Spirit</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_shadow\" /><span class=\"name\">Spirit</span></div><span class=\"desc\">Regenerates <span class=\"item-number\">7</span> health and mana, repeating every <span class=\"item-number\">4</span> sec for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Hexfire now snaps your Puppeteer's Threads on your target, unleashing its damage on them instantly and collecting one Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          31347
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_jadeserpent_2",
+          "key": "achievement_jadeserpent_2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11532,
+        "name": "Juju Spirits",
+        "slug": "juju-spirits",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 807296,
+        "spell_ids": [
+          807296
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell critical damage by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Bad Juju</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each active <span style=\"color: #FFFFFF; display: inline\">Spirit</span> on you.",
+        "description": "Level 40 Passive\nIncreases your spell critical damage by 100% and increases the critical strike chance of Bad Juju by 5% for each active Spirit on you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807296,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell critical damage by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Bad Juju</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each active <span style=\"color: #FFFFFF; display: inline\">Spirit</span> on you.",
+            "description": "Level 40 Passive\nIncreases your spell critical damage by 100% and increases the critical strike chance of Bad Juju by 5% for each active Spirit on you."
+          }
+        ],
+        "connections": [
+          4532
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_BloodLust",
+          "key": "spell_nature_bloodlust",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6053,
+        "name": "Voodoo Unleashed",
+        "slug": "voodoo-unleashed",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705901,
+        "spell_ids": [
+          705901
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Mimic Wards</span> now also cast <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and casting <span style=\"color: #ffffff; display: inline\">Bad Juju</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> by <span class=\"item-number\">-3</span> sec.",
+        "description": "Your Mimic Wards now also cast Bad Juju and casting Bad Juju now reduces the cooldown of Shadow Puppets by -3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705901,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Mimic Wards</span> now also cast <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and casting <span style=\"color: #ffffff; display: inline\">Bad Juju</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> by <span class=\"item-number\">-3</span> sec.",
+            "description": "Your Mimic Wards now also cast Bad Juju and casting Bad Juju now reduces the cooldown of Shadow Puppets by -3 sec."
+          }
+        ],
+        "connections": [
+          31350,
+          31343
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_clonesnobg_Border",
+          "key": "_5_clonesnobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30889,
+        "name": "Prolonged Malice",
+        "slug": "prolonged-malice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704505,
+        "spell_ids": [
+          704505
+        ],
+        "description_html": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> by <span class=\"item-number\">6</span> sec and the range of your offensive Voodoo spells by <span class=\"item-number\">6</span> yds.",
+        "description": "Increases the duration of your Hex of Malice by 6 sec and the range of your offensive Voodoo spells by 6 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704505,
+            "description_html": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Hex of Malice</span> by <span class=\"item-number\">6</span> sec and the range of your offensive Voodoo spells by <span class=\"item-number\">6</span> yds.",
+            "description": "Increases the duration of your Hex of Malice by 6 sec and the range of your offensive Voodoo spells by 6 yds."
+          }
+        ],
+        "connections": [
+          6644,
+          31343
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+          "key": "spell_shadow_chilltouch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29121,
+        "name": "Malignant Jinx",
+        "slug": "malignant-jinx",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803678,
+        "spell_ids": [
+          803678
+        ],
+        "description_html": "Curse an enemy for <span class=\"item-number\">8</span> seconds, causing their next spell cast to silence them for <span class=\"item-number\">5</span> sec.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Jinx</span> active on a target at a time.",
+        "description": "Curse an enemy for 8 seconds, causing their next spell cast to silence them for 5 sec.\n\nCan only have 1 Jinx active on a target at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803678,
+            "description_html": "Curse an enemy for <span class=\"item-number\">8</span> seconds, causing their next spell cast to silence them for <span class=\"item-number\">5</span> sec.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Jinx</span> active on a target at a time.",
+            "description": "Curse an enemy for 8 seconds, causing their next spell cast to silence them for 5 sec.\n\nCan only have 1 Jinx active on a target at a time."
+          }
+        ],
+        "connections": [
+          6045,
+          6059,
+          6644,
+          31341
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_FingerOfDeath",
+          "key": "spell_shadow_fingerofdeath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31349,
+        "name": "War Golem",
+        "slug": "war-golem",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800330,
+        "spell_ids": [
+          800330
+        ],
+        "description_html": "Summon a <span style=\"color: #ffffff; display: inline\">War Golem</span> for <span class=\"item-number\">10</span> seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself.",
+        "description": "Summon a War Golem for 10 seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800330,
+            "description_html": "Summon a <span style=\"color: #ffffff; display: inline\">War Golem</span> for <span class=\"item-number\">10</span> seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself.",
+            "description": "Summon a War Golem for 10 seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself."
+          }
+        ],
+        "connections": [
+          6045,
+          31341,
+          31347
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_archaeology_trollgolem",
+          "key": "inv_misc_archaeology_trollgolem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5332,
+        "name": "Dark Loa's Blessing",
+        "slug": "dark-loas-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560545,
+        "spell_ids": [
+          560545
+        ],
+        "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Shadow Puppets</span> now deals damage <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster.",
+        "description": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, your Shadow Puppets now deals damage -20% faster.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560545,
+            "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Shadow Puppets</span> now deals damage <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> faster.",
+            "description": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, your Shadow Puppets now deals damage -20% faster."
+          }
+        ],
+        "connections": [
+          5333,
+          31347
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_wardoftheloashadow",
+          "key": "ability_racial_wardoftheloashadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29768,
+        "name": "Voice of Bwonsamdi",
+        "slug": "voice-of-bwonsamdi",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801716,
+        "spell_ids": [
+          801716
+        ],
+        "description_html": "Let the spirit of Bwonsamdi possess you for <span class=\"item-number\">20</span> seconds.<br /><br />Dealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for <span class=\"item-number\">162</span> + <span class=\"item-number\">25% shadow SP</span> Shadow damage.",
+        "description": "Let the spirit of Bwonsamdi possess you for 20 seconds.\n\nDealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for 162 + 25% shadow SP Shadow damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801716,
+            "description_html": "Let the spirit of Bwonsamdi possess you for <span class=\"item-number\">20</span> seconds.<br /><br />Dealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for <span class=\"item-number\">162</span> + <span class=\"item-number\">25% shadow SP</span> Shadow damage.",
+            "description": "Let the spirit of Bwonsamdi possess you for 20 seconds.\n\nDealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for 162 + 25% shadow SP Shadow damage."
+          }
+        ],
+        "connections": [
+          6053,
+          30889
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_embraceoftheloa_bwonsomdi",
+          "key": "ability_racial_embraceoftheloa_bwonsomdi",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7100,
+        "name": "Dark Effigy",
+        "slug": "dark-effigy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707331,
+        "spell_ids": [
+          707331
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> now strike <span class=\"item-number\">2</span> additional nearby enemies.<br /><br /><span style=\"color: #ffffff; display: inline\">Shadowflare</span> now deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_archaeology_troll_voodoodoll\" /><span class=\"name\">Puppeteer’s Threads (Debuff)</span></div><span class=\"desc\">Damage taken from the Witch Doctor stores <span class=\"item-number\">15%</span> of its value. When the effect ends the damage stored is dealt instantly.</span></div>",
+        "description": "Your Bad Juju and Hexfire now strike 2 additional nearby enemies.\n\nShadowflare now deals 50% increased damage to enemies affected by Puppeteer's Threads.Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 15% of its value. When the effect ends the damage stored is dealt instantly.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707331,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Bad Juju</span> and <span style=\"color: #ffffff; display: inline\">Hexfire</span> now strike <span class=\"item-number\">2</span> additional nearby enemies.<br /><br /><span style=\"color: #ffffff; display: inline\">Shadowflare</span> now deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage to enemies affected by <span style=\"color: #ffffff; display: inline\">Puppeteer's Threads</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_archaeology_troll_voodoodoll\" /><span class=\"name\">Puppeteer’s Threads (Debuff)</span></div><span class=\"desc\">Damage taken from the Witch Doctor stores <span class=\"item-number\">15%</span> of its value. When the effect ends the damage stored is dealt instantly.</span></div>",
+            "description": "Your Bad Juju and Hexfire now strike 2 additional nearby enemies.\n\nShadowflare now deals 50% increased damage to enemies affected by Puppeteer's Threads.Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 15% of its value. When the effect ends the damage stored is dealt instantly."
+          }
+        ],
+        "connections": [
+          29121,
+          30889,
+          31349
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv__faction_zandalariempire",
+          "key": "inv__faction_zandalariempire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6055,
+        "name": "Soul Marionette",
+        "slug": "soul-marionette",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704497,
+        "spell_ids": [
+          704497
+        ],
+        "description_html": "$59",
+        "description": "$59",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704497,
+            "description_html": "$5a",
+            "description": "$5a"
+          }
+        ],
+        "connections": [
+          5332,
+          31349
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3bigbadvoodoo",
+          "key": "d3bigbadvoodoo",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11133,
+        "name": "Hexfire Adept",
+        "slug": "hexfire-adept",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 704500,
+        "spell_ids": [
+          704500
+        ],
+        "description_html": "$57",
+        "description": "$57",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704500,
+            "description_html": "$58",
+            "description": "$58"
+          }
+        ],
+        "connections": [
+          11532
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_corruptionfire_Border",
+          "key": "nhi_corruptionfire_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6057,
+        "name": "The Price of Power",
+        "slug": "the-price-of-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705916,
+        "spell_ids": [
+          705916
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Voice of Bwonsamdi</span> now increases your Spirit by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Voice of Bwonsamdi now increases your Spirit by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705916,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Voice of Bwonsamdi</span> now increases your Spirit by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Voice of Bwonsamdi now increases your Spirit by 100%."
+          }
+        ],
+        "connections": [
+          29768
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_ManaBurn_Shadow",
+          "key": "manaburn_shadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31346,
+        "name": "De Other Side",
+        "slug": "de-other-side",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802092,
+        "spell_ids": [
+          802092
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> now increases your damage and critical strike chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Additional procs do not refresh the duration.",
+        "description": "Damage dealt by Shadow Puppets now increases your damage and critical strike chance by 1% for 20 seconds, stacking up to 10 times.\n\nAdditional procs do not refresh the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802092,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> now increases your damage and critical strike chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Additional procs do not refresh the duration.",
+            "description": "Damage dealt by Shadow Puppets now increases your damage and critical strike chance by 1% for 20 seconds, stacking up to 10 times.\n\nAdditional procs do not refresh the duration."
+          }
+        ],
+        "connections": [
+          6055,
+          7100,
+          29768
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_05",
+          "key": "inv_sword_2h_artifactsoulrend_d_05",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29929,
+        "name": "Malicious Golems",
+        "slug": "malicious-golems",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 13,
+        "tree_id": 34,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705912,
+        "spell_ids": [
+          705912
+        ],
+        "description_html": "Summoning your <span style=\"color: #ffffff; display: inline\">War Golem</span> now increases your spell haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />In addition, periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> will reduce the cooldown of <span style=\"color: #ffffff; display: inline\">War Golem</span> by <span class=\"item-number\">-0.5</span> sec.",
+        "description": "Summoning your War Golem now increases your spell haste by 30% for 20 seconds.\n\nIn addition, periodic damage dealt by Hex of Malice and damage dealt by Shadow Puppets will reduce the cooldown of War Golem by -0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705912,
+            "description_html": "Summoning your <span style=\"color: #ffffff; display: inline\">War Golem</span> now increases your spell haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />In addition, periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Hex of Malice</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Shadow Puppets</span> will reduce the cooldown of <span style=\"color: #ffffff; display: inline\">War Golem</span> by <span class=\"item-number\">-0.5</span> sec.",
+            "description": "Summoning your War Golem now increases your spell haste by 30% for 20 seconds.\n\nIn addition, periodic damage dealt by Hex of Malice and damage dealt by Shadow Puppets will reduce the cooldown of War Golem by -0.5 sec."
+          }
+        ],
+        "connections": [
+          6055
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Dungeon_Gundrak_Heroic",
+          "key": "achievement_dungeon_gundrak_heroic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

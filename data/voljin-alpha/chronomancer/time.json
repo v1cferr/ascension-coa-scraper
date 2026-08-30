@@ -1,0 +1,2352 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:18+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:5416c67805602ec0ae3b7ed1bed60e9a3ba5a969f5d583c1b95ce707a99c914f",
+    "talent_count": 157,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 22,
+    "name": "Chronomancer",
+    "slug": "chronomancer",
+    "class_file": "chronomancer",
+    "color": "rgb(255, 237, 74)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:chronomancer",
+      "key": "class-chronomancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 29,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 58,
+    "name": "Time",
+    "slug": "time",
+    "sort_order": 2,
+    "class_id": 22,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31182,
+        "name": "Ripple",
+        "slug": "ripple",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4032,
+            30277
+          ]
+        },
+        "spell_id": 806296,
+        "spell_ids": [
+          806296
+        ],
+        "description_html": "Channel for up to <span class=\"item-number\">5</span> seconds. When the channel ends, if you channeled for at least <span class=\"item-number\">1.5</span> sec, allies within <span class=\"item-number\">40</span> yds are healed based on the duration of the channel.<br /><br />While channeling, you are immune to stun effects.",
+        "description": "Channel for up to 5 seconds. When the channel ends, if you channeled for at least 1.5 sec, allies within 40 yds are healed based on the duration of the channel.\n\nWhile channeling, you are immune to stun effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806296,
+            "description_html": "Channel for up to <span class=\"item-number\">5</span> seconds. When the channel ends, if you channeled for at least <span class=\"item-number\">1.5</span> sec, allies within <span class=\"item-number\">40</span> yds are healed based on the duration of the channel.<br /><br />While channeling, you are immune to stun effects.",
+            "description": "Channel for up to 5 seconds. When the channel ends, if you channeled for at least 1.5 sec, allies within 40 yds are healed based on the duration of the channel.\n\nWhile channeling, you are immune to stun effects."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_nazmirraid_d_01",
+          "key": "inv_staff_2h_nazmirraid_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4032,
+        "name": "Aeon of Resilience",
+        "slug": "aeon-of-resilience",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            30277
+          ]
+        },
+        "spell_id": 92119,
+        "spell_ids": [
+          92119
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Teaches you <span style=\"color: #ffffff; display: inline\">Aeon of Resilience</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_trinket_80_kultiras02a\" /><span class=\"name\">Aeon of Resilience</span></div><span class=\"desc\">Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s cast time by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and it's mana cost by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> causes an active <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> on the target to bounce to another nearby ally.<br /><br /></span></div>",
+        "description": "Level 10 Passive\nTeaches you Aeon of Resilience.Aeon of ResilienceReduces Epoch's cast time by -25% and it's mana cost by -25%, and Epoch causes an active Accelerated Recovery on the target to bounce to another nearby ally.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92119,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Teaches you <span style=\"color: #ffffff; display: inline\">Aeon of Resilience</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_trinket_80_kultiras02a\" /><span class=\"name\">Aeon of Resilience</span></div><span class=\"desc\">Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s cast time by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and it's mana cost by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> causes an active <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> on the target to bounce to another nearby ally.<br /><br /></span></div>",
+            "description": "Level 10 Passive\nTeaches you Aeon of Resilience.Aeon of ResilienceReduces Epoch's cast time by -25% and it's mana cost by -25%, and Epoch causes an active Accelerated Recovery on the target to bounce to another nearby ally."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_80_kultiras02a",
+          "key": "inv_trinket_80_kultiras02a",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 19979,
+        "name": "Sands of Life",
+        "slug": "sands-of-life",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560383,
+        "spell_ids": [
+          560383,
+          560283
+        ],
+        "description_html": "Increases your healing power by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Increases your healing power by 25% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560383,
+            "description_html": "Increases your healing power by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Increases your healing power by 25% of your Spirit."
+          },
+          {
+            "rank": 2,
+            "spell_id": 560283,
+            "description_html": "Increases your healing power by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Increases your healing power by 50% of your Spirit."
+          }
+        ],
+        "connections": [
+          31182
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_quicksand",
+          "key": "spell_quicksand",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6700,
+        "name": "Endless Sands",
+        "slug": "endless-sands",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806338,
+        "spell_ids": [
+          806338
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now grants you <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Casting Epoch now grants you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806338,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now grants you <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Casting Epoch now grants you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times."
+          }
+        ],
+        "connections": [
+          31182
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_enchant_dustspirit",
+          "key": "inv_enchant_dustspirit",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19980,
+        "name": "Correct the Mistake",
+        "slug": "correct-the-mistake",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572352,
+        "spell_ids": [
+          572352
+        ],
+        "description_html": "Retell the fate of party members within <span class=\"item-number\">30</span> yds, healing them for <span class=\"item-number\">73</span> + <span class=\"item-number\">33.6% healing</span>.",
+        "description": "Retell the fate of party members within 30 yds, healing them for 73 + 33.6% healing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572352,
+            "description_html": "Retell the fate of party members within <span class=\"item-number\">30</span> yds, healing them for <span class=\"item-number\">73</span> + <span class=\"item-number\">33.6% healing</span>.",
+            "description": "Retell the fate of party members within 30 yds, healing them for 73 + 33.6% healing."
+          }
+        ],
+        "connections": [
+          6700,
+          19979
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_heal_Border",
+          "key": "_5_heal_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9177,
+        "name": "Aeon of Protection",
+        "slug": "aeon-of-protection",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 15,
+          "talent_ids": []
+        },
+        "spell_id": 806292,
+        "spell_ids": [
+          806292
+        ],
+        "description_html": "Increases <span style=\"color: #ffffff; display: inline\">Epoch</span>'s cast time by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, healing done by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> now applies a damage absorption shield equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the amount healed for <span class=\"item-number\">8</span> seconds.<br /><br />",
+        "description": "Increases Epoch's cast time by 25%, healing done by 25%, and Epoch now applies a damage absorption shield equal to 50% of the amount healed for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806292,
+            "description_html": "Increases <span style=\"color: #ffffff; display: inline\">Epoch</span>'s cast time by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, healing done by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> now applies a damage absorption shield equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the amount healed for <span class=\"item-number\">8</span> seconds.<br /><br />",
+            "description": "Increases Epoch's cast time by 25%, healing done by 25%, and Epoch now applies a damage absorption shield equal to 50% of the amount healed for 8 seconds."
+          }
+        ],
+        "connections": [
+          4032
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_80_kultiras02d",
+          "key": "inv_trinket_80_kultiras02d",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6183,
+        "name": "Time Wizard",
+        "slug": "time-wizard",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706779,
+        "spell_ids": [
+          706779,
+          707829
+        ],
+        "description_html": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Reverse Wound</span>, <span style=\"color: #FFFFFF; display: inline\">Epoch</span>, and <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of your Reverse Wound, Epoch, and Correct the Mistake by 8%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706779,
+            "description_html": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Reverse Wound</span>, <span style=\"color: #FFFFFF; display: inline\">Epoch</span>, and <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of your Reverse Wound, Epoch, and Correct the Mistake by 8%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707829,
+            "description_html": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Reverse Wound</span>, <span style=\"color: #FFFFFF; display: inline\">Epoch</span>, and <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of your Reverse Wound, Epoch, and Correct the Mistake by 15%."
+          }
+        ],
+        "connections": [
+          19980
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_FlashHeal",
+          "key": "spell_holy_flashheal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6190,
+        "name": "Keep Accelerating",
+        "slug": "keep-accelerating",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520042,
+        "spell_ids": [
+          520042
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> now also applies to a nearby target.",
+        "description": "Your Accelerated Recovery now also applies to a nearby target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520042,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> now also applies to a nearby target.",
+            "description": "Your Accelerated Recovery now also applies to a nearby target."
+          }
+        ],
+        "connections": [
+          19980
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\paladin_icon_speedoflight",
+          "key": "paladin_icon_speedoflight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6187,
+        "name": "Time Beacon",
+        "slug": "time-beacon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 574310,
+        "spell_ids": [
+          574310,
+          574362
+        ],
+        "description_html": "Increases the duration of effects applied by your <span style=\"color: #FFFFFF; display: inline\">Aeons</span> by <span class=\"item-number\">4</span> sec.",
+        "description": "Increases the duration of effects applied by your Aeons by 4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574310,
+            "description_html": "Increases the duration of effects applied by your <span style=\"color: #FFFFFF; display: inline\">Aeons</span> by <span class=\"item-number\">4</span> sec.",
+            "description": "Increases the duration of effects applied by your Aeons by 4 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 574362,
+            "description_html": "Increases the duration of effects applied by your <span style=\"color: #FFFFFF; display: inline\">Aeons</span> by <span class=\"item-number\">8</span> sec.",
+            "description": "Increases the duration of effects applied by your Aeons by 8 sec."
+          }
+        ],
+        "connections": [
+          19980
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyWhirlpool_Border",
+          "key": "custom_t_nhance_rpg_icons_holywhirlpool_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29681,
+        "name": "Cadence of Time",
+        "slug": "cadence-of-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560397,
+        "spell_ids": [
+          560397
+        ],
+        "description_html": "Your critical strikes with <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now grant <span style=\"color: #FFFFFF; display: inline\">Cadence of Time</span>, increasing the healing of <span style=\"color: #FFFFFF; display: inline\">Ripple</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.",
+        "description": "Your critical strikes with Epoch now grant Cadence of Time, increasing the healing of Ripple by 10% for 15 seconds. Stacks 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560397,
+            "description_html": "Your critical strikes with <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now grant <span style=\"color: #FFFFFF; display: inline\">Cadence of Time</span>, increasing the healing of <span style=\"color: #FFFFFF; display: inline\">Ripple</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.",
+            "description": "Your critical strikes with Epoch now grant Cadence of Time, increasing the healing of Ripple by 10% for 15 seconds. Stacks 5 times."
+          }
+        ],
+        "connections": [
+          6183
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_timeismoney",
+          "key": "ability_racial_timeismoney",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6699,
+        "name": "Carbon Dating",
+        "slug": "carbon-dating",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706102,
+        "spell_ids": [
+          706102
+        ],
+        "description_html": "Each stack of <span style=\"color: #ffffff; display: inline\">Sands of Time</span> now also increases the healing of your <span style=\"color: #ffffff; display: inline\">Epoch</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Each stack of Sands of Time now also increases the healing of your Epoch by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706102,
+            "description_html": "Each stack of <span style=\"color: #ffffff; display: inline\">Sands of Time</span> now also increases the healing of your <span style=\"color: #ffffff; display: inline\">Epoch</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Each stack of Sands of Time now also increases the healing of your Epoch by 10%."
+          }
+        ],
+        "connections": [
+          6190
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology",
+          "key": "trade_archaeology",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6196,
+        "name": "Timeless",
+        "slug": "timeless",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706131,
+        "spell_ids": [
+          706131
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Endless Sands</span> is active, the mana costs of your spells and abilities is reduced by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> per stack.",
+        "description": "While Endless Sands is active, the mana costs of your spells and abilities is reduced by -3% per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706131,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Endless Sands</span> is active, the mana costs of your spells and abilities is reduced by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> per stack.",
+            "description": "While Endless Sands is active, the mana costs of your spells and abilities is reduced by -3% per stack."
+          }
+        ],
+        "connections": [
+          6190
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_mentalquickness",
+          "key": "spell_nature_mentalquickness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19978,
+        "name": "Fabric of Time",
+        "slug": "fabric-of-time",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806299,
+        "spell_ids": [
+          806299
+        ],
+        "description_html": "Alter the fabric of time, healing an ally for <span class=\"item-number\">302</span> + <span class=\"item-number\">68% healing</span>.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Aeon</span> used within <span class=\"item-number\">8</span> seconds will trigger with no cooldown or cost.",
+        "description": "Alter the fabric of time, healing an ally for 302 + 68% healing.\n\nYour next Aeon used within 8 seconds will trigger with no cooldown or cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806299,
+            "description_html": "Alter the fabric of time, healing an ally for <span class=\"item-number\">302</span> + <span class=\"item-number\">68% healing</span>.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Aeon</span> used within <span class=\"item-number\">8</span> seconds will trigger with no cooldown or cost.",
+            "description": "Alter the fabric of time, healing an ally for 302 + 68% healing.\n\nYour next Aeon used within 8 seconds will trigger with no cooldown or cost."
+          }
+        ],
+        "connections": [
+          6187
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_monk_diffusemagic",
+          "key": "spell_monk_diffusemagic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9181,
+        "name": "Aeon of Renewal",
+        "slug": "aeon-of-renewal",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 806290,
+        "spell_ids": [
+          806290
+        ],
+        "description_html": "Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s healing by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, increases its critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> now heals for an additional <span class=\"item-number\">75%</span> of the amount healed over <span class=\"item-number\">3</span> seconds.<br /><br />",
+        "description": "Reduces Epoch's healing by -25%, increases its critical strike chance by 25%, and Epoch now heals for an additional 75% of the amount healed over 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806290,
+            "description_html": "Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s healing by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, increases its critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> now heals for an additional <span class=\"item-number\">75%</span> of the amount healed over <span class=\"item-number\">3</span> seconds.<br /><br />",
+            "description": "Reduces Epoch's healing by -25%, increases its critical strike chance by 25%, and Epoch now heals for an additional 75% of the amount healed over 3 seconds."
+          }
+        ],
+        "connections": [
+          9177
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_80_kultiras02b",
+          "key": "inv_trinket_80_kultiras02b",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30901,
+        "name": "A Ripple In Time",
+        "slug": "a-ripple-in-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706096,
+        "spell_ids": [
+          706096
+        ],
+        "description_html": "Your damaging and healing critical strikes now reduce the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Ripple</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Your damaging and healing critical strikes now reduce the remaining cooldown of Ripple by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706096,
+            "description_html": "Your damaging and healing critical strikes now reduce the remaining cooldown of <span style=\"color: #ffffff; display: inline\">Ripple</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Your damaging and healing critical strikes now reduce the remaining cooldown of Ripple by -1 sec."
+          }
+        ],
+        "connections": [
+          29681
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Paladin_RighteousVengeance",
+          "key": "ability_paladin_righteousvengeance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30903,
+        "name": "Ideal Time",
+        "slug": "ideal-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807036,
+        "spell_ids": [
+          807036
+        ],
+        "description_html": "Every <span class=\"item-number\">30</span> sec, your next ability is guaranteed to critically strike.",
+        "description": "Every 30 sec, your next ability is guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807036,
+            "description_html": "Every <span class=\"item-number\">30</span> sec, your next ability is guaranteed to critically strike.",
+            "description": "Every 30 sec, your next ability is guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          6699,
+          29681
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_corruptionknowledge_Border",
+          "key": "nhi_corruptionknowledge_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7912,
+        "name": "Continuum Restoration",
+        "slug": "continuum-restoration",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801271,
+        "spell_ids": [
+          801271
+        ],
+        "description_html": "Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.<br /><br />This dispel is potent enough to remove magic effects that are normally undispellable",
+        "description": "Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.\n\nThis dispel is potent enough to remove magic effects that are normally undispellable",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801271,
+            "description_html": "Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.<br /><br />This dispel is potent enough to remove magic effects that are normally undispellable",
+            "description": "Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.\n\nThis dispel is potent enough to remove magic effects that are normally undispellable"
+          }
+        ],
+        "connections": [
+          6196,
+          6699
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_evoker_timedilation",
+          "key": "ability_evoker_timedilation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29571,
+        "name": "Time Skip",
+        "slug": "time-skip",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804451,
+        "spell_ids": [
+          804451
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Roll Back</span> now removes <span class=\"item-number\">1</span> additional harmful effect.",
+        "description": "Your Roll Back now removes 1 additional harmful effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804451,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Roll Back</span> now removes <span class=\"item-number\">1</span> additional harmful effect.",
+            "description": "Your Roll Back now removes 1 additional harmful effect."
+          }
+        ],
+        "connections": [
+          6196,
+          19978
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_arcanespeed_Border",
+          "key": "nhi_arcanespeed_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30264,
+        "name": "Orderly Protector",
+        "slug": "orderly-protector",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806162,
+        "spell_ids": [
+          806162
+        ],
+        "description_html": "Healing done by your <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now increases the healing of <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Each stack gives you a <span class=\"item-number\">2</span><span class=\"item-number\">%</span> chance when you cast <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> to reset its own cooldown.",
+        "description": "Healing done by your Epoch now increases the healing of Fabric of Time by 10% for 10 seconds, stacking 10 times.\n\nEach stack gives you a 2% chance when you cast Fabric of Time to reset its own cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806162,
+            "description_html": "Healing done by your <span style=\"color: #FFFFFF; display: inline\">Epoch</span> now increases the healing of <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.<br /><br />Each stack gives you a <span class=\"item-number\">2</span><span class=\"item-number\">%</span> chance when you cast <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> to reset its own cooldown.",
+            "description": "Healing done by your Epoch now increases the healing of Fabric of Time by 10% for 10 seconds, stacking 10 times.\n\nEach stack gives you a 2% chance when you cast Fabric of Time to reset its own cooldown."
+          }
+        ],
+        "connections": [
+          19978
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\icon_dragonflygold",
+          "key": "icon_dragonflygold",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30902,
+        "name": "Displacement",
+        "slug": "displacement",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806727,
+        "spell_ids": [
+          806727
+        ],
+        "description_html": "Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them.",
+        "description": "Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806727,
+            "description_html": "Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them.",
+            "description": "Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them."
+          }
+        ],
+        "connections": [
+          30901,
+          30903
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_teleport_Border",
+          "key": "_5_teleport_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30780,
+        "name": "Mark of Order",
+        "slug": "mark-of-order",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704488,
+        "spell_ids": [
+          704488
+        ],
+        "description_html": "Healing done by <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> now applies <span style=\"color: #ffffff; display: inline\">Mark of Order</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_inscription_80_vantusrune_uldir\" /><span class=\"name\">Mark of Order</span></div><span class=\"desc\">Increases the healing of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wound</span> on the target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds. <br /><br />Every <span class=\"item-number\">1</span> sec for the duration, they gain an additional stack of this effect, up to <span class=\"item-number\">5</span>.</span></div>",
+        "description": "Healing done by Fortify Timeline now applies Mark of Order.Mark of OrderIncreases the healing of your next Reverse Wound on the target by 10% for 20 seconds.\n\nEvery 1 sec for the duration, they gain an additional stack of this effect, up to 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704488,
+            "description_html": "Healing done by <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> now applies <span style=\"color: #ffffff; display: inline\">Mark of Order</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_inscription_80_vantusrune_uldir\" /><span class=\"name\">Mark of Order</span></div><span class=\"desc\">Increases the healing of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wound</span> on the target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds. <br /><br />Every <span class=\"item-number\">1</span> sec for the duration, they gain an additional stack of this effect, up to <span class=\"item-number\">5</span>.</span></div>",
+            "description": "Healing done by Fortify Timeline now applies Mark of Order.Mark of OrderIncreases the healing of your next Reverse Wound on the target by 10% for 20 seconds.\n\nEvery 1 sec for the duration, they gain an additional stack of this effect, up to 5."
+          }
+        ],
+        "connections": [
+          7912,
+          30903
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_inscription_80_vantusrune_uldir",
+          "key": "inv_inscription_80_vantusrune_uldir",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6702,
+        "name": "Timeline Tether",
+        "slug": "timeline-tether",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804505,
+        "spell_ids": [
+          804505
+        ],
+        "description_html": "Your periodic damage and healing reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Your periodic damage and healing reduces the cooldown of your Fortify Timeline by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804505,
+            "description_html": "Your periodic damage and healing reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Your periodic damage and healing reduces the cooldown of your Fortify Timeline by -1 sec."
+          }
+        ],
+        "connections": [
+          7912,
+          29571
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_EnslaveSpell_Holy",
+          "key": "enslavespell_holy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29570,
+        "name": "Shimmering Shard",
+        "slug": "shimmering-shard",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806302,
+        "spell_ids": [
+          806302
+        ],
+        "description_html": "Activating <span style=\"color: #ffffff; display: inline\">Aeon</span> spells now grants you <span class=\"item-number\">4</span><span class=\"item-number\">%</span> increased damage and healing for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Activating Aeon spells now grants you 4% increased damage and healing for 20 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806302,
+            "description_html": "Activating <span style=\"color: #ffffff; display: inline\">Aeon</span> spells now grants you <span class=\"item-number\">4</span><span class=\"item-number\">%</span> increased damage and healing for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Activating Aeon spells now grants you 4% increased damage and healing for 20 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          29571,
+          30264
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_gem_x4_uncommon_perfectcut_yellow",
+          "key": "inv_misc_gem_x4_uncommon_perfectcut_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6841,
+        "name": "Aeon of Oblivion",
+        "slug": "aeon-of-oblivion",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 806293,
+        "spell_ids": [
+          806293
+        ],
+        "description_html": "Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s mana cost by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and increases its critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> now deals <span class=\"item-number\">100%</span> of its healing done as damage to a nearby enemy.<br /><br />",
+        "description": "Reduces Epoch's mana cost by -25% and increases its critical strike chance by 25%, and Epoch now deals 100% of its healing done as damage to a nearby enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806293,
+            "description_html": "Reduces <span style=\"color: #ffffff; display: inline\">Epoch</span>'s mana cost by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> and increases its critical strike chance by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, and <span style=\"color: #ffffff; display: inline\">Epoch</span> now deals <span class=\"item-number\">100%</span> of its healing done as damage to a nearby enemy.<br /><br />",
+            "description": "Reduces Epoch's mana cost by -25% and increases its critical strike chance by 25%, and Epoch now deals 100% of its healing done as damage to a nearby enemy."
+          }
+        ],
+        "connections": [
+          9181
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_80_kultiras02e",
+          "key": "inv_trinket_80_kultiras02e",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 10728,
+        "name": "Nozdormu's Gaze",
+        "slug": "nozdormus-gaze",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807691,
+        "spell_ids": [
+          807691
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Time Out!</span> now regenerates <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> less mana per tick, but casting it now instantly restores an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum mana.",
+        "description": "Your Time Out! now regenerates -2% less mana per tick, but casting it now instantly restores an additional 15% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807691,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Time Out!</span> now regenerates <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> less mana per tick, but casting it now instantly restores an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum mana.",
+            "description": "Your Time Out! now regenerates -2% less mana per tick, but casting it now instantly restores an additional 15% of your maximum mana."
+          }
+        ],
+        "connections": [
+          30902
+        ],
+        "choice_group": 807691,
+        "icon": {
+          "source_path": "interface\\icons\\inv_misc_head_dragon_bronze",
+          "key": "inv_misc_head_dragon_bronze",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30268,
+        "name": "Titan's Gaze",
+        "slug": "titans-gaze",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804462,
+        "spell_ids": [
+          804462
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Time Out!</span> no longer breaks on damage, but reduces its damage reduction by <span class=\"item-number\">-75</span><span class=\"item-number\">%</span>.",
+        "description": "Your Time Out! no longer breaks on damage, but reduces its damage reduction by -75%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804462,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Time Out!</span> no longer breaks on damage, but reduces its damage reduction by <span class=\"item-number\">-75</span><span class=\"item-number\">%</span>.",
+            "description": "Your Time Out! no longer breaks on damage, but reduces its damage reduction by -75%."
+          }
+        ],
+        "connections": [
+          30902
+        ],
+        "choice_group": 807691,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_archaeology_ogres_hargunn_eye",
+          "key": "inv_archaeology_ogres_hargunn_eye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 10922,
+        "name": "Overcorrection",
+        "slug": "overcorrection",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707657,
+        "spell_ids": [
+          707657
+        ],
+        "description_html": "Overhealing done by <span style=\"color: #ffffff; display: inline\">Correct the Mistake</span> now applies a heal over time effect to the ally equal to <span class=\"item-number\">30%</span> of the healing done over <span class=\"item-number\">5</span> seconds.",
+        "description": "Overhealing done by Correct the Mistake now applies a heal over time effect to the ally equal to 30% of the healing done over 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707657,
+            "description_html": "Overhealing done by <span style=\"color: #ffffff; display: inline\">Correct the Mistake</span> now applies a heal over time effect to the ally equal to <span class=\"item-number\">30%</span> of the healing done over <span class=\"item-number\">5</span> seconds.",
+            "description": "Overhealing done by Correct the Mistake now applies a heal over time effect to the ally equal to 30% of the healing done over 5 seconds."
+          }
+        ],
+        "connections": [
+          30903
+        ],
+        "choice_group": 707657,
+        "icon": {
+          "source_path": "Interface\\icons\\5_priestskill27_Border",
+          "key": "_5_priestskill27_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30922,
+        "name": "Bronze Timeways",
+        "slug": "bronze-timeways",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807309,
+        "spell_ids": [
+          807309
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> now grants <span class=\"item-number\">2</span> stacks of <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Casting Correct the Mistake now grants 2 stacks of Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807309,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Correct the Mistake</span> now grants <span class=\"item-number\">2</span> stacks of <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Casting Correct the Mistake now grants 2 stacks of Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times."
+          }
+        ],
+        "connections": [
+          30903
+        ],
+        "choice_group": 707657,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_progenitorbeetlebronze",
+          "key": "inv_progenitorbeetlebronze",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29670,
+        "name": "Wonders of Time",
+        "slug": "wonders-of-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560541,
+        "spell_ids": [
+          560541
+        ],
+        "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.<br /><br />Additionally, all healing done now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Increases the spell haste of all party and raid members by 3%.\n\nDoes not stack with similar effects.\n\nAdditionally, all healing done now has a 10% chance to grant you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560541,
+            "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.<br /><br />Additionally, all healing done now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Endless Sands</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_enchant_dustspirit\" /><span class=\"name\">Endless Sands</span></div><span class=\"desc\">Cast time of your next <span style=\"color: #FFFFFF; display: inline\">Reverse Wounds</span> within <span class=\"item-number\">15</span> seconds is reduced by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Increases the spell haste of all party and raid members by 3%.\n\nDoes not stack with similar effects.\n\nAdditionally, all healing done now has a 10% chance to grant you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times."
+          }
+        ],
+        "connections": [
+          30780
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_readiness",
+          "key": "ability_hunter_readiness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6652,
+        "name": "Chronicler",
+        "slug": "chronicler",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706134,
+        "spell_ids": [
+          706134
+        ],
+        "description_html": "Each cast of <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> will now extend <span style=\"color: #FFFFFF; display: inline\">Accelerated Recovery</span> by an additional <span class=\"item-number\">5</span> seconds, and the maximum length that <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> can extend <span style=\"color: #FFFFFF; display: inline\">Accelerated Recovery</span> by is increased by <span class=\"item-number\">15</span> seonds.",
+        "description": "Each cast of Fortify Timeline will now extend Accelerated Recovery by an additional 5 seconds, and the maximum length that Fortify Timeline can extend Accelerated Recovery by is increased by 15 seonds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706134,
+            "description_html": "Each cast of <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> will now extend <span style=\"color: #FFFFFF; display: inline\">Accelerated Recovery</span> by an additional <span class=\"item-number\">5</span> seconds, and the maximum length that <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> can extend <span style=\"color: #FFFFFF; display: inline\">Accelerated Recovery</span> by is increased by <span class=\"item-number\">15</span> seonds.",
+            "description": "Each cast of Fortify Timeline will now extend Accelerated Recovery by an additional 5 seconds, and the maximum length that Fortify Timeline can extend Accelerated Recovery by is increased by 15 seonds."
+          }
+        ],
+        "connections": [
+          6702
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_bindingprayers",
+          "key": "ability_priest_bindingprayers",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30905,
+        "name": "Through The Aeons",
+        "slug": "through-the-aeons",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560310,
+        "spell_ids": [
+          560310
+        ],
+        "description_html": "Activating an <span style=\"color: #ffffff; display: inline\">Aeon</span> now increases your mana regeneration from Spirit by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Activating an Aeon now increases your mana regeneration from Spirit by 100% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560310,
+            "description_html": "Activating an <span style=\"color: #ffffff; display: inline\">Aeon</span> now increases your mana regeneration from Spirit by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Activating an Aeon now increases your mana regeneration from Spirit by 100% for 8 seconds."
+          }
+        ],
+        "connections": [
+          29571
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_timewarp_Border",
+          "key": "nhi_timewarp_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6184,
+        "name": "Rapid Acceleration",
+        "slug": "rapid-acceleration",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570149,
+        "spell_ids": [
+          570149
+        ],
+        "description_html": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> instantly heals the target for <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the total periodic effect.",
+        "description": "Increases the bonus healing scaling of Accelerated Recovery by 15%.\n\nYour Accelerated Recovery instantly heals the target for 15% of the total periodic effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570149,
+            "description_html": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span> instantly heals the target for <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the total periodic effect.",
+            "description": "Increases the bonus healing scaling of Accelerated Recovery by 15%.\n\nYour Accelerated Recovery instantly heals the target for 15% of the total periodic effect."
+          }
+        ],
+        "connections": [
+          29570
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill42_Border",
+          "key": "skill_icon_skill42_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29682,
+        "name": "Shield of the Ages",
+        "slug": "shield-of-the-ages",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804444,
+        "spell_ids": [
+          804444
+        ],
+        "description_html": "When hit by a damaging critical strike, your damage taken is reduced by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>, and healing received is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "When hit by a damaging critical strike, your damage taken is reduced by -3%, and healing received is increased by 5% for 3 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804444,
+            "description_html": "When hit by a damaging critical strike, your damage taken is reduced by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>, and healing received is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "When hit by a damaging critical strike, your damage taken is reduced by -3%, and healing received is increased by 5% for 3 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          10728,
+          10922,
+          29670,
+          30268,
+          30922
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_T_Nhance_RPG_Icons_HolyWatch_Border",
+          "key": "custom_t_nhance_rpg_icons_holywatch_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7826,
+        "name": "Converge the Infinite",
+        "slug": "converge-the-infinite",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520045,
+        "spell_ids": [
+          520045
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> now grants you <span style=\"color: #ffffff; display: inline\">Converge the Infinite</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_arcanetwist_border\" /><span class=\"name\">Converge the Infinite</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Correct the Mistake</span> has a <span class=\"item-number\">1</span> sec increased cast time, but heals for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> more and is guaranteed to critically strike.<br /><br />Successfully healing an ally in this way reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Casting Fortify Timeline now grants you Converge the Infinite.Converge the InfiniteYour next Correct the Mistake has a 1 sec increased cast time, but heals for 30% more and is guaranteed to critically strike.\n\nSuccessfully healing an ally in this way reduces the cooldown of Fortify Timeline by 8%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520045,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Fortify Timeline</span> now grants you <span style=\"color: #ffffff; display: inline\">Converge the Infinite</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_arcanetwist_border\" /><span class=\"name\">Converge the Infinite</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Correct the Mistake</span> has a <span class=\"item-number\">1</span> sec increased cast time, but heals for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> more and is guaranteed to critically strike.<br /><br />Successfully healing an ally in this way reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Fortify Timeline</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Casting Fortify Timeline now grants you Converge the Infinite.Converge the InfiniteYour next Correct the Mistake has a 1 sec increased cast time, but heals for 30% more and is guaranteed to critically strike.\n\nSuccessfully healing an ally in this way reduces the cooldown of Fortify Timeline by 8%."
+          }
+        ],
+        "connections": [
+          6652,
+          29670
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_arcanetwist_Border",
+          "key": "nhi_arcanetwist_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6192,
+        "name": "Epic Recovery",
+        "slug": "epic-recovery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706098,
+        "spell_ids": [
+          706098
+        ],
+        "description_html": "When you cast <span style=\"color: #ffffff; display: inline\">Epoch</span>, you now cast its highest known rank at <span class=\"item-number\">50</span><span class=\"item-number\">%</span> efficiency on up to <span class=\"item-number\">2</span> other allies affected by <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span>.",
+        "description": "When you cast Epoch, you now cast its highest known rank at 50% efficiency on up to 2 other allies affected by Accelerated Recovery.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706098,
+            "description_html": "When you cast <span style=\"color: #ffffff; display: inline\">Epoch</span>, you now cast its highest known rank at <span class=\"item-number\">50</span><span class=\"item-number\">%</span> efficiency on up to <span class=\"item-number\">2</span> other allies affected by <span style=\"color: #ffffff; display: inline\">Accelerated Recovery</span>.",
+            "description": "When you cast Epoch, you now cast its highest known rank at 50% efficiency on up to 2 other allies affected by Accelerated Recovery."
+          }
+        ],
+        "connections": [
+          6184,
+          6652,
+          30905
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shield_1h_bastionquest_b_01",
+          "key": "inv_shield_1h_bastionquest_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9182,
+        "name": "Eternity Warper",
+        "slug": "eternity-warper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 806301,
+        "spell_ids": [
+          806301
+        ],
+        "description_html": "$9b",
+        "description": "$9b",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806301,
+            "description_html": "$9c",
+            "description": "$9c"
+          }
+        ],
+        "connections": [
+          6841
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_bossmagistrix_timewarp2",
+          "key": "ability_bossmagistrix_timewarp2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 9986,
+        "name": "Timeblender",
+        "slug": "timeblender",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 555737,
+        "spell_ids": [
+          555737
+        ],
+        "description_html": "Guarantees healing done by <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> to critically strike and gives it an additional charge.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_monk_diffusemagic\" /><span class=\"name\">Fabric of Time (Timeblender)</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">15</span> sec recharge</span><br />Alter the fabric of time, healing an ally for <span class=\"item-number\">644</span> + <span class=\"item-number\">68% healing</span>.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Aeon</span> used within <span class=\"item-number\">8</span> seconds will trigger with no cooldown.</span></div>",
+        "description": "Guarantees healing done by Fabric of Time to critically strike and gives it an additional charge.Fabric of Time (Timeblender)2 Charges, 15 sec recharge\nAlter the fabric of time, healing an ally for 644 + 68% healing.\n\nYour next Aeon used within 8 seconds will trigger with no cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 555737,
+            "description_html": "Guarantees healing done by <span style=\"color: #ffffff; display: inline\">Fabric of Time</span> to critically strike and gives it an additional charge.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_monk_diffusemagic\" /><span class=\"name\">Fabric of Time (Timeblender)</span></div><span class=\"desc\"><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">15</span> sec recharge</span><br />Alter the fabric of time, healing an ally for <span class=\"item-number\">644</span> + <span class=\"item-number\">68% healing</span>.<br /><br />Your next <span style=\"color: #ffffff; display: inline\">Aeon</span> used within <span class=\"item-number\">8</span> seconds will trigger with no cooldown.</span></div>",
+            "description": "Guarantees healing done by Fabric of Time to critically strike and gives it an additional charge.Fabric of Time (Timeblender)2 Charges, 15 sec recharge\nAlter the fabric of time, healing an ally for 644 + 68% healing.\n\nYour next Aeon used within 8 seconds will trigger with no cooldown."
+          }
+        ],
+        "connections": [
+          7826,
+          29682
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_guild_timeoff",
+          "key": "achievement_guild_timeoff",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6182,
+        "name": "The Vast Infinite",
+        "slug": "the-vast-infinite",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706083,
+        "spell_ids": [
+          706083
+        ],
+        "description_html": "All party and raid members become one, equally sharing <span class=\"item-number\">25%</span> of all damage dealt to them for <span class=\"item-number\">10</span> seconds, up to a maximum of <span class=\"item-number\">100%</span> of their total health.<br /><br />At the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies.",
+        "description": "All party and raid members become one, equally sharing 25% of all damage dealt to them for 10 seconds, up to a maximum of 100% of their total health.\n\nAt the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706083,
+            "description_html": "All party and raid members become one, equally sharing <span class=\"item-number\">25%</span> of all damage dealt to them for <span class=\"item-number\">10</span> seconds, up to a maximum of <span class=\"item-number\">100%</span> of their total health.<br /><br />At the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies.",
+            "description": "All party and raid members become one, equally sharing 25% of all damage dealt to them for 10 seconds, up to a maximum of 100% of their total health.\n\nAt the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies."
+          }
+        ],
+        "connections": [
+          7826
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_chillofnight",
+          "key": "ability_racial_chillofnight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30261,
+        "name": "Buy Time",
+        "slug": "buy-time",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 58,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520188,
+        "spell_ids": [
+          520188
+        ],
+        "description_html": "Put all enemies and allies in an <span class=\"item-number\">8</span> yd radius in target area into a stasis, banishing them for <span class=\"item-number\">6</span> seconds, making them invulnerable to all effects but unable to move.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Unmake</span> on a target will remove this effect.",
+        "description": "Put all enemies and allies in an 8 yd radius in target area into a stasis, banishing them for 6 seconds, making them invulnerable to all effects but unable to move.\n\nCasting Unmake on a target will remove this effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520188,
+            "description_html": "Put all enemies and allies in an <span class=\"item-number\">8</span> yd radius in target area into a stasis, banishing them for <span class=\"item-number\">6</span> seconds, making them invulnerable to all effects but unable to move.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Unmake</span> on a target will remove this effect.",
+            "description": "Put all enemies and allies in an 8 yd radius in target area into a stasis, banishing them for 6 seconds, making them invulnerable to all effects but unable to move.\n\nCasting Unmake on a target will remove this effect."
+          }
+        ],
+        "connections": [
+          6192,
+          7826
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_timeismoney",
+          "key": "ability_racial_timeismoney",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

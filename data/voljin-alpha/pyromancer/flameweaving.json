@@ -1,0 +1,2415 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:23+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:635f282c7828aef6e1927257ff61af517ab5a61e9b964f22421b356f3c6c19fd",
+    "talent_count": 159,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 24,
+    "name": "Pyromancer",
+    "slug": "pyromancer",
+    "class_file": "pyromancer",
+    "color": "rgb(255, 97, 18)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:pyromancer",
+      "key": "class-pyromancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 37,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 19,
+    "name": "Flameweaving",
+    "slug": "flameweaving",
+    "sort_order": 2,
+    "class_id": 24,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29189,
+        "name": "Phoenix Egg",
+        "slug": "phoenix-egg",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4038,
+            30206
+          ]
+        },
+        "spell_id": 800796,
+        "spell_ids": [
+          800796
+        ],
+        "description_html": "Summon a <span style=\"color: #ffffff; display: inline\">Phoenix</span> at the target location that heals nearby party members for <span class=\"item-number\">85</span> + <span class=\"item-number\">10% healing</span> every <span class=\"item-number\">5</span> sec.<br /><br />You may only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Phoenix</span> active at a time.",
+        "description": "Summon a Phoenix at the target location that heals nearby party members for 85 + 10% healing every 5 sec.\n\nYou may only have 1 Phoenix active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800796,
+            "description_html": "Summon a <span style=\"color: #ffffff; display: inline\">Phoenix</span> at the target location that heals nearby party members for <span class=\"item-number\">85</span> + <span class=\"item-number\">10% healing</span> every <span class=\"item-number\">5</span> sec.<br /><br />You may only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Phoenix</span> active at a time.",
+            "description": "Summon a Phoenix at the target location that heals nearby party members for 85 + 10% healing every 5 sec.\n\nYou may only have 1 Phoenix active at a time."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_phoenixegg",
+          "key": "inv_misc_phoenixegg",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4038,
+        "name": "Spirit of the Phoenix",
+        "slug": "spirit-of-the-phoenix",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30206
+          ]
+        },
+        "spell_id": 92126,
+        "spell_ids": [
+          92126
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Upon taking damage that would otherwise kill you, you are instead transformed into the <span style=\"color: #FFFFFF; display: inline\">Spirit of the Phoenix</span> for <span class=\"item-number\">15</span> seconds.<br /><br />While transformed, your spells have no mana cost and your Spirit is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>. At the end of the duration, you will be reborn. Can only occur once every <span class=\"item-number\">10</span> min.",
+        "description": "Level 10 Passive\nUpon taking damage that would otherwise kill you, you are instead transformed into the Spirit of the Phoenix for 15 seconds.\n\nWhile transformed, your spells have no mana cost and your Spirit is increased by 100%. At the end of the duration, you will be reborn. Can only occur once every 10 min.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92126,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Upon taking damage that would otherwise kill you, you are instead transformed into the <span style=\"color: #FFFFFF; display: inline\">Spirit of the Phoenix</span> for <span class=\"item-number\">15</span> seconds.<br /><br />While transformed, your spells have no mana cost and your Spirit is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>. At the end of the duration, you will be reborn. Can only occur once every <span class=\"item-number\">10</span> min.",
+            "description": "Level 10 Passive\nUpon taking damage that would otherwise kill you, you are instead transformed into the Spirit of the Phoenix for 15 seconds.\n\nWhile transformed, your spells have no mana cost and your Spirit is increased by 100%. At the end of the duration, you will be reborn. Can only occur once every 10 min."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_T_Phoenix_Border",
+          "key": "custom_t_phoenix_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29550,
+        "name": "Phoenix Dive",
+        "slug": "phoenix-dive",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706854,
+        "spell_ids": [
+          706854
+        ],
+        "description_html": "Command your <span style=\"color: #ffffff; display: inline\">Phoenix</span> to swoop to the target ally, shielding up to <span class=\"item-number\">10</span> allies in its path with fire and absorbing <span class=\"item-number\">333</span> + <span class=\"item-number\">30% healing</span> + <span class=\"item-number\">50% Spirit</span> damage for <span class=\"item-number\">30</span> seconds, scaling with your healing spell power and Spirit.",
+        "description": "Command your Phoenix to swoop to the target ally, shielding up to 10 allies in its path with fire and absorbing 333 + 30% healing + 50% Spirit damage for 30 seconds, scaling with your healing spell power and Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706854,
+            "description_html": "Command your <span style=\"color: #ffffff; display: inline\">Phoenix</span> to swoop to the target ally, shielding up to <span class=\"item-number\">10</span> allies in its path with fire and absorbing <span class=\"item-number\">333</span> + <span class=\"item-number\">30% healing</span> + <span class=\"item-number\">50% Spirit</span> damage for <span class=\"item-number\">30</span> seconds, scaling with your healing spell power and Spirit.",
+            "description": "Command your Phoenix to swoop to the target ally, shielding up to 10 allies in its path with fire and absorbing 333 + 30% healing + 50% Spirit damage for 30 seconds, scaling with your healing spell power and Spirit."
+          }
+        ],
+        "connections": [
+          29189
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(37)_Border",
+          "key": "novart_magicspell__37__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33919,
+        "name": "Cleansing Flames",
+        "slug": "cleansing-flames",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681145,
+        "spell_ids": [
+          681145
+        ],
+        "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">10</span> Heat Each Tick</span><br />Spread cleansing flames on <span class=\"item-number\">5</span> allies and enemies in front of you, damaging or healing for <span class=\"item-number\">69</span> + <span class=\"item-number\">44.4% SP</span> over <span class=\"item-number\">3</span> seconds.",
+        "description": "Generates 10 Heat Each Tick\nSpread cleansing flames on 5 allies and enemies in front of you, damaging or healing for 69 + 44.4% SP over 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681145,
+            "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">10</span> Heat Each Tick</span><br />Spread cleansing flames on <span class=\"item-number\">5</span> allies and enemies in front of you, damaging or healing for <span class=\"item-number\">69</span> + <span class=\"item-number\">44.4% SP</span> over <span class=\"item-number\">3</span> seconds.",
+            "description": "Generates 10 Heat Each Tick\nSpread cleansing flames on 5 allies and enemies in front of you, damaging or healing for 69 + 44.4% SP over 3 seconds."
+          }
+        ],
+        "connections": [
+          29189
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_firebreath_(2)_Border",
+          "key": "nhi_firebreath__2__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30637,
+        "name": "Soothing Flames",
+        "slug": "soothing-flames",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704855,
+        "spell_ids": [
+          704855
+        ],
+        "description_html": "Healing done by <span style=\"color: #FFFFFF; display: inline\">Kindle</span> and <span style=\"color: #ffffff; display: inline\">Cinderheart</span> now additionally heals the target for <span class=\"item-number\">30%</span> of the healing done over <span class=\"item-number\">3</span> seconds.",
+        "description": "Healing done by Kindle and Cinderheart now additionally heals the target for 30% of the healing done over 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704855,
+            "description_html": "Healing done by <span style=\"color: #FFFFFF; display: inline\">Kindle</span> and <span style=\"color: #ffffff; display: inline\">Cinderheart</span> now additionally heals the target for <span class=\"item-number\">30%</span> of the healing done over <span class=\"item-number\">3</span> seconds.",
+            "description": "Healing done by Kindle and Cinderheart now additionally heals the target for 30% of the healing done over 3 seconds."
+          }
+        ],
+        "connections": [
+          29550
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_breathoffire",
+          "key": "ability_monk_breathoffire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30630,
+        "name": "Ember Charm",
+        "slug": "ember-charm",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704861,
+        "spell_ids": [
+          704861
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Cinderheart</span> and <span style=\"color: #ffffff; display: inline\">Kindle</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of Cinderheart and Kindle by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704861,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Cinderheart</span> and <span style=\"color: #ffffff; display: inline\">Kindle</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of Cinderheart and Kindle by -15%."
+          }
+        ],
+        "connections": [
+          33919
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_cat_trinket08",
+          "key": "inv_misc_cat_trinket08",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9807,
+        "name": "Flame Bonding",
+        "slug": "flame-bonding",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 706858,
+        "spell_ids": [
+          706858
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Inferno Barrier</span> now triggers a <span class=\"item-number\">-15</span> sec reduced cooldown when used on an ally other than yourself.",
+        "description": "Level 20 Passive\nYour Inferno Barrier now triggers a -15 sec reduced cooldown when used on an ally other than yourself.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706858,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Inferno Barrier</span> now triggers a <span class=\"item-number\">-15</span> sec reduced cooldown when used on an ally other than yourself.",
+            "description": "Level 20 Passive\nYour Inferno Barrier now triggers a -15 sec reduced cooldown when used on an ally other than yourself."
+          }
+        ],
+        "connections": [
+          4038
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_matchbook",
+          "key": "inv_misc_matchbook",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7387,
+        "name": "Spirit of Fire",
+        "slug": "spirit-of-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500167,
+        "spell_ids": [
+          500167,
+          500644
+        ],
+        "description_html": "Increases the effectiveness of your absorption effects by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your absorption effects by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500167,
+            "description_html": "Increases the effectiveness of your absorption effects by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your absorption effects by 20%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 500644,
+            "description_html": "Increases the effectiveness of your absorption effects by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your absorption effects by 40%."
+          }
+        ],
+        "connections": [
+          30637
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(33)_Border",
+          "key": "novart_magicspell__33__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30638,
+        "name": "From The Ashes",
+        "slug": "from-the-ashes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560561,
+        "spell_ids": [
+          560561
+        ],
+        "description_html": "Increases your healing done to allies below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your healing done to allies below 35% health by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560561,
+            "description_html": "Increases your healing done to allies below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your healing done to allies below 35% health by 25%."
+          }
+        ],
+        "connections": [
+          30637
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_phoenix_Border",
+          "key": "nhi_phoenix_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31274,
+        "name": "Scorching Spirit",
+        "slug": "scorching-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805552,
+        "spell_ids": [
+          805552,
+          807935
+        ],
+        "description_html": "Increases your Spirit by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Spirit by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805552,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807935,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 20%."
+          }
+        ],
+        "connections": [
+          30630
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_FireDancer_01",
+          "key": "inv_misc_firedancer_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9914,
+        "name": "Unfathomably Hot!",
+        "slug": "unfathomably-hot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807404,
+        "spell_ids": [
+          807404
+        ],
+        "description_html": "Each tick of <span style=\"color: #ffffff; display: inline\">Cleansing Flames</span> now generates <span class=\"item-number\">5</span> additional <span style=\"color: #ff7f7f; display: inline\">Heat</span>.",
+        "description": "Each tick of Cleansing Flames now generates 5 additional Heat.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807404,
+            "description_html": "Each tick of <span style=\"color: #ffffff; display: inline\">Cleansing Flames</span> now generates <span class=\"item-number\">5</span> additional <span style=\"color: #ff7f7f; display: inline\">Heat</span>.",
+            "description": "Each tick of Cleansing Flames now generates 5 additional Heat."
+          }
+        ],
+        "connections": [
+          30630
+        ],
+        "choice_group": 1236723,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_SelfDestruct",
+          "key": "spell_fire_selfdestruct",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33914,
+        "name": "Concentrated Fire",
+        "slug": "concentrated-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704864,
+        "spell_ids": [
+          704864
+        ],
+        "description_html": "Increases the damage and healing of <span style=\"color: #FFFFFF; display: inline\">Cleansing Flames</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage and healing of Cleansing Flames by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704864,
+            "description_html": "Increases the damage and healing of <span style=\"color: #FFFFFF; display: inline\">Cleansing Flames</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage and healing of Cleansing Flames by 20%."
+          }
+        ],
+        "connections": [
+          30630
+        ],
+        "choice_group": 1236723,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_6_2raid_trinket_1c",
+          "key": "inv_6_2raid_trinket_1c",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6950,
+        "name": "Kael's Command",
+        "slug": "kaels-command",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800816,
+        "spell_ids": [
+          800816
+        ],
+        "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">50</span> Heat</span><br />Command your <span style=\"color: #ffffff; display: inline\">Phoenix</span> to go dormant for <span class=\"item-number\">10</span> seconds. <br /><br />While dormant, it radiates healing to nearby allies for <span class=\"item-number\">1001</span> + <span class=\"item-number\">72.8% healing</span> every <span class=\"item-number\">2</span> sec.",
+        "description": "Generates 50 Heat\nCommand your Phoenix to go dormant for 10 seconds.\n\nWhile dormant, it radiates healing to nearby allies for 1001 + 72.8% healing every 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800816,
+            "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">50</span> Heat</span><br />Command your <span style=\"color: #ffffff; display: inline\">Phoenix</span> to go dormant for <span class=\"item-number\">10</span> seconds. <br /><br />While dormant, it radiates healing to nearby allies for <span class=\"item-number\">1001</span> + <span class=\"item-number\">72.8% healing</span> every <span class=\"item-number\">2</span> sec.",
+            "description": "Generates 50 Heat\nCommand your Phoenix to go dormant for 10 seconds.\n\nWhile dormant, it radiates healing to nearby allies for 1001 + 72.8% healing every 2 sec."
+          }
+        ],
+        "connections": [
+          7387,
+          30638
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_UnleashedRage",
+          "key": "spell_nature_unleashedrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30096,
+        "name": "Sunstrider Array",
+        "slug": "sunstrider-array",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804230,
+        "spell_ids": [
+          804230
+        ],
+        "description_html": "For <span class=\"item-number\">15</span> seconds, you generate <span class=\"item-number\">1</span> <span style=\"color: #ff7f7f; display: inline\">Ember</span> every <span class=\"item-number\">3</span> sec and your <span style=\"color: #ffffff; display: inline\">Cinderheart</span> generates double the amount of <span style=\"color: #ff7f7f; display: inline\">Heat</span> with each cast.",
+        "description": "For 15 seconds, you generate 1 Ember every 3 sec and your Cinderheart generates double the amount of Heat with each cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804230,
+            "description_html": "For <span class=\"item-number\">15</span> seconds, you generate <span class=\"item-number\">1</span> <span style=\"color: #ff7f7f; display: inline\">Ember</span> every <span class=\"item-number\">3</span> sec and your <span style=\"color: #ffffff; display: inline\">Cinderheart</span> generates double the amount of <span style=\"color: #ff7f7f; display: inline\">Heat</span> with each cast.",
+            "description": "For 15 seconds, you generate 1 Ember every 3 sec and your Cinderheart generates double the amount of Heat with each cast."
+          }
+        ],
+        "connections": [
+          30638,
+          31274
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_ability_sunfurymage_spellfirespheres",
+          "key": "inv_ability_sunfurymage_spellfirespheres",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30602,
+        "name": "Burning Crescendo",
+        "slug": "burning-crescendo",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805378,
+        "spell_ids": [
+          805378
+        ],
+        "description_html": "Increases the tick rate of your <span style=\"color: #FFFFFF; display: inline\">Phoenix Egg</span> by <span class=\"item-number\">-2</span> sec.",
+        "description": "Increases the tick rate of your Phoenix Egg by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805378,
+            "description_html": "Increases the tick rate of your <span style=\"color: #FFFFFF; display: inline\">Phoenix Egg</span> by <span class=\"item-number\">-2</span> sec.",
+            "description": "Increases the tick rate of your Phoenix Egg by -2 sec."
+          }
+        ],
+        "connections": [
+          9914,
+          31274,
+          33914
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_siege_engineer_purification_beam",
+          "key": "ability_siege_engineer_purification_beam",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6949,
+        "name": "Ashen Priest",
+        "slug": "ashen-priest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 707432,
+        "spell_ids": [
+          707432
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Your critical heals now grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<br /><br />In addition, <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your mana regeneration continues while in combat. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Level 30 Passive\nYour critical heals now grant allies Replenishment.\n\nIn addition, 20% of your mana regeneration continues while in combat. ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707432,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Your critical heals now grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<br /><br />In addition, <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your mana regeneration continues while in combat. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Level 30 Passive\nYour critical heals now grant allies Replenishment.\n\nIn addition, 20% of your mana regeneration continues while in combat. ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds."
+          }
+        ],
+        "connections": [
+          9807
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_firelands_01",
+          "key": "inv_trinket_firelands_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7388,
+        "name": "Rekindle",
+        "slug": "rekindle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805448,
+        "spell_ids": [
+          805448
+        ],
+        "description_html": "Healing done by <span style=\"color: #FFFFFF; display: inline\">Kindle</span> now increases your healing done on the target <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+        "description": "Healing done by Kindle now increases your healing done on the target 5% for 20 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805448,
+            "description_html": "Healing done by <span style=\"color: #FFFFFF; display: inline\">Kindle</span> now increases your healing done on the target <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+            "description": "Healing done by Kindle now increases your healing done on the target 5% for 20 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [
+          6950
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Fire",
+          "key": "spell_fire_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33912,
+        "name": "Lucifron's Rage",
+        "slug": "lucifrons-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300932,
+        "spell_ids": [
+          300932
+        ],
+        "description_html": "Effective healing done by your <span style=\"color: #ffffff; display: inline\">Phoenix</span> now causes allies to deal additional Fire damage with all attacks for <span class=\"item-number\">6</span> seconds.",
+        "description": "Effective healing done by your Phoenix now causes allies to deal additional Fire damage with all attacks for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300932,
+            "description_html": "Effective healing done by your <span style=\"color: #ffffff; display: inline\">Phoenix</span> now causes allies to deal additional Fire damage with all attacks for <span class=\"item-number\">6</span> seconds.",
+            "description": "Effective healing done by your Phoenix now causes allies to deal additional Fire damage with all attacks for 6 seconds."
+          }
+        ],
+        "connections": [
+          6950
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_burningbladeshaman_blazing_radiance",
+          "key": "spell_burningbladeshaman_blazing_radiance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33918,
+        "name": "Lifebinder's Fire",
+        "slug": "lifebinders-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704862,
+        "spell_ids": [
+          704862
+        ],
+        "description_html": "Generating an <span style=\"color: #ff7f7f; display: inline\">Ember</span> now increases your healing done by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+        "description": "Generating an Ember now increases your healing done by 2% for 8 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704862,
+            "description_html": "Generating an <span style=\"color: #ff7f7f; display: inline\">Ember</span> now increases your healing done by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+            "description": "Generating an Ember now increases your healing done by 2% for 8 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          30096
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelry_trinket_09",
+          "key": "inv_jewelry_trinket_09",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30666,
+        "name": "Offering of Executus",
+        "slug": "offering-of-executus",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806779,
+        "spell_ids": [
+          806779
+        ],
+        "description_html": "When your <span style=\"color: #ffffff; display: inline\">Phoenix</span> dies, it now heals all allies within <span class=\"item-number\">30</span> yds equal to its maximum health.",
+        "description": "When your Phoenix dies, it now heals all allies within 30 yds equal to its maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806779,
+            "description_html": "When your <span style=\"color: #ffffff; display: inline\">Phoenix</span> dies, it now heals all allies within <span class=\"item-number\">30</span> yds equal to its maximum health.",
+            "description": "When your Phoenix dies, it now heals all allies within 30 yds equal to its maximum health."
+          }
+        ],
+        "connections": [
+          30602
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_InfernalMadness_Border",
+          "key": "custom_t_nhance_rpg_icons_infernalmadness_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33916,
+        "name": "Living Flame",
+        "slug": "living-flame",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704851,
+        "spell_ids": [
+          704851
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Ember Touch</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Ember Touch by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704851,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Ember Touch</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Ember Touch by 10%."
+          }
+        ],
+        "connections": [
+          30602
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_leather_firelandsdruid_d_01",
+          "key": "inv_belt_leather_firelandsdruid_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29560,
+        "name": "Neltharion's Resolve",
+        "slug": "neltharions-resolve",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520488,
+        "spell_ids": [
+          520488
+        ],
+        "description_html": "Place Neltharion's resolve on all party members, warding them against fear. The next fear effect used against the target will fail, using up the ward. Lasts <span class=\"item-number\">1</span> minute.",
+        "description": "Place Neltharion's resolve on all party members, warding them against fear. The next fear effect used against the target will fail, using up the ward. Lasts 1 minute.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520488,
+            "description_html": "Place Neltharion's resolve on all party members, warding them against fear. The next fear effect used against the target will fail, using up the ward. Lasts <span class=\"item-number\">1</span> minute.",
+            "description": "Place Neltharion's resolve on all party members, warding them against fear. The next fear effect used against the target will fail, using up the ward. Lasts 1 minute."
+          }
+        ],
+        "connections": [
+          7388,
+          33912
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_Head_Dragon_Black_Nightmare",
+          "key": "inv_misc_head_dragon_black_nightmare",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33921,
+        "name": "Warmth",
+        "slug": "warmth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706464,
+        "spell_ids": [
+          706464
+        ],
+        "description_html": "You now radiate warmth to nearby allies, healing the lowest health nearby ally equal to <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your periodic damage dealt.",
+        "description": "You now radiate warmth to nearby allies, healing the lowest health nearby ally equal to 25% of your periodic damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706464,
+            "description_html": "You now radiate warmth to nearby allies, healing the lowest health nearby ally equal to <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your periodic damage dealt.",
+            "description": "You now radiate warmth to nearby allies, healing the lowest health nearby ally equal to 25% of your periodic damage dealt."
+          }
+        ],
+        "connections": [
+          33912,
+          33918
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FlameShock",
+          "key": "spell_fire_flameshock",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6501,
+        "name": "Sageweaving",
+        "slug": "sageweaving",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503915,
+        "spell_ids": [
+          503915
+        ],
+        "description_html": "Consuming an <span style=\"color: #ff7f7f; display: inline\">Ember</span> now reduces the cast time of your next <span style=\"color: #ffffff; display: inline\">Cinderheart</span> or <span style=\"color: #ffffff; display: inline\">Kindle</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+        "description": "Consuming an Ember now reduces the cast time of your next Cinderheart or Kindle by -15% for 12 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503915,
+            "description_html": "Consuming an <span style=\"color: #ff7f7f; display: inline\">Ember</span> now reduces the cast time of your next <span style=\"color: #ffffff; display: inline\">Cinderheart</span> or <span style=\"color: #ffffff; display: inline\">Kindle</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+            "description": "Consuming an Ember now reduces the cast time of your next Cinderheart or Kindle by -15% for 12 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [
+          30666,
+          33918
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fire_solar_Border",
+          "key": "nhi_fire_solar_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31276,
+        "name": "Burn Impurities",
+        "slug": "burn-impurities",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520149,
+        "spell_ids": [
+          520149
+        ],
+        "description_html": "Burn away <span class=\"item-number\">1</span> harmful magic effect and <span class=\"item-number\">1</span> disease effect from an ally and another nearby ally.",
+        "description": "Burn away 1 harmful magic effect and 1 disease effect from an ally and another nearby ally.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520149,
+            "description_html": "Burn away <span class=\"item-number\">1</span> harmful magic effect and <span class=\"item-number\">1</span> disease effect from an ally and another nearby ally.",
+            "description": "Burn away 1 harmful magic effect and 1 disease effect from an ally and another nearby ally."
+          }
+        ],
+        "connections": [
+          30666,
+          33916
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_fire_spell_04_Border",
+          "key": "uico_fire_spell_04_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9949,
+        "name": "Fiery Faith",
+        "slug": "fiery-faith",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 503913,
+        "spell_ids": [
+          503913
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell critical strike rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Level 40 Passive\nIncreases your spell critical strike rating by 15% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503913,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell critical strike rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Level 40 Passive\nIncreases your spell critical strike rating by 15% of your Spirit."
+          }
+        ],
+        "connections": [
+          6949
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fireshield_Border",
+          "key": "nhi_fireshield_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6661,
+        "name": "Touched by Fire",
+        "slug": "touched-by-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704848,
+        "spell_ids": [
+          704848,
+          704853
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Cinderheart</span>, <span style=\"color: #ffffff; display: inline\">Ember Touch</span>, and <span style=\"color: #ffffff; display: inline\">Kindle</span> now gains an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your bonus healing spell power.",
+        "description": "Your Cinderheart, Ember Touch, and Kindle now gains an additional 15% of your bonus healing spell power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704848,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Cinderheart</span>, <span style=\"color: #ffffff; display: inline\">Ember Touch</span>, and <span style=\"color: #ffffff; display: inline\">Kindle</span> now gains an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your bonus healing spell power.",
+            "description": "Your Cinderheart, Ember Touch, and Kindle now gains an additional 15% of your bonus healing spell power."
+          },
+          {
+            "rank": 2,
+            "spell_id": 704853,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Cinderheart</span>, <span style=\"color: #ffffff; display: inline\">Ember Touch</span>, and <span style=\"color: #ffffff; display: inline\">Kindle</span> now gains an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your bonus healing spell power.",
+            "description": "Your Cinderheart, Ember Touch, and Kindle now gains an additional 30% of your bonus healing spell power."
+          }
+        ],
+        "connections": [
+          7388,
+          29560
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fire_phoenix_Border",
+          "key": "nhi_fire_phoenix_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33917,
+        "name": "Invigoration",
+        "slug": "invigoration",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704863,
+        "spell_ids": [
+          704863
+        ],
+        "description_html": "Healing done by your <span style=\"color: #ffffff; display: inline\">Phoenix</span> now generates you <span class=\"item-number\">5</span> <span style=\"color: #ff7f7f; display: inline\">Heat</span>.",
+        "description": "Healing done by your Phoenix now generates you 5 Heat.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704863,
+            "description_html": "Healing done by your <span style=\"color: #ffffff; display: inline\">Phoenix</span> now generates you <span class=\"item-number\">5</span> <span style=\"color: #ff7f7f; display: inline\">Heat</span>.",
+            "description": "Healing done by your Phoenix now generates you 5 Heat."
+          }
+        ],
+        "connections": [
+          29560,
+          33921
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_FireWorm_Border",
+          "key": "custom_t_fireworm_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7385,
+        "name": "Cauterizing Wounds",
+        "slug": "cauterizing-wounds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570001,
+        "spell_ids": [
+          570001
+        ],
+        "description_html": "Healing done by <span style=\"color: #ffffff; display: inline\">Ember Touch</span> now grants you <span style=\"color: #ffffff; display: inline\">Flamecasting</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_playingwithfire\" /><span class=\"name\">Flamecasting</span></div><span class=\"desc\">Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+        "description": "Healing done by Ember Touch now grants you Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.\n\nAdditional applications do not refresh duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570001,
+            "description_html": "Healing done by <span style=\"color: #ffffff; display: inline\">Ember Touch</span> now grants you <span style=\"color: #ffffff; display: inline\">Flamecasting</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_playingwithfire\" /><span class=\"name\">Flamecasting</span></div><span class=\"desc\">Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+            "description": "Healing done by Ember Touch now grants you Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.\n\nAdditional applications do not refresh duration."
+          }
+        ],
+        "connections": [
+          6501,
+          33921
+        ],
+        "choice_group": 721221,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_butcher_gushingwounds",
+          "key": "ability_butcher_gushingwounds",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11185,
+        "name": "Brilliance",
+        "slug": "brilliance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570207,
+        "spell_ids": [
+          570207
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Flamecasting</span> can now stack <span class=\"item-number\">2</span> additional times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_playingwithfire\" /><span class=\"name\">Flamecasting</span></div><span class=\"desc\">Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+        "description": "Flamecasting can now stack 2 additional times.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.\n\nAdditional applications do not refresh duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570207,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Flamecasting</span> can now stack <span class=\"item-number\">2</span> additional times.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_playingwithfire\" /><span class=\"name\">Flamecasting</span></div><span class=\"desc\">Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+            "description": "Flamecasting can now stack 2 additional times.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.\n\nAdditional applications do not refresh duration."
+          }
+        ],
+        "connections": [
+          6501,
+          33921
+        ],
+        "choice_group": 721221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Brilliance",
+          "key": "spell_nature_brilliance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33885,
+        "name": "Tender Touch",
+        "slug": "tender-touch",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704273,
+        "spell_ids": [
+          704273,
+          707786
+        ],
+        "description_html": "Effective healing done by <span style=\"color: #FFFFFF; display: inline\">Ember Touch</span> now heals up to <span class=\"item-number\">3</span> of the lowest health allies near your target for an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the amount healed.",
+        "description": "Effective healing done by Ember Touch now heals up to 3 of the lowest health allies near your target for an additional 15% of the amount healed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704273,
+            "description_html": "Effective healing done by <span style=\"color: #FFFFFF; display: inline\">Ember Touch</span> now heals up to <span class=\"item-number\">3</span> of the lowest health allies near your target for an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the amount healed.",
+            "description": "Effective healing done by Ember Touch now heals up to 3 of the lowest health allies near your target for an additional 15% of the amount healed."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707786,
+            "description_html": "Effective healing done by <span style=\"color: #FFFFFF; display: inline\">Ember Touch</span> now heals up to <span class=\"item-number\">3</span> of the lowest health allies near your target for an additional <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the amount healed.",
+            "description": "Effective healing done by Ember Touch now heals up to 3 of the lowest health allies near your target for an additional 30% of the amount healed."
+          }
+        ],
+        "connections": [
+          6501,
+          31276
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_FireDancer_01",
+          "key": "inv_misc_firedancer_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29559,
+        "name": "Shielded by Flames",
+        "slug": "shielded-by-flames",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704275,
+        "spell_ids": [
+          704275
+        ],
+        "description_html": "Healing critical strikes now apply an absorption shield to allies equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the healing done for <span class=\"item-number\">8</span> seconds.",
+        "description": "Healing critical strikes now apply an absorption shield to allies equal to 30% of the healing done for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704275,
+            "description_html": "Healing critical strikes now apply an absorption shield to allies equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the healing done for <span class=\"item-number\">8</span> seconds.",
+            "description": "Healing critical strikes now apply an absorption shield to allies equal to 30% of the healing done for 8 seconds."
+          }
+        ],
+        "connections": [
+          31276,
+          33916
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_normal03fireball_Border",
+          "key": "_5_normal03fireball_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31273,
+        "name": "Roaring Pyre",
+        "slug": "roaring-pyre",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704278,
+        "spell_ids": [
+          704278
+        ],
+        "description_html": "Conjure a <span style=\"color: #ffffff; display: inline\">Roaring Pyre</span> at the target location for <span class=\"item-number\">20</span> seconds. <br /><br />Allies within <span class=\"item-number\">30</span> yds of the bonfire are healed for <span class=\"item-number\">35</span> + <span class=\"item-number\">10% healing</span> + <span class=\"item-number\">30% Spirit</span>, scaling with your Spirit and healing spell power, every <span class=\"item-number\">2</span> sec and their Spirit is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Conjure a Roaring Pyre at the target location for 20 seconds.\n\nAllies within 30 yds of the bonfire are healed for 35 + 10% healing + 30% Spirit, scaling with your Spirit and healing spell power, every 2 sec and their Spirit is increased by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704278,
+            "description_html": "Conjure a <span style=\"color: #ffffff; display: inline\">Roaring Pyre</span> at the target location for <span class=\"item-number\">20</span> seconds. <br /><br />Allies within <span class=\"item-number\">30</span> yds of the bonfire are healed for <span class=\"item-number\">35</span> + <span class=\"item-number\">10% healing</span> + <span class=\"item-number\">30% Spirit</span>, scaling with your Spirit and healing spell power, every <span class=\"item-number\">2</span> sec and their Spirit is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Conjure a Roaring Pyre at the target location for 20 seconds.\n\nAllies within 30 yds of the bonfire are healed for 35 + 10% healing + 30% Spirit, scaling with your Spirit and healing spell power, every 2 sec and their Spirit is increased by 10%."
+          }
+        ],
+        "connections": [
+          6661,
+          33917
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_summerfest_firespirit",
+          "key": "inv_summerfest_firespirit",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7478,
+        "name": "Veins of Fire",
+        "slug": "veins-of-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706859,
+        "spell_ids": [
+          706859
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Flamecasting</span> now also grants <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased Spirit per stack.",
+        "description": "Flamecasting now also grants 3% increased Spirit per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706859,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Flamecasting</span> now also grants <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased Spirit per stack.",
+            "description": "Flamecasting now also grants 3% increased Spirit per stack."
+          }
+        ],
+        "connections": [
+          7385,
+          11185,
+          33885,
+          33917
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_drinkable_(4)_Border",
+          "key": "novart_drinkable__4__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30642,
+        "name": "Inferno",
+        "slug": "inferno",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806736,
+        "spell_ids": [
+          806736
+        ],
+        "description_html": "$9d",
+        "description": "$9d",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806736,
+            "description_html": "$9e",
+            "description": "$9e"
+          }
+        ],
+        "connections": [
+          29559,
+          33885
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0009s_0000_fire_Border",
+          "key": "epic_rpg_icon_pack_brutal_icon_0009s_0000_fire_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9964,
+        "name": "Burning Passion",
+        "slug": "burning-passion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 504733,
+        "spell_ids": [
+          504733
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Effective healing critical strikes now generate <span class=\"item-number\">10</span> <span style=\"color: #ff7f7f; display: inline\">Heat</span>.",
+        "description": "Level 50 Passive\nEffective healing critical strikes now generate 10 Heat.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504733,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Effective healing critical strikes now generate <span class=\"item-number\">10</span> <span style=\"color: #ff7f7f; display: inline\">Heat</span>.",
+            "description": "Level 50 Passive\nEffective healing critical strikes now generate 10 Heat."
+          }
+        ],
+        "connections": [
+          9949
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_fire_spell_03_Border",
+          "key": "uico_fire_spell_03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7386,
+        "name": "Fueling the Fire",
+        "slug": "fueling-the-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806747,
+        "spell_ids": [
+          806747
+        ],
+        "description_html": "Using <span style=\"color: #ffffff; display: inline\">Ember Touch</span> on your <span style=\"color: #ffffff; display: inline\">Roaring Pyre</span> or <span style=\"color: #ffffff; display: inline\">Phoenix</span> will cause them to erupt in flames, healing <span class=\"item-number\">12</span> allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">232</span> + <span class=\"item-number\">100% Spirit</span>, additionally scaling with Spirit.<br /><br />Allied Pyromancers can also fuel the fire with your <span style=\"color: #ffffff; display: inline\">Roaring Pyre</span> and <span style=\"color: #ffffff; display: inline\">Phoenix</span>.",
+        "description": "Using Ember Touch on your Roaring Pyre or Phoenix will cause them to erupt in flames, healing 12 allies within 30 yds for 232 + 100% Spirit, additionally scaling with Spirit.\n\nAllied Pyromancers can also fuel the fire with your Roaring Pyre and Phoenix.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806747,
+            "description_html": "Using <span style=\"color: #ffffff; display: inline\">Ember Touch</span> on your <span style=\"color: #ffffff; display: inline\">Roaring Pyre</span> or <span style=\"color: #ffffff; display: inline\">Phoenix</span> will cause them to erupt in flames, healing <span class=\"item-number\">12</span> allies within <span class=\"item-number\">30</span> yds for <span class=\"item-number\">232</span> + <span class=\"item-number\">100% Spirit</span>, additionally scaling with Spirit.<br /><br />Allied Pyromancers can also fuel the fire with your <span style=\"color: #ffffff; display: inline\">Roaring Pyre</span> and <span style=\"color: #ffffff; display: inline\">Phoenix</span>.",
+            "description": "Using Ember Touch on your Roaring Pyre or Phoenix will cause them to erupt in flames, healing 12 allies within 30 yds for 232 + 100% Spirit, additionally scaling with Spirit.\n\nAllied Pyromancers can also fuel the fire with your Roaring Pyre and Phoenix."
+          }
+        ],
+        "connections": [
+          31273
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_FireInOurHands_Border",
+          "key": "custom_t_fireinourhands_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7389,
+        "name": "Emberheart",
+        "slug": "emberheart",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680378,
+        "spell_ids": [
+          680378
+        ],
+        "description_html": "$9f",
+        "description": "$9f",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680378,
+            "description_html": "$a0",
+            "description": "$a0"
+          }
+        ],
+        "connections": [
+          7478,
+          30642,
+          31273
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_soulburn_Border",
+          "key": "nhi_soulburn_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6951,
+        "name": "Scepter of Fire",
+        "slug": "scepter-of-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706860,
+        "spell_ids": [
+          706860
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Inferno</span> by <span class=\"item-number\">5</span> sec, causing its end of duration explosion of healing to trigger every <span class=\"item-number\">5</span> sec instead.",
+        "description": "Increases the duration of Inferno by 5 sec, causing its end of duration explosion of healing to trigger every 5 sec instead.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706860,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Inferno</span> by <span class=\"item-number\">5</span> sec, causing its end of duration explosion of healing to trigger every <span class=\"item-number\">5</span> sec instead.",
+            "description": "Increases the duration of Inferno by 5 sec, causing its end of duration explosion of healing to trigger every 5 sec instead."
+          }
+        ],
+        "connections": [
+          30642
+        ],
+        "choice_group": 783433,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_passivemastery_(17)_Border",
+          "key": "novart_passivemastery__17__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9921,
+        "name": "Blessing of the Inferno",
+        "slug": "blessing-of-the-inferno",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 19,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707451,
+        "spell_ids": [
+          707451
+        ],
+        "description_html": "Reduces the healing done by <span style=\"color: #FFFFFF; display: inline\">Inferno</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, but increases its chance to trigger by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the healing done by Inferno by -20%, but increases its chance to trigger by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707451,
+            "description_html": "Reduces the healing done by <span style=\"color: #FFFFFF; display: inline\">Inferno</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>, but increases its chance to trigger by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the healing done by Inferno by -20%, but increases its chance to trigger by 50%."
+          }
+        ],
+        "connections": [
+          30642
+        ],
+        "choice_group": 783433,
+        "icon": {
+          "source_path": "Interface\\Icons\\_EnslaveSpell_Fire",
+          "key": "enslavespell_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

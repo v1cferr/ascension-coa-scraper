@@ -1,0 +1,2306 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:20+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:2e5d361af20aadee290499f21c75d0141405fa7fc2a85bd406f4a8f1f666b000",
+    "talent_count": 156,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 17,
+    "name": "Knight of Xoroth",
+    "slug": "knight-of-xoroth",
+    "class_file": "fleshwarden",
+    "color": "rgb(252, 0, 5)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:fleshwarden",
+      "key": "class-fleshwarden",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 32,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 46,
+    "name": "Hellfire",
+    "slug": "hellfire",
+    "sort_order": 0,
+    "class_id": 17,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31167,
+        "name": "Hellmaw",
+        "slug": "hellmaw",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4017,
+            30176
+          ]
+        },
+        "spell_id": 806965,
+        "spell_ids": [
+          806965
+        ],
+        "description_html": "Burn an enemy with a fiery strike, dealing <span class=\"item-number\">24</span> + <span class=\"item-number\">10% AP</span> + <span class=\"item-number\">18% SP</span> Shadowflame Damage, plus an additional <span class=\"item-number\">96</span> + <span class=\"item-number\">56% AP</span> + <span class=\"item-number\">57.2% SP</span> over <span class=\"item-number\">12</span> seconds.<br /><br />Deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage per <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+        "description": "Burn an enemy with a fiery strike, dealing 24 + 10% AP + 18% SP Shadowflame Damage, plus an additional 96 + 56% AP + 57.2% SP over 12 seconds.\n\nDeals 20% increased damage per Demonfire consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806965,
+            "description_html": "Burn an enemy with a fiery strike, dealing <span class=\"item-number\">24</span> + <span class=\"item-number\">10% AP</span> + <span class=\"item-number\">18% SP</span> Shadowflame Damage, plus an additional <span class=\"item-number\">96</span> + <span class=\"item-number\">56% AP</span> + <span class=\"item-number\">57.2% SP</span> over <span class=\"item-number\">12</span> seconds.<br /><br />Deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased damage per <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+            "description": "Burn an enemy with a fiery strike, dealing 24 + 10% AP + 18% SP Shadowflame Damage, plus an additional 96 + 56% AP + 57.2% SP over 12 seconds.\n\nDeals 20% increased damage per Demonfire consumed."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_firecatmount",
+          "key": "inv_firecatmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4017,
+        "name": "Greater Imp",
+        "slug": "greater-imp",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30176
+          ]
+        },
+        "spell_id": 92101,
+        "spell_ids": [
+          92101
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Teaches you <span style=\"color: #ffffff; display: inline\">Summon: Greater Imp</span> and increases your expertise by <span class=\"item-number\">10</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_sumimparmy_border\" /><span class=\"name\">Summon: Greater Imp</span></div><span class=\"desc\">Summon a <span style=\"color: #ffffff; display: inline\">Greater Imp</span> to aid you in combat.<br /><br /><span style=\"color: #ffffff; display: inline\">Greater Imp</span> has various combat abilities that provide excellent single target damage and control.</span></div>",
+        "description": "Level 10 Passive\nTeaches you Summon: Greater Imp and increases your expertise by 10.\nSummon: Greater ImpSummon a Greater Imp to aid you in combat.\n\nGreater Imp has various combat abilities that provide excellent single target damage and control.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92101,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Teaches you <span style=\"color: #ffffff; display: inline\">Summon: Greater Imp</span> and increases your expertise by <span class=\"item-number\">10</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_sumimparmy_border\" /><span class=\"name\">Summon: Greater Imp</span></div><span class=\"desc\">Summon a <span style=\"color: #ffffff; display: inline\">Greater Imp</span> to aid you in combat.<br /><br /><span style=\"color: #ffffff; display: inline\">Greater Imp</span> has various combat abilities that provide excellent single target damage and control.</span></div>",
+            "description": "Level 10 Passive\nTeaches you Summon: Greater Imp and increases your expertise by 10.\nSummon: Greater ImpSummon a Greater Imp to aid you in combat.\n\nGreater Imp has various combat abilities that provide excellent single target damage and control."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_sumimparmy_Border",
+          "key": "_5_sumimparmy_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6519,
+        "name": "Combusting Blade",
+        "slug": "combusting-blade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704999,
+        "spell_ids": [
+          704999,
+          707837
+        ],
+        "description_html": "Increases your Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Infernal Strike</span> by <span class=\"item-number\">-5</span>.",
+        "description": "Increases your Intellect by 5% and reduces the Rage cost of Infernal Strike by -5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704999,
+            "description_html": "Increases your Intellect by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Infernal Strike</span> by <span class=\"item-number\">-5</span>.",
+            "description": "Increases your Intellect by 5% and reduces the Rage cost of Infernal Strike by -5."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707837,
+            "description_html": "Increases your Intellect by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Infernal Strike</span> by <span class=\"item-number\">-10</span>.",
+            "description": "Increases your Intellect by 10% and reduces the Rage cost of Infernal Strike by -10."
+          }
+        ],
+        "connections": [
+          31167
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_MoltenBlood",
+          "key": "spell_fire_moltenblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30691,
+        "name": "Invasion",
+        "slug": "invasion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300374,
+        "spell_ids": [
+          300374,
+          301357
+        ],
+        "description_html": "All Fire damage dealt is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> to enemies above <span class=\"item-number\">80%</span> health.",
+        "description": "All Fire damage dealt is increased by 10% to enemies above 80% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300374,
+            "description_html": "All Fire damage dealt is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> to enemies above <span class=\"item-number\">80%</span> health.",
+            "description": "All Fire damage dealt is increased by 10% to enemies above 80% health."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301357,
+            "description_html": "All Fire damage dealt is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> to enemies above <span class=\"item-number\">80%</span> health.",
+            "description": "All Fire damage dealt is increased by 20% to enemies above 80% health."
+          }
+        ],
+        "connections": [
+          31167
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_AuraCloak_Fire",
+          "key": "auracloak_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30697,
+        "name": "Pestilence of Apocalypse",
+        "slug": "pestilence-of-apocalypse",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804786,
+        "spell_ids": [
+          804786
+        ],
+        "description_html": "Emanate the <span style=\"color: #ffffff; display: inline\">Pestilence of Apocalypse</span>, causing nearby enemies to take <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased Fire damage from you.",
+        "description": "Emanate the Pestilence of Apocalypse, causing nearby enemies to take 10% increased Fire damage from you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804786,
+            "description_html": "Emanate the <span style=\"color: #ffffff; display: inline\">Pestilence of Apocalypse</span>, causing nearby enemies to take <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased Fire damage from you.",
+            "description": "Emanate the Pestilence of Apocalypse, causing nearby enemies to take 10% increased Fire damage from you."
+          }
+        ],
+        "connections": [
+          6519
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\KoX_Apoc",
+          "key": "kox_apoc",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30709,
+        "name": "Seeking Flame",
+        "slug": "seeking-flame",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805671,
+        "spell_ids": [
+          805671
+        ],
+        "description_html": "<span style=\"color: #ff9933; display: inline\">Generates <span class=\"item-number\">2</span> Demonfire</span><br />Sear an enemy, dealing <span class=\"item-number\">63</span> + <span class=\"item-number\">33.62% fire SP</span> + <span class=\"item-number\">33% AP</span> Fire damage.",
+        "description": "Generates 2 Demonfire\nSear an enemy, dealing 63 + 33.62% fire SP + 33% AP Fire damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805671,
+            "description_html": "<span style=\"color: #ff9933; display: inline\">Generates <span class=\"item-number\">2</span> Demonfire</span><br />Sear an enemy, dealing <span class=\"item-number\">63</span> + <span class=\"item-number\">33.62% fire SP</span> + <span class=\"item-number\">33% AP</span> Fire damage.",
+            "description": "Generates 2 Demonfire\nSear an enemy, dealing 63 + 33.62% fire SP + 33% AP Fire damage."
+          }
+        ],
+        "connections": [
+          30691
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shadowflame_missile",
+          "key": "inv_shadowflame_missile",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11256,
+        "name": "Burning Power",
+        "slug": "burning-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 500004,
+        "spell_ids": [
+          500004
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your attack power by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your Intellect and your spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Strength.",
+        "description": "Level 20 Passive\nIncreases your attack power by 100% of your Intellect and your spell damage by 50% of your Strength.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500004,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your attack power by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your Intellect and your spell damage by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Strength.",
+            "description": "Level 20 Passive\nIncreases your attack power by 100% of your Intellect and your spell damage by 50% of your Strength."
+          }
+        ],
+        "connections": [
+          4017
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helmet_103",
+          "key": "inv_helmet_103",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34110,
+        "name": "To Ashes",
+        "slug": "to-ashes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705000,
+        "spell_ids": [
+          705000
+        ],
+        "description_html": "Increases the critical strike chance of abilities that spend <span style=\"color: #ff9933; display: inline\">Demonfire</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of abilities that spend Demonfire by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705000,
+            "description_html": "Increases the critical strike chance of abilities that spend <span style=\"color: #ff9933; display: inline\">Demonfire</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of abilities that spend Demonfire by 5%."
+          }
+        ],
+        "connections": [
+          30697
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Volcano",
+          "key": "spell_fire_volcano",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34107,
+        "name": "Hellfire Embers",
+        "slug": "hellfire-embers",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807669,
+        "spell_ids": [
+          807669
+        ],
+        "description_html": "Increases the Fire damage dealt by your <span style=\"color: #ffffff; display: inline\">Hellfire Imp</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies above <span class=\"item-number\">80%</span> maximum health.",
+        "description": "Increases the Fire damage dealt by your Hellfire Imp by 30% against enemies above 80% maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807669,
+            "description_html": "Increases the Fire damage dealt by your <span style=\"color: #ffffff; display: inline\">Hellfire Imp</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against enemies above <span class=\"item-number\">80%</span> maximum health.",
+            "description": "Increases the Fire damage dealt by your Hellfire Imp by 30% against enemies above 80% maximum health."
+          }
+        ],
+        "connections": [
+          30697,
+          30709
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Incinerate",
+          "key": "spell_fire_incinerate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34068,
+        "name": "Flamewrath",
+        "slug": "flamewrath",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301358,
+        "spell_ids": [
+          301358
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Seeking Flame</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Seeking Flame by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301358,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Seeking Flame</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Seeking Flame by 20%."
+          }
+        ],
+        "connections": [
+          30709
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_LavaSpawn",
+          "key": "spell_fire_lavaspawn",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34067,
+        "name": "Claws of Hell",
+        "slug": "claws-of-hell",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805706,
+        "spell_ids": [
+          805706
+        ],
+        "description_html": "When you spend at least <span class=\"item-number\">4</span> <span style=\"color: #ff9933; display: inline\">Demonfire</span> stacks you now refresh the duration of your <span style=\"color: #FFFFFF; display: inline\">Unleash Apocalypse</span> on the target.",
+        "description": "When you spend at least 4 Demonfire stacks you now refresh the duration of your Unleash Apocalypse on the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805706,
+            "description_html": "When you spend at least <span class=\"item-number\">4</span> <span style=\"color: #ff9933; display: inline\">Demonfire</span> stacks you now refresh the duration of your <span style=\"color: #FFFFFF; display: inline\">Unleash Apocalypse</span> on the target.",
+            "description": "When you spend at least 4 Demonfire stacks you now refresh the duration of your Unleash Apocalypse on the target."
+          }
+        ],
+        "connections": [
+          34110
+        ],
+        "choice_group": 805706,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DeathGrip_Fire",
+          "key": "deathgrip_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34111,
+        "name": "Calamity",
+        "slug": "calamity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300393,
+        "spell_ids": [
+          300393
+        ],
+        "description_html": "Increases the damage of the <span style=\"color: #ffffff; display: inline\">Unleash</span> effect of <span style=\"color: #ffffff; display: inline\">Pestilence of Apocalypse</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and its duration is increased by <span class=\"item-number\">5</span> sec.",
+        "description": "Increases the damage of the Unleash effect of Pestilence of Apocalypse by 25% and its duration is increased by 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300393,
+            "description_html": "Increases the damage of the <span style=\"color: #ffffff; display: inline\">Unleash</span> effect of <span style=\"color: #ffffff; display: inline\">Pestilence of Apocalypse</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and its duration is increased by <span class=\"item-number\">5</span> sec.",
+            "description": "Increases the damage of the Unleash effect of Pestilence of Apocalypse by 25% and its duration is increased by 5 sec."
+          }
+        ],
+        "connections": [
+          34110
+        ],
+        "choice_group": 805706,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_burningeyes_Border",
+          "key": "nhi_burningeyes_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34066,
+        "name": "Hellfire Form",
+        "slug": "hellfire-form",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805696,
+        "spell_ids": [
+          805696
+        ],
+        "description_html": "Enter your <span style=\"color: #ffffff; display: inline\">Hellfire Form</span>, increasing your Fire damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and Fire critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Enter your Hellfire Form, increasing your Fire damage dealt by 20% and Fire critical strike chance by 15% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805696,
+            "description_html": "Enter your <span style=\"color: #ffffff; display: inline\">Hellfire Form</span>, increasing your Fire damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and Fire critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Enter your Hellfire Form, increasing your Fire damage dealt by 20% and Fire critical strike chance by 15% for 15 seconds."
+          }
+        ],
+        "connections": [
+          34107
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_foregedinflames",
+          "key": "ability_racial_foregedinflames",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34108,
+        "name": "Doom",
+        "slug": "doom",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802602,
+        "spell_ids": [
+          802602
+        ],
+        "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Greater Imp</span> into a <span style=\"color: #ffffff; display: inline\">Doomguard</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While transformed, your <span style=\"color: #FFFFFF; display: inline\">Doomguard</span> deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more damage, and its auto attacks ignite the target, dealing <span class=\"item-number\">10%</span> of the damage dealt as Fire damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">6</span> times.",
+        "description": "Transforms your Greater Imp into a Doomguard for 20 seconds.\n\nWhile transformed, your Doomguard deals 50% more damage, and its auto attacks ignite the target, dealing 10% of the damage dealt as Fire damage over 6 seconds, stacking 6 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802602,
+            "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Greater Imp</span> into a <span style=\"color: #ffffff; display: inline\">Doomguard</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While transformed, your <span style=\"color: #FFFFFF; display: inline\">Doomguard</span> deals <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more damage, and its auto attacks ignite the target, dealing <span class=\"item-number\">10%</span> of the damage dealt as Fire damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">6</span> times.",
+            "description": "Transforms your Greater Imp into a Doomguard for 20 seconds.\n\nWhile transformed, your Doomguard deals 50% more damage, and its auto attacks ignite the target, dealing 10% of the damage dealt as Fire damage over 6 seconds, stacking 6 times."
+          }
+        ],
+        "connections": [
+          34107
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_improveddemonictactics",
+          "key": "ability_warlock_improveddemonictactics",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29619,
+        "name": "Seething Strikes",
+        "slug": "seething-strikes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300375,
+        "spell_ids": [
+          300375
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Sever</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against <span style=\"color: #ff4500; display: inline\">Burning</span> targets and it now increases the targets chance to be critically struck by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+        "description": "Increases the damage of Sever by 30% against Burning targets and it now increases the targets chance to be critically struck by 3% for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300375,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Sever</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> against <span style=\"color: #ff4500; display: inline\">Burning</span> targets and it now increases the targets chance to be critically struck by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+            "description": "Increases the damage of Sever by 30% against Burning targets and it now increases the targets chance to be critically struck by 3% for 12 seconds."
+          }
+        ],
+        "connections": [
+          34068
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_fire_0000s_0000_sword_Border",
+          "key": "epic_rpg_icon_pack_fire_0000s_0000_sword_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30706,
+        "name": "Cinderblade",
+        "slug": "cinderblade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 704959,
+        "spell_ids": [
+          704959
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Intellect and your spell hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+        "description": "Level 30 Passive\nIncreases your critical strike rating by 20% of your Intellect and your spell hit chance by 6%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704959,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Intellect and your spell hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Level 30 Passive\nIncreases your critical strike rating by 20% of your Intellect and your spell hit chance by 6%."
+          }
+        ],
+        "connections": [
+          11256
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_felflamering_red",
+          "key": "spell_fire_felflamering_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7361,
+        "name": "Rain of Chaos",
+        "slug": "rain-of-chaos",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704452,
+        "spell_ids": [
+          704452
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Flames of Xoroth</span> with <span class=\"item-number\">6</span> <span style=\"color: #ff9933; display: inline\">Demonfire</span> now calls down a <span style=\"color: #ffffff; display: inline\">Rain of Chaos</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_rainoffire\" /><span class=\"name\">Rain of Chaos</span></div><span class=\"desc\">Molten rain burns enemies in the area causing <span class=\"item-number\">234</span> Fire Damage over <span class=\"item-number\">9</span> seconds.</span></div>",
+        "description": "Casting Flames of Xoroth with 6 Demonfire now calls down a Rain of Chaos.Rain of ChaosMolten rain burns enemies in the area causing 234 Fire Damage over 9 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704452,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Flames of Xoroth</span> with <span class=\"item-number\">6</span> <span style=\"color: #ff9933; display: inline\">Demonfire</span> now calls down a <span style=\"color: #ffffff; display: inline\">Rain of Chaos</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_rainoffire\" /><span class=\"name\">Rain of Chaos</span></div><span class=\"desc\">Molten rain burns enemies in the area causing <span class=\"item-number\">234</span> Fire Damage over <span class=\"item-number\">9</span> seconds.</span></div>",
+            "description": "Casting Flames of Xoroth with 6 Demonfire now calls down a Rain of Chaos.Rain of ChaosMolten rain burns enemies in the area causing 234 Fire Damage over 9 seconds."
+          }
+        ],
+        "connections": [
+          34066,
+          34067,
+          34111
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_RainOfFire",
+          "key": "spell_shadow_rainoffire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34063,
+        "name": "Grotesque",
+        "slug": "grotesque",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707515,
+        "spell_ids": [
+          707515
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Hellfire Form</span> is active, your <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> now has no cooldown and deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more damage.",
+        "description": "While Hellfire Form is active, your Seeking Flame now has no cooldown and deals 25% more damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707515,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Hellfire Form</span> is active, your <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> now has no cooldown and deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> more damage.",
+            "description": "While Hellfire Form is active, your Seeking Flame now has no cooldown and deals 25% more damage."
+          }
+        ],
+        "connections": [
+          34066
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_torment",
+          "key": "ability_demonhunter_torment",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9257,
+        "name": "Hellfire Rituals",
+        "slug": "hellfire-rituals",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500551,
+        "spell_ids": [
+          500551
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> now increases the haste of your <span style=\"color: #FFFFFF; display: inline\">Greater Imp</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Critical strikes with Skulltaker now increases the haste of your Greater Imp by 15% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500551,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> now increases the haste of your <span style=\"color: #FFFFFF; display: inline\">Greater Imp</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Critical strikes with Skulltaker now increases the haste of your Greater Imp by 15% for 8 seconds."
+          }
+        ],
+        "connections": [
+          34108
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_cremation",
+          "key": "ability_warlock_cremation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6929,
+        "name": "Infernal Steel",
+        "slug": "infernal-steel",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805693,
+        "spell_ids": [
+          805693
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Skulltaker</span> with <span class=\"item-number\">6</span> <span style=\"color: #ff9933; display: inline\">Demonfire</span> stacks now causes your next <span style=\"color: #ffffff; display: inline\">Hellmaw</span> within <span class=\"item-number\">15</span> seconds to tick <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> faster and cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Rage.",
+        "description": "Casting Skulltaker with 6 Demonfire stacks now causes your next Hellmaw within 15 seconds to tick -25% faster and cost -50% less Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805693,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Skulltaker</span> with <span class=\"item-number\">6</span> <span style=\"color: #ff9933; display: inline\">Demonfire</span> stacks now causes your next <span style=\"color: #ffffff; display: inline\">Hellmaw</span> within <span class=\"item-number\">15</span> seconds to tick <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> faster and cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Rage.",
+            "description": "Casting Skulltaker with 6 Demonfire stacks now causes your next Hellmaw within 15 seconds to tick -25% faster and cost -50% less Rage."
+          }
+        ],
+        "connections": [
+          29619,
+          34108
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_02",
+          "key": "inv_sword_1h_artifactfelomelorn_d_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30393,
+        "name": "Indiscriminate",
+        "slug": "indiscriminate",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704958,
+        "spell_ids": [
+          704958
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Seeking Flame</span> now spreads <span style=\"color: #ffffff; display: inline\">Hellmaw</span> and <span style=\"color: #ffffff; display: inline\">Melt</span> from the target to up to <span class=\"item-number\">3</span> enemies within <span class=\"item-number\">6</span> yds.",
+        "description": "Seeking Flame now spreads Hellmaw and Melt from the target to up to 3 enemies within 6 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704958,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Seeking Flame</span> now spreads <span style=\"color: #ffffff; display: inline\">Hellmaw</span> and <span style=\"color: #ffffff; display: inline\">Melt</span> from the target to up to <span class=\"item-number\">3</span> enemies within <span class=\"item-number\">6</span> yds.",
+            "description": "Seeking Flame now spreads Hellmaw and Melt from the target to up to 3 enemies within 6 yds."
+          }
+        ],
+        "connections": [
+          7361,
+          34067,
+          34111
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_04",
+          "key": "inv_glaive_1h_artifactaldrochi_d_04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34105,
+        "name": "Inferno Blast",
+        "slug": "inferno-blast",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805697,
+        "spell_ids": [
+          805697,
+          807899
+        ],
+        "description_html": "Increases your critical damage against <span style=\"color: #ff4500; display: inline\">Burning</span> targets by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical damage against Burning targets by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805697,
+            "description_html": "Increases your critical damage against <span style=\"color: #ff4500; display: inline\">Burning</span> targets by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical damage against Burning targets by 20%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807899,
+            "description_html": "Increases your critical damage against <span style=\"color: #ff4500; display: inline\">Burning</span> targets by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical damage against Burning targets by 40%."
+          }
+        ],
+        "connections": [
+          7361,
+          34063
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_01",
+          "key": "inv_offhand_1h_artifactdoomhammer_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34109,
+        "name": "Infernal Pummeling",
+        "slug": "infernal-pummeling",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680900,
+        "spell_ids": [
+          680900
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Melt</span> now increases the damage your target takes from <span style=\"color: #ffffff; display: inline\">Flames of Xoroth</span> and <span style=\"color: #ffffff; display: inline\">Skulltaker</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Melt now increases the damage your target takes from Flames of Xoroth and Skulltaker by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680900,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Melt</span> now increases the damage your target takes from <span style=\"color: #ffffff; display: inline\">Flames of Xoroth</span> and <span style=\"color: #ffffff; display: inline\">Skulltaker</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Melt now increases the damage your target takes from Flames of Xoroth and Skulltaker by 10%."
+          }
+        ],
+        "connections": [
+          9257,
+          34063
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_infernalmadness_Border",
+          "key": "nhi_infernalmadness_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30714,
+        "name": "Xorothian Empowerment",
+        "slug": "xorothian-empowerment",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704994,
+        "spell_ids": [
+          704994
+        ],
+        "description_html": "Increases the attack power of all party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.",
+        "description": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704994,
+            "description_html": "Increases the attack power of all party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.",
+            "description": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects."
+          }
+        ],
+        "connections": [
+          9257,
+          6929
+        ],
+        "choice_group": 783542,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_firelands_raid_ragnaros",
+          "key": "achievement_firelands_raid_ragnaros",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34098,
+        "name": "Hellbringer",
+        "slug": "hellbringer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300963,
+        "spell_ids": [
+          300963
+        ],
+        "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+        "description": "Increases the all damage dealt by party and raid members by 3%.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300963,
+            "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+            "description": "Increases the all damage dealt by party and raid members by 3%.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          9257,
+          6929
+        ],
+        "choice_group": 783542,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_felbatmountdh",
+          "key": "inv_felbatmountdh",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6859,
+        "name": "Infernal Pursuit",
+        "slug": "infernal-pursuit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704992,
+        "spell_ids": [
+          704992,
+          707745
+        ],
+        "description_html": "Increases your melee haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and reduces the duration of root effects against you by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your melee haste by 3% and reduces the duration of root effects against you by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704992,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and reduces the duration of root effects against you by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee haste by 3% and reduces the duration of root effects against you by -15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707745,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and reduces the duration of root effects against you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee haste by 6% and reduces the duration of root effects against you by -30%."
+          }
+        ],
+        "connections": [
+          6929,
+          29619
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_boots_plate_raiddeathknight_i_01",
+          "key": "inv_boots_plate_raiddeathknight_i_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4706,
+        "name": "Impish Pestilence",
+        "slug": "impish-pestilence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 300398,
+        "spell_ids": [
+          300398
+        ],
+        "description_html": "$125",
+        "description": "$125",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300398,
+            "description_html": "$126",
+            "description": "$126"
+          }
+        ],
+        "connections": [
+          30706
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_herb_fireweedbranch",
+          "key": "inv_misc_herb_fireweedbranch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 12607,
+        "name": "Partners in Flames",
+        "slug": "partners-in-flames",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500578,
+        "spell_ids": [
+          500578
+        ],
+        "description_html": "Fire damage dealt by your <span style=\"color: #ffffff; display: inline\">Greater Imp</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to empower you, increasing your damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Fire damage dealt by your Greater Imp now has a 25% chance to empower you, increasing your damage dealt by 5% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500578,
+            "description_html": "Fire damage dealt by your <span style=\"color: #ffffff; display: inline\">Greater Imp</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to empower you, increasing your damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Fire damage dealt by your Greater Imp now has a 25% chance to empower you, increasing your damage dealt by 5% for 10 seconds."
+          }
+        ],
+        "connections": [
+          30393,
+          34105
+        ],
+        "choice_group": 356216,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_sumimp_Border",
+          "key": "_5_sumimp_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30704,
+        "name": "Unbound Inferno",
+        "slug": "unbound-inferno",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704997,
+        "spell_ids": [
+          704997
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Infernal Strikes</span> against enemies affected by your <span style=\"color: #ffffff; display: inline\">Flames of Xoroth</span> now blasts nearby enemies for <span class=\"item-number\">75</span> + <span class=\"item-number\">10% fire SP</span> + <span class=\"item-number\">5% AP</span> Fire damage.",
+        "description": "Your Infernal Strikes against enemies affected by your Flames of Xoroth now blasts nearby enemies for 75 + 10% fire SP + 5% AP Fire damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704997,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Infernal Strikes</span> against enemies affected by your <span style=\"color: #ffffff; display: inline\">Flames of Xoroth</span> now blasts nearby enemies for <span class=\"item-number\">75</span> + <span class=\"item-number\">10% fire SP</span> + <span class=\"item-number\">5% AP</span> Fire damage.",
+            "description": "Your Infernal Strikes against enemies affected by your Flames of Xoroth now blasts nearby enemies for 75 + 10% fire SP + 5% AP Fire damage."
+          }
+        ],
+        "connections": [
+          30393,
+          34105
+        ],
+        "choice_group": 356216,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FlameBlades",
+          "key": "spell_fire_flameblades",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12179,
+        "name": "Brimstone Flames",
+        "slug": "brimstone-flames",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807671,
+        "spell_ids": [
+          807671
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> on enemies affected by <span style=\"color: #ffffff; display: inline\">Pestilence of Apocalypse</span>.<br /><br />Damage dealt is increased by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> you have active.",
+        "description": "Damage dealt by Seeking Flame is increased by 20% on enemies affected by Pestilence of Apocalypse.\n\nDamage dealt is increased by an additional 10% for each Demonfire you have active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807671,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> on enemies affected by <span style=\"color: #ffffff; display: inline\">Pestilence of Apocalypse</span>.<br /><br />Damage dealt is increased by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> you have active.",
+            "description": "Damage dealt by Seeking Flame is increased by 20% on enemies affected by Pestilence of Apocalypse.\n\nDamage dealt is increased by an additional 10% for each Demonfire you have active."
+          }
+        ],
+        "connections": [
+          34109
+        ],
+        "choice_group": 807671,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_firestone_Border",
+          "key": "nhi_firestone_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30179,
+        "name": "Brimstone Splinters",
+        "slug": "brimstone-splinters",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805703,
+        "spell_ids": [
+          805703
+        ],
+        "description_html": "Grants <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> additional <span style=\"color: #ff9933; display: inline\">Demonfire</span> when it deals damage.<br /><br />Chance to trigger is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> you have active.",
+        "description": "Grants Seeking Flame a 30% chance to generate 1 additional Demonfire when it deals damage.\n\nChance to trigger is increased by 5% for each Demonfire you have active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805703,
+            "description_html": "Grants <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> additional <span style=\"color: #ff9933; display: inline\">Demonfire</span> when it deals damage.<br /><br />Chance to trigger is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> you have active.",
+            "description": "Grants Seeking Flame a 30% chance to generate 1 additional Demonfire when it deals damage.\n\nChance to trigger is increased by 5% for each Demonfire you have active."
+          }
+        ],
+        "connections": [
+          34109
+        ],
+        "choice_group": 807671,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_flaming_splinter",
+          "key": "inv_flaming_splinter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34099,
+        "name": "Shadowflame Forge",
+        "slug": "shadowflame-forge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704989,
+        "spell_ids": [
+          704989,
+          707838
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hellmaw</span> by <span class=\"item-number\">3</span> sec.",
+        "description": "Increases the duration of Hellmaw by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704989,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hellmaw</span> by <span class=\"item-number\">3</span> sec.",
+            "description": "Increases the duration of Hellmaw by 3 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707838,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Hellmaw</span> by <span class=\"item-number\">6</span> sec.",
+            "description": "Increases the duration of Hellmaw by 6 sec."
+          }
+        ],
+        "connections": [
+          6859,
+          30714,
+          34098
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_forgeoflight",
+          "key": "ability_racial_forgeoflight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30707,
+        "name": "Into the Maw",
+        "slug": "into-the-maw",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802619,
+        "spell_ids": [
+          802619
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Hellmaw</span> causes a <span style=\"color: #FFFFFF; display: inline\">Hellfire Explosion</span> at the end of its duration, dealing additional Fire damage to all nearby enemies within <span class=\"item-number\">5</span> yards equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the periodic damage dealt over the duration.",
+        "description": "Hellmaw causes a Hellfire Explosion at the end of its duration, dealing additional Fire damage to all nearby enemies within 5 yards equal to 50% of the periodic damage dealt over the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802619,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Hellmaw</span> causes a <span style=\"color: #FFFFFF; display: inline\">Hellfire Explosion</span> at the end of its duration, dealing additional Fire damage to all nearby enemies within <span class=\"item-number\">5</span> yards equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the periodic damage dealt over the duration.",
+            "description": "Hellmaw causes a Hellfire Explosion at the end of its duration, dealing additional Fire damage to all nearby enemies within 5 yards equal to 50% of the periodic damage dealt over the duration."
+          }
+        ],
+        "connections": [
+          12179,
+          12607,
+          30179,
+          30704
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fire_explosion_Border",
+          "key": "nhi_fire_explosion_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30713,
+        "name": "Punisher",
+        "slug": "punisher",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704988,
+        "spell_ids": [
+          704988
+        ],
+        "description_html": "Increases the attack power and spell power scaling of <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the attack power and spell power scaling of Seeking Flame by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704988,
+            "description_html": "Increases the attack power and spell power scaling of <span style=\"color: #ffffff; display: inline\">Seeking Flame</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the attack power and spell power scaling of Seeking Flame by 25%."
+          }
+        ],
+        "connections": [
+          12179,
+          30179,
+          34099
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(36)_Border",
+          "key": "novart_magicspell__36__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11106,
+        "name": "Evil Duo",
+        "slug": "evil-duo",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 704961,
+        "spell_ids": [
+          704961
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Unleashing a <span style=\"color: #ffffff; display: inline\">Pestilence</span> now causes your <span style=\"color: #ffffff; display: inline\">Greater Imp</span> to unleash it's <span style=\"color: #ffffff; display: inline\">Pestilence</span>.<br /><br />The <span style=\"color: #ffffff; display: inline\">Imp</span>'s unleash effect is equivalent to your own unleash effect for the equivalent <span style=\"color: #ffffff; display: inline\">Pestilence</span>.",
+        "description": "Level 50 Passive\nUnleashing a Pestilence now causes your Greater Imp to unleash it's Pestilence.\n\nThe Imp's unleash effect is equivalent to your own unleash effect for the equivalent Pestilence.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704961,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Unleashing a <span style=\"color: #ffffff; display: inline\">Pestilence</span> now causes your <span style=\"color: #ffffff; display: inline\">Greater Imp</span> to unleash it's <span style=\"color: #ffffff; display: inline\">Pestilence</span>.<br /><br />The <span style=\"color: #ffffff; display: inline\">Imp</span>'s unleash effect is equivalent to your own unleash effect for the equivalent <span style=\"color: #ffffff; display: inline\">Pestilence</span>.",
+            "description": "Level 50 Passive\nUnleashing a Pestilence now causes your Greater Imp to unleash it's Pestilence.\n\nThe Imp's unleash effect is equivalent to your own unleash effect for the equivalent Pestilence."
+          }
+        ],
+        "connections": [
+          4706
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_summonimp",
+          "key": "spell_shadow_summonimp",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34100,
+        "name": "Hellstorm",
+        "slug": "hellstorm",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802342,
+        "spell_ids": [
+          802342
+        ],
+        "description_html": "Create a hellstorm, dealing <span class=\"item-number\">120</span> + <span class=\"item-number\">25% fire SP</span> + <span class=\"item-number\">8% AP</span> Fire damage to up to <span class=\"item-number\">8</span> nearby enemies.<br /><br />Embers then flare every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">2</span> seconds, dealing <span class=\"item-number\">59</span> + <span class=\"item-number\">5% fire SP</span> + <span class=\"item-number\">5% AP</span> Fire damage.<br /><br />Duration is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+        "description": "Create a hellstorm, dealing 120 + 25% fire SP + 8% AP Fire damage to up to 8 nearby enemies.\n\nEmbers then flare every 1 sec for 2 seconds, dealing 59 + 5% fire SP + 5% AP Fire damage.\n\nDuration is increased by 100% for each stack of Demonfire consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802342,
+            "description_html": "Create a hellstorm, dealing <span class=\"item-number\">120</span> + <span class=\"item-number\">25% fire SP</span> + <span class=\"item-number\">8% AP</span> Fire damage to up to <span class=\"item-number\">8</span> nearby enemies.<br /><br />Embers then flare every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">2</span> seconds, dealing <span class=\"item-number\">59</span> + <span class=\"item-number\">5% fire SP</span> + <span class=\"item-number\">5% AP</span> Fire damage.<br /><br />Duration is increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+            "description": "Create a hellstorm, dealing 120 + 25% fire SP + 8% AP Fire damage to up to 8 nearby enemies.\n\nEmbers then flare every 1 sec for 2 seconds, dealing 59 + 5% fire SP + 5% AP Fire damage.\n\nDuration is increased by 100% for each stack of Demonfire consumed."
+          }
+        ],
+        "connections": [
+          30707
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_xavius_darkruination",
+          "key": "ability_xavius_darkruination",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30710,
+        "name": "Ascended Warlock",
+        "slug": "ascended-warlock",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802610,
+        "spell_ids": [
+          802610
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> used with <span class=\"item-number\">6</span> stacks of <span style=\"color: #ff9933; display: inline\">Demonfire</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Doom</span> by <span class=\"item-number\">-5</span> seconds.<br /><br />In addition, while <span style=\"color: #FFFFFF; display: inline\">Doom</span> is active, your <span style=\"color: #FFFFFF; display: inline\">Doomguard</span> will now copy your <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span>, dealing reduced damage.",
+        "description": "Your Skulltaker used with 6 stacks of Demonfire now reduces the cooldown of Doom by -5 seconds.\n\nIn addition, while Doom is active, your Doomguard will now copy your Skulltaker, dealing reduced damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802610,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> used with <span class=\"item-number\">6</span> stacks of <span style=\"color: #ff9933; display: inline\">Demonfire</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Doom</span> by <span class=\"item-number\">-5</span> seconds.<br /><br />In addition, while <span style=\"color: #FFFFFF; display: inline\">Doom</span> is active, your <span style=\"color: #FFFFFF; display: inline\">Doomguard</span> will now copy your <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span>, dealing reduced damage.",
+            "description": "Your Skulltaker used with 6 stacks of Demonfire now reduces the cooldown of Doom by -5 seconds.\n\nIn addition, while Doom is active, your Doomguard will now copy your Skulltaker, dealing reduced damage."
+          }
+        ],
+        "connections": [
+          30707,
+          30713
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_demonictrample",
+          "key": "ability_demonhunter_demonictrample",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1710,
+        "name": "Fury of Xoroth",
+        "slug": "fury-of-xoroth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 46,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802615,
+        "spell_ids": [
+          802615
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Infernal Strike</span> now grants you a stack of <span style=\"color: #FFFFFF; display: inline\">Xorothian Fury</span>, increasing the chance for your next <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> within <span class=\"item-number\">10</span> seconds to critically strike by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> per stack, up to <span class=\"item-number\">3</span> stacks.<br /><br />Additionally, using <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> with <span class=\"item-number\">6</span> stacks of <span style=\"color: #ff9933; display: inline\">Demonfire</span> grants you <span style=\"color: #FFFFFF; display: inline\">Xorothian Rage</span>, causing your next <span style=\"color: #FFFFFF; display: inline\">Infernal Strike</span> within <span class=\"item-number\">10</span> seconds to be guaranteed to critically strike.",
+        "description": "Infernal Strike now grants you a stack of Xorothian Fury, increasing the chance for your next Skulltaker within 10 seconds to critically strike by 10% per stack, up to 3 stacks.\n\nAdditionally, using Skulltaker with 6 stacks of Demonfire grants you Xorothian Rage, causing your next Infernal Strike within 10 seconds to be guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802615,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Infernal Strike</span> now grants you a stack of <span style=\"color: #FFFFFF; display: inline\">Xorothian Fury</span>, increasing the chance for your next <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> within <span class=\"item-number\">10</span> seconds to critically strike by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> per stack, up to <span class=\"item-number\">3</span> stacks.<br /><br />Additionally, using <span style=\"color: #FFFFFF; display: inline\">Skulltaker</span> with <span class=\"item-number\">6</span> stacks of <span style=\"color: #ff9933; display: inline\">Demonfire</span> grants you <span style=\"color: #FFFFFF; display: inline\">Xorothian Rage</span>, causing your next <span style=\"color: #FFFFFF; display: inline\">Infernal Strike</span> within <span class=\"item-number\">10</span> seconds to be guaranteed to critically strike.",
+            "description": "Infernal Strike now grants you a stack of Xorothian Fury, increasing the chance for your next Skulltaker within 10 seconds to critically strike by 10% per stack, up to 3 stacks.\n\nAdditionally, using Skulltaker with 6 stacks of Demonfire grants you Xorothian Rage, causing your next Infernal Strike within 10 seconds to be guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          30713
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_argusfelstalkermount_red",
+          "key": "inv_argusfelstalkermount_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

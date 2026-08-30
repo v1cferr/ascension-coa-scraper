@@ -1,0 +1,2406 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:23+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:12a7383d298816b9cf90f184b77715be8a246d4ae3c3b7e35554cb63f498aa9e",
+    "talent_count": 165,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 21,
+    "name": "Ranger",
+    "slug": "ranger",
+    "class_file": "ranger",
+    "color": "rgb(191, 240, 107)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:ranger",
+      "key": "class-ranger",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 38,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 54,
+    "name": "Archery",
+    "slug": "archery",
+    "sort_order": 1,
+    "class_id": 21,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31178,
+        "name": "Precision Shot",
+        "slug": "precision-shot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4028,
+            29144
+          ]
+        },
+        "spell_id": 500075,
+        "spell_ids": [
+          500075
+        ],
+        "description_html": "Precisely shoot an enemy from a great distance, inflicting <span class=\"item-number\">76</span> + <span class=\"item-number\">48.5% ranged AP</span> Physical damage.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+        "description": "Precisely shoot an enemy from a great distance, inflicting 76 + 48.5% ranged AP Physical damage.\n\nDamage increased for each stack of Advantage.\n\nUsable while in Elude.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500075,
+            "description_html": "Precisely shoot an enemy from a great distance, inflicting <span class=\"item-number\">76</span> + <span class=\"item-number\">48.5% ranged AP</span> Physical damage.<br /><br />Damage increased for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+            "description": "Precisely shoot an enemy from a great distance, inflicting 76 + 48.5% ranged AP Physical damage.\n\nDamage increased for each stack of Advantage.\n\nUsable while in Elude."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill07_Border",
+          "key": "_5_archerskill07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4028,
+        "name": "Skirmisher",
+        "slug": "skirmisher",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29144
+          ]
+        },
+        "spell_id": 92115,
+        "spell_ids": [
+          92115
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Increases the damage and tick rate of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />Your ranged abilities against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets now ignores <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of enemy armor.",
+        "description": "Level 10 Passive\nIncreases the damage and tick rate of Toxic Dart by -30%.\n\nYour ranged abilities against Poisoned targets now ignores 25% of enemy armor.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92115,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Increases the damage and tick rate of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />Your ranged abilities against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets now ignores <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of enemy armor.",
+            "description": "Level 10 Passive\nIncreases the damage and tick rate of Toxic Dart by -30%.\n\nYour ranged abilities against Poisoned targets now ignores 25% of enemy armor."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_archaeology_70_tauren_stonewoodbow",
+          "key": "inv_archaeology_70_tauren_stonewoodbow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 34151,
+        "name": "Devastating Shots",
+        "slug": "devastating-shots",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705032,
+        "spell_ids": [
+          705032,
+          707849
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance by 2% and your hit chance by 1%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705032,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 2% and your hit chance by 1%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707849,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 4% and your hit chance by 2%."
+          }
+        ],
+        "connections": [
+          31178
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trickshot",
+          "key": "inv_trickshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31283,
+        "name": "Studded Arrows",
+        "slug": "studded-arrows",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300706,
+        "spell_ids": [
+          300706,
+          301359
+        ],
+        "description_html": "Increases the ranged weapon damage dealt by <span style=\"color: #ffffff; display: inline\">Quick Shot</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the ranged weapon damage dealt by Quick Shot by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300706,
+            "description_html": "Increases the ranged weapon damage dealt by <span style=\"color: #ffffff; display: inline\">Quick Shot</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the ranged weapon damage dealt by Quick Shot by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301359,
+            "description_html": "Increases the ranged weapon damage dealt by <span style=\"color: #ffffff; display: inline\">Quick Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the ranged weapon damage dealt by Quick Shot by 20%."
+          }
+        ],
+        "connections": [
+          31178
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3hungeringarrow",
+          "key": "d3hungeringarrow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34153,
+        "name": "Improved Serrated Shot",
+        "slug": "improved-serrated-shot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707888,
+        "spell_ids": [
+          707888
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #fffffF; display: inline\">Serrated Shot</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Serrated Shot by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707888,
+            "description_html": "Increases the damage of <span style=\"color: #fffffF; display: inline\">Serrated Shot</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Serrated Shot by 30%."
+          }
+        ],
+        "connections": [
+          34151
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_assassinate2",
+          "key": "ability_hunter_assassinate2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7787,
+        "name": "Skirmish",
+        "slug": "skirmish",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802039,
+        "spell_ids": [
+          802039
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and reduces your Focus costs by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.<br /><br />Lasts <span class=\"item-number\">4</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Increases your critical strike chance by 15% and reduces your Focus costs by -25%.\n\nLasts 4 sec for each stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802039,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and reduces your Focus costs by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.<br /><br />Lasts <span class=\"item-number\">4</span> sec for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Increases your critical strike chance by 15% and reduces your Focus costs by -25%.\n\nLasts 4 sec for each stack of Advantage."
+          }
+        ],
+        "connections": [
+          31283,
+          34151
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_RunningShot",
+          "key": "ability_hunter_runningshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31284,
+        "name": "Opportunist",
+        "slug": "opportunist",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807493,
+        "spell_ids": [
+          807493
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">80%</span> health.",
+        "description": "Increases the critical strike chance of Precision Shot by 50% on enemies above 80% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807493,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">80%</span> health.",
+            "description": "Increases the critical strike chance of Precision Shot by 50% on enemies above 80% health."
+          }
+        ],
+        "connections": [
+          31283
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_archerskill03_Border",
+          "key": "_5_archerskill03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4429,
+        "name": "Sniper's Focus",
+        "slug": "snipers-focus",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 680470,
+        "spell_ids": [
+          680470
+        ],
+        "description_html": "Consuming <span style=\"color: #8fff7a; display: inline\">Advantage</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance per <span style=\"color: #FFFFFF; display: inline\">Advantage</span> spent to refund <span class=\"item-number\">20</span> Focus.",
+        "description": "Consuming Advantage now has a 20% chance per Advantage spent to refund 20 Focus.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680470,
+            "description_html": "Consuming <span style=\"color: #8fff7a; display: inline\">Advantage</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance per <span style=\"color: #FFFFFF; display: inline\">Advantage</span> spent to refund <span class=\"item-number\">20</span> Focus.",
+            "description": "Consuming Advantage now has a 20% chance per Advantage spent to refund 20 Focus."
+          }
+        ],
+        "connections": [
+          4028
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_crossbow_2h_kultirasquest_b_01",
+          "key": "inv_crossbow_2h_kultirasquest_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7788,
+        "name": "Boots of Elvenkind",
+        "slug": "boots-of-elvenkind",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704317,
+        "spell_ids": [
+          704317
+        ],
+        "description_html": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces the duration of movement slowing effects on you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Agility by 5% and reduces the duration of movement slowing effects on you by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704317,
+            "description_html": "Increases your Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces the duration of movement slowing effects on you by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility by 5% and reduces the duration of movement slowing effects on you by -20%."
+          }
+        ],
+        "connections": [
+          7787
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ivn_boot_cloth_warfrontshorde_b_01",
+          "key": "ivn_boot_cloth_warfrontshorde_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29447,
+        "name": "Deadeye",
+        "slug": "deadeye",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300700,
+        "spell_ids": [
+          300700
+        ],
+        "description_html": "Increases the range of your ranged abilities and <span style=\"color: #ffffff; display: inline\">Auto Shot</span> by <span class=\"item-number\">5</span> yds.",
+        "description": "Increases the range of your ranged abilities and Auto Shot by 5 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300700,
+            "description_html": "Increases the range of your ranged abilities and <span style=\"color: #ffffff; display: inline\">Auto Shot</span> by <span class=\"item-number\">5</span> yds.",
+            "description": "Increases the range of your ranged abilities and Auto Shot by 5 yds."
+          }
+        ],
+        "connections": [
+          7787
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_bloodyeye",
+          "key": "ability_rogue_bloodyeye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29660,
+        "name": "Hunting Shot",
+        "slug": "hunting-shot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801191,
+        "spell_ids": [
+          801191
+        ],
+        "description_html": "Fire a shot that ricochets between <span class=\"item-number\">3</span> enemies, dealing Ranged Weapon Damage plus <span class=\"item-number\">6</span> to each enemy.<br /><br />Generates <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> for each enemy hit.",
+        "description": "Fire a shot that ricochets between 3 enemies, dealing Ranged Weapon Damage plus 6 to each enemy.\n\nGenerates 1 stack of Advantage for each enemy hit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801191,
+            "description_html": "Fire a shot that ricochets between <span class=\"item-number\">3</span> enemies, dealing Ranged Weapon Damage plus <span class=\"item-number\">6</span> to each enemy.<br /><br />Generates <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> for each enemy hit.",
+            "description": "Fire a shot that ricochets between 3 enemies, dealing Ranged Weapon Damage plus 6 to each enemy.\n\nGenerates 1 stack of Advantage for each enemy hit."
+          }
+        ],
+        "connections": [
+          34153
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_arrow_spell_01_Border",
+          "key": "uico_arrow_spell_01_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8009,
+        "name": "A Quick Demise",
+        "slug": "a-quick-demise",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560810,
+        "spell_ids": [
+          560810
+        ],
+        "description_html": "Auto shots now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to extend the duration of your <span style=\"color: #FFFFFF; display: inline\">Serrated Shot</span> by <span class=\"item-number\">2</span> sec.",
+        "description": "Auto shots now have a 20% chance to extend the duration of your Serrated Shot by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560810,
+            "description_html": "Auto shots now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to extend the duration of your <span style=\"color: #FFFFFF; display: inline\">Serrated Shot</span> by <span class=\"item-number\">2</span> sec.",
+            "description": "Auto shots now have a 20% chance to extend the duration of your Serrated Shot by 2 sec."
+          }
+        ],
+        "connections": [
+          34153
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_mongoosebite",
+          "key": "ability_hunter_mongoosebite",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29914,
+        "name": "Maximum Power",
+        "slug": "maximum-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560688,
+        "spell_ids": [
+          560688
+        ],
+        "description_html": "Abilities used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now refresh the duration of your active <span style=\"color: #FFFFFF; display: inline\">Skirmish</span> by <span class=\"item-number\">5</span> sec.",
+        "description": "Abilities used with 5 stacks of Advantage now refresh the duration of your active Skirmish by 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560688,
+            "description_html": "Abilities used with <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> now refresh the duration of your active <span style=\"color: #FFFFFF; display: inline\">Skirmish</span> by <span class=\"item-number\">5</span> sec.",
+            "description": "Abilities used with 5 stacks of Advantage now refresh the duration of your active Skirmish by 5 sec."
+          }
+        ],
+        "connections": [
+          7788,
+          29447
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_SniperTraining",
+          "key": "ability_hunter_snipertraining",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34136,
+        "name": "Deadshot",
+        "slug": "deadshot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520227,
+        "spell_ids": [
+          520227
+        ],
+        "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Shoot a powerful arrow at the target dealing <span class=\"item-number\">250</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">20.1</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Generates 2 Advantage\nShoot a powerful arrow at the target dealing 250% Ranged Weapon Damage plus 20.1.\n\nOnly usable on enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520227,
+            "description_html": "<span style=\"color: #8fff7a; display: inline\">Generates <span class=\"item-number\">2</span> Advantage</span><br />Shoot a powerful arrow at the target dealing <span class=\"item-number\">250</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">20.1</span>.<br /><br />Only usable on enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Generates 2 Advantage\nShoot a powerful arrow at the target dealing 250% Ranged Weapon Damage plus 20.1.\n\nOnly usable on enemies below 20% health."
+          }
+        ],
+        "connections": [
+          31284
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodarrow_Border",
+          "key": "nhi_bloodarrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34148,
+        "name": "Neurotoxin Arrow",
+        "slug": "neurotoxin-arrow",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500071,
+        "spell_ids": [
+          500071
+        ],
+        "description_html": "Shoot at an enemy's throat with a toxin-laced arrow, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">36.07% ranged AP</span> Nature damage and silencing them for <span class=\"item-number\">1</span> seconds.<br /><br />Duration increased by <span class=\"item-number\">1</span> sec per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Shoot at an enemy's throat with a toxin-laced arrow, dealing 25 + 36.07% ranged AP Nature damage and silencing them for 1 seconds.\n\nDuration increased by 1 sec per stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500071,
+            "description_html": "Shoot at an enemy's throat with a toxin-laced arrow, dealing <span class=\"item-number\">25</span> + <span class=\"item-number\">36.07% ranged AP</span> Nature damage and silencing them for <span class=\"item-number\">1</span> seconds.<br /><br />Duration increased by <span class=\"item-number\">1</span> sec per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Shoot at an enemy's throat with a toxin-laced arrow, dealing 25 + 36.07% ranged AP Nature damage and silencing them for 1 seconds.\n\nDuration increased by 1 sec per stack of Advantage."
+          }
+        ],
+        "connections": [
+          31284
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_naturearrow_Border",
+          "key": "nhi_naturearrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4430,
+        "name": "Nimble",
+        "slug": "nimble",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 301066,
+        "spell_ids": [
+          301066
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your ranged haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility.",
+        "description": "Level 30 Passive\nIncreases your ranged haste by 20% of your Agility.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301066,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your ranged haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility.",
+            "description": "Level 30 Passive\nIncreases your ranged haste by 20% of your Agility."
+          }
+        ],
+        "connections": [
+          4429
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Weapon_Bow_02",
+          "key": "inv_weapon_bow_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29148,
+        "name": "Hunting with Precision",
+        "slug": "hunting-with-precision",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524867,
+        "spell_ids": [
+          524867
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Hunting Shot</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage for each subsequent target it ricochets to.",
+        "description": "Your Hunting Shot now deals 25% increased damage for each subsequent target it ricochets to.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524867,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Hunting Shot</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage for each subsequent target it ricochets to.",
+            "description": "Your Hunting Shot now deals 25% increased damage for each subsequent target it ricochets to."
+          }
+        ],
+        "connections": [
+          29660
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill28_Border",
+          "key": "_5_archerskill28_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30350,
+        "name": "Serrations",
+        "slug": "serrations",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705050,
+        "spell_ids": [
+          705050,
+          707850
+        ],
+        "description_html": "Increases your damage against bleeding or <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your damage against bleeding or Poisoned targets by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705050,
+            "description_html": "Increases your damage against bleeding or <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your damage against bleeding or Poisoned targets by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707850,
+            "description_html": "Increases your damage against bleeding or <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your damage against bleeding or Poisoned targets by 10%."
+          }
+        ],
+        "connections": [
+          8009
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_knife_1h_thunderisleraid_d_02",
+          "key": "inv_knife_1h_thunderisleraid_d_02",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7789,
+        "name": "Swiftshot",
+        "slug": "swiftshot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705028,
+        "spell_ids": [
+          705028
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Precision Shot</span> now increases enemy Physical damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+        "description": "Damage dealt by Precision Shot now increases enemy Physical damage taken by 4% for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705028,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Precision Shot</span> now increases enemy Physical damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+            "description": "Damage dealt by Precision Shot now increases enemy Physical damage taken by 4% for 12 seconds."
+          }
+        ],
+        "connections": [
+          29914
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_combatexpertise",
+          "key": "ability_rogue_combatexpertise",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30046,
+        "name": "Corrosive Shot",
+        "slug": "corrosive-shot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572372,
+        "spell_ids": [
+          572372
+        ],
+        "description_html": "Gives a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to shoot an additional shot when doing damage with your auto shot, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Ranged Weapon damage as Nature damage, doubled against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets.",
+        "description": "Gives a 5% chance to shoot an additional shot when doing damage with your auto shot, dealing 100% Ranged Weapon damage as Nature damage, doubled against Poisoned targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572372,
+            "description_html": "Gives a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to shoot an additional shot when doing damage with your auto shot, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Ranged Weapon damage as Nature damage, doubled against <span style=\"color: #00ff00; display: inline\">Poisoned</span> targets.",
+            "description": "Gives a 5% chance to shoot an additional shot when doing damage with your auto shot, dealing 100% Ranged Weapon damage as Nature damage, doubled against Poisoned targets."
+          }
+        ],
+        "connections": [
+          34136
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_PiercingShots",
+          "key": "ability_hunter_piercingshots",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34155,
+        "name": "Superb Shot",
+        "slug": "superb-shot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301249,
+        "spell_ids": [
+          301249
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Auto Shot</span> now restores <span class=\"item-number\">4</span> Focus.",
+        "description": "Damage dealt by Auto Shot now restores 4 Focus.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301249,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Auto Shot</span> now restores <span class=\"item-number\">4</span> Focus.",
+            "description": "Damage dealt by Auto Shot now restores 4 Focus."
+          }
+        ],
+        "connections": [
+          34148
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_ammo_arrow_04",
+          "key": "inv_misc_ammo_arrow_04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30180,
+        "name": "Lethal Wounds",
+        "slug": "lethal-wounds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705055,
+        "spell_ids": [
+          705055
+        ],
+        "description_html": "Increases the tick rate of your periodic damage effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the tick rate of your periodic damage effects by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705055,
+            "description_html": "Increases the tick rate of your periodic damage effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the tick rate of your periodic damage effects by -20%."
+          }
+        ],
+        "connections": [
+          29148,
+          30350
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_blood_spell_02_Border",
+          "key": "uico_blood_spell_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7905,
+        "name": "Mortal Shots",
+        "slug": "mortal-shots",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707380,
+        "spell_ids": [
+          707380
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> by <span class=\"item-number\">-4</span> sec.",
+        "description": "Reduces the cooldown of Crippling Shot by -4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707380,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> by <span class=\"item-number\">-4</span> sec.",
+            "description": "Reduces the cooldown of Crippling Shot by -4 sec."
+          }
+        ],
+        "connections": [
+          7789,
+          30350
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_arrow_spell_02_Border",
+          "key": "uico_arrow_spell_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6944,
+        "name": "An Arrow for Everything",
+        "slug": "an-arrow-for-everything",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560812,
+        "spell_ids": [
+          560812
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Quivers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Quivers by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560812,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Quivers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Quivers by 25%."
+          }
+        ],
+        "connections": [
+          7789,
+          30046
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Diablo3_ArrowRain_Hunter",
+          "key": "diablo3_arrowrain_hunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34152,
+        "name": "New-Age Archery",
+        "slug": "new-age-archery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704312,
+        "spell_ids": [
+          704312
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Skullpiercer and Precision Shot by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704312,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Skullpiercer</span> and <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Skullpiercer and Precision Shot by 20%."
+          }
+        ],
+        "connections": [
+          30046,
+          34155
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_goldenarrow_Border",
+          "key": "nhi_goldenarrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4431,
+        "name": "Bleeding Edge",
+        "slug": "bleeding-edge",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 300460,
+        "spell_ids": [
+          300460
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Allows the periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> to critically strike.",
+        "description": "Level 40 Passive\nAllows the periodic damage dealt by Serrated Shot to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300460,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Allows the periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> to critically strike.",
+            "description": "Level 40 Passive\nAllows the periodic damage dealt by Serrated Shot to critically strike."
+          }
+        ],
+        "connections": [
+          4429
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_thornnecklace",
+          "key": "inv_misc_thornnecklace",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34137,
+        "name": "Hawkeye",
+        "slug": "hawkeye",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800358,
+        "spell_ids": [
+          800358
+        ],
+        "description_html": "You now fire an arrow every <span class=\"item-number\">3</span> sec at enemies within <span class=\"item-number\">30</span> yds affected by your <span style=\"color: #ffffff; display: inline\">Hunting Shot</span>, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Ranged Weapon Damage.<br /><br />Scales with <span style=\"color: #ffffff; display: inline\">Hunting Shot</span> modifiers.",
+        "description": "You now fire an arrow every 3 sec at enemies within 30 yds affected by your Hunting Shot, dealing 75% Ranged Weapon Damage.\n\nScales with Hunting Shot modifiers.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800358,
+            "description_html": "You now fire an arrow every <span class=\"item-number\">3</span> sec at enemies within <span class=\"item-number\">30</span> yds affected by your <span style=\"color: #ffffff; display: inline\">Hunting Shot</span>, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Ranged Weapon Damage.<br /><br />Scales with <span style=\"color: #ffffff; display: inline\">Hunting Shot</span> modifiers.",
+            "description": "You now fire an arrow every 3 sec at enemies within 30 yds affected by your Hunting Shot, dealing 75% Ranged Weapon Damage.\n\nScales with Hunting Shot modifiers."
+          }
+        ],
+        "connections": [
+          30180
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_SilentHunter",
+          "key": "ability_hunter_silenthunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34133,
+        "name": "Strike Where It Hurts",
+        "slug": "strike-where-it-hurts",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804178,
+        "spell_ids": [
+          804178
+        ],
+        "description_html": "Your ability critical strikes now increase the damage the target takes from bleeds by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Your ability critical strikes now increase the damage the target takes from bleeds by 30% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804178,
+            "description_html": "Your ability critical strikes now increase the damage the target takes from bleeds by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Your ability critical strikes now increase the damage the target takes from bleeds by 30% for 15 seconds."
+          }
+        ],
+        "connections": [
+          7905,
+          30180
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_KillCommand",
+          "key": "ability_hunter_killcommand",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6348,
+        "name": "Archery Master",
+        "slug": "archery-master",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706281,
+        "spell_ids": [
+          706281
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Quick Shot</span> now generate an additional stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Critical strikes with Quick Shot now generate an additional stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706281,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Quick Shot</span> now generate an additional stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Critical strikes with Quick Shot now generate an additional stack of Advantage."
+          }
+        ],
+        "connections": [
+          7789
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\artifactability_marksmanhunter_legacyofthewindrunners",
+          "key": "artifactability_marksmanhunter_legacyofthewindrunners",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4794,
+        "name": "Light Arrows",
+        "slug": "light-arrows",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681292,
+        "spell_ids": [
+          681292
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> when used from <span class=\"item-number\">40</span> yds or further away from your target.",
+        "description": "Increases the damage of Precision Shot by 20% when used from 40 yds or further away from your target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681292,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Precision Shot</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> when used from <span class=\"item-number\">40</span> yds or further away from your target.",
+            "description": "Increases the damage of Precision Shot by 20% when used from 40 yds or further away from your target."
+          }
+        ],
+        "connections": [
+          6944,
+          34152
+        ],
+        "choice_group": 73322,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3elementalarrow",
+          "key": "d3elementalarrow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7794,
+        "name": "Masterful Archery",
+        "slug": "masterful-archery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680469,
+        "spell_ids": [
+          680469
+        ],
+        "description_html": "While in <span style=\"color: #FFFFFF; display: inline\">Elude</span>, gain a stack of <span style=\"color: #FFFFFF; display: inline\">Masterful Archery</span> every <span class=\"item-number\">2</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_hunter_mastermarksman\" /><span class=\"name\">Masterful Archery (Aura)</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> now deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "While in Elude, gain a stack of Masterful Archery every 2 sec.Masterful Archery (Aura)Your next Precision Shot now deals 10% increased damage for 10 seconds, stacking up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680469,
+            "description_html": "While in <span style=\"color: #FFFFFF; display: inline\">Elude</span>, gain a stack of <span style=\"color: #FFFFFF; display: inline\">Masterful Archery</span> every <span class=\"item-number\">2</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_hunter_mastermarksman\" /><span class=\"name\">Masterful Archery (Aura)</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> now deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "While in Elude, gain a stack of Masterful Archery every 2 sec.Masterful Archery (Aura)Your next Precision Shot now deals 10% increased damage for 10 seconds, stacking up to 5 times."
+          }
+        ],
+        "connections": [
+          6944,
+          34152
+        ],
+        "choice_group": 73322,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_mastermarksman",
+          "key": "ability_hunter_mastermarksman",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6941,
+        "name": "Pierced",
+        "slug": "pierced",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705033,
+        "spell_ids": [
+          705033
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Skullpiercer</span> and <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> cause the enemy to bleed for an additional <span class=\"item-number\">15%</span> damage of the damage dealt, plus an additional <span class=\"item-number\">35%</span> over <span class=\"item-number\">4</span> seconds.",
+        "description": "Critical strikes with Skullpiercer and Precision Shot cause the enemy to bleed for an additional 15% damage of the damage dealt, plus an additional 35% over 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705033,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Skullpiercer</span> and <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> cause the enemy to bleed for an additional <span class=\"item-number\">15%</span> damage of the damage dealt, plus an additional <span class=\"item-number\">35%</span> over <span class=\"item-number\">4</span> seconds.",
+            "description": "Critical strikes with Skullpiercer and Precision Shot cause the enemy to bleed for an additional 15% damage of the damage dealt, plus an additional 35% over 4 seconds."
+          }
+        ],
+        "connections": [
+          34152
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_blood_shot_Border",
+          "key": "nhi_blood_shot_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7904,
+        "name": "Incendiary Shot",
+        "slug": "incendiary-shot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524870,
+        "spell_ids": [
+          524870
+        ],
+        "description_html": "Shoot a burning arrow dealing <span class=\"item-number\">791</span> + <span class=\"item-number\">27% ranged AP</span> Fire damage to an enemy and up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">6</span> yds, and causing your next <span class=\"item-number\">3</span> direct damage <span style=\"color: #8fff7a; display: inline\">Advantage</span> spenders to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their damage to nearby enemies.<br /><br />Direct damage increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Shoot a burning arrow dealing 791 + 27% ranged AP Fire damage to an enemy and up to 5 enemies within 6 yds, and causing your next 3 direct damage Advantage spenders to deal 50% of their damage to nearby enemies.\n\nDirect damage increased by 20% for each stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524870,
+            "description_html": "Shoot a burning arrow dealing <span class=\"item-number\">791</span> + <span class=\"item-number\">27% ranged AP</span> Fire damage to an enemy and up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">6</span> yds, and causing your next <span class=\"item-number\">3</span> direct damage <span style=\"color: #8fff7a; display: inline\">Advantage</span> spenders to deal <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of their damage to nearby enemies.<br /><br />Direct damage increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Shoot a burning arrow dealing 791 + 27% ranged AP Fire damage to an enemy and up to 5 enemies within 6 yds, and causing your next 3 direct damage Advantage spenders to deal 50% of their damage to nearby enemies.\n\nDirect damage increased by 20% for each stack of Advantage."
+          }
+        ],
+        "connections": [
+          34133,
+          34137
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fire_shot_Border",
+          "key": "nhi_fire_shot_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31281,
+        "name": "Pathfinder",
+        "slug": "pathfinder",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706284,
+        "spell_ids": [
+          706284
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> now incurs a <span class=\"item-number\">-90</span><span class=\"item-number\">%</span> reduced cooldown when used while <span style=\"color: #ffffff; display: inline\">Elude</span> is active.",
+        "description": "Your Adrenaline Rush now incurs a -90% reduced cooldown when used while Elude is active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706284,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> now incurs a <span class=\"item-number\">-90</span><span class=\"item-number\">%</span> reduced cooldown when used while <span style=\"color: #ffffff; display: inline\">Elude</span> is active.",
+            "description": "Your Adrenaline Rush now incurs a -90% reduced cooldown when used while Elude is active."
+          }
+        ],
+        "connections": [
+          4794,
+          6348,
+          7794,
+          34133
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_jadeforest",
+          "key": "achievement_zone_jadeforest",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7793,
+        "name": "Headshots Only",
+        "slug": "headshots-only",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680931,
+        "spell_ids": [
+          680931
+        ],
+        "description_html": "Periodic damage dealt with <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> and <span style=\"color: #FFFFFF; display: inline\">Toxic Dart</span> now increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> within <span class=\"item-number\">8</span> seconds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Periodic damage dealt with Serrated Shot and Toxic Dart now increases the damage of your next Precision Shot within 8 seconds by 10%, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680931,
+            "description_html": "Periodic damage dealt with <span style=\"color: #ffffff; display: inline\">Serrated Shot</span> and <span style=\"color: #FFFFFF; display: inline\">Toxic Dart</span> now increases the damage of your next <span style=\"color: #FFFFFF; display: inline\">Precision Shot</span> within <span class=\"item-number\">8</span> seconds by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Periodic damage dealt with Serrated Shot and Toxic Dart now increases the damage of your next Precision Shot within 8 seconds by 10%, stacking 10 times."
+          }
+        ],
+        "connections": [
+          4794,
+          6941,
+          7794
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_headshot_Border",
+          "key": "_5_headshot_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7952,
+        "name": "Sharpshooter",
+        "slug": "sharpshooter",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 582855,
+        "spell_ids": [
+          582855
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Adds <span class=\"item-number\">25</span><span class=\"item-number\">%</span> to the bonuses that your stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> provide.",
+        "description": "Level 50 Passive\nAdds 25% to the bonuses that your stacks of Advantage provide.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 582855,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Adds <span class=\"item-number\">25</span><span class=\"item-number\">%</span> to the bonuses that your stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> provide.",
+            "description": "Level 50 Passive\nAdds 25% to the bonuses that your stacks of Advantage provide."
+          }
+        ],
+        "connections": [
+          4431
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_TrueShot",
+          "key": "ability_trueshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 31280,
+        "name": "Elven Enchantments",
+        "slug": "elven-enchantments",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705054,
+        "spell_ids": [
+          705054
+        ],
+        "description_html": "$145",
+        "description": "$145",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705054,
+            "description_html": "$146",
+            "description": "$146"
+          }
+        ],
+        "connections": [
+          7904
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_character_nightelf_female",
+          "key": "achievement_character_nightelf_female",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7551,
+        "name": "Silent, But Deadly",
+        "slug": "silent-but-deadly",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524873,
+        "spell_ids": [
+          524873
+        ],
+        "description_html": "Direct Physical damage dealt now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to allow you to use <span style=\"color: #ffffff; display: inline\">Deadshot</span> regardless of the targets health for <span class=\"item-number\">8</span> seconds.",
+        "description": "Direct Physical damage dealt now has an 8% chance to allow you to use Deadshot regardless of the targets health for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524873,
+            "description_html": "Direct Physical damage dealt now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to allow you to use <span style=\"color: #ffffff; display: inline\">Deadshot</span> regardless of the targets health for <span class=\"item-number\">8</span> seconds.",
+            "description": "Direct Physical damage dealt now has an 8% chance to allow you to use Deadshot regardless of the targets health for 8 seconds."
+          }
+        ],
+        "connections": [
+          7793,
+          7904,
+          31281
+        ],
+        "choice_group": 525048,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill13_Border",
+          "key": "_5_archerskill13_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12551,
+        "name": "One Shot, One Kill",
+        "slug": "one-shot-one-kill",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 525048,
+        "spell_ids": [
+          525048
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Deadshot</span> by <span class=\"item-number\">75</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Deadshot by 75%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 525048,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Deadshot</span> by <span class=\"item-number\">75</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Deadshot by 75%."
+          }
+        ],
+        "connections": [
+          7793,
+          7904,
+          31281
+        ],
+        "choice_group": 525048,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_demonhunter",
+          "key": "ability_revendreth_demonhunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7792,
+        "name": "Brutal Shot",
+        "slug": "brutal-shot",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 54,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570014,
+        "spell_ids": [
+          570014
+        ],
+        "description_html": "Fire a volley of powerful shots that pierce through Armor, dealing <span class=\"item-number\">450</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">300</span> to all targets in a <span class=\"item-number\">40</span> yd line.<br /><br />While <span style=\"color: #ffffff; display: inline\">Skirmish</span> is active this ability is guaranteed to critically strike.",
+        "description": "Fire a volley of powerful shots that pierce through Armor, dealing 450% Ranged Weapon Damage plus 300 to all targets in a 40 yd line.\n\nWhile Skirmish is active this ability is guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570014,
+            "description_html": "Fire a volley of powerful shots that pierce through Armor, dealing <span class=\"item-number\">450</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">300</span> to all targets in a <span class=\"item-number\">40</span> yd line.<br /><br />While <span style=\"color: #ffffff; display: inline\">Skirmish</span> is active this ability is guaranteed to critically strike.",
+            "description": "Fire a volley of powerful shots that pierce through Armor, dealing 450% Ranged Weapon Damage plus 300 to all targets in a 40 yd line.\n\nWhile Skirmish is active this ability is guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          7793
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill31_Border",
+          "key": "_5_archerskill31_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

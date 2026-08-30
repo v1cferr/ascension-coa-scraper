@@ -1,0 +1,2354 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:19+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:ab6c41a6be74f14c3528d49c6cb40d5e55fb2b27ee6543cea0004600ba50104c",
+    "talent_count": 158,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 14,
+    "name": "Felsworn",
+    "slug": "felsworn",
+    "class_file": "demonhunter",
+    "color": "rgb(117, 250, 0)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:demonhunter",
+      "key": "class-demonhunter",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 31,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 38,
+    "name": "Infernal",
+    "slug": "infernal",
+    "sort_order": 2,
+    "class_id": 14,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31158,
+        "name": "Ruin",
+        "slug": "ruin",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4008,
+            29686
+          ]
+        },
+        "spell_id": 801895,
+        "spell_ids": [
+          801895
+        ],
+        "description_html": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Bring doom upon an enemy, dealing <span class=\"item-number\">cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32)</span> Shadowflame Damage to an enemy, piercing all absorption effects.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Deals an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds.",
+        "description": "Consumes 2 Felfury\nBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.\n\nInner Demon: Deals an additional 30% of the damage dealt over 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801895,
+            "description_html": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Bring doom upon an enemy, dealing <span class=\"item-number\">cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32)</span> Shadowflame Damage to an enemy, piercing all absorption effects.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Deals an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds.",
+            "description": "Consumes 2 Felfury\nBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.\n\nInner Demon: Deals an additional 30% of the damage dealt over 3 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_infernalmountgreen",
+          "key": "inv_infernalmountgreen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4008,
+        "name": "Fel Apprentice",
+        "slug": "fel-apprentice",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29686
+          ]
+        },
+        "spell_id": 92088,
+        "spell_ids": [
+          92088
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, your <span style=\"color: #FFFFFF; display: inline\">Fel Fireball</span> will now unleash a <span style=\"color: #ffffff; display: inline\">Felstrike</span> on your target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _soulfire_green\" /><span class=\"name\">Felstrike</span></div><span class=\"desc\">Burn an enemy for <span class=\"item-number\">54</span> + <span class=\"item-number\">30% SP</span> Shadowflame Damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.</span></div>",
+        "description": "Level 10 Passive\nWhile Inner Demon is active, your Fel Fireball will now unleash a Felstrike on your target.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92088,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, your <span style=\"color: #FFFFFF; display: inline\">Fel Fireball</span> will now unleash a <span style=\"color: #ffffff; display: inline\">Felstrike</span> on your target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _soulfire_green\" /><span class=\"name\">Felstrike</span></div><span class=\"desc\">Burn an enemy for <span class=\"item-number\">54</span> + <span class=\"item-number\">30% SP</span> Shadowflame Damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.</span></div>",
+            "description": "Level 10 Passive\nWhile Inner Demon is active, your Fel Fireball will now unleash a Felstrike on your target.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_AuraCloak_Felfire",
+          "key": "auracloak_felfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 34256,
+        "name": "Dark Magician",
+        "slug": "dark-magician",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560637,
+        "spell_ids": [
+          560637
+        ],
+        "description_html": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, casting <span style=\"color: #ffffff; display: inline\">Ruin</span>, <span style=\"color: #ffffff; display: inline\">Sunder</span>, or <span style=\"color: #ffffff; display: inline\">Felwrath</span> now refunds <span class=\"item-number\">20</span> Energy.",
+        "description": "While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560637,
+            "description_html": "While <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active, casting <span style=\"color: #ffffff; display: inline\">Ruin</span>, <span style=\"color: #ffffff; display: inline\">Sunder</span>, or <span style=\"color: #ffffff; display: inline\">Felwrath</span> now refunds <span class=\"item-number\">20</span> Energy.",
+            "description": "While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy."
+          }
+        ],
+        "connections": [
+          31158
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DeathGrip_Fel",
+          "key": "deathgrip_fel",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31297,
+        "name": "Wrath of Sargeras",
+        "slug": "wrath-of-sargeras",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806103,
+        "spell_ids": [
+          806103,
+          807902
+        ],
+        "description_html": "Increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your spell hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Magic damage dealt by 3% and your spell hit chance by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806103,
+            "description_html": "Increases your Magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your spell hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Magic damage dealt by 3% and your spell hit chance by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807902,
+            "description_html": "Increases your Magic damage dealt by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your spell hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Magic damage dealt by 6% and your spell hit chance by 4%."
+          }
+        ],
+        "connections": [
+          31158
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_tombofsargeras",
+          "key": "achievement_dungeon_tombofsargeras",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29933,
+        "name": "Bane of Chaos",
+        "slug": "bane-of-chaos",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704368,
+        "spell_ids": [
+          704368
+        ],
+        "description_html": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">1</span> Felfury</span><br />Unleash fel magic on an enemy, dealing <span class=\"item-number\">210</span> Chaos damage over <span class=\"item-number\">21</span> seconds.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: The enemy takes an additional <span class=\"item-number\">551</span> + <span class=\"item-number\">48% SP</span> Chaos Damage every <span class=\"item-number\">6</span> sec.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Bane</span> active on a target at a time.<br /><br />",
+        "description": "Generates 1 Felfury\nUnleash fel magic on an enemy, dealing 210 Chaos damage over 21 seconds.\n\nInner Demon: The enemy takes an additional 551 + 48% SP Chaos Damage every 6 sec.\n\nCan only have 1 Bane active on a target at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704368,
+            "description_html": "<span style=\"color: #32cd32; display: inline\">Generates <span class=\"item-number\">1</span> Felfury</span><br />Unleash fel magic on an enemy, dealing <span class=\"item-number\">210</span> Chaos damage over <span class=\"item-number\">21</span> seconds.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: The enemy takes an additional <span class=\"item-number\">551</span> + <span class=\"item-number\">48% SP</span> Chaos Damage every <span class=\"item-number\">6</span> sec.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Bane</span> active on a target at a time.<br /><br />",
+            "description": "Generates 1 Felfury\nUnleash fel magic on an enemy, dealing 210 Chaos damage over 21 seconds.\n\nInner Demon: The enemy takes an additional 551 + 48% SP Chaos Damage every 6 sec.\n\nCan only have 1 Bane active on a target at a time."
+          }
+        ],
+        "connections": [
+          34256
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\chaosincursion",
+          "key": "chaosincursion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31291,
+        "name": "Felfire Adept",
+        "slug": "felfire-adept",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560836,
+        "spell_ids": [
+          560836,
+          561345
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Sargeron Smite by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560836,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Sargeron Smite by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561345,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Sargeron Smite by 20%."
+          }
+        ],
+        "connections": [
+          31297,
+          34256
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FelHellfire",
+          "key": "spell_fire_felhellfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6931,
+        "name": "Gul'dan's Prodigy",
+        "slug": "guldans-prodigy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704378,
+        "spell_ids": [
+          704378
+        ],
+        "description_html": "Reduces Energy cost and cast time of <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces Energy cost and cast time of Fel Fireball by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704378,
+            "description_html": "Reduces Energy cost and cast time of <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces Energy cost and cast time of Fel Fireball by -15%."
+          }
+        ],
+        "connections": [
+          31297
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_warlock_demonicempowerment",
+          "key": "spell_warlock_demonicempowerment",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11224,
+        "name": "Hidden Power",
+        "slug": "hidden-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 802108,
+        "spell_ids": [
+          802108
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect and Spirit.<br /><br />In addition, <span style=\"color: #32cd32; display: inline\">Inner Demon</span> now increases your spell damage and critical strike rating by an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Level 20 Passive\nIncreases your spell damage by 15% of your Intellect and Spirit.\n\nIn addition, Inner Demon now increases your spell damage and critical strike rating by an additional 20% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802108,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect and Spirit.<br /><br />In addition, <span style=\"color: #32cd32; display: inline\">Inner Demon</span> now increases your spell damage and critical strike rating by an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Level 20 Passive\nIncreases your spell damage by 15% of your Intellect and Spirit.\n\nIn addition, Inner Demon now increases your spell damage and critical strike rating by an additional 20% of your Spirit."
+          }
+        ],
+        "connections": [
+          4008
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_UnstableAffliction_2",
+          "key": "spell_shadow_unstableaffliction_2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30302,
+        "name": "Felforged",
+        "slug": "felforged",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300490,
+        "spell_ids": [
+          300490
+        ],
+        "description_html": "Periodic damage dealt now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Felforged</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_felfire\" /><span class=\"name\">Felforged (Proc)</span></div><span class=\"desc\">Your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Fel Fireballs</span> have a <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> reduced cast time for <span class=\"item-number\">8</span> seconds.</span></div>",
+        "description": "Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have a -30% reduced cast time for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300490,
+            "description_html": "Periodic damage dealt now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Felforged</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_felfire\" /><span class=\"name\">Felforged (Proc)</span></div><span class=\"desc\">Your next <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Fel Fireballs</span> have a <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> reduced cast time for <span class=\"item-number\">8</span> seconds.</span></div>",
+            "description": "Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have a -30% reduced cast time for 8 seconds."
+          }
+        ],
+        "connections": [
+          29933
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_felfire",
+          "key": "spell_fire_felfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6340,
+        "name": "Fel Cannon",
+        "slug": "fel-cannon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802180,
+        "spell_ids": [
+          802180
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Fel Fireball</span> and <span style=\"color: #FFFFFF; display: inline\">Ruin</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">75%</span> health.",
+        "description": "Increases the critical strike chance of Fel Fireball and Ruin by 20% on enemies above 75% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802180,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Fel Fireball</span> and <span style=\"color: #FFFFFF; display: inline\">Ruin</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> on enemies above <span class=\"item-number\">75%</span> health.",
+            "description": "Increases the critical strike chance of Fel Fireball and Ruin by 20% on enemies above 75% health."
+          }
+        ],
+        "connections": [
+          31291
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Gizmo_FelIronBomb",
+          "key": "inv_gizmo_felironbomb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6915,
+        "name": "Felwrath",
+        "slug": "felwrath",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520236,
+        "spell_ids": [
+          520236
+        ],
+        "description_html": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Blast an enemy and all enemies near them with fel magic, dealing <span class=\"item-number\">69</span> + <span class=\"item-number\">40% SP</span> Shadowflame Damage.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Striking at least <span class=\"item-number\">5</span> enemies with this spell causes it to deal an additional <span class=\"item-number\">108</span> + <span class=\"item-number\">10% SP</span> Shadowflame Damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Consumes 2 Felfury\nBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.\n\nInner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520236,
+            "description_html": "<span style=\"color: #32cd32; display: inline\">Consumes <span class=\"item-number\">2</span> Felfury</span><br />Blast an enemy and all enemies near them with fel magic, dealing <span class=\"item-number\">69</span> + <span class=\"item-number\">40% SP</span> Shadowflame Damage.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Striking at least <span class=\"item-number\">5</span> enemies with this spell causes it to deal an additional <span class=\"item-number\">108</span> + <span class=\"item-number\">10% SP</span> Shadowflame Damage over <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Consumes 2 Felfury\nBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.\n\nInner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          6931
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FelFlameRing",
+          "key": "spell_fire_felflamering",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30808,
+        "name": "Withering",
+        "slug": "withering",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707416,
+        "spell_ids": [
+          707416
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Fel Fireballs</span> used with <span style=\"color: #ffffff; display: inline\">Felforged</span> active now deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage.",
+        "description": "Your Fel Fireballs used with Felforged active now deal 30% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707416,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Fel Fireballs</span> used with <span style=\"color: #ffffff; display: inline\">Felforged</span> active now deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage.",
+            "description": "Your Fel Fireballs used with Felforged active now deal 30% increased damage."
+          }
+        ],
+        "connections": [
+          30302
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Zone_Shadowmoon",
+          "key": "achievement_zone_shadowmoon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31298,
+        "name": "Black Magic",
+        "slug": "black-magic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524950,
+        "spell_ids": [
+          524950,
+          525079
+        ],
+        "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of your Bane of Chaos and Ruin by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524950,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Bane of Chaos and Ruin by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 525079,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Bane of Chaos and Ruin by 20%."
+          }
+        ],
+        "connections": [
+          6340,
+          30302
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shoulder_plate_archimonde_d_01",
+          "key": "inv_shoulder_plate_archimonde_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7861,
+        "name": "Cursed Flames",
+        "slug": "cursed-flames",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300478,
+        "spell_ids": [
+          300478
+        ],
+        "description_html": "Critically striking with <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> now increases the critical strike chance of your next <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />Can occur only once every <span class=\"item-number\">5</span> seconds.",
+        "description": "Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.\n\nCan occur only once every 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300478,
+            "description_html": "Critically striking with <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> now increases the critical strike chance of your next <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />Can occur only once every <span class=\"item-number\">5</span> seconds.",
+            "description": "Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.\n\nCan occur only once every 5 seconds."
+          }
+        ],
+        "connections": [
+          6340,
+          6915
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_felflamestrike",
+          "key": "spell_fire_felflamestrike",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29968,
+        "name": "Illidari Magi",
+        "slug": "illidari-magi",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560639,
+        "spell_ids": [
+          560639
+        ],
+        "description_html": "Your periodic damage now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.",
+        "description": "Your periodic damage now has a 20% chance to generate 1 Felfury.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560639,
+            "description_html": "Your periodic damage now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.",
+            "description": "Your periodic damage now has a 20% chance to generate 1 Felfury."
+          }
+        ],
+        "connections": [
+          6915
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_polearm_2h_fellord",
+          "key": "inv_polearm_2h_fellord",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9225,
+        "name": "Sculptor of Doom",
+        "slug": "sculptor-of-doom",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 801235,
+        "spell_ids": [
+          801235
+        ],
+        "description_html": "Landing <span class=\"item-number\">3</span> direct critical strikes now grants <span style=\"color: #FFFFFF; display: inline\">Sculptor of Doom</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_argus_felreaver\" /><span class=\"name\">Sculptor of Doom</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Ruin</span> within <span class=\"item-number\">8</span> seconds is instant cast.</span></div>",
+        "description": "Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801235,
+            "description_html": "Landing <span class=\"item-number\">3</span> direct critical strikes now grants <span style=\"color: #FFFFFF; display: inline\">Sculptor of Doom</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_argus_felreaver\" /><span class=\"name\">Sculptor of Doom</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Ruin</span> within <span class=\"item-number\">8</span> seconds is instant cast.</span></div>",
+            "description": "Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast."
+          }
+        ],
+        "connections": [
+          11224
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_argus_felreaver",
+          "key": "achievement_boss_argus_felreaver",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34230,
+        "name": "Felbreak",
+        "slug": "felbreak",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800203,
+        "spell_ids": [
+          800203
+        ],
+        "description_html": "Interrupt a spell from being cast, preventing the target from casting spells of that school for <span class=\"item-number\">3</span> seconds and draining mana from the target based on your Spirit.<br /><br />Usable while moving.",
+        "description": "Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.\n\nUsable while moving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800203,
+            "description_html": "Interrupt a spell from being cast, preventing the target from casting spells of that school for <span class=\"item-number\">3</span> seconds and draining mana from the target based on your Spirit.<br /><br />Usable while moving.",
+            "description": "Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.\n\nUsable while moving."
+          }
+        ],
+        "connections": [
+          30808,
+          31298
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_deathsiphon",
+          "key": "ability_deathknight_deathsiphon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29923,
+        "name": "Shadow Magi",
+        "slug": "shadow-magi",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803905,
+        "spell_ids": [
+          803905
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Annihilation</span> by <span class=\"item-number\">-15</span> sec and <span style=\"color: #ffffff; display: inline\">Sunder</span> by <span class=\"item-number\">-4</span> sec.",
+        "description": "Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803905,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Annihilation</span> by <span class=\"item-number\">-15</span> sec and <span style=\"color: #ffffff; display: inline\">Sunder</span> by <span class=\"item-number\">-4</span> sec.",
+            "description": "Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec."
+          }
+        ],
+        "connections": [
+          7861,
+          31298
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_SealOfKings",
+          "key": "spell_shadow_sealofkings",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31295,
+        "name": "Infernal",
+        "slug": "infernal",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560284,
+        "spell_ids": [
+          560284
+        ],
+        "description_html": "Drop an infernal from the sky with grotesque magic, dealing <span class=\"item-number\">102</span> + <span class=\"item-number\">105% fire SP</span> Fire damage to enemies in the radius, horrifying them for <span class=\"item-number\">3</span> seconds, and spawning an <span style=\"color: #FFFFFF; display: inline\">Infernal</span> to fight by your side for <span class=\"item-number\">15</span> seconds.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Lasts <span class=\"item-number\">1</span> additional sec.",
+        "description": "Drop an infernal from the sky with grotesque magic, dealing 102 + 105% fire SP Fire damage to enemies in the radius, horrifying them for 3 seconds, and spawning an Infernal to fight by your side for 15 seconds.\n\nInner Demon: Lasts 1 additional sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560284,
+            "description_html": "Drop an infernal from the sky with grotesque magic, dealing <span class=\"item-number\">102</span> + <span class=\"item-number\">105% fire SP</span> Fire damage to enemies in the radius, horrifying them for <span class=\"item-number\">3</span> seconds, and spawning an <span style=\"color: #FFFFFF; display: inline\">Infernal</span> to fight by your side for <span class=\"item-number\">15</span> seconds.<br /><br /><span style=\"color: #32cd32; display: inline\">Inner Demon</span>: Lasts <span class=\"item-number\">1</span> additional sec.",
+            "description": "Drop an infernal from the sky with grotesque magic, dealing 102 + 105% fire SP Fire damage to enemies in the radius, horrifying them for 3 seconds, and spawning an Infernal to fight by your side for 15 seconds.\n\nInner Demon: Lasts 1 additional sec."
+          }
+        ],
+        "connections": [
+          7861,
+          29968
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_summoninfernal",
+          "key": "spell_shadow_summoninfernal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6911,
+        "name": "Illidari Smiter",
+        "slug": "illidari-smiter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520246,
+        "spell_ids": [
+          520246
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> now generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.",
+        "description": "Critical strikes with Fel Fireball now generate 1 Felfury.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520246,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> now generate <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.",
+            "description": "Critical strikes with Fel Fireball now generate 1 Felfury."
+          }
+        ],
+        "connections": [
+          30808,
+          34230
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_leather_raiddemonhuntermythic_r_01",
+          "key": "inv_belt_leather_raiddemonhuntermythic_r_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6909,
+        "name": "Fel Flamecasting",
+        "slug": "fel-flamecasting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805998,
+        "spell_ids": [
+          805998
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now spreads your <span style=\"color: #ffffff; display: inline\">Cripple</span> to <span class=\"item-number\">2</span> nearby enemies.",
+        "description": "Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805998,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now spreads your <span style=\"color: #ffffff; display: inline\">Cripple</span> to <span class=\"item-number\">2</span> nearby enemies.",
+            "description": "Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies."
+          }
+        ],
+        "connections": [
+          34230
+        ],
+        "choice_group": 215789,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_unholy_spell_03_Border",
+          "key": "uico_unholy_spell_03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 10909,
+        "name": "Herald of the Legion",
+        "slug": "herald-of-the-legion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807461,
+        "spell_ids": [
+          807461
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> now radiates fel energy around the enemy, dealing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt to up to <span class=\"item-number\">8</span> nearby enemies.",
+        "description": "Damage dealt by Bane of Chaos now radiates fel energy around the enemy, dealing 50% of the damage dealt to up to 8 nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807461,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> now radiates fel energy around the enemy, dealing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt to up to <span class=\"item-number\">8</span> nearby enemies.",
+            "description": "Damage dealt by Bane of Chaos now radiates fel energy around the enemy, dealing 50% of the damage dealt to up to 8 nearby enemies."
+          }
+        ],
+        "connections": [
+          34230
+        ],
+        "choice_group": 215789,
+        "icon": {
+          "source_path": "Interface\\Icons\\LegionShipMount",
+          "key": "legionshipmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6912,
+        "name": "The True Blessing",
+        "slug": "the-true-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560838,
+        "spell_ids": [
+          560838
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Annihilation</span> now grants you <span style=\"color: #ffffff; display: inline\">Sculptor of Doom</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_argus_felreaver\" /><span class=\"name\">Sculptor of Doom</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Ruin</span> within <span class=\"item-number\">8</span> seconds is instant cast.</span></div>",
+        "description": "Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560838,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Annihilation</span> now grants you <span style=\"color: #ffffff; display: inline\">Sculptor of Doom</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_boss_argus_felreaver\" /><span class=\"name\">Sculptor of Doom</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Ruin</span> within <span class=\"item-number\">8</span> seconds is instant cast.</span></div>",
+            "description": "Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast."
+          }
+        ],
+        "connections": [
+          29923
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_felfireraid_d_03",
+          "key": "inv_sword_1h_felfireraid_d_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4292,
+        "name": "Infernal Summoner",
+        "slug": "infernal-summoner",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300480,
+        "spell_ids": [
+          300480
+        ],
+        "description_html": "Direct damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Infernal</span>.",
+        "description": "Direct damage dealt now has a 5% chance to reset the cooldown of Infernal.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300480,
+            "description_html": "Direct damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Infernal</span>.",
+            "description": "Direct damage dealt now has a 5% chance to reset the cooldown of Infernal."
+          }
+        ],
+        "connections": [
+          31295
+        ],
+        "choice_group": 186540,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_74_wings_Border",
+          "key": "custom_74_wings_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11292,
+        "name": "Doomsayer",
+        "slug": "doomsayer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520833,
+        "spell_ids": [
+          520833
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now refund <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage to enemies above <span class=\"item-number\">75%</span> of their maximum health.",
+        "description": "Critical strikes with Sargeron Smite now refund 1 Felfury.\n\nIn addition, Sargeron Smite now deals 25% increased damage to enemies above 75% of their maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520833,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now refund <span class=\"item-number\">1</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Sargeron Smite</span> now deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage to enemies above <span class=\"item-number\">75%</span> of their maximum health.",
+            "description": "Critical strikes with Sargeron Smite now refund 1 Felfury.\n\nIn addition, Sargeron Smite now deals 25% increased damage to enemies above 75% of their maximum health."
+          }
+        ],
+        "connections": [
+          31295
+        ],
+        "choice_group": 186540,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_02",
+          "key": "inv_staff_2h_artifactsargeras_d_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6914,
+        "name": "Infernal Ruin",
+        "slug": "infernal-ruin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560840,
+        "spell_ids": [
+          560840
+        ],
+        "description_html": "Every 3rd <span style=\"color: #ffffff; display: inline\">Ruin</span> or <span style=\"color: #ffffff; display: inline\">Felwrath</span> now spawns an <span style=\"color: #ffffff; display: inline\">Infernal</span> to fight by your side for <span class=\"item-number\">15</span> seconds.",
+        "description": "Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560840,
+            "description_html": "Every 3rd <span style=\"color: #ffffff; display: inline\">Ruin</span> or <span style=\"color: #ffffff; display: inline\">Felwrath</span> now spawns an <span style=\"color: #ffffff; display: inline\">Infernal</span> to fight by your side for <span class=\"item-number\">15</span> seconds.",
+            "description": "Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds."
+          }
+        ],
+        "connections": [
+          29968,
+          31295
+        ],
+        "choice_group": 254822,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_pvp_burninglegion",
+          "key": "warlock_pvp_burninglegion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11914,
+        "name": "Oppressive Ruin",
+        "slug": "oppressive-ruin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561201,
+        "spell_ids": [
+          561201
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ruin</span> now absorbs the next <span class=\"item-number\">99</span> healing on the target based on rank, up to <span class=\"item-number\">226</span> at rank <span class=\"item-number\">7</span>, for <span class=\"item-number\">8</span> sec.",
+        "description": "Damage dealt by Ruin now absorbs the next 99 healing on the target based on rank, up to 226 at rank 7, for 8 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561201,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Ruin</span> now absorbs the next <span class=\"item-number\">99</span> healing on the target based on rank, up to <span class=\"item-number\">226</span> at rank <span class=\"item-number\">7</span>, for <span class=\"item-number\">8</span> sec.",
+            "description": "Damage dealt by Ruin now absorbs the next 99 healing on the target based on rank, up to 226 at rank 7, for 8 sec."
+          }
+        ],
+        "connections": [
+          29968,
+          31295
+        ],
+        "choice_group": 254822,
+        "icon": {
+          "source_path": "Interface\\Icons\\creatureportrait_infernal_ball_02",
+          "key": "creatureportrait_infernal_ball_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9226,
+        "name": "Unphased",
+        "slug": "unphased",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 803645,
+        "spell_ids": [
+          803645
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">20</span>, scaling with your level.<br /><br />In addition, reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> while <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active.",
+        "description": "Level 40 Passive\nIncreases your spell penetration by 20, scaling with your level.\n\nIn addition, reduces spell pushback suffered from damaging attacks by 50% while Inner Demon is active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803645,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">20</span>, scaling with your level.<br /><br />In addition, reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> while <span style=\"color: #32cd32; display: inline\">Inner Demon</span> is active.",
+            "description": "Level 40 Passive\nIncreases your spell penetration by 20, scaling with your level.\n\nIn addition, reduces spell pushback suffered from damaging attacks by 50% while Inner Demon is active."
+          }
+        ],
+        "connections": [
+          9225
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Fabric_FelRag",
+          "key": "inv_fabric_felrag",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30874,
+        "name": "Curse of Argus",
+        "slug": "curse-of-argus",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704370,
+        "spell_ids": [
+          704370
+        ],
+        "description_html": "Each time <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> deals damage its damage is increased on the target by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">20</span> times.",
+        "description": "Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704370,
+            "description_html": "Each time <span style=\"color: #ffffff; display: inline\">Bane of Chaos</span> deals damage its damage is increased on the target by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">20</span> times.",
+            "description": "Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times."
+          }
+        ],
+        "connections": [
+          6909,
+          6911,
+          10909
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_NatureBurn_Border",
+          "key": "custom_t_nhance_rpg_icons_natureburn_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6910,
+        "name": "Felshock",
+        "slug": "felshock",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806235,
+        "spell_ids": [
+          806235
+        ],
+        "description_html": "Direct critical strikes with <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders now extend the duration of <span style=\"color: #32cd32; display: inline\">Inner Demon</span> by <span class=\"item-number\">1</span> sec and cause enemies struck to have a <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased chance to be hit by spells for <span class=\"item-number\">12</span> seconds.",
+        "description": "Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806235,
+            "description_html": "Direct critical strikes with <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders now extend the duration of <span style=\"color: #32cd32; display: inline\">Inner Demon</span> by <span class=\"item-number\">1</span> sec and cause enemies struck to have a <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased chance to be hit by spells for <span class=\"item-number\">12</span> seconds.",
+            "description": "Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds."
+          }
+        ],
+        "connections": [
+          6912
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fel_incinerate",
+          "key": "spell_fel_incinerate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34231,
+        "name": "Fel Infusion",
+        "slug": "fel-infusion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560533,
+        "spell_ids": [
+          560533
+        ],
+        "description_html": "Increases critical strike chance of all party and raid members within <span class=\"item-number\">100</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560533,
+            "description_html": "Increases critical strike chance of all party and raid members within <span class=\"item-number\">100</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 3%."
+          }
+        ],
+        "connections": [
+          6912
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_AuraCloak_Felfire",
+          "key": "auracloak_felfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34237,
+        "name": "Archimonde's Wrath",
+        "slug": "archimondes-wrath",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300489,
+        "spell_ids": [
+          300489
+        ],
+        "description_html": "Increases the critical strike chance of your <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for every <span class=\"item-number\">10</span> points of Energy you have at the time of casting.",
+        "description": "Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300489,
+            "description_html": "Increases the critical strike chance of your <span style=\"color: #32cd32; display: inline\">Felfury</span> spenders by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for every <span class=\"item-number\">10</span> points of Energy you have at the time of casting.",
+            "description": "Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting."
+          }
+        ],
+        "connections": [
+          4292,
+          6914,
+          11292,
+          11914
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Boss_Exarch_Maladaar",
+          "key": "achievement_boss_exarch_maladaar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29849,
+        "name": "Infernal Doom",
+        "slug": "infernal-doom",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804219,
+        "spell_ids": [
+          804219
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Ruin</span> now has a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> chance not to consume <span style=\"color: #32cd32; display: inline\">Felfury</span>.",
+        "description": "Ruin now has a -25% chance not to consume Felfury.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804219,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Ruin</span> now has a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> chance not to consume <span style=\"color: #32cd32; display: inline\">Felfury</span>.",
+            "description": "Ruin now has a -25% chance not to consume Felfury."
+          }
+        ],
+        "connections": [
+          6910,
+          30874
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_05",
+          "key": "inv_glaive_1h_artifactaldrochi_d_05",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34234,
+        "name": "Nether Spirit",
+        "slug": "nether-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300477,
+        "spell_ids": [
+          300477
+        ],
+        "description_html": "Increases your spell critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Increases your spell critical strike rating by 20% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300477,
+            "description_html": "Increases your spell critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Increases your spell critical strike rating by 20% of your Spirit."
+          }
+        ],
+        "connections": [
+          6910,
+          34231
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_immolation",
+          "key": "ability_demonhunter_immolation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29922,
+        "name": "Chaotic Intuition",
+        "slug": "chaotic-intuition",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300483,
+        "spell_ids": [
+          300483
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Felstrikes</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Cripple</span> on the target by <span class=\"item-number\">1</span> sec and grants you <span class=\"item-number\">1</span><span class=\"item-number\">%</span> increased spell critical damage for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300483,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Felstrikes</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Cripple</span> on the target by <span class=\"item-number\">1</span> sec and grants you <span class=\"item-number\">1</span><span class=\"item-number\">%</span> increased spell critical damage for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          34231,
+          34237
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ember_Fel",
+          "key": "inv_ember_fel",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4226,
+        "name": "Man'ari Teachings",
+        "slug": "manari-teachings",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 705150,
+        "spell_ids": [
+          705150
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your critical damage dealt by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Level 50 Passive\nIncreases your critical damage dealt by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705150,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your critical damage dealt by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Level 50 Passive\nIncreases your critical damage dealt by 100%."
+          }
+        ],
+        "connections": [
+          9226
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_argus_femaleeredar",
+          "key": "achievement_boss_argus_femaleeredar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29445,
+        "name": "Sargeras Embrace",
+        "slug": "sargeras-embrace",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800355,
+        "spell_ids": [
+          800355
+        ],
+        "description_html": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5.5</span> seconds and dealing <span class=\"item-number\">cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85)</span> Shadowflame Damage at the end of the duration.<br /><br />For the duration, you may instant cast <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> while channeling and they refund their cost.",
+        "description": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.\n\nFor the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800355,
+            "description_html": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5.5</span> seconds and dealing <span class=\"item-number\">cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85)</span> Shadowflame Damage at the end of the duration.<br /><br />For the duration, you may instant cast <span style=\"color: #ffffff; display: inline\">Fel Fireball</span> and <span style=\"color: #ffffff; display: inline\">Ruin</span> while channeling and they refund their cost.",
+            "description": "Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.\n\nFor the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost."
+          }
+        ],
+        "connections": [
+          29849,
+          34234
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_eyebeam",
+          "key": "ability_demonhunter_eyebeam",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34232,
+        "name": "Malice of Gul'dan",
+        "slug": "malice-of-guldan",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800214,
+        "spell_ids": [
+          800214
+        ],
+        "description_html": "$113",
+        "description": "$113",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800214,
+            "description_html": "$114",
+            "description": "$114"
+          }
+        ],
+        "connections": [
+          34234
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_thenighthold_guldan",
+          "key": "achievement_thenighthold_guldan",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30200,
+        "name": "Fury of Archimonde",
+        "slug": "fury-of-archimonde",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 14,
+        "tree_id": 38,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706425,
+        "spell_ids": [
+          706425
+        ],
+        "description_html": "After generating <span class=\"item-number\">10</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>, your next <span style=\"color: #FFFFFF; display: inline\">Sargeron Smite</span> within <span class=\"item-number\">15</span> seconds gains <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased critical strike chance and damage.",
+        "description": "After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706425,
+            "description_html": "After generating <span class=\"item-number\">10</span> <span style=\"color: #32cd32; display: inline\">Felfury</span>, your next <span style=\"color: #FFFFFF; display: inline\">Sargeron Smite</span> within <span class=\"item-number\">15</span> seconds gains <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased critical strike chance and damage.",
+            "description": "After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage."
+          }
+        ],
+        "connections": [
+          29922,
+          34234
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_hellfire_archimonde",
+          "key": "achievement_boss_hellfire_archimonde",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

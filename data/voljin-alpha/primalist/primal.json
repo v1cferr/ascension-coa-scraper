@@ -1,0 +1,2413 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:22+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:4e5fda361a3601fbc3b7159c2f283fcf6a9a733702db792027cc0b08e3c89337",
+    "talent_count": 203,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 31,
+    "name": "Primalist",
+    "slug": "primalist",
+    "class_file": "wildwalker",
+    "color": "rgb(227, 140, 89)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:wildwalker",
+      "key": "class-wildwalker",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 46,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 82,
+    "name": "Primal",
+    "slug": "primal",
+    "sort_order": 0,
+    "class_id": 31,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29667,
+        "name": "Rylak's Bite",
+        "slug": "rylaks-bite",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706342,
+        "spell_ids": [
+          706342
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br />You and your pet rush towards an enemy and strike them, dealing <span class=\"item-number\">120</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">8</span>.",
+        "description": "2 Charges, 10 sec recharge\nYou and your pet rush towards an enemy and strike them, dealing 120% Weapon Damage plus 8.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706342,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br />You and your pet rush towards an enemy and strike them, dealing <span class=\"item-number\">120</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">8</span>.",
+            "description": "2 Charges, 10 sec recharge\nYou and your pet rush towards an enemy and strike them, dealing 120% Weapon Damage plus 8."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_beastmaster_rylak",
+          "key": "spell_beastmaster_rylak",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4058,
+        "name": "Spirit Beast Master",
+        "slug": "spirit-beast-master",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30254
+          ]
+        },
+        "spell_id": 92148,
+        "spell_ids": [
+          92148
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You may now tame beasts in Azeroth to aid you as a companion.<br />",
+        "description": "Level 10 Passive\nYou may now tame beasts in Azeroth to aid you as a companion.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92148,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />You may now tame beasts in Azeroth to aid you as a companion.<br />",
+            "description": "Level 10 Passive\nYou may now tame beasts in Azeroth to aid you as a companion."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_ripandtear",
+          "key": "ability_druid_ripandtear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7109,
+        "name": "Fury of the Wild",
+        "slug": "fury-of-the-wild",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801234,
+        "spell_ids": [
+          801234
+        ],
+        "description_html": "When you cast a <span style=\"color: #ffffff; display: inline\">Boon</span>, you cast the same <span style=\"color: #ffffff; display: inline\">Boon</span> on your pet at <span class=\"item-number\">50%</span> effectiveness.",
+        "description": "When you cast a Boon, you cast the same Boon on your pet at 50% effectiveness.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801234,
+            "description_html": "When you cast a <span style=\"color: #ffffff; display: inline\">Boon</span>, you cast the same <span style=\"color: #ffffff; display: inline\">Boon</span> on your pet at <span class=\"item-number\">50%</span> effectiveness.",
+            "description": "When you cast a Boon, you cast the same Boon on your pet at 50% effectiveness."
+          }
+        ],
+        "connections": [
+          29667
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\druid_stagstatue01",
+          "key": "druid_stagstatue01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29382,
+        "name": "Totemic Smash",
+        "slug": "totemic-smash",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800178,
+        "spell_ids": [
+          800178
+        ],
+        "description_html": "Smash an enemy for <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">20</span>.<br /><br />Deals an additional <span class=\"item-number\">10</span> + <span class=\"item-number\">35% AP</span> damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">8</span> yds.",
+        "description": "Smash an enemy for 140% Weapon Damage plus 20.\n\nDeals an additional 10 + 35% AP damage to up to 5 enemies within 8 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800178,
+            "description_html": "Smash an enemy for <span class=\"item-number\">140</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">20</span>.<br /><br />Deals an additional <span class=\"item-number\">10</span> + <span class=\"item-number\">35% AP</span> damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">8</span> yds.",
+            "description": "Smash an enemy for 140% Weapon Damage plus 20.\n\nDeals an additional 10 + 35% AP damage to up to 5 enemies within 8 yds."
+          }
+        ],
+        "connections": [
+          7109
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_smash",
+          "key": "ability_smash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6205,
+        "name": "Primal Shred",
+        "slug": "primal-shred",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500940,
+        "spell_ids": [
+          500940
+        ],
+        "description_html": "Command your pet to shred up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">8</span> yds, causing them to bleed, dealing <span class=\"item-number\">53</span> + <span class=\"item-number\">35% AP</span> Physical damage over <span class=\"item-number\">21</span> seconds.",
+        "description": "Command your pet to shred up to 5 enemies within 8 yds, causing them to bleed, dealing 53 + 35% AP Physical damage over 21 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500940,
+            "description_html": "Command your pet to shred up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">8</span> yds, causing them to bleed, dealing <span class=\"item-number\">53</span> + <span class=\"item-number\">35% AP</span> Physical damage over <span class=\"item-number\">21</span> seconds.",
+            "description": "Command your pet to shred up to 5 enemies within 8 yds, causing them to bleed, dealing 53 + 35% AP Physical damage over 21 seconds."
+          }
+        ],
+        "connections": [
+          7109
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_freshwound",
+          "key": "ability_druid_freshwound",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9212,
+        "name": "Primal Weapons",
+        "slug": "primal-weapons",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 537218,
+        "spell_ids": [
+          537218
+        ],
+        "description_html": "$e7",
+        "description": "$e7",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 537218,
+            "description_html": "$e8",
+            "description": "$e8"
+          }
+        ],
+        "connections": [
+          4058
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_NaturesBlessing",
+          "key": "spell_nature_naturesblessing",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6261,
+        "name": "Pulverize",
+        "slug": "pulverize",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706153,
+        "spell_ids": [
+          706153,
+          707811
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Totemic Smash by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706153,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Totemic Smash by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707811,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Totemic Smash by 20%."
+          }
+        ],
+        "connections": [
+          29382
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_bear_paw_Border",
+          "key": "custom_bear_paw_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6201,
+        "name": "Wild At Heart",
+        "slug": "wild-at-heart",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524677,
+        "spell_ids": [
+          524677
+        ],
+        "description_html": "Reduces the global cooldown of <span style=\"color: #ffffff; display: inline\">Wildclaw</span> by <span class=\"item-number\">0</span>.<span class=\"item-number\">-25</span> sec.",
+        "description": "Reduces the global cooldown of Wildclaw by 0.-25 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524677,
+            "description_html": "Reduces the global cooldown of <span style=\"color: #ffffff; display: inline\">Wildclaw</span> by <span class=\"item-number\">0</span>.<span class=\"item-number\">-25</span> sec.",
+            "description": "Reduces the global cooldown of Wildclaw by 0.-25 sec."
+          }
+        ],
+        "connections": [
+          29382
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill61_Border",
+          "key": "skill_icon_skill61_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6831,
+        "name": "Raptor Talons",
+        "slug": "raptor-talons",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704096,
+        "spell_ids": [
+          704096,
+          707812
+        ],
+        "description_html": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>.",
+        "description": "Increases your Strength by 5% and your expertise by 4.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704096,
+            "description_html": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">4</span>.",
+            "description": "Increases your Strength by 5% and your expertise by 4."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707812,
+            "description_html": "Increases your Strength by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">8</span>.",
+            "description": "Increases your Strength by 10% and your expertise by 8."
+          }
+        ],
+        "connections": [
+          6205
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_BeastMastery",
+          "key": "ability_hunter_beastmastery",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6149,
+        "name": "Torn to Shreds",
+        "slug": "torn-to-shreds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500294,
+        "spell_ids": [
+          500294
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Totemic Smash</span> and <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> now causes enemies to bleed for <span class=\"item-number\">155</span> + <span class=\"item-number\">4.5% AP</span> over <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+        "description": "Totemic Smash and Rylak's Bite now causes enemies to bleed for 155 + 4.5% AP over 12 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500294,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Totemic Smash</span> and <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> now causes enemies to bleed for <span class=\"item-number\">155</span> + <span class=\"item-number\">4.5% AP</span> over <span class=\"item-number\">12</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+            "description": "Totemic Smash and Rylak's Bite now causes enemies to bleed for 155 + 4.5% AP over 12 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [
+          6205
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_bearpaw_red",
+          "key": "inv_misc_bearpaw_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29296,
+        "name": "Pulverize",
+        "slug": "pulverize",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301087,
+        "spell_ids": [
+          301087
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now trigger the area of effect portion of its damage an additional time.",
+        "description": "Critical strikes with Totemic Smash now trigger the area of effect portion of its damage an additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301087,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now trigger the area of effect portion of its damage an additional time.",
+            "description": "Critical strikes with Totemic Smash now trigger the area of effect portion of its damage an additional time."
+          }
+        ],
+        "connections": [
+          6261
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_moltensmash_Border",
+          "key": "nhi_moltensmash_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 6365,
+        "name": "Primal Resurgence",
+        "slug": "primal-resurgence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300688,
+        "spell_ids": [
+          300688
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates an additional <span class=\"item-number\">10</span> Rage and <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> now generates <span class=\"item-number\">3</span> additional Rage.",
+        "description": "Seismic Crash now generates an additional 10 Rage and Seismic Spike now generates 3 additional Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300688,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates an additional <span class=\"item-number\">10</span> Rage and <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> now generates <span class=\"item-number\">3</span> additional Rage.",
+            "description": "Seismic Crash now generates an additional 10 Rage and Seismic Spike now generates 3 additional Rage."
+          }
+        ],
+        "connections": [
+          6201,
+          6261
+        ],
+        "choice_group": 300688,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_monsterclaw_05",
+          "key": "inv_misc_monsterclaw_05",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31230,
+        "name": "Rips and Tears",
+        "slug": "rips-and-tears",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800141,
+        "spell_ids": [
+          800141
+        ],
+        "description_html": "Periodic damage dealt by your Primailst spells or your pet now generates <span class=\"item-number\">2</span> Rage for you and <span class=\"item-number\">5</span> Focus for your pet.",
+        "description": "Periodic damage dealt by your Primailst spells or your pet now generates 2 Rage for you and 5 Focus for your pet.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800141,
+            "description_html": "Periodic damage dealt by your Primailst spells or your pet now generates <span class=\"item-number\">2</span> Rage for you and <span class=\"item-number\">5</span> Focus for your pet.",
+            "description": "Periodic damage dealt by your Primailst spells or your pet now generates 2 Rage for you and 5 Focus for your pet."
+          }
+        ],
+        "connections": [
+          6201,
+          6261
+        ],
+        "choice_group": 300688,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_MastersCall",
+          "key": "ability_hunter_masterscall",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6251,
+        "name": "Primal Rage",
+        "slug": "primal-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300690,
+        "spell_ids": [
+          300690
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span>.",
+        "description": "Casting Totemic Smash now refreshes a charge of Rylak's Bite.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300690,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span>.",
+            "description": "Casting Totemic Smash now refreshes a charge of Rylak's Bite."
+          }
+        ],
+        "connections": [
+          6201,
+          6831
+        ],
+        "choice_group": 434221,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_ancientorcshamanheaddress",
+          "key": "trade_archaeology_ancientorcshamanheaddress",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9851,
+        "name": "Wild Rage",
+        "slug": "wild-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301280,
+        "spell_ids": [
+          301280
+        ],
+        "description_html": "Removes the Rage cost of <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span>.",
+        "description": "Removes the Rage cost of Rylak's Bite.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301280,
+            "description_html": "Removes the Rage cost of <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span>.",
+            "description": "Removes the Rage cost of Rylak's Bite."
+          }
+        ],
+        "connections": [
+          6201,
+          6831
+        ],
+        "choice_group": 434221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_BullRush",
+          "key": "ability_bullrush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30971,
+        "name": "Bring Me Their Bones",
+        "slug": "bring-me-their-bones",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806552,
+        "spell_ids": [
+          806552
+        ],
+        "description_html": "Mark an enemy for <span class=\"item-number\">15</span> seconds, causing damage dealt by your pet's abilities to the target to add a stack of <span style=\"color: #ffffff; display: inline\">Bring Me Their Bones</span>.<br /><br />At <span class=\"item-number\">5</span> stacks, your pet consumes this buff to deal <span class=\"item-number\">310</span> + <span class=\"item-number\">50% AP</span> damage to the target, ignoring Armor.",
+        "description": "Mark an enemy for 15 seconds, causing damage dealt by your pet's abilities to the target to add a stack of Bring Me Their Bones.\n\nAt 5 stacks, your pet consumes this buff to deal 310 + 50% AP damage to the target, ignoring Armor.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806552,
+            "description_html": "Mark an enemy for <span class=\"item-number\">15</span> seconds, causing damage dealt by your pet's abilities to the target to add a stack of <span style=\"color: #ffffff; display: inline\">Bring Me Their Bones</span>.<br /><br />At <span class=\"item-number\">5</span> stacks, your pet consumes this buff to deal <span class=\"item-number\">310</span> + <span class=\"item-number\">50% AP</span> damage to the target, ignoring Armor.",
+            "description": "Mark an enemy for 15 seconds, causing damage dealt by your pet's abilities to the target to add a stack of Bring Me Their Bones.\n\nAt 5 stacks, your pet consumes this buff to deal 310 + 50% AP damage to the target, ignoring Armor."
+          }
+        ],
+        "connections": [
+          6149,
+          6831
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_necklace_bone04",
+          "key": "inv_misc_necklace_bone04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29339,
+        "name": "Lacerations",
+        "slug": "lacerations",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560286,
+        "spell_ids": [
+          560286
+        ],
+        "description_html": "Melee critical strikes now increase the effectiveness of bleed effects on the target by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Does not stack with similar effects.",
+        "description": "Melee critical strikes now increase the effectiveness of bleed effects on the target by 30% for 15 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560286,
+            "description_html": "Melee critical strikes now increase the effectiveness of bleed effects on the target by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.<br /><br />Does not stack with similar effects.",
+            "description": "Melee critical strikes now increase the effectiveness of bleed effects on the target by 30% for 15 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          6149
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Warriorskill_28_Border",
+          "key": "custom_warriorskill_28_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9208,
+        "name": "Tremors",
+        "slug": "tremors",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 574323,
+        "spell_ids": [
+          574323
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Periodic damage now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilties and cause your next cast within <span class=\"item-number\">10</span> seconds to be free of cost.",
+        "description": "Level 30 Passive\nPeriodic damage now has a 10% chance to reset the cooldown of your Seismic abilties and cause your next cast within 10 seconds to be free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574323,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Periodic damage now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilties and cause your next cast within <span class=\"item-number\">10</span> seconds to be free of cost.",
+            "description": "Level 30 Passive\nPeriodic damage now has a 10% chance to reset the cooldown of your Seismic abilties and cause your next cast within 10 seconds to be free of cost."
+          }
+        ],
+        "connections": [
+          9212
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_mongoosebite",
+          "key": "ability_hunter_mongoosebite",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 8008,
+        "name": "Elemental Berserker",
+        "slug": "elemental-berserker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706338,
+        "spell_ids": [
+          706338
+        ],
+        "description_html": "Increases the area damage dealt by <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, but it now costs <span class=\"item-number\">5</span> additional Rage.",
+        "description": "Increases the area damage dealt by Totemic Smash by 30%, but it now costs 5 additional Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706338,
+            "description_html": "Increases the area damage dealt by <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>, but it now costs <span class=\"item-number\">5</span> additional Rage.",
+            "description": "Increases the area damage dealt by Totemic Smash by 30%, but it now costs 5 additional Rage."
+          }
+        ],
+        "connections": [
+          29296
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_focusedstrikes",
+          "key": "spell_shaman_focusedstrikes",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29349,
+        "name": "Earthshaker",
+        "slug": "earthshaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300698,
+        "spell_ids": [
+          300698
+        ],
+        "description_html": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows their periodic damage to critically strike.",
+        "description": "Increases the damage dealt by Seismic abilities by 10% and allows their periodic damage to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300698,
+            "description_html": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and allows their periodic damage to critically strike.",
+            "description": "Increases the damage dealt by Seismic abilities by 10% and allows their periodic damage to critically strike."
+          }
+        ],
+        "connections": [
+          6251,
+          6365,
+          9851,
+          31230
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_volatileearth",
+          "key": "inv_misc_volatileearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7332,
+        "name": "Savage Frenzy",
+        "slug": "savage-frenzy",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806549,
+        "spell_ids": [
+          806549
+        ],
+        "description_html": "Enrage you and your pet for <span class=\"item-number\">18</span> seconds, increasing damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, and attack speed and movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Enrage you and your pet for 18 seconds, increasing damage dealt by 20%, and attack speed and movement speed by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806549,
+            "description_html": "Enrage you and your pet for <span class=\"item-number\">18</span> seconds, increasing damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, and attack speed and movement speed by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Enrage you and your pet for 18 seconds, increasing damage dealt by 20%, and attack speed and movement speed by 30%."
+          }
+        ],
+        "connections": [
+          6251,
+          9851
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_bestialdiscipline",
+          "key": "ability_hunter_bestialdiscipline",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29357,
+        "name": "Wild Rampage",
+        "slug": "wild-rampage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504197,
+        "spell_ids": [
+          504197,
+          504881
+        ],
+        "description_html": "Increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your attack power by 5% and your chance to hit by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504197,
+            "description_html": "Increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your attack power by 5% and your chance to hit by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504881,
+            "description_html": "Increases your attack power by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your attack power by 10% and your chance to hit by 4%."
+          }
+        ],
+        "connections": [
+          6251,
+          9851,
+          29339,
+          30971
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturestrike_Border",
+          "key": "nhi_naturestrike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31207,
+        "name": "Spiritual Frenzy",
+        "slug": "spiritual-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707367,
+        "spell_ids": [
+          707367
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Primal Shred</span> now empowers your pet, causing its auto attacks to strike up to <span class=\"item-number\">4</span> nearby enemies for <span class=\"item-number\">21</span> seconds.",
+        "description": "Casting Primal Shred now empowers your pet, causing its auto attacks to strike up to 4 nearby enemies for 21 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707367,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Primal Shred</span> now empowers your pet, causing its auto attacks to strike up to <span class=\"item-number\">4</span> nearby enemies for <span class=\"item-number\">21</span> seconds.",
+            "description": "Casting Primal Shred now empowers your pet, causing its auto attacks to strike up to 4 nearby enemies for 21 seconds."
+          }
+        ],
+        "connections": [
+          29339
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_71_spirit_wolves_nobg_Border",
+          "key": "custom_71_spirit_wolves_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6202,
+        "name": "Throat Clamp",
+        "slug": "throat-clamp",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500764,
+        "spell_ids": [
+          500764
+        ],
+        "description_html": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for <span class=\"item-number\">3</span> seconds.",
+        "description": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500764,
+            "description_html": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for <span class=\"item-number\">3</span> seconds.",
+            "description": "Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for 3 seconds."
+          }
+        ],
+        "connections": [
+          8008,
+          29349
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_Harass",
+          "key": "ability_hunter_harass",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7330,
+        "name": "Sharpened Claws",
+        "slug": "sharpened-claws",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504226,
+        "spell_ids": [
+          504226
+        ],
+        "description_html": "Your direct critical strikes now increase your and your pet's Armor penetration by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Your direct critical strikes now increase your and your pet's Armor penetration by 5% for 10 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504226,
+            "description_html": "Your direct critical strikes now increase your and your pet's Armor penetration by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Your direct critical strikes now increase your and your pet's Armor penetration by 5% for 10 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          7332,
+          29349
+        ],
+        "choice_group": 504874,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_ghostclaw_Border",
+          "key": "nhi_ghostclaw_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12430,
+        "name": "Bloody Claws",
+        "slug": "bloody-claws",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504874,
+        "spell_ids": [
+          504874
+        ],
+        "description_html": "Damage dealt by your pet now reduces the enemies periodic healing received by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Damage dealt by your pet now reduces the enemies periodic healing received by -10% for 15 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504874,
+            "description_html": "Damage dealt by your pet now reduces the enemies periodic healing received by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Damage dealt by your pet now reduces the enemies periodic healing received by -10% for 15 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          7332,
+          29349
+        ],
+        "choice_group": 504874,
+        "icon": {
+          "source_path": "Interface\\icons\\5_clawstrike_Border",
+          "key": "_5_clawstrike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6367,
+        "name": "Spinebreaker",
+        "slug": "spinebreaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 537212,
+        "spell_ids": [
+          537212
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Seismic Grasp</span> now roots enemies for <span class=\"item-number\">3.5</span> seconds.",
+        "description": "Your Seismic Grasp now roots enemies for 3.5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 537212,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Seismic Grasp</span> now roots enemies for <span class=\"item-number\">3.5</span> seconds.",
+            "description": "Your Seismic Grasp now roots enemies for 3.5 seconds."
+          }
+        ],
+        "connections": [
+          7332,
+          29357
+        ],
+        "choice_group": 71147,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_skeletonspinepet_bone",
+          "key": "inv_skeletonspinepet_bone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8006,
+        "name": "Wild Carnage",
+        "slug": "wild-carnage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503717,
+        "spell_ids": [
+          503717
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> now causes your <span style=\"color: #ffffff; display: inline\">Wildclaws</span> to strike up to <span class=\"item-number\">4</span> additional nearby targets, dealing reduced damage with each additional enemy struck. Lasts <span class=\"item-number\">6</span> seconds.",
+        "description": "Seismic Spike now causes your Wildclaws to strike up to 4 additional nearby targets, dealing reduced damage with each additional enemy struck. Lasts 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503717,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> now causes your <span style=\"color: #ffffff; display: inline\">Wildclaws</span> to strike up to <span class=\"item-number\">4</span> additional nearby targets, dealing reduced damage with each additional enemy struck. Lasts <span class=\"item-number\">6</span> seconds.",
+            "description": "Seismic Spike now causes your Wildclaws to strike up to 4 additional nearby targets, dealing reduced damage with each additional enemy struck. Lasts 6 seconds."
+          }
+        ],
+        "connections": [
+          7332,
+          29357
+        ],
+        "choice_group": 71147,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_demonspikes2",
+          "key": "ability_demonhunter_demonspikes2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6206,
+        "name": "Rush of the Hunt",
+        "slug": "rush-of-the-hunt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300691,
+        "spell_ids": [
+          300691
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wildclaw</span> and <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against bleeding enemies.",
+        "description": "Increases the damage of Wildclaw and Rylak's Bite by 15% against bleeding enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300691,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wildclaw</span> and <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against bleeding enemies.",
+            "description": "Increases the damage of Wildclaw and Rylak's Bite by 15% against bleeding enemies."
+          }
+        ],
+        "connections": [
+          29357,
+          31207
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_bullrush",
+          "key": "ability_racial_bullrush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9908,
+        "name": "Spirit Beast Communion",
+        "slug": "spirit-beast-communion",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 573365,
+        "spell_ids": [
+          573365
+        ],
+        "description_html": "$e3",
+        "description": "$e3",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573365,
+            "description_html": "$e4",
+            "description": "$e4"
+          }
+        ],
+        "connections": [
+          9208
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_quilinpetcelestial",
+          "key": "inv_quilinpetcelestial",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 11207,
+        "name": "Killer's Path",
+        "slug": "killers-path",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706633,
+        "spell_ids": [
+          706633
+        ],
+        "description_html": "Increases the attack power of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706633,
+            "description_html": "Increases the attack power of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 3%."
+          }
+        ],
+        "connections": [
+          6202,
+          7330,
+          12430
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(27)_Border",
+          "key": "novart_magicspell__27__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6826,
+        "name": "Bestial Wrath",
+        "slug": "bestial-wrath",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803347,
+        "spell_ids": [
+          803347
+        ],
+        "description_html": "When you critically strike, your pet restores <span class=\"item-number\">10</span> Focus. <br /><br />When your pet critically strikes, you restore <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum mana and increase the target's Physical damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "When you critically strike, your pet restores 10 Focus.\n\nWhen your pet critically strikes, you restore 2% maximum mana and increase the target's Physical damage taken by 4% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803347,
+            "description_html": "When you critically strike, your pet restores <span class=\"item-number\">10</span> Focus. <br /><br />When your pet critically strikes, you restore <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum mana and increase the target's Physical damage taken by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "When you critically strike, your pet restores 10 Focus.\n\nWhen your pet critically strikes, you restore 2% maximum mana and increase the target's Physical damage taken by 4% for 10 seconds."
+          }
+        ],
+        "connections": [
+          6367,
+          7330,
+          8006,
+          12430
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_fervor",
+          "key": "ability_hunter_fervor",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30972,
+        "name": "Rylak's Blessing",
+        "slug": "rylaks-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802595,
+        "spell_ids": [
+          802595
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> now increases your pet's damage and critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">2</span> times, for <span class=\"item-number\">10</span> seconds.",
+        "description": "Damage dealt by Rylak's Bite now increases your pet's damage and critical strike chance by 2%, stacking 2 times, for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802595,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Rylak's Bite</span> now increases your pet's damage and critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">2</span> times, for <span class=\"item-number\">10</span> seconds.",
+            "description": "Damage dealt by Rylak's Bite now increases your pet's damage and critical strike chance by 2%, stacking 2 times, for 10 seconds."
+          }
+        ],
+        "connections": [
+          6206,
+          6367,
+          8006
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_druid_feralchargecat",
+          "key": "spell_druid_feralchargecat",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5151,
+        "name": "Totem Warrior",
+        "slug": "totem-warrior",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704099,
+        "spell_ids": [
+          704099
+        ],
+        "description_html": "While you have <span style=\"color: #ffffff; display: inline\">Boon of the Bear</span> active, <span style=\"color: #ffffff; display: inline\">Wildclaw</span> will now strike an additional time for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt with both weapons.",
+        "description": "While you have Boon of the Bear active, Wildclaw will now strike an additional time for 40% of the damage dealt with both weapons.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704099,
+            "description_html": "While you have <span style=\"color: #ffffff; display: inline\">Boon of the Bear</span> active, <span style=\"color: #ffffff; display: inline\">Wildclaw</span> will now strike an additional time for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt with both weapons.",
+            "description": "While you have Boon of the Bear active, Wildclaw will now strike an additional time for 40% of the damage dealt with both weapons."
+          }
+        ],
+        "connections": [
+          11207
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_TotemOfWrath",
+          "key": "spell_fire_totemofwrath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30969,
+        "name": "Totemic Echoes",
+        "slug": "totemic-echoes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 3.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500937,
+        "spell_ids": [
+          500937
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now applies <span style=\"color: #ffffff; display: inline\">Totemic Crash</span> to an enemy for <span class=\"item-number\">2</span> seconds.<br /><br />At the end of the duration, if you are within <span class=\"item-number\">5</span> yds of the target, you cast <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> against them for free.",
+        "description": "Totemic Smash now applies Totemic Crash to an enemy for 2 seconds.\n\nAt the end of the duration, if you are within 5 yds of the target, you cast Totemic Smash against them for free.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500937,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Totemic Smash</span> now applies <span style=\"color: #ffffff; display: inline\">Totemic Crash</span> to an enemy for <span class=\"item-number\">2</span> seconds.<br /><br />At the end of the duration, if you are within <span class=\"item-number\">5</span> yds of the target, you cast <span style=\"color: #ffffff; display: inline\">Totemic Smash</span> against them for free.",
+            "description": "Totemic Smash now applies Totemic Crash to an enemy for 2 seconds.\n\nAt the end of the duration, if you are within 5 yds of the target, you cast Totemic Smash against them for free."
+          }
+        ],
+        "connections": [
+          6826,
+          11207
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_shaman_totemcooldownrefund",
+          "key": "ability_shaman_totemcooldownrefund",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4384,
+        "name": "Frenzied Roar",
+        "slug": "frenzied-roar",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 5.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800133,
+        "spell_ids": [
+          800133
+        ],
+        "description_html": "Roar with bestial fervor, generating <span class=\"item-number\">20</span> Rage and granting you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased attack speed for <span class=\"item-number\">15</span> seconds.",
+        "description": "Roar with bestial fervor, generating 20 Rage and granting you 20% increased attack speed for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800133,
+            "description_html": "Roar with bestial fervor, generating <span class=\"item-number\">20</span> Rage and granting you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased attack speed for <span class=\"item-number\">15</span> seconds.",
+            "description": "Roar with bestial fervor, generating 20 Rage and granting you 20% increased attack speed for 15 seconds."
+          }
+        ],
+        "connections": [
+          6826,
+          30972
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wolfdraenormountrustic",
+          "key": "inv_wolfdraenormountrustic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6151,
+        "name": "Rexxar's Might",
+        "slug": "rexxars-might",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806559,
+        "spell_ids": [
+          806559
+        ],
+        "description_html": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing <span class=\"item-number\">93</span> + <span class=\"item-number\">15% AP</span> Physical damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds.",
+        "description": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing 93 + 15% AP Physical damage every 2 sec for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806559,
+            "description_html": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing <span class=\"item-number\">93</span> + <span class=\"item-number\">15% AP</span> Physical damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds.",
+            "description": "Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing 93 + 15% AP Physical damage every 2 sec for 6 seconds."
+          }
+        ],
+        "connections": [
+          30972
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_druid_thrash",
+          "key": "spell_druid_thrash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9909,
+        "name": "Empowered Boons",
+        "slug": "empowered-boons",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 706340,
+        "spell_ids": [
+          706340
+        ],
+        "description_html": "$e5",
+        "description": "$e5",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706340,
+            "description_html": "$e6",
+            "description": "$e6"
+          }
+        ],
+        "connections": [
+          9908
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\misc_drogbartotem02",
+          "key": "misc_drogbartotem02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5008,
+        "name": "Son of Ursoc",
+        "slug": "son-of-ursoc",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706176,
+        "spell_ids": [
+          706176
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Savage Frenzy</span> now transforms you into a fierce beast, freeing you of all movement impairing effects.<br /><br />In addition, increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Savage Frenzy</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, and reduces its cooldown by <span class=\"item-number\">-60</span> sec.",
+        "description": "Your Savage Frenzy now transforms you into a fierce beast, freeing you of all movement impairing effects.\n\nIn addition, increases the effectiveness of Savage Frenzy by 50%, and reduces its cooldown by -60 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706176,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Savage Frenzy</span> now transforms you into a fierce beast, freeing you of all movement impairing effects.<br /><br />In addition, increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Savage Frenzy</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, and reduces its cooldown by <span class=\"item-number\">-60</span> sec.",
+            "description": "Your Savage Frenzy now transforms you into a fierce beast, freeing you of all movement impairing effects.\n\nIn addition, increases the effectiveness of Savage Frenzy by 50%, and reduces its cooldown by -60 sec."
+          }
+        ],
+        "connections": [
+          5151,
+          30969
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_Pet_Bear",
+          "key": "ability_hunter_pet_bear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29385,
+        "name": "Legacy of Rexxar",
+        "slug": "legacy-of-rexxar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 82,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800184,
+        "spell_ids": [
+          800184
+        ],
+        "description_html": "$e1",
+        "description": "$e1",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800184,
+            "description_html": "$e2",
+            "description": "$e2"
+          }
+        ],
+        "connections": [
+          4384,
+          6151
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_rexxar",
+          "key": "inv_rexxar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

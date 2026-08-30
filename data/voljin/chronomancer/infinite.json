@@ -1,0 +1,2341 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:17+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:c883ba1ccd126c0f91b67953900ae8719e7c01abfc62adfa371f6c48740274d8",
+    "talent_count": 157,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 22,
+    "name": "Chronomancer",
+    "slug": "chronomancer",
+    "class_file": "chronomancer",
+    "color": "rgb(255, 237, 74)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:chronomancer",
+      "key": "class-chronomancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 29,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 56,
+    "name": "Infinite",
+    "slug": "infinite",
+    "sort_order": 1,
+    "class_id": 22,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 3997,
+        "name": "Timerend",
+        "slug": "timerend",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4031,
+            30249
+          ]
+        },
+        "spell_id": 707430,
+        "spell_ids": [
+          707430
+        ],
+        "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Wand of Time</span> into <span style=\"color: #ffffff; display: inline\">Timerend</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_animamaw_beam\" /><span class=\"name\">Timerend</span></div><span class=\"desc\">Rend the fabric of time, dealing <span class=\"item-number\">36</span> Chromatic Damage over <span class=\"item-number\">6</span> seconds.<br /><br /></span></div>",
+        "description": "Transforms your Wand of Time into Timerend.TimerendRend the fabric of time, dealing 36 Chromatic Damage over 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707430,
+            "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Wand of Time</span> into <span style=\"color: #ffffff; display: inline\">Timerend</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_animamaw_beam\" /><span class=\"name\">Timerend</span></div><span class=\"desc\">Rend the fabric of time, dealing <span class=\"item-number\">36</span> Chromatic Damage over <span class=\"item-number\">6</span> seconds.<br /><br /></span></div>",
+            "description": "Transforms your Wand of Time into Timerend.TimerendRend the fabric of time, dealing 36 Chromatic Damage over 6 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_animamaw_beam",
+          "key": "spell_animamaw_beam",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4031,
+        "name": "Infinite Power",
+        "slug": "infinite-power",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30249
+          ]
+        },
+        "spell_id": 92118,
+        "spell_ids": [
+          92118
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Casting damaging spells now reduces your damaging spell cooldowns by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of their remaining cooldown.",
+        "description": "Level 10 Passive\nCasting damaging spells now reduces your damaging spell cooldowns by 10% of their remaining cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92118,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Casting damaging spells now reduces your damaging spell cooldowns by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of their remaining cooldown.",
+            "description": "Level 10 Passive\nCasting damaging spells now reduces your damaging spell cooldowns by 10% of their remaining cooldown."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_infinitecorruptor",
+          "key": "achievement_boss_infinitecorruptor",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7200,
+        "name": "Melt Reality",
+        "slug": "melt-reality",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806335,
+        "spell_ids": [
+          806335
+        ],
+        "description_html": "Melt the target's reality, dealing <span class=\"item-number\">1638</span> Chromatic Damage over <span class=\"item-number\">36</span> seconds.<br /><br />While active, periodic damage dealt to the target is replicated for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the value to all enemies near them.<br /><br />",
+        "description": "Melt the target's reality, dealing 1638 Chromatic Damage over 36 seconds.\n\nWhile active, periodic damage dealt to the target is replicated for 20% of the value to all enemies near them.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806335,
+            "description_html": "Melt the target's reality, dealing <span class=\"item-number\">1638</span> Chromatic Damage over <span class=\"item-number\">36</span> seconds.<br /><br />While active, periodic damage dealt to the target is replicated for <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the value to all enemies near them.<br /><br />",
+            "description": "Melt the target's reality, dealing 1638 Chromatic Damage over 36 seconds.\n\nWhile active, periodic damage dealt to the target is replicated for 20% of the value to all enemies near them."
+          }
+        ],
+        "connections": [
+          3997
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_timewarp_Border",
+          "key": "nhi_timewarp_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6156,
+        "name": "Anomaly Spikes",
+        "slug": "anomaly-spikes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503825,
+        "spell_ids": [
+          503825,
+          504886
+        ],
+        "description_html": "Periodic damage dealt now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at your target.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>",
+        "description": "Periodic damage dealt now has a 8% chance to launch an Anomaly Spike at your target.\nAnomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503825,
+            "description_html": "Periodic damage dealt now has a <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at your target.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>",
+            "description": "Periodic damage dealt now has a 8% chance to launch an Anomaly Spike at your target.\nAnomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504886,
+            "description_html": "Periodic damage dealt now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at your target.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>",
+            "description": "Periodic damage dealt now has a 15% chance to launch an Anomaly Spike at your target.\nAnomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage."
+          }
+        ],
+        "connections": [
+          7200
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_ingot_titansteel_dark",
+          "key": "inv_ingot_titansteel_dark",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31139,
+        "name": "Mind Melt",
+        "slug": "mind-melt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572771,
+        "spell_ids": [
+          572771
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now also reduces the target's primary attributes by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> sec, stacking <span class=\"item-number\">5</span> times.",
+        "description": "Damage dealt by Melt Reality now also reduces the target's primary attributes by -3% for 15 sec, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572771,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now also reduces the target's primary attributes by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> sec, stacking <span class=\"item-number\">5</span> times.",
+            "description": "Damage dealt by Melt Reality now also reduces the target's primary attributes by -3% for 15 sec, stacking 5 times."
+          }
+        ],
+        "connections": [
+          7200
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_brainwash",
+          "key": "spell_shadow_brainwash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9185,
+        "name": "Gift of the Infinite Dragonflight",
+        "slug": "gift-of-the-infinite-dragonflight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 706114,
+        "spell_ids": [
+          706114
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your Spirit and your spell hit rating by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Level 20 Passive\nIncreases your spell damage by 40% of your Spirit and your spell hit rating by 3% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706114,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell damage by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your Spirit and your spell hit rating by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Level 20 Passive\nIncreases your spell damage by 40% of your Spirit and your spell hit rating by 3% of your Spirit."
+          }
+        ],
+        "connections": [
+          4031
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_Skull",
+          "key": "spell_shadow_skull",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7201,
+        "name": "Chromatic Shard",
+        "slug": "chromatic-shard",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801292,
+        "spell_ids": [
+          801292
+        ],
+        "description_html": "Fling a shard of chaos at an enemy, dealing <span class=\"item-number\">270</span> + <span class=\"item-number\">200% SP</span> Chromatic Damage, piercing immunities and resistances.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> reduces the cast time of this ability by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Fling a shard of chaos at an enemy, dealing 270 + 200% SP Chromatic Damage, piercing immunities and resistances.\n\nDealing damage with Anomaly Spikes reduces the cast time of this ability by -10% for 30 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801292,
+            "description_html": "Fling a shard of chaos at an enemy, dealing <span class=\"item-number\">270</span> + <span class=\"item-number\">200% SP</span> Chromatic Damage, piercing immunities and resistances.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> reduces the cast time of this ability by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Fling a shard of chaos at an enemy, dealing 270 + 200% SP Chromatic Damage, piercing immunities and resistances.\n\nDealing damage with Anomaly Spikes reduces the cast time of this ability by -10% for 30 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6156
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_enchanting_wod_crystalshard2",
+          "key": "inv_enchanting_wod_crystalshard2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29680,
+        "name": "Deconstruction",
+        "slug": "deconstruction",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805851,
+        "spell_ids": [
+          805851,
+          807894
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Unmake by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805851,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Unmake by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807894,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Unmake by 10%."
+          }
+        ],
+        "connections": [
+          6156
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_chest_armor_voidelf_d_01",
+          "key": "inv_chest_armor_voidelf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7216,
+        "name": "Warpstriker",
+        "slug": "warpstriker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707556,
+        "spell_ids": [
+          707556,
+          707830
+        ],
+        "description_html": "Reduces the cost of your spells by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> and the chance for your spells to be dispelled by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cost of your spells by -5% and the chance for your spells to be dispelled by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707556,
+            "description_html": "Reduces the cost of your spells by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> and the chance for your spells to be dispelled by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cost of your spells by -5% and the chance for your spells to be dispelled by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707830,
+            "description_html": "Reduces the cost of your spells by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and the chance for your spells to be dispelled by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cost of your spells by -10% and the chance for your spells to be dispelled by 30%."
+          }
+        ],
+        "connections": [
+          31139
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelcrafting_shadowsongamethyst_02",
+          "key": "inv_jewelcrafting_shadowsongamethyst_02",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30776,
+        "name": "Chronological",
+        "slug": "chronological",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 592008,
+        "spell_ids": [
+          592008
+        ],
+        "description_html": "Every <span class=\"item-number\">20</span> sec, your next <span style=\"color: #ffffff; display: inline\">Discordance</span> within <span class=\"item-number\">10</span> seconds is instant cast.",
+        "description": "Every 20 sec, your next Discordance within 10 seconds is instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 592008,
+            "description_html": "Every <span class=\"item-number\">20</span> sec, your next <span style=\"color: #ffffff; display: inline\">Discordance</span> within <span class=\"item-number\">10</span> seconds is instant cast.",
+            "description": "Every 20 sec, your next Discordance within 10 seconds is instant cast."
+          }
+        ],
+        "connections": [
+          31139
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_62_light_Border",
+          "key": "custom_62_light_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31336,
+        "name": "Unearthed Power",
+        "slug": "unearthed-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503831,
+        "spell_ids": [
+          503831
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Anomaly Spikes</span> now also increases your damage and critical strike chance with <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack.",
+        "description": "Damage dealt by Anomaly Spikes now also increases your damage and critical strike chance with Chromatic Shard by 6% per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503831,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Anomaly Spikes</span> now also increases your damage and critical strike chance with <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack.",
+            "description": "Damage dealt by Anomaly Spikes now also increases your damage and critical strike chance with Chromatic Shard by 6% per stack."
+          }
+        ],
+        "connections": [
+          7201
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+          "key": "spell_shadow_chilltouch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1802,
+        "name": "Time Means Nothing",
+        "slug": "time-means-nothing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572357,
+        "spell_ids": [
+          572357
+        ],
+        "description_html": "Increases your magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> now increases the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds.",
+        "description": "Increases your magic damage dealt by 3% and damage dealt by Chromatic Shard now increases the target's spell damage taken by 10% for 30 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572357,
+            "description_html": "Increases your magic damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> now increases the target's spell damage taken by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds.",
+            "description": "Increases your magic damage dealt by 3% and damage dealt by Chromatic Shard now increases the target's spell damage taken by 10% for 30 seconds."
+          }
+        ],
+        "connections": [
+          7201
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_animamaw_groundstate",
+          "key": "spell_animamaw_groundstate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6200,
+        "name": "Hourglass of Eternity",
+        "slug": "hourglass-of-eternity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806337,
+        "spell_ids": [
+          806337
+        ],
+        "description_html": "Periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased haste for <span class=\"item-number\">5</span> seconds.",
+        "description": "Periodic damage dealt now has a 5% chance to grant you 25% increased haste for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806337,
+            "description_html": "Periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased haste for <span class=\"item-number\">5</span> seconds.",
+            "description": "Periodic damage dealt now has a 5% chance to grant you 25% increased haste for 5 seconds."
+          }
+        ],
+        "connections": [
+          7216,
+          29680
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_relics_hourglass",
+          "key": "inv_relics_hourglass",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11175,
+        "name": "Excruciating Discord",
+        "slug": "excruciating-discord",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 582356,
+        "spell_ids": [
+          582356
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discordances</span> used with <span style=\"color: #ffffff; display: inline\">Chronological</span> are now guaranteed to critically strike.",
+        "description": "Your Discordances used with Chronological are now guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 582356,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discordances</span> used with <span style=\"color: #ffffff; display: inline\">Chronological</span> are now guaranteed to critically strike.",
+            "description": "Your Discordances used with Chronological are now guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          30776
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_pet_warpstalker",
+          "key": "ability_hunter_pet_warpstalker",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12184,
+        "name": "Timelost Power",
+        "slug": "timelost-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807754,
+        "spell_ids": [
+          807754
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discordance</span> now strikes <span class=\"item-number\">3</span> additional enemies.",
+        "description": "Your Discordance now strikes 3 additional enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807754,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discordance</span> now strikes <span class=\"item-number\">3</span> additional enemies.",
+            "description": "Your Discordance now strikes 3 additional enemies."
+          }
+        ],
+        "connections": [
+          30776
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_motorcyclefelreavermount_shadow",
+          "key": "inv_motorcyclefelreavermount_shadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11685,
+        "name": "Warping Reality",
+        "slug": "warping-reality",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 504602,
+        "spell_ids": [
+          504602
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Waves of Time</span> now grants you <span style=\"color: #ffffff; display: inline\">Warped Reality</span> for <span class=\"item-number\">10</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_archaeology_70_highborne_violetglassvessel\" /><span class=\"name\">Warped Reality (Proc)</span></div><span class=\"desc\">Allows you to cast <span style=\"color: #FFFFFF; display: inline\">Unmake</span> and <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> while moving for <span class=\"item-number\">10</span> seconds.</span></div>",
+        "description": "Level 30 Passive\nCasting Waves of Time now grants you Warped Reality for 10 seconds.\nWarped Reality (Proc)Allows you to cast Unmake and Melt Reality while moving for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504602,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Waves of Time</span> now grants you <span style=\"color: #ffffff; display: inline\">Warped Reality</span> for <span class=\"item-number\">10</span> seconds.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_archaeology_70_highborne_violetglassvessel\" /><span class=\"name\">Warped Reality (Proc)</span></div><span class=\"desc\">Allows you to cast <span style=\"color: #FFFFFF; display: inline\">Unmake</span> and <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> while moving for <span class=\"item-number\">10</span> seconds.</span></div>",
+            "description": "Level 30 Passive\nCasting Waves of Time now grants you Warped Reality for 10 seconds.\nWarped Reality (Proc)Allows you to cast Unmake and Melt Reality while moving for 10 seconds."
+          }
+        ],
+        "connections": [
+          9185
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_archaeology_70_highborne_violetglassvessel",
+          "key": "inv_archaeology_70_highborne_violetglassvessel",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 5168,
+        "name": "Incarnation of Chaos",
+        "slug": "incarnation-of-chaos",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570067,
+        "spell_ids": [
+          570067
+        ],
+        "description_html": "Transform into an <span style=\"color: #FFFFFF; display: inline\">Incarnate of Chaos</span>, instantly resetting the cooldown of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span>, allowing you to cast it while moving, and causing your next cast to not incur a cooldown.<br /><br />In addition, your damage dealt is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Transform into an Incarnate of Chaos, instantly resetting the cooldown of Chromatic Shard, allowing you to cast it while moving, and causing your next cast to not incur a cooldown.\n\nIn addition, your damage dealt is increased by 15% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570067,
+            "description_html": "Transform into an <span style=\"color: #FFFFFF; display: inline\">Incarnate of Chaos</span>, instantly resetting the cooldown of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span>, allowing you to cast it while moving, and causing your next cast to not incur a cooldown.<br /><br />In addition, your damage dealt is increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Transform into an Incarnate of Chaos, instantly resetting the cooldown of Chromatic Shard, allowing you to cast it while moving, and causing your next cast to not incur a cooldown.\n\nIn addition, your damage dealt is increased by 15% for 15 seconds."
+          }
+        ],
+        "connections": [
+          1802,
+          31336
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_armor_voidelf_d_01",
+          "key": "inv_belt_armor_voidelf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29677,
+        "name": "Infinity Crash",
+        "slug": "infinity-crash",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706040,
+        "spell_ids": [
+          706040
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Discordance</span> and <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Discordance and Chromatic Shard by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706040,
+            "description_html": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Discordance</span> and <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Discordance and Chromatic Shard by 50%."
+          }
+        ],
+        "connections": [
+          1802,
+          6200,
+          11175
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+          "key": "spell_shadow_auraofdarkness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6522,
+        "name": "Destabilize Time",
+        "slug": "destabilize-time",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680971,
+        "spell_ids": [
+          680971
+        ],
+        "description_html": "Reduces enemy casting speed by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, increasing by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> every time they cast.<br /><br />Gaining stacks does not extend the duration of the spell.",
+        "description": "Reduces enemy casting speed by -10% for 20 seconds, increasing by -10% every time they cast.\n\nGaining stacks does not extend the duration of the spell.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680971,
+            "description_html": "Reduces enemy casting speed by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, increasing by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> every time they cast.<br /><br />Gaining stacks does not extend the duration of the spell.",
+            "description": "Reduces enemy casting speed by -10% for 20 seconds, increasing by -10% every time they cast.\n\nGaining stacks does not extend the duration of the spell."
+          }
+        ],
+        "connections": [
+          11175,
+          12184
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nzinsanity_desynchronized",
+          "key": "spell_nzinsanity_desynchronized",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5367,
+        "name": "Black Hole",
+        "slug": "black-hole",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707557,
+        "spell_ids": [
+          707557
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span>, <span style=\"color: #ffffff; display: inline\">Melt Reality</span> and <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against slowed enemies.",
+        "description": "Increases the damage of Chromatic Shard, Melt Reality and Unmake by 15% against slowed enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707557,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span>, <span style=\"color: #ffffff; display: inline\">Melt Reality</span> and <span style=\"color: #ffffff; display: inline\">Unmake</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against slowed enemies.",
+            "description": "Increases the damage of Chromatic Shard, Melt Reality and Unmake by 15% against slowed enemies."
+          }
+        ],
+        "connections": [
+          5168,
+          31336
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_MindTwisting",
+          "key": "spell_shadow_mindtwisting",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11170,
+        "name": "Chaos Fusion",
+        "slug": "chaos-fusion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807578,
+        "spell_ids": [
+          807578
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> by <span class=\"item-number\">3</span> sec and while active your <span style=\"color: #ffffff; display: inline\">Melt Reality</span> now has no cooldown.",
+        "description": "Increases the duration of Incarnation of Chaos by 3 sec and while active your Melt Reality now has no cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807578,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> by <span class=\"item-number\">3</span> sec and while active your <span style=\"color: #ffffff; display: inline\">Melt Reality</span> now has no cooldown.",
+            "description": "Increases the duration of Incarnation of Chaos by 3 sec and while active your Melt Reality now has no cooldown."
+          }
+        ],
+        "connections": [
+          5168
+        ],
+        "choice_group": 23621,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowsun_Border",
+          "key": "nhi_shadowsun_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11176,
+        "name": "Pure Chaos",
+        "slug": "pure-chaos",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807569,
+        "spell_ids": [
+          807569
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is active, all damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to lock yourself in a time loop for <span class=\"item-number\">3</span> seconds, making you unable to cast any spells other than <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span>.<br /><br />While active, you cast <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span> free of cost, repeating every <span class=\"item-number\">1</span> sec.",
+        "description": "While Incarnation of Chaos is active, all damage dealt now has a 10% chance to lock yourself in a time loop for 3 seconds, making you unable to cast any spells other than Chromatic Shard.\n\nWhile active, you cast Chromatic Shard free of cost, repeating every 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807569,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is active, all damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to lock yourself in a time loop for <span class=\"item-number\">3</span> seconds, making you unable to cast any spells other than <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span>.<br /><br />While active, you cast <span style=\"color: #FFFFFF; display: inline\">Chromatic Shard</span> free of cost, repeating every <span class=\"item-number\">1</span> sec.",
+            "description": "While Incarnation of Chaos is active, all damage dealt now has a 10% chance to lock yourself in a time loop for 3 seconds, making you unable to cast any spells other than Chromatic Shard.\n\nWhile active, you cast Chromatic Shard free of cost, repeating every 1 sec."
+          }
+        ],
+        "connections": [
+          5168
+        ],
+        "choice_group": 23621,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_UnstableAffliction_1",
+          "key": "spell_shadow_unstableaffliction_1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7159,
+        "name": "Paradox",
+        "slug": "paradox",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680946,
+        "spell_ids": [
+          680946
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now causes your next <span style=\"color: #ffffff; display: inline\">Unmake</span> or <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> within <span class=\"item-number\">6</span> seconds to become instant and cost <span class=\"item-number\">-100</span><span class=\"item-number\">%</span> less mana.",
+        "description": "Casting Melt Reality now causes your next Unmake or Reverse Wound within 6 seconds to become instant and cost -100% less mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680946,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now causes your next <span style=\"color: #ffffff; display: inline\">Unmake</span> or <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> within <span class=\"item-number\">6</span> seconds to become instant and cost <span class=\"item-number\">-100</span><span class=\"item-number\">%</span> less mana.",
+            "description": "Casting Melt Reality now causes your next Unmake or Reverse Wound within 6 seconds to become instant and cost -100% less mana."
+          }
+        ],
+        "connections": [
+          5168
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ShadowMend",
+          "key": "spell_shadow_shadowmend",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7209,
+        "name": "Slipstream",
+        "slug": "slipstream",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707555,
+        "spell_ids": [
+          707555
+        ],
+        "description_html": "Target an enemy and slip them into a pocket dimension for <span class=\"item-number\">5</span> seconds, banishing them and making them immune to damage.<br /><br />Activate this ability again before the duration expires to choose a new location to place that enemy within <span class=\"item-number\">20</span> yds.",
+        "description": "Target an enemy and slip them into a pocket dimension for 5 seconds, banishing them and making them immune to damage.\n\nActivate this ability again before the duration expires to choose a new location to place that enemy within 20 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707555,
+            "description_html": "Target an enemy and slip them into a pocket dimension for <span class=\"item-number\">5</span> seconds, banishing them and making them immune to damage.<br /><br />Activate this ability again before the duration expires to choose a new location to place that enemy within <span class=\"item-number\">20</span> yds.",
+            "description": "Target an enemy and slip them into a pocket dimension for 5 seconds, banishing them and making them immune to damage.\n\nActivate this ability again before the duration expires to choose a new location to place that enemy within 20 yds."
+          }
+        ],
+        "connections": [
+          29677
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_void_blast",
+          "key": "spell_priest_void_blast",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6514,
+        "name": "Gift of the Timeways",
+        "slug": "gift-of-the-timeways",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704487,
+        "spell_ids": [
+          704487
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now causes your <span style=\"color: #FFFFFF; display: inline\">Timerend</span> and <span style=\"color: #FFFFFF; display: inline\">Unmake</span>'s periodic damage to benefit from haste for <span class=\"item-number\">10</span> seconds.",
+        "description": "Casting Melt Reality now causes your Timerend and Unmake's periodic damage to benefit from haste for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704487,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Melt Reality</span> now causes your <span style=\"color: #FFFFFF; display: inline\">Timerend</span> and <span style=\"color: #FFFFFF; display: inline\">Unmake</span>'s periodic damage to benefit from haste for <span class=\"item-number\">10</span> seconds.",
+            "description": "Casting Melt Reality now causes your Timerend and Unmake's periodic damage to benefit from haste for 10 seconds."
+          }
+        ],
+        "connections": [
+          6522
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_persecution",
+          "key": "spell_holy_persecution",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4161,
+        "name": "End of Time",
+        "slug": "end-of-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807690,
+        "spell_ids": [
+          807690
+        ],
+        "description_html": "At the end of the duration of <span style=\"color: #ffffff; display: inline\">Clasp of Infinity</span>, you launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at affected enemies and their damage dealt is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>",
+        "description": "At the end of the duration of Clasp of Infinity, you launch an Anomaly Spike at affected enemies and their damage dealt is reduced by -10% for 4 seconds.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807690,
+            "description_html": "At the end of the duration of <span style=\"color: #ffffff; display: inline\">Clasp of Infinity</span>, you launch an <span style=\"color: #ffffff; display: inline\">Anomaly Spike</span> at affected enemies and their damage dealt is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_ingot_titansteel_dark\" /><span class=\"name\">Anomaly Spike</span></div><span class=\"desc\">Deals <span class=\"item-number\">cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25)</span> Chromatic Damage.</span></div>",
+            "description": "At the end of the duration of Clasp of Infinity, you launch an Anomaly Spike at affected enemies and their damage dealt is reduced by -10% for 4 seconds.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage."
+          }
+        ],
+        "connections": [
+          6522
+        ],
+        "choice_group": 231221,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_infinitedragonmount",
+          "key": "inv_infinitedragonmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6161,
+        "name": "Eternity",
+        "slug": "eternity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805844,
+        "spell_ids": [
+          805844
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Clasp of Infinity</span> now increases your damage dealt to the target by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Your Clasp of Infinity now increases your damage dealt to the target by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805844,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Clasp of Infinity</span> now increases your damage dealt to the target by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Your Clasp of Infinity now increases your damage dealt to the target by 15%."
+          }
+        ],
+        "connections": [
+          6522
+        ],
+        "choice_group": 231221,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_enchant_dreamshard_01",
+          "key": "inv_enchant_dreamshard_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6164,
+        "name": "Distorted Time",
+        "slug": "distorted-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707553,
+        "spell_ids": [
+          707553
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Timerend</span> by <span class=\"item-number\">-2</span> sec and increases the duration of <span style=\"color: #ffffff; display: inline\">Decomposition</span> by <span class=\"item-number\">3</span> sec.",
+        "description": "Reduces the cooldown of Timerend by -2 sec and increases the duration of Decomposition by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707553,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Timerend</span> by <span class=\"item-number\">-2</span> sec and increases the duration of <span style=\"color: #ffffff; display: inline\">Decomposition</span> by <span class=\"item-number\">3</span> sec.",
+            "description": "Reduces the cooldown of Timerend by -2 sec and increases the duration of Decomposition by 3 sec."
+          }
+        ],
+        "connections": [
+          6522,
+          12184
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ShadowPower",
+          "key": "spell_shadow_shadowpower",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9186,
+        "name": "Infinite Guard",
+        "slug": "infinite-guard",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 574312,
+        "spell_ids": [
+          574312
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Temporal Resilience</span>, <span style=\"color: #ffffff; display: inline\">Temporal Swiftness</span>, and <span style=\"color: #ffffff; display: inline\">Temporal Restoration</span> spells by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and reduces their mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Level 40 Passive\nIncreases the effectiveness of your Temporal Resilience, Temporal Swiftness, and Temporal Restoration spells by 100% and reduces their mana costs by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574312,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Temporal Resilience</span>, <span style=\"color: #ffffff; display: inline\">Temporal Swiftness</span>, and <span style=\"color: #ffffff; display: inline\">Temporal Restoration</span> spells by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and reduces their mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Level 40 Passive\nIncreases the effectiveness of your Temporal Resilience, Temporal Swiftness, and Temporal Restoration spells by 100% and reduces their mana costs by -50%."
+          }
+        ],
+        "connections": [
+          11685
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_infinitedragonmount",
+          "key": "inv_infinitedragonmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6159,
+        "name": "Shifting Chaos",
+        "slug": "shifting-chaos",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706059,
+        "spell_ids": [
+          706059
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> their damage dealt as Chromatic Damage all nearby enemies.",
+        "description": "Your Chromatic Shard and Anomaly Spikes now deal an additional 20% their damage dealt as Chromatic Damage all nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706059,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> their damage dealt as Chromatic Damage all nearby enemies.",
+            "description": "Your Chromatic Shard and Anomaly Spikes now deal an additional 20% their damage dealt as Chromatic Damage all nearby enemies."
+          }
+        ],
+        "connections": [
+          5367,
+          7159,
+          11170,
+          11176
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelcrafting_shadowspirit_02",
+          "key": "inv_jewelcrafting_shadowspirit_02",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31334,
+        "name": "Crown of Power",
+        "slug": "crown-of-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805854,
+        "spell_ids": [
+          805854
+        ],
+        "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Melt Reality</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the tick rate of Melt Reality by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805854,
+            "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Melt Reality</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the tick rate of Melt Reality by -25%."
+          }
+        ],
+        "connections": [
+          7159,
+          7209
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_crown_c_01_purple white",
+          "key": "inv_helm_crown_c_01_purple_white",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6158,
+        "name": "Infinite Horizon",
+        "slug": "infinite-horizon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560528,
+        "spell_ids": [
+          560528
+        ],
+        "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Unmake</span> and <span style=\"color: #FFFFFF; display: inline\">Timerend</span> gain an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> bonus spell scaling.",
+        "description": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, your Unmake and Timerend gain an additional 20% bonus spell scaling.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560528,
+            "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #FFFFFF; display: inline\">Unmake</span> and <span style=\"color: #FFFFFF; display: inline\">Timerend</span> gain an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> bonus spell scaling.",
+            "description": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, your Unmake and Timerend gain an additional 20% bonus spell scaling."
+          }
+        ],
+        "connections": [
+          6514,
+          7209
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_triumvirate_shadowguardetherealmelee",
+          "key": "achievement_boss_triumvirate_shadowguardetherealmelee",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7920,
+        "name": "Magic Erosion",
+        "slug": "magic-erosion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706046,
+        "spell_ids": [
+          706046
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Decomposition</span> now deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more damage and applies <span style=\"color: #ffffff; display: inline\">Magic Erosion</span> to the target, increasing attackers chance to hit the target with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds.",
+        "description": "Your Decomposition now deals 10% more damage and applies Magic Erosion to the target, increasing attackers chance to hit the target with spells by 3% for 30 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706046,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Decomposition</span> now deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more damage and applies <span style=\"color: #ffffff; display: inline\">Magic Erosion</span> to the target, increasing attackers chance to hit the target with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds.",
+            "description": "Your Decomposition now deals 10% more damage and applies Magic Erosion to the target, increasing attackers chance to hit the target with spells by 3% for 30 seconds."
+          }
+        ],
+        "connections": [
+          4161,
+          6161,
+          6164,
+          6514
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_Charm",
+          "key": "spell_shadow_charm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2125,
+        "name": "Erasion",
+        "slug": "erasion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 3.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704489,
+        "spell_ids": [
+          704489
+        ],
+        "description_html": "Increases the chance to trigger <span style=\"color: #FFFFFF; display: inline\">Anomaly Spikes</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and their damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance to trigger Anomaly Spikes by 5% and their damage by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704489,
+            "description_html": "Increases the chance to trigger <span style=\"color: #FFFFFF; display: inline\">Anomaly Spikes</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and their damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance to trigger Anomaly Spikes by 5% and their damage by 20%."
+          }
+        ],
+        "connections": [
+          6159,
+          31334
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_animamaw_wave",
+          "key": "spell_animamaw_wave",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4316,
+        "name": "Aeon Rend",
+        "slug": "aeon-rend",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 5.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 583248,
+        "spell_ids": [
+          583248
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again and incur no cooldown.",
+        "description": "Your Chromatic Shard now has a 25% chance to strike again and incur no cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 583248,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike again and incur no cooldown.",
+            "description": "Your Chromatic Shard now has a 25% chance to strike again and incur no cooldown."
+          }
+        ],
+        "connections": [
+          6158,
+          7920
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_animamaw_orb",
+          "key": "spell_animamaw_orb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11861,
+        "name": "End of Time",
+        "slug": "end-of-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 704490,
+        "spell_ids": [
+          704490
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Mind Melt</span> now also increases the target's periodic damage taken from you by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack.",
+        "description": "Level 50 Passive\nMind Melt now also increases the target's periodic damage taken from you by 6% per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704490,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Mind Melt</span> now also increases the target's periodic damage taken from you by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack.",
+            "description": "Level 50 Passive\nMind Melt now also increases the target's periodic damage taken from you by 6% per stack."
+          }
+        ],
+        "connections": [
+          9186
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_divinestar_shadow2",
+          "key": "spell_priest_divinestar_shadow2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30908,
+        "name": "Null Orbs",
+        "slug": "null-orbs",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572722,
+        "spell_ids": [
+          572722
+        ],
+        "description_html": "Periodic critical damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant <span style=\"color: #FFFFFF; display: inline\">Null Orbs</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 scifi_skills_p_03_border\" /><span class=\"name\">Null Orbs (Proc)</span></div><span class=\"desc\">Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> based on your spell critical strike rating.</span></div>",
+        "description": "Periodic critical damage dealt now has a 20% chance to grant Null Orbs for 8 seconds.Null Orbs (Proc)Increases the critical damage of Chromatic Shard and Anomaly Spikes based on your spell critical strike rating.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572722,
+            "description_html": "Periodic critical damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant <span style=\"color: #FFFFFF; display: inline\">Null Orbs</span> for <span class=\"item-number\">8</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 scifi_skills_p_03_border\" /><span class=\"name\">Null Orbs (Proc)</span></div><span class=\"desc\">Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Chromatic Shard</span> and <span style=\"color: #ffffff; display: inline\">Anomaly Spikes</span> based on your spell critical strike rating.</span></div>",
+            "description": "Periodic critical damage dealt now has a 20% chance to grant Null Orbs for 8 seconds.Null Orbs (Proc)Increases the critical damage of Chromatic Shard and Anomaly Spikes based on your spell critical strike rating."
+          }
+        ],
+        "connections": [
+          2125
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\scifi_skills_p_03_Border",
+          "key": "scifi_skills_p_03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5486,
+        "name": "Chaotic Time",
+        "slug": "chaotic-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 583245,
+        "spell_ids": [
+          583245
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is active, your <span style=\"color: #ffffff; display: inline\">Melt Reality</span> deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and replicates an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> <br /><br />In addition, periodic damage dealt now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "While Incarnation of Chaos is active, your Melt Reality deals 30% increased damage and replicates an additional 20%\n\nIn addition, periodic damage dealt now reduces the cooldown of Incarnation of Chaos by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 583245,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> is active, your <span style=\"color: #ffffff; display: inline\">Melt Reality</span> deals <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and replicates an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> <br /><br />In addition, periodic damage dealt now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Incarnation of Chaos</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "While Incarnation of Chaos is active, your Melt Reality deals 30% increased damage and replicates an additional 20%\n\nIn addition, periodic damage dealt now reduces the cooldown of Incarnation of Chaos by -1 sec."
+          }
+        ],
+        "connections": [
+          2125,
+          4316
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_chest_dragonblue_infinite",
+          "key": "inv_chest_dragonblue_infinite",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5861,
+        "name": "Infinite Keeper",
+        "slug": "infinite-keeper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 56,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806312,
+        "spell_ids": [
+          806312
+        ],
+        "description_html": "Using <span style=\"color: #ffffff; display: inline\">Unmake</span> on an enemy affected by your <span style=\"color: #ffffff; display: inline\">Timerend</span> now causes the enemy to erupt in a vortex of sand, dealing <span class=\"item-number\">141</span> Chromatic Damage every <span class=\"item-number\">1</span> sec to up to <span class=\"item-number\">8</span> enemies for <span class=\"item-number\">6</span> seconds in an <span class=\"item-number\">8</span> yd radius.",
+        "description": "Using Unmake on an enemy affected by your Timerend now causes the enemy to erupt in a vortex of sand, dealing 141 Chromatic Damage every 1 sec to up to 8 enemies for 6 seconds in an 8 yd radius.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806312,
+            "description_html": "Using <span style=\"color: #ffffff; display: inline\">Unmake</span> on an enemy affected by your <span style=\"color: #ffffff; display: inline\">Timerend</span> now causes the enemy to erupt in a vortex of sand, dealing <span class=\"item-number\">141</span> Chromatic Damage every <span class=\"item-number\">1</span> sec to up to <span class=\"item-number\">8</span> enemies for <span class=\"item-number\">6</span> seconds in an <span class=\"item-number\">8</span> yd radius.",
+            "description": "Using Unmake on an enemy affected by your Timerend now causes the enemy to erupt in a vortex of sand, dealing 141 Chromatic Damage every 1 sec to up to 8 enemies for 6 seconds in an 8 yd radius."
+          }
+        ],
+        "connections": [
+          4316
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_inscription_armorscroll02",
+          "key": "inv_inscription_armorscroll02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,2308 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:29+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:6481e62d2930050cc15784ef4d7ea0ce45ce6b25dbc56b593b22bb4cae1021e6",
+    "talent_count": 157,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 19,
+    "name": "Templar",
+    "slug": "templar",
+    "class_file": "monk",
+    "color": "rgb(255, 250, 179)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:monk",
+      "key": "class-monk",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 34,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 51,
+    "name": "Crusader",
+    "slug": "crusader",
+    "sort_order": 3,
+    "class_id": 19,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 34372,
+        "name": "Righteous Tempest",
+        "slug": "righteous-tempest",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4024,
+            31314
+          ]
+        },
+        "spell_id": 805409,
+        "spell_ids": [
+          805409
+        ],
+        "description_html": "Unleash a whirling <span style=\"color: #ffffff; display: inline\">Oath Breaker</span>, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">7</span> + <span class=\"item-number\">30% SP</span> damage to nearby enemies, scaling with spell power, every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed.",
+        "description": "Unleash a whirling Oath Breaker, dealing 100% Weapon Damage plus 7 + 30% SP damage to nearby enemies, scaling with spell power, every 1 sec for 3 seconds.\n\nConsumes your Oaths, dealing additional damage for each consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805409,
+            "description_html": "Unleash a whirling <span style=\"color: #ffffff; display: inline\">Oath Breaker</span>, dealing <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">7</span> + <span class=\"item-number\">30% SP</span> damage to nearby enemies, scaling with spell power, every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds.<br /><br />Consumes your <span style=\"color: #ffffff; display: inline\">Oaths</span>, dealing additional damage for each consumed.",
+            "description": "Unleash a whirling Oath Breaker, dealing 100% Weapon Damage plus 7 + 30% SP damage to nearby enemies, scaling with spell power, every 1 sec for 3 seconds.\n\nConsumes your Oaths, dealing additional damage for each consumed."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Whirlwind_Yellow",
+          "key": "whirlwind_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4024,
+        "name": "Scourgebane",
+        "slug": "scourgebane",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            31314
+          ]
+        },
+        "spell_id": 92111,
+        "spell_ids": [
+          92111
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Direct damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike an enemy with <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, dealing an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Weapon damage plus <span class=\"item-number\">262</span> + <span class=\"item-number\">25% SP</span> + <span class=\"item-number\">25% AP</span> Holyflame Damage.<br /><br />This is guaranteed to critically strike against Undead enemies.",
+        "description": "Level 10 Passive\nDirect damage dealt now has a 20% chance to strike an enemy with Scourgebane, dealing an additional 50% Weapon damage plus 262 + 25% SP + 25% AP Holyflame Damage.\n\nThis is guaranteed to critically strike against Undead enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92111,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Direct damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike an enemy with <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, dealing an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Weapon damage plus <span class=\"item-number\">262</span> + <span class=\"item-number\">25% SP</span> + <span class=\"item-number\">25% AP</span> Holyflame Damage.<br /><br />This is guaranteed to critically strike against Undead enemies.",
+            "description": "Level 10 Passive\nDirect damage dealt now has a 20% chance to strike an enemy with Scourgebane, dealing an additional 50% Weapon damage plus 262 + 25% SP + 25% AP Holyflame Damage.\n\nThis is guaranteed to critically strike against Undead enemies."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_firesword_Border",
+          "key": "nhi_firesword_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29708,
+        "name": "Argent Blade",
+        "slug": "argent-blade",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804929,
+        "spell_ids": [
+          804929
+        ],
+        "description_html": "Crush an enemy with argent fervor, dealing <span class=\"item-number\">215</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">20</span> + <span class=\"item-number\">47.25% AP</span> + <span class=\"item-number\">135% holy SP</span>, healing you equal to the damage dealt, and unleashes <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, dealing <span class=\"item-number\">262</span> + <span class=\"item-number\">25% holy SP</span> + <span class=\"item-number\">25% AP</span> Holy damage.",
+        "description": "Crush an enemy with argent fervor, dealing 215% Weapon Damage plus 20 + 47.25% AP + 135% holy SP, healing you equal to the damage dealt, and unleashes Scourgebane, dealing 262 + 25% holy SP + 25% AP Holy damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804929,
+            "description_html": "Crush an enemy with argent fervor, dealing <span class=\"item-number\">215</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">20</span> + <span class=\"item-number\">47.25% AP</span> + <span class=\"item-number\">135% holy SP</span>, healing you equal to the damage dealt, and unleashes <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, dealing <span class=\"item-number\">262</span> + <span class=\"item-number\">25% holy SP</span> + <span class=\"item-number\">25% AP</span> Holy damage.",
+            "description": "Crush an enemy with argent fervor, dealing 215% Weapon Damage plus 20 + 47.25% AP + 135% holy SP, healing you equal to the damage dealt, and unleashes Scourgebane, dealing 262 + 25% holy SP + 25% AP Holy damage."
+          }
+        ],
+        "connections": [
+          34372
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Wakeoffashes",
+          "key": "wakeoffashes",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31174,
+        "name": "Aggramar's Rage",
+        "slug": "aggramars-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4024,
+            31314
+          ]
+        },
+        "spell_id": 560650,
+        "spell_ids": [
+          560650,
+          561346
+        ],
+        "description_html": "Increases your Holy critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>.",
+        "description": "Increases your Holy critical strike chance by 3% and your expertise by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560650,
+            "description_html": "Increases your Holy critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>.",
+            "description": "Increases your Holy critical strike chance by 3% and your expertise by 5."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561346,
+            "description_html": "Increases your Holy critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases your Holy critical strike chance by 6% and your expertise by 10."
+          }
+        ],
+        "connections": [
+          29708
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_RetributionAura",
+          "key": "spell_holy_retributionaura",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30440,
+        "name": "Pure Focus",
+        "slug": "pure-focus",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705253,
+        "spell_ids": [
+          705253,
+          707852
+        ],
+        "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance to trigger Scourgebane by 5% and your chance to hit by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705253,
+            "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance to trigger Scourgebane by 5% and your chance to hit by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707852,
+            "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance to trigger Scourgebane by 10% and your chance to hit by 4%."
+          }
+        ],
+        "connections": [
+          29708
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Arcane_FocusedPower",
+          "key": "spell_arcane_focusedpower",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11287,
+        "name": "Light's Chosen",
+        "slug": "lights-chosen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 301310,
+        "spell_ids": [
+          301310
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell power by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Agility, your critical strike rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect, and your spell penetration by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your spell power by 50% of your Agility, your critical strike rating by 15% of your Intellect, and your spell penetration by 10% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301310,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell power by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Agility, your critical strike rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect, and your spell penetration by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your spell power by 50% of your Agility, your critical strike rating by 15% of your Intellect, and your spell penetration by 10% of your Intellect."
+          }
+        ],
+        "connections": [
+          4024
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Paladinskill_02_Border",
+          "key": "custom_paladinskill_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7822,
+        "name": "Warrior of Tyr",
+        "slug": "warrior-of-tyr",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301253,
+        "spell_ids": [
+          301253
+        ],
+        "description_html": "Periodic damage dealt now generates <span class=\"item-number\">10</span> Energy.",
+        "description": "Periodic damage dealt now generates 10 Energy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301253,
+            "description_html": "Periodic damage dealt now generates <span class=\"item-number\">10</span> Energy.",
+            "description": "Periodic damage dealt now generates 10 Energy."
+          }
+        ],
+        "connections": [
+          31174
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_holyhammer_Border",
+          "key": "nhi_holyhammer_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34382,
+        "name": "Chivalric",
+        "slug": "chivalric",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705272,
+        "spell_ids": [
+          705272
+        ],
+        "description_html": "Increases your critical damage with Holy spells and abilities by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical damage with Holy spells and abilities by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705272,
+            "description_html": "Increases your critical damage with Holy spells and abilities by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical damage with Holy spells and abilities by 15%."
+          }
+        ],
+        "connections": [
+          31174
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_veneration",
+          "key": "ability_paladin_veneration",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30965,
+        "name": "Warrior of Dawn",
+        "slug": "warrior-of-dawn",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560648,
+        "spell_ids": [
+          560648
+        ],
+        "description_html": "Melee damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown and reduce the Energy cost of your next <span style=\"color: #FFFFFF; display: inline\">Argent Blade</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Melee damage dealt now has a 10% chance to reset the cooldown and reduce the Energy cost of your next Argent Blade by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560648,
+            "description_html": "Melee damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown and reduce the Energy cost of your next <span style=\"color: #FFFFFF; display: inline\">Argent Blade</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Melee damage dealt now has a 10% chance to reset the cooldown and reduce the Energy cost of your next Argent Blade by -50%."
+          }
+        ],
+        "connections": [
+          30440,
+          31174
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_deathknight_d_01",
+          "key": "inv_sword_1h_deathknight_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34343,
+        "name": "Righteousness",
+        "slug": "righteousness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680891,
+        "spell_ids": [
+          680891
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chastise</span> now always triggers <span style=\"color: #ffffff; display: inline\">Scourgebane</span> on your target.",
+        "description": "Your Chastise now always triggers Scourgebane on your target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680891,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chastise</span> now always triggers <span style=\"color: #ffffff; display: inline\">Scourgebane</span> on your target.",
+            "description": "Your Chastise now always triggers Scourgebane on your target."
+          }
+        ],
+        "connections": [
+          30440
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helmet_74",
+          "key": "inv_helmet_74",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6861,
+        "name": "Paladin Training",
+        "slug": "paladin-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520009,
+        "spell_ids": [
+          520009
+        ],
+        "description_html": "Increases the damage and reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span> and <span style=\"color: #FFFFFF; display: inline\">Argent Blade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage and reduces the Energy cost of Righteous Lunge and Argent Blade by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520009,
+            "description_html": "Increases the damage and reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span> and <span style=\"color: #FFFFFF; display: inline\">Argent Blade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage and reduces the Energy cost of Righteous Lunge and Argent Blade by 20%."
+          }
+        ],
+        "connections": [
+          30440
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holy_beam_Border",
+          "key": "nhi_holy_beam_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5351,
+        "name": "Scarlet Secrets",
+        "slug": "scarlet-secrets",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520812,
+        "spell_ids": [
+          520812
+        ],
+        "description_html": "Every 2nd cast of <span style=\"color: #ffffff; display: inline\">Argent Blade</span> now grants you <span style=\"color: #ffffff; display: inline\">Oath: Retribution</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_artofwar\" /><span class=\"name\">Oath: Retribution</span></div><span class=\"desc\">Critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Every 2nd cast of Argent Blade now grants you Oath: Retribution.Oath: RetributionCritical damage increased by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520812,
+            "description_html": "Every 2nd cast of <span style=\"color: #ffffff; display: inline\">Argent Blade</span> now grants you <span style=\"color: #ffffff; display: inline\">Oath: Retribution</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_paladin_artofwar\" /><span class=\"name\">Oath: Retribution</span></div><span class=\"desc\">Critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Every 2nd cast of Argent Blade now grants you Oath: Retribution.Oath: RetributionCritical damage increased by 5%."
+          }
+        ],
+        "connections": [
+          7822,
+          34382
+        ],
+        "choice_group": 172211,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Letter_LordaeronScarletCrusade",
+          "key": "letter_lordaeronscarletcrusade",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6351,
+        "name": "Teachings of the Cathedral",
+        "slug": "teachings-of-the-cathedral",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520032,
+        "spell_ids": [
+          520032
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Oath: Condemn</span> now provides <span class=\"item-number\">3</span><span class=\"item-number\">%</span> additional critical strike chance.",
+        "description": "Your Oath: Condemn now provides 3% additional critical strike chance.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520032,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Oath: Condemn</span> now provides <span class=\"item-number\">3</span><span class=\"item-number\">%</span> additional critical strike chance.",
+            "description": "Your Oath: Condemn now provides 3% additional critical strike chance."
+          }
+        ],
+        "connections": [
+          7822,
+          34382
+        ],
+        "choice_group": 172211,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_plate_scarletcrusade_c_01_helm",
+          "key": "inv_plate_scarletcrusade_c_01_helm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7823,
+        "name": "Scourge-Defense Training",
+        "slug": "scourge-defense-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520608,
+        "spell_ids": [
+          520608
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Warrior of Dawn</span> now also increases the damage and critical strike chance of your next <span style=\"color: #ffffff; display: inline\">Argent Blade</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Warrior of Dawn now also increases the damage and critical strike chance of your next Argent Blade by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520608,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Warrior of Dawn</span> now also increases the damage and critical strike chance of your next <span style=\"color: #ffffff; display: inline\">Argent Blade</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Warrior of Dawn now also increases the damage and critical strike chance of your next Argent Blade by 50%."
+          }
+        ],
+        "connections": [
+          30965
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Redemption",
+          "key": "spell_holy_redemption",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7024,
+        "name": "Templar's Might",
+        "slug": "templars-might",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705291,
+        "spell_ids": [
+          705291
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span>, <span style=\"color: #ffffff; display: inline\">Chastise</span>, <span style=\"color: #ffffff; display: inline\">Blade of Faith</span>, and <span style=\"color: #ffffff; display: inline\">Scourgebane</span> on enemies affected by your <span style=\"color: #ffffff; display: inline\">Condemn</span> is now increased by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack.",
+        "description": "Damage dealt by Righteous Lunge, Chastise, Blade of Faith, and Scourgebane on enemies affected by your Condemn is now increased by 6% per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705291,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Lunge</span>, <span style=\"color: #ffffff; display: inline\">Chastise</span>, <span style=\"color: #ffffff; display: inline\">Blade of Faith</span>, and <span style=\"color: #ffffff; display: inline\">Scourgebane</span> on enemies affected by your <span style=\"color: #ffffff; display: inline\">Condemn</span> is now increased by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> per stack.",
+            "description": "Damage dealt by Righteous Lunge, Chastise, Blade of Faith, and Scourgebane on enemies affected by your Condemn is now increased by 6% per stack."
+          }
+        ],
+        "connections": [
+          6861,
+          34343
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_reputation_argentcrusader",
+          "key": "achievement_reputation_argentcrusader",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4287,
+        "name": "Scarlet Training",
+        "slug": "scarlet-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 301065,
+        "spell_ids": [
+          301065
+        ],
+        "description_html": "$81",
+        "description": "$81",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301065,
+            "description_html": "$82",
+            "description": "$82"
+          }
+        ],
+        "connections": [
+          11287
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fieryhammer_Border",
+          "key": "nhi_fieryhammer_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6920,
+        "name": "Tyr's Blessing",
+        "slug": "tyrs-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705285,
+        "spell_ids": [
+          705285
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Condemn</span> now stacks <span class=\"item-number\">1</span> additional time.",
+        "description": "Condemn now stacks 1 additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705285,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Condemn</span> now stacks <span class=\"item-number\">1</span> additional time.",
+            "description": "Condemn now stacks 1 additional time."
+          }
+        ],
+        "connections": [
+          5351,
+          6351
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Hammer_01",
+          "key": "inv_hammer_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34373,
+        "name": "Retribution",
+        "slug": "retribution",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707391,
+        "spell_ids": [
+          707391
+        ],
+        "description_html": "Melee damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the damage dealt as Holy Damage.",
+        "description": "Melee damage dealt now has a 20% chance to strike 2 additional times for 30% of the damage dealt as Holy Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707391,
+            "description_html": "Melee damage dealt now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the damage dealt as Holy Damage.",
+            "description": "Melee damage dealt now has a 20% chance to strike 2 additional times for 30% of the damage dealt as Holy Damage."
+          }
+        ],
+        "connections": [
+          7823,
+          34382
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holyfire_00_Border",
+          "key": "nhi_holyfire_00_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30448,
+        "name": "Judgement",
+        "slug": "judgement",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300520,
+        "spell_ids": [
+          300520
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span>, and <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">20%</span> health.",
+        "description": "Increases the damage of Scourgebane, Scarlet Hammer, and Titanstrike by 25% on enemies below 20% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300520,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Scourgebane</span>, <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span>, and <span style=\"color: #ffffff; display: inline\">Titanstrike</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> on enemies below <span class=\"item-number\">20%</span> health.",
+            "description": "Increases the damage of Scourgebane, Scarlet Hammer, and Titanstrike by 25% on enemies below 20% health."
+          }
+        ],
+        "connections": [
+          7823,
+          34343
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_holyresistance",
+          "key": "ability_racial_holyresistance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34371,
+        "name": "Focused",
+        "slug": "focused",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300524,
+        "spell_ids": [
+          300524
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> and <span style=\"color: #FFFFFF; display: inline\">Righteous Tempest</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Blade of Faith and Righteous Tempest by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300524,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blade of Faith</span> and <span style=\"color: #FFFFFF; display: inline\">Righteous Tempest</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Blade of Faith and Righteous Tempest by 25%."
+          }
+        ],
+        "connections": [
+          7024
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_fierywhirl_Border",
+          "key": "nhi_fierywhirl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12361,
+        "name": "Holy Tempest",
+        "slug": "holy-tempest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301339,
+        "spell_ids": [
+          301339
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> now spreads <span style=\"color: #ffffff; display: inline\">Condemn</span> on affected enemies to a nearby enemy.",
+        "description": "Damage dealt by Righteous Tempest now spreads Condemn on affected enemies to a nearby enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301339,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> now spreads <span style=\"color: #ffffff; display: inline\">Condemn</span> on affected enemies to a nearby enemy.",
+            "description": "Damage dealt by Righteous Tempest now spreads Condemn on affected enemies to a nearby enemy."
+          }
+        ],
+        "connections": [
+          6920
+        ],
+        "choice_group": 301339,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holy_tornado_Border",
+          "key": "nhi_holy_tornado_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34361,
+        "name": "Whirling Tempest",
+        "slug": "whirling-tempest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300504,
+        "spell_ids": [
+          300504
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> is active you gain <span class=\"item-number\">20%</span> increased movement speed. <br /><br />",
+        "description": "While Righteous Tempest is active you gain 20% increased movement speed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300504,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> is active you gain <span class=\"item-number\">20%</span> increased movement speed. <br /><br />",
+            "description": "While Righteous Tempest is active you gain 20% increased movement speed."
+          }
+        ],
+        "connections": [
+          6920
+        ],
+        "choice_group": 301339,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_snowwhirlwind_Border",
+          "key": "nhi_snowwhirlwind_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6566,
+        "name": "Crusader's Brand",
+        "slug": "crusaders-brand",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300513,
+        "spell_ids": [
+          300513
+        ],
+        "description_html": "Brand an enemy for <span class=\"item-number\">20</span> seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take <span class=\"item-number\">243</span> + <span class=\"item-number\">27.5% holy SP</span> + <span class=\"item-number\">18.5% AP</span> Holy Damage.<br /><br />While marked enemies can always be seen by the Crusader even while stealthed or invisible.",
+        "description": "Brand an enemy for 20 seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take 243 + 27.5% holy SP + 18.5% AP Holy Damage.\n\nWhile marked enemies can always be seen by the Crusader even while stealthed or invisible.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300513,
+            "description_html": "Brand an enemy for <span class=\"item-number\">20</span> seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take <span class=\"item-number\">243</span> + <span class=\"item-number\">27.5% holy SP</span> + <span class=\"item-number\">18.5% AP</span> Holy Damage.<br /><br />While marked enemies can always be seen by the Crusader even while stealthed or invisible.",
+            "description": "Brand an enemy for 20 seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take 243 + 27.5% holy SP + 18.5% AP Holy Damage.\n\nWhile marked enemies can always be seen by the Crusader even while stealthed or invisible."
+          }
+        ],
+        "connections": [
+          5351,
+          6351,
+          34373
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holy_toglory_Border",
+          "key": "nhi_holy_toglory_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6352,
+        "name": "Light's Echo",
+        "slug": "lights-echo",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520017,
+        "spell_ids": [
+          520017,
+          520883
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Argent Blade</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike an additional time.",
+        "description": "Argent Blade now has a 10% chance to strike an additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520017,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Argent Blade</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to strike an additional time.",
+            "description": "Argent Blade now has a 10% chance to strike an additional time."
+          },
+          {
+            "rank": 2,
+            "spell_id": 520883,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Argent Blade</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike an additional time.",
+            "description": "Argent Blade now has a 20% chance to strike an additional time."
+          }
+        ],
+        "connections": [
+          30448,
+          34373
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_clashingoxcharge",
+          "key": "ability_monk_clashingoxcharge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30608,
+        "name": "Divine Charge",
+        "slug": "divine-charge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 527023,
+        "spell_ids": [
+          527023
+        ],
+        "description_html": "You and your party members leap upon a divine steed, increasing their movement speed by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and causing them to trample nearby enemies for <span class=\"item-number\">119</span> + <span class=\"item-number\">20% AP</span> + <span class=\"item-number\">40% holy SP</span> Holy Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />While active, casting does not dismount you or your allies. Can only be used outdoors.",
+        "description": "You and your party members leap upon a divine steed, increasing their movement speed by 100% and causing them to trample nearby enemies for 119 + 20% AP + 40% holy SP Holy Damage every 1 sec for 15 seconds.\n\nWhile active, casting does not dismount you or your allies. Can only be used outdoors.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 527023,
+            "description_html": "You and your party members leap upon a divine steed, increasing their movement speed by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> and causing them to trample nearby enemies for <span class=\"item-number\">119</span> + <span class=\"item-number\">20% AP</span> + <span class=\"item-number\">40% holy SP</span> Holy Damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">15</span> seconds.<br /><br />While active, casting does not dismount you or your allies. Can only be used outdoors.",
+            "description": "You and your party members leap upon a divine steed, increasing their movement speed by 100% and causing them to trample nearby enemies for 119 + 20% AP + 40% holy SP Holy Damage every 1 sec for 15 seconds.\n\nWhile active, casting does not dismount you or your allies. Can only be used outdoors."
+          }
+        ],
+        "connections": [
+          7024,
+          30448
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Mount_Charger",
+          "key": "ability_mount_charger",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30607,
+        "name": "Radiant Blade",
+        "slug": "radiant-blade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524822,
+        "spell_ids": [
+          524822,
+          525080
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oath: Righteous Lunge</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Oath: Righteous Lunge by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524822,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oath: Righteous Lunge</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Oath: Righteous Lunge by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 525080,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Oath: Righteous Lunge</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Oath: Righteous Lunge by 50%."
+          }
+        ],
+        "connections": [
+          34371
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_weapon_shortblade_99",
+          "key": "inv_weapon_shortblade_99",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4288,
+        "name": "Improved Scarlet Hammer",
+        "slug": "improved-scarlet-hammer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 301254,
+        "spell_ids": [
+          301254
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now generates <span class=\"item-number\">30</span> Energy.",
+        "description": "Level 40 Passive\nCasting Scarlet Hammer now generates 30 Energy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301254,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now generates <span class=\"item-number\">30</span> Energy.",
+            "description": "Level 40 Passive\nCasting Scarlet Hammer now generates 30 Energy."
+          }
+        ],
+        "connections": [
+          4287
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_paladin_lightshammer",
+          "key": "spell_paladin_lightshammer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34381,
+        "name": "Holy Edge",
+        "slug": "holy-edge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706312,
+        "spell_ids": [
+          706312,
+          707853
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Scourgebane</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now strikes <span class=\"item-number\">1</span> additional nearby enemy.",
+        "description": "Damage dealt by Scourgebane and Scarlet Hammer now strikes 1 additional nearby enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706312,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Scourgebane</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now strikes <span class=\"item-number\">1</span> additional nearby enemy.",
+            "description": "Damage dealt by Scourgebane and Scarlet Hammer now strikes 1 additional nearby enemy."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707853,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Scourgebane</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now strikes <span class=\"item-number\">2</span> additional nearby enemy.",
+            "description": "Damage dealt by Scourgebane and Scarlet Hammer now strikes 2 additional nearby enemy."
+          }
+        ],
+        "connections": [
+          6566,
+          12361,
+          34361
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",
+          "key": "inv_sword_1h_artifactvigfus_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6567,
+        "name": "Holy Combatant",
+        "slug": "holy-combatant",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500011,
+        "spell_ids": [
+          500011
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Argent Blade</span> now also extends the duration of <span style=\"color: #ffffff; display: inline\">Interdict</span> on your target by <span class=\"item-number\">1</span> sec.",
+        "description": "Your Argent Blade now also extends the duration of Interdict on your target by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500011,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Argent Blade</span> now also extends the duration of <span style=\"color: #ffffff; display: inline\">Interdict</span> on your target by <span class=\"item-number\">1</span> sec.",
+            "description": "Your Argent Blade now also extends the duration of Interdict on your target by 1 sec."
+          }
+        ],
+        "connections": [
+          6352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_28",
+          "key": "inv_sword_28",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31312,
+        "name": "Serendipity",
+        "slug": "serendipity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300929,
+        "spell_ids": [
+          300929
+        ],
+        "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, reduces the cost of your spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, reduces the cost of your spells and abilities by -5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300929,
+            "description_html": "Increases the all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, reduces the cost of your spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, reduces the cost of your spells and abilities by -5%."
+          }
+        ],
+        "connections": [
+          6352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyPeak_Border",
+          "key": "custom_t_nhance_rpg_icons_holypeak_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34369,
+        "name": "Divine Strikes",
+        "slug": "divine-strikes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705255,
+        "spell_ids": [
+          705255
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Scourgebane</span> now increases the damage of <span style=\"color: #ffffff; display: inline\">Argent Blade</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Damage dealt by Scourgebane now increases the damage of Argent Blade by 5% for 6 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705255,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Scourgebane</span> now increases the damage of <span style=\"color: #ffffff; display: inline\">Argent Blade</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Damage dealt by Scourgebane now increases the damage of Argent Blade by 5% for 6 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          30607,
+          30608
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_2h_nazmirraid_d_01",
+          "key": "inv_sword_2h_nazmirraid_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30610,
+        "name": "Argent Knight",
+        "slug": "argent-knight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300512,
+        "spell_ids": [
+          300512
+        ],
+        "description_html": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> and <span style=\"color: #ffffff; display: inline\">Condemn</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.<br /><br />Additionally, <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> now reduces all damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> while active.",
+        "description": "Increases the damage dealt by Righteous Tempest and Condemn by 30%.\n\nAdditionally, Righteous Tempest now reduces all damage taken by -20% while active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300512,
+            "description_html": "Increases the damage dealt by <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> and <span style=\"color: #ffffff; display: inline\">Condemn</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.<br /><br />Additionally, <span style=\"color: #ffffff; display: inline\">Righteous Tempest</span> now reduces all damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> while active.",
+            "description": "Increases the damage dealt by Righteous Tempest and Condemn by 30%.\n\nAdditionally, Righteous Tempest now reduces all damage taken by -20% while active."
+          }
+        ],
+        "connections": [
+          6567,
+          34381,
+          17567
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_holypower_Border",
+          "key": "_5_holypower_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30963,
+        "name": "Testament of Strength",
+        "slug": "testament-of-strength",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300514,
+        "spell_ids": [
+          300514
+        ],
+        "description_html": "Your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Titanstrikes</span> incur a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> reduced cooldown, are usable regardless of your target's health percentage, and deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage. Lasts <span class=\"item-number\">1</span> minute.<br /><br />Applies <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> for <span class=\"item-number\">1</span> minute.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_sealoffury\" /><span class=\"name\">Sacred Restraint</span></div><span class=\"desc\">Cannot be targeted by <span style=\"color: #FFFFFF; display: inline\">Testaments</span>.</span></div>",
+        "description": "Your next 3 Titanstrikes incur a -50% reduced cooldown, are usable regardless of your target's health percentage, and deal 25% increased damage. Lasts 1 minute.\n\nApplies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300514,
+            "description_html": "Your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Titanstrikes</span> incur a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> reduced cooldown, are usable regardless of your target's health percentage, and deal <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage. Lasts <span class=\"item-number\">1</span> minute.<br /><br />Applies <span style=\"color: #ffffff; display: inline\">Sacred Restraint</span> for <span class=\"item-number\">1</span> minute.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_holy_sealoffury\" /><span class=\"name\">Sacred Restraint</span></div><span class=\"desc\">Cannot be targeted by <span style=\"color: #FFFFFF; display: inline\">Testaments</span>.</span></div>",
+            "description": "Your next 3 Titanstrikes incur a -50% reduced cooldown, are usable regardless of your target's health percentage, and deal 25% increased damage. Lasts 1 minute.\n\nApplies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments."
+          }
+        ],
+        "connections": [
+          6567,
+          31312
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_judgementsofthejust",
+          "key": "ability_paladin_judgementsofthejust",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6921,
+        "name": "Legacy of the Silver Hand",
+        "slug": "legacy-of-the-silver-hand",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806522,
+        "spell_ids": [
+          806522
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Argent Blade</span> or <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now guarantees your next <span class=\"item-number\">2</span> instances of damage dealt by <span style=\"color: #ffffff; display: inline\">Scourgebane</span> to critically strike.<br /><br />Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Casting Argent Blade or Scarlet Hammer now guarantees your next 2 instances of damage dealt by Scourgebane to critically strike.\n\nIncreases the critical damage of Scourgebane by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806522,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Argent Blade</span> or <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now guarantees your next <span class=\"item-number\">2</span> instances of damage dealt by <span style=\"color: #ffffff; display: inline\">Scourgebane</span> to critically strike.<br /><br />Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Scourgebane</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Casting Argent Blade or Scarlet Hammer now guarantees your next 2 instances of damage dealt by Scourgebane to critically strike.\n\nIncreases the critical damage of Scourgebane by 25%."
+          }
+        ],
+        "connections": [
+          31312,
+          34369
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shield_1h_silverhand_b_01",
+          "key": "inv_shield_1h_silverhand_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9888,
+        "name": "Martial Training",
+        "slug": "martial-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 806525,
+        "spell_ids": [
+          806525
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Your <span style=\"color: #FFFFFF; display: inline\">Chastise</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now deals an additional <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage.",
+        "description": "Level 50 Passive\nYour Chastise and Scarlet Hammer now deals an additional 150% Weapon Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806525,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Your <span style=\"color: #FFFFFF; display: inline\">Chastise</span> and <span style=\"color: #ffffff; display: inline\">Scarlet Hammer</span> now deals an additional <span class=\"item-number\">150</span><span class=\"item-number\">%</span> Weapon Damage.",
+            "description": "Level 50 Passive\nYour Chastise and Scarlet Hammer now deals an additional 150% Weapon Damage."
+          }
+        ],
+        "connections": [
+          4288
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_plate_scarletcrusade_c_01_shoulder_black",
+          "key": "inv_plate_scarletcrusade_c_01_shoulder_black",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30439,
+        "name": "Templar Rituals",
+        "slug": "templar-rituals",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520534,
+        "spell_ids": [
+          520534
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Righteous Tempest</span> now deals an additional <span class=\"item-number\">85</span> + <span class=\"item-number\">50% holy SP</span> + <span class=\"item-number\">8.5% AP</span> Holy damage, and upon dealing damage, you pull enemies within <span class=\"item-number\">15</span> yds towards you.<br /><br />",
+        "description": "Damage dealt by Righteous Tempest now deals an additional 85 + 50% holy SP + 8.5% AP Holy damage, and upon dealing damage, you pull enemies within 15 yds towards you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520534,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Righteous Tempest</span> now deals an additional <span class=\"item-number\">85</span> + <span class=\"item-number\">50% holy SP</span> + <span class=\"item-number\">8.5% AP</span> Holy damage, and upon dealing damage, you pull enemies within <span class=\"item-number\">15</span> yds towards you.<br /><br />",
+            "description": "Damage dealt by Righteous Tempest now deals an additional 85 + 50% holy SP + 8.5% AP Holy damage, and upon dealing damage, you pull enemies within 15 yds towards you."
+          }
+        ],
+        "connections": [
+          30610,
+          30963
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fire_solar_Border",
+          "key": "nhi_fire_solar_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34366,
+        "name": "Titanfall",
+        "slug": "titanfall",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300607,
+        "spell_ids": [
+          300607
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Titanstrike</span> now heals you for twice the damage dealt.",
+        "description": "Your Titanstrike now heals you for twice the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300607,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Titanstrike</span> now heals you for twice the damage dealt.",
+            "description": "Your Titanstrike now heals you for twice the damage dealt."
+          }
+        ],
+        "connections": [
+          30963
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Execution_White",
+          "key": "execution_white",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4364,
+        "name": "Scarlet Champion",
+        "slug": "scarlet-champion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 19,
+        "tree_id": 51,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805415,
+        "spell_ids": [
+          805415
+        ],
+        "description_html": "Your damaging critical strikes now increase your Holy damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds. stacking <span class=\"item-number\">5</span> times. Can only occur once per sec.<br /><br />At <span class=\"item-number\">5</span> stacks, you are granted <span style=\"color: #ffffff; display: inline\">High General</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_bg_killxenemies_generalsroom\" /><span class=\"name\">High General</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Chastise</span> consumes all stacks of <span style=\"color: #ffffff; display: inline\">Scarlet Champion</span> to deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased direct damage, and be guaranteed to critically strike.</span></div>",
+        "description": "Your damaging critical strikes now increase your Holy damage dealt by 2% for 20 seconds. stacking 5 times. Can only occur once per sec.\n\nAt 5 stacks, you are granted High General.High GeneralYour next Chastise consumes all stacks of Scarlet Champion to deal 100% increased direct damage, and be guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805415,
+            "description_html": "Your damaging critical strikes now increase your Holy damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds. stacking <span class=\"item-number\">5</span> times. Can only occur once per sec.<br /><br />At <span class=\"item-number\">5</span> stacks, you are granted <span style=\"color: #ffffff; display: inline\">High General</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_bg_killxenemies_generalsroom\" /><span class=\"name\">High General</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Chastise</span> consumes all stacks of <span style=\"color: #ffffff; display: inline\">Scarlet Champion</span> to deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased direct damage, and be guaranteed to critically strike.</span></div>",
+            "description": "Your damaging critical strikes now increase your Holy damage dealt by 2% for 20 seconds. stacking 5 times. Can only occur once per sec.\n\nAt 5 stacks, you are granted High General.High GeneralYour next Chastise consumes all stacks of Scarlet Champion to deal 100% increased direct damage, and be guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          6921,
+          30963
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_surgeoflight",
+          "key": "spell_holy_surgeoflight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,2303 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:16+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:6f7e4cf0298c3522dcc70f9b5d16b3a3ca985a72518dbe60492a942827ae8fd8",
+    "talent_count": 162,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 12,
+    "name": "Barbarian",
+    "slug": "barbarian",
+    "class_file": "barbarian",
+    "color": "rgb(138, 51, 3)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:barbarian",
+      "key": "class-barbarian",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 28,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 32,
+    "name": "Headhunting",
+    "slug": "headhunting",
+    "sort_order": 2,
+    "class_id": 12,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 30163,
+        "name": "Berserker Axe",
+        "slug": "berserker-axe",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4002,
+            30162
+          ]
+        },
+        "spell_id": 804138,
+        "spell_ids": [
+          804138
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Requires Enraged</span><br /><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">8</span> sec recharge</span><br />Hurl two axes at an enemy, each dealing <span class=\"item-number\">16</span> + <span class=\"item-number\">40% ranged AP</span> Physical damage and reducing their armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">5</span> times.",
+        "description": "Requires Enraged\n3 Charges, 8 sec recharge\nHurl two axes at an enemy, each dealing 16 + 40% ranged AP Physical damage and reducing their armor by -4% for 20 seconds, stacking up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804138,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Requires Enraged</span><br /><span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">8</span> sec recharge</span><br />Hurl two axes at an enemy, each dealing <span class=\"item-number\">16</span> + <span class=\"item-number\">40% ranged AP</span> Physical damage and reducing their armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">5</span> times.",
+            "description": "Requires Enraged\n3 Charges, 8 sec recharge\nHurl two axes at an enemy, each dealing 16 + 40% ranged AP Physical damage and reducing their armor by -4% for 20 seconds, stacking up to 5 times."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_1h_draenorcrafted_d_02_a_horde",
+          "key": "inv_axe_1h_draenorcrafted_d_02_a_horde",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4002,
+        "name": "Headhunter",
+        "slug": "headhunter",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30162
+          ]
+        },
+        "spell_id": 92082,
+        "spell_ids": [
+          92082
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Maiming Spear</span>, and <span style=\"color: #ffffff; display: inline\">Whirling Advance</span> by <span class=\"item-number\">-15</span>.",
+        "description": "Level 10 Passive\nReduces the Energy cost of Throw Weapon, Maiming Spear, and Whirling Advance by -15.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92082,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Maiming Spear</span>, and <span style=\"color: #ffffff; display: inline\">Whirling Advance</span> by <span class=\"item-number\">-15</span>.",
+            "description": "Level 10 Passive\nReduces the Energy cost of Throw Weapon, Maiming Spear, and Whirling Advance by -15."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_2h_artifactmaw_d_01",
+          "key": "inv_axe_2h_artifactmaw_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6796,
+        "name": "You Want Axe?",
+        "slug": "you-want-axe",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560564,
+        "spell_ids": [
+          560564
+        ],
+        "description_html": "While enraged, casting <span style=\"color: #ffffff; display: inline\">Spears</span> now refreshes <span class=\"item-number\">3</span> charges of <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> and your next <span class=\"item-number\">3</span> casts cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Energy. Lasts <span class=\"item-number\">12</span> seconds.",
+        "description": "While enraged, casting Spears now refreshes 3 charges of Berserker Axe and your next 3 casts cost -50% less Energy. Lasts 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560564,
+            "description_html": "While enraged, casting <span style=\"color: #ffffff; display: inline\">Spears</span> now refreshes <span class=\"item-number\">3</span> charges of <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> and your next <span class=\"item-number\">3</span> casts cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Energy. Lasts <span class=\"item-number\">12</span> seconds.",
+            "description": "While enraged, casting Spears now refreshes 3 charges of Berserker Axe and your next 3 casts cost -50% less Energy. Lasts 12 seconds."
+          }
+        ],
+        "connections": [
+          30163
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_1h_garrison_a_01",
+          "key": "inv_axe_1h_garrison_a_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34319,
+        "name": "Barbed Spear",
+        "slug": "barbed-spear",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560881,
+        "spell_ids": [
+          560881
+        ],
+        "description_html": "Throw a heavy spear with precision at an enemy, dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">37</span>, and reducing their healing received by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />",
+        "description": "Throw a heavy spear with precision at an enemy, dealing 160% Ranged Weapon Damage plus 37, and reducing their healing received by -30% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560881,
+            "description_html": "Throw a heavy spear with precision at an enemy, dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">37</span>, and reducing their healing received by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />",
+            "description": "Throw a heavy spear with precision at an enemy, dealing 160% Ranged Weapon Damage plus 37, and reducing their healing received by -30% for 10 seconds."
+          }
+        ],
+        "connections": [
+          6796
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Barbed_Spear",
+          "key": "barbed_spear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31152,
+        "name": "Gutspiller",
+        "slug": "gutspiller",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805832,
+        "spell_ids": [
+          805832
+        ],
+        "description_html": "Launch a heavy axe at an enemy, causing them to bleed for <span class=\"item-number\">96</span> damage over <span class=\"item-number\">12</span> seconds.<br /><br />Every <span class=\"item-number\">6</span> sec the target has their <span style=\"color: #ffffff; display: inline\">Guts Spilled</span>, causing them to bleed out for an additional <span class=\"item-number\">71</span> + <span class=\"item-number\">40% ranged AP</span> damage.",
+        "description": "Launch a heavy axe at an enemy, causing them to bleed for 96 damage over 12 seconds.\n\nEvery 6 sec the target has their Guts Spilled, causing them to bleed out for an additional 71 + 40% ranged AP damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805832,
+            "description_html": "Launch a heavy axe at an enemy, causing them to bleed for <span class=\"item-number\">96</span> damage over <span class=\"item-number\">12</span> seconds.<br /><br />Every <span class=\"item-number\">6</span> sec the target has their <span style=\"color: #ffffff; display: inline\">Guts Spilled</span>, causing them to bleed out for an additional <span class=\"item-number\">71</span> + <span class=\"item-number\">40% ranged AP</span> damage.",
+            "description": "Launch a heavy axe at an enemy, causing them to bleed for 96 damage over 12 seconds.\n\nEvery 6 sec the target has their Guts Spilled, causing them to bleed out for an additional 71 + 40% ranged AP damage."
+          }
+        ],
+        "connections": [
+          6796
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_weapon_(6)_Border",
+          "key": "novart_weapon__6__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9192,
+        "name": "Savage",
+        "slug": "savage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 705242,
+        "spell_ids": [
+          705242
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Born in Blood</span> now also increases your damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and its duration is increased by <span class=\"item-number\">3</span> sec.",
+        "description": "Level 20 Passive\nBorn in Blood now also increases your damage dealt by 5% and its duration is increased by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705242,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Born in Blood</span> now also increases your damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and its duration is increased by <span class=\"item-number\">3</span> sec.",
+            "description": "Level 20 Passive\nBorn in Blood now also increases your damage dealt by 5% and its duration is increased by 3 sec."
+          }
+        ],
+        "connections": [
+          4002
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ACHIEVEMENT_BOSS_TROLLGORE",
+          "key": "achievement_boss_trollgore",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6785,
+        "name": "Puncture Wounds",
+        "slug": "puncture-wounds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805997,
+        "spell_ids": [
+          805997
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Spears</span> now causes enemies to bleed for <span class=\"item-number\">633</span> + <span class=\"item-number\">16.5% ranged AP</span> over <span class=\"item-number\">6</span> seconds.",
+        "description": "Critical strikes with Spears now causes enemies to bleed for 633 + 16.5% ranged AP over 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805997,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Spears</span> now causes enemies to bleed for <span class=\"item-number\">633</span> + <span class=\"item-number\">16.5% ranged AP</span> over <span class=\"item-number\">6</span> seconds.",
+            "description": "Critical strikes with Spears now causes enemies to bleed for 633 + 16.5% ranged AP over 6 seconds."
+          }
+        ],
+        "connections": [
+          34319
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_boilingblood",
+          "key": "inv_misc_boilingblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5318,
+        "name": "Strong Arm",
+        "slug": "strong-arm",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705176,
+        "spell_ids": [
+          705176
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Spears</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Spears by 15% and your hit chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705176,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Spears</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Spears by 15% and your hit chance by 3%."
+          }
+        ],
+        "connections": [
+          34319
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_StrengthOfArms",
+          "key": "ability_warrior_strengthofarms",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5327,
+        "name": "Vital Spirit",
+        "slug": "vital-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805835,
+        "spell_ids": [
+          805835,
+          807864
+        ],
+        "description_html": "Increases the range of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">10</span> yds.",
+        "description": "Increases the range of your Spirit spells by 10 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805835,
+            "description_html": "Increases the range of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">10</span> yds.",
+            "description": "Increases the range of your Spirit spells by 10 yds."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807864,
+            "description_html": "Increases the range of your <span style=\"color: #ffffff; display: inline\">Spirit</span> spells by <span class=\"item-number\">20</span> yds.",
+            "description": "Increases the range of your Spirit spells by 20 yds."
+          }
+        ],
+        "connections": [
+          31152,
+          34319
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Reincarnation",
+          "key": "spell_nature_reincarnation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30771,
+        "name": "Guts Splatter",
+        "slug": "guts-splatter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560586,
+        "spell_ids": [
+          560586,
+          561332
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Gutspiller</span> now allows your abilities to ignore <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the enemy's Armor.",
+        "description": "Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560586,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Gutspiller</span> now allows your abilities to ignore <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the enemy's Armor.",
+            "description": "Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor."
+          },
+          {
+            "rank": 2,
+            "spell_id": 561332,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Gutspiller</span> now allows your abilities to ignore <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the enemy's Armor.",
+            "description": "Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor."
+          }
+        ],
+        "connections": [
+          31152
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_blackhand_marked4death",
+          "key": "ability_blackhand_marked4death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6608,
+        "name": "Deep Fury",
+        "slug": "deep-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705240,
+        "spell_ids": [
+          705240
+        ],
+        "description_html": "Direct Physical damage dealt now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Direct Physical damage dealt now reduces the cooldown of Unbridled Rage by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705240,
+            "description_html": "Direct Physical damage dealt now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Direct Physical damage dealt now reduces the cooldown of Unbridled Rage by -1 sec."
+          }
+        ],
+        "connections": [
+          31152
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_warcry",
+          "key": "ability_warrior_warcry",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34325,
+        "name": "Headhunting",
+        "slug": "headhunting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500060,
+        "spell_ids": [
+          500060
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and removes your spell pushback suffered from taking damage.",
+        "description": "Reduces the cast time of Throw Weapon by -20% and removes your spell pushback suffered from taking damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500060,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and removes your spell pushback suffered from taking damage.",
+            "description": "Reduces the cast time of Throw Weapon by -20% and removes your spell pushback suffered from taking damage."
+          }
+        ],
+        "connections": [
+          5318,
+          6785
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_archerskill07_Border",
+          "key": "_5_archerskill07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13576,
+        "name": "Axe Twirling",
+        "slug": "axe-twirling",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800401,
+        "spell_ids": [
+          800401
+        ],
+        "description_html": "Display mastery over throwing weapons, causing <span style=\"color: #FFFFFF; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #FFFFFF; display: inline\">Berserker Axe</span> to strike <span class=\"item-number\">2</span> additional nearby enemies, but reduces all damage dealt by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Display mastery over throwing weapons, causing Throw Weapon, Gutspiller, and Berserker Axe to strike 2 additional nearby enemies, but reduces all damage dealt by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800401,
+            "description_html": "Display mastery over throwing weapons, causing <span style=\"color: #FFFFFF; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #FFFFFF; display: inline\">Berserker Axe</span> to strike <span class=\"item-number\">2</span> additional nearby enemies, but reduces all damage dealt by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Display mastery over throwing weapons, causing Throw Weapon, Gutspiller, and Berserker Axe to strike 2 additional nearby enemies, but reduces all damage dealt by -15%."
+          }
+        ],
+        "connections": [
+          5318,
+          5327,
+          30771
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_104",
+          "key": "inv_axe_104",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6803,
+        "name": "Entrails",
+        "slug": "entrails",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705238,
+        "spell_ids": [
+          705238
+        ],
+        "description_html": "Damage dealt by bleed effects now increases your Agility by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Damage dealt by bleed effects now increases your Agility by 1% for 8 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705238,
+            "description_html": "Damage dealt by bleed effects now increases your Agility by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Damage dealt by bleed effects now increases your Agility by 1% for 8 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6608,
+          30771
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_LifeDrain",
+          "key": "spell_shadow_lifedrain",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 19192,
+        "name": "Spear Thrower",
+        "slug": "spear-thrower",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 574321,
+        "spell_ids": [
+          574321
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Casting <span style=\"color: #FFFFFF; display: inline\">Throw Weapon</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Spears</span>.",
+        "description": "Level 30 Passive\nCasting Throw Weapon now has a 30% chance to reset the cooldown of your Spears.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574321,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Casting <span style=\"color: #FFFFFF; display: inline\">Throw Weapon</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Spears</span>.",
+            "description": "Level 30 Passive\nCasting Throw Weapon now has a 30% chance to reset the cooldown of your Spears."
+          }
+        ],
+        "connections": [
+          9192
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\asaltante-azul",
+          "key": "asaltante-azul",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6511,
+        "name": "Frothing Savage",
+        "slug": "frothing-savage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705234,
+        "spell_ids": [
+          705234,
+          707779
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spears</span> and <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> against bleeding targets.",
+        "description": "Increases the critical strike chance of Spears and Berserker Axe by 8% against bleeding targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705234,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spears</span> and <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> against bleeding targets.",
+            "description": "Increases the critical strike chance of Spears and Berserker Axe by 8% against bleeding targets."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707779,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spears</span> and <span style=\"color: #ffffff; display: inline\">Berserker Axe</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against bleeding targets.",
+            "description": "Increases the critical strike chance of Spears and Berserker Axe by 15% against bleeding targets."
+          }
+        ],
+        "connections": [
+          6785,
+          34325
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_bloodtrollfemalehead",
+          "key": "inv_bloodtrollfemalehead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5794,
+        "name": "Impaling Spear",
+        "slug": "impaling-spear",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500984,
+        "spell_ids": [
+          500984
+        ],
+        "description_html": "Hurl a spear in a <span class=\"item-number\">30</span> yd frontal line, dealing <span class=\"item-number\">131</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">23</span>, dealing less damage with each enemy struck.<br /><br />At the spear's impact location the spear shatters, dealing <span class=\"item-number\">277</span> + <span class=\"item-number\">15% ranged AP</span> Physical damage to nearby enemies.<br /><br />",
+        "description": "Hurl a spear in a 30 yd frontal line, dealing 131% Ranged Weapon Damage plus 23, dealing less damage with each enemy struck.\n\nAt the spear's impact location the spear shatters, dealing 277 + 15% ranged AP Physical damage to nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500984,
+            "description_html": "Hurl a spear in a <span class=\"item-number\">30</span> yd frontal line, dealing <span class=\"item-number\">131</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">23</span>, dealing less damage with each enemy struck.<br /><br />At the spear's impact location the spear shatters, dealing <span class=\"item-number\">277</span> + <span class=\"item-number\">15% ranged AP</span> Physical damage to nearby enemies.<br /><br />",
+            "description": "Hurl a spear in a 30 yd frontal line, dealing 131% Ranged Weapon Damage plus 23, dealing less damage with each enemy struck.\n\nAt the spear's impact location the spear shatters, dealing 277 + 15% ranged AP Physical damage to nearby enemies."
+          }
+        ],
+        "connections": [
+          34325
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Impaling_Spear",
+          "key": "impaling_spear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30773,
+        "name": "Time To Kill!",
+        "slug": "time-to-kill",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 926591,
+        "spell_ids": [
+          926591
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Axe Twirling</span> now lets you strike <span class=\"item-number\">1</span> additional enemy.",
+        "description": "Axe Twirling now lets you strike 1 additional enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 926591,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Axe Twirling</span> now lets you strike <span class=\"item-number\">1</span> additional enemy.",
+            "description": "Axe Twirling now lets you strike 1 additional enemy."
+          }
+        ],
+        "connections": [
+          13576
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_hunter_focusingshot",
+          "key": "spell_hunter_focusingshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5329,
+        "name": "Berserker Rush",
+        "slug": "berserker-rush",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560518,
+        "spell_ids": [
+          560518
+        ],
+        "description_html": "Charge an enemy dealing <span class=\"item-number\">31</span> + <span class=\"item-number\">35% ranged AP</span> Physical damage and rooting them for <span class=\"item-number\">2</span> seconds, then leap backwards.",
+        "description": "Charge an enemy dealing 31 + 35% ranged AP Physical damage and rooting them for 2 seconds, then leap backwards.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560518,
+            "description_html": "Charge an enemy dealing <span class=\"item-number\">31</span> + <span class=\"item-number\">35% ranged AP</span> Physical damage and rooting them for <span class=\"item-number\">2</span> seconds, then leap backwards.",
+            "description": "Charge an enemy dealing 31 + 35% ranged AP Physical damage and rooting them for 2 seconds, then leap backwards."
+          }
+        ],
+        "connections": [
+          6803
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hanzandfranz_chestbump",
+          "key": "ability_hanzandfranz_chestbump",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6799,
+        "name": "Gruesome",
+        "slug": "gruesome",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705227,
+        "spell_ids": [
+          705227,
+          707765
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705227,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707765,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>, <span style=\"color: #ffffff; display: inline\">Gutspiller</span>, and <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 20%."
+          }
+        ],
+        "connections": [
+          6608,
+          6803
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_skeer_bloodletting",
+          "key": "ability_skeer_bloodletting",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6797,
+        "name": "Spear Shards",
+        "slug": "spear-shards",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805893,
+        "spell_ids": [
+          805893
+        ],
+        "description_html": "Whenever you shatter your <span style=\"color: #ffffff; display: inline\">Impaling Spear</span>, affected enemies bleed for <span class=\"item-number\">100%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds.",
+        "description": "Whenever you shatter your Impaling Spear, affected enemies bleed for 100% of the damage dealt over 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805893,
+            "description_html": "Whenever you shatter your <span style=\"color: #ffffff; display: inline\">Impaling Spear</span>, affected enemies bleed for <span class=\"item-number\">100%</span> of the damage dealt over <span class=\"item-number\">3</span> seconds.",
+            "description": "Whenever you shatter your Impaling Spear, affected enemies bleed for 100% of the damage dealt over 3 seconds."
+          }
+        ],
+        "connections": [
+          5794
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_spear_06",
+          "key": "inv_spear_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5124,
+        "name": "Furious Berserker",
+        "slug": "furious-berserker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707389,
+        "spell_ids": [
+          707389
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Barbed Spear</span> now grants <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">20</span> + <span class=\"item-number\">20% AP</span> health and <span class=\"item-number\">16</span> Energy over <span class=\"item-number\">4</span> seconds.</span></div>",
+        "description": "Critical strikes with Barbed Spear now grants Born in Blood.Born in BloodBattle fuels your vitality, restoring 20 + 20% AP health and 16 Energy over 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707389,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Barbed Spear</span> now grants <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">20</span> + <span class=\"item-number\">20% AP</span> health and <span class=\"item-number\">16</span> Energy over <span class=\"item-number\">4</span> seconds.</span></div>",
+            "description": "Critical strikes with Barbed Spear now grants Born in Blood.Born in BloodBattle fuels your vitality, restoring 20 + 20% AP health and 16 Energy over 4 seconds."
+          }
+        ],
+        "connections": [
+          5329,
+          5794,
+          30773
+        ],
+        "choice_group": 844333,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_WarCry",
+          "key": "ability_warrior_warcry",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6794,
+        "name": "Hunting for Sport",
+        "slug": "hunting-for-sport",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706558,
+        "spell_ids": [
+          706558
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> is active, your attacks now ignore <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the target's Armor.",
+        "description": "While Unbridled Rage is active, your attacks now ignore 20% of the target's Armor.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706558,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> is active, your attacks now ignore <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the target's Armor.",
+            "description": "While Unbridled Rage is active, your attacks now ignore 20% of the target's Armor."
+          }
+        ],
+        "connections": [
+          5329,
+          5794,
+          30773
+        ],
+        "choice_group": 844333,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_hunter_exoticmunitions_incendiary",
+          "key": "spell_hunter_exoticmunitions_incendiary",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34293,
+        "name": "Vengeance For Zul'jin",
+        "slug": "vengeance-for-zuljin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560205,
+        "spell_ids": [
+          560205
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Berserker Rush</span> now grants you <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">20</span> + <span class=\"item-number\">20% AP</span> health and <span class=\"item-number\">16</span> Energy over <span class=\"item-number\">4</span> seconds.</span></div>",
+        "description": "Casting Berserker Rush now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 20 + 20% AP health and 16 Energy over 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560205,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Berserker Rush</span> now grants you <span style=\"color: #ffffff; display: inline\">Born in Blood</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 warrior_talent_icon_furyintheblood\" /><span class=\"name\">Born in Blood</span></div><span class=\"desc\">Battle fuels your vitality, restoring <span class=\"item-number\">20</span> + <span class=\"item-number\">20% AP</span> health and <span class=\"item-number\">16</span> Energy over <span class=\"item-number\">4</span> seconds.</span></div>",
+            "description": "Casting Berserker Rush now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 20 + 20% AP health and 16 Energy over 4 seconds."
+          }
+        ],
+        "connections": [
+          5329
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\racial_troll_berserk",
+          "key": "racial_troll_berserk",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5192,
+        "name": "Bloody Fighter",
+        "slug": "bloody-fighter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 570235,
+        "spell_ids": [
+          570235
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Born in Blood</span> now stacks <span class=\"item-number\">1</span> additional time.",
+        "description": "Level 40 Passive\nBorn in Blood now stacks 1 additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570235,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Born in Blood</span> now stacks <span class=\"item-number\">1</span> additional time.",
+            "description": "Level 40 Passive\nBorn in Blood now stacks 1 additional time."
+          }
+        ],
+        "connections": [
+          19192
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_head_troll_01",
+          "key": "inv_misc_head_troll_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30166,
+        "name": "Legacy of the Amani",
+        "slug": "legacy-of-the-amani",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706804,
+        "spell_ids": [
+          706804
+        ],
+        "description_html": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Spears</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to cause you to quickly throw an additional spear that strikes for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt.",
+        "description": "Damage dealt by your Spears now has a 25% chance to cause you to quickly throw an additional spear that strikes for 40% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706804,
+            "description_html": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Spears</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to cause you to quickly throw an additional spear that strikes for <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt.",
+            "description": "Damage dealt by your Spears now has a 25% chance to cause you to quickly throw an additional spear that strikes for 40% of the damage dealt."
+          }
+        ],
+        "connections": [
+          6511,
+          6797
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(25)_Border",
+          "key": "novart_physical_ability__25__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34275,
+        "name": "Raging Spirit",
+        "slug": "raging-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707410,
+        "spell_ids": [
+          707410
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now grants you <span class=\"item-number\">30</span> Energy and it now also removes the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells while active.",
+        "description": "Casting Unbridled Rage now grants you 30 Energy and it now also removes the Energy cost of your Spirit spells while active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707410,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now grants you <span class=\"item-number\">30</span> Energy and it now also removes the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells while active.",
+            "description": "Casting Unbridled Rage now grants you 30 Energy and it now also removes the Energy cost of your Spirit spells while active."
+          }
+        ],
+        "connections": [
+          5124,
+          6794,
+          6797
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warrior_talent_icon_innerrage",
+          "key": "warrior_talent_icon_innerrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29468,
+        "name": "No Survivors",
+        "slug": "no-survivors",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805864,
+        "spell_ids": [
+          805864
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Maiming Spear</span> and <span style=\"color: #ffffff; display: inline\">Barbed Spear</span> by <span class=\"item-number\">5</span> sec.",
+        "description": "Increases the duration of Maiming Spear and Barbed Spear by 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805864,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Maiming Spear</span> and <span style=\"color: #ffffff; display: inline\">Barbed Spear</span> by <span class=\"item-number\">5</span> sec.",
+            "description": "Increases the duration of Maiming Spear and Barbed Spear by 5 sec."
+          }
+        ],
+        "connections": [
+          5124,
+          6794
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_bg_interruptx_flagcapture_attempts_1game",
+          "key": "achievement_bg_interruptx_flagcapture_attempts_1game",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34326,
+        "name": "Manhunter",
+        "slug": "manhunter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300879,
+        "spell_ids": [
+          300879
+        ],
+        "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against Humanoids.",
+        "description": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your damage dealt by 10% against Humanoids.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300879,
+            "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against Humanoids.",
+            "description": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your damage dealt by 10% against Humanoids."
+          }
+        ],
+        "connections": [
+          5124,
+          6794,
+          34293
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_warrior_gladiatorstance",
+          "key": "spell_warrior_gladiatorstance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5608,
+        "name": "To The Bone",
+        "slug": "to-the-bone",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560880,
+        "spell_ids": [
+          560880
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #ffffff; display: inline\">Break</span> to the target and critically striking with it will apply an additional stack.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_icon_break\" /><span class=\"name\">Break</span></div><span class=\"desc\">Break an enemy's defenses, reducing their armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Increases the critical strike chance of Guts Spilled by 10% and it now applies Break to the target and critically striking with it will apply an additional stack.BreakBreak an enemy's defenses, reducing their armor by -4% for 30 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560880,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #ffffff; display: inline\">Break</span> to the target and critically striking with it will apply an additional stack.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_icon_break\" /><span class=\"name\">Break</span></div><span class=\"desc\">Break an enemy's defenses, reducing their armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Increases the critical strike chance of Guts Spilled by 10% and it now applies Break to the target and critically striking with it will apply an additional stack.BreakBreak an enemy's defenses, reducing their armor by -4% for 30 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          6799,
+          34293
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_StrongBone_Red",
+          "key": "strongbone_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34329,
+        "name": "Skullseeker",
+        "slug": "skullseeker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560517,
+        "spell_ids": [
+          560517
+        ],
+        "description_html": "Increases your critical strike chance against enemies above <span class=\"item-number\">80%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance against enemies above 80% health by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560517,
+            "description_html": "Increases your critical strike chance against enemies above <span class=\"item-number\">80%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance against enemies above 80% health by 25%."
+          }
+        ],
+        "connections": [
+          30166,
+          34275
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_EnchantWeapon",
+          "key": "spell_fire_enchantweapon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7338,
+        "name": "Brutal Form",
+        "slug": "brutal-form",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 3.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705235,
+        "spell_ids": [
+          705235
+        ],
+        "description_html": "Increases the tick rate of <span style=\"color: #FFFFFF; display: inline\">Born in Blood</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, allows its healing to scale with your Agility, and it can now critically heal you.",
+        "description": "Increases the tick rate of Born in Blood by -25%, allows its healing to scale with your Agility, and it can now critically heal you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705235,
+            "description_html": "Increases the tick rate of <span style=\"color: #FFFFFF; display: inline\">Born in Blood</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>, allows its healing to scale with your Agility, and it can now critically heal you.",
+            "description": "Increases the tick rate of Born in Blood by -25%, allows its healing to scale with your Agility, and it can now critically heal you."
+          }
+        ],
+        "connections": [
+          29468,
+          34275
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_1h_pvpdraenors2_d_01",
+          "key": "inv_axe_1h_pvpdraenors2_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30167,
+        "name": "Berserker",
+        "slug": "berserker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 5.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561397,
+        "spell_ids": [
+          561397
+        ],
+        "description_html": "While enraged, your ranged critical strikes now grant you <span style=\"color: #ffffff; display: inline\">Berserker</span>. Once applied it cannot be applied again.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _troll_03\" /><span class=\"name\">Berserker</span></div><span class=\"desc\">Your ranged abilities have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #ffffff; display: inline\">Berserker Throw</span>, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Ranged Weapon Damage. Lasts <span class=\"item-number\">15</span> seconds.<br /><br />While active, every offensive ranged ability used increases its chance to trigger by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "While enraged, your ranged critical strikes now grant you Berserker. Once applied it cannot be applied again.BerserkerYour ranged abilities have a 20% chance to unleash Berserker Throw, dealing 75% Ranged Weapon Damage. Lasts 15 seconds.\n\nWhile active, every offensive ranged ability used increases its chance to trigger by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561397,
+            "description_html": "While enraged, your ranged critical strikes now grant you <span style=\"color: #ffffff; display: inline\">Berserker</span>. Once applied it cannot be applied again.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _troll_03\" /><span class=\"name\">Berserker</span></div><span class=\"desc\">Your ranged abilities have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #ffffff; display: inline\">Berserker Throw</span>, dealing <span class=\"item-number\">75</span><span class=\"item-number\">%</span> Ranged Weapon Damage. Lasts <span class=\"item-number\">15</span> seconds.<br /><br />While active, every offensive ranged ability used increases its chance to trigger by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "While enraged, your ranged critical strikes now grant you Berserker. Once applied it cannot be applied again.BerserkerYour ranged abilities have a 20% chance to unleash Berserker Throw, dealing 75% Ranged Weapon Damage. Lasts 15 seconds.\n\nWhile active, every offensive ranged ability used increases its chance to trigger by 2%."
+          }
+        ],
+        "connections": [
+          29468,
+          34326
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Troll_03",
+          "key": "troll_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34321,
+        "name": "Payback",
+        "slug": "payback",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705232,
+        "spell_ids": [
+          705232
+        ],
+        "description_html": "Increases the damage dealt by your <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">75</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage dealt by your Guts Spilled by 75%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705232,
+            "description_html": "Increases the damage dealt by your <span style=\"color: #ffffff; display: inline\">Guts Spilled</span> by <span class=\"item-number\">75</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage dealt by your Guts Spilled by 75%."
+          }
+        ],
+        "connections": [
+          5608,
+          34326
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_axe_11",
+          "key": "inv_axe_11",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 14237,
+        "name": "Power Tosser",
+        "slug": "power-tosser",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 570242,
+        "spell_ids": [
+          570242
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> now scales with your Agility.",
+        "description": "Level 50 Passive\nDamage dealt by Throw Weapon now scales with your Agility.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570242,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Damage dealt by <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> now scales with your Agility.",
+            "description": "Level 50 Passive\nDamage dealt by Throw Weapon now scales with your Agility."
+          }
+        ],
+        "connections": [
+          5192
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_thrown_1h_pvp410_c_01",
+          "key": "inv_thrown_1h_pvp410_c_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6798,
+        "name": "Gurubashi Technique",
+        "slug": "gurubashi-technique",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705198,
+        "spell_ids": [
+          705198
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to transform your next cast of it within <span class=\"item-number\">8</span> seconds into <span style=\"color: #ffffff; display: inline\">Rapid Throw</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_axe__3__border\" /><span class=\"name\">Rapid Throw</span></div><span class=\"desc\">Throw your ranged weapon <span class=\"item-number\">3</span> times in quick succession, each dealing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">25</span> Physical damage. <br /><br />Grants <span style=\"color: #ffffff; display: inline\">Born in Blood</span>. Scales with damage modifiers to <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>.<br /></span></div>",
+        "description": "Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage.\n\nGrants Born in Blood. Scales with damage modifiers to Throw Weapon.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705198,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to transform your next cast of it within <span class=\"item-number\">8</span> seconds into <span style=\"color: #ffffff; display: inline\">Rapid Throw</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_axe__3__border\" /><span class=\"name\">Rapid Throw</span></div><span class=\"desc\">Throw your ranged weapon <span class=\"item-number\">3</span> times in quick succession, each dealing <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">25</span> Physical damage. <br /><br />Grants <span style=\"color: #ffffff; display: inline\">Born in Blood</span>. Scales with damage modifiers to <span style=\"color: #ffffff; display: inline\">Throw Weapon</span>.<br /></span></div>",
+            "description": "Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage.\n\nGrants Born in Blood. Scales with damage modifiers to Throw Weapon."
+          }
+        ],
+        "connections": [
+          7338,
+          34329
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_mask_zulgurub_d_01",
+          "key": "inv_helm_mask_zulgurub_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6801,
+        "name": "Sen'jin's Guidance",
+        "slug": "senjins-guidance",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707661,
+        "spell_ids": [
+          707661
+        ],
+        "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> into <span style=\"color: #ffffff; display: inline\">Javelin Toss</span> and increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Javelin Toss</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_spear_11\" /><span class=\"name\">Javelin Toss</span></div><span class=\"desc\">Take aim and hurl a javelin at an enemy dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">241</span>. <br /><br />Scales with damage modifiers to <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> and <span style=\"color: #ffffff; display: inline\">Spears</span>. Usable while moving.</span></div>",
+        "description": "Transforms your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241.\n\nScales with damage modifiers to Throw Weapon and Spears. Usable while moving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707661,
+            "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> into <span style=\"color: #ffffff; display: inline\">Javelin Toss</span> and increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Javelin Toss</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_spear_11\" /><span class=\"name\">Javelin Toss</span></div><span class=\"desc\">Take aim and hurl a javelin at an enemy dealing <span class=\"item-number\">160</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">241</span>. <br /><br />Scales with damage modifiers to <span style=\"color: #ffffff; display: inline\">Throw Weapon</span> and <span style=\"color: #ffffff; display: inline\">Spears</span>. Usable while moving.</span></div>",
+            "description": "Transforms your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241.\n\nScales with damage modifiers to Throw Weapon and Spears. Usable while moving."
+          }
+        ],
+        "connections": [
+          7338,
+          30167
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\archaeology_5_0_spearofxuen",
+          "key": "archaeology_5_0_spearofxuen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7337,
+        "name": "Spite",
+        "slug": "spite",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 32,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707584,
+        "spell_ids": [
+          707584
+        ],
+        "description_html": "Quickly unleash <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Berserker Throws</span> at your target and then fling yourself back a great distance, dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Ranged Weapon Damage, scaling with modifiers to <span style=\"color: #ffffff; display: inline\">Berserker Axe</span>.",
+        "description": "Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707584,
+            "description_html": "Quickly unleash <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Berserker Throws</span> at your target and then fling yourself back a great distance, dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Ranged Weapon Damage, scaling with modifiers to <span style=\"color: #ffffff; display: inline\">Berserker Axe</span>.",
+            "description": "Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe."
+          }
+        ],
+        "connections": [
+          30167,
+          34321
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_Border",
+          "key": "epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

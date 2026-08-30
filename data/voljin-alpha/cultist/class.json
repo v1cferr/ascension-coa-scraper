@@ -1,0 +1,2471 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:18+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:52049a67b4d666b30c5c4f2d25bcef963ba78ac5f633e353dc1d3813b8e341f5",
+    "talent_count": 198,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 25,
+    "name": "Cultist",
+    "slug": "cultist",
+    "class_file": "cultist",
+    "color": "rgb(156, 69, 242)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:cultist",
+      "key": "class-cultist",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 30,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 87,
+    "name": "Class",
+    "slug": "class",
+    "sort_order": 0,
+    "class_id": 25,
+    "is_shared": true,
+    "talents": [
+      {
+        "id": 29265,
+        "name": "Void Shield",
+        "slug": "void-shield",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500715,
+        "spell_ids": [
+          500715
+        ],
+        "description_html": "Shields an ally, absorbing <span class=\"item-number\">195</span> + <span class=\"item-number\">200% SP</span> damage for <span class=\"item-number\">30</span> seconds and applying <span style=\"color: #ffffff; display: inline\">Wracked Mind</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_shadetruesight\" /><span class=\"name\">Wracked Mind</span></div><span class=\"desc\">Cannot be affected by <span style=\"color: #ffffff; display: inline\">Void Shield</span>. Lasts for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Shields an ally, absorbing 195 + 200% SP damage for 30 seconds and applying Wracked Mind.\nWracked MindCannot be affected by Void Shield. Lasts for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500715,
+            "description_html": "Shields an ally, absorbing <span class=\"item-number\">195</span> + <span class=\"item-number\">200% SP</span> damage for <span class=\"item-number\">30</span> seconds and applying <span style=\"color: #ffffff; display: inline\">Wracked Mind</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shadow_shadetruesight\" /><span class=\"name\">Wracked Mind</span></div><span class=\"desc\">Cannot be affected by <span style=\"color: #ffffff; display: inline\">Void Shield</span>. Lasts for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Shields an ally, absorbing 195 + 200% SP damage for 30 seconds and applying Wracked Mind.\nWracked MindCannot be affected by Void Shield. Lasts for 15 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3energyarmor",
+          "key": "d3energyarmor",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 29470,
+        "name": "Corrupt Mind",
+        "slug": "corrupt-mind",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560109,
+        "spell_ids": [
+          560109
+        ],
+        "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Corrupt the mind of an enemy and spread madness, fearing them in place for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players), bouncing to up to <span class=\"item-number\">2</span> nearby enemies.<br /><br />Damage dealt may end this effect.",
+        "description": "Generates 10 Insanity\nCorrupt the mind of an enemy and spread madness, fearing them in place for 40 seconds (8 sec vs players), bouncing to up to 2 nearby enemies.\n\nDamage dealt may end this effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560109,
+            "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Corrupt the mind of an enemy and spread madness, fearing them in place for <span class=\"item-number\">40</span> seconds (<span class=\"item-number\">8</span> sec vs players), bouncing to up to <span class=\"item-number\">2</span> nearby enemies.<br /><br />Damage dealt may end this effect.",
+            "description": "Generates 10 Insanity\nCorrupt the mind of an enemy and spread madness, fearing them in place for 40 seconds (8 sec vs players), bouncing to up to 2 nearby enemies.\n\nDamage dealt may end this effect."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_clarityofpower",
+          "key": "ability_priest_clarityofpower",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 7608,
+        "name": "Abyssal Ward",
+        "slug": "abyssal-ward",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": true,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804670,
+        "spell_ids": [
+          804670
+        ],
+        "description_html": "Coalesce an <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> reducing your damage taken by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds or <span class=\"item-number\">5</span> attacks. For the duration, each attack received will decrease the value by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.<br /><br />Usable while stunned.",
+        "description": "Coalesce an Abyssal Ward reducing your damage taken by 50% for 10 seconds or 5 attacks. For the duration, each attack received will decrease the value by -10%.\n\nUsable while stunned.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804670,
+            "description_html": "Coalesce an <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> reducing your damage taken by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds or <span class=\"item-number\">5</span> attacks. For the duration, each attack received will decrease the value by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.<br /><br />Usable while stunned.",
+            "description": "Coalesce an Abyssal Ward reducing your damage taken by 50% for 10 seconds or 5 attacks. For the duration, each attack received will decrease the value by -10%.\n\nUsable while stunned."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_shadoworbs",
+          "key": "spell_priest_shadoworbs",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 6283,
+        "name": "Empire's Blessing",
+        "slug": "empires-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704895,
+        "spell_ids": [
+          704895
+        ],
+        "description_html": "Reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Void Shield</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the mana cost of Void Shield by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704895,
+            "description_html": "Reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Void Shield</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the mana cost of Void Shield by -20%."
+          }
+        ],
+        "connections": [
+          29265
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_AntiShadow",
+          "key": "spell_shadow_antishadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11892,
+        "name": "Eldritch Screams",
+        "slug": "eldritch-screams",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 525049,
+        "spell_ids": [
+          525049
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span> now also applies <span style=\"color: #ffffff; display: inline\">Mind Rot</span> to nearby enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _virus_purple\" /><span class=\"name\">Mind Rot (Trigger)</span></div><span class=\"desc\">Increases the chance for allies to hit with all spells against the afflicted enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />If this effect is dispelled, your critical strike chance is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+        "description": "Your Corrupt Mind now also applies Mind Rot to nearby enemies.Mind Rot (Trigger)Increases the chance for allies to hit with all spells against the afflicted enemy by 3% for 10 seconds.\n\nIf this effect is dispelled, your critical strike chance is increased by 30% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 525049,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span> now also applies <span style=\"color: #ffffff; display: inline\">Mind Rot</span> to nearby enemies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _virus_purple\" /><span class=\"name\">Mind Rot (Trigger)</span></div><span class=\"desc\">Increases the chance for allies to hit with all spells against the afflicted enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />If this effect is dispelled, your critical strike chance is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+            "description": "Your Corrupt Mind now also applies Mind Rot to nearby enemies.Mind Rot (Trigger)Increases the chance for allies to hit with all spells against the afflicted enemy by 3% for 10 seconds.\n\nIf this effect is dispelled, your critical strike chance is increased by 30% for 5 seconds."
+          }
+        ],
+        "connections": [
+          29470
+        ],
+        "choice_group": 525049,
+        "icon": {
+          "source_path": "Interface\\Icons\\impotent_void_effigy",
+          "key": "impotent_void_effigy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33892,
+        "name": "Stare Into The Abyss",
+        "slug": "stare-into-the-abyss",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 525019,
+        "spell_ids": [
+          525019
+        ],
+        "description_html": "Removes the cast time of your <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span>.",
+        "description": "Removes the cast time of your Corrupt Mind.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 525019,
+            "description_html": "Removes the cast time of your <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span>.",
+            "description": "Removes the cast time of your Corrupt Mind."
+          }
+        ],
+        "connections": [
+          29470
+        ],
+        "choice_group": 525049,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SoulsDevourer_Purple",
+          "key": "soulsdevourer_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29263,
+        "name": "Empire Commander",
+        "slug": "empire-commander",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704887,
+        "spell_ids": [
+          704887,
+          707781,
+          712470
+        ],
+        "description_html": "Increases all primary attributes by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases all primary attributes by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704887,
+            "description_html": "Increases all primary attributes by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all primary attributes by 4%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707781,
+            "description_html": "Increases all primary attributes by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all primary attributes by 8%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 712470,
+            "description_html": "Increases all primary attributes by <span class=\"item-number\">12</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all primary attributes by 12%."
+          }
+        ],
+        "connections": [
+          7608
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowasphyxiation_Border",
+          "key": "nhi_shadowasphyxiation_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29268,
+        "name": "Shadow Words",
+        "slug": "shadow-words",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706928,
+        "spell_ids": [
+          706928
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Whispers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Whispers by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706928,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Whispers</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Whispers by 25%."
+          }
+        ],
+        "connections": [
+          6283
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_voidshift",
+          "key": "spell_priest_voidshift",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6272,
+        "name": "Mass Nightmare",
+        "slug": "mass-nightmare",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805114,
+        "spell_ids": [
+          805114
+        ],
+        "description_html": "Spread nightmares of the black empire to up to <span class=\"item-number\">5</span> nearby enemies, horrifying them for <span class=\"item-number\">5</span> seconds and interrupting non-player spellcasting for <span class=\"item-number\">3</span> seconds.",
+        "description": "Spread nightmares of the black empire to up to 5 nearby enemies, horrifying them for 5 seconds and interrupting non-player spellcasting for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805114,
+            "description_html": "Spread nightmares of the black empire to up to <span class=\"item-number\">5</span> nearby enemies, horrifying them for <span class=\"item-number\">5</span> seconds and interrupting non-player spellcasting for <span class=\"item-number\">3</span> seconds.",
+            "description": "Spread nightmares of the black empire to up to 5 nearby enemies, horrifying them for 5 seconds and interrupting non-player spellcasting for 3 seconds."
+          }
+        ],
+        "connections": [
+          6283,
+          11892,
+          33892
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_volatileshadow",
+          "key": "inv_misc_volatileshadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6280,
+        "name": "Grasp of Zek'voz",
+        "slug": "grasp-of-zekvoz",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 573028,
+        "spell_ids": [
+          573028
+        ],
+        "description_html": "Hinder an enemies momentum with void chains, slowing their movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Hinder an enemies momentum with void chains, slowing their movement speed by -30% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573028,
+            "description_html": "Hinder an enemies momentum with void chains, slowing their movement speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Hinder an enemies momentum with void chains, slowing their movement speed by -30% for 10 seconds."
+          }
+        ],
+        "connections": [
+          11892,
+          29263,
+          33892
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_nazmir_boss_zekvoz",
+          "key": "achievement_nazmir_boss_zekvoz",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29455,
+        "name": "Shroud of Pride",
+        "slug": "shroud-of-pride",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805126,
+        "spell_ids": [
+          805126
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> now stacks <span class=\"item-number\">3</span> additional times.",
+        "description": "Your Abyssal Ward now stacks 3 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805126,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Abyssal Ward</span> now stacks <span class=\"item-number\">3</span> additional times.",
+            "description": "Your Abyssal Ward now stacks 3 additional times."
+          }
+        ],
+        "connections": [
+          29263
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\sha_spell_fire_felfireward",
+          "key": "sha_spell_fire_felfireward",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6959,
+        "name": "Gift of C'Thun",
+        "slug": "gift-of-cthun",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706189,
+        "spell_ids": [
+          706189
+        ],
+        "description_html": "Increases your Shadow damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Shadow damage dealt by 4% and healing done by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706189,
+            "description_html": "Increases your Shadow damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Shadow damage dealt by 4% and healing done by 4%."
+          }
+        ],
+        "connections": [
+          6272,
+          29268
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\creatureportrait_sc_eyeofacherus_02",
+          "key": "creatureportrait_sc_eyeofacherus_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11880,
+        "name": "Rapid Incantations",
+        "slug": "rapid-incantations",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301181,
+        "spell_ids": [
+          301181
+        ],
+        "description_html": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, you gain <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased haste.",
+        "description": "While above 60 Insanity, you gain 5% increased haste.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301181,
+            "description_html": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, you gain <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased haste.",
+            "description": "While above 60 Insanity, you gain 5% increased haste."
+          }
+        ],
+        "connections": [
+          6272,
+          6280
+        ],
+        "choice_group": 215678,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_shadow_spell_08_nobg_Border",
+          "key": "uico_shadow_spell_08_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29880,
+        "name": "Mind Leak",
+        "slug": "mind-leak",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300270,
+        "spell_ids": [
+          300270
+        ],
+        "description_html": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, you gain <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> reduced damage taken.",
+        "description": "While above 60 Insanity, you gain -5% reduced damage taken.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300270,
+            "description_html": "While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, you gain <span class=\"item-number\">-5</span><span class=\"item-number\">%</span> reduced damage taken.",
+            "description": "While above 60 Insanity, you gain -5% reduced damage taken."
+          }
+        ],
+        "connections": [
+          6272,
+          6280
+        ],
+        "choice_group": 215678,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_mindrot",
+          "key": "spell_shadow_mindrot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30323,
+        "name": "Wicked Thoughts",
+        "slug": "wicked-thoughts",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706190,
+        "spell_ids": [
+          706190
+        ],
+        "description_html": "Increases your maximum mana, your movement speed, and mounted movement speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your maximum mana, your movement speed, and mounted movement speed by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706190,
+            "description_html": "Increases your maximum mana, your movement speed, and mounted movement speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum mana, your movement speed, and mounted movement speed by 15%."
+          }
+        ],
+        "connections": [
+          6280,
+          29455
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_LDAEye",
+          "key": "ldaeye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6382,
+        "name": "Hallucination",
+        "slug": "hallucination",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560301,
+        "spell_ids": [
+          560301
+        ],
+        "description_html": "Create <span class=\"item-number\">3</span> copies of yourself that run in a random direction for <span class=\"item-number\">3</span> seconds and may briefly trick enemies into ignoring you. <br /><br />Significantly reduces your threat and removes all movement impairing effects from you.",
+        "description": "Create 3 copies of yourself that run in a random direction for 3 seconds and may briefly trick enemies into ignoring you.\n\nSignificantly reduces your threat and removes all movement impairing effects from you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560301,
+            "description_html": "Create <span class=\"item-number\">3</span> copies of yourself that run in a random direction for <span class=\"item-number\">3</span> seconds and may briefly trick enemies into ignoring you. <br /><br />Significantly reduces your threat and removes all movement impairing effects from you.",
+            "description": "Create 3 copies of yourself that run in a random direction for 3 seconds and may briefly trick enemies into ignoring you.\n\nSignificantly reduces your threat and removes all movement impairing effects from you."
+          }
+        ],
+        "connections": [
+          6959
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_warlock28_Border",
+          "key": "_5_warlock28_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9953,
+        "name": "Overwhelming Void",
+        "slug": "overwhelming-void",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707429,
+        "spell_ids": [
+          707429
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Mass Nightmare</span> now triggers a <span class=\"item-number\">60</span> sec reduced cooldown when used at or above <span class=\"item-number\">80</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+        "description": "Your Mass Nightmare now triggers a 60 sec reduced cooldown when used at or above 80 Insanity.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707429,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Mass Nightmare</span> now triggers a <span class=\"item-number\">60</span> sec reduced cooldown when used at or above <span class=\"item-number\">80</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+            "description": "Your Mass Nightmare now triggers a 60 sec reduced cooldown when used at or above 80 Insanity."
+          }
+        ],
+        "connections": [
+          6272
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_FaerieFire",
+          "key": "spell_nature_faeriefire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6278,
+        "name": "Dismay",
+        "slug": "dismay",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704885,
+        "spell_ids": [
+          704885
+        ],
+        "description_html": "Increases the movement speed slowed by <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the movement speed slowed by Grasp of Zek'voz by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704885,
+            "description_html": "Increases the movement speed slowed by <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the movement speed slowed by Grasp of Zek'voz by -20%."
+          }
+        ],
+        "connections": [
+          6280
+        ],
+        "choice_group": 707747,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_assassinskill07_Border",
+          "key": "_5_assassinskill07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12444,
+        "name": "Disdain",
+        "slug": "disdain",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707747,
+        "spell_ids": [
+          707747
+        ],
+        "description_html": "Removes the cooldown of <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span>, but increases its mana cost by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Removes the cooldown of Grasp of Zek'voz, but increases its mana cost by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707747,
+            "description_html": "Removes the cooldown of <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span>, but increases its mana cost by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Removes the cooldown of Grasp of Zek'voz, but increases its mana cost by 25%."
+          }
+        ],
+        "connections": [
+          6280
+        ],
+        "choice_group": 707747,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Drowsy",
+          "key": "spell_nature_drowsy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6277,
+        "name": "Embrace the Void",
+        "slug": "embrace-the-void",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 582591,
+        "spell_ids": [
+          582591
+        ],
+        "description_html": "Become one with the void, preventing you from dying for <span class=\"item-number\">6</span> seconds, or until you take damage equal to a maximum of <span class=\"item-number\">100%</span> of your total health.<br /><br />When the effect ends you instantly regenerate health equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage taken while active.",
+        "description": "Become one with the void, preventing you from dying for 6 seconds, or until you take damage equal to a maximum of 100% of your total health.\n\nWhen the effect ends you instantly regenerate health equal to 50% of the damage taken while active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 582591,
+            "description_html": "Become one with the void, preventing you from dying for <span class=\"item-number\">6</span> seconds, or until you take damage equal to a maximum of <span class=\"item-number\">100%</span> of your total health.<br /><br />When the effect ends you instantly regenerate health equal to <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage taken while active.",
+            "description": "Become one with the void, preventing you from dying for 6 seconds, or until you take damage equal to a maximum of 100% of your total health.\n\nWhen the effect ends you instantly regenerate health equal to 50% of the damage taken while active."
+          }
+        ],
+        "connections": [
+          30323
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\overwhelming_void_effigy",
+          "key": "overwhelming_void_effigy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33969,
+        "name": "Embodied Presences",
+        "slug": "embodied-presences",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803283,
+        "spell_ids": [
+          803283
+        ],
+        "description_html": "Increases the chance to trigger your <span style=\"color: #FFFFFF; display: inline\">Presences</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces their mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance to trigger your Presences by 5% and reduces their mana costs by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803283,
+            "description_html": "Increases the chance to trigger your <span style=\"color: #FFFFFF; display: inline\">Presences</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and reduces their mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance to trigger your Presences by 5% and reduces their mana costs by -50%."
+          }
+        ],
+        "connections": [
+          6382,
+          9953
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_houroftwilight",
+          "key": "warlock_houroftwilight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5172,
+        "name": "Entropic Singularity",
+        "slug": "entropic-singularity",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800430,
+        "spell_ids": [
+          800430
+        ],
+        "description_html": "Create a void zone for <span class=\"item-number\">5</span> seconds at target location that slows enemies' movement speed while inside.<br /><br />The slow increases in intensity based on how close to the middle of the zone the enemy is.",
+        "description": "Create a void zone for 5 seconds at target location that slows enemies' movement speed while inside.\n\nThe slow increases in intensity based on how close to the middle of the zone the enemy is.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800430,
+            "description_html": "Create a void zone for <span class=\"item-number\">5</span> seconds at target location that slows enemies' movement speed while inside.<br /><br />The slow increases in intensity based on how close to the middle of the zone the enemy is.",
+            "description": "Create a void zone for 5 seconds at target location that slows enemies' movement speed while inside.\n\nThe slow increases in intensity based on how close to the middle of the zone the enemy is."
+          }
+        ],
+        "connections": [
+          6278,
+          9953,
+          11880,
+          12444,
+          29880
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_void_blackhole_Border",
+          "key": "nhi_void_blackhole_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7084,
+        "name": "Dark Calling",
+        "slug": "dark-calling",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560715,
+        "spell_ids": [
+          560715
+        ],
+        "description_html": "Taking damage while below <span class=\"item-number\">35%</span> health now summons <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Manifestations of Y'shaarj</span> for <span class=\"item-number\">10</span> sec, which will attack enemies and heal you for <span class=\"item-number\">5%</span> of your base health.<br /><br />Can ony occur once every <span class=\"item-number\">2</span> minutes.",
+        "description": "Taking damage while below 35% health now summons 3 Manifestations of Y'shaarj for 10 sec, which will attack enemies and heal you for 5% of your base health.\n\nCan ony occur once every 2 minutes.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560715,
+            "description_html": "Taking damage while below <span class=\"item-number\">35%</span> health now summons <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Manifestations of Y'shaarj</span> for <span class=\"item-number\">10</span> sec, which will attack enemies and heal you for <span class=\"item-number\">5%</span> of your base health.<br /><br />Can ony occur once every <span class=\"item-number\">2</span> minutes.",
+            "description": "Taking damage while below 35% health now summons 3 Manifestations of Y'shaarj for 10 sec, which will attack enemies and heal you for 5% of your base health.\n\nCan ony occur once every 2 minutes."
+          }
+        ],
+        "connections": [
+          6277,
+          6278,
+          12444
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_04",
+          "key": "inv_offhand_1h_artifactcthun_d_04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7899,
+        "name": "Mind Games",
+        "slug": "mind-games",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 582589,
+        "spell_ids": [
+          582589
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Hallucination</span> by <span class=\"item-number\">-5</span> sec and reduces its mana cost by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of Hallucination by -5 sec and reduces its mana cost by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 582589,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Hallucination</span> by <span class=\"item-number\">-5</span> sec and reduces its mana cost by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of Hallucination by -5 sec and reduces its mana cost by -20%."
+          }
+        ],
+        "connections": [
+          6382
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_shadowmend",
+          "key": "spell_shadow_shadowmend",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6281,
+        "name": "Devourer",
+        "slug": "devourer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300265,
+        "spell_ids": [
+          300265
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Devour Magic</span> now affects <span class=\"item-number\">2</span> nearby allies.",
+        "description": "Your Devour Magic now affects 2 nearby allies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300265,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Devour Magic</span> now affects <span class=\"item-number\">2</span> nearby allies.",
+            "description": "Your Devour Magic now affects 2 nearby allies."
+          }
+        ],
+        "connections": [
+          33969
+        ],
+        "choice_group": 301010,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_eye_03",
+          "key": "inv_misc_eye_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12012,
+        "name": "Devourer",
+        "slug": "devourer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301010,
+        "spell_ids": [
+          301010
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Devour Magic</span> is now instant cast.",
+        "description": "Your Devour Magic is now instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301010,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Devour Magic</span> is now instant cast.",
+            "description": "Your Devour Magic is now instant cast."
+          }
+        ],
+        "connections": [
+          33969
+        ],
+        "choice_group": 301010,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_triumvirate_voidbrokenbrute",
+          "key": "achievement_boss_triumvirate_voidbrokenbrute",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33952,
+        "name": "Void Hunger",
+        "slug": "void-hunger",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524879,
+        "spell_ids": [
+          524879
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Satiate</span> now also regenerates an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> mana per tick and no longer increases damage taken during the channel.",
+        "description": "Satiate now also regenerates an additional 1% mana per tick and no longer increases damage taken during the channel.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524879,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Satiate</span> now also regenerates an additional <span class=\"item-number\">1</span><span class=\"item-number\">%</span> mana per tick and no longer increases damage taken during the channel.",
+            "description": "Satiate now also regenerates an additional 1% mana per tick and no longer increases damage taken during the channel."
+          }
+        ],
+        "connections": [
+          5172,
+          7084,
+          33969
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_surgeofdarkness",
+          "key": "ability_priest_surgeofdarkness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6276,
+        "name": "Eternal Grasp",
+        "slug": "eternal-grasp",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704878,
+        "spell_ids": [
+          704878,
+          704879
+        ],
+        "description_html": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of your Tentacles by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704878,
+            "description_html": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of your Tentacles by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 704879,
+            "description_html": "Increases the duration of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of your Tentacles by 50%."
+          }
+        ],
+        "connections": [
+          7084
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_nzothraid_carapace",
+          "key": "achievement_nzothraid_carapace",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33967,
+        "name": "Improved Sermon of Dread",
+        "slug": "improved-sermon-of-dread",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706177,
+        "spell_ids": [
+          706177
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Sermon of Dread</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Sermon of Dread by 40%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706177,
+            "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Sermon of Dread</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Sermon of Dread by 40%."
+          }
+        ],
+        "connections": [
+          6277
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_SoulLeech_3",
+          "key": "spell_shadow_soulleech_3",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6274,
+        "name": "Dark Infusion",
+        "slug": "dark-infusion",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500721,
+        "spell_ids": [
+          500721
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">30</span> sec recharge</span><br />Infuse an ally with dark energy, healing them for <span class=\"item-number\">66</span> the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.",
+        "description": "3 Charges, 30 sec recharge\nInfuse an ally with dark energy, healing them for 66 the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500721,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">3</span> Charges, <span class=\"item-number\">30</span> sec recharge</span><br />Infuse an ally with dark energy, healing them for <span class=\"item-number\">66</span> the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.",
+            "description": "3 Charges, 30 sec recharge\nInfuse an ally with dark energy, healing them for 66 the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies."
+          }
+        ],
+        "connections": [
+          6281,
+          7899,
+          12012
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_mage_thermalvoid",
+          "key": "spell_mage_thermalvoid",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31123,
+        "name": "Doomsayer",
+        "slug": "doomsayer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704880,
+        "spell_ids": [
+          704880
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> now increases the amount healed by your next <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">100%</span>.<br /><br />Healing with <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> now increases the damage dealt by your next <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">100%</span>.",
+        "description": "Damage dealt by Eldritch Shock now increases the amount healed by your next Eldritch Shock by 100%.\n\nHealing with Eldritch Shock now increases the damage dealt by your next Eldritch Shock by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704880,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> now increases the amount healed by your next <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">100%</span>.<br /><br />Healing with <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> now increases the damage dealt by your next <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">100%</span>.",
+            "description": "Damage dealt by Eldritch Shock now increases the amount healed by your next Eldritch Shock by 100%.\n\nHealing with Eldritch Shock now increases the damage dealt by your next Eldritch Shock by 100%."
+          }
+        ],
+        "connections": [
+          6281,
+          33952,
+          12012
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_heraldofnzoth",
+          "key": "achievement_boss_heraldofnzoth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7465,
+        "name": "Eyes of Eternity",
+        "slug": "eyes-of-eternity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706188,
+        "spell_ids": [
+          706188
+        ],
+        "description_html": "Healing an ally with <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now additionally reveals nearby stealthed enemies for <span class=\"item-number\">8</span> seconds.",
+        "description": "Healing an ally with Gaze of C'Thun now additionally reveals nearby stealthed enemies for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706188,
+            "description_html": "Healing an ally with <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now additionally reveals nearby stealthed enemies for <span class=\"item-number\">8</span> seconds.",
+            "description": "Healing an ally with Gaze of C'Thun now additionally reveals nearby stealthed enemies for 8 seconds."
+          }
+        ],
+        "connections": [
+          6276,
+          33952
+        ],
+        "choice_group": 302015,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_eyes_01",
+          "key": "inv_ascend_eyes_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33968,
+        "name": "Eldritch Command",
+        "slug": "eldritch-command",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 302015,
+        "spell_ids": [
+          302015
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to cause your <span style=\"color: #FFFFFF; display: inline\">Tentacles</span> to blast the enemy with eldritch energy, dealing <span class=\"item-number\">81</span> + <span class=\"item-number\">22.5% shadow SP</span> + <span class=\"item-number\">10% AP</span> Shadow damage.",
+        "description": "Casting Gaze of C'thun now has a 30% chance to cause your Tentacles to blast the enemy with eldritch energy, dealing 81 + 22.5% shadow SP + 10% AP Shadow damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 302015,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to cause your <span style=\"color: #FFFFFF; display: inline\">Tentacles</span> to blast the enemy with eldritch energy, dealing <span class=\"item-number\">81</span> + <span class=\"item-number\">22.5% shadow SP</span> + <span class=\"item-number\">10% AP</span> Shadow damage.",
+            "description": "Casting Gaze of C'thun now has a 30% chance to cause your Tentacles to blast the enemy with eldritch energy, dealing 81 + 22.5% shadow SP + 10% AP Shadow damage."
+          }
+        ],
+        "connections": [
+          6276,
+          33952
+        ],
+        "choice_group": 302015,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_shadow_spell_02_Border",
+          "key": "uico_shadow_spell_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6279,
+        "name": "Void-Enchanted Armor",
+        "slug": "void-enchanted-armor",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804633,
+        "spell_ids": [
+          804633
+        ],
+        "description_html": "Increases your chance to resist dispel effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your chance to resist dispel effects by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804633,
+            "description_html": "Increases your chance to resist dispel effects by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to resist dispel effects by -20%."
+          }
+        ],
+        "connections": [
+          6276,
+          33967
+        ],
+        "choice_group": 804633,
+        "icon": {
+          "source_path": "Interface\\Icons\\pure_void_metal",
+          "key": "pure_void_metal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29479,
+        "name": "Ungodly Blessing",
+        "slug": "ungodly-blessing",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301241,
+        "spell_ids": [
+          301241
+        ],
+        "description_html": "Reduces the duration of curse effects on you by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the duration of curse effects on you by -40%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301241,
+            "description_html": "Reduces the duration of curse effects on you by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the duration of curse effects on you by -40%."
+          }
+        ],
+        "connections": [
+          6276,
+          33967
+        ],
+        "choice_group": 804633,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_ShadowMeld",
+          "key": "ability_racial_shadowmeld",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30205,
+        "name": "Crystalline Reflection",
+        "slug": "crystalline-reflection",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 525060,
+        "spell_ids": [
+          525060
+        ],
+        "description_html": "Increases the chance for <span style=\"color: #ffffff; display: inline\">Void Shield</span> to resist dispel effects on allies by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and it now also reflects <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage absorbed.",
+        "description": "Increases the chance for Void Shield to resist dispel effects on allies by 50% and it now also reflects 50% of the damage absorbed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 525060,
+            "description_html": "Increases the chance for <span style=\"color: #ffffff; display: inline\">Void Shield</span> to resist dispel effects on allies by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and it now also reflects <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage absorbed.",
+            "description": "Increases the chance for Void Shield to resist dispel effects on allies by 50% and it now also reflects 50% of the damage absorbed."
+          }
+        ],
+        "connections": [
+          6274,
+          31123
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_PrayerofShadowProtection",
+          "key": "spell_holy_prayerofshadowprotection",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33951,
+        "name": "Black Prayer",
+        "slug": "black-prayer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805110,
+        "spell_ids": [
+          805110
+        ],
+        "description_html": "All direct damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to unleash a <span style=\"color: #ffffff; display: inline\">Black Prayer</span> on all enemies near the target for <span class=\"item-number\">9</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 forbidding_void_dust\" /><span class=\"name\">Black Prayer</span></div><span class=\"desc\">Deals <span class=\"item-number\">136</span> + <span class=\"item-number\">12% shadow SP</span> + <span class=\"item-number\">0.5% AP</span> Shadow Damage every <span class=\"item-number\">3</span> sec and reduces attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "All direct damage dealt now has a 5% chance to unleash a Black Prayer on all enemies near the target for 9 seconds.Black PrayerDeals 136 + 12% shadow SP + 0.5% AP Shadow Damage every 3 sec and reduces attack speed by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805110,
+            "description_html": "All direct damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to unleash a <span style=\"color: #ffffff; display: inline\">Black Prayer</span> on all enemies near the target for <span class=\"item-number\">9</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 forbidding_void_dust\" /><span class=\"name\">Black Prayer</span></div><span class=\"desc\">Deals <span class=\"item-number\">136</span> + <span class=\"item-number\">12% shadow SP</span> + <span class=\"item-number\">0.5% AP</span> Shadow Damage every <span class=\"item-number\">3</span> sec and reduces attack speed by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "All direct damage dealt now has a 5% chance to unleash a Black Prayer on all enemies near the target for 9 seconds.Black PrayerDeals 136 + 12% shadow SP + 0.5% AP Shadow Damage every 3 sec and reduces attack speed by -20%."
+          }
+        ],
+        "connections": [
+          7465,
+          31123,
+          33968
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\forbidding_void_dust",
+          "key": "forbidding_void_dust",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7940,
+        "name": "Twisted Seal",
+        "slug": "twisted-seal",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704881,
+        "spell_ids": [
+          704881
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Embrace the Void</span> by <span class=\"item-number\">4</span> sec and it now heals you for an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage taken while active and its cooldown is reduced by <span class=\"item-number\">-60</span> sec.",
+        "description": "Increases the duration of Embrace the Void by 4 sec and it now heals you for an additional 50% of the damage taken while active and its cooldown is reduced by -60 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704881,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Embrace the Void</span> by <span class=\"item-number\">4</span> sec and it now heals you for an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage taken while active and its cooldown is reduced by <span class=\"item-number\">-60</span> sec.",
+            "description": "Increases the duration of Embrace the Void by 4 sec and it now heals you for an additional 50% of the damage taken while active and its cooldown is reduced by -60 sec."
+          }
+        ],
+        "connections": [
+          6279,
+          7465,
+          29479,
+          33968
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_arcanemask_Border",
+          "key": "nhi_arcanemask_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29920,
+        "name": "Split Mind",
+        "slug": "split-mind",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572064,
+        "spell_ids": [
+          572064
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Void Shield</span> now applies to an additional nearby ally but its duration is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />Killing an opponent that yields experience or honor removes <span style=\"color: #FFFFFF; display: inline\">Wracked Mind</span> from you.",
+        "description": "Void Shield now applies to an additional nearby ally but its duration is reduced by -30%.\n\nKilling an opponent that yields experience or honor removes Wracked Mind from you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572064,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Void Shield</span> now applies to an additional nearby ally but its duration is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />Killing an opponent that yields experience or honor removes <span style=\"color: #FFFFFF; display: inline\">Wracked Mind</span> from you.",
+            "description": "Void Shield now applies to an additional nearby ally but its duration is reduced by -30%.\n\nKilling an opponent that yields experience or honor removes Wracked Mind from you."
+          }
+        ],
+        "connections": [
+          30205,
+          33951
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_soulbarrier",
+          "key": "inv_soulbarrier",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29275,
+        "name": "Vision of Doom",
+        "slug": "vision-of-doom",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520388,
+        "spell_ids": [
+          520388
+        ],
+        "description_html": "Behold a vision of doom, causing direct damage or healing done to apply <span style=\"color: #FFFFFF; display: inline\">Vision of Doom</span> to nearby targets for <span class=\"item-number\">3</span> seconds. Can only occur once every <span class=\"item-number\">3</span> sec.<br /><br />At the end of the duration, they are damaged or healed for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the damage or healing that doomed them. Lasts for <span class=\"item-number\">1</span> minute or <span class=\"item-number\">5</span> instances of damage or healing.<br /><br />Doomed enemies are unable to be healed and the damage or healing done by this effect can critically strike.",
+        "description": "Behold a vision of doom, causing direct damage or healing done to apply Vision of Doom to nearby targets for 3 seconds. Can only occur once every 3 sec.\n\nAt the end of the duration, they are damaged or healed for 100% of the damage or healing that doomed them. Lasts for 1 minute or 5 instances of damage or healing.\n\nDoomed enemies are unable to be healed and the damage or healing done by this effect can critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520388,
+            "description_html": "Behold a vision of doom, causing direct damage or healing done to apply <span style=\"color: #FFFFFF; display: inline\">Vision of Doom</span> to nearby targets for <span class=\"item-number\">3</span> seconds. Can only occur once every <span class=\"item-number\">3</span> sec.<br /><br />At the end of the duration, they are damaged or healed for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the damage or healing that doomed them. Lasts for <span class=\"item-number\">1</span> minute or <span class=\"item-number\">5</span> instances of damage or healing.<br /><br />Doomed enemies are unable to be healed and the damage or healing done by this effect can critically strike.",
+            "description": "Behold a vision of doom, causing direct damage or healing done to apply Vision of Doom to nearby targets for 3 seconds. Can only occur once every 3 sec.\n\nAt the end of the duration, they are damaged or healed for 100% of the damage or healing that doomed them. Lasts for 1 minute or 5 instances of damage or healing.\n\nDoomed enemies are unable to be healed and the damage or healing done by this effect can critically strike."
+          }
+        ],
+        "connections": [
+          33951
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_twilightcano",
+          "key": "spell_fire_twilightcano",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33965,
+        "name": "Lost in the Void",
+        "slug": "lost-in-the-void",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 525065,
+        "spell_ids": [
+          525065
+        ],
+        "description_html": "Create a warped sigil that bends hostile force away from you, deflecting all spells and abilities for <span class=\"item-number\">5</span> seconds, but making you unable to attack or cast spells.<br /><br />Casters whose magic is deflected are silenced for <span class=\"item-number\">3</span> seconds.",
+        "description": "Create a warped sigil that bends hostile force away from you, deflecting all spells and abilities for 5 seconds, but making you unable to attack or cast spells.\n\nCasters whose magic is deflected are silenced for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 525065,
+            "description_html": "Create a warped sigil that bends hostile force away from you, deflecting all spells and abilities for <span class=\"item-number\">5</span> seconds, but making you unable to attack or cast spells.<br /><br />Casters whose magic is deflected are silenced for <span class=\"item-number\">3</span> seconds.",
+            "description": "Create a warped sigil that bends hostile force away from you, deflecting all spells and abilities for 5 seconds, but making you unable to attack or cast spells.\n\nCasters whose magic is deflected are silenced for 3 seconds."
+          }
+        ],
+        "connections": [
+          7940,
+          33951
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_peacockmount_dark",
+          "key": "inv_peacockmount_dark",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

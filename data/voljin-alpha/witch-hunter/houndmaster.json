@@ -1,0 +1,2347 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:32+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:09be5a0bae4d2739093144f6cac31156ef447d2ebf3b6af02f467cdca9b6fc3f",
+    "talent_count": 192,
+    "tree_count": 6
+  },
+  "class": {
+    "id": 15,
+    "name": "Witch Hunter",
+    "slug": "witch-hunter",
+    "class_file": "witchhunter",
+    "color": "rgb(84, 51, 207)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:witchhunter",
+      "key": "class-witchhunter",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 48,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 40,
+    "name": "Houndmaster",
+    "slug": "houndmaster",
+    "sort_order": 2,
+    "class_id": 15,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 17414,
+        "name": "Houndmaster's Whistle",
+        "slug": "houndmasters-whistle",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4011
+          ]
+        },
+        "spell_id": 801343,
+        "spell_ids": [
+          801343
+        ],
+        "description_html": "Summons a permanent <span style=\"color: #ffffff; display: inline\">Shadowhound</span> companion to aid you in combat.<br /><br />Your <span style=\"color: #FFFFFF; display: inline\">Shadowhound</span> receives <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of healing done to you.",
+        "description": "Summons a permanent Shadowhound companion to aid you in combat.\n\nYour Shadowhound receives 25% of healing done to you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801343,
+            "description_html": "Summons a permanent <span style=\"color: #ffffff; display: inline\">Shadowhound</span> companion to aid you in combat.<br /><br />Your <span style=\"color: #FFFFFF; display: inline\">Shadowhound</span> receives <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of healing done to you.",
+            "description": "Summons a permanent Shadowhound companion to aid you in combat.\n\nYour Shadowhound receives 25% of healing done to you."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wolfdraenormountshadow",
+          "key": "inv_wolfdraenormountshadow",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4011,
+        "name": "Houndmaster",
+        "slug": "houndmaster",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30187
+          ]
+        },
+        "spell_id": 92093,
+        "spell_ids": [
+          92093
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your ranged auto attacks now generate Rage and the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shadowblast</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Level 10 Passive\nYour ranged auto attacks now generate Rage and the critical strike chance of Shadowblast is increased by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92093,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your ranged auto attacks now generate Rage and the critical strike chance of <span style=\"color: #ffffff; display: inline\">Shadowblast</span> is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Level 10 Passive\nYour ranged auto attacks now generate Rage and the critical strike chance of Shadowblast is increased by 20%."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_legendary_gun",
+          "key": "inv_legendary_gun",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7414,
+        "name": "Unleash the Hounds",
+        "slug": "unleash-the-hounds",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807918,
+        "spell_ids": [
+          807918
+        ],
+        "description_html": "Summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.",
+        "description": "Summon 1 Lesser Shadow Hound to aid you in combat for 20 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807918,
+            "description_html": "Summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.",
+            "description": "Summon 1 Lesser Shadow Hound to aid you in combat for 20 seconds."
+          }
+        ],
+        "connections": [
+          17414
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "interface\\icons\\UnleashtheHounds",
+          "key": "unleashthehounds",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9414,
+        "name": "Houndmaster's Call",
+        "slug": "houndmasters-call",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802273,
+        "spell_ids": [
+          802273
+        ],
+        "description_html": "Command your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> to leap upon an enemy target, dealing two strikes for <span class=\"item-number\">2700</span> + <span class=\"item-number\">35% ranged AP</span> Shadow damage.",
+        "description": "Command your Shadow Hounds to leap upon an enemy target, dealing two strikes for 2700 + 35% ranged AP Shadow damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802273,
+            "description_html": "Command your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> to leap upon an enemy target, dealing two strikes for <span class=\"item-number\">2700</span> + <span class=\"item-number\">35% ranged AP</span> Shadow damage.",
+            "description": "Command your Shadow Hounds to leap upon an enemy target, dealing two strikes for 2700 + 35% ranged AP Shadow damage."
+          }
+        ],
+        "connections": [
+          17414
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowroar_Border",
+          "key": "nhi_shadowroar_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7875,
+        "name": "Expert Shot",
+        "slug": "expert-shot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705467,
+        "spell_ids": [
+          705467,
+          707889
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowblast</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Shadowblast by 15% and your hit chance by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705467,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowblast</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Shadowblast by 15% and your hit chance by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707889,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shadowblast</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Shadowblast by 30% and your hit chance by 4%."
+          }
+        ],
+        "connections": [
+          7414
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hisek_aim",
+          "key": "ability_hisek_aim",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6334,
+        "name": "Shadow Rage",
+        "slug": "shadow-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705455,
+        "spell_ids": [
+          705455
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Shadowblast</span> now grants <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> to your <span style=\"color: #ffffff; display: inline\">Shadow Hound</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_curseofshadow_border\" /><span class=\"name\">Shadow Rage</span></div><span class=\"desc\">Auto attacks have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to deal an additional <span class=\"item-number\">57</span> + <span class=\"item-number\">15% AP</span> Shadow Damage. Lasts <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Casting Shadowblast now grants Shadow Rage to your Shadow Hound.Shadow RageAuto attacks have a 50% chance to deal an additional 57 + 15% AP Shadow Damage. Lasts 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705455,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Shadowblast</span> now grants <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> to your <span style=\"color: #ffffff; display: inline\">Shadow Hound</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_curseofshadow_border\" /><span class=\"name\">Shadow Rage</span></div><span class=\"desc\">Auto attacks have a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to deal an additional <span class=\"item-number\">57</span> + <span class=\"item-number\">15% AP</span> Shadow Damage. Lasts <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Casting Shadowblast now grants Shadow Rage to your Shadow Hound.Shadow RageAuto attacks have a 50% chance to deal an additional 57 + 15% AP Shadow Damage. Lasts 15 seconds."
+          }
+        ],
+        "connections": [
+          9414
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_CurseOfShadow_Border",
+          "key": "custom_t_curseofshadow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9306,
+        "name": "Sharpshooter ",
+        "slug": "sharpshooter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 705456,
+        "spell_ids": [
+          705456
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Shadowblast</span> now regenerates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana.",
+        "description": "Level 20 Passive\nCasting Shadowblast now regenerates 3% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705456,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Shadowblast</span> now regenerates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your maximum mana.",
+            "description": "Level 20 Passive\nCasting Shadowblast now regenerates 3% of your maximum mana."
+          }
+        ],
+        "connections": [
+          4011
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_FocusedPower",
+          "key": "spell_shadow_focusedpower",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30396,
+        "name": "Quickdraw",
+        "slug": "quickdraw",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804193,
+        "spell_ids": [
+          804193
+        ],
+        "description_html": "Unleash a quick shot, dealing <span class=\"item-number\">175</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">16</span> + <span class=\"item-number\">20% ranged AP</span> Physical damage.<br /><br />Only usable after critically striking with an ability.",
+        "description": "Unleash a quick shot, dealing 175% Ranged Weapon Damage plus 16 + 20% ranged AP Physical damage.\n\nOnly usable after critically striking with an ability.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804193,
+            "description_html": "Unleash a quick shot, dealing <span class=\"item-number\">175</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">16</span> + <span class=\"item-number\">20% ranged AP</span> Physical damage.<br /><br />Only usable after critically striking with an ability.",
+            "description": "Unleash a quick shot, dealing 175% Ranged Weapon Damage plus 16 + 20% ranged AP Physical damage.\n\nOnly usable after critically striking with an ability."
+          }
+        ],
+        "connections": [
+          7875
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_gun_b_05_Border",
+          "key": "custom_gun_b_05_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7418,
+        "name": "Trapper",
+        "slug": "trapper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681180,
+        "spell_ids": [
+          681180
+        ],
+        "description_html": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Trap</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of your Trap spells by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681180,
+            "description_html": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Trap</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of your Trap spells by -25%."
+          }
+        ],
+        "connections": [
+          7875
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_steeltrap",
+          "key": "ability_hunter_steeltrap",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29163,
+        "name": "Expulsion of Evil",
+        "slug": "expulsion-of-evil",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 139778,
+        "spell_ids": [
+          139778
+        ],
+        "description_html": "Direct ranged attacks and abilities now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span>.",
+        "description": "Direct ranged attacks and abilities now have a 5% chance to reset the cooldown of Houndmaster's Call.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 139778,
+            "description_html": "Direct ranged attacks and abilities now have a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span>.",
+            "description": "Direct ranged attacks and abilities now have a 5% chance to reset the cooldown of Houndmaster's Call."
+          }
+        ],
+        "connections": [
+          6334
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DarkHand_Sha",
+          "key": "darkhand_sha",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34540,
+        "name": "Dark Ranger",
+        "slug": "dark-ranger",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705465,
+        "spell_ids": [
+          705465,
+          707861
+        ],
+        "description_html": "Increases the Shadow damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the Shadow damage dealt by your Shadow Hounds by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705465,
+            "description_html": "Increases the Shadow damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the Shadow damage dealt by your Shadow Hounds by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707861,
+            "description_html": "Increases the Shadow damage dealt by your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the Shadow damage dealt by your Shadow Hounds by 10%."
+          }
+        ],
+        "connections": [
+          6334
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_leader_sylvanas",
+          "key": "achievement_leader_sylvanas",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29161,
+        "name": "Pure Agony",
+        "slug": "pure-agony",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300789,
+        "spell_ids": [
+          300789
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Quickdraw</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Quickdraw by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300789,
+            "description_html": "Increases the critical damage of <span style=\"color: #FFFFFF; display: inline\">Quickdraw</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Quickdraw by 100%."
+          }
+        ],
+        "connections": [
+          30396
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_darkness",
+          "key": "ability_priest_darkness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6858,
+        "name": "Darkrider",
+        "slug": "darkrider",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705453,
+        "spell_ids": [
+          705453
+        ],
+        "description_html": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Shadowblast</span>, <span style=\"color: #ffffff; display: inline\">Vault</span>, and <span style=\"color: #ffffff; display: inline\">Unleash the Hounds</span> by <span class=\"item-number\">-10</span>.",
+        "description": "Reduces the Rage cost of Shadowblast, Vault, and Unleash the Hounds by -10.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705453,
+            "description_html": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Shadowblast</span>, <span style=\"color: #ffffff; display: inline\">Vault</span>, and <span style=\"color: #ffffff; display: inline\">Unleash the Hounds</span> by <span class=\"item-number\">-10</span>.",
+            "description": "Reduces the Rage cost of Shadowblast, Vault, and Unleash the Hounds by -10."
+          }
+        ],
+        "connections": [
+          7418,
+          30396
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_skeletalwarhorse_01_brown",
+          "key": "inv_skeletalwarhorse_01_brown",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30188,
+        "name": "Decimate",
+        "slug": "decimate",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804194,
+        "spell_ids": [
+          804194
+        ],
+        "description_html": "Empowers your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> for <span class=\"item-number\">20</span> seconds, granting them <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and haste and allowing them to ignore Armor.",
+        "description": "Empowers your Shadow Hounds for 20 seconds, granting them 30% increased damage and haste and allowing them to ignore Armor.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804194,
+            "description_html": "Empowers your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> for <span class=\"item-number\">20</span> seconds, granting them <span class=\"item-number\">30</span><span class=\"item-number\">%</span> increased damage and haste and allowing them to ignore Armor.",
+            "description": "Empowers your Shadow Hounds for 20 seconds, granting them 30% increased damage and haste and allowing them to ignore Armor."
+          }
+        ],
+        "connections": [
+          7418,
+          29163
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_foreshadowing_Border",
+          "key": "nhi_foreshadowing_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6411,
+        "name": "Houndfeeder",
+        "slug": "houndfeeder",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705477,
+        "spell_ids": [
+          705477
+        ],
+        "description_html": "Increases the critical strike chance of you and your <span style=\"color: #ffffff; display: inline\">Shadow Hound</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of you and your Shadow Hound by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705477,
+            "description_html": "Increases the critical strike chance of you and your <span style=\"color: #ffffff; display: inline\">Shadow Hound</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of you and your Shadow Hound by 4%."
+          }
+        ],
+        "connections": [
+          29163,
+          34540
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_sumshadowwolf_Border",
+          "key": "_5_sumshadowwolf_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7417,
+        "name": "Darkflock",
+        "slug": "darkflock",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520270,
+        "spell_ids": [
+          520270
+        ],
+        "description_html": "For <span class=\"item-number\">8</span> seconds, command a flock of crows to deal <span class=\"item-number\">70</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">106.25% SP</span> Shadow damage to enemies in front of you every <span class=\"item-number\">2</span> sec.",
+        "description": "For 8 seconds, command a flock of crows to deal 70 + 25% AP + 106.25% SP Shadow damage to enemies in front of you every 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520270,
+            "description_html": "For <span class=\"item-number\">8</span> seconds, command a flock of crows to deal <span class=\"item-number\">70</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">106.25% SP</span> Shadow damage to enemies in front of you every <span class=\"item-number\">2</span> sec.",
+            "description": "For 8 seconds, command a flock of crows to deal 70 + 25% AP + 106.25% SP Shadow damage to enemies in front of you every 2 sec."
+          }
+        ],
+        "connections": [
+          34540
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_13_summon_raven_Border",
+          "key": "custom_13_summon_raven_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9307,
+        "name": "Dark Mind",
+        "slug": "dark-mind",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 574148,
+        "spell_ids": [
+          574148
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your critical strike rating by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 30 Passive\nIncreases your critical strike rating by 25% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574148,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your critical strike rating by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 30 Passive\nIncreases your critical strike rating by 25% of your Intellect."
+          }
+        ],
+        "connections": [
+          9306
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_korkrondarkshaman",
+          "key": "achievement_boss_korkrondarkshaman",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29162,
+        "name": "Reload",
+        "slug": "reload",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804190,
+        "spell_ids": [
+          804190
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Quickdraw</span> by <span class=\"item-number\">-4</span> sec.",
+        "description": "Reduces the cooldown of Quickdraw by -4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804190,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Quickdraw</span> by <span class=\"item-number\">-4</span> sec.",
+            "description": "Reduces the cooldown of Quickdraw by -4 sec."
+          }
+        ],
+        "connections": [
+          29161
+        ],
+        "choice_group": 804190,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_bountyhunting",
+          "key": "inv_bountyhunting",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34528,
+        "name": "Darkhunter",
+        "slug": "darkhunter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503669,
+        "spell_ids": [
+          503669
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Quickdraw</span> now additionally causes your next <span style=\"color: #ffffff; display: inline\">Darkslayer</span> within <span class=\"item-number\">15</span> seconds to be instant cast.",
+        "description": "Your Quickdraw now additionally causes your next Darkslayer within 15 seconds to be instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503669,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Quickdraw</span> now additionally causes your next <span style=\"color: #ffffff; display: inline\">Darkslayer</span> within <span class=\"item-number\">15</span> seconds to be instant cast.",
+            "description": "Your Quickdraw now additionally causes your next Darkslayer within 15 seconds to be instant cast."
+          }
+        ],
+        "connections": [
+          29161
+        ],
+        "choice_group": 804190,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_shadesofdarkness",
+          "key": "spell_shadow_shadesofdarkness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34527,
+        "name": "Hail of Gunfire",
+        "slug": "hail-of-gunfire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804187,
+        "spell_ids": [
+          804187
+        ],
+        "description_html": "Increases your ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your ranged haste by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804187,
+            "description_html": "Increases your ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your ranged haste by 10%."
+          }
+        ],
+        "connections": [
+          6858,
+          30188
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SmallGun_Orange",
+          "key": "smallgun_orange",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29984,
+        "name": "Kennel Master",
+        "slug": "kennel-master",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706365,
+        "spell_ids": [
+          706365,
+          707891
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash The Hounds</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to summon an additional <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Casting Unleash The Hounds now has a 25% chance to summon an additional Lesser Shadow Hound for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706365,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash The Hounds</span> now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to summon an additional <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Casting Unleash The Hounds now has a 25% chance to summon an additional Lesser Shadow Hound for 15 seconds."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707891,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash The Hounds</span> now has a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to summon an additional <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Casting Unleash The Hounds now has a 50% chance to summon an additional Lesser Shadow Hound for 15 seconds."
+          }
+        ],
+        "connections": [
+          30188
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Box_PetCarrier_01",
+          "key": "inv_box_petcarrier_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7416,
+        "name": "Defender of Darkshire",
+        "slug": "defender-of-darkshire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705531,
+        "spell_ids": [
+          705531
+        ],
+        "description_html": "Critical strikes with ranged auto attacks now increase the melee haste of your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+        "description": "Critical strikes with ranged auto attacks now increase the melee haste of your Shadow Hounds by 15% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705531,
+            "description_html": "Critical strikes with ranged auto attacks now increase the melee haste of your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+            "description": "Critical strikes with ranged auto attacks now increase the melee haste of your Shadow Hounds by 15% for 5 seconds."
+          }
+        ],
+        "connections": [
+          6411,
+          30188
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_shieldnobg_Border",
+          "key": "_5_shieldnobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7430,
+        "name": "Anguish",
+        "slug": "anguish",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504742,
+        "spell_ids": [
+          504742
+        ],
+        "description_html": "Your Shadow damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown and reduce the channel time of your next <span style=\"color: #ffffff; display: inline\">Darkflock</span> within <span class=\"item-number\">15</span> seconds by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Your Shadow damage dealt now has a 5% chance to reset the cooldown and reduce the channel time of your next Darkflock within 15 seconds by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504742,
+            "description_html": "Your Shadow damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to reset the cooldown and reduce the channel time of your next <span style=\"color: #ffffff; display: inline\">Darkflock</span> within <span class=\"item-number\">15</span> seconds by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Your Shadow damage dealt now has a 5% chance to reset the cooldown and reduce the channel time of your next Darkflock within 15 seconds by -50%."
+          }
+        ],
+        "connections": [
+          7417
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DemonHand_Red",
+          "key": "demonhand_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7415,
+        "name": "Repulse",
+        "slug": "repulse",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680236,
+        "spell_ids": [
+          680236
+        ],
+        "description_html": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing <span class=\"item-number\">57</span> Shadow damage and knocking all affected targets back.",
+        "description": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing 57 Shadow damage and knocking all affected targets back.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680236,
+            "description_html": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing <span class=\"item-number\">57</span> Shadow damage and knocking all affected targets back.",
+            "description": "Emit a burst of shadow from your musket that strikes enemies in front of you, dealing 57 Shadow damage and knocking all affected targets back."
+          }
+        ],
+        "connections": [
+          29162,
+          34527,
+          34528
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(26)_Border",
+          "key": "novart_magicspell__26__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29159,
+        "name": "Houndmaster",
+        "slug": "houndmaster",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705450,
+        "spell_ids": [
+          705450
+        ],
+        "description_html": "Using <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span> summons <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds that leaps at the target and deals <span class=\"item-number\">345</span> Shadow damage.",
+        "description": "Using Houndmaster's Call summons 1 Lesser Shadow Hound for 15 seconds that leaps at the target and deals 345 Shadow damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705450,
+            "description_html": "Using <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span> summons <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Lesser Shadow Hound</span> for <span class=\"item-number\">15</span> seconds that leaps at the target and deals <span class=\"item-number\">345</span> Shadow damage.",
+            "description": "Using Houndmaster's Call summons 1 Lesser Shadow Hound for 15 seconds that leaps at the target and deals 345 Shadow damage."
+          }
+        ],
+        "connections": [
+          7416,
+          29984,
+          34527
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_HowlOfTerror_Purple",
+          "key": "howlofterror_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30185,
+        "name": "Loksey's Journal",
+        "slug": "lokseys-journal",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504903,
+        "spell_ids": [
+          504903
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Shadow Rage</span> now also grants your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased haste.",
+        "description": "Shadow Rage now also grants your Shadow Hounds 10% increased haste.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504903,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Shadow Rage</span> now also grants your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased haste.",
+            "description": "Shadow Rage now also grants your Shadow Hounds 10% increased haste."
+          }
+        ],
+        "connections": [
+          7416,
+          7430
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Book1_Purple",
+          "key": "book1_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4367,
+        "name": "Daredevil",
+        "slug": "daredevil",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 681173,
+        "spell_ids": [
+          681173
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />When you take damage that would reduce your health to <span class=\"item-number\">35%</span> or less, you summon <span class=\"item-number\">3</span> lesser <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> and reset the cooldown of <span style=\"color: #ffffff; display: inline\">Vault</span>.<br /><br />Can only occur once every <span class=\"item-number\">2</span> min.",
+        "description": "Level 40 Passive\nWhen you take damage that would reduce your health to 35% or less, you summon 3 lesser Shadow Hounds and reset the cooldown of Vault.\n\nCan only occur once every 2 min.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681173,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />When you take damage that would reduce your health to <span class=\"item-number\">35%</span> or less, you summon <span class=\"item-number\">3</span> lesser <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> and reset the cooldown of <span style=\"color: #ffffff; display: inline\">Vault</span>.<br /><br />Can only occur once every <span class=\"item-number\">2</span> min.",
+            "description": "Level 40 Passive\nWhen you take damage that would reduce your health to 35% or less, you summon 3 lesser Shadow Hounds and reset the cooldown of Vault.\n\nCan only occur once every 2 min."
+          }
+        ],
+        "connections": [
+          9307
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_BloodyEye",
+          "key": "ability_rogue_bloodyeye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6379,
+        "name": "Bringer of Darkness",
+        "slug": "bringer-of-darkness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500101,
+        "spell_ids": [
+          500101
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Repulse</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Vault</span> and makes your next <span style=\"color: #ffffff; display: inline\">Vault</span> within <span class=\"item-number\">6</span> seconds free of cost.",
+        "description": "Your Repulse now resets the cooldown of Vault and makes your next Vault within 6 seconds free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500101,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Repulse</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Vault</span> and makes your next <span style=\"color: #ffffff; display: inline\">Vault</span> within <span class=\"item-number\">6</span> seconds free of cost.",
+            "description": "Your Repulse now resets the cooldown of Vault and makes your next Vault within 6 seconds free of cost."
+          }
+        ],
+        "connections": [
+          7415
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_shadow_spell_04_Border",
+          "key": "uico_shadow_spell_04_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34532,
+        "name": "Silver Bullets",
+        "slug": "silver-bullets",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 574149,
+        "spell_ids": [
+          574149,
+          574163
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkslayer</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, increased by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against Undead.",
+        "description": "Increases the damage of Darkslayer by 10%, increased by an additional 10% against Undead.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574149,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkslayer</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>, increased by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against Undead.",
+            "description": "Increases the damage of Darkslayer by 10%, increased by an additional 10% against Undead."
+          },
+          {
+            "rank": 2,
+            "spell_id": 574163,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkslayer</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, increased by an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against Undead.",
+            "description": "Increases the damage of Darkslayer by 20%, increased by an additional 20% against Undead."
+          }
+        ],
+        "connections": [
+          29159
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_ammo_bullet_05",
+          "key": "inv_misc_ammo_bullet_05",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34530,
+        "name": "Veiled in Darkness",
+        "slug": "veiled-in-darkness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524854,
+        "spell_ids": [
+          524854
+        ],
+        "description_html": "A veil of dark magic encircles you at all times, granting <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased Attack Power to party and raid members within <span class=\"item-number\">100</span> yds. Does not stack with similar effects.<br /><br />In addition, reduces your Shadow Damage taken by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "A veil of dark magic encircles you at all times, granting 5% increased Attack Power to party and raid members within 100 yds. Does not stack with similar effects.\n\nIn addition, reduces your Shadow Damage taken by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524854,
+            "description_html": "A veil of dark magic encircles you at all times, granting <span class=\"item-number\">5</span><span class=\"item-number\">%</span> increased Attack Power to party and raid members within <span class=\"item-number\">100</span> yds. Does not stack with similar effects.<br /><br />In addition, reduces your Shadow Damage taken by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "A veil of dark magic encircles you at all times, granting 5% increased Attack Power to party and raid members within 100 yds. Does not stack with similar effects.\n\nIn addition, reduces your Shadow Damage taken by -15%."
+          }
+        ],
+        "connections": [
+          29159
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_surgeofdarkness",
+          "key": "ability_priest_surgeofdarkness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31161,
+        "name": "Scent of Magic",
+        "slug": "scent-of-magic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4011
+          ]
+        },
+        "spell_id": 706260,
+        "spell_ids": [
+          706260
+        ],
+        "description_html": "Critical strikes now apply <span style=\"color: #ffffff; display: inline\">Scent of Magic</span> for <span class=\"item-number\">15</span> seconds, causing your <span style=\"color: #ffffff; display: inline\">Shadow Hound's</span> next <span style=\"color: #FFFFFF; display: inline\">Shadow Leap</span> to incur a <span class=\"item-number\">-10</span> sec reduced cooldown.",
+        "description": "Critical strikes now apply Scent of Magic for 15 seconds, causing your Shadow Hound's next Shadow Leap to incur a -10 sec reduced cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706260,
+            "description_html": "Critical strikes now apply <span style=\"color: #ffffff; display: inline\">Scent of Magic</span> for <span class=\"item-number\">15</span> seconds, causing your <span style=\"color: #ffffff; display: inline\">Shadow Hound's</span> next <span style=\"color: #FFFFFF; display: inline\">Shadow Leap</span> to incur a <span class=\"item-number\">-10</span> sec reduced cooldown.",
+            "description": "Critical strikes now apply Scent of Magic for 15 seconds, causing your Shadow Hound's next Shadow Leap to incur a -10 sec reduced cooldown."
+          }
+        ],
+        "connections": [
+          29159
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\artifactability_vengeancedemonhunter_painbringer",
+          "key": "artifactability_vengeancedemonhunter_painbringer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34524,
+        "name": "Rampaging Hounds",
+        "slug": "rampaging-hounds",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570726,
+        "spell_ids": [
+          570726
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> melee attacks now cleave <span class=\"item-number\">1</span> additional nearby enemy.",
+        "description": "Your Shadow Hounds melee attacks now cleave 1 additional nearby enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570726,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Shadow Hounds</span> melee attacks now cleave <span class=\"item-number\">1</span> additional nearby enemy.",
+            "description": "Your Shadow Hounds melee attacks now cleave 1 additional nearby enemy."
+          }
+        ],
+        "connections": [
+          30185
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_sickem",
+          "key": "ability_hunter_sickem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7422,
+        "name": "Rearmament",
+        "slug": "rearmament",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805738,
+        "spell_ids": [
+          805738
+        ],
+        "description_html": "Arm yourself against evil, resetting the cooldown of all <span style=\"color: #ffffff; display: inline\">Traps</span> and <span style=\"color: #FFFFFF; display: inline\">Decimate</span>, and causing your <span style=\"color: #ffffff; display: inline\">Traps</span> to not incur a cooldown for the duration. Lasts <span class=\"item-number\">8</span> seconds.",
+        "description": "Arm yourself against evil, resetting the cooldown of all Traps and Decimate, and causing your Traps to not incur a cooldown for the duration. Lasts 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805738,
+            "description_html": "Arm yourself against evil, resetting the cooldown of all <span style=\"color: #ffffff; display: inline\">Traps</span> and <span style=\"color: #FFFFFF; display: inline\">Decimate</span>, and causing your <span style=\"color: #ffffff; display: inline\">Traps</span> to not incur a cooldown for the duration. Lasts <span class=\"item-number\">8</span> seconds.",
+            "description": "Arm yourself against evil, resetting the cooldown of all Traps and Decimate, and causing your Traps to not incur a cooldown for the duration. Lasts 8 seconds."
+          }
+        ],
+        "connections": [
+          6379,
+          34532
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowbombs_Border",
+          "key": "nhi_shadowbombs_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7420,
+        "name": "Low Dawn",
+        "slug": "low-dawn",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680247,
+        "spell_ids": [
+          680247
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Sixfold Shot</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and causes it to channel <span class=\"item-number\">0.5</span> sec quicker.",
+        "description": "Increases the damage of Sixfold Shot by 25% and causes it to channel 0.5 sec quicker.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680247,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Sixfold Shot</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and causes it to channel <span class=\"item-number\">0.5</span> sec quicker.",
+            "description": "Increases the damage of Sixfold Shot by 25% and causes it to channel 0.5 sec quicker."
+          }
+        ],
+        "connections": [
+          31161,
+          34530,
+          34532
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_gun_b_03_Border",
+          "key": "custom_gun_b_03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34531,
+        "name": "Coordinated Killing",
+        "slug": "coordinated-killing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705463,
+        "spell_ids": [
+          705463
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash the Hounds</span> now casts <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> on you for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_curseofshadow_border\" /><span class=\"name\">Shadow Rage</span></div><span class=\"desc\">Ranged auto attacks deal an additional <span class=\"item-number\">57</span> + <span class=\"item-number\">15% AP</span> Shadow Damage.</span></div>",
+        "description": "Casting Unleash the Hounds now casts Shadow Rage on you for 15 seconds.Shadow RageRanged auto attacks deal an additional 57 + 15% AP Shadow Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705463,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash the Hounds</span> now casts <span style=\"color: #ffffff; display: inline\">Shadow Rage</span> on you for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_curseofshadow_border\" /><span class=\"name\">Shadow Rage</span></div><span class=\"desc\">Ranged auto attacks deal an additional <span class=\"item-number\">57</span> + <span class=\"item-number\">15% AP</span> Shadow Damage.</span></div>",
+            "description": "Casting Unleash the Hounds now casts Shadow Rage on you for 15 seconds.Shadow RageRanged auto attacks deal an additional 57 + 15% AP Shadow Damage."
+          }
+        ],
+        "connections": [
+          31161,
+          34524
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_demonhunter",
+          "key": "ability_revendreth_demonhunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9967,
+        "name": "Sixfold Shot",
+        "slug": "sixfold-shot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 500567,
+        "spell_ids": [
+          500567
+        ],
+        "description_html": "$65",
+        "description": "$65",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500567,
+            "description_html": "$66",
+            "description": "$66"
+          }
+        ],
+        "connections": [
+          4367
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_32_gun_shot_Border",
+          "key": "custom_32_gun_shot_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30186,
+        "name": "Deal With The Devil",
+        "slug": "deal-with-the-devil",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680255,
+        "spell_ids": [
+          680255
+        ],
+        "description_html": "Your and your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> critical damage dealt with Shadow damage is increased by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but the cost of your spells and abilities is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Quickdraw</span> is now guaranteed to critically strike.",
+        "description": "Your and your Shadow Hounds critical damage dealt with Shadow damage is increased by 50%, but the cost of your spells and abilities is increased by 10%.\n\nIn addition, your Quickdraw is now guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680255,
+            "description_html": "Your and your <span style=\"color: #ffffff; display: inline\">Shadow Hounds</span> critical damage dealt with Shadow damage is increased by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, but the cost of your spells and abilities is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Quickdraw</span> is now guaranteed to critically strike.",
+            "description": "Your and your Shadow Hounds critical damage dealt with Shadow damage is increased by 50%, but the cost of your spells and abilities is increased by 10%.\n\nIn addition, your Quickdraw is now guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          7422
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_06_summon_demon_Border",
+          "key": "custom_06_summon_demon_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8005,
+        "name": "Lethal Pursuit",
+        "slug": "lethal-pursuit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572530,
+        "spell_ids": [
+          572530
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Shadow Rage</span> now stacks <span class=\"item-number\">4</span> additional times.",
+        "description": "Shadow Rage now stacks 4 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572530,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Shadow Rage</span> now stacks <span class=\"item-number\">4</span> additional times.",
+            "description": "Shadow Rage now stacks 4 additional times."
+          }
+        ],
+        "connections": [
+          7420,
+          7422,
+          34531
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_ironmaidens_darkhunt",
+          "key": "ability_ironmaidens_darkhunt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7427,
+        "name": "Feast of Talons",
+        "slug": "feast-of-talons",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 15,
+        "tree_id": 40,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500056,
+        "spell_ids": [
+          500056
+        ],
+        "description_html": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Darkflock</span> or casting <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span> now causes you to unleash a flock of crows around each enemy struck, dealing <span class=\"item-number\">1257</span> + <span class=\"item-number\">78.75% SP</span> + <span class=\"item-number\">148.5% ranged AP</span> Twilight Damage over <span class=\"item-number\">9</span> seconds.",
+        "description": "Striking at least 5 enemies with Darkflock or casting Houndmaster's Call now causes you to unleash a flock of crows around each enemy struck, dealing 1257 + 78.75% SP + 148.5% ranged AP Twilight Damage over 9 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500056,
+            "description_html": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Darkflock</span> or casting <span style=\"color: #ffffff; display: inline\">Houndmaster's Call</span> now causes you to unleash a flock of crows around each enemy struck, dealing <span class=\"item-number\">1257</span> + <span class=\"item-number\">78.75% SP</span> + <span class=\"item-number\">148.5% ranged AP</span> Twilight Damage over <span class=\"item-number\">9</span> seconds.",
+            "description": "Striking at least 5 enemies with Darkflock or casting Houndmaster's Call now causes you to unleash a flock of crows around each enemy struck, dealing 1257 + 78.75% SP + 148.5% ranged AP Twilight Damage over 9 seconds."
+          }
+        ],
+        "connections": [
+          34531
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mount_fireravengodmountpurple",
+          "key": "ability_mount_fireravengodmountpurple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

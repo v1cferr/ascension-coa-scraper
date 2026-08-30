@@ -1,0 +1,2585 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:17+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:16a8df5d8926842787818d9e6fe78f66f93952302ef52b3edb397da5ee31452a",
+    "talent_count": 208,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 20,
+    "name": "Bloodmage",
+    "slug": "bloodmage",
+    "class_file": "sonofarugal",
+    "color": "rgb(163, 0, 0)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:sonofarugal",
+      "key": "class-sonofarugal",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 40,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 52,
+    "name": "Accursed",
+    "slug": "accursed",
+    "sort_order": 2,
+    "class_id": 20,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29485,
+        "name": "Accursed Form",
+        "slug": "accursed-form",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4026
+          ]
+        },
+        "spell_id": 504710,
+        "spell_ids": [
+          504710
+        ],
+        "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Blood Curse</span> into <span style=\"color: #ffffff; display: inline\">Accursed Form</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_dungeon_hallsofattonement_echelon\" /><span class=\"name\">Accursed Form (Cursed Form)</span></div><span class=\"desc\">Embrace your demonic curse for <span class=\"item-number\">30</span> seconds, entering an improved <span style=\"color: #a966f0; display: inline\">Cursed Form</span>, increasing your attack power by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Agility and causing your melee attacks to reduce all healing done to the target by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br /></span></div>",
+        "description": "Transforms your Blood Curse into Accursed Form.Accursed Form (Cursed Form)Embrace your demonic curse for 30 seconds, entering an improved Cursed Form, increasing your attack power by 50% of your Agility and causing your melee attacks to reduce all healing done to the target by -20% for 10 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504710,
+            "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Blood Curse</span> into <span style=\"color: #ffffff; display: inline\">Accursed Form</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_dungeon_hallsofattonement_echelon\" /><span class=\"name\">Accursed Form (Cursed Form)</span></div><span class=\"desc\">Embrace your demonic curse for <span class=\"item-number\">30</span> seconds, entering an improved <span style=\"color: #a966f0; display: inline\">Cursed Form</span>, increasing your attack power by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Agility and causing your melee attacks to reduce all healing done to the target by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">2</span> times.<br /><br /></span></div>",
+            "description": "Transforms your Blood Curse into Accursed Form.Accursed Form (Cursed Form)Embrace your demonic curse for 30 seconds, entering an improved Cursed Form, increasing your attack power by 50% of your Agility and causing your melee attacks to reduce all healing done to the target by -20% for 10 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_hallsofattonement_echelon",
+          "key": "achievement_dungeon_hallsofattonement_echelon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4026,
+        "name": "Unchained",
+        "slug": "unchained",
+        "entry_type": "ability",
+        "node_shape": "hex",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 10,
+          "talent_ids": [
+            31117
+          ]
+        },
+        "spell_id": 92113,
+        "spell_ids": [
+          92113
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your damaging <span style=\"color: #ffffff; display: inline\">Mortal Form</span> spells can now be cast while moving.",
+        "description": "Level 10 Passive\nYour damaging Mortal Form spells can now be cast while moving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92113,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your damaging <span style=\"color: #ffffff; display: inline\">Mortal Form</span> spells can now be cast while moving.",
+            "description": "Level 10 Passive\nYour damaging Mortal Form spells can now be cast while moving."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_foreshadowblood_Border",
+          "key": "nhi_foreshadowblood_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 33745,
+        "name": "Reave",
+        "slug": "reave",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800490,
+        "spell_ids": [
+          800490
+        ],
+        "description_html": "Lacerate an enemy, dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">26</span>.<br /><br />If the enemy is bleeding, below <span class=\"item-number\">35%</span> health, or if you are behind them, deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> additional Shadow damage for each condition met.",
+        "description": "Lacerate an enemy, dealing 125% Weapon Damage plus 26.\n\nIf the enemy is bleeding, below 35% health, or if you are behind them, deal 100% additional Shadow damage for each condition met.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800490,
+            "description_html": "Lacerate an enemy, dealing <span class=\"item-number\">125</span><span class=\"item-number\">%</span> Weapon Damage plus <span class=\"item-number\">26</span>.<br /><br />If the enemy is bleeding, below <span class=\"item-number\">35%</span> health, or if you are behind them, deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> additional Shadow damage for each condition met.",
+            "description": "Lacerate an enemy, dealing 125% Weapon Damage plus 26.\n\nIf the enemy is bleeding, below 35% health, or if you are behind them, deal 100% additional Shadow damage for each condition met."
+          }
+        ],
+        "connections": [
+          29485
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Weapon_Shortblade_40",
+          "key": "inv_weapon_shortblade_40",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6328,
+        "name": "Puncturing Fangs",
+        "slug": "puncturing-fangs",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804604,
+        "spell_ids": [
+          804604
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Bloodmoon Blast</span> now generates <span class=\"item-number\">3</span> additional Rage per hit.",
+        "description": "Your Bloodmoon Blast now generates 3 additional Rage per hit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804604,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Bloodmoon Blast</span> now generates <span class=\"item-number\">3</span> additional Rage per hit.",
+            "description": "Your Bloodmoon Blast now generates 3 additional Rage per hit."
+          }
+        ],
+        "connections": [
+          33745
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathwing_bloodcorruption_death",
+          "key": "ability_deathwing_bloodcorruption_death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7318,
+        "name": "Fang Over Fang",
+        "slug": "fang-over-fang",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504116,
+        "spell_ids": [
+          504116
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Reave</span>.",
+        "description": "Casting Bloodfang Bite now has a 20% chance to reset the cooldown of Reave.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504116,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Reave</span>.",
+            "description": "Casting Bloodfang Bite now has a 20% chance to reset the cooldown of Reave."
+          }
+        ],
+        "connections": [
+          33745
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_monsterfang_02",
+          "key": "inv_misc_monsterfang_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33709,
+        "name": "Barely Human",
+        "slug": "barely-human",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504254,
+        "spell_ids": [
+          504254,
+          504894
+        ],
+        "description_html": "Increases your armor penetration and the damage of spells that cost health by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your armor penetration and the damage of spells that cost health by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504254,
+            "description_html": "Increases your armor penetration and the damage of spells that cost health by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your armor penetration and the damage of spells that cost health by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504894,
+            "description_html": "Increases your armor penetration and the damage of spells that cost health by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your armor penetration and the damage of spells that cost health by 30%."
+          }
+        ],
+        "connections": [
+          33745
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nzinsanity_bloodthirst",
+          "key": "spell_nzinsanity_bloodthirst",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4127,
+        "name": "Forbidden Power",
+        "slug": "forbidden-power",
+        "entry_type": "ability",
+        "node_shape": "hex",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 500445,
+        "spell_ids": [
+          500445
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell critical strike rating by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Agility and spell hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Agility.<br /><br />In addition, you now gain Spell Penetration equal to your Armor Penetration Rating.",
+        "description": "Level 20 Passive\nIncreases your spell critical strike rating by 30% of your Agility and spell hit rating by 5% of your Agility.\n\nIn addition, you now gain Spell Penetration equal to your Armor Penetration Rating.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500445,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell critical strike rating by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Agility and spell hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Agility.<br /><br />In addition, you now gain Spell Penetration equal to your Armor Penetration Rating.",
+            "description": "Level 20 Passive\nIncreases your spell critical strike rating by 30% of your Agility and spell hit rating by 5% of your Agility.\n\nIn addition, you now gain Spell Penetration equal to your Armor Penetration Rating."
+          }
+        ],
+        "connections": [
+          4026
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_bull_Border",
+          "key": "_5_bull_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30290,
+        "name": "Veinburst",
+        "slug": "veinburst",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504260,
+        "spell_ids": [
+          504260
+        ],
+        "description_html": "Requires Mortal Form</span><br />Blast an enemy, dealing <span class=\"item-number\">123</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">85% shadow SP</span> Shadow damage.<br /><br />Deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage to bleeding targets.",
+        "description": "Requires Mortal Form\nBlast an enemy, dealing 123 + 25% AP + 85% shadow SP Shadow damage.\n\nDeals 25% increased damage to bleeding targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504260,
+            "description_html": "Requires Mortal Form</span><br />Blast an enemy, dealing <span class=\"item-number\">123</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">85% shadow SP</span> Shadow damage.<br /><br />Deals <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage to bleeding targets.",
+            "description": "Requires Mortal Form\nBlast an enemy, dealing 123 + 25% AP + 85% shadow SP Shadow damage.\n\nDeals 25% increased damage to bleeding targets."
+          }
+        ],
+        "connections": [
+          6328
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_ironmaidens_bloodritual",
+          "key": "ability_ironmaidens_bloodritual",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12896,
+        "name": "Shadow Pact",
+        "slug": "shadow-pact",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561227,
+        "spell_ids": [
+          561227
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Shields</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Shields by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561227,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Shields</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Shields by 50%."
+          }
+        ],
+        "connections": [
+          7318
+        ],
+        "choice_group": 561227,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_BlackPlague",
+          "key": "spell_shadow_blackplague",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30291,
+        "name": "Dark Pact",
+        "slug": "dark-pact",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560256,
+        "spell_ids": [
+          560256
+        ],
+        "description_html": "Increases your maximum Rage by <span class=\"item-number\">20</span> and you now regenerate <span class=\"item-number\">4</span> Rage every <span class=\"item-number\">5</span> sec.",
+        "description": "Increases your maximum Rage by 20 and you now regenerate 4 Rage every 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560256,
+            "description_html": "Increases your maximum Rage by <span class=\"item-number\">20</span> and you now regenerate <span class=\"item-number\">4</span> Rage every <span class=\"item-number\">5</span> sec.",
+            "description": "Increases your maximum Rage by 20 and you now regenerate 4 Rage every 5 sec."
+          }
+        ],
+        "connections": [
+          7318
+        ],
+        "choice_group": 561227,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_revendreth_deathknight",
+          "key": "ability_revendreth_deathknight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7295,
+        "name": "Rage",
+        "slug": "rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504241,
+        "spell_ids": [
+          504241,
+          504895
+        ],
+        "description_html": "Increases your spell damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your attack power and the damage dealt by <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your spell damage by 20% of your attack power and the damage dealt by Reave by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504241,
+            "description_html": "Increases your spell damage by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your attack power and the damage dealt by <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your spell damage by 20% of your attack power and the damage dealt by Reave by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504895,
+            "description_html": "Increases your spell damage by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your attack power and the damage dealt by <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your spell damage by 40% of your attack power and the damage dealt by Reave by 20%."
+          }
+        ],
+        "connections": [
+          7318
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_artifact_corruptedbloodofzakajz",
+          "key": "inv_artifact_corruptedbloodofzakajz",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7297,
+        "name": "Aortic Assault",
+        "slug": "aortic-assault",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806212,
+        "spell_ids": [
+          806212
+        ],
+        "description_html": "Extend the duration of your active <span style=\"color: #a966f0; display: inline\">Cursed Form</span> by <span class=\"item-number\">3</span> sec and strike nearby enemies every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds, each strike causing <span class=\"item-number\">20</span> + <span class=\"item-number\">12% AP</span> Physical damage.",
+        "description": "Extend the duration of your active Cursed Form by 3 sec and strike nearby enemies every 1 sec for 3 seconds, each strike causing 20 + 12% AP Physical damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806212,
+            "description_html": "Extend the duration of your active <span style=\"color: #a966f0; display: inline\">Cursed Form</span> by <span class=\"item-number\">3</span> sec and strike nearby enemies every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">3</span> seconds, each strike causing <span class=\"item-number\">20</span> + <span class=\"item-number\">12% AP</span> Physical damage.",
+            "description": "Extend the duration of your active Cursed Form by 3 sec and strike nearby enemies every 1 sec for 3 seconds, each strike causing 20 + 12% AP Physical damage."
+          }
+        ],
+        "connections": [
+          33709
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_moguraid_06",
+          "key": "achievement_moguraid_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33701,
+        "name": "Terrorizer",
+        "slug": "terrorizer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806210,
+        "spell_ids": [
+          806210
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Veinburst</span>, <span style=\"color: #ffffff; display: inline\">Bloodfang Bite</span>, and <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> on enemies below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Veinburst, Bloodfang Bite, and Claw Sweep on enemies below 35% health by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806210,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Veinburst</span>, <span style=\"color: #ffffff; display: inline\">Bloodfang Bite</span>, and <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> on enemies below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Veinburst, Bloodfang Bite, and Claw Sweep on enemies below 35% health by 25%."
+          }
+        ],
+        "connections": [
+          30290
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_BloodRage",
+          "key": "ability_racial_bloodrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33741,
+        "name": "Sanguine Scripture",
+        "slug": "sanguine-scripture",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804851,
+        "spell_ids": [
+          804851
+        ],
+        "description_html": "Upon exiting <span style=\"color: #ffffff; display: inline\">Accursed Form</span>, you gain <span class=\"item-number\">70</span><span class=\"item-number\">%</span> movement speed and spell haste for <span class=\"item-number\">5</span> seconds.",
+        "description": "Upon exiting Accursed Form, you gain 70% movement speed and spell haste for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804851,
+            "description_html": "Upon exiting <span style=\"color: #ffffff; display: inline\">Accursed Form</span>, you gain <span class=\"item-number\">70</span><span class=\"item-number\">%</span> movement speed and spell haste for <span class=\"item-number\">5</span> seconds.",
+            "description": "Upon exiting Accursed Form, you gain 70% movement speed and spell haste for 5 seconds."
+          }
+        ],
+        "connections": [
+          12896,
+          30290,
+          30291
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Book6_Red",
+          "key": "book6_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33707,
+        "name": "Dark Hunt",
+        "slug": "dark-hunt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705733,
+        "spell_ids": [
+          705733
+        ],
+        "description_html": "Increases your Shadow damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against bleeding targets.<br /><br />Increases your expertise by <span class=\"item-number\">10</span>.",
+        "description": "Increases your Shadow damage dealt by 10% against bleeding targets.\n\nIncreases your expertise by 10.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705733,
+            "description_html": "Increases your Shadow damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against bleeding targets.<br /><br />Increases your expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases your Shadow damage dealt by 10% against bleeding targets.\n\nIncreases your expertise by 10."
+          }
+        ],
+        "connections": [
+          7295,
+          12896,
+          30291
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_deathknight_bladedarmor",
+          "key": "spell_deathknight_bladedarmor",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11419,
+        "name": "Gore Tome",
+        "slug": "gore-tome",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807788,
+        "spell_ids": [
+          807788
+        ],
+        "description_html": "For the first <span class=\"item-number\">5</span> sec after activating a <span style=\"color: #a966f0; display: inline\">Cursed Form</span>, your <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span> is now guaranteed to critically strike.",
+        "description": "For the first 5 sec after activating a Cursed Form, your Bloodfang Bite is now guaranteed to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807788,
+            "description_html": "For the first <span class=\"item-number\">5</span> sec after activating a <span style=\"color: #a966f0; display: inline\">Cursed Form</span>, your <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span> is now guaranteed to critically strike.",
+            "description": "For the first 5 sec after activating a Cursed Form, your Bloodfang Bite is now guaranteed to critically strike."
+          }
+        ],
+        "connections": [
+          7295,
+          7297
+        ],
+        "choice_group": 807788,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Book2Motif_KaelThas",
+          "key": "book2motif_kaelthas",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30419,
+        "name": "Leeching Tome",
+        "slug": "leeching-tome",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807489,
+        "spell_ids": [
+          807489
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> now leeches <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more health, but it now costs <span class=\"item-number\">5</span> additional Rage.",
+        "description": "Your Bloodbolt now leeches 50% more health, but it now costs 5 additional Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807489,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> now leeches <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more health, but it now costs <span class=\"item-number\">5</span> additional Rage.",
+            "description": "Your Bloodbolt now leeches 50% more health, but it now costs 5 additional Rage."
+          }
+        ],
+        "connections": [
+          7295,
+          7297
+        ],
+        "choice_group": 807788,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Book1_Red",
+          "key": "book1_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11444,
+        "name": "Dark Intent",
+        "slug": "dark-intent",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707622,
+        "spell_ids": [
+          707622
+        ],
+        "description_html": "When you <span style=\"color: #ffffff; display: inline\">Lunge</span> at an enemy you now heal for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum health.",
+        "description": "When you Lunge at an enemy you now heal for 5% of your maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707622,
+            "description_html": "When you <span style=\"color: #ffffff; display: inline\">Lunge</span> at an enemy you now heal for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum health.",
+            "description": "When you Lunge at an enemy you now heal for 5% of your maximum health."
+          }
+        ],
+        "connections": [
+          7297
+        ],
+        "choice_group": 707622,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_roilingblood",
+          "key": "ability_deathknight_roilingblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30294,
+        "name": "Cruel Intent",
+        "slug": "cruel-intent",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704653,
+        "spell_ids": [
+          704653
+        ],
+        "description_html": "When you <span style=\"color: #ffffff; display: inline\">Lunge</span> at an enemy you now strike them <span class=\"item-number\">3</span> times with auto attacks.",
+        "description": "When you Lunge at an enemy you now strike them 3 times with auto attacks.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704653,
+            "description_html": "When you <span style=\"color: #ffffff; display: inline\">Lunge</span> at an enemy you now strike them <span class=\"item-number\">3</span> times with auto attacks.",
+            "description": "When you Lunge at an enemy you now strike them 3 times with auto attacks."
+          }
+        ],
+        "connections": [
+          7297
+        ],
+        "choice_group": 707622,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_amalgamofrage",
+          "key": "inv_amalgamofrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4128,
+        "name": "Blood Shards",
+        "slug": "blood-shards",
+        "entry_type": "ability",
+        "node_shape": "hex",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 804849,
+        "spell_ids": [
+          804849
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Shadow Damage dealt now generates <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span>, plus <span class=\"item-number\">1</span> additional if it critically strikes, for <span class=\"item-number\">10</span> minutes, up to <span class=\"item-number\">8</span>.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Veinburst</span> will now expend all stacks of <span style=\"color: #ffffff; display: inline\">Blood Shards</span>, each dealing <span class=\"item-number\">18</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% SP</span> Spellshadow damage to your target.",
+        "description": "Level 30 Passive\nShadow Damage dealt now generates 1 Blood Shard, plus 1 additional if it critically strikes, for 10 minutes, up to 8.\n\nDealing damage with Veinburst will now expend all stacks of Blood Shards, each dealing 18 + 5% AP + 10% SP Spellshadow damage to your target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804849,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Shadow Damage dealt now generates <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span>, plus <span class=\"item-number\">1</span> additional if it critically strikes, for <span class=\"item-number\">10</span> minutes, up to <span class=\"item-number\">8</span>.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Veinburst</span> will now expend all stacks of <span style=\"color: #ffffff; display: inline\">Blood Shards</span>, each dealing <span class=\"item-number\">18</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% SP</span> Spellshadow damage to your target.",
+            "description": "Level 30 Passive\nShadow Damage dealt now generates 1 Blood Shard, plus 1 additional if it critically strikes, for 10 minutes, up to 8.\n\nDealing damage with Veinburst will now expend all stacks of Blood Shards, each dealing 18 + 5% AP + 10% SP Spellshadow damage to your target."
+          }
+        ],
+        "connections": [
+          4127
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\uico_blood_spell_02_Border",
+          "key": "uico_blood_spell_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29878,
+        "name": "Cursed Blood",
+        "slug": "cursed-blood",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707435,
+        "spell_ids": [
+          707435
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Taldaram's Torment</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target.",
+        "description": "Damage dealt by Taldaram's Torment now has a 20% chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707435,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Taldaram's Torment</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target.",
+            "description": "Damage dealt by Taldaram's Torment now has a 20% chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target."
+          }
+        ],
+        "connections": [
+          33701,
+          33741
+        ],
+        "choice_group": 707435,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_CurseOfTounges",
+          "key": "spell_shadow_curseoftounges",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30292,
+        "name": "Corrupted Blood",
+        "slug": "corrupted-blood",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704692,
+        "spell_ids": [
+          704692
+        ],
+        "description_html": "When you use <span style=\"color: #ffffff; display: inline\">Taldaram's Torment</span> on a Humanoid or Beast it now corrupts their blood, increasing your damage dealt against them by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "When you use Taldaram's Torment on a Humanoid or Beast it now corrupts their blood, increasing your damage dealt against them by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704692,
+            "description_html": "When you use <span style=\"color: #ffffff; display: inline\">Taldaram's Torment</span> on a Humanoid or Beast it now corrupts their blood, increasing your damage dealt against them by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "When you use Taldaram's Torment on a Humanoid or Beast it now corrupts their blood, increasing your damage dealt against them by 10%."
+          }
+        ],
+        "connections": [
+          33701,
+          33741
+        ],
+        "choice_group": 707435,
+        "icon": {
+          "source_path": "Interface\\Icons\\artifactability_blooddeathknight_umbilicuseternus",
+          "key": "artifactability_blooddeathknight_umbilicuseternus",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6848,
+        "name": "Bloodsurge",
+        "slug": "bloodsurge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 553267,
+        "spell_ids": [
+          553267
+        ],
+        "description_html": "$8b",
+        "description": "$8b",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 553267,
+            "description_html": "$8c",
+            "description": "$8c"
+          }
+        ],
+        "connections": [
+          33741
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SkullCurse2_Red",
+          "key": "skullcurse2_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30848,
+        "name": "Dark Sigil",
+        "slug": "dark-sigil",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560535,
+        "spell_ids": [
+          560535
+        ],
+        "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, you now heal for <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of all critical damage dealt.",
+        "description": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, you now heal for 15% of all critical damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560535,
+            "description_html": "Increases critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, you now heal for <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of all critical damage dealt.",
+            "description": "Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, you now heal for 15% of all critical damage dealt."
+          }
+        ],
+        "connections": [
+          33707
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_HearthStoneDark_DeathKnight",
+          "key": "hearthstonedark_deathknight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33708,
+        "name": "Gore Barrage",
+        "slug": "gore-barrage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807345,
+        "spell_ids": [
+          807345
+        ],
+        "description_html": "Reduces the cost of spells that cost health and <span style=\"color: #ffffff; display: inline\">Animated Blood</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cost of spells that cost health and Animated Blood by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807345,
+            "description_html": "Reduces the cost of spells that cost health and <span style=\"color: #ffffff; display: inline\">Animated Blood</span> by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cost of spells that cost health and Animated Blood by -30%."
+          }
+        ],
+        "connections": [
+          11419,
+          30419
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_BloodSpikes_Border",
+          "key": "custom_t_bloodspikes_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7303,
+        "name": "Crimson Expedition",
+        "slug": "crimson-expedition",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 523727,
+        "spell_ids": [
+          523727
+        ],
+        "description_html": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Bloodbolt</span>, <span style=\"color: #ffffff; display: inline\">Blood Shards</span>, and <span style=\"color: #ffffff; display: inline\">Aortic Assault</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of your Bloodbolt, Blood Shards, and Aortic Assault by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 523727,
+            "description_html": "Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Bloodbolt</span>, <span style=\"color: #ffffff; display: inline\">Blood Shards</span>, and <span style=\"color: #ffffff; display: inline\">Aortic Assault</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of your Bloodbolt, Blood Shards, and Aortic Assault by 10%."
+          }
+        ],
+        "connections": [
+          11419,
+          11444,
+          30294,
+          30419
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_CriticalStrike",
+          "key": "ability_criticalstrike",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33744,
+        "name": "Killer Instinct",
+        "slug": "killer-instinct",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704690,
+        "spell_ids": [
+          704690
+        ],
+        "description_html": "Each point of Rage now increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Veinburst</span> and <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">0.5</span><span class=\"item-number\">%</span>, up to a maximum of <span class=\"item-number\">50%</span>.",
+        "description": "Each point of Rage now increases the critical strike chance of Veinburst and Reave by 0.5%, up to a maximum of 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704690,
+            "description_html": "Each point of Rage now increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Veinburst</span> and <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">0.5</span><span class=\"item-number\">%</span>, up to a maximum of <span class=\"item-number\">50%</span>.",
+            "description": "Each point of Rage now increases the critical strike chance of Veinburst and Reave by 0.5%, up to a maximum of 50%."
+          }
+        ],
+        "connections": [
+          6848,
+          29878,
+          30292
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_roilingblood",
+          "key": "ability_deathknight_roilingblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30864,
+        "name": "Crimson Feast",
+        "slug": "crimson-feast",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804602,
+        "spell_ids": [
+          804602
+        ],
+        "description_html": "Every <span class=\"item-number\">5</span> second you remain in a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Bloodsurge</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Every 5 second you remain in a Cursed Form now reduces the cooldown of your Bloodsurge by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804602,
+            "description_html": "Every <span class=\"item-number\">5</span> second you remain in a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Bloodsurge</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Every 5 second you remain in a Cursed Form now reduces the cooldown of your Bloodsurge by -5 sec."
+          }
+        ],
+        "connections": [
+          6848
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_blood_grawl_Border",
+          "key": "nhi_blood_grawl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7411,
+        "name": "Endure the Curse",
+        "slug": "endure-the-curse",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681190,
+        "spell_ids": [
+          681190
+        ],
+        "description_html": "Reduce all damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />While active, taking damage that would reduce your health below <span class=\"item-number\">10%</span> will instantly heal you for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum health. Can only occur once.",
+        "description": "Reduce all damage taken by -30% for 10 seconds.\n\nWhile active, taking damage that would reduce your health below 10% will instantly heal you for 30% of your maximum health. Can only occur once.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681190,
+            "description_html": "Reduce all damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />While active, taking damage that would reduce your health below <span class=\"item-number\">10%</span> will instantly heal you for <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum health. Can only occur once.",
+            "description": "Reduce all damage taken by -30% for 10 seconds.\n\nWhile active, taking damage that would reduce your health below 10% will instantly heal you for 30% of your maximum health. Can only occur once."
+          }
+        ],
+        "connections": [
+          6848,
+          30848,
+          33708
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sulfurelemental_blood",
+          "key": "inv_sulfurelemental_blood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7294,
+        "name": "Dark Frenzy",
+        "slug": "dark-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704644,
+        "spell_ids": [
+          704644
+        ],
+        "description_html": "Increases spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, while a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> is active, your global cooldowns are reduced by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, while a Cursed Form is active, your global cooldowns are reduced by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704644,
+            "description_html": "Increases spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, while a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> is active, your global cooldowns are reduced by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, while a Cursed Form is active, your global cooldowns are reduced by -25%."
+          }
+        ],
+        "connections": [
+          33708
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Warlock_PlaieFuneste1",
+          "key": "warlock_plaiefuneste1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30293,
+        "name": "Clotting",
+        "slug": "clotting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704115,
+        "spell_ids": [
+          704115
+        ],
+        "description_html": "At the end of <span style=\"color: #ffffff; display: inline\">Aortic Assault</span>'s duration, all enemies in a <span class=\"item-number\">10</span> yd frontal cone suffer <span class=\"item-number\">600</span> + <span class=\"item-number\">50% AP</span> Physical damage.<br /><br />Damage dealt by this effect is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> against bleeding targets.",
+        "description": "At the end of Aortic Assault's duration, all enemies in a 10 yd frontal cone suffer 600 + 50% AP Physical damage.\n\nDamage dealt by this effect is increased by 25% against bleeding targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704115,
+            "description_html": "At the end of <span style=\"color: #ffffff; display: inline\">Aortic Assault</span>'s duration, all enemies in a <span class=\"item-number\">10</span> yd frontal cone suffer <span class=\"item-number\">600</span> + <span class=\"item-number\">50% AP</span> Physical damage.<br /><br />Damage dealt by this effect is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> against bleeding targets.",
+            "description": "At the end of Aortic Assault's duration, all enemies in a 10 yd frontal cone suffer 600 + 50% AP Physical damage.\n\nDamage dealt by this effect is increased by 25% against bleeding targets."
+          }
+        ],
+        "connections": [
+          7303,
+          33708
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_hand_1h_pvpdraenors2_d_01",
+          "key": "inv_hand_1h_pvpdraenors2_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4129,
+        "name": "Relentless",
+        "slug": "relentless",
+        "entry_type": "ability",
+        "node_shape": "hex",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 704652,
+        "spell_ids": [
+          704652
+        ],
+        "description_html": "$89",
+        "description": "$89",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704652,
+            "description_html": "$8a",
+            "description": "$8a"
+          }
+        ],
+        "connections": [
+          4128
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shoulder_mail_pvphunter_g_01",
+          "key": "inv_shoulder_mail_pvphunter_g_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 33746,
+        "name": "Everlasting Hunt",
+        "slug": "everlasting-hunt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804686,
+        "spell_ids": [
+          804686
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Blood Shards</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Veinburst</span> and <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">-1.5</span> sec.",
+        "description": "Damage dealt by Blood Shards now reduces the cooldown of Veinburst and Reave by -1.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804686,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Blood Shards</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Veinburst</span> and <span style=\"color: #ffffff; display: inline\">Reave</span> by <span class=\"item-number\">-1.5</span> sec.",
+            "description": "Damage dealt by Blood Shards now reduces the cooldown of Veinburst and Reave by -1.5 sec."
+          }
+        ],
+        "connections": [
+          30864,
+          33744
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_RapidKilling",
+          "key": "ability_hunter_rapidkilling",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30420,
+        "name": "One Man's Curse...",
+        "slug": "one-mans-curse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680661,
+        "spell_ids": [
+          680661
+        ],
+        "description_html": "Removes the health cost of <span style=\"color: #ffffff; display: inline\">Accursed Form</span> and entering it now instantly restores <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum health.",
+        "description": "Removes the health cost of Accursed Form and entering it now instantly restores 15% of your maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680661,
+            "description_html": "Removes the health cost of <span style=\"color: #ffffff; display: inline\">Accursed Form</span> and entering it now instantly restores <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your maximum health.",
+            "description": "Removes the health cost of Accursed Form and entering it now instantly restores 15% of your maximum health."
+          }
+        ],
+        "connections": [
+          7411,
+          30864
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_BloodDrop_Border",
+          "key": "custom_t_nhance_rpg_icons_blooddrop_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30202,
+        "name": "Battleweaver",
+        "slug": "battleweaver",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801963,
+        "spell_ids": [
+          801963
+        ],
+        "description_html": "Casting <span style=\"color: #a966f0; display: inline\">Cursed Form</span> abilities now has a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span> for <span class=\"item-number\">10</span> minutes, up to <span class=\"item-number\">8</span>.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> will launch <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span>, dealing <span class=\"item-number\">18</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% SP</span> Spellshadow damage to your target.",
+        "description": "Casting Cursed Form abilities now has a 50% chance to generate 1 Blood Shard for 10 minutes, up to 8.\n\nDealing damage with Bloodbolt will launch 1 Blood Shard, dealing 18 + 5% AP + 10% SP Spellshadow damage to your target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801963,
+            "description_html": "Casting <span style=\"color: #a966f0; display: inline\">Cursed Form</span> abilities now has a <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span> for <span class=\"item-number\">10</span> minutes, up to <span class=\"item-number\">8</span>.<br /><br />Dealing damage with <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> will launch <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span>, dealing <span class=\"item-number\">18</span> + <span class=\"item-number\">5% AP</span> + <span class=\"item-number\">10% SP</span> Spellshadow damage to your target.",
+            "description": "Casting Cursed Form abilities now has a 50% chance to generate 1 Blood Shard for 10 minutes, up to 8.\n\nDealing damage with Bloodbolt will launch 1 Blood Shard, dealing 18 + 5% AP + 10% SP Spellshadow damage to your target."
+          }
+        ],
+        "connections": [
+          7294,
+          7411
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_charredremains",
+          "key": "warlock_charredremains",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33742,
+        "name": "Inhumane",
+        "slug": "inhumane",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807488,
+        "spell_ids": [
+          807488
+        ],
+        "description_html": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Aortic Assault</span> will now launch <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span>, dealing <span class=\"item-number\">18</span> + <span class=\"item-number\">15% AP</span> + <span class=\"item-number\">35% SP</span> Spellshadow damage to your target.",
+        "description": "Dealing damage with Aortic Assault will now launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Spellshadow damage to your target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807488,
+            "description_html": "Dealing damage with <span style=\"color: #FFFFFF; display: inline\">Aortic Assault</span> will now launch <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Blood Shard</span>, dealing <span class=\"item-number\">18</span> + <span class=\"item-number\">15% AP</span> + <span class=\"item-number\">35% SP</span> Spellshadow damage to your target.",
+            "description": "Dealing damage with Aortic Assault will now launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Spellshadow damage to your target."
+          }
+        ],
+        "connections": [
+          7294,
+          30293
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_breaker_darmac",
+          "key": "achievement_boss_breaker_darmac",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7662,
+        "name": "Night Hunter",
+        "slug": "night-hunter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704659,
+        "spell_ids": [
+          704659
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Veinburst</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to not trigger a cooldown when cast.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund half of its Rage cost when cast.",
+        "description": "Your Veinburst now has a 40% chance to not trigger a cooldown when cast.\n\nYour Bloodbolt now has a 40% chance to refund half of its Rage cost when cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704659,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Veinburst</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to not trigger a cooldown when cast.<br /><br />Your <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund half of its Rage cost when cast.",
+            "description": "Your Veinburst now has a 40% chance to not trigger a cooldown when cast.\n\nYour Bloodbolt now has a 40% chance to refund half of its Rage cost when cast."
+          }
+        ],
+        "connections": [
+          30420,
+          33746
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_nethercloak",
+          "key": "spell_shadow_nethercloak",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31251,
+        "name": "Blood Scent",
+        "slug": "blood-scent",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804223,
+        "spell_ids": [
+          804223
+        ],
+        "description_html": "While in <span style=\"color: #ffffff; display: inline\">Accursed Form</span>, you now deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> increased damage to targets below <span class=\"item-number\">35%</span> maximum health.<br /><br />Dealing direct damage to enemies below <span class=\"item-number\">35%</span> maximum health now leeches health equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt.",
+        "description": "While in Accursed Form, you now deal 15% increased damage to targets below 35% maximum health.\n\nDealing direct damage to enemies below 35% maximum health now leeches health equal to 10% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804223,
+            "description_html": "While in <span style=\"color: #ffffff; display: inline\">Accursed Form</span>, you now deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> increased damage to targets below <span class=\"item-number\">35%</span> maximum health.<br /><br />Dealing direct damage to enemies below <span class=\"item-number\">35%</span> maximum health now leeches health equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt.",
+            "description": "While in Accursed Form, you now deal 15% increased damage to targets below 35% maximum health.\n\nDealing direct damage to enemies below 35% maximum health now leeches health equal to 10% of the damage dealt."
+          }
+        ],
+        "connections": [
+          30202,
+          30420
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Physical_Taunt",
+          "key": "ability_physical_taunt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6510,
+        "name": "Ultra Instinct",
+        "slug": "ultra-instinct",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704654,
+        "spell_ids": [
+          704654
+        ],
+        "description_html": "Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> sec, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Each additional critical strike increases this by an additional <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, but reduces its duration by <span class=\"item-number\">-1</span> sec.",
+        "description": "Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by 3% for 10 sec, stacking up to 10 times.\n\nEach additional critical strike increases this by an additional 3%, but reduces its duration by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704654,
+            "description_html": "Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> sec, stacking up to <span class=\"item-number\">10</span> times.<br /><br />Each additional critical strike increases this by an additional <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, but reduces its duration by <span class=\"item-number\">-1</span> sec.",
+            "description": "Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by 3% for 10 sec, stacking up to 10 times.\n\nEach additional critical strike increases this by an additional 3%, but reduces its duration by -1 sec."
+          }
+        ],
+        "connections": [
+          30202,
+          33742
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Druid_PredatoryInstincts",
+          "key": "ability_druid_predatoryinstincts",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4306,
+        "name": "The Hunter and the Hunted",
+        "slug": "the-hunter-and-the-hunted",
+        "entry_type": "ability",
+        "node_shape": "hex",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 807487,
+        "spell_ids": [
+          807487
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />When you activate a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> you now charge to your target if they are within <span class=\"item-number\">20</span> yds. If they're an enemy you root them for <span class=\"item-number\">2</span> seconds.<br /><br />Upon expiration, your <span style=\"color: #ffffff; display: inline\">Accursed Form</span> can be reactivated to cause you to erupt in a burst of blood magic, leeching <span class=\"item-number\">364</span> + <span class=\"item-number\">33% shadow SP</span> + <span class=\"item-number\">12.5% AP</span> health from nearby enemies and teleporting you backwards.",
+        "description": "Level 50 Passive\nWhen you activate a Cursed Form you now charge to your target if they are within 20 yds. If they're an enemy you root them for 2 seconds.\n\nUpon expiration, your Accursed Form can be reactivated to cause you to erupt in a burst of blood magic, leeching 364 + 33% shadow SP + 12.5% AP health from nearby enemies and teleporting you backwards.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807487,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />When you activate a <span style=\"color: #a966f0; display: inline\">Cursed Form</span> you now charge to your target if they are within <span class=\"item-number\">20</span> yds. If they're an enemy you root them for <span class=\"item-number\">2</span> seconds.<br /><br />Upon expiration, your <span style=\"color: #ffffff; display: inline\">Accursed Form</span> can be reactivated to cause you to erupt in a burst of blood magic, leeching <span class=\"item-number\">364</span> + <span class=\"item-number\">33% shadow SP</span> + <span class=\"item-number\">12.5% AP</span> health from nearby enemies and teleporting you backwards.",
+            "description": "Level 50 Passive\nWhen you activate a Cursed Form you now charge to your target if they are within 20 yds. If they're an enemy you root them for 2 seconds.\n\nUpon expiration, your Accursed Form can be reactivated to cause you to erupt in a burst of blood magic, leeching 364 + 33% shadow SP + 12.5% AP health from nearby enemies and teleporting you backwards."
+          }
+        ],
+        "connections": [
+          4129
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_blood_aura_Border",
+          "key": "nhi_blood_aura_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30421,
+        "name": "Hemoburst",
+        "slug": "hemoburst",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572855,
+        "spell_ids": [
+          572855
+        ],
+        "description_html": "Requires Mortal Form</span><br />Unleash a powerful burst of blood at an enemy, dealing <span class=\"item-number\">1480</span> + <span class=\"item-number\">65% AP</span> + <span class=\"item-number\">50% SP</span> Shadow damage. This ability is guaranteed to critically strike against bleeding targets.<br /><br />Extends the duration of your next <span style=\"color: #a966f0; display: inline\">Cursed Form</span> by <span class=\"item-number\">5</span> sec for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+        "description": "Requires Mortal Form\nUnleash a powerful burst of blood at an enemy, dealing 1480 + 65% AP + 50% SP Shadow damage. This ability is guaranteed to critically strike against bleeding targets.\n\nExtends the duration of your next Cursed Form by 5 sec for 30 seconds, stacking 2 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572855,
+            "description_html": "Requires Mortal Form</span><br />Unleash a powerful burst of blood at an enemy, dealing <span class=\"item-number\">1480</span> + <span class=\"item-number\">65% AP</span> + <span class=\"item-number\">50% SP</span> Shadow damage. This ability is guaranteed to critically strike against bleeding targets.<br /><br />Extends the duration of your next <span style=\"color: #a966f0; display: inline\">Cursed Form</span> by <span class=\"item-number\">5</span> sec for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">2</span> times.",
+            "description": "Requires Mortal Form\nUnleash a powerful burst of blood at an enemy, dealing 1480 + 65% AP + 50% SP Shadow damage. This ability is guaranteed to critically strike against bleeding targets.\n\nExtends the duration of your next Cursed Form by 5 sec for 30 seconds, stacking 2 times."
+          }
+        ],
+        "connections": [
+          7662
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodbolt_Border",
+          "key": "nhi_bloodbolt_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30418,
+        "name": "Final Embrace",
+        "slug": "final-embrace",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524865,
+        "spell_ids": [
+          524865
+        ],
+        "description_html": "$8f",
+        "description": "$8f",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524865,
+            "description_html": "$90",
+            "description": "$90"
+          }
+        ],
+        "connections": [
+          6510,
+          7662,
+          31251
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_bloodmaw_Border",
+          "key": "nhi_bloodmaw_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30342,
+        "name": "Darkcasting",
+        "slug": "darkcasting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 52,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706247,
+        "spell_ids": [
+          706247
+        ],
+        "description_html": "$8d",
+        "description": "$8d",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706247,
+            "description_html": "$8e",
+            "description": "$8e"
+          }
+        ],
+        "connections": [
+          6510
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_DevouringShadow_Red",
+          "key": "devouringshadow_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

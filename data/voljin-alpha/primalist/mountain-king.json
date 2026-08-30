@@ -1,0 +1,2408 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:22+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:4e5fda361a3601fbc3b7159c2f283fcf6a9a733702db792027cc0b08e3c89337",
+    "talent_count": 203,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 31,
+    "name": "Primalist",
+    "slug": "primalist",
+    "class_file": "wildwalker",
+    "color": "rgb(227, 140, 89)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:wildwalker",
+      "key": "class-wildwalker",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 46,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 91,
+    "name": "Mountain King",
+    "slug": "mountain-king",
+    "sort_order": 0,
+    "class_id": 31,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 7488,
+        "name": "Quake",
+        "slug": "quake",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803974,
+        "spell_ids": [
+          803974
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">8</span> sec recharge</span><br />Stomp the ground, dealing Weapon Damage plus <span class=\"item-number\">13</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage to enemies within <span class=\"item-number\">8</span> yds and reduces their melee and ranged haste by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "2 Charges, 8 sec recharge\nStomp the ground, dealing Weapon Damage plus 13 + 20% nature SP + 10% AP Nature damage to enemies within 8 yds and reduces their melee and ranged haste by -20% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803974,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">8</span> sec recharge</span><br />Stomp the ground, dealing Weapon Damage plus <span class=\"item-number\">13</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage to enemies within <span class=\"item-number\">8</span> yds and reduces their melee and ranged haste by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "2 Charges, 8 sec recharge\nStomp the ground, dealing Weapon Damage plus 13 + 20% nature SP + 10% AP Nature damage to enemies within 8 yds and reduces their melee and ranged haste by -20% for 10 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_earthquake",
+          "key": "spell_shaman_earthquake",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4064,
+        "name": "Mountain Giant",
+        "slug": "mountain-giant",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30254
+          ]
+        },
+        "spell_id": 680395,
+        "spell_ids": [
+          680395
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Aftershock</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthshock_border\" /><span class=\"name\">Aftershock</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Earthquake</span> within <span class=\"item-number\">15</span> seconds is now instant cast and costs <span class=\"item-number\">-75</span><span class=\"item-number\">%</span> less.</span></div>",
+        "description": "Level 10 Passive\nAuto attacks now have a 20% chance to grant you Aftershock.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680395,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Aftershock</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthshock_border\" /><span class=\"name\">Aftershock</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Earthquake</span> within <span class=\"item-number\">15</span> seconds is now instant cast and costs <span class=\"item-number\">-75</span><span class=\"item-number\">%</span> less.</span></div>",
+            "description": "Level 10 Passive\nAuto attacks now have a 20% chance to grant you Aftershock.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Devotion",
+          "key": "spell_holy_devotion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7514,
+        "name": "Unyielding Form",
+        "slug": "unyielding-form",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706161,
+        "spell_ids": [
+          706161,
+          707808
+        ],
+        "description_html": "Increases your parry and dodge chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your Armor contribution from mail and plate by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your parry and dodge chance by 3% and your Armor contribution from mail and plate by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706161,
+            "description_html": "Increases your parry and dodge chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your Armor contribution from mail and plate by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your parry and dodge chance by 3% and your Armor contribution from mail and plate by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707808,
+            "description_html": "Increases your parry and dodge chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and your Armor contribution from mail and plate by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your parry and dodge chance by 6% and your Armor contribution from mail and plate by 50%."
+          }
+        ],
+        "connections": [
+          7488
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_StoneSkinTotem",
+          "key": "spell_nature_stoneskintotem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7507,
+        "name": "Seismically Efficient",
+        "slug": "seismically-efficient",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680413,
+        "spell_ids": [
+          680413
+        ],
+        "description_html": "Increases the Rage generated from <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> by <span class=\"item-number\">5</span> and <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> by <span class=\"item-number\">2</span>.",
+        "description": "Increases the Rage generated from Seismic Crash by 5 and Seismic Spike by 2.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680413,
+            "description_html": "Increases the Rage generated from <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> by <span class=\"item-number\">5</span> and <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> by <span class=\"item-number\">2</span>.",
+            "description": "Increases the Rage generated from Seismic Crash by 5 and Seismic Spike by 2."
+          }
+        ],
+        "connections": [
+          7514
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pet_pandarenelementa_earthl",
+          "key": "inv_pet_pandarenelementa_earthl",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7501,
+        "name": "Stone Soldier",
+        "slug": "stone-soldier",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570157,
+        "spell_ids": [
+          570157,
+          570225
+        ],
+        "description_html": "Increases the damage of your off hand weapon by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of your off hand weapon by 30% and your chance to hit by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570157,
+            "description_html": "Increases the damage of your off hand weapon by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your off hand weapon by 30% and your chance to hit by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 570225,
+            "description_html": "Increases the damage of your off hand weapon by <span class=\"item-number\">60</span><span class=\"item-number\">%</span> and your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your off hand weapon by 60% and your chance to hit by 6%."
+          }
+        ],
+        "connections": [
+          7514
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_challengemode_blackrockdepot_silver",
+          "key": "achievement_challengemode_blackrockdepot_silver",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9214,
+        "name": "King of the Mountain",
+        "slug": "king-of-the-mountain",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 570183,
+        "spell_ids": [
+          570183
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your parry, dodge, and haste rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Strength and your attack power by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Stamina.",
+        "description": "Level 20 Passive\nIncreases your parry, dodge, and haste rating by 15% of your Strength and your attack power by 30% of your Stamina.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570183,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your parry, dodge, and haste rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Strength and your attack power by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Stamina.",
+            "description": "Level 20 Passive\nIncreases your parry, dodge, and haste rating by 15% of your Strength and your attack power by 30% of your Stamina."
+          }
+        ],
+        "connections": [
+          4064
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_Mountaineer",
+          "key": "ability_racial_mountaineer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7516,
+        "name": "Spiritbound",
+        "slug": "spiritbound",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681364,
+        "spell_ids": [
+          681364
+        ],
+        "description_html": "Avoiding attacks now grants you <span class=\"item-number\">5</span> Rage and reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">-1</span> sec.",
+        "description": "Avoiding attacks now grants you 5 Rage and reduces the cooldown of your Seismic abilities by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681364,
+            "description_html": "Avoiding attacks now grants you <span class=\"item-number\">5</span> Rage and reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">-1</span> sec.",
+            "description": "Avoiding attacks now grants you 5 Rage and reduces the cooldown of your Seismic abilities by -1 sec."
+          }
+        ],
+        "connections": [
+          7507
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_shaman_freedomwolf",
+          "key": "ability_shaman_freedomwolf",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7493,
+        "name": "Mountain Hammer",
+        "slug": "mountain-hammer",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681130,
+        "spell_ids": [
+          681130
+        ],
+        "description_html": "Throw a hammer at an enemy dealing <span class=\"item-number\">49</span> + <span class=\"item-number\">35.5% nature SP</span> + <span class=\"item-number\">15.5% AP</span> Physical damage and stunning them for <span class=\"item-number\">5</span> seconds.",
+        "description": "Throw a hammer at an enemy dealing 49 + 35.5% nature SP + 15.5% AP Physical damage and stunning them for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681130,
+            "description_html": "Throw a hammer at an enemy dealing <span class=\"item-number\">49</span> + <span class=\"item-number\">35.5% nature SP</span> + <span class=\"item-number\">15.5% AP</span> Physical damage and stunning them for <span class=\"item-number\">5</span> seconds.",
+            "description": "Throw a hammer at an enemy dealing 49 + 35.5% nature SP + 15.5% AP Physical damage and stunning them for 5 seconds."
+          }
+        ],
+        "connections": [
+          7501,
+          7507
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_HammerThrow_Border",
+          "key": "custom_t_hammerthrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7492,
+        "name": "Blessed by the Earth",
+        "slug": "blessed-by-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300695,
+        "spell_ids": [
+          300695
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Primal Rush</span> and <span style=\"color: #ffffff; display: inline\">Quake</span> now grant <span style=\"color: #ffffff; display: inline\">Earth's Rage</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_archaeology_70_tauren_handsmoothedpyrestone\" /><span class=\"name\">Earth&#39;s Rage</span></div><span class=\"desc\">Increases movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Damage dealt by Primal Rush and Quake now grant Earth's Rage.Earth's RageIncreases movement speed by 4% and haste by 3% for 8 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300695,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Primal Rush</span> and <span style=\"color: #ffffff; display: inline\">Quake</span> now grant <span style=\"color: #ffffff; display: inline\">Earth's Rage</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_archaeology_70_tauren_handsmoothedpyrestone\" /><span class=\"name\">Earth&#39;s Rage</span></div><span class=\"desc\">Increases movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Damage dealt by Primal Rush and Quake now grant Earth's Rage.Earth's RageIncreases movement speed by 4% and haste by 3% for 8 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          7501
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3earthquake",
+          "key": "d3earthquake",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7494,
+        "name": "Bash",
+        "slug": "bash",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680964,
+        "spell_ids": [
+          680964
+        ],
+        "description_html": "Your auto attacks have a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage and stun enemies for <span class=\"item-number\">1</span> seconds.",
+        "description": "Your auto attacks have a 30% chance to deal 100% Weapon Damage and stun enemies for 1 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680964,
+            "description_html": "Your auto attacks have a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">100</span><span class=\"item-number\">%</span> Weapon Damage and stun enemies for <span class=\"item-number\">1</span> seconds.",
+            "description": "Your auto attacks have a 30% chance to deal 100% Weapon Damage and stun enemies for 1 seconds."
+          }
+        ],
+        "connections": [
+          7516
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\mountainking_Bash",
+          "key": "mountainking_bash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7527,
+        "name": "Everythings A Nail",
+        "slug": "everythings-a-nail",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680405,
+        "spell_ids": [
+          680405
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Mountain Hammer by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680405,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Mountain Hammer by 50%."
+          }
+        ],
+        "connections": [
+          7493
+        ],
+        "choice_group": 681435,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_hammer_29",
+          "key": "inv_hammer_29",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13527,
+        "name": "Hammer Time!",
+        "slug": "hammer-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681435,
+        "spell_ids": [
+          681435
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> now strikes up to <span class=\"item-number\">5</span> enemies.",
+        "description": "Your Mountain Hammer now strikes up to 5 enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681435,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> now strikes up to <span class=\"item-number\">5</span> enemies.",
+            "description": "Your Mountain Hammer now strikes up to 5 enemies."
+          }
+        ],
+        "connections": [
+          7493
+        ],
+        "choice_group": 681435,
+        "icon": {
+          "source_path": "Interface\\Icons\\mace_2h_tyrshammer_d_01",
+          "key": "mace_2h_tyrshammer_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7510,
+        "name": "Thane's Guidance",
+        "slug": "thanes-guidance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680410,
+        "spell_ids": [
+          680410
+        ],
+        "description_html": "Auto attacks now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Auto attacks now reduce the cooldown of Mountain Hammer and Primal Rush by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680410,
+            "description_html": "Auto attacks now reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Auto attacks now reduce the cooldown of Mountain Hammer and Primal Rush by -1 sec."
+          }
+        ],
+        "connections": [
+          7493
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Dungeon_UlduarRaid_IronDwarf_01",
+          "key": "achievement_dungeon_ulduarraid_irondwarf_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7515,
+        "name": "Stonebound",
+        "slug": "stonebound",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680415,
+        "spell_ids": [
+          680415
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Boon of the Turtle</span> and <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Boon of the Turtle and Earth's Rage by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680415,
+            "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Boon of the Turtle</span> and <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Boon of the Turtle and Earth's Rage by 50%."
+          }
+        ],
+        "connections": [
+          7492
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_hearthstonecard_legendary",
+          "key": "inv_misc_hearthstonecard_legendary",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9215,
+        "name": "Stone Skin",
+        "slug": "stone-skin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 806583,
+        "spell_ids": [
+          806583
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />You are now immune to bleeds and your <span style=\"color: #ffffff; display: inline\">Geode Barrage</span>, <span style=\"color: #ffffff; display: inline\">Geode</span>, and <span style=\"color: #FFFFFF; display: inline\">Seismic</span> ability damage now additionally scales with your parry rating.",
+        "description": "Level 30 Passive\nYou are now immune to bleeds and your Geode Barrage, Geode, and Seismic ability damage now additionally scales with your parry rating.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806583,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />You are now immune to bleeds and your <span style=\"color: #ffffff; display: inline\">Geode Barrage</span>, <span style=\"color: #ffffff; display: inline\">Geode</span>, and <span style=\"color: #FFFFFF; display: inline\">Seismic</span> ability damage now additionally scales with your parry rating.",
+            "description": "Level 30 Passive\nYou are now immune to bleeds and your Geode Barrage, Geode, and Seismic ability damage now additionally scales with your parry rating."
+          }
+        ],
+        "connections": [
+          9214
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_sumstonearmy_Border",
+          "key": "_5_sumstonearmy_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7487,
+        "name": "Tilling the Earth",
+        "slug": "tilling-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680409,
+        "spell_ids": [
+          680409,
+          681375
+        ],
+        "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Bash</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and increases your expertise by <span class=\"item-number\">5</span>.",
+        "description": "Increases the chance to trigger Bash by 3% and increases your expertise by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680409,
+            "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Bash</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and increases your expertise by <span class=\"item-number\">5</span>.",
+            "description": "Increases the chance to trigger Bash by 3% and increases your expertise by 5."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681375,
+            "description_html": "Increases the chance to trigger <span style=\"color: #ffffff; display: inline\">Bash</span> by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and increases your expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases the chance to trigger Bash by 6% and increases your expertise by 10."
+          }
+        ],
+        "connections": [
+          7494
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_unleashweapon_earth",
+          "key": "spell_shaman_unleashweapon_earth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7528,
+        "name": "Raging Earth",
+        "slug": "raging-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706622,
+        "spell_ids": [
+          706622
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Quake</span> now creates a fissure beneath you that deals an additional <span class=\"item-number\">173</span> + <span class=\"item-number\">8% AP</span> Nature damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds.",
+        "description": "Your Quake now creates a fissure beneath you that deals an additional 173 + 8% AP Nature damage every 2 sec for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706622,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Quake</span> now creates a fissure beneath you that deals an additional <span class=\"item-number\">173</span> + <span class=\"item-number\">8% AP</span> Nature damage every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">6</span> seconds.",
+            "description": "Your Quake now creates a fissure beneath you that deals an additional 173 + 8% AP Nature damage every 2 sec for 6 seconds."
+          }
+        ],
+        "connections": [
+          7494,
+          7527,
+          13527
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturelighting_Border",
+          "key": "nhi_naturelighting_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7518,
+        "name": "Earthen Avatar",
+        "slug": "earthen-avatar",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680421,
+        "spell_ids": [
+          680421
+        ],
+        "description_html": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, and increasing your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Immune to stuns, roots, and snares for the duration.<br /><br />Usable while stunned.",
+        "description": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by 15%, and increasing your melee haste by 20% for 20 seconds.\n\nImmune to stuns, roots, and snares for the duration.\n\nUsable while stunned.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680421,
+            "description_html": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>, and increasing your melee haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Immune to stuns, roots, and snares for the duration.<br /><br />Usable while stunned.",
+            "description": "Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by 15%, and increasing your melee haste by 20% for 20 seconds.\n\nImmune to stuns, roots, and snares for the duration.\n\nUsable while stunned."
+          }
+        ],
+        "connections": [
+          7510,
+          7527,
+          13527
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_avatar",
+          "key": "ability_racial_avatar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7499,
+        "name": "Terrasmash",
+        "slug": "terrasmash",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706220,
+        "spell_ids": [
+          706220
+        ],
+        "description_html": "Damage dealt by your off hand weapon now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to launch a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>",
+        "description": "Damage dealt by your off hand weapon now has a 30% chance to launch a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706220,
+            "description_html": "Damage dealt by your off hand weapon now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to launch a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>",
+            "description": "Damage dealt by your off hand weapon now has a 30% chance to launch a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage."
+          }
+        ],
+        "connections": [
+          7510,
+          7515
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3hammeroftheancients",
+          "key": "d3hammeroftheancients",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7508,
+        "name": "Mountain Thane",
+        "slug": "mountain-thane",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680404,
+        "spell_ids": [
+          680404,
+          681479
+        ],
+        "description_html": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and causes <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> to stack <span class=\"item-number\">1</span> additional time.",
+        "description": "Increases your Stamina by 5% and causes Earth's Rage to stack 1 additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680404,
+            "description_html": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and causes <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> to stack <span class=\"item-number\">1</span> additional time.",
+            "description": "Increases your Stamina by 5% and causes Earth's Rage to stack 1 additional time."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681479,
+            "description_html": "Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and causes <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> to stack <span class=\"item-number\">1</span> additional time.",
+            "description": "Increases your Stamina by 10% and causes Earth's Rage to stack 1 additional time."
+          }
+        ],
+        "connections": [
+          7515
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievements_zone_highmountain",
+          "key": "achievements_zone_highmountain",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7513,
+        "name": "Earthbreaker",
+        "slug": "earthbreaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560147,
+        "spell_ids": [
+          560147
+        ],
+        "description_html": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases the threat generated by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Geodes</span> significantly.",
+        "description": "Increases your melee haste by 10% and increases the threat generated by Geode Barrage and Geodes significantly.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560147,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases the threat generated by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Geodes</span> significantly.",
+            "description": "Increases your melee haste by 10% and increases the threat generated by Geode Barrage and Geodes significantly."
+          }
+        ],
+        "connections": [
+          7487,
+          7528
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Zone_BladesEdgeMtns_01",
+          "key": "achievement_zone_bladesedgemtns_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7524,
+        "name": "Primal Guardian",
+        "slug": "primal-guardian",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300728,
+        "spell_ids": [
+          300728
+        ],
+        "description_html": "When <span style=\"color: #ffffff; display: inline\">Earthen Avatar</span>, <span style=\"color: #FFFFFF; display: inline\">Bearskin</span> or <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> is removed or expires, you now gain <span class=\"item-number\">10</span><span class=\"item-number\">%</span> melee haste and parry chance for <span class=\"item-number\">15</span> seconds.",
+        "description": "When Earthen Avatar, Bearskin or Rock Barrier is removed or expires, you now gain 10% melee haste and parry chance for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300728,
+            "description_html": "When <span style=\"color: #ffffff; display: inline\">Earthen Avatar</span>, <span style=\"color: #FFFFFF; display: inline\">Bearskin</span> or <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> is removed or expires, you now gain <span class=\"item-number\">10</span><span class=\"item-number\">%</span> melee haste and parry chance for <span class=\"item-number\">15</span> seconds.",
+            "description": "When Earthen Avatar, Bearskin or Rock Barrier is removed or expires, you now gain 10% melee haste and parry chance for 15 seconds."
+          }
+        ],
+        "connections": [
+          7518
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\icon_upgradestone_undead_legendary",
+          "key": "icon_upgradestone_undead_legendary",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7506,
+        "name": "Earthenforged Barrier",
+        "slug": "earthenforged-barrier",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680408,
+        "spell_ids": [
+          680408
+        ],
+        "description_html": "Increases the Armor provided by <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and it now reduces the cost of your spells and abilities by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> for the duration.",
+        "description": "Increases the Armor provided by Rock Barrier by 50% and it now reduces the cost of your spells and abilities by -25% for the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680408,
+            "description_html": "Increases the Armor provided by <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and it now reduces the cost of your spells and abilities by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> for the duration.",
+            "description": "Increases the Armor provided by Rock Barrier by 50% and it now reduces the cost of your spells and abilities by -25% for the duration."
+          }
+        ],
+        "connections": [
+          7499,
+          7508
+        ],
+        "choice_group": 236189,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_blackrockcaverns_ascendantlordobsidius",
+          "key": "achievement_dungeon_blackrockcaverns_ascendantlordobsidius",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11196,
+        "name": "Rock Solid",
+        "slug": "rock-solid",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681363,
+        "spell_ids": [
+          681363
+        ],
+        "description_html": "Increases the amount of charges of <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> by <span class=\"item-number\">5</span>.",
+        "description": "Increases the amount of charges of Rock Barrier by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681363,
+            "description_html": "Increases the amount of charges of <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> by <span class=\"item-number\">5</span>.",
+            "description": "Increases the amount of charges of Rock Barrier by 5."
+          }
+        ],
+        "connections": [
+          7499,
+          7508
+        ],
+        "choice_group": 236189,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_rockbiter",
+          "key": "spell_nature_rockbiter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9216,
+        "name": "Call of the Mountain",
+        "slug": "call-of-the-mountain",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 680406,
+        "spell_ids": [
+          680406
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Reaching <span class=\"item-number\">5</span> stacks of <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> now grants <span style=\"color: #ffffff; display: inline\">Call of the Mountain</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_02_border\" /><span class=\"name\">Call of the Mountain</span></div><span class=\"desc\">Increases your parry chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, reduces damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, and increases your damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Level 40 Passive\nReaching 5 stacks of Earth's Rage now grants Call of the Mountain.Call of the MountainIncreases your parry chance by 5%, reduces damage taken by -5%, and increases your damage dealt by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680406,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Reaching <span class=\"item-number\">5</span> stacks of <span style=\"color: #ffffff; display: inline\">Earth's Rage</span> now grants <span style=\"color: #ffffff; display: inline\">Call of the Mountain</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_02_border\" /><span class=\"name\">Call of the Mountain</span></div><span class=\"desc\">Increases your parry chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, reduces damage taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, and increases your damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Level 40 Passive\nReaching 5 stacks of Earth's Rage now grants Call of the Mountain.Call of the MountainIncreases your parry chance by 5%, reduces damage taken by -5%, and increases your damage dealt by 5%."
+          }
+        ],
+        "connections": [
+          9215
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_nature_spell_02_Border",
+          "key": "uico_nature_spell_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7805,
+        "name": "Quakeformer",
+        "slug": "quakeformer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680419,
+        "spell_ids": [
+          680419
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Wildclaw</span> and <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to refresh a charge of <span style=\"color: #ffffff; display: inline\">Quake</span>.",
+        "description": "Casting Wildclaw and Seismic abilities now has a 25% chance to refresh a charge of Quake.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680419,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Wildclaw</span> and <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to refresh a charge of <span style=\"color: #ffffff; display: inline\">Quake</span>.",
+            "description": "Casting Wildclaw and Seismic abilities now has a 25% chance to refresh a charge of Quake."
+          }
+        ],
+        "connections": [
+          7513
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_earthelemental_totem",
+          "key": "spell_nature_earthelemental_totem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7500,
+        "name": "Resources of the Earth",
+        "slug": "resources-of-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560548,
+        "spell_ids": [
+          560548
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your citical strikes now grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Increases your critical strike chance by 4% and your citical strikes now grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560548,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your citical strikes now grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Increases your critical strike chance by 4% and your citical strikes now grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds."
+          }
+        ],
+        "connections": [
+          7513
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_tradeskillitem_sorcererearth",
+          "key": "inv_tradeskillitem_sorcererearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7503,
+        "name": "Mountain Mover",
+        "slug": "mountain-mover",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805643,
+        "spell_ids": [
+          805643
+        ],
+        "description_html": "Avoiding an attack grants a stack of <span style=\"color: #ffffff; display: inline\">Mountain Mover</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br /><span style=\"color: #ffffff; display: inline\">Wildclaw</span> consumes <span style=\"color: #ffffff; display: inline\">Mountain Mover</span> stacks to cost <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> less Rage and deal <span class=\"item-number\">5</span><span class=\"item-number\">%</span> more damage per stack.",
+        "description": "Avoiding an attack grants a stack of Mountain Mover for 10 seconds, stacking 5 times.\n\nWildclaw consumes Mountain Mover stacks to cost -10% less Rage and deal 5% more damage per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805643,
+            "description_html": "Avoiding an attack grants a stack of <span style=\"color: #ffffff; display: inline\">Mountain Mover</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br /><span style=\"color: #ffffff; display: inline\">Wildclaw</span> consumes <span style=\"color: #ffffff; display: inline\">Mountain Mover</span> stacks to cost <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> less Rage and deal <span class=\"item-number\">5</span><span class=\"item-number\">%</span> more damage per stack.",
+            "description": "Avoiding an attack grants a stack of Mountain Mover for 10 seconds, stacking 5 times.\n\nWildclaw consumes Mountain Mover stacks to cost -10% less Rage and deal 5% more damage per stack."
+          }
+        ],
+        "connections": [
+          7524
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_highmaul_earthenfury",
+          "key": "achievement_boss_highmaul_earthenfury",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7502,
+        "name": "Improved Ursoc's Bellow",
+        "slug": "improved-ursocs-bellow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560505,
+        "spell_ids": [
+          560505
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Ursoc's Bellow</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Ursoc's Bellow by 40%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560505,
+            "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Ursoc's Bellow</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Ursoc's Bellow by 40%."
+          }
+        ],
+        "connections": [
+          7524
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mount_viciousalliancebearmount",
+          "key": "inv_mount_viciousalliancebearmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7517,
+        "name": "Fury of the Earthmother",
+        "slug": "fury-of-the-earthmother",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680412,
+        "spell_ids": [
+          680412
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Geodes</span> now generates increased threat and have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to add <span class=\"item-number\">1</span> charge to an active <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> and extend its duration by <span class=\"item-number\">1</span> sec.",
+        "description": "Damage dealt by Geode Barrage or Geodes now generates increased threat and have a 15% chance to add 1 charge to an active Rock Barrier and extend its duration by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680412,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Geodes</span> now generates increased threat and have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to add <span class=\"item-number\">1</span> charge to an active <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> and extend its duration by <span class=\"item-number\">1</span> sec.",
+            "description": "Damage dealt by Geode Barrage or Geodes now generates increased threat and have a 15% chance to add 1 charge to an active Rock Barrier and extend its duration by 1 sec."
+          }
+        ],
+        "connections": [
+          7506,
+          11196
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureempower_Border",
+          "key": "nhi_natureempower_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7505,
+        "name": "Earthmother's Protection",
+        "slug": "earthmothers-protection",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560298,
+        "spell_ids": [
+          560298
+        ],
+        "description_html": "While your <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> is active, the Rage cost of <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> is reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "While your Rock Barrier is active, the Rage cost of Hand of the Earthmother is reduced by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560298,
+            "description_html": "While your <span style=\"color: #ffffff; display: inline\">Rock Barrier</span> is active, the Rage cost of <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> is reduced by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "While your Rock Barrier is active, the Rage cost of Hand of the Earthmother is reduced by -50%."
+          }
+        ],
+        "connections": [
+          7506,
+          11196
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pet_pandarenelemental_earth",
+          "key": "inv_pet_pandarenelemental_earth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 8000,
+        "name": "Judgement of The Three Hammers",
+        "slug": "judgement-of-the-three-hammers",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520466,
+        "spell_ids": [
+          520466
+        ],
+        "description_html": "While active, dealing direct damage has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to hurl <span class=\"item-number\">3</span> hammers over <span class=\"item-number\">2</span> seconds, each dealing <span class=\"item-number\">100</span> + <span class=\"item-number\">32.5% SP</span> + <span class=\"item-number\">27.8% AP</span> Physical damage. Lasts for <span class=\"item-number\">15</span> seconds. <br /><br />Damage scales with damage modifiers to <span style=\"color: #FFFFFF; display: inline\">Mountain Hammer</span>.",
+        "description": "While active, dealing direct damage has a 20% chance to hurl 3 hammers over 2 seconds, each dealing 100 + 32.5% SP + 27.8% AP Physical damage. Lasts for 15 seconds.\n\nDamage scales with damage modifiers to Mountain Hammer.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520466,
+            "description_html": "While active, dealing direct damage has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to hurl <span class=\"item-number\">3</span> hammers over <span class=\"item-number\">2</span> seconds, each dealing <span class=\"item-number\">100</span> + <span class=\"item-number\">32.5% SP</span> + <span class=\"item-number\">27.8% AP</span> Physical damage. Lasts for <span class=\"item-number\">15</span> seconds. <br /><br />Damage scales with damage modifiers to <span style=\"color: #FFFFFF; display: inline\">Mountain Hammer</span>.",
+            "description": "While active, dealing direct damage has a 20% chance to hurl 3 hammers over 2 seconds, each dealing 100 + 32.5% SP + 27.8% AP Physical damage. Lasts for 15 seconds.\n\nDamage scales with damage modifiers to Mountain Hammer."
+          }
+        ],
+        "connections": [
+          7500,
+          7805
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_01",
+          "key": "inv_mace_1h_artifactdoomhammer_d_01",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7525,
+        "name": "Legacy of the Bronzebeards",
+        "slug": "legacy-of-the-bronzebeards",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680424,
+        "spell_ids": [
+          680424
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Earthen Avatar</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Earthen Avatar by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680424,
+            "description_html": "Increases the effectiveness of <span style=\"color: #FFFFFF; display: inline\">Earthen Avatar</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Earthen Avatar by 100%."
+          }
+        ],
+        "connections": [
+          7502,
+          7503
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_leader_king_magni_bronzebeard",
+          "key": "achievement_leader_king_magni_bronzebeard",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7519,
+        "name": "Mountain Fury",
+        "slug": "mountain-fury",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806185,
+        "spell_ids": [
+          806185
+        ],
+        "description_html": "Move the earth, dealing <span class=\"item-number\">892</span> + <span class=\"item-number\">65% SP</span> + <span class=\"item-number\">17% AP</span> + <span class=\"item-number\">125% Stamina</span> Physical damage to up to <span class=\"item-number\">12</span> enemies in a <span class=\"item-number\">10</span> yd frontal cone, pulling them toward you, repeating every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">4</span> seconds.<br /><br />Each time an enemy is pulled toward you, you gain <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> reduced damage taken for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+        "description": "Move the earth, dealing 892 + 65% SP + 17% AP + 125% Stamina Physical damage to up to 12 enemies in a 10 yd frontal cone, pulling them toward you, repeating every 2 sec for 4 seconds.\n\nEach time an enemy is pulled toward you, you gain -2% reduced damage taken for 3 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806185,
+            "description_html": "Move the earth, dealing <span class=\"item-number\">892</span> + <span class=\"item-number\">65% SP</span> + <span class=\"item-number\">17% AP</span> + <span class=\"item-number\">125% Stamina</span> Physical damage to up to <span class=\"item-number\">12</span> enemies in a <span class=\"item-number\">10</span> yd frontal cone, pulling them toward you, repeating every <span class=\"item-number\">2</span> sec for <span class=\"item-number\">4</span> seconds.<br /><br />Each time an enemy is pulled toward you, you gain <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> reduced damage taken for <span class=\"item-number\">3</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+            "description": "Move the earth, dealing 892 + 65% SP + 17% AP + 125% Stamina Physical damage to up to 12 enemies in a 10 yd frontal cone, pulling them toward you, repeating every 2 sec for 4 seconds.\n\nEach time an enemy is pulled toward you, you gain -2% reduced damage taken for 3 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          7505,
+          7517
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_earthwall_Border",
+          "key": "nhi_earthwall_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13216,
+        "name": "Mountain Avatar",
+        "slug": "mountain-avatar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 707616,
+        "spell_ids": [
+          707616
+        ],
+        "description_html": "$f1",
+        "description": "$f1",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707616,
+            "description_html": "$f2",
+            "description": "$f2"
+          }
+        ],
+        "connections": [
+          9216
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warrior_talent_icon_avatar",
+          "key": "warrior_talent_icon_avatar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 8001,
+        "name": "Shattering",
+        "slug": "shattering",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520469,
+        "spell_ids": [
+          520469
+        ],
+        "description_html": "Damage dealt by each hammer triggered by <span style=\"color: #FFFFFF; display: inline\">Judgment of The Three Hammers</span> now grants you <span class=\"item-number\">1</span><span class=\"item-number\">%</span> increased critical strike chance and damage for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">10</span> times.",
+        "description": "Damage dealt by each hammer triggered by Judgment of The Three Hammers now grants you 1% increased critical strike chance and damage for 10 seconds, stacking up to 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520469,
+            "description_html": "Damage dealt by each hammer triggered by <span style=\"color: #FFFFFF; display: inline\">Judgment of The Three Hammers</span> now grants you <span class=\"item-number\">1</span><span class=\"item-number\">%</span> increased critical strike chance and damage for <span class=\"item-number\">10</span> seconds, stacking up to <span class=\"item-number\">10</span> times.",
+            "description": "Damage dealt by each hammer triggered by Judgment of The Three Hammers now grants you 1% increased critical strike chance and damage for 10 seconds, stacking up to 10 times."
+          }
+        ],
+        "connections": [
+          8000
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\archaeology_5_0_crackedmogurunestone",
+          "key": "archaeology_5_0_crackedmogurunestone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7498,
+        "name": "Seismic Smash",
+        "slug": "seismic-smash",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 3.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300693,
+        "spell_ids": [
+          300693
+        ],
+        "description_html": "$ef",
+        "description": "$ef",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300693,
+            "description_html": "$f0",
+            "description": "$f0"
+          }
+        ],
+        "connections": [
+          7525,
+          8000
+        ],
+        "choice_group": 358123,
+        "icon": {
+          "source_path": "Interface\\Icons\\Seismic_Smash",
+          "key": "seismic_smash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11418,
+        "name": "Quaking Thane",
+        "slug": "quaking-thane",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 3.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561193,
+        "spell_ids": [
+          561193
+        ],
+        "description_html": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Quake</span> or casting <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> now grants you <span style=\"color: #ffffff; display: inline\">Thane's Rage</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_relics_totemofrage\" /><span class=\"name\">Thane&#39;s Rage</span></div><span class=\"desc\">Increases your attack power by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Stamina and your Stamina by <span class=\"item-number\">10%</span> of your Strength for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Striking at least 5 enemies with Quake or casting Mountain Hammer now grants you Thane's Rage.Thane's RageIncreases your attack power by 20% of your Stamina and your Stamina by 10% of your Strength for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561193,
+            "description_html": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Quake</span> or casting <span style=\"color: #ffffff; display: inline\">Mountain Hammer</span> now grants you <span style=\"color: #ffffff; display: inline\">Thane's Rage</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_relics_totemofrage\" /><span class=\"name\">Thane&#39;s Rage</span></div><span class=\"desc\">Increases your attack power by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Stamina and your Stamina by <span class=\"item-number\">10%</span> of your Strength for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Striking at least 5 enemies with Quake or casting Mountain Hammer now grants you Thane's Rage.Thane's RageIncreases your attack power by 20% of your Stamina and your Stamina by 10% of your Strength for 15 seconds."
+          }
+        ],
+        "connections": [
+          7525,
+          8000
+        ],
+        "choice_group": 358123,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_darkirondwarf_d_01",
+          "key": "inv_staff_2h_darkirondwarf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7520,
+        "name": "Earthmaker",
+        "slug": "earthmaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 5.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560150,
+        "spell_ids": [
+          560150
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities and <span style=\"color: #ffffff; display: inline\">Quake</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Earthen Avatar</span> by <span class=\"item-number\">-1</span> sec.<br /><br />Additionally, the cooldown of <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities is reduced by <span class=\"item-number\">-3</span> sec.",
+        "description": "Damage dealt by Seismic abilities and Quake now reduces the cooldown of Earthen Avatar by -1 sec.\n\nAdditionally, the cooldown of Seismic abilities is reduced by -3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560150,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities and <span style=\"color: #ffffff; display: inline\">Quake</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Earthen Avatar</span> by <span class=\"item-number\">-1</span> sec.<br /><br />Additionally, the cooldown of <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities is reduced by <span class=\"item-number\">-3</span> sec.",
+            "description": "Damage dealt by Seismic abilities and Quake now reduces the cooldown of Earthen Avatar by -1 sec.\n\nAdditionally, the cooldown of Seismic abilities is reduced by -3 sec."
+          }
+        ],
+        "connections": [
+          7519,
+          7525
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_volatileearth",
+          "key": "inv_misc_volatileearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7521,
+        "name": "Earth Destroyer",
+        "slug": "earth-destroyer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 91,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560508,
+        "spell_ids": [
+          560508
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mountain Fury</span> by <span class=\"item-number\">-20</span> sec and increases the duration by <span class=\"item-number\">4</span> sec.",
+        "description": "Reduces the cooldown of Mountain Fury by -20 sec and increases the duration by 4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560508,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Mountain Fury</span> by <span class=\"item-number\">-20</span> sec and increases the duration by <span class=\"item-number\">4</span> sec.",
+            "description": "Reduces the cooldown of Mountain Fury by -20 sec and increases the duration by 4 sec."
+          }
+        ],
+        "connections": [
+          7519
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_blackrockcaverns_karshsteelbender",
+          "key": "achievement_dungeon_blackrockcaverns_karshsteelbender",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

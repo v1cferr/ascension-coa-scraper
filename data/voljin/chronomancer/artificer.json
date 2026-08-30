@@ -1,0 +1,2469 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:17+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:c883ba1ccd126c0f91b67953900ae8719e7c01abfc62adfa371f6c48740274d8",
+    "talent_count": 157,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 22,
+    "name": "Chronomancer",
+    "slug": "chronomancer",
+    "class_file": "chronomancer",
+    "color": "rgb(255, 237, 74)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:chronomancer",
+      "key": "class-chronomancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 29,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 57,
+    "name": "Artificer",
+    "slug": "artificer",
+    "sort_order": 3,
+    "class_id": 22,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31183,
+        "name": "Shatter Echo",
+        "slug": "shatter-echo",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 3.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4033,
+            30855
+          ]
+        },
+        "spell_id": 804503,
+        "spell_ids": [
+          804503
+        ],
+        "description_html": "<span style=\"color: #d480ff; display: inline\">Distortion Spell</span><br />Launch a distorted echo from your wand at an enemy, dealing <span class=\"item-number\">90</span><span class=\"item-number\">%</span> Ranged Weapon damage plus <span class=\"item-number\">cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3)</span> Arcane damage.<br /><br />Damage increased by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for each <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.",
+        "description": "Distortion Spell\nLaunch a distorted echo from your wand at an enemy, dealing 90% Ranged Weapon damage plus cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3) Arcane damage.\n\nDamage increased by 40% for each Echo Fragment consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804503,
+            "description_html": "<span style=\"color: #d480ff; display: inline\">Distortion Spell</span><br />Launch a distorted echo from your wand at an enemy, dealing <span class=\"item-number\">90</span><span class=\"item-number\">%</span> Ranged Weapon damage plus <span class=\"item-number\">cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3)</span> Arcane damage.<br /><br />Damage increased by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for each <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.",
+            "description": "Distortion Spell\nLaunch a distorted echo from your wand at an enemy, dealing 90% Ranged Weapon damage plus cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3) Arcane damage.\n\nDamage increased by 40% for each Echo Fragment consumed."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ShatterEcho",
+          "key": "shatterecho",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 12853,
+        "name": "Artificer's Wand",
+        "slug": "artificers-wand",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 5.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4033,
+            30855
+          ]
+        },
+        "spell_id": 804478,
+        "spell_ids": [
+          804478
+        ],
+        "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Unmake</span> into <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_wand_16\" /><span class=\"name\">Artificer&#39;s Wand</span></div><span class=\"desc\">Focus to unleash <span class=\"item-number\">2</span> wand attacks dealing Ranged Weapon damage plus <span class=\"item-number\">5</span> over <span class=\"item-number\">1</span> seconds.<br /><br />Generates <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span>.</span></div>",
+        "description": "Transforms your Unmake into Artificer's Wand.Artificer's WandFocus to unleash 2 wand attacks dealing Ranged Weapon damage plus 5 over 1 seconds.\n\nGenerates 1 Echo Fragment.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804478,
+            "description_html": "Transforms your <span style=\"color: #ffffff; display: inline\">Unmake</span> into <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_wand_16\" /><span class=\"name\">Artificer&#39;s Wand</span></div><span class=\"desc\">Focus to unleash <span class=\"item-number\">2</span> wand attacks dealing Ranged Weapon damage plus <span class=\"item-number\">5</span> over <span class=\"item-number\">1</span> seconds.<br /><br />Generates <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span>.</span></div>",
+            "description": "Transforms your Unmake into Artificer's Wand.Artificer's WandFocus to unleash 2 wand attacks dealing Ranged Weapon damage plus 5 over 1 seconds.\n\nGenerates 1 Echo Fragment."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_16",
+          "key": "inv_wand_16",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4033,
+        "name": "Echo Fragments",
+        "slug": "echo-fragments",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30855
+          ]
+        },
+        "spell_id": 92120,
+        "spell_ids": [
+          92120
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Wand of Time</span> now generates an <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>, which can be used to unleash <span style=\"color: #d480ff; display: inline\">Distortion</span> and <span style=\"color: #C49A6C; display: inline\">Continuum</span> spells.<br /><br /><span style=\"color: #ffffff; display: inline\">Decomposition</span> is now a <span style=\"color: #d480ff; display: inline\">Distortion</span> spell, dealing increased damage based on how many <span style=\"color: #ffffff; display: inline\">Echo Fragments</span> you have.",
+        "description": "Level 10 Passive\nWand of Time now generates an Echo Fragment, which can be used to unleash Distortion and Continuum spells.\n\nDecomposition is now a Distortion spell, dealing increased damage based on how many Echo Fragments you have.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92120,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br /><span style=\"color: #ffffff; display: inline\">Wand of Time</span> now generates an <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>, which can be used to unleash <span style=\"color: #d480ff; display: inline\">Distortion</span> and <span style=\"color: #C49A6C; display: inline\">Continuum</span> spells.<br /><br /><span style=\"color: #ffffff; display: inline\">Decomposition</span> is now a <span style=\"color: #d480ff; display: inline\">Distortion</span> spell, dealing increased damage based on how many <span style=\"color: #ffffff; display: inline\">Echo Fragments</span> you have.",
+            "description": "Level 10 Passive\nWand of Time now generates an Echo Fragment, which can be used to unleash Distortion and Continuum spells.\n\nDecomposition is now a Distortion spell, dealing increased damage based on how many Echo Fragments you have."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_guildperk_workingovertime",
+          "key": "achievement_guildperk_workingovertime",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7853,
+        "name": "Caverns of Time",
+        "slug": "caverns-of-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520166,
+        "spell_ids": [
+          520166
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discordance</span> now generates <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.",
+        "description": "Your Discordance now generates 1 Echo Fragment.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520166,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discordance</span> now generates <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.",
+            "description": "Your Discordance now generates 1 Echo Fragment."
+          }
+        ],
+        "connections": [
+          12853,
+          31183
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_elementalearth2",
+          "key": "inv_elementalearth2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7391,
+        "name": "Artificer's Empowerment",
+        "slug": "artificers-empowerment",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806167,
+        "spell_ids": [
+          806167,
+          807895,
+          807896
+        ],
+        "description_html": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Spirit by 8%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806167,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 8%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807895,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">16</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 16%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 807896,
+            "description_html": "Increases your Spirit by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Spirit by 25%."
+          }
+        ],
+        "connections": [
+          7853
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_azeritedebuff",
+          "key": "inv_azeritedebuff",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30256,
+        "name": "Wand Master",
+        "slug": "wand-master",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707551,
+        "spell_ids": [
+          707551,
+          707831
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Wand of Time and Artificer's Wand by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707551,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Wand of Time and Artificer's Wand by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707831,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Wand of Time and Artificer's Wand by 20%."
+          }
+        ],
+        "connections": [
+          7853
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Brilliance",
+          "key": "spell_nature_brilliance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9175,
+        "name": "Wand Expert",
+        "slug": "wand-expert",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 574308,
+        "spell_ids": [
+          574308
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your ranged attack power by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your Spirit and your hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Spirit.",
+        "description": "Level 20 Passive\nIncreases your ranged attack power by 100% of your Spirit and your hit rating by 5% of your Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574308,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your ranged attack power by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of your Spirit and your hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Spirit.",
+            "description": "Level 20 Passive\nIncreases your ranged attack power by 100% of your Spirit and your hit rating by 5% of your Spirit."
+          }
+        ],
+        "connections": [
+          4033
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_cloth_raidpriestdragon_d_01_helm_blue",
+          "key": "inv_cloth_raidpriestdragon_d_01_helm_blue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6576,
+        "name": "Discovery",
+        "slug": "discovery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500116,
+        "spell_ids": [
+          500116
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Artificers's Wand</span> and <span style=\"color: #FFFFFF; display: inline\">Wand of Time</span> now grants <span style=\"color: #ffffff; display: inline\">Discovery</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">4</span> times. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_wandshot__2__border\" /><span class=\"name\">Discovery</span></div><span class=\"desc\">At <span class=\"item-number\">3</span> stacks, your next <span style=\"color: #FFFFFF; display: inline\">Wand of Time</span> or <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> causes an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">21.2% arcane SP</span> + <span class=\"item-number\">25% Spirit</span> + <span class=\"item-number\">10% ranged AP</span> Arcane Damage, scaling with Spirit.</span></div>",
+        "description": "Casting Artificers's Wand and Wand of Time now grants Discovery for 30 seconds, stacking 4 times. DiscoveryAt 3 stacks, your next Wand of Time or Artificer's Wand causes an additional 1 + 21.2% arcane SP + 25% Spirit + 10% ranged AP Arcane Damage, scaling with Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500116,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Artificers's Wand</span> and <span style=\"color: #FFFFFF; display: inline\">Wand of Time</span> now grants <span style=\"color: #ffffff; display: inline\">Discovery</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">4</span> times. <div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _5_wandshot__2__border\" /><span class=\"name\">Discovery</span></div><span class=\"desc\">At <span class=\"item-number\">3</span> stacks, your next <span style=\"color: #FFFFFF; display: inline\">Wand of Time</span> or <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> causes an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">21.2% arcane SP</span> + <span class=\"item-number\">25% Spirit</span> + <span class=\"item-number\">10% ranged AP</span> Arcane Damage, scaling with Spirit.</span></div>",
+            "description": "Casting Artificers's Wand and Wand of Time now grants Discovery for 30 seconds, stacking 4 times. DiscoveryAt 3 stacks, your next Wand of Time or Artificer's Wand causes an additional 1 + 21.2% arcane SP + 25% Spirit + 10% ranged AP Arcane Damage, scaling with Spirit."
+          }
+        ],
+        "connections": [
+          7391
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_wandshot_(2)_Border",
+          "key": "_5_wandshot__2__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6574,
+        "name": "Concentrated Fate",
+        "slug": "concentrated-fate",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706122,
+        "spell_ids": [
+          706122
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Echo Fragments</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Echo Fragments by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706122,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Echo Fragments</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Echo Fragments by 20%."
+          }
+        ],
+        "connections": [
+          7391
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_1h_warfrontsalliance_c_01",
+          "key": "inv_wand_1h_warfrontsalliance_c_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30265,
+        "name": "Bronze Echoes",
+        "slug": "bronze-echoes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520800,
+        "spell_ids": [
+          520800
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">-0.2</span> sec.",
+        "description": "Reduces the cast time of Artificer's Wand by -0.2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520800,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> by <span class=\"item-number\">-0.2</span> sec.",
+            "description": "Reduces the cast time of Artificer's Wand by -0.2 sec."
+          }
+        ],
+        "connections": [
+          30256
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_challengemode_bronze",
+          "key": "achievement_challengemode_bronze",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7854,
+        "name": "Singularity Core",
+        "slug": "singularity-core",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804438,
+        "spell_ids": [
+          804438
+        ],
+        "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Empower your Wand attacks to deal an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">2</span> + <span class=\"item-number\">25% SP</span> + <span class=\"item-number\">12% ranged AP</span> additional Arcane damage for <span class=\"item-number\">3</span> sec plus <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+        "description": "Continuum Spell\nEmpower your Wand attacks to deal an additional 50% Ranged Weapon Damage plus 2 + 25% SP + 12% ranged AP additional Arcane damage for 3 sec plus 5 sec per Echo Fragment.\n\nCan only have 1 Continuum spell active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804438,
+            "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Empower your Wand attacks to deal an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> Ranged Weapon Damage plus <span class=\"item-number\">2</span> + <span class=\"item-number\">25% SP</span> + <span class=\"item-number\">12% ranged AP</span> additional Arcane damage for <span class=\"item-number\">3</span> sec plus <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+            "description": "Continuum Spell\nEmpower your Wand attacks to deal an additional 50% Ranged Weapon Damage plus 2 + 25% SP + 12% ranged AP additional Arcane damage for 3 sec plus 5 sec per Echo Fragment.\n\nCan only have 1 Continuum spell active at a time."
+          }
+        ],
+        "connections": [
+          30256
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_jaina_d_01",
+          "key": "inv_staff_2h_jaina_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6170,
+        "name": "Archaeology",
+        "slug": "archaeology",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560130,
+        "spell_ids": [
+          560130
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discovery</span> now also generates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your base mana and health.",
+        "description": "Your Discovery now also generates 3% of your base mana and health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560130,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Discovery</span> now also generates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your base mana and health.",
+            "description": "Your Discovery now also generates 3% of your base mana and health."
+          }
+        ],
+        "connections": [
+          6576
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_archaeology_dwarf_artifactfragment",
+          "key": "trade_archaeology_dwarf_artifactfragment",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30250,
+        "name": "Hyperwand",
+        "slug": "hyperwand",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706071,
+        "spell_ids": [
+          706071
+        ],
+        "description_html": "Increases the damage and critical damage of your <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage and critical damage of your Shatter Echo by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706071,
+            "description_html": "Increases the damage and critical damage of your <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage and critical damage of your Shatter Echo by 30%."
+          }
+        ],
+        "connections": [
+          6574
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_cat_trinket10",
+          "key": "inv_misc_cat_trinket10",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6575,
+        "name": "Elder Wand",
+        "slug": "elder-wand",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560129,
+        "spell_ids": [
+          560129
+        ],
+        "description_html": "Your Wand attacks now have a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to increase the damage of <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> against the target by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Your Wand attacks now have a 30% chance to increase the damage of Artificer's Wand against the target by 3% for 15 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560129,
+            "description_html": "Your Wand attacks now have a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to increase the damage of <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> against the target by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Your Wand attacks now have a 30% chance to increase the damage of Artificer's Wand against the target by 3% for 15 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6574,
+          30265
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_wandshot_Border",
+          "key": "_5_wandshot_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6171,
+        "name": "Temporal Convergence",
+        "slug": "temporal-convergence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807588,
+        "spell_ids": [
+          807588
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Wand of Time</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to reset its own cooldown.",
+        "description": "Your Wand of Time now has a 40% chance to reset its own cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807588,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Wand of Time</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to reset its own cooldown.",
+            "description": "Your Wand of Time now has a 40% chance to reset its own cooldown."
+          }
+        ],
+        "connections": [
+          30265
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_MindVision",
+          "key": "spell_holy_mindvision",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30844,
+        "name": "Conduction Burst",
+        "slug": "conduction-burst",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804452,
+        "spell_ids": [
+          804452
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> now deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> additional damage while a <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell is active.",
+        "description": "Your Shatter Echo now deals 20% additional damage while a Continuum spell is active.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804452,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> now deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> additional damage while a <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell is active.",
+            "description": "Your Shatter Echo now deals 20% additional damage while a Continuum spell is active."
+          }
+        ],
+        "connections": [
+          7854
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_chiexplosion",
+          "key": "ability_monk_chiexplosion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6172,
+        "name": "Crystal Cannon",
+        "slug": "crystal-cannon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 806204,
+        "spell_ids": [
+          806204
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Discordance</span> now unleashes the <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span>, launching <span class=\"item-number\">2</span> quick lesser Wand attacks at the enemy over <span class=\"item-number\">1</span> seconds, scaling with Spirit.",
+        "description": "Level 30 Passive\nCasting Discordance now unleashes the Crystal Cannon, launching 2 quick lesser Wand attacks at the enemy over 1 seconds, scaling with Spirit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806204,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Discordance</span> now unleashes the <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span>, launching <span class=\"item-number\">2</span> quick lesser Wand attacks at the enemy over <span class=\"item-number\">1</span> seconds, scaling with Spirit.",
+            "description": "Level 30 Passive\nCasting Discordance now unleashes the Crystal Cannon, launching 2 quick lesser Wand attacks at the enemy over 1 seconds, scaling with Spirit."
+          }
+        ],
+        "connections": [
+          9175
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_evoker_eternitysurge",
+          "key": "ability_evoker_eternitysurge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6175,
+        "name": "Unstable Chronoglass",
+        "slug": "unstable-chronoglass",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503836,
+        "spell_ids": [
+          503836
+        ],
+        "description_html": "Place an <span style=\"color: #FFFFFF; display: inline\">Unstable Chronoglass</span> at target location for <span class=\"item-number\">30</span> seconds that will redirect the next <span class=\"item-number\">3</span> offensive enemy spell casts onto itself.",
+        "description": "Place an Unstable Chronoglass at target location for 30 seconds that will redirect the next 3 offensive enemy spell casts onto itself.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503836,
+            "description_html": "Place an <span style=\"color: #FFFFFF; display: inline\">Unstable Chronoglass</span> at target location for <span class=\"item-number\">30</span> seconds that will redirect the next <span class=\"item-number\">3</span> offensive enemy spell casts onto itself.",
+            "description": "Place an Unstable Chronoglass at target location for 30 seconds that will redirect the next 3 offensive enemy spell casts onto itself."
+          }
+        ],
+        "connections": [
+          6170,
+          30250
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_arcanesandwatch_Border",
+          "key": "nhi_arcanesandwatch_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7937,
+        "name": "Clocked In",
+        "slug": "clocked-in",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706076,
+        "spell_ids": [
+          706076
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Discordance</span> now makes your next <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> within <span class=\"item-number\">10</span> seconds instant cast and causes it to generate an additional <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span>.",
+        "description": "Casting Discordance now makes your next Artificer's Wand within 10 seconds instant cast and causes it to generate an additional Echo Fragment.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706076,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Discordance</span> now makes your next <span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> within <span class=\"item-number\">10</span> seconds instant cast and causes it to generate an additional <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span>.",
+            "description": "Casting Discordance now makes your next Artificer's Wand within 10 seconds instant cast and causes it to generate an additional Echo Fragment."
+          }
+        ],
+        "connections": [
+          30250
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_timeismoney",
+          "key": "ability_racial_timeismoney",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30856,
+        "name": "Flux Emitter",
+        "slug": "flux-emitter",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804435,
+        "spell_ids": [
+          804435
+        ],
+        "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Empower Wand attacks to affect up to <span class=\"item-number\">2</span> additional nearby enemies for <span class=\"item-number\">3</span> sec plus <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>. <br /><br />Affected attacks deal less damage per additional enemy hit.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+        "description": "Continuum Spell\nEmpower Wand attacks to affect up to 2 additional nearby enemies for 3 sec plus 5 sec per Echo Fragment.\n\nAffected attacks deal less damage per additional enemy hit.\n\nCan only have 1 Continuum spell active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804435,
+            "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Empower Wand attacks to affect up to <span class=\"item-number\">2</span> additional nearby enemies for <span class=\"item-number\">3</span> sec plus <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>. <br /><br />Affected attacks deal less damage per additional enemy hit.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+            "description": "Continuum Spell\nEmpower Wand attacks to affect up to 2 additional nearby enemies for 3 sec plus 5 sec per Echo Fragment.\n\nAffected attacks deal less damage per additional enemy hit.\n\nCan only have 1 Continuum spell active at a time."
+          }
+        ],
+        "connections": [
+          6171,
+          6575,
+          30250
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_25",
+          "key": "inv_wand_25",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30857,
+        "name": "Hands of Time",
+        "slug": "hands-of-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524856,
+        "spell_ids": [
+          524856
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Accelerate</span> and <span style=\"color: #FFFFFF; display: inline\">Decelerate</span> spells by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Accelerate and Decelerate spells by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524856,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Accelerate</span> and <span style=\"color: #FFFFFF; display: inline\">Decelerate</span> spells by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Accelerate and Decelerate spells by 25%."
+          }
+        ],
+        "connections": [
+          6171
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyRain_Border",
+          "key": "custom_t_nhance_rpg_icons_holyrain_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6174,
+        "name": "Paradox Cannon",
+        "slug": "paradox-cannon",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806203,
+        "spell_ids": [
+          806203
+        ],
+        "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Generate <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">5</span> seconds, plus an additional <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+        "description": "Continuum Spell\nGenerate 1 Echo Fragment every 3 sec for 5 seconds, plus an additional 5 sec per Echo Fragment consumed.\n\nCan only have 1 Continuum spell active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806203,
+            "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br />Generate <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">5</span> seconds, plus an additional <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+            "description": "Continuum Spell\nGenerate 1 Echo Fragment every 3 sec for 5 seconds, plus an additional 5 sec per Echo Fragment consumed.\n\nCan only have 1 Continuum spell active at a time."
+          }
+        ],
+        "connections": [
+          6171,
+          30844
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_06",
+          "key": "inv_staff_2h_artifactaegwynsstaff_d_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6173,
+        "name": "Borrowed Time",
+        "slug": "borrowed-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680373,
+        "spell_ids": [
+          680373
+        ],
+        "description_html": "Taking Physical damage now heals you equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt. Can only occur once per sec.",
+        "description": "Taking Physical damage now heals you equal to 10% of the damage dealt. Can only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680373,
+            "description_html": "Taking Physical damage now heals you equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt. Can only occur once per sec.",
+            "description": "Taking Physical damage now heals you equal to 10% of the damage dealt. Can only occur once per sec."
+          }
+        ],
+        "connections": [
+          6175
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_29",
+          "key": "inv_wand_29",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1803,
+        "name": "Sporadic Incantations",
+        "slug": "sporadic-incantations",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570061,
+        "spell_ids": [
+          570061
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Flux Emitter</span> now strikes <span class=\"item-number\">1</span> additional enemy.",
+        "description": "Your Flux Emitter now strikes 1 additional enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570061,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Flux Emitter</span> now strikes <span class=\"item-number\">1</span> additional enemy.",
+            "description": "Your Flux Emitter now strikes 1 additional enemy."
+          }
+        ],
+        "connections": [
+          30856
+        ],
+        "choice_group": 74821,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_SunDarkening_Border",
+          "key": "custom_t_sundarkening_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6884,
+        "name": "Tamed Incantations",
+        "slug": "tamed-incantations",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706077,
+        "spell_ids": [
+          706077
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #C49A6C; display: inline\">Continuum</span> spells per <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span> consumed by <span class=\"item-number\">0.5</span> sec.",
+        "description": "Increases the duration of Continuum spells per Echo Fragment consumed by 0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706077,
+            "description_html": "Increases the duration of <span style=\"color: #C49A6C; display: inline\">Continuum</span> spells per <span style=\"color: #FFFFFF; display: inline\">Echo Fragment</span> consumed by <span class=\"item-number\">0.5</span> sec.",
+            "description": "Increases the duration of Continuum spells per Echo Fragment consumed by 0.5 sec."
+          }
+        ],
+        "connections": [
+          30856
+        ],
+        "choice_group": 74821,
+        "icon": {
+          "source_path": "Interface\\Icons\\novart_magicspell_(56)_Border",
+          "key": "novart_magicspell__56__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12279,
+        "name": "Reverse Engineering",
+        "slug": "reverse-engineering",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520875,
+        "spell_ids": [
+          520875
+        ],
+        "description_html": "Periodic damage and healing now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds and grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Periodic damage and healing now has a 15% chance to increase your haste by 15% for 6 seconds and grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520875,
+            "description_html": "Periodic damage and healing now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds and grant allies <span style=\"color: #ffffff; display: inline\">Replenishment</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_drinkable__9__border\" /><span class=\"name\">Replenishment</span></div><span class=\"desc\">Replenishes <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of maximum mana per <span class=\"item-number\">5</span> sec for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Periodic damage and healing now has a 15% chance to increase your haste by 15% for 6 seconds and grant allies Replenishment.ReplenishmentReplenishes 5% of maximum mana per 5 sec for 15 seconds."
+          }
+        ],
+        "connections": [
+          6174
+        ],
+        "choice_group": 520875,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Engineering_TanarisTP",
+          "key": "engineering_tanaristp",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30279,
+        "name": "Erode Armaments",
+        "slug": "erode-armaments",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520386,
+        "spell_ids": [
+          520386
+        ],
+        "description_html": "Your Wand attacks now reduce enemy attack power by <span class=\"item-number\">208</span> for <span class=\"item-number\">5</span> seconds.",
+        "description": "Your Wand attacks now reduce enemy attack power by 208 for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520386,
+            "description_html": "Your Wand attacks now reduce enemy attack power by <span class=\"item-number\">208</span> for <span class=\"item-number\">5</span> seconds.",
+            "description": "Your Wand attacks now reduce enemy attack power by 208 for 5 seconds."
+          }
+        ],
+        "connections": [
+          6174
+        ],
+        "choice_group": 520875,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_DisarmingShot",
+          "key": "ability_hunter_disarmingshot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11472,
+        "name": "Time Is A Circle",
+        "slug": "time-is-a-circle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 806206,
+        "spell_ids": [
+          806206
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Wand of Time</span> now extends the duration of your <span style=\"color: #C49A6C; display: inline\">Continuum</span> spells by <span class=\"item-number\">3</span> sec.<br /><br /><span style=\"color: #C49A6C; display: inline\">Continuum</span> spells cannot be extended beyond their maximum duration.",
+        "description": "Level 40 Passive\nCasting Wand of Time now extends the duration of your Continuum spells by 3 sec.\n\nContinuum spells cannot be extended beyond their maximum duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806206,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Wand of Time</span> now extends the duration of your <span style=\"color: #C49A6C; display: inline\">Continuum</span> spells by <span class=\"item-number\">3</span> sec.<br /><br /><span style=\"color: #C49A6C; display: inline\">Continuum</span> spells cannot be extended beyond their maximum duration.",
+            "description": "Level 40 Passive\nCasting Wand of Time now extends the duration of your Continuum spells by 3 sec.\n\nContinuum spells cannot be extended beyond their maximum duration."
+          }
+        ],
+        "connections": [
+          6172
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_1h_maldraxxusquest_b_01",
+          "key": "inv_wand_1h_maldraxxusquest_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7914,
+        "name": "Fate Twister",
+        "slug": "fate-twister",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706133,
+        "spell_ids": [
+          706133
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unstable Chronoglass</span> by <span class=\"item-number\">-30</span> sec.",
+        "description": "Reduces the cooldown of Unstable Chronoglass by -30 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706133,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Unstable Chronoglass</span> by <span class=\"item-number\">-30</span> sec.",
+            "description": "Reduces the cooldown of Unstable Chronoglass by -30 sec."
+          }
+        ],
+        "connections": [
+          6173
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Arcane_Blast",
+          "key": "spell_arcane_blast",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30282,
+        "name": "Magic Sensitivity",
+        "slug": "magic-sensitivity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520171,
+        "spell_ids": [
+          520171
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now increases the enemy's damage taken from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Critical strikes with Shatter Echo now increases the enemy's damage taken from you by 10% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520171,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now increases the enemy's damage taken from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Critical strikes with Shatter Echo now increases the enemy's damage taken from you by 10% for 8 seconds."
+          }
+        ],
+        "connections": [
+          6173,
+          7937
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_EnslaveSpell_Arcane",
+          "key": "enslavespell_arcane",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31332,
+        "name": "Infinity Stone",
+        "slug": "infinity-stone",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300873,
+        "spell_ids": [
+          300873
+        ],
+        "description_html": "Increases the critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300873,
+            "description_html": "Increases the critical strike chance of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 3%."
+          }
+        ],
+        "connections": [
+          1803,
+          6884
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_Gems_64",
+          "key": "inv_ascend_gems_64",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6178,
+        "name": "Splitting Time",
+        "slug": "splitting-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706130,
+        "spell_ids": [
+          706130
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Crystal Cannon</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies.",
+        "description": "Your Crystal Cannon now strikes 2 additional nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706130,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Crystal Cannon</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies.",
+            "description": "Your Crystal Cannon now strikes 2 additional nearby enemies."
+          }
+        ],
+        "connections": [
+          1803,
+          6884
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mage_arcanebarrage_nightborne",
+          "key": "ability_mage_arcanebarrage_nightborne",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4520,
+        "name": "Resonance",
+        "slug": "resonance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706079,
+        "spell_ids": [
+          706079
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> or <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span> now has a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Hasten</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Casting Artificer's Wand or Crystal Cannon now has a 35% chance to reduce the cooldown of Hasten by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706079,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Artificer's Wand</span> or <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span> now has a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Hasten</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Casting Artificer's Wand or Crystal Cannon now has a 35% chance to reduce the cooldown of Hasten by -1 sec."
+          }
+        ],
+        "connections": [
+          12279,
+          30279,
+          30857
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_6_2raid_trinket_4a",
+          "key": "inv_6_2raid_trinket_4a",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31120,
+        "name": "Timemage",
+        "slug": "timemage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806753,
+        "spell_ids": [
+          806753
+        ],
+        "description_html": "Reduces the duration of harmful magic effects on you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the duration of harmful magic effects on you by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806753,
+            "description_html": "Reduces the duration of harmful magic effects on you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the duration of harmful magic effects on you by -30%."
+          }
+        ],
+        "connections": [
+          12279,
+          30279
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_goggles_draenortradeskill_d_01",
+          "key": "inv_helm_goggles_draenortradeskill_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7855,
+        "name": "Aether Compression",
+        "slug": "aether-compression",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804436,
+        "spell_ids": [
+          804436
+        ],
+        "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br /><span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> and <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> can be cast while moving for <span class=\"item-number\">5</span> seconds.<br /><br />Duration increased by <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+        "description": "Continuum Spell\nArtificer's Wand and Reverse Wound can be cast while moving for 5 seconds.\n\nDuration increased by 5 sec per Echo Fragment.\n\nCan only have 1 Continuum spell active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804436,
+            "description_html": "<span style=\"color: #C49A6C; display: inline\">Continuum Spell</span><br /><span style=\"color: #ffffff; display: inline\">Artificer's Wand</span> and <span style=\"color: #ffffff; display: inline\">Reverse Wound</span> can be cast while moving for <span class=\"item-number\">5</span> seconds.<br /><br />Duration increased by <span class=\"item-number\">5</span> sec per <span style=\"color: #ffffff; display: inline\">Echo Fragment</span>.<br /><br />Can only have <span class=\"item-number\">1</span> <span style=\"color: #C49A6C; display: inline\">Continuum</span> spell active at a time.",
+            "description": "Continuum Spell\nArtificer's Wand and Reverse Wound can be cast while moving for 5 seconds.\n\nDuration increased by 5 sec per Echo Fragment.\n\nCan only have 1 Continuum spell active at a time."
+          }
+        ],
+        "connections": [
+          7914,
+          30282
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ui_profession_enchanting",
+          "key": "ui_profession_enchanting",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7856,
+        "name": "Arc Collision",
+        "slug": "arc-collision",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524853,
+        "spell_ids": [
+          524853
+        ],
+        "description_html": "<span style=\"color: #d480ff; display: inline\">Distortion Spell</span><br />Create a timestorm around an enemy that causes them and up to <span class=\"item-number\">2</span> nearby enemies to take <span class=\"item-number\">270</span> + <span class=\"item-number\">24% SP</span> Arcane damage, repeating over <span class=\"item-number\">4</span> seconds. <br /><br />Duration increased by <span class=\"item-number\">2</span> sec for each <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.",
+        "description": "Distortion Spell\nCreate a timestorm around an enemy that causes them and up to 2 nearby enemies to take 270 + 24% SP Arcane damage, repeating over 4 seconds.\n\nDuration increased by 2 sec for each Echo Fragment consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524853,
+            "description_html": "<span style=\"color: #d480ff; display: inline\">Distortion Spell</span><br />Create a timestorm around an enemy that causes them and up to <span class=\"item-number\">2</span> nearby enemies to take <span class=\"item-number\">270</span> + <span class=\"item-number\">24% SP</span> Arcane damage, repeating over <span class=\"item-number\">4</span> seconds. <br /><br />Duration increased by <span class=\"item-number\">2</span> sec for each <span style=\"color: #ffffff; display: inline\">Echo Fragment</span> consumed.",
+            "description": "Distortion Spell\nCreate a timestorm around an enemy that causes them and up to 2 nearby enemies to take 270 + 24% SP Arcane damage, repeating over 4 seconds.\n\nDuration increased by 2 sec for each Echo Fragment consumed."
+          }
+        ],
+        "connections": [
+          6178,
+          31332
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_arcaneburst_Border",
+          "key": "nhi_arcaneburst_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30859,
+        "name": "Pulse Driver",
+        "slug": "pulse-driver",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706121,
+        "spell_ids": [
+          706121
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Singularity Core</span> now increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> while its active by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allows <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> to trigger its damage.",
+        "description": "Singularity Core now increases the damage of Shatter Echo while its active by 30% and allows Shatter Echo to trigger its damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706121,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Singularity Core</span> now increases the damage of <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> while its active by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and allows <span style=\"color: #FFFFFF; display: inline\">Shatter Echo</span> to trigger its damage.",
+            "description": "Singularity Core now increases the damage of Shatter Echo while its active by 30% and allows Shatter Echo to trigger its damage."
+          }
+        ],
+        "connections": [
+          4520,
+          31120
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_33",
+          "key": "inv_wand_33",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11273,
+        "name": "Intuition",
+        "slug": "intuition",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 807589,
+        "spell_ids": [
+          807589
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your critical damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Level 50 Passive\nIncreases your critical damage by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807589,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Increases your critical damage by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Level 50 Passive\nIncreases your critical damage by 25%."
+          }
+        ],
+        "connections": [
+          11472
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_lightning_timewarp_Border",
+          "key": "nhi_lightning_timewarp_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7873,
+        "name": "Cheating Time",
+        "slug": "cheating-time",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524945,
+        "spell_ids": [
+          524945
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now extends the duration of your <span style=\"color: #ffffff; display: inline\">Flux Emitter</span> by <span class=\"item-number\">4</span> sec.<br /><br />Cannot be extended beyond maximum duration.",
+        "description": "Casting Shatter Echo now extends the duration of your Flux Emitter by 4 sec.\n\nCannot be extended beyond maximum duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524945,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now extends the duration of your <span style=\"color: #ffffff; display: inline\">Flux Emitter</span> by <span class=\"item-number\">4</span> sec.<br /><br />Cannot be extended beyond maximum duration.",
+            "description": "Casting Shatter Echo now extends the duration of your Flux Emitter by 4 sec.\n\nCannot be extended beyond maximum duration."
+          }
+        ],
+        "connections": [
+          7855,
+          7856
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_18",
+          "key": "inv_wand_18",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31333,
+        "name": "Threads of Eternity",
+        "slug": "threads-of-eternity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806209,
+        "spell_ids": [
+          806209
+        ],
+        "description_html": "$149",
+        "description": "$149",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806209,
+            "description_html": "$14a",
+            "description": "$14a"
+          }
+        ],
+        "connections": [
+          7856
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_tailoring_80_nylonthread",
+          "key": "inv_tailoring_80_nylonthread",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30861,
+        "name": "Wand Mastery",
+        "slug": "wand-mastery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 22,
+        "tree_id": 57,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806216,
+        "spell_ids": [
+          806216
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span>, launching <span class=\"item-number\">2</span> quick lesser Wand auto attacks at the enemy over <span class=\"item-number\">1</span> seconds, scaling with Spirit.<br /><br />While <span style=\"color: #ffffff; display: inline\">Paradox Cannon</span> is active, the chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Wand of Time and Shatter Echo now have a 25% chance to unleash Crystal Cannon, launching 2 quick lesser Wand auto attacks at the enemy over 1 seconds, scaling with Spirit.\n\nWhile Paradox Cannon is active, the chance to trigger this effect is increased by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806216,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Wand of Time</span> and <span style=\"color: #ffffff; display: inline\">Shatter Echo</span> now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #FFFFFF; display: inline\">Crystal Cannon</span>, launching <span class=\"item-number\">2</span> quick lesser Wand auto attacks at the enemy over <span class=\"item-number\">1</span> seconds, scaling with Spirit.<br /><br />While <span style=\"color: #ffffff; display: inline\">Paradox Cannon</span> is active, the chance to trigger this effect is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Wand of Time and Shatter Echo now have a 25% chance to unleash Crystal Cannon, launching 2 quick lesser Wand auto attacks at the enemy over 1 seconds, scaling with Spirit.\n\nWhile Paradox Cannon is active, the chance to trigger this effect is increased by 10%."
+          }
+        ],
+        "connections": [
+          7856,
+          30859
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_wandshot_Border",
+          "key": "_5_wandshot_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

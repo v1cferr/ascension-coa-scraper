@@ -1,0 +1,2420 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:22+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:ee2c28759854645edb23f6c6bf3557ace54adf69c37e70c0dd65de7e13b502f6",
+    "talent_count": 203,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 31,
+    "name": "Primalist",
+    "slug": "primalist",
+    "class_file": "wildwalker",
+    "color": "rgb(227, 140, 89)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:wildwalker",
+      "key": "class-wildwalker",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 46,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 83,
+    "name": "Geomancy",
+    "slug": "geomancy",
+    "sort_order": 0,
+    "class_id": 31,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 7535,
+        "name": "Seismic Tremor",
+        "slug": "seismic-tremor",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680442,
+        "spell_ids": [
+          680442
+        ],
+        "description_html": "Send a tremor through the earth at an enemy, dealing <span class=\"item-number\">70</span> + <span class=\"item-number\">60% nature SP</span> Physical damage, plus an additional <span class=\"item-number\">576</span> over <span class=\"item-number\">24</span> seconds. Damage is dealt slowly at first, and builds up over time.<br /><br />Damage dealt generates <span class=\"item-number\">1</span> Rage. <br /><br />Generates <span class=\"item-number\">2</span> stacks of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<br /><br />",
+        "description": "Send a tremor through the earth at an enemy, dealing 70 + 60% nature SP Physical damage, plus an additional 576 over 24 seconds. Damage is dealt slowly at first, and builds up over time.\n\nDamage dealt generates 1 Rage.\n\nGenerates 2 stacks of Earthshaping.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680442,
+            "description_html": "Send a tremor through the earth at an enemy, dealing <span class=\"item-number\">70</span> + <span class=\"item-number\">60% nature SP</span> Physical damage, plus an additional <span class=\"item-number\">576</span> over <span class=\"item-number\">24</span> seconds. Damage is dealt slowly at first, and builds up over time.<br /><br />Damage dealt generates <span class=\"item-number\">1</span> Rage. <br /><br />Generates <span class=\"item-number\">2</span> stacks of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<br /><br />",
+            "description": "Send a tremor through the earth at an enemy, dealing 70 + 60% nature SP Physical damage, plus an additional 576 over 24 seconds. Damage is dealt slowly at first, and builds up over time.\n\nDamage dealt generates 1 Rage.\n\nGenerates 2 stacks of Earthshaping."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Seismic_Tremor",
+          "key": "seismic_tremor",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4059,
+        "name": "Earthshaping",
+        "slug": "earthshaping",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29252
+          ]
+        },
+        "spell_id": 92149,
+        "spell_ids": [
+          92149
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now generate <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_custom_hearthstone_fire\" /><span class=\"name\">Earthshaping</span></div><span class=\"desc\">Empowers some of your abilities and increases your spell haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">15</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+        "description": "Level 10 Passive\nCasting Geode Barrage and your Seismic abilities now generate Earthshaping.EarthshapingEmpowers some of your abilities and increases your spell haste by 1% for 20 seconds, stacking 15 times.\n\nAdditional applications do not refresh duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92149,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now generate <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_custom_hearthstone_fire\" /><span class=\"name\">Earthshaping</span></div><span class=\"desc\">Empowers some of your abilities and increases your spell haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">15</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+            "description": "Level 10 Passive\nCasting Geode Barrage and your Seismic abilities now generate Earthshaping.EarthshapingEmpowers some of your abilities and increases your spell haste by 1% for 20 seconds, stacking 15 times.\n\nAdditional applications do not refresh duration."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_custom_hearthstone_fire",
+          "key": "inv_custom_hearthstone_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7533,
+        "name": "Whispers of the Earth",
+        "slug": "whispers-of-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681494,
+        "spell_ids": [
+          681494
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Stoneshard</span> by <span class=\"item-number\">0.3</span> sec.",
+        "description": "Reduces the cast time of Geode Barrage and Stoneshard by 0.3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681494,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Stoneshard</span> by <span class=\"item-number\">0.3</span> sec.",
+            "description": "Reduces the cast time of Geode Barrage and Stoneshard by 0.3 sec."
+          }
+        ],
+        "connections": [
+          7535
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shaman_EarthlivingWeapon",
+          "key": "spell_shaman_earthlivingweapon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7801,
+        "name": "Gaze of Therazane",
+        "slug": "gaze-of-therazane",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680453,
+        "spell_ids": [
+          680453,
+          680458
+        ],
+        "description_html": "Increases the range of your Geomancy spells by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and of <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells by <span class=\"item-number\">8</span> yds.",
+        "description": "Increases the range of your Geomancy spells by 10% and of Seismic spells by 8 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680453,
+            "description_html": "Increases the range of your Geomancy spells by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and of <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells by <span class=\"item-number\">8</span> yds.",
+            "description": "Increases the range of your Geomancy spells by 10% and of Seismic spells by 8 yds."
+          },
+          {
+            "rank": 2,
+            "spell_id": 680458,
+            "description_html": "Increases the range of your Geomancy spells by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and of <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells by <span class=\"item-number\">16</span> yds.",
+            "description": "Increases the range of your Geomancy spells by 20% and of Seismic spells by 16 yds."
+          }
+        ],
+        "connections": [
+          7535
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturevision_Border",
+          "key": "nhi_naturevision_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6600,
+        "name": "Stoneskin",
+        "slug": "stoneskin",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706162,
+        "spell_ids": [
+          706162,
+          707809
+        ],
+        "description_html": "Increases your Armor by <span class=\"item-number\">200</span><span class=\"item-number\">%</span> of your Intellect and reduces your damage taken by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Armor by 200% of your Intellect and reduces your damage taken by -3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706162,
+            "description_html": "Increases your Armor by <span class=\"item-number\">200</span><span class=\"item-number\">%</span> of your Intellect and reduces your damage taken by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Armor by 200% of your Intellect and reduces your damage taken by -3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707809,
+            "description_html": "Increases your Armor by <span class=\"item-number\">400</span><span class=\"item-number\">%</span> of your Intellect and reduces your damage taken by <span class=\"item-number\">-6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Armor by 400% of your Intellect and reduces your damage taken by -6%."
+          }
+        ],
+        "connections": [
+          7533
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_SkinofEarth",
+          "key": "spell_nature_skinofearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7797,
+        "name": "Terrasurge",
+        "slug": "terrasurge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681119,
+        "spell_ids": [
+          681119
+        ],
+        "description_html": "Unleash a massive globule of earth at an enemy, dealing <span class=\"item-number\">154</span> + <span class=\"item-number\">130% nature SP</span> Physical damage and reducing their Armor by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> sec.<br /><br />Pierces through absorption, deflection, and reflection effects.<br /><br />Deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> additional damage for each <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> stack.",
+        "description": "Unleash a massive globule of earth at an enemy, dealing 154 + 130% nature SP Physical damage and reducing their Armor by -50% for 10 sec.\n\nPierces through absorption, deflection, and reflection effects.\n\nDeals 10% additional damage for each Earthshaping stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681119,
+            "description_html": "Unleash a massive globule of earth at an enemy, dealing <span class=\"item-number\">154</span> + <span class=\"item-number\">130% nature SP</span> Physical damage and reducing their Armor by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> sec.<br /><br />Pierces through absorption, deflection, and reflection effects.<br /><br />Deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> additional damage for each <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> stack.",
+            "description": "Unleash a massive globule of earth at an enemy, dealing 154 + 130% nature SP Physical damage and reducing their Armor by -50% for 10 sec.\n\nPierces through absorption, deflection, and reflection effects.\n\nDeals 10% additional damage for each Earthshaping stack."
+          }
+        ],
+        "connections": [
+          7533,
+          7801
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_earth_icon_0003s_0000_light_Border",
+          "key": "epic_rpg_icon_pack_earth_icon_0003s_0000_light_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7532,
+        "name": "Cataclysm",
+        "slug": "cataclysm",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680444,
+        "spell_ids": [
+          680444
+        ],
+        "description_html": "Generating <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> or casting <span style=\"color: #ffffff; display: inline\">Stoneshard</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities.",
+        "description": "Generating Earthshaping or casting Stoneshard now has a 10% chance to reset the cooldown of your Seismic abilities.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680444,
+            "description_html": "Generating <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> or casting <span style=\"color: #ffffff; display: inline\">Stoneshard</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to reset the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities.",
+            "description": "Generating Earthshaping or casting Stoneshard now has a 10% chance to reset the cooldown of your Seismic abilities."
+          }
+        ],
+        "connections": [
+          7801
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_sandexplosion",
+          "key": "spell_sandexplosion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9207,
+        "name": "Lithic Lance",
+        "slug": "lithic-lance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 706159,
+        "spell_ids": [
+          706159
+        ],
+        "description_html": "$19b",
+        "description": "$19b",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706159,
+            "description_html": "$19c",
+            "description": "$19c"
+          }
+        ],
+        "connections": [
+          4059
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_earthen_pillar",
+          "key": "ability_earthen_pillar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7358,
+        "name": "Primal Shaman's Mask",
+        "slug": "primal-shamans-mask",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800185,
+        "spell_ids": [
+          800185
+        ],
+        "description_html": "Direct damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to launch a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>.",
+        "description": "Direct damage dealt now has a 10% chance to launch a Geode at the enemyGeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage..",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800185,
+            "description_html": "Direct damage dealt now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to launch a <span style=\"color: #ffffff; display: inline\">Geode</span> at the enemy<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 uico_nature_spell_01_border\" /><span class=\"name\">Geode</span></div><span class=\"desc\">Hurl an enchanted stone at the target, dealing <span class=\"item-number\">173</span> + <span class=\"item-number\">34.9% SP</span> + <span class=\"item-number\">8.5% AP</span> Physical Damage and generating <span class=\"item-number\">5</span> Rage.</span></div>.",
+            "description": "Direct damage dealt now has a 10% chance to launch a Geode at the enemyGeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.."
+          }
+        ],
+        "connections": [
+          6600,
+          7797
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Inv_Helm_Mask_ZulGurub_D_01",
+          "key": "inv_helm_mask_zulgurub_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7531,
+        "name": "Rockslide",
+        "slug": "rockslide",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560154,
+        "spell_ids": [
+          560154
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Stoneshard</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to cast an additional time. This effect can trigger itself.",
+        "description": "Stoneshard now has a 15% chance to cast an additional time. This effect can trigger itself.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560154,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Stoneshard</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to cast an additional time. This effect can trigger itself.",
+            "description": "Stoneshard now has a 15% chance to cast an additional time. This effect can trigger itself."
+          }
+        ],
+        "connections": [
+          7797
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3earthquake",
+          "key": "d3earthquake",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7357,
+        "name": "One With The Earth",
+        "slug": "one-with-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704402,
+        "spell_ids": [
+          704402
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Stoneshard</span> and <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Stoneshard</span> now restores <span class=\"item-number\">4</span><span class=\"item-number\">%</span> of your maximum mana.",
+        "description": "Increases the damage of Stoneshard and Geode Barrage by 25% and Stoneshard now restores 4% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704402,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Stoneshard</span> and <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Stoneshard</span> now restores <span class=\"item-number\">4</span><span class=\"item-number\">%</span> of your maximum mana.",
+            "description": "Increases the damage of Stoneshard and Geode Barrage by 25% and Stoneshard now restores 4% of your maximum mana."
+          }
+        ],
+        "connections": [
+          7532,
+          7797
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_03",
+          "key": "inv_offhand_1h_artifactdoomhammer_d_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6155,
+        "name": "Volcanic Blast",
+        "slug": "volcanic-blast",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680451,
+        "spell_ids": [
+          680451,
+          681480
+        ],
+        "description_html": "Your Physical or Nature damaging critical strikes now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage to the target and enemies nearby.",
+        "description": "Your Physical or Nature damaging critical strikes now deal an additional 20% of the damage dealt as Fire damage to the target and enemies nearby.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680451,
+            "description_html": "Your Physical or Nature damaging critical strikes now deal an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage to the target and enemies nearby.",
+            "description": "Your Physical or Nature damaging critical strikes now deal an additional 20% of the damage dealt as Fire damage to the target and enemies nearby."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681480,
+            "description_html": "Your Physical or Nature damaging critical strikes now deal an additional <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage to the target and enemies nearby.",
+            "description": "Your Physical or Nature damaging critical strikes now deal an additional 40% of the damage dealt as Fire damage to the target and enemies nearby."
+          }
+        ],
+        "connections": [
+          7358
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rhyolith_magmaflow_whole",
+          "key": "ability_rhyolith_magmaflow_whole",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6586,
+        "name": "Dream",
+        "slug": "dream",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680452,
+        "spell_ids": [
+          680452
+        ],
+        "description_html": "Generating <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> while at or above <span class=\"item-number\">10</span> stacks now grants <span style=\"color: #ffffff; display: inline\">Dream</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_nature_hidden_border\" /><span class=\"name\">Dream</span></div><span class=\"desc\">Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities and <span style=\"color: #ffffff; display: inline\">Lithic Lance</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.</span></div>",
+        "description": "Generating Earthshaping while at or above 10 stacks now grants Dream.DreamIncreases the critical strike chance of your Seismic abilities and Lithic Lance by 10% for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680452,
+            "description_html": "Generating <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> while at or above <span class=\"item-number\">10</span> stacks now grants <span style=\"color: #ffffff; display: inline\">Dream</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_nature_hidden_border\" /><span class=\"name\">Dream</span></div><span class=\"desc\">Increases the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities and <span style=\"color: #ffffff; display: inline\">Lithic Lance</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.</span></div>",
+            "description": "Generating Earthshaping while at or above 10 stacks now grants Dream.DreamIncreases the critical strike chance of your Seismic abilities and Lithic Lance by 10% for 3 seconds."
+          }
+        ],
+        "connections": [
+          7358
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_nature_hidden_Border",
+          "key": "nhi_nature_hidden_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7538,
+        "name": "Golem Form",
+        "slug": "golem-form",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805335,
+        "spell_ids": [
+          805335
+        ],
+        "description_html": "Transform into a being made of stone and earth for <span class=\"item-number\">20</span> seconds, increasing your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your Armor by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, and allowing you to cast damaging spells while moving.",
+        "description": "Transform into a being made of stone and earth for 20 seconds, increasing your haste by 20% and your Armor by 50%, and allowing you to cast damaging spells while moving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805335,
+            "description_html": "Transform into a being made of stone and earth for <span class=\"item-number\">20</span> seconds, increasing your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and your Armor by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>, and allowing you to cast damaging spells while moving.",
+            "description": "Transform into a being made of stone and earth for 20 seconds, increasing your haste by 20% and your Armor by 50%, and allowing you to cast damaging spells while moving."
+          }
+        ],
+        "connections": [
+          7357,
+          7358,
+          7531
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_nature_shapeshift_Border",
+          "key": "nhi_nature_shapeshift_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5532,
+        "name": "Nature's Will",
+        "slug": "natures-will",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560140,
+        "spell_ids": [
+          560140
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Seismic</span> spells now extends the duration of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> by <span class=\"item-number\">4</span> sec.",
+        "description": "Casting Seismic spells now extends the duration of Earthshaping by 4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560140,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Seismic</span> spells now extends the duration of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> by <span class=\"item-number\">4</span> sec.",
+            "description": "Casting Seismic spells now extends the duration of Earthshaping by 4 sec."
+          }
+        ],
+        "connections": [
+          7357
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_tradeskillitem_lessersorcerersearth",
+          "key": "inv_tradeskillitem_lessersorcerersearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6594,
+        "name": "Therazane's Might",
+        "slug": "therazanes-might",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805336,
+        "spell_ids": [
+          805336
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Terrasurge</span> will now always critically strike against targets affected by your <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span>.",
+        "description": "Your Terrasurge will now always critically strike against targets affected by your Seismic Tremor.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805336,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Terrasurge</span> will now always critically strike against targets affected by your <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span>.",
+            "description": "Your Terrasurge will now always critically strike against targets affected by your Seismic Tremor."
+          }
+        ],
+        "connections": [
+          7357
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_elemental_mote_nether",
+          "key": "inv_elemental_mote_nether",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9999,
+        "name": "Cave Dweller",
+        "slug": "cave-dweller",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 560167,
+        "spell_ids": [
+          560167
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your armor penetration rating by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 30 Passive\nIncreases your armor penetration rating by 50% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560167,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your armor penetration rating by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 30 Passive\nIncreases your armor penetration rating by 50% of your Intellect."
+          }
+        ],
+        "connections": [
+          9207
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_earth_icon_0001s_0000_dust_Border",
+          "key": "epic_rpg_icon_pack_earth_icon_0001s_0000_dust_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7800,
+        "name": "Cracking the Earth",
+        "slug": "cracking-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560145,
+        "spell_ids": [
+          560145
+        ],
+        "description_html": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Volcanic Blast</span> now grants you <span style=\"color: #ffffff; display: inline\">Cracking the Earth</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shaman_lavaflow\" /><span class=\"name\">Cracking the Earth (Proc)</span></div><span class=\"desc\">Your <span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> strikes <span class=\"item-number\">1</span> additional enemy. Stacks <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Striking at least 5 enemies with Volcanic Blast now grants you Cracking the Earth for 10 seconds.Cracking the Earth (Proc)Your Seismic Spike strikes 1 additional enemy. Stacks 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560145,
+            "description_html": "Striking at least <span class=\"item-number\">5</span> enemies with <span style=\"color: #ffffff; display: inline\">Volcanic Blast</span> now grants you <span style=\"color: #ffffff; display: inline\">Cracking the Earth</span> for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_shaman_lavaflow\" /><span class=\"name\">Cracking the Earth (Proc)</span></div><span class=\"desc\">Your <span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> strikes <span class=\"item-number\">1</span> additional enemy. Stacks <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Striking at least 5 enemies with Volcanic Blast now grants you Cracking the Earth for 10 seconds.Cracking the Earth (Proc)Your Seismic Spike strikes 1 additional enemy. Stacks 5 times."
+          }
+        ],
+        "connections": [
+          6155
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shaman_LavaFlow",
+          "key": "spell_shaman_lavaflow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6588,
+        "name": "Stone Tosser",
+        "slug": "stone-tosser",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680862,
+        "spell_ids": [
+          680862
+        ],
+        "description_html": "Increases spell bonus damage scaling of <span style=\"color: #ffffff; display: inline\">Geode Barrage</span>, <span style=\"color: #ffffff; display: inline\">Stoneshard</span>, and <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases spell bonus damage scaling of Geode Barrage, Stoneshard, and Seismic Crash by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680862,
+            "description_html": "Increases spell bonus damage scaling of <span style=\"color: #ffffff; display: inline\">Geode Barrage</span>, <span style=\"color: #ffffff; display: inline\">Stoneshard</span>, and <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases spell bonus damage scaling of Geode Barrage, Stoneshard, and Seismic Crash by 25%."
+          }
+        ],
+        "connections": [
+          6586,
+          7538
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Stone_16",
+          "key": "inv_stone_16",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6578,
+        "name": "Earth Pummeling",
+        "slug": "earth-pummeling",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560182,
+        "spell_ids": [
+          560182
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Geodes</span> now increases the chance for the enemy to be critically hit with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+        "description": "Increases your critical strike chance by 3% and damage dealt by Geode Barrage and Geodes now increases the chance for the enemy to be critically hit with spells by 3% for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560182,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and damage dealt by <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> and <span style=\"color: #ffffff; display: inline\">Geodes</span> now increases the chance for the enemy to be critically hit with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+            "description": "Increases your critical strike chance by 3% and damage dealt by Geode Barrage and Geodes now increases the chance for the enemy to be critically hit with spells by 3% for 12 seconds."
+          }
+        ],
+        "connections": [
+          5532,
+          7538
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_nature_spell_03_Border",
+          "key": "uico_nature_spell_03_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6303,
+        "name": "Trembling Rage",
+        "slug": "trembling-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560135,
+        "spell_ids": [
+          560135
+        ],
+        "description_html": "Increases the amount of Rage generated by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> by <span class=\"item-number\">2</span>.",
+        "description": "Increases the amount of Rage generated by Seismic Tremor by 2.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560135,
+            "description_html": "Increases the amount of Rage generated by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> by <span class=\"item-number\">2</span>.",
+            "description": "Increases the amount of Rage generated by Seismic Tremor by 2."
+          }
+        ],
+        "connections": [
+          6594
+        ],
+        "choice_group": 953231,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_halls_of_origination_earthrager_ptah",
+          "key": "achievement_dungeon_halls_of_origination_earthrager_ptah",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9453,
+        "name": "Everlasting Rage",
+        "slug": "everlasting-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561190,
+        "spell_ids": [
+          561190
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> by <span class=\"item-number\">6</span> sec and its tick rate by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of Seismic Tremor by 6 sec and its tick rate by -10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561190,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> by <span class=\"item-number\">6</span> sec and its tick rate by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of Seismic Tremor by 6 sec and its tick rate by -10%."
+          }
+        ],
+        "connections": [
+          6594
+        ],
+        "choice_group": 953231,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_MeteorStorm",
+          "key": "spell_fire_meteorstorm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31309,
+        "name": "Earth's Embrace",
+        "slug": "earths-embrace",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806143,
+        "spell_ids": [
+          806143
+        ],
+        "description_html": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for <span class=\"item-number\">8</span> seconds, and healing you for <span class=\"item-number\">300</span> + <span class=\"item-number\">50% SP</span> every <span class=\"item-number\">2</span> sec, but making you unable to move or act.<br /><br />Usable while stunned, feared, or polymorphed.",
+        "description": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for 8 seconds, and healing you for 300 + 50% SP every 2 sec, but making you unable to move or act.\n\nUsable while stunned, feared, or polymorphed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806143,
+            "description_html": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for <span class=\"item-number\">8</span> seconds, and healing you for <span class=\"item-number\">300</span> + <span class=\"item-number\">50% SP</span> every <span class=\"item-number\">2</span> sec, but making you unable to move or act.<br /><br />Usable while stunned, feared, or polymorphed.",
+            "description": "Encapsulate your body in amber, becoming immune to all Physical attacks and spells for 8 seconds, and healing you for 300 + 50% SP every 2 sec, but making you unable to move or act.\n\nUsable while stunned, feared, or polymorphed."
+          }
+        ],
+        "connections": [
+          6588,
+          7800
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Amber_stone_Border",
+          "key": "custom_amber_stone_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29258,
+        "name": "Molten Fervor",
+        "slug": "molten-fervor",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": []
+        },
+        "spell_id": 680476,
+        "spell_ids": [
+          680476
+        ],
+        "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your spell haste by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680476,
+            "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases your spell haste by 5%."
+          }
+        ],
+        "connections": [
+          6578,
+          6588
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_elemental_crystal_fire",
+          "key": "inv_elemental_crystal_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5544,
+        "name": "Magma Fissure",
+        "slug": "magma-fissure",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802793,
+        "spell_ids": [
+          802793
+        ],
+        "description_html": "Stomp the ground and unleash a wave of earth and stone in a <span class=\"item-number\">20</span> yd line that knocks all enemies to the side and deals <span class=\"item-number\">cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1)</span> Fire damage, piercing absorption effects.<br /><br />Your next spell within <span class=\"item-number\">6</span> seconds is instant cast.",
+        "description": "Stomp the ground and unleash a wave of earth and stone in a 20 yd line that knocks all enemies to the side and deals cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1) Fire damage, piercing absorption effects.\n\nYour next spell within 6 seconds is instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802793,
+            "description_html": "Stomp the ground and unleash a wave of earth and stone in a <span class=\"item-number\">20</span> yd line that knocks all enemies to the side and deals <span class=\"item-number\">cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1)</span> Fire damage, piercing absorption effects.<br /><br />Your next spell within <span class=\"item-number\">6</span> seconds is instant cast.",
+            "description": "Stomp the ground and unleash a wave of earth and stone in a 20 yd line that knocks all enemies to the side and deals cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1) Fire damage, piercing absorption effects.\n\nYour next spell within 6 seconds is instant cast."
+          }
+        ],
+        "connections": [
+          6303,
+          6578,
+          9453
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_volcano",
+          "key": "spell_fire_volcano",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4207,
+        "name": "Crushing the Earth",
+        "slug": "crushing-the-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 300697,
+        "spell_ids": [
+          300697
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />You now gain spell power equal to <span class=\"item-number\">50%</span> of your armor penetration rating.",
+        "description": "Level 40 Passive\nYou now gain spell power equal to 50% of your armor penetration rating.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300697,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />You now gain spell power equal to <span class=\"item-number\">50%</span> of your armor penetration rating.",
+            "description": "Level 40 Passive\nYou now gain spell power equal to 50% of your armor penetration rating."
+          }
+        ],
+        "connections": [
+          9999
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_tradeskillitem_sorcerersearth_tong",
+          "key": "inv_tradeskillitem_sorcerersearth_tong",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7543,
+        "name": "Tectonic Resonance",
+        "slug": "tectonic-resonance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707173,
+        "spell_ids": [
+          707173
+        ],
+        "description_html": "Increases the amount that <span style=\"color: #ffffff; display: inline\">Earthquake</span> slows enemies by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the amount that Earthquake slows enemies by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707173,
+            "description_html": "Increases the amount that <span style=\"color: #ffffff; display: inline\">Earthquake</span> slows enemies by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the amount that Earthquake slows enemies by -30%."
+          }
+        ],
+        "connections": [
+          7800
+        ],
+        "choice_group": 707810,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_earthshock_Border",
+          "key": "nhi_earthshock_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12543,
+        "name": "Tectonic Power",
+        "slug": "tectonic-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707810,
+        "spell_ids": [
+          707810
+        ],
+        "description_html": "Increases the duration <span style=\"color: #ffffff; display: inline\">Earthquake</span> by <span class=\"item-number\">3</span> sec and increases its damage dealt by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration Earthquake by 3 sec and increases its damage dealt by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707810,
+            "description_html": "Increases the duration <span style=\"color: #ffffff; display: inline\">Earthquake</span> by <span class=\"item-number\">3</span> sec and increases its damage dealt by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration Earthquake by 3 sec and increases its damage dealt by 25%."
+          }
+        ],
+        "connections": [
+          7800
+        ],
+        "choice_group": 707810,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_AbolishMagic",
+          "key": "spell_nature_abolishmagic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5193,
+        "name": "Embraced By Earth!",
+        "slug": "embraced-by-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561037,
+        "spell_ids": [
+          561037
+        ],
+        "description_html": "At the end of the duration of <span style=\"color: #ffffff; display: inline\">Earth's Embrace</span>, you now disorient all nearby enemies for <span class=\"item-number\">6</span> seconds. Damage dealt will end the effect.",
+        "description": "At the end of the duration of Earth's Embrace, you now disorient all nearby enemies for 6 seconds. Damage dealt will end the effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561037,
+            "description_html": "At the end of the duration of <span style=\"color: #ffffff; display: inline\">Earth's Embrace</span>, you now disorient all nearby enemies for <span class=\"item-number\">6</span> seconds. Damage dealt will end the effect.",
+            "description": "At the end of the duration of Earth's Embrace, you now disorient all nearby enemies for 6 seconds. Damage dealt will end the effect."
+          }
+        ],
+        "connections": [
+          31309
+        ],
+        "choice_group": 326282,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_archstone_01",
+          "key": "inv_misc_archstone_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6593,
+        "name": "Cragforming",
+        "slug": "cragforming",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560481,
+        "spell_ids": [
+          560481
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Earth's Embrace</span> by <span class=\"item-number\">4</span> sec.",
+        "description": "Increases the duration of Earth's Embrace by 4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560481,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Earth's Embrace</span> by <span class=\"item-number\">4</span> sec.",
+            "description": "Increases the duration of Earth's Embrace by 4 sec."
+          }
+        ],
+        "connections": [
+          31309
+        ],
+        "choice_group": 326282,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_pureofheart",
+          "key": "spell_holy_pureofheart",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6267,
+        "name": "Cave In",
+        "slug": "cave-in",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500615,
+        "spell_ids": [
+          500615
+        ],
+        "description_html": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for <span class=\"item-number\">4</span> seconds.<br /><br />Successfully interrupting a target generates <span class=\"item-number\">1</span> stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.",
+        "description": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for 4 seconds.\n\nSuccessfully interrupting a target generates 1 stack of Earthshaping.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500615,
+            "description_html": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for <span class=\"item-number\">4</span> seconds.<br /><br />Successfully interrupting a target generates <span class=\"item-number\">1</span> stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.",
+            "description": "Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for 4 seconds.\n\nSuccessfully interrupting a target generates 1 stack of Earthshaping."
+          }
+        ],
+        "connections": [
+          5544,
+          29258,
+          31309
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deepwinddunk_dunk",
+          "key": "ability_deepwinddunk_dunk",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7537,
+        "name": "Cave Dweller",
+        "slug": "cave-dweller",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 574314,
+        "spell_ids": [
+          574314,
+          574361
+        ],
+        "description_html": "Increases your maximum Rage by <span class=\"item-number\">15</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your maximum Rage by 15 and reduces spell pushback suffered from damaging attacks by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574314,
+            "description_html": "Increases your maximum Rage by <span class=\"item-number\">15</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum Rage by 15 and reduces spell pushback suffered from damaging attacks by 50%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 574361,
+            "description_html": "Increases your maximum Rage by <span class=\"item-number\">30</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum Rage by 30 and reduces spell pushback suffered from damaging attacks by 100%."
+          }
+        ],
+        "connections": [
+          5544
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_shoulder_leather_pvpdruid_c_02",
+          "key": "inv_shoulder_leather_pvpdruid_c_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2386,
+        "name": "Blessing of Therazane",
+        "slug": "blessing-of-therazane",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680439,
+        "spell_ids": [
+          680439
+        ],
+        "description_html": "Each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> now increases your critical damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Each stack of Earthshaping now increases your critical damage dealt by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680439,
+            "description_html": "Each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span> now increases your critical damage dealt by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Each stack of Earthshaping now increases your critical damage dealt by 5%."
+          }
+        ],
+        "connections": [
+          6303,
+          9453
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Boss_PrincessTheradras",
+          "key": "achievement_boss_princesstheradras",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6788,
+        "name": "Eruption",
+        "slug": "eruption",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802335,
+        "spell_ids": [
+          802335
+        ],
+        "description_html": "Launch <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Magma Geode</span> at your target every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">0.2</span> seconds, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 225+0+SPFI*0.2, 225+0+SPN*0.2)</span> Firestorm Damage. <br /><br />Duration increased by <span class=\"item-number\">0.2</span> sec for each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.",
+        "description": "Launch 1 Magma Geode at your target every 0 sec for 0.2 seconds, dealing cond(gt(SPFI, SPN), 225+0+SPFI*0.2, 225+0+SPN*0.2) Firestorm Damage.\n\nDuration increased by 0.2 sec for each stack of Earthshaping.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802335,
+            "description_html": "Launch <span class=\"item-number\">1</span> <span style=\"color: #FFFFFF; display: inline\">Magma Geode</span> at your target every <span class=\"item-number\">0</span> sec for <span class=\"item-number\">0.2</span> seconds, dealing <span class=\"item-number\">cond(gt(SPFI, SPN), 225+0+SPFI*0.2, 225+0+SPN*0.2)</span> Firestorm Damage. <br /><br />Duration increased by <span class=\"item-number\">0.2</span> sec for each stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.",
+            "description": "Launch 1 Magma Geode at your target every 0 sec for 0.2 seconds, dealing cond(gt(SPFI, SPN), 225+0+SPFI*0.2, 225+0+SPN*0.2) Firestorm Damage.\n\nDuration increased by 0.2 sec for each stack of Earthshaping."
+          }
+        ],
+        "connections": [
+          5193,
+          6593,
+          7543,
+          12543
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\6bf_blackrock_nova",
+          "key": "_6bf_blackrock_nova",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30104,
+        "name": "Journey To The Core",
+        "slug": "journey-to-the-core",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560510,
+        "spell_ids": [
+          560510
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to form a crag beneath your target that explodes after <span class=\"item-number\">3</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthwall_border\" /><span class=\"name\">Crag (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">473</span> + <span class=\"item-number\">100% nature SP</span> Physical Damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">5</span> yds and increases the damage they take from your <span style=\"color: #ffffff; display: inline\">Earthquake</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+        "description": "Damage dealt by Seismic Tremor now has a 20% chance to form a crag beneath your target that explodes after 3 seconds.Crag (Damage)Deals 473 + 100% nature SP Physical Damage to up to 5 enemies within 5 yds and increases the damage they take from your Earthquake by 20% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560510,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to form a crag beneath your target that explodes after <span class=\"item-number\">3</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthwall_border\" /><span class=\"name\">Crag (Damage)</span></div><span class=\"desc\">Deals <span class=\"item-number\">473</span> + <span class=\"item-number\">100% nature SP</span> Physical Damage to up to <span class=\"item-number\">5</span> enemies within <span class=\"item-number\">5</span> yds and increases the damage they take from your <span style=\"color: #ffffff; display: inline\">Earthquake</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+            "description": "Damage dealt by Seismic Tremor now has a 20% chance to form a crag beneath your target that explodes after 3 seconds.Crag (Damage)Deals 473 + 100% nature SP Physical Damage to up to 5 enemies within 5 yds and increases the damage they take from your Earthquake by 20% for 5 seconds."
+          }
+        ],
+        "connections": [
+          5193,
+          6267,
+          6593,
+          7537
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rhyolith_lavapool",
+          "key": "ability_rhyolith_lavapool",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7545,
+        "name": "Geomolding",
+        "slug": "geomolding",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560169,
+        "spell_ids": [
+          560169
+        ],
+        "description_html": "Periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> now grants <span style=\"color: #ffffff; display: inline\">Geomolding</span> for <span class=\"item-number\">30</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_earth\" /><span class=\"name\">Geomolding (Proc)</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Terrasurge</span> costs <span class=\"item-number\">3</span> additional Rage and deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage. Stacks <span class=\"item-number\">10</span> times.</span></div>",
+        "description": "Periodic damage dealt by Seismic Tremor now grants Geomolding for 30 seconds.Geomolding (Proc)Your next Terrasurge costs 3 additional Rage and deals 10% increased damage. Stacks 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560169,
+            "description_html": "Periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span> now grants <span style=\"color: #ffffff; display: inline\">Geomolding</span> for <span class=\"item-number\">30</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_elemental_primal_earth\" /><span class=\"name\">Geomolding (Proc)</span></div><span class=\"desc\">Your next <span style=\"color: #FFFFFF; display: inline\">Terrasurge</span> costs <span class=\"item-number\">3</span> additional Rage and deals <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage. Stacks <span class=\"item-number\">10</span> times.</span></div>",
+            "description": "Periodic damage dealt by Seismic Tremor now grants Geomolding for 30 seconds.Geomolding (Proc)Your next Terrasurge costs 3 additional Rage and deals 10% increased damage. Stacks 10 times."
+          }
+        ],
+        "connections": [
+          2386,
+          7537
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Elemental_Primal_Earth",
+          "key": "inv_elemental_primal_earth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4208,
+        "name": "Therazane's Blessing",
+        "slug": "therazanes-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 560156,
+        "spell_ids": [
+          560156
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Allows the periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span>, <span style=\"color: #ffffff; display: inline\">Seismic Crash</span>, and <span style=\"color: #ffffff; display: inline\">Earthquake</span> to critically strike.",
+        "description": "Level 50 Passive\nAllows the periodic damage dealt by Seismic Tremor, Seismic Crash, and Earthquake to critically strike.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560156,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Allows the periodic damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Tremor</span>, <span style=\"color: #ffffff; display: inline\">Seismic Crash</span>, and <span style=\"color: #ffffff; display: inline\">Earthquake</span> to critically strike.",
+            "description": "Level 50 Passive\nAllows the periodic damage dealt by Seismic Tremor, Seismic Crash, and Earthquake to critically strike."
+          }
+        ],
+        "connections": [
+          4207
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_scrollofearth_Border",
+          "key": "nhi_scrollofearth_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6257,
+        "name": "Magmatism",
+        "slug": "magmatism",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706174,
+        "spell_ids": [
+          706174
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Eruption</span> by <span class=\"item-number\">-15</span> sec and causes <span style=\"color: #FFFFFF; display: inline\">Magma Geodes</span> to deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> more damage to enemies above <span class=\"item-number\">75%</span> health.",
+        "description": "Reduces the cooldown of Eruption by -15 sec and causes Magma Geodes to deal 30% more damage to enemies above 75% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706174,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Eruption</span> by <span class=\"item-number\">-15</span> sec and causes <span style=\"color: #FFFFFF; display: inline\">Magma Geodes</span> to deal <span class=\"item-number\">30</span><span class=\"item-number\">%</span> more damage to enemies above <span class=\"item-number\">75%</span> health.",
+            "description": "Reduces the cooldown of Eruption by -15 sec and causes Magma Geodes to deal 30% more damage to enemies above 75% health."
+          }
+        ],
+        "connections": [
+          6788
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ChaoticSpikes_Border",
+          "key": "custom_t_nhance_rpg_icons_chaoticspikes_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6587,
+        "name": "Heavy Earth",
+        "slug": "heavy-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706160,
+        "spell_ids": [
+          706160
+        ],
+        "description_html": "$199",
+        "description": "$199",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706160,
+            "description_html": "$19a",
+            "description": "$19a"
+          }
+        ],
+        "connections": [
+          6788,
+          7545,
+          30104
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_elementalearth2",
+          "key": "inv_elementalearth2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7547,
+        "name": "Rupturer",
+        "slug": "rupturer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 83,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706208,
+        "spell_ids": [
+          706208
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> or <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates a stack of <span style=\"color: #ffffff; display: inline\">Geomolding</span>. <br /><br />Critically striking with <span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> or <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates an additional stack of <span style=\"color: #FFFFFF; display: inline\">Geomolding</span> plus a stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Lithic Lance</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Terrasurge</span> by <span class=\"item-number\">-4</span> sec.",
+        "description": "Damage dealt by Seismic Spike or Seismic Crash now generates a stack of Geomolding.\n\nCritically striking with Seismic Spike or Seismic Crash now generates an additional stack of Geomolding plus a stack of Earthshaping.\n\nCasting Lithic Lance now reduces the cooldown of Terrasurge by -4 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706208,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> or <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates a stack of <span style=\"color: #ffffff; display: inline\">Geomolding</span>. <br /><br />Critically striking with <span style=\"color: #FFFFFF; display: inline\">Seismic Spike</span> or <span style=\"color: #ffffff; display: inline\">Seismic Crash</span> now generates an additional stack of <span style=\"color: #FFFFFF; display: inline\">Geomolding</span> plus a stack of <span style=\"color: #c6a36a; display: inline\">Earthshaping</span>.<br /><br />Casting <span style=\"color: #ffffff; display: inline\">Lithic Lance</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Terrasurge</span> by <span class=\"item-number\">-4</span> sec.",
+            "description": "Damage dealt by Seismic Spike or Seismic Crash now generates a stack of Geomolding.\n\nCritically striking with Seismic Spike or Seismic Crash now generates an additional stack of Geomolding plus a stack of Earthshaping.\n\nCasting Lithic Lance now reduces the cooldown of Terrasurge by -4 sec."
+          }
+        ],
+        "connections": [
+          7545
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_Stone_03",
+          "key": "inv_ascend_stone_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

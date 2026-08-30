@@ -1,0 +1,2414 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:18+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:52049a67b4d666b30c5c4f2d25bcef963ba78ac5f633e353dc1d3813b8e341f5",
+    "talent_count": 198,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 25,
+    "name": "Cultist",
+    "slug": "cultist",
+    "class_file": "cultist",
+    "color": "rgb(156, 69, 242)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:cultist",
+      "key": "class-cultist",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 30,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 65,
+    "name": "Corruption",
+    "slug": "corruption",
+    "sort_order": 2,
+    "class_id": 25,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31190,
+        "name": "Darkwither",
+        "slug": "darkwither",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4041,
+            29470
+          ]
+        },
+        "spell_id": 800446,
+        "spell_ids": [
+          800446
+        ],
+        "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Wither an enemy, dealing <span class=\"item-number\">135</span> Shadow damage over <span class=\"item-number\">15</span> seconds. Each instance of damage reduces their periodic healing taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">4</span> times.",
+        "description": "Generates 10 Insanity\nWither an enemy, dealing 135 Shadow damage over 15 seconds. Each instance of damage reduces their periodic healing taken by -5%, stacking up to 4 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800446,
+            "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Wither an enemy, dealing <span class=\"item-number\">135</span> Shadow damage over <span class=\"item-number\">15</span> seconds. Each instance of damage reduces their periodic healing taken by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">4</span> times.",
+            "description": "Generates 10 Insanity\nWither an enemy, dealing 135 Shadow damage over 15 seconds. Each instance of damage reduces their periodic healing taken by -5%, stacking up to 4 times."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_unstableaffliction_3_purple",
+          "key": "spell_shadow_unstableaffliction_3_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4041,
+        "name": "Corrupting Whispers",
+        "slug": "corrupting-whispers",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 10,
+          "talent_ids": [
+            29470
+          ]
+        },
+        "spell_id": 92130,
+        "spell_ids": [
+          92130
+        ],
+        "description_html": "Damage dealt has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Corrupting Whispers</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_magicspell__85__border\" /><span class=\"name\">Corrupting Whispers (Aura)</span></div><span class=\"desc\">Increases your Magic Damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>",
+        "description": "Damage dealt has a 15% chance to grant you Corrupting Whispers.\nCorrupting Whispers (Aura)Increases your Magic Damage dealt by 20% and reduces your mana costs by -30% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92130,
+            "description_html": "Damage dealt has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Corrupting Whispers</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 novart_magicspell__85__border\" /><span class=\"name\">Corrupting Whispers (Aura)</span></div><span class=\"desc\">Increases your Magic Damage dealt by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.</span></div>",
+            "description": "Damage dealt has a 15% chance to grant you Corrupting Whispers.\nCorrupting Whispers (Aura)Increases your Magic Damage dealt by 20% and reduces your mana costs by -30% for 8 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\CThunIcon",
+          "key": "cthunicon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6559,
+        "name": "Absolute Horror",
+        "slug": "absolute-horror",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300309,
+        "spell_ids": [
+          300309
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> and <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">0.3</span> sec.",
+        "description": "Reduces the cast time of Horrorbolt and Wrath of the Black Empire by 0.3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300309,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> and <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">0.3</span> sec.",
+            "description": "Reduces the cast time of Horrorbolt and Wrath of the Black Empire by 0.3 sec."
+          }
+        ],
+        "connections": [
+          31190
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_volatileshadow",
+          "key": "inv_misc_volatileshadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6327,
+        "name": "Feeding Darkness",
+        "slug": "feeding-darkness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300302,
+        "spell_ids": [
+          300302,
+          301347
+        ],
+        "description_html": "Increases the range of your Corruption spells by <span class=\"item-number\">3</span> yds and their chance to critically strike by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the range of your Corruption spells by 3 yds and their chance to critically strike by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300302,
+            "description_html": "Increases the range of your Corruption spells by <span class=\"item-number\">3</span> yds and their chance to critically strike by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the range of your Corruption spells by 3 yds and their chance to critically strike by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301347,
+            "description_html": "Increases the range of your Corruption spells by <span class=\"item-number\">6</span> yds and their chance to critically strike by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the range of your Corruption spells by 6 yds and their chance to critically strike by 4%."
+          }
+        ],
+        "connections": [
+          31190
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_mindtwisting",
+          "key": "spell_shadow_mindtwisting",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6557,
+        "name": "Moment of Clarity",
+        "slug": "moment-of-clarity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706179,
+        "spell_ids": [
+          706179,
+          707783
+        ],
+        "description_html": "Reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span> and increases mana generated by <span style=\"color: #FFFFFF; display: inline\">Sanity Tap</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces spell pushback suffered from damaging attacks by 35% and increases mana generated by Sanity Tap by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706179,
+            "description_html": "Reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span> and increases mana generated by <span style=\"color: #FFFFFF; display: inline\">Sanity Tap</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces spell pushback suffered from damaging attacks by 35% and increases mana generated by Sanity Tap by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707783,
+            "description_html": "Reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span> and increases mana generated by <span style=\"color: #FFFFFF; display: inline\">Sanity Tap</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces spell pushback suffered from damaging attacks by 70% and increases mana generated by Sanity Tap by 10%."
+          }
+        ],
+        "connections": [
+          6559
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_ShadowMeld",
+          "key": "ability_racial_shadowmeld",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7052,
+        "name": "Call of N'Zoth",
+        "slug": "call-of-nzoth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300306,
+        "spell_ids": [
+          300306
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> by <span class=\"item-number\">9</span> sec.",
+        "description": "Increases the duration of Darkwither by 9 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300306,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> by <span class=\"item-number\">9</span> sec.",
+            "description": "Increases the duration of Darkwither by 9 sec."
+          }
+        ],
+        "connections": [
+          6327,
+          6559
+        ],
+        "choice_group": 301317,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_1h_nzothraid_d_01",
+          "key": "inv_wand_1h_nzothraid_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13052,
+        "name": "Call of C'Thun",
+        "slug": "call-of-cthun",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301317,
+        "spell_ids": [
+          301317
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Darkwither</span>'s healing reduction now stacks <span class=\"item-number\">3</span> additional times and its tick rate is increased by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Your Darkwither's healing reduction now stacks 3 additional times and its tick rate is increased by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301317,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Darkwither</span>'s healing reduction now stacks <span class=\"item-number\">3</span> additional times and its tick rate is increased by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Your Darkwither's healing reduction now stacks 3 additional times and its tick rate is increased by -25%."
+          }
+        ],
+        "connections": [
+          6327,
+          6559
+        ],
+        "choice_group": 301317,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_knife_1h_artifactcthun_d_02",
+          "key": "inv_knife_1h_artifactcthun_d_02",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33937,
+        "name": "Servant of C'Thun",
+        "slug": "servant-of-cthun",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300296,
+        "spell_ids": [
+          300296
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> now always triggers your <span style=\"color: #ffffff; display: inline\">Presence of C'Thun</span> while it is active.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 cthunicon\" /><span class=\"name\">Presence of C&#39;Thun (Buff)</span></div><span class=\"desc\">Increases your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.</span></div>",
+        "description": "Casting Gaze of C'thun now always triggers your Presence of C'Thun while it is active.Presence of C'Thun (Buff)Increases your haste by 20% for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300296,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> now always triggers your <span style=\"color: #ffffff; display: inline\">Presence of C'Thun</span> while it is active.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 cthunicon\" /><span class=\"name\">Presence of C&#39;Thun (Buff)</span></div><span class=\"desc\">Increases your haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.</span></div>",
+            "description": "Casting Gaze of C'thun now always triggers your Presence of C'Thun while it is active.Presence of C'Thun (Buff)Increases your haste by 20% for 6 seconds."
+          }
+        ],
+        "connections": [
+          6327
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_GatherShadows",
+          "key": "spell_shadow_gathershadows",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5254,
+        "name": "Dark Magician",
+        "slug": "dark-magician",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 563123,
+        "spell_ids": [
+          563123
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your critical damage dealt by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and your spell power by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your critical damage dealt by 50% and your spell power by 30% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 563123,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your critical damage dealt by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and your spell power by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your critical damage dealt by 50% and your spell power by 30% of your Intellect."
+          }
+        ],
+        "connections": [
+          4041
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_void_flay",
+          "key": "spell_priest_void_flay",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29471,
+        "name": "Eldritch Devastation",
+        "slug": "eldritch-devastation",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802727,
+        "spell_ids": [
+          802727
+        ],
+        "description_html": "Channel upon an enemy, chaining to nearby enemies, dealing <span class=\"item-number\">80</span> + <span class=\"item-number\">176% shadow SP</span> Shadow damage over <span class=\"item-number\">4</span> seconds, dealing less damage with each enemy struck and draining <span class=\"item-number\">20</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+        "description": "Channel upon an enemy, chaining to nearby enemies, dealing 80 + 176% shadow SP Shadow damage over 4 seconds, dealing less damage with each enemy struck and draining 20 Insanity.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802727,
+            "description_html": "Channel upon an enemy, chaining to nearby enemies, dealing <span class=\"item-number\">80</span> + <span class=\"item-number\">176% shadow SP</span> Shadow damage over <span class=\"item-number\">4</span> seconds, dealing less damage with each enemy struck and draining <span class=\"item-number\">20</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+            "description": "Channel upon an enemy, chaining to nearby enemies, dealing 80 + 176% shadow SP Shadow damage over 4 seconds, dealing less damage with each enemy struck and draining 20 Insanity."
+          }
+        ],
+        "connections": [
+          6557,
+          7052,
+          13052
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_artifact_powerofthedarkside",
+          "key": "inv_artifact_powerofthedarkside",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7056,
+        "name": "Obliteration Beam",
+        "slug": "obliteration-beam",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805572,
+        "spell_ids": [
+          805572
+        ],
+        "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Unleash a beam of eldritch energy, dealing <span class=\"item-number\">126</span> + <span class=\"item-number\">65% shadow SP</span> Shadow damage to an enemy and all nearby enemies.<br /><br />While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> more damage.",
+        "description": "Generates 10 Insanity\nUnleash a beam of eldritch energy, dealing 126 + 65% shadow SP Shadow damage to an enemy and all nearby enemies.\n\nWhile above 60 Insanity, deals 20% more damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805572,
+            "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">10</span> Insanity</span><br />Unleash a beam of eldritch energy, dealing <span class=\"item-number\">126</span> + <span class=\"item-number\">65% shadow SP</span> Shadow damage to an enemy and all nearby enemies.<br /><br />While above <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, deals <span class=\"item-number\">20</span><span class=\"item-number\">%</span> more damage.",
+            "description": "Generates 10 Insanity\nUnleash a beam of eldritch energy, dealing 126 + 65% shadow SP Shadow damage to an enemy and all nearby enemies.\n\nWhile above 60 Insanity, deals 20% more damage."
+          }
+        ],
+        "connections": [
+          7052,
+          13052,
+          33937
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadoweye_Border",
+          "key": "nhi_shadoweye_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29270,
+        "name": "Unrelenting Void",
+        "slug": "unrelenting-void",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704527,
+        "spell_ids": [
+          704527
+        ],
+        "description_html": "Periodic or channeled damage now increases the damage the enemy takes from you by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Periodic or channeled damage now increases the damage the enemy takes from you by 2% for 10 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704527,
+            "description_html": "Periodic or channeled damage now increases the damage the enemy takes from you by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Periodic or channeled damage now increases the damage the enemy takes from you by 2% for 10 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          6557,
+          29471
+        ],
+        "choice_group": 704527,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_bossgorefiend_touchofdoom",
+          "key": "ability_bossgorefiend_touchofdoom",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33939,
+        "name": "Mind Rot",
+        "slug": "mind-rot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300300,
+        "spell_ids": [
+          300300
+        ],
+        "description_html": "Periodic or channeled damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to curse your target, applying <span style=\"color: #ffffff; display: inline\">Mind Rot</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _virus_purple\" /><span class=\"name\">Mind Rot (Trigger)</span></div><span class=\"desc\">Increases the chance for allies to hit with all spells against the afflicted enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />If this effect is dispelled, your critical strike chance is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+        "description": "Periodic or channeled damage dealt now has a 25% chance to curse your target, applying Mind Rot.Mind Rot (Trigger)Increases the chance for allies to hit with all spells against the afflicted enemy by 3% for 10 seconds.\n\nIf this effect is dispelled, your critical strike chance is increased by 30% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300300,
+            "description_html": "Periodic or channeled damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to curse your target, applying <span style=\"color: #ffffff; display: inline\">Mind Rot</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _virus_purple\" /><span class=\"name\">Mind Rot (Trigger)</span></div><span class=\"desc\">Increases the chance for allies to hit with all spells against the afflicted enemy by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />If this effect is dispelled, your critical strike chance is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.</span></div>",
+            "description": "Periodic or channeled damage dealt now has a 25% chance to curse your target, applying Mind Rot.Mind Rot (Trigger)Increases the chance for allies to hit with all spells against the afflicted enemy by 3% for 10 seconds.\n\nIf this effect is dispelled, your critical strike chance is increased by 30% for 5 seconds."
+          }
+        ],
+        "connections": [
+          6557,
+          29471
+        ],
+        "choice_group": 704527,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_mindshear",
+          "key": "spell_shadow_mindshear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6312,
+        "name": "Cunning Nature",
+        "slug": "cunning-nature",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706915,
+        "spell_ids": [
+          706915,
+          707784
+        ],
+        "description_html": "Increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and reduces threat generated by Shadow damage spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your chance to hit by 3% and reduces threat generated by Shadow damage spells by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706915,
+            "description_html": "Increases your chance to hit by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and reduces threat generated by Shadow damage spells by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to hit by 3% and reduces threat generated by Shadow damage spells by -15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707784,
+            "description_html": "Increases your chance to hit by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and reduces threat generated by Shadow damage spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to hit by 6% and reduces threat generated by Shadow damage spells by -30%."
+          }
+        ],
+        "connections": [
+          7052,
+          13052
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowwatcher_Border",
+          "key": "nhi_shadowwatcher_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30671,
+        "name": "Dark Revelation",
+        "slug": "dark-revelation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706245,
+        "spell_ids": [
+          706245
+        ],
+        "description_html": "Grants your <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> and <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span>.",
+        "description": "Grants your Horrorbolt and Wrath of the Black Empire a 20% chance to reset the cooldown of Gaze of C'thun.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706245,
+            "description_html": "Grants your <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> and <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span>.",
+            "description": "Grants your Horrorbolt and Wrath of the Black Empire a 20% chance to reset the cooldown of Gaze of C'thun."
+          }
+        ],
+        "connections": [
+          7056,
+          33937
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_summonvoidwalker",
+          "key": "spell_shadow_summonvoidwalker",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2312,
+        "name": "Whispers of C'Thun",
+        "slug": "whispers-of-cthun",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 807512,
+        "spell_ids": [
+          807512
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now generates <span class=\"item-number\">10</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+        "description": "Level 30 Passive\nYour Gaze of C'Thun now generates 10 Insanity.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807512,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now generates <span class=\"item-number\">10</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+            "description": "Level 30 Passive\nYour Gaze of C'Thun now generates 10 Insanity."
+          }
+        ],
+        "connections": [
+          5254
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_ScrollOfSpeed_Purple",
+          "key": "scrollofspeed_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7057,
+        "name": "Corruptor's Gaze",
+        "slug": "corruptors-gaze",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802048,
+        "spell_ids": [
+          802048
+        ],
+        "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of your Tentacles by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802048,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Tentacles</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Tentacles by 20%."
+          }
+        ],
+        "connections": [
+          29270,
+          33939
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_eyeofnzothpet",
+          "key": "inv_eyeofnzothpet",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9935,
+        "name": "Dread",
+        "slug": "dread",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301315,
+        "spell_ids": [
+          301315
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkwither</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Darkwither by 30% and Eldritch Shock by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301315,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Darkwither</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and <span style=\"color: #ffffff; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Darkwither by 30% and Eldritch Shock by 15%."
+          }
+        ],
+        "connections": [
+          29270,
+          29471,
+          33939
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_BurningSpirit",
+          "key": "spell_shadow_burningspirit",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7071,
+        "name": "Visions",
+        "slug": "visions",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560526,
+        "spell_ids": [
+          560526
+        ],
+        "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your Shadow damage is increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, your Shadow damage is increased by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560526,
+            "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, your Shadow damage is increased by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, your Shadow damage is increased by 3%."
+          }
+        ],
+        "connections": [
+          6312
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_void_whirl_Border",
+          "key": "nhi_void_whirl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33938,
+        "name": "Worrysome Idol",
+        "slug": "worrysome-idol",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706917,
+        "spell_ids": [
+          706917
+        ],
+        "description_html": "Increases your spell haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and causes you to regenerate mana equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your missing mana every <span class=\"item-number\">10</span> sec.",
+        "description": "Increases your spell haste by 4% and causes you to regenerate mana equal to 10% of your missing mana every 10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706917,
+            "description_html": "Increases your spell haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and causes you to regenerate mana equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your missing mana every <span class=\"item-number\">10</span> sec.",
+            "description": "Increases your spell haste by 4% and causes you to regenerate mana equal to 10% of your missing mana every 10 sec."
+          }
+        ],
+        "connections": [
+          7056,
+          30671
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(88)_Border",
+          "key": "novart_magicspell__88__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11935,
+        "name": "Horrific Visions",
+        "slug": "horrific-visions",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707753,
+        "spell_ids": [
+          707753
+        ],
+        "description_html": "While above <span class=\"item-number\">40</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, your chance to trigger <span style=\"color: #ffffff; display: inline\">Dark Revelation</span> is now increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "While above 40 Insanity, your chance to trigger Dark Revelation is now increased by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707753,
+            "description_html": "While above <span class=\"item-number\">40</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, your chance to trigger <span style=\"color: #ffffff; display: inline\">Dark Revelation</span> is now increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "While above 40 Insanity, your chance to trigger Dark Revelation is now increased by 10%."
+          }
+        ],
+        "connections": [
+          30671
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_UnholyFrenzy",
+          "key": "spell_shadow_unholyfrenzy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7072,
+        "name": "Foul Play",
+        "slug": "foul-play",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706921,
+        "spell_ids": [
+          706921
+        ],
+        "description_html": "Increases the damage bonus provided by your <span style=\"color: #ffffff; display: inline\">Corrupting Whispers</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage bonus provided by your Corrupting Whispers by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706921,
+            "description_html": "Increases the damage bonus provided by your <span style=\"color: #ffffff; display: inline\">Corrupting Whispers</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage bonus provided by your Corrupting Whispers by 5%."
+          }
+        ],
+        "connections": [
+          7057,
+          9935
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+          "key": "spell_shadow_chilltouch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33942,
+        "name": "Terror",
+        "slug": "terror",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300304,
+        "spell_ids": [
+          300304
+        ],
+        "description_html": "Increases the spell damage bonus of <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span> and <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Wrath of the Empire</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell damage bonus of Horrorbolt and Eldritch Shock by 10% and Wrath of the Empire by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300304,
+            "description_html": "Increases the spell damage bonus of <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span> and <span style=\"color: #FFFFFF; display: inline\">Eldritch Shock</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Wrath of the Empire</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell damage bonus of Horrorbolt and Eldritch Shock by 10% and Wrath of the Empire by 20%."
+          }
+        ],
+        "connections": [
+          9935
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_howlofterror",
+          "key": "ability_warlock_howlofterror",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1375,
+        "name": "Psychic Suppression",
+        "slug": "psychic-suppression",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800432,
+        "spell_ids": [
+          800432
+        ],
+        "description_html": "Stun an enemy, dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">55% shadow SP</span> + <span class=\"item-number\">10% AP</span> Shadow damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds. <br /><br />The target takes <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more spell damage from all sources while you are channeling this spell.",
+        "description": "Stun an enemy, dealing 30 + 55% shadow SP + 10% AP Shadow damage every 1 sec for 5 seconds.\n\nThe target takes 15% more spell damage from all sources while you are channeling this spell.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800432,
+            "description_html": "Stun an enemy, dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">55% shadow SP</span> + <span class=\"item-number\">10% AP</span> Shadow damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds. <br /><br />The target takes <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more spell damage from all sources while you are channeling this spell.",
+            "description": "Stun an enemy, dealing 30 + 55% shadow SP + 10% AP Shadow damage every 1 sec for 5 seconds.\n\nThe target takes 15% more spell damage from all sources while you are channeling this spell."
+          }
+        ],
+        "connections": [
+          7071,
+          9935,
+          33938
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_voidsear",
+          "key": "spell_priest_voidsear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33945,
+        "name": "Inner Turmoil",
+        "slug": "inner-turmoil",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706722,
+        "spell_ids": [
+          706722
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Wrath of the Black Empire by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706722,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Wrath of the Black Empire by 25%."
+          }
+        ],
+        "connections": [
+          33938
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_shadowchains_Border",
+          "key": "nhi_shadowchains_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7058,
+        "name": "Glimpse of Madness",
+        "slug": "glimpse-of-madness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500719,
+        "spell_ids": [
+          500719,
+          500767
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #FFFFFF; display: inline\">Madness</span> to all targets struck. <br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nzinsanity_chasedbyshadows\" /><span class=\"name\">Madness</span></div><span class=\"desc\">Your <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> causes <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased damage, stacks up to <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Reduces the cooldown of Obliteration Beam by -20% and it now applies Madness to all targets struck.\nMadnessYour Gaze of C'thun causes 3% increased damage, stacks up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500719,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #FFFFFF; display: inline\">Madness</span> to all targets struck. <br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nzinsanity_chasedbyshadows\" /><span class=\"name\">Madness</span></div><span class=\"desc\">Your <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> causes <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased damage, stacks up to <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Reduces the cooldown of Obliteration Beam by -20% and it now applies Madness to all targets struck.\nMadnessYour Gaze of C'thun causes 3% increased damage, stacks up to 5 times."
+          },
+          {
+            "rank": 2,
+            "spell_id": 500767,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-40</span><span class=\"item-number\">%</span> and it now applies <span style=\"color: #FFFFFF; display: inline\">Madness</span> to all targets struck. <br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nzinsanity_chasedbyshadows\" /><span class=\"name\">Madness</span></div><span class=\"desc\">Your <span style=\"color: #ffffff; display: inline\">Gaze of C'thun</span> causes <span class=\"item-number\">3</span><span class=\"item-number\">%</span> increased damage, stacks up to <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Reduces the cooldown of Obliteration Beam by -40% and it now applies Madness to all targets struck.\nMadnessYour Gaze of C'thun causes 3% increased damage, stacks up to 5 times."
+          }
+        ],
+        "connections": [
+          11935,
+          33938
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_MasterTactitian",
+          "key": "ability_hunter_mastertactitian",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4392,
+        "name": "Dark Revelation",
+        "slug": "dark-revelation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 300313,
+        "spell_ids": [
+          300313
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Grants all periodic damage and damage dealt a <span class=\"item-number\">6</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> and generate <span class=\"item-number\">5</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+        "description": "Level 40 Passive\nGrants all periodic damage and damage dealt a 6% chance to reset the cooldown of Gaze of C'Thun and generate 5 Insanity.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300313,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Grants all periodic damage and damage dealt a <span class=\"item-number\">6</span><span class=\"item-number\">%</span> chance to reset the cooldown of <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> and generate <span class=\"item-number\">5</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.",
+            "description": "Level 40 Passive\nGrants all periodic damage and damage dealt a 6% chance to reset the cooldown of Gaze of C'Thun and generate 5 Insanity."
+          }
+        ],
+        "connections": [
+          2312
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nzinsanity_desynchronized",
+          "key": "spell_nzinsanity_desynchronized",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 29477,
+        "name": "Yawning Decay",
+        "slug": "yawning-decay",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706909,
+        "spell_ids": [
+          706909
+        ],
+        "description_html": "Every 3rd <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> cast causes your next successful <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> to deal an additional <span class=\"item-number\">50%</span> of the initial damage to the target over <span class=\"item-number\">3</span> seconds.",
+        "description": "Every 3rd Horrorbolt cast causes your next successful Horrorbolt to deal an additional 50% of the initial damage to the target over 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706909,
+            "description_html": "Every 3rd <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> cast causes your next successful <span style=\"color: #ffffff; display: inline\">Horrorbolt</span> to deal an additional <span class=\"item-number\">50%</span> of the initial damage to the target over <span class=\"item-number\">3</span> seconds.",
+            "description": "Every 3rd Horrorbolt cast causes your next successful Horrorbolt to deal an additional 50% of the initial damage to the target over 3 seconds."
+          }
+        ],
+        "connections": [
+          7072,
+          33942
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_void_blast",
+          "key": "spell_priest_void_blast",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29478,
+        "name": "Embrace the Void",
+        "slug": "embrace-the-void",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300307,
+        "spell_ids": [
+          300307
+        ],
+        "description_html": "Reaching <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span> increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Reaching 60 Insanity increases your damage dealt by 10% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300307,
+            "description_html": "Reaching <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span> increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Reaching 60 Insanity increases your damage dealt by 10% for 10 seconds."
+          }
+        ],
+        "connections": [
+          33942
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_PainAndSuffering",
+          "key": "spell_shadow_painandsuffering",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13957,
+        "name": "Dark Channeler",
+        "slug": "dark-channeler",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301008,
+        "spell_ids": [
+          301008
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Psychic Suppression</span> by <span class=\"item-number\">1</span> sec and <span style=\"color: #ffffff; display: inline\">Eldritch Devastation</span> by <span class=\"item-number\">2</span> sec.",
+        "description": "Increases the duration of Psychic Suppression by 1 sec and Eldritch Devastation by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301008,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Psychic Suppression</span> by <span class=\"item-number\">1</span> sec and <span style=\"color: #ffffff; display: inline\">Eldritch Devastation</span> by <span class=\"item-number\">2</span> sec.",
+            "description": "Increases the duration of Psychic Suppression by 1 sec and Eldritch Devastation by 2 sec."
+          }
+        ],
+        "connections": [
+          1375
+        ],
+        "choice_group": 301008,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill20_Border",
+          "key": "_5_druideskill20_border",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33957,
+        "name": "Misery",
+        "slug": "misery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300298,
+        "spell_ids": [
+          300298
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Gaze of C'Thun</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Psychic Suppression</span> by <span class=\"item-number\">-4</span> sec and <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Casting Gaze of C'Thun now reduces the cooldown of Psychic Suppression by -4 sec and Grasp of Zek'voz by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300298,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Gaze of C'Thun</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Psychic Suppression</span> by <span class=\"item-number\">-4</span> sec and <span style=\"color: #ffffff; display: inline\">Grasp of Zek'voz</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Casting Gaze of C'Thun now reduces the cooldown of Psychic Suppression by -4 sec and Grasp of Zek'voz by -1 sec."
+          }
+        ],
+        "connections": [
+          1375
+        ],
+        "choice_group": 301008,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_lordstormsong",
+          "key": "achievement_dungeon_lordstormsong",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31356,
+        "name": "Occultism",
+        "slug": "occultism",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300305,
+        "spell_ids": [
+          300305
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Wrath of the Black Empire by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300305,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Wrath of the Black Empire by 10%."
+          }
+        ],
+        "connections": [
+          33945
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_book_b_03",
+          "key": "inv_ascend_book_b_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33936,
+        "name": "Depths of Madness",
+        "slug": "depths-of-madness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706911,
+        "spell_ids": [
+          706911
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> to chance to spawn a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.",
+        "description": "Damage dealt by Gaze of C'Thun now has a 15% to chance to spawn a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706911,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Gaze of C'Thun</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> to chance to spawn a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.",
+            "description": "Damage dealt by Gaze of C'Thun now has a 15% to chance to spawn a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing."
+          }
+        ],
+        "connections": [
+          7058,
+          33945
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_SoulHarvest2__Purple",
+          "key": "soulharvest2__purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33959,
+        "name": "Abyssal Destruction",
+        "slug": "abyssal-destruction",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300308,
+        "spell_ids": [
+          300308
+        ],
+        "description_html": "Periodic or channeled damage dealt now generates <span class=\"item-number\">2</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-1</span> sec, and grants <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Abyssal Destruction</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_priest_shadow_mend\" /><span class=\"name\">Abyssal Destruction</span></div><span class=\"desc\">Increases the damage dealt of your next <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times, for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Periodic or channeled damage dealt now generates 2 Insanity, reduces the cooldown of your Obliteration Beam by -1 sec, and grants 1 stack of Abyssal Destruction.Abyssal DestructionIncreases the damage dealt of your next Obliteration Beam by 5%, stacking 10 times, for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300308,
+            "description_html": "Periodic or channeled damage dealt now generates <span class=\"item-number\">2</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>, reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">-1</span> sec, and grants <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Abyssal Destruction</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_priest_shadow_mend\" /><span class=\"name\">Abyssal Destruction</span></div><span class=\"desc\">Increases the damage dealt of your next <span style=\"color: #ffffff; display: inline\">Obliteration Beam</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>, stacking <span class=\"item-number\">10</span> times, for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Periodic or channeled damage dealt now generates 2 Insanity, reduces the cooldown of your Obliteration Beam by -1 sec, and grants 1 stack of Abyssal Destruction.Abyssal DestructionIncreases the damage dealt of your next Obliteration Beam by 5%, stacking 10 times, for 15 seconds."
+          }
+        ],
+        "connections": [
+          29477,
+          29478
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_shadow_mend",
+          "key": "spell_priest_shadow_mend",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33953,
+        "name": "Horrorbolt Volley",
+        "slug": "horrorbolt-volley",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 255275,
+        "spell_ids": [
+          255275
+        ],
+        "description_html": "Channel for <span class=\"item-number\">6</span> seconds, heralding the end of the world on all nearby enemies, instantly removing all beneficial magic effects from them and reducing your damage taken and their haste and movement speed by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> while channeling.<br /><br />While channeling, nearby enemies will also be struck with <span style=\"color: #ffffff; display: inline\">Apocalyptic Skies</span>.<br /><br />At the end of the duration you unleash a terrifying scream, applying <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span> on nearby enemies.",
+        "description": "Channel for 6 seconds, heralding the end of the world on all nearby enemies, instantly removing all beneficial magic effects from them and reducing your damage taken and their haste and movement speed by -25% while channeling.\n\nWhile channeling, nearby enemies will also be struck with Apocalyptic Skies.\n\nAt the end of the duration you unleash a terrifying scream, applying Corrupt Mind on nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 255275,
+            "description_html": "Channel for <span class=\"item-number\">6</span> seconds, heralding the end of the world on all nearby enemies, instantly removing all beneficial magic effects from them and reducing your damage taken and their haste and movement speed by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> while channeling.<br /><br />While channeling, nearby enemies will also be struck with <span style=\"color: #ffffff; display: inline\">Apocalyptic Skies</span>.<br /><br />At the end of the duration you unleash a terrifying scream, applying <span style=\"color: #ffffff; display: inline\">Corrupt Mind</span> on nearby enemies.",
+            "description": "Channel for 6 seconds, heralding the end of the world on all nearby enemies, instantly removing all beneficial magic effects from them and reducing your damage taken and their haste and movement speed by -25% while channeling.\n\nWhile channeling, nearby enemies will also be struck with Apocalyptic Skies.\n\nAt the end of the duration you unleash a terrifying scream, applying Corrupt Mind on nearby enemies."
+          }
+        ],
+        "connections": [
+          29478,
+          31356,
+          33957
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_houroftwilight",
+          "key": "warlock_houroftwilight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29476,
+        "name": "Apocalyptic Skies",
+        "slug": "apocalyptic-skies",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301200,
+        "spell_ids": [
+          301200
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> now spawns a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.",
+        "description": "Casting Wrath of the Black Empire now spawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301200,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Wrath of the Black Empire</span> now spawns a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.",
+            "description": "Casting Wrath of the Black Empire now spawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing."
+          }
+        ],
+        "connections": [
+          31356,
+          33936
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_void_conquer_Border",
+          "key": "nhi_void_conquer_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4393,
+        "name": "Blessing of C'Thun",
+        "slug": "blessing-of-cthun",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 301255,
+        "spell_ids": [
+          301255
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Your <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> can now critically strike and your spell hit rating is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 50 Passive\nYour Darkwither can now critically strike and your spell hit rating is increased by 5% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301255,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Your <span style=\"color: #FFFFFF; display: inline\">Darkwither</span> can now critically strike and your spell hit rating is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 50 Passive\nYour Darkwither can now critically strike and your spell hit rating is increased by 5% of your Intellect."
+          }
+        ],
+        "connections": [
+          4392
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_inscription_talenttome01",
+          "key": "inv_inscription_talenttome01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7938,
+        "name": "Twilight Horror",
+        "slug": "twilight-horror",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560977,
+        "spell_ids": [
+          560977
+        ],
+        "description_html": "Removes the cooldown of <span style=\"color: #ffffff; display: inline\">Eldritch Shock</span> and guarantees it to critically strike when used with at least <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Eldritch Shock</span> can now be cast while channeling.",
+        "description": "Removes the cooldown of Eldritch Shock and guarantees it to critically strike when used with at least 60 Insanity.\n\nEldritch Shock can now be cast while channeling.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560977,
+            "description_html": "Removes the cooldown of <span style=\"color: #ffffff; display: inline\">Eldritch Shock</span> and guarantees it to critically strike when used with at least <span class=\"item-number\">60</span> <span style=\"color: #cfa6ff; display: inline\">Insanity</span>.<br /><br /><span style=\"color: #ffffff; display: inline\">Eldritch Shock</span> can now be cast while channeling.",
+            "description": "Removes the cooldown of Eldritch Shock and guarantees it to critically strike when used with at least 60 Insanity.\n\nEldritch Shock can now be cast while channeling."
+          }
+        ],
+        "connections": [
+          33959
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_ShadowsRising_Border",
+          "key": "custom_t_nhance_rpg_icons_shadowsrising_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5176,
+        "name": "Ancient Curse",
+        "slug": "ancient-curse",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500712,
+        "spell_ids": [
+          500712
+        ],
+        "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">20</span> Insanity</span><br />Curse an enemy, dealing <span class=\"item-number\">976</span> + <span class=\"item-number\">150% SP</span> Shadow damage instantly plus an additional <span class=\"item-number\">1975</span> + <span class=\"item-number\">100% shadow SP</span> Shadow damage after <span class=\"item-number\">5</span> seconds.",
+        "description": "Generates 20 Insanity\nCurse an enemy, dealing 976 + 150% SP Shadow damage instantly plus an additional 1975 + 100% shadow SP Shadow damage after 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500712,
+            "description_html": "<span style=\"color: #cfa6ff; display: inline\">Generates <span class=\"item-number\">20</span> Insanity</span><br />Curse an enemy, dealing <span class=\"item-number\">976</span> + <span class=\"item-number\">150% SP</span> Shadow damage instantly plus an additional <span class=\"item-number\">1975</span> + <span class=\"item-number\">100% shadow SP</span> Shadow damage after <span class=\"item-number\">5</span> seconds.",
+            "description": "Generates 20 Insanity\nCurse an enemy, dealing 976 + 150% SP Shadow damage instantly plus an additional 1975 + 100% shadow SP Shadow damage after 5 seconds."
+          }
+        ],
+        "connections": [
+          29476,
+          33953,
+          33959
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\void_hided_limb",
+          "key": "void_hided_limb",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29266,
+        "name": "Sunderer of Realities",
+        "slug": "sunderer-of-realities",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 25,
+        "tree_id": 65,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301068,
+        "spell_ids": [
+          301068
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> now causes your subsequent <span style=\"color: #ffffff; display: inline\">Wraths of the Black Empire</span>, within <span class=\"item-number\">15</span> seconds, to deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more damage each and unleash <span style=\"color: #ffffff; display: inline\">Apocalyptic Skies</span> upon the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_void_conquer_border\" /><span class=\"name\">Apocalyptic Skies</span></div><span class=\"desc\">Spawns a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.</span></div>",
+        "description": "Casting Wrath of the Black Empire now causes your subsequent Wraths of the Black Empire, within 15 seconds, to deal 15% more damage each and unleash Apocalyptic Skies upon the enemy.Apocalyptic SkiesSpawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301068,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Wrath of the Black Empire</span> now causes your subsequent <span style=\"color: #ffffff; display: inline\">Wraths of the Black Empire</span>, within <span class=\"item-number\">15</span> seconds, to deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> more damage each and unleash <span style=\"color: #ffffff; display: inline\">Apocalyptic Skies</span> upon the enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_void_conquer_border\" /><span class=\"name\">Apocalyptic Skies</span></div><span class=\"desc\">Spawns a void portal that casts either <span style=\"color: #FFFFFF; display: inline\">Gaze of C'thun</span>, <span style=\"color: #FFFFFF; display: inline\">Horrorbolt</span>, or <span style=\"color: #FFFFFF; display: inline\">Obliteration Beam</span> before disappearing.</span></div>",
+            "description": "Casting Wrath of the Black Empire now causes your subsequent Wraths of the Black Empire, within 15 seconds, to deal 15% more damage each and unleash Apocalyptic Skies upon the enemy.Apocalyptic SkiesSpawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing."
+          }
+        ],
+        "connections": [
+          29476
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ShadeTrueSight",
+          "key": "spell_shadow_shadetruesight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,2484 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:30+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:27c95bad6c3e19d1c84c1a23d9c39431e1990e2574b181895675ad96141aa138",
+    "talent_count": 202,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 29,
+    "name": "Venomancer",
+    "slug": "venomancer",
+    "class_file": "prophet",
+    "color": "rgb(107, 166, 0)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:prophet",
+      "key": "class-prophet",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 36,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 92,
+    "name": "Vizier",
+    "slug": "vizier",
+    "sort_order": 0,
+    "class_id": 29,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 29598,
+        "name": "Alkahest",
+        "slug": "alkahest",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            9951
+          ]
+        },
+        "spell_id": 504342,
+        "spell_ids": [
+          504342
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">12</span> sec recharge</span><br />Bless an ally with Shadra's grace, healing them for <span class=\"item-number\">85</span> + <span class=\"item-number\">31.44% healing</span> and extending the duration of <span style=\"color: #FFFFFF; display: inline\">Shadra's Prayer</span> on them by <span class=\"item-number\">9</span> sec.",
+        "description": "2 Charges, 12 sec recharge\nBless an ally with Shadra's grace, healing them for 85 + 31.44% healing and extending the duration of Shadra's Prayer on them by 9 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504342,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">12</span> sec recharge</span><br />Bless an ally with Shadra's grace, healing them for <span class=\"item-number\">85</span> + <span class=\"item-number\">31.44% healing</span> and extending the duration of <span style=\"color: #FFFFFF; display: inline\">Shadra's Prayer</span> on them by <span class=\"item-number\">9</span> sec.",
+            "description": "2 Charges, 12 sec recharge\nBless an ally with Shadra's grace, healing them for 85 + 31.44% healing and extending the duration of Shadra's Prayer on them by 9 sec."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureburn_Border",
+          "key": "nhi_natureburn_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9951,
+        "name": "Shadra's Vigil",
+        "slug": "shadras-vigil",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680800,
+        "spell_ids": [
+          680800
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Healing done by <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now applies <span style=\"color: #ffffff; display: inline\">Shadra's Vigil</span> to allies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_naturestaff_border\" /><span class=\"name\">Shadra&#39;s Vigil</span></div><span class=\"desc\">The next <span class=\"item-number\">5</span> instances of periodic healing by you on this target will heal them for an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the value.</span></div>",
+        "description": "Level 10 Passive\nHealing done by Serpent's Fang now applies Shadra's Vigil to allies.Shadra's VigilThe next 5 instances of periodic healing by you on this target will heal them for an additional 10% of the value.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680800,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Healing done by <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now applies <span style=\"color: #ffffff; display: inline\">Shadra's Vigil</span> to allies.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_naturestaff_border\" /><span class=\"name\">Shadra&#39;s Vigil</span></div><span class=\"desc\">The next <span class=\"item-number\">5</span> instances of periodic healing by you on this target will heal them for an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the value.</span></div>",
+            "description": "Level 10 Passive\nHealing done by Serpent's Fang now applies Shadra's Vigil to allies.Shadra's VigilThe next 5 instances of periodic healing by you on this target will heal them for an additional 10% of the value."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturestaff_Border",
+          "key": "nhi_naturestaff_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 1788,
+        "name": "Mycelial Healing",
+        "slug": "mycelial-healing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806449,
+        "spell_ids": [
+          806449
+        ],
+        "description_html": "All effective healing done now increases your periodic healing done to an ally by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">8</span> times.",
+        "description": "All effective healing done now increases your periodic healing done to an ally by 1% for 30 seconds, stacking 8 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806449,
+            "description_html": "All effective healing done now increases your periodic healing done to an ally by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">30</span> seconds, stacking <span class=\"item-number\">8</span> times.",
+            "description": "All effective healing done now increases your periodic healing done to an ally by 1% for 30 seconds, stacking 8 times."
+          }
+        ],
+        "connections": [
+          29598
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nethers_spore",
+          "key": "nethers_spore",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29592,
+        "name": "Mending Mist",
+        "slug": "mending-mist",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800899,
+        "spell_ids": [
+          800899
+        ],
+        "description_html": "Spread a precarious mist to up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds, healing them for <span class=\"item-number\">9</span> + <span class=\"item-number\">15% healing</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">10</span> seconds.<br /><br />After <span class=\"item-number\">1.69</span> sec, up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds are healed for an additional <span class=\"item-number\">104</span> + <span class=\"item-number\">23.1% healing</span>.",
+        "description": "Spread a precarious mist to up to 8 allies within 30 yds, healing them for 9 + 15% healing every 1 sec for 10 seconds.\n\nAfter 1.69 sec, up to 8 allies within 30 yds are healed for an additional 104 + 23.1% healing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800899,
+            "description_html": "Spread a precarious mist to up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds, healing them for <span class=\"item-number\">9</span> + <span class=\"item-number\">15% healing</span> every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">10</span> seconds.<br /><br />After <span class=\"item-number\">1.69</span> sec, up to <span class=\"item-number\">8</span> allies within <span class=\"item-number\">30</span> yds are healed for an additional <span class=\"item-number\">104</span> + <span class=\"item-number\">23.1% healing</span>.",
+            "description": "Spread a precarious mist to up to 8 allies within 30 yds, healing them for 9 + 15% healing every 1 sec for 10 seconds.\n\nAfter 1.69 sec, up to 8 allies within 30 yds are healed for an additional 104 + 23.1% healing."
+          }
+        ],
+        "connections": [
+          1788
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_focusedgrowth",
+          "key": "ability_druid_focusedgrowth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11788,
+        "name": "Mycelial Healing",
+        "slug": "mycelial-healing",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520153,
+        "spell_ids": [
+          520153
+        ],
+        "description_html": "Inject an ally with a powerful magic antidote, dispelling <span class=\"item-number\">2</span> curse effects from them.",
+        "description": "Inject an ally with a powerful magic antidote, dispelling 2 curse effects from them.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520153,
+            "description_html": "Inject an ally with a powerful magic antidote, dispelling <span class=\"item-number\">2</span> curse effects from them.",
+            "description": "Inject an ally with a powerful magic antidote, dispelling 2 curse effects from them."
+          }
+        ],
+        "connections": [
+          1788
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_Potions_02",
+          "key": "inv_ascend_potions_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7223,
+        "name": "Shadra's Gift",
+        "slug": "shadras-gift",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706937,
+        "spell_ids": [
+          706937,
+          707868
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> and <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and your spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of Shadra's Prayer and Emerald Veil by -10% and your spell pushback suffered from damaging attacks by 35%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706937,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> and <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and your spell pushback suffered from damaging attacks by <span class=\"item-number\">35</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of Shadra's Prayer and Emerald Veil by -10% and your spell pushback suffered from damaging attacks by 35%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707868,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> and <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and your spell pushback suffered from damaging attacks by <span class=\"item-number\">70</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of Shadra's Prayer and Emerald Veil by -20% and your spell pushback suffered from damaging attacks by 70%."
+          }
+        ],
+        "connections": [
+          1788
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_druid_symbiosis",
+          "key": "spell_druid_symbiosis",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9283,
+        "name": "Spiritual Healing",
+        "slug": "spiritual-healing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 706211,
+        "spell_ids": [
+          706211
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell critical strike rating and your healing power by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your spell critical strike rating and your healing power by 20% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706211,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your spell critical strike rating and your healing power by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your spell critical strike rating and your healing power by 20% of your Intellect."
+          }
+        ],
+        "connections": [
+          9951
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\priest_icon_chakra_green",
+          "key": "priest_icon_chakra_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7736,
+        "name": "Venom Glands",
+        "slug": "venom-glands",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706015,
+        "spell_ids": [
+          706015
+        ],
+        "description_html": "Increases your healing done by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> on allies below <span class=\"item-number\">35%</span> health or if they are <span style=\"color: #00ff00; display: inline\">Poisoned</span>.",
+        "description": "Increases your healing done by 15% on allies below 35% health or if they are Poisoned.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706015,
+            "description_html": "Increases your healing done by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> on allies below <span class=\"item-number\">35%</span> health or if they are <span style=\"color: #00ff00; display: inline\">Poisoned</span>.",
+            "description": "Increases your healing done by 15% on allies below 35% health or if they are Poisoned."
+          }
+        ],
+        "connections": [
+          29592
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Creature_Poison_02",
+          "key": "ability_creature_poison_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29591,
+        "name": "Fang Blessing",
+        "slug": "fang-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503970,
+        "spell_ids": [
+          503970,
+          504898
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503970,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504898,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance by 6%."
+          }
+        ],
+        "connections": [
+          29592,
+          11788
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_inscription_deck_jadeserpent",
+          "key": "inv_inscription_deck_jadeserpent",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7733,
+        "name": "Fangbinder",
+        "slug": "fangbinder",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560195,
+        "spell_ids": [
+          560195
+        ],
+        "description_html": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Serpent's Fang</span> can no longer miss.",
+        "description": "Increases the healing of Serpent's Fang by 50% and Serpent's Fang can no longer miss.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560195,
+            "description_html": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and <span style=\"color: #FFFFFF; display: inline\">Serpent's Fang</span> can no longer miss.",
+            "description": "Increases the healing of Serpent's Fang by 50% and Serpent's Fang can no longer miss."
+          }
+        ],
+        "connections": [
+          7223,
+          11788
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_Border",
+          "key": "epic_rpg_icon_pack_poison_icon_0003s_0000_cloud_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6141,
+        "name": "Ritualistic",
+        "slug": "ritualistic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503918,
+        "spell_ids": [
+          503918
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> now also refunds you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your base mana.",
+        "description": "Casting Green Salve now also refunds you 20% of your base mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503918,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> now also refunds you <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your base mana.",
+            "description": "Casting Green Salve now also refunds you 20% of your base mana."
+          }
+        ],
+        "connections": [
+          7223
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_SpiritualSummoning_Border",
+          "key": "custom_t_spiritualsummoning_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7732,
+        "name": "The Antidote",
+        "slug": "the-antidote",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681315,
+        "spell_ids": [
+          681315
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> by <span class=\"item-number\">2</span> sec and increases its tick rate by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of Rejuvenating Venom by 2 sec and increases its tick rate by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681315,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> by <span class=\"item-number\">2</span> sec and increases its tick rate by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of Rejuvenating Venom by 2 sec and increases its tick rate by -30%."
+          }
+        ],
+        "connections": [
+          7736,
+          29591
+        ],
+        "choice_group": 95221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_MagicImmunity",
+          "key": "spell_nature_magicimmunity",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7738,
+        "name": "Good Venom",
+        "slug": "good-venom",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680797,
+        "spell_ids": [
+          680797
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> will now affect <span class=\"item-number\">1</span> additional nearby ally.",
+        "description": "Rejuvenating Venom will now affect 1 additional nearby ally.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680797,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> will now affect <span class=\"item-number\">1</span> additional nearby ally.",
+            "description": "Rejuvenating Venom will now affect 1 additional nearby ally."
+          }
+        ],
+        "connections": [
+          7736,
+          29591
+        ],
+        "choice_group": 95221,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_nullifypoison_02",
+          "key": "spell_nature_nullifypoison_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6128,
+        "name": "Soothing Venoms",
+        "slug": "soothing-venoms",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707726,
+        "spell_ids": [
+          707726,
+          707869
+        ],
+        "description_html": "Increases the critical healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> and <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical healing of Shadra's Prayer and Emerald Veil by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707726,
+            "description_html": "Increases the critical healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> and <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical healing of Shadra's Prayer and Emerald Veil by 25%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707869,
+            "description_html": "Increases the critical healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> and <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical healing of Shadra's Prayer and Emerald Veil by 50%."
+          }
+        ],
+        "connections": [
+          29591
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_hunter_potentvenom",
+          "key": "ability_hunter_potentvenom",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7217,
+        "name": "Melioration",
+        "slug": "melioration",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706945,
+        "spell_ids": [
+          706945
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Alkahest</span>.",
+        "description": "Your Serpent's Fang now refreshes a charge of Alkahest.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706945,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now refreshes a charge of <span style=\"color: #ffffff; display: inline\">Alkahest</span>.",
+            "description": "Your Serpent's Fang now refreshes a charge of Alkahest."
+          }
+        ],
+        "connections": [
+          7733
+        ],
+        "choice_group": 706477,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_deathblow_Border",
+          "key": "nhi_deathblow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7734,
+        "name": "Lifemender",
+        "slug": "lifemender",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706477,
+        "spell_ids": [
+          706477
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now heals up to <span class=\"item-number\">5</span> additional nearby allies and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> now heals an additional nearby target.",
+        "description": "Your Serpent's Fang now heals up to 5 additional nearby allies and Alkahest now heals an additional nearby target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706477,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now heals up to <span class=\"item-number\">5</span> additional nearby allies and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> now heals an additional nearby target.",
+            "description": "Your Serpent's Fang now heals up to 5 additional nearby allies and Alkahest now heals an additional nearby target."
+          }
+        ],
+        "connections": [
+          7733
+        ],
+        "choice_group": 706477,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_ZG_Veno",
+          "key": "achievement_zg_veno",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7735,
+        "name": "Book of Shadra",
+        "slug": "book-of-shadra",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705957,
+        "spell_ids": [
+          705957
+        ],
+        "description_html": "Doubles the duration, cooldown, and healing of <span style=\"color: #ffffff; display: inline\">Green Salve</span>.<br /><br />In addition, it now seeks another nearby ally to heal every <span class=\"item-number\">6</span> sec, instead of at the end of the duration.",
+        "description": "Doubles the duration, cooldown, and healing of Green Salve.\n\nIn addition, it now seeks another nearby ally to heal every 6 sec, instead of at the end of the duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705957,
+            "description_html": "Doubles the duration, cooldown, and healing of <span style=\"color: #ffffff; display: inline\">Green Salve</span>.<br /><br />In addition, it now seeks another nearby ally to heal every <span class=\"item-number\">6</span> sec, instead of at the end of the duration.",
+            "description": "Doubles the duration, cooldown, and healing of Green Salve.\n\nIn addition, it now seeks another nearby ally to heal every 6 sec, instead of at the end of the duration."
+          }
+        ],
+        "connections": [
+          6141,
+          7733
+        ],
+        "choice_group": 707574,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_books_(3)_Border",
+          "key": "novart_books__3__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11735,
+        "name": "Venomcult Scrolls",
+        "slug": "venomcult-scrolls",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707574,
+        "spell_ids": [
+          707574
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Green Salve</span> by <span class=\"item-number\">-2</span> sec and increases the healing done at the end of the duration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of Green Salve by -2 sec and increases the healing done at the end of the duration by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707574,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Green Salve</span> by <span class=\"item-number\">-2</span> sec and increases the healing done at the end of the duration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of Green Salve by -2 sec and increases the healing done at the end of the duration by 50%."
+          }
+        ],
+        "connections": [
+          6141,
+          7733
+        ],
+        "choice_group": 707574,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_custom_scrollofunlearning_Talent_seasonal20",
+          "key": "inv_custom_scrollofunlearning_talent_seasonal20",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13783,
+        "name": "Vizier Form",
+        "slug": "vizier-form",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 504798,
+        "spell_ids": [
+          504798
+        ],
+        "description_html": "$d9",
+        "description": "$d9",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504798,
+            "description_html": "$da",
+            "description": "$da"
+          }
+        ],
+        "connections": [
+          9283
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_eldernadox",
+          "key": "achievement_boss_eldernadox",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6132,
+        "name": "Spirit of the Jungle",
+        "slug": "spirit-of-the-jungle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681048,
+        "spell_ids": [
+          681048
+        ],
+        "description_html": "Increases the proc chance of <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the proc chance of Rejuvenating Venom by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681048,
+            "description_html": "Increases the proc chance of <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the proc chance of Rejuvenating Venom by 10%."
+          }
+        ],
+        "connections": [
+          7732,
+          7738
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_tanaanjungle",
+          "key": "achievement_zone_tanaanjungle",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7723,
+        "name": "Worship",
+        "slug": "worship",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706016,
+        "spell_ids": [
+          706016
+        ],
+        "description_html": "Allows all critical heals to increase periodic healing the target receives from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+        "description": "Allows all critical heals to increase periodic healing the target receives from you by 10% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706016,
+            "description_html": "Allows all critical heals to increase periodic healing the target receives from you by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+            "description": "Allows all critical heals to increase periodic healing the target receives from you by 10% for 5 seconds."
+          }
+        ],
+        "connections": [
+          6128,
+          7732,
+          7738
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nature_abolishmagic",
+          "key": "spell_nature_abolishmagic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30749,
+        "name": "Mycelial Replenishment",
+        "slug": "mycelial-replenishment",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706021,
+        "spell_ids": [
+          706021
+        ],
+        "description_html": "Increases your critical strike chance and critical healing done by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds and instantly restore <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum mana, but consumes all stacks of <span style=\"color: #ffffff; display: inline\">Mycelial Healing</span> on all nearby allies.<br /><br />While active, all periodic critical strikes heal for an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the healing done.",
+        "description": "Increases your critical strike chance and critical healing done by 20% for 20 seconds and instantly restore 30% of your maximum mana, but consumes all stacks of Mycelial Healing on all nearby allies.\n\nWhile active, all periodic critical strikes heal for an additional 20% of the healing done.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706021,
+            "description_html": "Increases your critical strike chance and critical healing done by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds and instantly restore <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of your maximum mana, but consumes all stacks of <span style=\"color: #ffffff; display: inline\">Mycelial Healing</span> on all nearby allies.<br /><br />While active, all periodic critical strikes heal for an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the healing done.",
+            "description": "Increases your critical strike chance and critical healing done by 20% for 20 seconds and instantly restore 30% of your maximum mana, but consumes all stacks of Mycelial Healing on all nearby allies.\n\nWhile active, all periodic critical strikes heal for an additional 20% of the healing done."
+          }
+        ],
+        "connections": [
+          6128,
+          7217,
+          7734
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_burnoutgreen",
+          "key": "spell_fire_burnoutgreen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5291,
+        "name": "Sage",
+        "slug": "sage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680768,
+        "spell_ids": [
+          680768
+        ],
+        "description_html": "Direct healing done by <span style=\"color: #ffffff; display: inline\">Alkahest</span> now spreads an active <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> from the primary target to a nearby ally.",
+        "description": "Direct healing done by Alkahest now spreads an active Shadra's Balm from the primary target to a nearby ally.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680768,
+            "description_html": "Direct healing done by <span style=\"color: #ffffff; display: inline\">Alkahest</span> now spreads an active <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> from the primary target to a nearby ally.",
+            "description": "Direct healing done by Alkahest now spreads an active Shadra's Balm from the primary target to a nearby ally."
+          }
+        ],
+        "connections": [
+          7217,
+          7734,
+          7735,
+          11735
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_Border",
+          "key": "epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6607,
+        "name": "Bountiful Gifts",
+        "slug": "bountiful-gifts",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706009,
+        "spell_ids": [
+          706009,
+          706010
+        ],
+        "description_html": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span>, <span style=\"color: #ffffff; display: inline\">Green Salve</span>, and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706009,
+            "description_html": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span>, <span style=\"color: #ffffff; display: inline\">Green Salve</span>, and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 706010,
+            "description_html": "Increases the healing of <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span>, <span style=\"color: #ffffff; display: inline\">Green Salve</span>, and <span style=\"color: #FFFFFF; display: inline\">Alkahest</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 20%."
+          }
+        ],
+        "connections": [
+          7735,
+          11735
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureseye_Border",
+          "key": "nhi_natureseye_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6140,
+        "name": "Advisor's Perfidy",
+        "slug": "advisors-perfidy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300685,
+        "spell_ids": [
+          300685
+        ],
+        "description_html": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Mending Mist</span>, and <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the bonus healing scaling of Serpent's Fang, Mending Mist, and Shadra's Balm by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300685,
+            "description_html": "Increases the bonus healing scaling of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Mending Mist</span>, and <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the bonus healing scaling of Serpent's Fang, Mending Mist, and Shadra's Balm by 20%."
+          }
+        ],
+        "connections": [
+          6132
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_AQ_BugTrio",
+          "key": "achievement_aq_bugtrio",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6133,
+        "name": "Toxic Communion",
+        "slug": "toxic-communion",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680767,
+        "spell_ids": [
+          680767
+        ],
+        "description_html": "Extend the duration of <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> and <span style=\"color: #ffffff; display: inline\">Mending Mist</span> by <span class=\"item-number\">15</span> sec on all allies within <span class=\"item-number\">30</span> yds.",
+        "description": "Extend the duration of Shadra's Balm and Mending Mist by 15 sec on all allies within 30 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680767,
+            "description_html": "Extend the duration of <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> and <span style=\"color: #ffffff; display: inline\">Mending Mist</span> by <span class=\"item-number\">15</span> sec on all allies within <span class=\"item-number\">30</span> yds.",
+            "description": "Extend the duration of Shadra's Balm and Mending Mist by 15 sec on all allies within 30 yds."
+          }
+        ],
+        "connections": [
+          6132,
+          7723
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureunity_Border",
+          "key": "nhi_natureunity_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7122,
+        "name": "Shadra's Presence",
+        "slug": "shadras-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504348,
+        "spell_ids": [
+          504348
+        ],
+        "description_html": "Allies within <span class=\"item-number\">100</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> more healing. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Antivenom</span> now dispels <span class=\"item-number\">1</span> additional effect.",
+        "description": "Allies within 100 yds receive 6% more healing. Does not stack with similar effects.\n\nIn addition, your Antivenom now dispels 1 additional effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504348,
+            "description_html": "Allies within <span class=\"item-number\">100</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> more healing. Does not stack with similar effects.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Antivenom</span> now dispels <span class=\"item-number\">1</span> additional effect.",
+            "description": "Allies within 100 yds receive 6% more healing. Does not stack with similar effects.\n\nIn addition, your Antivenom now dispels 1 additional effect."
+          }
+        ],
+        "connections": [
+          5291,
+          7723,
+          30749
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_plaguefall_dominavenomblade",
+          "key": "achievement_dungeon_plaguefall_dominavenomblade",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6324,
+        "name": "Blight Antidote",
+        "slug": "blight-antidote",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 808082,
+        "spell_ids": [
+          808082
+        ],
+        "description_html": "Encases a friendly target in a venomous chrysalis for <span class=\"item-number\">15</span> seconds, storing <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the effective healing you deal to them. When the chrysalis matures, each of the next <span class=\"item-number\">12</span> direct attacks against the target heals them for the stored amount.",
+        "description": "Encases a friendly target in a venomous chrysalis for 15 seconds, storing 10% of the effective healing you deal to them. When the chrysalis matures, each of the next 12 direct attacks against the target heals them for the stored amount.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 808082,
+            "description_html": "Encases a friendly target in a venomous chrysalis for <span class=\"item-number\">15</span> seconds, storing <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the effective healing you deal to them. When the chrysalis matures, each of the next <span class=\"item-number\">12</span> direct attacks against the target heals them for the stored amount.",
+            "description": "Encases a friendly target in a venomous chrysalis for 15 seconds, storing 10% of the effective healing you deal to them. When the chrysalis matures, each of the next 12 direct attacks against the target heals them for the stored amount."
+          }
+        ],
+        "connections": [
+          5291,
+          6607
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_LiquidStone_Poison",
+          "key": "liquidstone_poison",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7120,
+        "name": "Widow's Watch",
+        "slug": "widows-watch",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706014,
+        "spell_ids": [
+          706014
+        ],
+        "description_html": "Allies affected by <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased chance to resist poison and curse effects.",
+        "description": "Allies affected by Shadra's Balm now have a 20% increased chance to resist poison and curse effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706014,
+            "description_html": "Allies affected by <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased chance to resist poison and curse effects.",
+            "description": "Allies affected by Shadra's Balm now have a 20% increased chance to resist poison and curse effects."
+          }
+        ],
+        "connections": [
+          6607
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Druid_ManaTree",
+          "key": "ability_druid_manatree",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4783,
+        "name": "Occultist",
+        "slug": "occultist",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 504339,
+        "spell_ids": [
+          504339
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> or <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to refresh a charge of <span style=\"color: #ffffff; display: inline\">Alkahest</span>.",
+        "description": "Level 40 Passive\nCasting Green Salve or Serpent's Fang now has a 30% chance to refresh a charge of Alkahest.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504339,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> or <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to refresh a charge of <span style=\"color: #ffffff; display: inline\">Alkahest</span>.",
+            "description": "Level 40 Passive\nCasting Green Salve or Serpent's Fang now has a 30% chance to refresh a charge of Alkahest."
+          }
+        ],
+        "connections": [
+          13783
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturevision_Border",
+          "key": "nhi_naturevision_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7121,
+        "name": "Ophidian Renewal",
+        "slug": "ophidian-renewal",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706938,
+        "spell_ids": [
+          706938
+        ],
+        "description_html": "Healing done by <span style=\"color: #ffffff; display: inline\">Alkahest</span> now causes your next <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> to be instant cast.",
+        "description": "Healing done by Alkahest now causes your next Emerald Veil to be instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706938,
+            "description_html": "Healing done by <span style=\"color: #ffffff; display: inline\">Alkahest</span> now causes your next <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> to be instant cast.",
+            "description": "Healing done by Alkahest now causes your next Emerald Veil to be instant cast."
+          }
+        ],
+        "connections": [
+          6133,
+          6140
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureentagle_Border",
+          "key": "nhi_natureentagle_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12223,
+        "name": "Extraction",
+        "slug": "extraction",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805884,
+        "spell_ids": [
+          805884
+        ],
+        "description_html": "For <span class=\"item-number\">15</span> seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your missing mana.",
+        "description": "For 15 seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores 5% of your missing mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805884,
+            "description_html": "For <span class=\"item-number\">15</span> seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your missing mana.",
+            "description": "For 15 seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores 5% of your missing mana."
+          }
+        ],
+        "connections": [
+          6133,
+          6324,
+          7122
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_nature_stab_Border",
+          "key": "nhi_nature_stab_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5302,
+        "name": "Sublime Extraction",
+        "slug": "sublime-extraction",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681320,
+        "spell_ids": [
+          681320
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> and removes the cost of your next <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Casting Green Salve now resets the cooldown of Serpent's Fang and removes the cost of your next Serpent's Fang for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681320,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Green Salve</span> now resets the cooldown of <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> and removes the cost of your next <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Casting Green Salve now resets the cooldown of Serpent's Fang and removes the cost of your next Serpent's Fang for 8 seconds."
+          }
+        ],
+        "connections": [
+          6324,
+          7120
+        ],
+        "choice_group": 843311,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill10_Border",
+          "key": "_5_druideskill10_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6302,
+        "name": "Venom Fanatic",
+        "slug": "venom-fanatic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681059,
+        "spell_ids": [
+          681059
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies.",
+        "description": "Your Serpent's Fang now strikes 2 additional nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681059,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span> now strikes <span class=\"item-number\">2</span> additional nearby enemies.",
+            "description": "Your Serpent's Fang now strikes 2 additional nearby enemies."
+          }
+        ],
+        "connections": [
+          6324,
+          7120
+        ],
+        "choice_group": 843311,
+        "icon": {
+          "source_path": "Interface\\icons\\5_venom_(3)_Border",
+          "key": "_5_venom__3__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30073,
+        "name": "Shadra's Aid",
+        "slug": "shadras-aid",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504352,
+        "spell_ids": [
+          504352
+        ],
+        "description_html": "Envelop an ally in Shadra's grace, reducing all damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and causing direct damage taken to restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health for <span class=\"item-number\">15</span> seconds.",
+        "description": "Envelop an ally in Shadra's grace, reducing all damage taken by -20% and causing direct damage taken to restore 3% maximum health for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504352,
+            "description_html": "Envelop an ally in Shadra's grace, reducing all damage taken by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and causing direct damage taken to restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health for <span class=\"item-number\">15</span> seconds.",
+            "description": "Envelop an ally in Shadra's grace, reducing all damage taken by -20% and causing direct damage taken to restore 3% maximum health for 15 seconds."
+          }
+        ],
+        "connections": [
+          7121,
+          12223
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureempower_Border",
+          "key": "nhi_natureempower_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29599,
+        "name": "Venom Weaving",
+        "slug": "venom-weaving",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504736,
+        "spell_ids": [
+          504736
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Serpent's Fang</span> now increases the healing of your next <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Alkahests</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Your Serpent's Fang now increases the healing of your next 2 Alkahests by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504736,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Serpent's Fang</span> now increases the healing of your next <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Alkahests</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Your Serpent's Fang now increases the healing of your next 2 Alkahests by 25%."
+          }
+        ],
+        "connections": [
+          12223
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_ResistMagic",
+          "key": "spell_nature_resistmagic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29596,
+        "name": "Serpent Lord's Amulet",
+        "slug": "serpent-lords-amulet",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800914,
+        "spell_ids": [
+          800914
+        ],
+        "description_html": "Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>, increasing your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Draw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800914,
+            "description_html": "Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>, increasing your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Draw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds."
+          }
+        ],
+        "connections": [
+          5302,
+          6302,
+          12223
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_cloth_zandalardungeon_c_01",
+          "key": "inv_helm_cloth_zandalardungeon_c_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9597,
+        "name": "Ritual Healing",
+        "slug": "ritual-healing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 681047,
+        "spell_ids": [
+          681047
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Every <span class=\"item-number\">9</span> sec, your <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> will now restore <span class=\"item-number\">1</span><span class=\"item-number\">%</span> of the target's maximum mana, <span class=\"item-number\">8</span> Energy or Focus, <span class=\"item-number\">4</span> Rage and <span class=\"item-number\">4</span> Runic Power.",
+        "description": "Level 50 Passive\nEvery 9 sec, your Shadra's Prayer will now restore 1% of the target's maximum mana, 8 Energy or Focus, 4 Rage and 4 Runic Power.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681047,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Every <span class=\"item-number\">9</span> sec, your <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> will now restore <span class=\"item-number\">1</span><span class=\"item-number\">%</span> of the target's maximum mana, <span class=\"item-number\">8</span> Energy or Focus, <span class=\"item-number\">4</span> Rage and <span class=\"item-number\">4</span> Runic Power.",
+            "description": "Level 50 Passive\nEvery 9 sec, your Shadra's Prayer will now restore 1% of the target's maximum mana, 8 Energy or Focus, 4 Rage and 4 Runic Power."
+          }
+        ],
+        "connections": [
+          13783
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_swampsorrows_01",
+          "key": "achievement_zone_swampsorrows_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7124,
+        "name": "Mycelial Synchronization",
+        "slug": "mycelial-synchronization",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504356,
+        "spell_ids": [
+          504356
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Shadra's Aid</span> on an ally now also casts it on yourself.<br /><br />In addition, each stack of <span style=\"color: #ffffff; display: inline\">Mycelial Healing</span> now also increases the amount absorbed by <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> on the target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Casting Shadra's Aid on an ally now also casts it on yourself.\n\nIn addition, each stack of Mycelial Healing now also increases the amount absorbed by Emerald Veil on the target by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504356,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Shadra's Aid</span> on an ally now also casts it on yourself.<br /><br />In addition, each stack of <span style=\"color: #ffffff; display: inline\">Mycelial Healing</span> now also increases the amount absorbed by <span style=\"color: #ffffff; display: inline\">Emerald Veil</span> on the target by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Casting Shadra's Aid on an ally now also casts it on yourself.\n\nIn addition, each stack of Mycelial Healing now also increases the amount absorbed by Emerald Veil on the target by 10%."
+          }
+        ],
+        "connections": [
+          30073
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_NatureTouchGrow",
+          "key": "spell_nature_naturetouchgrow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7737,
+        "name": "Cycle of Rebirth",
+        "slug": "cycle-of-rebirth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560200,
+        "spell_ids": [
+          560200
+        ],
+        "description_html": "Effective periodic healing with <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Alkahest</span> within <span class=\"item-number\">8</span> seconds instant and cost no mana.",
+        "description": "Effective periodic healing with Shadra's Balm now has a 10% chance to make your next Alkahest within 8 seconds instant and cost no mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560200,
+            "description_html": "Effective periodic healing with <span style=\"color: #ffffff; display: inline\">Shadra's Balm</span> now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Alkahest</span> within <span class=\"item-number\">8</span> seconds instant and cost no mana.",
+            "description": "Effective periodic healing with Shadra's Balm now has a 10% chance to make your next Alkahest within 8 seconds instant and cost no mana."
+          }
+        ],
+        "connections": [
+          29596,
+          29599,
+          30073
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_LiquidStone_Poison",
+          "key": "liquidstone_poison",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6139,
+        "name": "Serpent Lord's Ritual",
+        "slug": "serpent-lords-ritual",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 92,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706018,
+        "spell_ids": [
+          706018
+        ],
+        "description_html": "Direct healing done now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span class=\"item-number\">5</span> sec of <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helm_cloth_zandalardungeon_c_01\" /><span class=\"name\">Serpent Lord&#39;s Amulet</span></div><span class=\"desc\">Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>, increasing your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.</span></div>",
+        "description": "Direct healing done now has a 5% chance to grant you 5 sec of Serpent Lord's Amulet.Serpent Lord's AmuletDraw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706018,
+            "description_html": "Direct healing done now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span class=\"item-number\">5</span> sec of <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helm_cloth_zandalardungeon_c_01\" /><span class=\"name\">Serpent Lord&#39;s Amulet</span></div><span class=\"desc\">Draw power from the <span style=\"color: #ffffff; display: inline\">Serpent Lord's Amulet</span>, increasing your spell haste by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and reduces your mana costs by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.</span></div>",
+            "description": "Direct healing done now has a 5% chance to grant you 5 sec of Serpent Lord's Amulet.Serpent Lord's AmuletDraw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds."
+          }
+        ],
+        "connections": [
+          29596
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_summonserpentstatue",
+          "key": "ability_monk_summonserpentstatue",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

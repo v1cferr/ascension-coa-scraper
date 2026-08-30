@@ -1,0 +1,2463 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:17+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:16a8df5d8926842787818d9e6fe78f66f93952302ef52b3edb397da5ee31452a",
+    "talent_count": 208,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 20,
+    "name": "Bloodmage",
+    "slug": "bloodmage",
+    "class_file": "sonofarugal",
+    "color": "rgb(163, 0, 0)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:sonofarugal",
+      "key": "class-sonofarugal",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 40,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 53,
+    "name": "Eternal",
+    "slug": "eternal",
+    "sort_order": 3,
+    "class_id": 20,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 30191,
+        "name": "Rotclaw",
+        "slug": "rotclaw",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804197,
+        "spell_ids": [
+          804197
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">6</span> sec recharge</span><br />Ravage all nearby enemies, dealing <span class=\"item-number\">28</span> + <span class=\"item-number\">11% AP</span> Shadow damage, generating Rage and infecting their wounds, causing them to bleed for <span class=\"item-number\">24</span> + <span class=\"item-number\">16% AP</span> Shadow damage over <span class=\"item-number\">4</span> seconds.",
+        "description": "2 Charges, 6 sec recharge\nRavage all nearby enemies, dealing 28 + 11% AP Shadow damage, generating Rage and infecting their wounds, causing them to bleed for 24 + 16% AP Shadow damage over 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804197,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">6</span> sec recharge</span><br />Ravage all nearby enemies, dealing <span class=\"item-number\">28</span> + <span class=\"item-number\">11% AP</span> Shadow damage, generating Rage and infecting their wounds, causing them to bleed for <span class=\"item-number\">24</span> + <span class=\"item-number\">16% AP</span> Shadow damage over <span class=\"item-number\">4</span> seconds.",
+            "description": "2 Charges, 6 sec recharge\nRavage all nearby enemies, dealing 28 + 11% AP Shadow damage, generating Rage and infecting their wounds, causing them to bleed for 24 + 16% AP Shadow damage over 4 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_clawstrike_Border",
+          "key": "_5_clawstrike_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4027,
+        "name": "Eternal Curse",
+        "slug": "eternal-curse",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            31117
+          ]
+        },
+        "spell_id": 92114,
+        "spell_ids": [
+          92114
+        ],
+        "description_html": "$91",
+        "description": "$91",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92114,
+            "description_html": "$92",
+            "description": "$92"
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_viciousness",
+          "key": "ability_racial_viciousness",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 6881,
+        "name": "Heightened Reflexes",
+        "slug": "heightened-reflexes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704627,
+        "spell_ids": [
+          704627,
+          704628
+        ],
+        "description_html": "Increases your chance to dodge by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>.",
+        "description": "Increases your chance to dodge by 4% and your expertise by 5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704627,
+            "description_html": "Increases your chance to dodge by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">5</span>.",
+            "description": "Increases your chance to dodge by 4% and your expertise by 5."
+          },
+          {
+            "rank": 2,
+            "spell_id": 704628,
+            "description_html": "Increases your chance to dodge by <span class=\"item-number\">8</span><span class=\"item-number\">%</span> and your expertise by <span class=\"item-number\">10</span>.",
+            "description": "Increases your chance to dodge by 8% and your expertise by 10."
+          }
+        ],
+        "connections": [
+          30191
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_skinning_80_coarsefur",
+          "key": "inv_skinning_80_coarsefur",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33683,
+        "name": "Thick Pelt",
+        "slug": "thick-pelt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704626,
+        "spell_ids": [
+          704626
+        ],
+        "description_html": "Physical damage taken now reduces the Physical damage taken from the next attack within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">-15</span> + <span class=\"item-number\">20% AP</span>.",
+        "description": "Physical damage taken now reduces the Physical damage taken from the next attack within 10 seconds by -15 + 20% AP.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704626,
+            "description_html": "Physical damage taken now reduces the Physical damage taken from the next attack within <span class=\"item-number\">10</span> seconds by <span class=\"item-number\">-15</span> + <span class=\"item-number\">20% AP</span>.",
+            "description": "Physical damage taken now reduces the Physical damage taken from the next attack within 10 seconds by -15 + 20% AP."
+          }
+        ],
+        "connections": [
+          30191
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_pelt_15",
+          "key": "inv_misc_pelt_15",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33682,
+        "name": "Eternal Hunt",
+        "slug": "eternal-hunt",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804201,
+        "spell_ids": [
+          804201
+        ],
+        "description_html": "Increases your maximum health and reduces the cost of your spells and abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your maximum health and reduces the cost of your spells and abilities by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804201,
+            "description_html": "Increases your maximum health and reduces the cost of your spells and abilities by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum health and reduces the cost of your spells and abilities by 10%."
+          }
+        ],
+        "connections": [
+          6881
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_cloth_raidpriest_l_01",
+          "key": "inv_helm_cloth_raidpriest_l_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30194,
+        "name": "Enduring",
+        "slug": "enduring",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300585,
+        "spell_ids": [
+          300585
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, plus an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> while below <span class=\"item-number\">35%</span> health.",
+        "description": "Increases the damage of Bloodbolt by 25%, plus an additional 25% while below 35% health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300585,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>, plus an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> while below <span class=\"item-number\">35%</span> health.",
+            "description": "Increases the damage of Bloodbolt by 25%, plus an additional 25% while below 35% health."
+          }
+        ],
+        "connections": [
+          6881,
+          33683
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_PainAndSuffering",
+          "key": "spell_shadow_painandsuffering",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34633,
+        "name": "Eternal Resolve",
+        "slug": "eternal-resolve",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801962,
+        "spell_ids": [
+          801962
+        ],
+        "description_html": "Activate your eternal resolve for <span class=\"item-number\">30</span> seconds, sending you into a feral frenzy, increasing your melee attack speed, maximum health, and healing received by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Activate your eternal resolve for 30 seconds, sending you into a feral frenzy, increasing your melee attack speed, maximum health, and healing received by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801962,
+            "description_html": "Activate your eternal resolve for <span class=\"item-number\">30</span> seconds, sending you into a feral frenzy, increasing your melee attack speed, maximum health, and healing received by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Activate your eternal resolve for 30 seconds, sending you into a feral frenzy, increasing your melee attack speed, maximum health, and healing received by 50%."
+          }
+        ],
+        "connections": [
+          33683
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\skill_icon_skill73_Border",
+          "key": "skill_icon_skill73_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4627,
+        "name": "Uncanny Movement",
+        "slug": "uncanny-movement",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 301064,
+        "spell_ids": [
+          301064
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your Agility by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and your hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Agility.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> now generates additional threat.",
+        "description": "Level 20 Passive\nIncreases your Agility by 25% and your hit rating by 5% of your Agility.\n\nIn addition, Claw Sweep now generates additional threat.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301064,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your Agility by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> and your hit rating by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your Agility.<br /><br />In addition, <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> now generates additional threat.",
+            "description": "Level 20 Passive\nIncreases your Agility by 25% and your hit rating by 5% of your Agility.\n\nIn addition, Claw Sweep now generates additional threat."
+          }
+        ],
+        "connections": [
+          4027
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_SpectralSight",
+          "key": "spell_shadow_spectralsight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30198,
+        "name": "Blood Howl",
+        "slug": "blood-howl",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800782,
+        "spell_ids": [
+          800782
+        ],
+        "description_html": "Taunts nearby enemies within <span class=\"item-number\">10</span> yds, forcing them to attack you for <span class=\"item-number\">5</span> seconds.",
+        "description": "Taunts nearby enemies within 10 yds, forcing them to attack you for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800782,
+            "description_html": "Taunts nearby enemies within <span class=\"item-number\">10</span> yds, forcing them to attack you for <span class=\"item-number\">5</span> seconds.",
+            "description": "Taunts nearby enemies within 10 yds, forcing them to attack you for 5 seconds."
+          }
+        ],
+        "connections": [
+          33682
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_nightmarehowl_Border",
+          "key": "nhi_nightmarehowl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13684,
+        "name": "Coated In Blood",
+        "slug": "coated-in-blood",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707626,
+        "spell_ids": [
+          707626
+        ],
+        "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of Blood Pact by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707626,
+            "description_html": "Increases the effectiveness of <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of Blood Pact by 50%."
+          }
+        ],
+        "connections": [
+          30194
+        ],
+        "choice_group": 707626,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_pureblood",
+          "key": "ability_racial_pureblood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33684,
+        "name": "Coated In Darkness",
+        "slug": "coated-in-darkness",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704625,
+        "spell_ids": [
+          704625
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> or <span style=\"color: #ffffff; display: inline\">Bloodfang Bite</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">-0.5</span> sec.",
+        "description": "Casting Bloodbolt or Bloodfang Bite now reduces the cooldown of your Blood Pact by -0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704625,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> or <span style=\"color: #ffffff; display: inline\">Bloodfang Bite</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">-0.5</span> sec.",
+            "description": "Casting Bloodbolt or Bloodfang Bite now reduces the cooldown of your Blood Pact by -0.5 sec."
+          }
+        ],
+        "connections": [
+          30194
+        ],
+        "choice_group": 707626,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_shaman_freedomwolf",
+          "key": "ability_shaman_freedomwolf",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29541,
+        "name": "Bloodguard",
+        "slug": "bloodguard",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570746,
+        "spell_ids": [
+          570746
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">4</span> sec and you now generate <span class=\"item-number\">3</span> Rage every time you dodge.",
+        "description": "Increases the duration of Blood Pact by 4 sec and you now generate 3 Rage every time you dodge.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570746,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">4</span> sec and you now generate <span class=\"item-number\">3</span> Rage every time you dodge.",
+            "description": "Increases the duration of Blood Pact by 4 sec and you now generate 3 Rage every time you dodge."
+          }
+        ],
+        "connections": [
+          34633
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_MonkSpecialAttack_DodgeBloodElf",
+          "key": "monkspecialattack_dodgebloodelf",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33681,
+        "name": "Packleader",
+        "slug": "packleader",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504290,
+        "spell_ids": [
+          504290
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Howl</span> spell now enrages your summons, increasing their damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Casting Howl spell now enrages your summons, increasing their damage dealt by 10% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504290,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Howl</span> spell now enrages your summons, increasing their damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Casting Howl spell now enrages your summons, increasing their damage dealt by 10% for 8 seconds."
+          }
+        ],
+        "connections": [
+          30198
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_WorgenFlayer_Priest",
+          "key": "worgenflayer_priest",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6769,
+        "name": "Vitality",
+        "slug": "vitality",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704166,
+        "spell_ids": [
+          704166
+        ],
+        "description_html": "Increases your Stamina while in <span style=\"color: #FFFFFF; display: inline\">Eternal Curse</span> by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Stamina while in Eternal Curse by an additional 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704166,
+            "description_html": "Increases your Stamina while in <span style=\"color: #FFFFFF; display: inline\">Eternal Curse</span> by an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Stamina while in Eternal Curse by an additional 10%."
+          }
+        ],
+        "connections": [
+          30198
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_expulsom",
+          "key": "inv_expulsom",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29872,
+        "name": "Monstrous Howl",
+        "slug": "monstrous-howl",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804811,
+        "spell_ids": [
+          804811
+        ],
+        "description_html": "Enrage for <span class=\"item-number\">10</span> seconds, causing the next <span class=\"item-number\">6</span> <span style=\"color: #ffffff; display: inline\">Bloodfang Bites</span> to have a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> reduced global cooldown and cost and to trigger <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_bat_01\" /><span class=\"name\">Call of the Darkwing</span></div><span class=\"desc\">Calls <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Shadow Bats</span> to appear from the shadows and strike the target for <span class=\"item-number\">28</span> + <span class=\"item-number\">40% SP</span> + <span class=\"item-number\">20% AP</span> Physical Damage, healing you equal to the damage dealt.</span></div>",
+        "description": "Enrage for 10 seconds, causing the next 6 Bloodfang Bites to have a -50% reduced global cooldown and cost and to trigger Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804811,
+            "description_html": "Enrage for <span class=\"item-number\">10</span> seconds, causing the next <span class=\"item-number\">6</span> <span style=\"color: #ffffff; display: inline\">Bloodfang Bites</span> to have a <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> reduced global cooldown and cost and to trigger <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_bat_01\" /><span class=\"name\">Call of the Darkwing</span></div><span class=\"desc\">Calls <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Shadow Bats</span> to appear from the shadows and strike the target for <span class=\"item-number\">28</span> + <span class=\"item-number\">40% SP</span> + <span class=\"item-number\">20% AP</span> Physical Damage, healing you equal to the damage dealt.</span></div>",
+            "description": "Enrage for 10 seconds, causing the next 6 Bloodfang Bites to have a -50% reduced global cooldown and cost and to trigger Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt."
+          }
+        ],
+        "connections": [
+          13684,
+          33684
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_sanguinedepths_tarvold",
+          "key": "achievement_dungeon_sanguinedepths_tarvold",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7379,
+        "name": "Shadows In The Night",
+        "slug": "shadows-in-the-night",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704662,
+        "spell_ids": [
+          704662
+        ],
+        "description_html": "While above <span class=\"item-number\">75%</span> health, your damage taken is reduced by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>.",
+        "description": "While above 75% health, your damage taken is reduced by -5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704662,
+            "description_html": "While above <span class=\"item-number\">75%</span> health, your damage taken is reduced by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>.",
+            "description": "While above 75% health, your damage taken is reduced by -5%."
+          }
+        ],
+        "connections": [
+          29541
+        ],
+        "choice_group": 707623,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_nzinsanity_chasedbyshadows",
+          "key": "spell_nzinsanity_chasedbyshadows",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12379,
+        "name": "Blood Moon",
+        "slug": "blood-moon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707623,
+        "spell_ids": [
+          707623
+        ],
+        "description_html": "While below <span class=\"item-number\">75%</span> health, you now heal for <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of all damage you deal.",
+        "description": "While below 75% health, you now heal for 3% of all damage you deal.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707623,
+            "description_html": "While below <span class=\"item-number\">75%</span> health, you now heal for <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of all damage you deal.",
+            "description": "While below 75% health, you now heal for 3% of all damage you deal."
+          }
+        ],
+        "connections": [
+          29541
+        ],
+        "choice_group": 707623,
+        "icon": {
+          "source_path": "Interface\\Icons\\artifactability_balancedruid_halfmoon",
+          "key": "artifactability_balancedruid_halfmoon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33705,
+        "name": "Uncanny Speed",
+        "slug": "uncanny-speed",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807491,
+        "spell_ids": [
+          807491
+        ],
+        "description_html": "Increases your melee haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your movement speed and mounted movement speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your melee haste by 5% and your movement speed and mounted movement speed by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807491,
+            "description_html": "Increases your melee haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your movement speed and mounted movement speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee haste by 5% and your movement speed and mounted movement speed by 20%."
+          }
+        ],
+        "connections": [
+          29541
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_SpiritWolf",
+          "key": "spell_nature_spiritwolf",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4629,
+        "name": "Feral Strength",
+        "slug": "feral-strength",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 704661,
+        "spell_ids": [
+          704661
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />While in <span style=\"color: #FFFFFF; display: inline\">Eternal Curse</span>, you now gain <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more attack power from Agility and Strength.",
+        "description": "Level 30 Passive\nWhile in Eternal Curse, you now gain 50% more attack power from Agility and Strength.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704661,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />While in <span style=\"color: #FFFFFF; display: inline\">Eternal Curse</span>, you now gain <span class=\"item-number\">50</span><span class=\"item-number\">%</span> more attack power from Agility and Strength.",
+            "description": "Level 30 Passive\nWhile in Eternal Curse, you now gain 50% more attack power from Agility and Strength."
+          }
+        ],
+        "connections": [
+          4627
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_unholy_wounds_Border",
+          "key": "nhi_unholy_wounds_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 9705,
+        "name": "Night Hunter's Howl",
+        "slug": "night-hunters-howl",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500124,
+        "spell_ids": [
+          500124
+        ],
+        "description_html": "Howl into the souls of nearby enemies, dealing <span class=\"item-number\">71</span> + <span class=\"item-number\">28.5% AP</span> Shadow damage and slowing their movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.",
+        "description": "Howl into the souls of nearby enemies, dealing 71 + 28.5% AP Shadow damage and slowing their movement speed by -60% for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500124,
+            "description_html": "Howl into the souls of nearby enemies, dealing <span class=\"item-number\">71</span> + <span class=\"item-number\">28.5% AP</span> Shadow damage and slowing their movement speed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds.",
+            "description": "Howl into the souls of nearby enemies, dealing 71 + 28.5% AP Shadow damage and slowing their movement speed by -60% for 6 seconds."
+          }
+        ],
+        "connections": [
+          6769,
+          33681
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_raid_revendrethraid_huntsmangargon",
+          "key": "achievement_raid_revendrethraid_huntsmangargon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33675,
+        "name": "Blood Plague",
+        "slug": "blood-plague",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 575335,
+        "spell_ids": [
+          575335
+        ],
+        "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Ravenous Strike</span> and <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against <span style=\"color: #7fff00; display: inline\">Diseased</span> targets.",
+        "description": "Increases the critical strike chance and critical damage of Ravenous Strike and Claw Sweep by 10% against Diseased targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 575335,
+            "description_html": "Increases the critical strike chance and critical damage of <span style=\"color: #ffffff; display: inline\">Ravenous Strike</span> and <span style=\"color: #ffffff; display: inline\">Claw Sweep</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> against <span style=\"color: #7fff00; display: inline\">Diseased</span> targets.",
+            "description": "Increases the critical strike chance and critical damage of Ravenous Strike and Claw Sweep by 10% against Diseased targets."
+          }
+        ],
+        "connections": [
+          6769,
+          29872
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_creepingplague",
+          "key": "spell_shadow_creepingplague",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30192,
+        "name": "Festering Maw",
+        "slug": "festering-maw",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706683,
+        "spell_ids": [
+          706683
+        ],
+        "description_html": "Healing with <span style=\"color: #ffffff; display: inline\">Bite Wound</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Lunge</span> by <span class=\"item-number\">1</span> sec.",
+        "description": "Healing with Bite Wound now reduces the cooldown of Lunge by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706683,
+            "description_html": "Healing with <span style=\"color: #ffffff; display: inline\">Bite Wound</span> now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Lunge</span> by <span class=\"item-number\">1</span> sec.",
+            "description": "Healing with Bite Wound now reduces the cooldown of Lunge by 1 sec."
+          }
+        ],
+        "connections": [
+          7379,
+          12379,
+          29872
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_fishbite_Border",
+          "key": "custom_fishbite_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29544,
+        "name": "No Mercy",
+        "slug": "no-mercy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704660,
+        "spell_ids": [
+          704660
+        ],
+        "description_html": "Allows your <span style=\"color: #FFFFFF; display: inline\">Thick Pelt</span> to affect an additional hit.",
+        "description": "Allows your Thick Pelt to affect an additional hit.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704660,
+            "description_html": "Allows your <span style=\"color: #FFFFFF; display: inline\">Thick Pelt</span> to affect an additional hit.",
+            "description": "Allows your Thick Pelt to affect an additional hit."
+          }
+        ],
+        "connections": [
+          7379,
+          12379,
+          33705
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\INV_Ascend_Hunting_90",
+          "key": "inv_ascend_hunting_90",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30196,
+        "name": "Petrified Legions",
+        "slug": "petrified-legions",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500012,
+        "spell_ids": [
+          500012
+        ],
+        "description_html": "Physical damage you deal or take now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_bat_01\" /><span class=\"name\">Call of the Darkwing</span></div><span class=\"desc\">Calls <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Shadow Bats</span> to appear from the shadows and strike the target for <span class=\"item-number\">28</span> + <span class=\"item-number\">40% SP</span> + <span class=\"item-number\">20% AP</span> Physical Damage, healing you equal to the damage dealt.</span></div>",
+        "description": "Physical damage you deal or take now has a 10% chance to trigger a Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500012,
+            "description_html": "Physical damage you deal or take now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_bat_01\" /><span class=\"name\">Call of the Darkwing</span></div><span class=\"desc\">Calls <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Shadow Bats</span> to appear from the shadows and strike the target for <span class=\"item-number\">28</span> + <span class=\"item-number\">40% SP</span> + <span class=\"item-number\">20% AP</span> Physical Damage, healing you equal to the damage dealt.</span></div>",
+            "description": "Physical damage you deal or take now has a 10% chance to trigger a Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt."
+          }
+        ],
+        "connections": [
+          9705,
+          33681
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_reforgedarchstone_01",
+          "key": "inv_misc_reforgedarchstone_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33704,
+        "name": "Rabid",
+        "slug": "rabid",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705732,
+        "spell_ids": [
+          705732
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Howl</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of Howl spells by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705732,
+            "description_html": "Reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Howl</span> spells by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of Howl spells by -25%."
+          }
+        ],
+        "connections": [
+          9705
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_Pet_Wolf",
+          "key": "ability_hunter_pet_wolf",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33680,
+        "name": "Appetite for Blood",
+        "slug": "appetite-for-blood",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560479,
+        "spell_ids": [
+          560479
+        ],
+        "description_html": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span> and <span style=\"color: #FFFFFF; display: inline\">Claw Sweep</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against Humanoids and Beasts.",
+        "description": "Increases the damage dealt by Bloodfang Bite and Claw Sweep by 20% against Humanoids and Beasts.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560479,
+            "description_html": "Increases the damage dealt by <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span> and <span style=\"color: #FFFFFF; display: inline\">Claw Sweep</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> against Humanoids and Beasts.",
+            "description": "Increases the damage dealt by Bloodfang Bite and Claw Sweep by 20% against Humanoids and Beasts."
+          }
+        ],
+        "connections": [
+          30192,
+          33675
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_BullRush",
+          "key": "ability_bullrush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 13706,
+        "name": "Blood Mark",
+        "slug": "blood-mark",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707624,
+        "spell_ids": [
+          707624
+        ],
+        "description_html": "Increases the Physical damage taken by enemies within <span class=\"item-number\">5</span> yds of you by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the Physical damage taken by enemies within 5 yds of you by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707624,
+            "description_html": "Increases the Physical damage taken by enemies within <span class=\"item-number\">5</span> yds of you by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the Physical damage taken by enemies within 5 yds of you by 3%."
+          }
+        ],
+        "connections": [
+          29544
+        ],
+        "choice_group": 707624,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+          "key": "spell_deathknight_bloodpresence",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33706,
+        "name": "Dark Mark",
+        "slug": "dark-mark",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705731,
+        "spell_ids": [
+          705731
+        ],
+        "description_html": "Reduces the chance to hit for enemies within <span class=\"item-number\">5</span> yds of you by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the chance to hit for enemies within 5 yds of you by -3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705731,
+            "description_html": "Reduces the chance to hit for enemies within <span class=\"item-number\">5</span> yds of you by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the chance to hit for enemies within 5 yds of you by -3%."
+          }
+        ],
+        "connections": [
+          29544
+        ],
+        "choice_group": 707624,
+        "icon": {
+          "source_path": "Interface\\Icons\\NathriaSymbol",
+          "key": "nathriasymbol",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33717,
+        "name": "Cursed Strikes",
+        "slug": "cursed-strikes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300982,
+        "spell_ids": [
+          300982,
+          301363
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span> and <span style=\"color: #ffffff; display: inline\">Hypovolemic Shock</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of Rotclaw and Hypovolemic Shock by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300982,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span> and <span style=\"color: #ffffff; display: inline\">Hypovolemic Shock</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of Rotclaw and Hypovolemic Shock by 50%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301363,
+            "description_html": "Increases the duration of <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span> and <span style=\"color: #ffffff; display: inline\">Hypovolemic Shock</span> by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of Rotclaw and Hypovolemic Shock by 100%."
+          }
+        ],
+        "connections": [
+          29544,
+          33705
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_BloodBite_Border",
+          "key": "custom_t_nhance_rpg_icons_bloodbite_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9418,
+        "name": "Enraging Wounds",
+        "slug": "enraging-wounds",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 300978,
+        "spell_ids": [
+          300978
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Melee critical strikes now leech <span class=\"item-number\">96</span> + <span class=\"item-number\">30% Stamina</span> health from the target, scaling with your Stamina.",
+        "description": "Level 40 Passive\nMelee critical strikes now leech 96 + 30% Stamina health from the target, scaling with your Stamina.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300978,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Melee critical strikes now leech <span class=\"item-number\">96</span> + <span class=\"item-number\">30% Stamina</span> health from the target, scaling with your Stamina.",
+            "description": "Level 40 Passive\nMelee critical strikes now leech 96 + 30% Stamina health from the target, scaling with your Stamina."
+          }
+        ],
+        "connections": [
+          4629
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_wound_Border",
+          "key": "_5_wound_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34974,
+        "name": "Grim Omen",
+        "slug": "grim-omen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800154,
+        "spell_ids": [
+          800154
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Ravenous Strike</span> or <span style=\"color: #ffffff; display: inline\">Bloodfang Bite</span>, or using <span style=\"color: #ffffff; display: inline\">Howl</span> spells, now triggers <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_bat_01\" /><span class=\"name\">Call of the Darkwing</span></div><span class=\"desc\">Calls <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Shadow Bats</span> to appear from the shadows and strike the target for <span class=\"item-number\">28</span> + <span class=\"item-number\">40% SP</span> + <span class=\"item-number\">20% AP</span> Physical Damage, healing you equal to the damage dealt.</span></div>",
+        "description": "Critical strikes with Ravenous Strike or Bloodfang Bite, or using Howl spells, now triggers Call of the Darkwing.\nCall of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800154,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Ravenous Strike</span> or <span style=\"color: #ffffff; display: inline\">Bloodfang Bite</span>, or using <span style=\"color: #ffffff; display: inline\">Howl</span> spells, now triggers <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span>.<br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 achievement_halloween_bat_01\" /><span class=\"name\">Call of the Darkwing</span></div><span class=\"desc\">Calls <span class=\"item-number\">1</span> to <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Shadow Bats</span> to appear from the shadows and strike the target for <span class=\"item-number\">28</span> + <span class=\"item-number\">40% SP</span> + <span class=\"item-number\">20% AP</span> Physical Damage, healing you equal to the damage dealt.</span></div>",
+            "description": "Critical strikes with Ravenous Strike or Bloodfang Bite, or using Howl spells, now triggers Call of the Darkwing.\nCall of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt."
+          }
+        ],
+        "connections": [
+          30196,
+          33704
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_ChillTouch",
+          "key": "spell_shadow_chilltouch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30224,
+        "name": "Eternal Presence",
+        "slug": "eternal-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560001,
+        "spell_ids": [
+          560001
+        ],
+        "description_html": "Increases the attack power of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, you now gain attack power equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the damage taken for <span class=\"item-number\">10</span> seconds. Can only occur once every <span class=\"item-number\">10</span> sec.",
+        "description": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.\n\nIn addition, you now gain attack power equal to 15% of the damage taken for 10 seconds. Can only occur once every 10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560001,
+            "description_html": "Increases the attack power of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, you now gain attack power equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the damage taken for <span class=\"item-number\">10</span> seconds. Can only occur once every <span class=\"item-number\">10</span> sec.",
+            "description": "Increases the attack power of party and raid members by 5%. Does not stack with similar effects.\n\nIn addition, you now gain attack power equal to 15% of the damage taken for 10 seconds. Can only occur once every 10 sec."
+          }
+        ],
+        "connections": [
+          33680,
+          33704
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_trinket6oih_wolf1",
+          "key": "inv_misc_trinket6oih_wolf1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6463,
+        "name": "Rejuvenating Shadows",
+        "slug": "rejuvenating-shadows",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704623,
+        "spell_ids": [
+          704623
+        ],
+        "description_html": "Nearby party and raid members receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> more healing. Does not stack with similar effects.<br /><br />In addition, increases the health leeched by <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Nearby party and raid members receive 6% more healing. Does not stack with similar effects.\n\nIn addition, increases the health leeched by Bloodbolt by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704623,
+            "description_html": "Nearby party and raid members receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> more healing. Does not stack with similar effects.<br /><br />In addition, increases the health leeched by <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Nearby party and raid members receive 6% more healing. Does not stack with similar effects.\n\nIn addition, increases the health leeched by Bloodbolt by 50%."
+          }
+        ],
+        "connections": [
+          13706,
+          33680,
+          33706
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_antishadow",
+          "key": "spell_shadow_antishadow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30193,
+        "name": "Infection",
+        "slug": "infection",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704624,
+        "spell_ids": [
+          704624
+        ],
+        "description_html": "Auto attacking a bleeding target will now infect the wound, increasing their chance to be critically struck from you by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Auto attacking a bleeding target will now infect the wound, increasing their chance to be critically struck from you by 1% for 6 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704624,
+            "description_html": "Auto attacking a bleeding target will now infect the wound, increasing their chance to be critically struck from you by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Auto attacking a bleeding target will now infect the wound, increasing their chance to be critically struck from you by 1% for 6 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          13706,
+          33706,
+          33717
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_monsterclaw_06",
+          "key": "inv_misc_monsterclaw_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33714,
+        "name": "Screech of the Darkwing",
+        "slug": "screech-of-the-darkwing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300260,
+        "spell_ids": [
+          300260
+        ],
+        "description_html": "Your effects that trigger <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span> now trigger an additional <span style=\"color: #FFFFFF; display: inline\">Call of the Darkwing</span>.<br /><br />Can only occur once per sec.",
+        "description": "Your effects that trigger Call of the Darkwing now trigger an additional Call of the Darkwing.\n\nCan only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300260,
+            "description_html": "Your effects that trigger <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span> now trigger an additional <span style=\"color: #FFFFFF; display: inline\">Call of the Darkwing</span>.<br /><br />Can only occur once per sec.",
+            "description": "Your effects that trigger Call of the Darkwing now trigger an additional Call of the Darkwing.\n\nCan only occur once per sec."
+          }
+        ],
+        "connections": [
+          30224,
+          34974
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Priest_ShadowyApparition",
+          "key": "ability_priest_shadowyapparition",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30402,
+        "name": "Enraging Howls",
+        "slug": "enraging-howls",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800766,
+        "spell_ids": [
+          800766
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Howl</span> spells now increases the damage dealt and reduces damage taken by nearby party members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Casting Howl spells now increases the damage dealt and reduces damage taken by nearby party members by 5% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800766,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Howl</span> spells now increases the damage dealt and reduces damage taken by nearby party members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Casting Howl spells now increases the damage dealt and reduces damage taken by nearby party members by 5% for 10 seconds."
+          }
+        ],
+        "connections": [
+          6463,
+          30224
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_08_Death_Border",
+          "key": "custom_08_death_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30195,
+        "name": "Iron Claws",
+        "slug": "iron-claws",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572783,
+        "spell_ids": [
+          572783
+        ],
+        "description_html": "Allows <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span>'s periodic effect to stack up <span class=\"item-number\">2</span> additional times for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> longer duration and cause you to ignore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of the target's armor per stack.",
+        "description": "Allows Rotclaw's periodic effect to stack up 2 additional times for 50% longer duration and cause you to ignore 3% of the target's armor per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572783,
+            "description_html": "Allows <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span>'s periodic effect to stack up <span class=\"item-number\">2</span> additional times for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> longer duration and cause you to ignore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of the target's armor per stack.",
+            "description": "Allows Rotclaw's periodic effect to stack up 2 additional times for 50% longer duration and cause you to ignore 3% of the target's armor per stack."
+          }
+        ],
+        "connections": [
+          6463,
+          30193
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_druid_malfurionstenacity",
+          "key": "spell_druid_malfurionstenacity",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4305,
+        "name": "Bloodmoon Strength",
+        "slug": "bloodmoon-strength",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 578120,
+        "spell_ids": [
+          578120
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Periodic damage dealt by <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span> now hits <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> more often and your <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span>, <span style=\"color: #ffffff; display: inline\">Claw Sweep</span>, and <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> additionally scales with dodge rating.",
+        "description": "Level 50 Passive\nPeriodic damage dealt by Rotclaw now hits -50% more often and your Bloodfang Bite, Claw Sweep, and Bloodbolt additionally scales with dodge rating.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 578120,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Periodic damage dealt by <span style=\"color: #FFFFFF; display: inline\">Rotclaw</span> now hits <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> more often and your <span style=\"color: #FFFFFF; display: inline\">Bloodfang Bite</span>, <span style=\"color: #ffffff; display: inline\">Claw Sweep</span>, and <span style=\"color: #ffffff; display: inline\">Bloodbolt</span> additionally scales with dodge rating.",
+            "description": "Level 50 Passive\nPeriodic damage dealt by Rotclaw now hits -50% more often and your Bloodfang Bite, Claw Sweep, and Bloodbolt additionally scales with dodge rating."
+          }
+        ],
+        "connections": [
+          9418
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_crawlinghandpet_red",
+          "key": "inv_crawlinghandpet_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30190,
+        "name": "Eyes In The Night",
+        "slug": "eyes-in-the-night",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801959,
+        "spell_ids": [
+          801959
+        ],
+        "description_html": "Allies within <span class=\"item-number\">20</span> yds are protected by <span style=\"color: #ffffff; display: inline\">Shadow Colony</span>, giving them a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span> when they take direct damage. Can only occur once every <span class=\"item-number\">3</span> sec.<br /><br />If allies have less health than you when this occurs, generate a large amount of threat against the enemy that triggered it.",
+        "description": "Allies within 20 yds are protected by Shadow Colony, giving them a 40% chance to trigger a Call of the Darkwing when they take direct damage. Can only occur once every 3 sec.\n\nIf allies have less health than you when this occurs, generate a large amount of threat against the enemy that triggered it.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801959,
+            "description_html": "Allies within <span class=\"item-number\">20</span> yds are protected by <span style=\"color: #ffffff; display: inline\">Shadow Colony</span>, giving them a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to trigger a <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span> when they take direct damage. Can only occur once every <span class=\"item-number\">3</span> sec.<br /><br />If allies have less health than you when this occurs, generate a large amount of threat against the enemy that triggered it.",
+            "description": "Allies within 20 yds are protected by Shadow Colony, giving them a 40% chance to trigger a Call of the Darkwing when they take direct damage. Can only occur once every 3 sec.\n\nIf allies have less health than you when this occurs, generate a large amount of threat against the enemy that triggered it."
+          }
+        ],
+        "connections": [
+          33714
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\sha_spell_shadow_shadesofdarkness_nightmare",
+          "key": "sha_spell_shadow_shadesofdarkness_nightmare",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33716,
+        "name": "Shadow Strength",
+        "slug": "shadow-strength",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801960,
+        "spell_ids": [
+          801960
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Howl</span> spells now deal <span class=\"item-number\">65</span> + <span class=\"item-number\">25% Stamina</span> + <span class=\"item-number\">25% Agility</span> + <span class=\"item-number\">10% AP</span> Shadow damage to all nearby enemies and triggering <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span> now reduces the cooldown of all <span style=\"color: #ffffff; display: inline\">Howl</span> spells by <span class=\"item-number\">-1</span> sec.<br /><br />Can only occur once per sec.",
+        "description": "Casting Howl spells now deal 65 + 25% Stamina + 25% Agility + 10% AP Shadow damage to all nearby enemies and triggering Call of the Darkwing now reduces the cooldown of all Howl spells by -1 sec.\n\nCan only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801960,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Howl</span> spells now deal <span class=\"item-number\">65</span> + <span class=\"item-number\">25% Stamina</span> + <span class=\"item-number\">25% Agility</span> + <span class=\"item-number\">10% AP</span> Shadow damage to all nearby enemies and triggering <span style=\"color: #ffffff; display: inline\">Call of the Darkwing</span> now reduces the cooldown of all <span style=\"color: #ffffff; display: inline\">Howl</span> spells by <span class=\"item-number\">-1</span> sec.<br /><br />Can only occur once per sec.",
+            "description": "Casting Howl spells now deal 65 + 25% Stamina + 25% Agility + 10% AP Shadow damage to all nearby enemies and triggering Call of the Darkwing now reduces the cooldown of all Howl spells by -1 sec.\n\nCan only occur once per sec."
+          }
+        ],
+        "connections": [
+          30195,
+          30402,
+          33714
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_icon_shadowcouncilorb_purple",
+          "key": "inv_icon_shadowcouncilorb_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31247,
+        "name": "Bloody Claws",
+        "slug": "bloody-claws",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 20,
+        "tree_id": 53,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572800,
+        "spell_ids": [
+          572800
+        ],
+        "description_html": "You now generate <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased Rage from damage dealt and critical strikes with auto attacks now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Animated Blood</span>, <span style=\"color: #ffffff; display: inline\">Blood Veil</span>, and <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">1</span> sec.",
+        "description": "You now generate 20% increased Rage from damage dealt and critical strikes with auto attacks now reduces the cooldown of Animated Blood, Blood Veil, and Blood Pact by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572800,
+            "description_html": "You now generate <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased Rage from damage dealt and critical strikes with auto attacks now reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Animated Blood</span>, <span style=\"color: #ffffff; display: inline\">Blood Veil</span>, and <span style=\"color: #ffffff; display: inline\">Blood Pact</span> by <span class=\"item-number\">1</span> sec.",
+            "description": "You now generate 20% increased Rage from damage dealt and critical strikes with auto attacks now reduces the cooldown of Animated Blood, Blood Veil, and Blood Pact by 1 sec."
+          }
+        ],
+        "connections": [
+          30195
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_BloodTap",
+          "key": "spell_deathknight_bloodtap",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

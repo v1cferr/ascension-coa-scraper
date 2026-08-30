@@ -1,0 +1,2597 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:16+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:c36bb6fa4a4da088a3971654674c3c2357d9987b95f4406300978333e60caa06",
+    "talent_count": 162,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 12,
+    "name": "Barbarian",
+    "slug": "barbarian",
+    "class_file": "barbarian",
+    "color": "rgb(138, 51, 3)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:barbarian",
+      "key": "class-barbarian",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 28,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 33,
+    "name": "Ancestry",
+    "slug": "ancestry",
+    "sort_order": 3,
+    "class_id": 12,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 13572,
+        "name": "Keg Smash",
+        "slug": "keg-smash",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30762,
+            4003
+          ]
+        },
+        "spell_id": 805808,
+        "spell_ids": [
+          805808
+        ],
+        "description_html": "Smash an enemy for <span class=\"item-number\">25</span> + <span class=\"item-number\">15% AP</span> Physical damage, plus an additional <span class=\"item-number\">17</span> + <span class=\"item-number\">25% AP</span> Frost damage to up to <span class=\"item-number\">5</span> nearby enemies.",
+        "description": "Smash an enemy for 25 + 15% AP Physical damage, plus an additional 17 + 25% AP Frost damage to up to 5 nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805808,
+            "description_html": "Smash an enemy for <span class=\"item-number\">25</span> + <span class=\"item-number\">15% AP</span> Physical damage, plus an additional <span class=\"item-number\">17</span> + <span class=\"item-number\">25% AP</span> Frost damage to up to <span class=\"item-number\">5</span> nearby enemies.",
+            "description": "Smash an enemy for 25 + 15% AP Physical damage, plus an additional 17 + 25% AP Frost damage to up to 5 nearby enemies."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_elusiveale",
+          "key": "ability_monk_elusiveale",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4003,
+        "name": "Fill Level",
+        "slug": "fill-level",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30762
+          ]
+        },
+        "spell_id": 92083,
+        "spell_ids": [
+          92083
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Grants you <span style=\"color: #FFFFFF; display: inline\">Fill Level</span> and the ability to manipulate a <span style=\"color: #ffffff; display: inline\">Tankard</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_brew_wheat\" /><span class=\"name\">Fill Level</span></div><span class=\"desc\">You have a magical <span style=\"color: #ffffff; display: inline\">Tankard</span> that fills up over time, granting you <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span> every <span class=\"item-number\">2</span> sec.<br /><br />Some of your other abilities empty your <span style=\"color: #ffffff; display: inline\">Tankard</span> to trigger with a reduced cooldown.</span></div>",
+        "description": "Level 10 Passive\nGrants you Fill Level and the ability to manipulate a Tankard.Fill LevelYou have a magical Tankard that fills up over time, granting you 1 stack of Fill Level every 2 sec.\n\nSome of your other abilities empty your Tankard to trigger with a reduced cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92083,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Grants you <span style=\"color: #FFFFFF; display: inline\">Fill Level</span> and the ability to manipulate a <span style=\"color: #ffffff; display: inline\">Tankard</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_brew_wheat\" /><span class=\"name\">Fill Level</span></div><span class=\"desc\">You have a magical <span style=\"color: #ffffff; display: inline\">Tankard</span> that fills up over time, granting you <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span> every <span class=\"item-number\">2</span> sec.<br /><br />Some of your other abilities empty your <span style=\"color: #ffffff; display: inline\">Tankard</span> to trigger with a reduced cooldown.</span></div>",
+            "description": "Level 10 Passive\nGrants you Fill Level and the ability to manipulate a Tankard.Fill LevelYou have a magical Tankard that fills up over time, granting you 1 stack of Fill Level every 2 sec.\n\nSome of your other abilities empty your Tankard to trigger with a reduced cooldown."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_brew_wheat",
+          "key": "spell_brew_wheat",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 31153,
+        "name": "Ancestor's Call",
+        "slug": "ancestors-call",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4003,
+            30762
+          ]
+        },
+        "spell_id": 804729,
+        "spell_ids": [
+          804729
+        ],
+        "description_html": "Teaches you <span style=\"color: #ffffff; display: inline\">Ancestor's Call</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helmet_158\" /><span class=\"name\">Ancestor&#39;s Call (Troll)</span></div><span class=\"desc\">Call an <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> to aid you in battle until dismissed that scales with your Agility and attack power.<br /><br />Whenever you use <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> or <span style=\"color: #ffffff; display: inline\">Whirling Advance</span>, your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> mimics it.<br /></span></div>",
+        "description": "Teaches you Ancestor's Call.Ancestor's Call (Troll)Call an Honored Ancestor to aid you in battle until dismissed that scales with your Agility and attack power.\n\nWhenever you use Barbaric Whirl or Whirling Advance, your Honored Ancestor mimics it.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804729,
+            "description_html": "Teaches you <span style=\"color: #ffffff; display: inline\">Ancestor's Call</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_helmet_158\" /><span class=\"name\">Ancestor&#39;s Call (Troll)</span></div><span class=\"desc\">Call an <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> to aid you in battle until dismissed that scales with your Agility and attack power.<br /><br />Whenever you use <span style=\"color: #ffffff; display: inline\">Barbaric Whirl</span> or <span style=\"color: #ffffff; display: inline\">Whirling Advance</span>, your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> mimics it.<br /></span></div>",
+            "description": "Teaches you Ancestor's Call.Ancestor's Call (Troll)Call an Honored Ancestor to aid you in battle until dismissed that scales with your Agility and attack power.\n\nWhenever you use Barbaric Whirl or Whirling Advance, your Honored Ancestor mimics it."
+          }
+        ],
+        "connections": [
+          13572
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helmet_158",
+          "key": "inv_helmet_158",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34306,
+        "name": "Breath of The North",
+        "slug": "breath-of-the-north",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800838,
+        "spell_ids": [
+          800838
+        ],
+        "description_html": "Unleashes a frost breath, dealing <span class=\"item-number\">42</span> + <span class=\"item-number\">20% AP</span> Frost damage to enemies in a <span class=\"item-number\">12</span> yd cone and slowing them by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Can only be used after emptying your <span style=\"color: #ffffff; display: inline\">Tankard</span>.",
+        "description": "Unleashes a frost breath, dealing 42 + 20% AP Frost damage to enemies in a 12 yd cone and slowing them by -30% for 5 seconds.\n\nCan only be used after emptying your Tankard.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800838,
+            "description_html": "Unleashes a frost breath, dealing <span class=\"item-number\">42</span> + <span class=\"item-number\">20% AP</span> Frost damage to enemies in a <span class=\"item-number\">12</span> yd cone and slowing them by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.<br /><br />Can only be used after emptying your <span style=\"color: #ffffff; display: inline\">Tankard</span>.",
+            "description": "Unleashes a frost breath, dealing 42 + 20% AP Frost damage to enemies in a 12 yd cone and slowing them by -30% for 5 seconds.\n\nCan only be used after emptying your Tankard."
+          }
+        ],
+        "connections": [
+          31153
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_BlueFlameBreath",
+          "key": "spell_fire_blueflamebreath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29284,
+        "name": "Ale of The God-King",
+        "slug": "ale-of-the-god-king",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805780,
+        "spell_ids": [
+          805780
+        ],
+        "description_html": "Empower your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span>'s melee attacks to deal additional Frost damage scaling with your attack power. Lasts for <span class=\"item-number\">20</span> seconds or <span class=\"item-number\">10</span> attacks.<br /><br />This ability consumes <span style=\"color: #ffffff; display: inline\">Fill Level</span> stacks and triggers a reduced cooldown based on stacks consumed.",
+        "description": "Empower your Honored Ancestor's melee attacks to deal additional Frost damage scaling with your attack power. Lasts for 20 seconds or 10 attacks.\n\nThis ability consumes Fill Level stacks and triggers a reduced cooldown based on stacks consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805780,
+            "description_html": "Empower your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span>'s melee attacks to deal additional Frost damage scaling with your attack power. Lasts for <span class=\"item-number\">20</span> seconds or <span class=\"item-number\">10</span> attacks.<br /><br />This ability consumes <span style=\"color: #ffffff; display: inline\">Fill Level</span> stacks and triggers a reduced cooldown based on stacks consumed.",
+            "description": "Empower your Honored Ancestor's melee attacks to deal additional Frost damage scaling with your attack power. Lasts for 20 seconds or 10 attacks.\n\nThis ability consumes Fill Level stacks and triggers a reduced cooldown based on stacks consumed."
+          }
+        ],
+        "connections": [
+          31153
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\aleofgodking",
+          "key": "aleofgodking",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9172,
+        "name": "Frozen Blades",
+        "slug": "frozen-blades",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 15,
+          "talent_ids": []
+        },
+        "spell_id": 573256,
+        "spell_ids": [
+          573256
+        ],
+        "description_html": "Critical strikes now grant party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span> critical strike chance for <span class=\"item-number\">8</span> seconds.<br /><br />Does not stack with similar effects.",
+        "description": "Critical strikes now grant party and raid members 5% critical strike chance for 8 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573256,
+            "description_html": "Critical strikes now grant party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span> critical strike chance for <span class=\"item-number\">8</span> seconds.<br /><br />Does not stack with similar effects.",
+            "description": "Critical strikes now grant party and raid members 5% critical strike chance for 8 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          4003
+        ],
+        "choice_group": 8456221,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_weapon_shortblade_48",
+          "key": "inv_weapon_shortblade_48",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 11172,
+        "name": "Ancestral Wisdom",
+        "slug": "ancestral-wisdom",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 15,
+          "talent_ids": []
+        },
+        "spell_id": 803511,
+        "spell_ids": [
+          803511
+        ],
+        "description_html": "Increases chance to hit with all spells and attacks by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for you and party and raid members.<br /><br />Does not stack with similar effects.",
+        "description": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803511,
+            "description_html": "Increases chance to hit with all spells and attacks by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for you and party and raid members.<br /><br />Does not stack with similar effects.",
+            "description": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          4003
+        ],
+        "choice_group": 8456221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Dungeon_UtgardeKeep_Normal",
+          "key": "achievement_dungeon_utgardekeep_normal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 34258,
+        "name": "Frostbite",
+        "slug": "frostbite",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705158,
+        "spell_ids": [
+          705158
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Breath of The North</span> now causes the target to bleed for an additional <span class=\"item-number\">30%</span> of its damage over <span class=\"item-number\">6</span> seconds as Frost damage.",
+        "description": "Breath of The North now causes the target to bleed for an additional 30% of its damage over 6 seconds as Frost damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705158,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Breath of The North</span> now causes the target to bleed for an additional <span class=\"item-number\">30%</span> of its damage over <span class=\"item-number\">6</span> seconds as Frost damage.",
+            "description": "Breath of The North now causes the target to bleed for an additional 30% of its damage over 6 seconds as Frost damage."
+          }
+        ],
+        "connections": [
+          34306
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(74)_Border",
+          "key": "novart_magicspell__74__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31220,
+        "name": "Ancestral Fury",
+        "slug": "ancestral-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804731,
+        "spell_ids": [
+          804731
+        ],
+        "description_html": "Emanate a powerful aura, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee and ranged haste to party and raid members within <span class=\"item-number\">100</span> yds.<br /><br />Does not stack with similar effects.",
+        "description": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804731,
+            "description_html": "Emanate a powerful aura, granting <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased melee and ranged haste to party and raid members within <span class=\"item-number\">100</span> yds.<br /><br />Does not stack with similar effects.",
+            "description": "Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          34306
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_argus_aggramar",
+          "key": "achievement_boss_argus_aggramar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29799,
+        "name": "Ancestral Combat",
+        "slug": "ancestral-combat",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801782,
+        "spell_ids": [
+          801782
+        ],
+        "description_html": "Your Physical damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>.",
+        "description": "Your Physical damage dealt now has a 25% chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of Fill Level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801782,
+            "description_html": "Your Physical damage dealt now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>.",
+            "description": "Your Physical damage dealt now has a 25% chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of Fill Level."
+          }
+        ],
+        "connections": [
+          29284,
+          34306
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3calloftheancients",
+          "key": "d3calloftheancients",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34259,
+        "name": "Trip to the Alehouse",
+        "slug": "trip-to-the-alehouse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705152,
+        "spell_ids": [
+          705152,
+          707766
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Keg Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its range by <span class=\"item-number\">3</span> yds.",
+        "description": "Increases the damage of Keg Smash by 10% and its range by 3 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705152,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Keg Smash</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and its range by <span class=\"item-number\">3</span> yds.",
+            "description": "Increases the damage of Keg Smash by 10% and its range by 3 yds."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707766,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Keg Smash</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and its range by <span class=\"item-number\">6</span> yds.",
+            "description": "Increases the damage of Keg Smash by 20% and its range by 6 yds."
+          }
+        ],
+        "connections": [
+          29284
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_guildperk_bartering",
+          "key": "achievement_guildperk_bartering",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34260,
+        "name": "Drinking Frenzy",
+        "slug": "drinking-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706821,
+        "spell_ids": [
+          706821
+        ],
+        "description_html": "Your melee attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>.<br /><br />In addition, your chance to hit is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Your melee attacks now have a 15% chance to grant a stack of Fill Level.\n\nIn addition, your chance to hit is increased by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706821,
+            "description_html": "Your melee attacks now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>.<br /><br />In addition, your chance to hit is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Your melee attacks now have a 15% chance to grant a stack of Fill Level.\n\nIn addition, your chance to hit is increased by 5%."
+          }
+        ],
+        "connections": [
+          29284
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_archaeology_vrykuldrinkinghorn",
+          "key": "inv_misc_archaeology_vrykuldrinkinghorn",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4354,
+        "name": "Frost Giant's Fury",
+        "slug": "frost-giants-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805812,
+        "spell_ids": [
+          805812
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Breath of the North</span> now grants you <span class=\"item-number\">10</span><span class=\"item-number\">%</span> melee attack speed, plus an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> when using a two-handed weapon, for <span class=\"item-number\">8</span> seconds.",
+        "description": "Casting Breath of the North now grants you 10% melee attack speed, plus an additional 20% when using a two-handed weapon, for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805812,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Breath of the North</span> now grants you <span class=\"item-number\">10</span><span class=\"item-number\">%</span> melee attack speed, plus an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> when using a two-handed weapon, for <span class=\"item-number\">8</span> seconds.",
+            "description": "Casting Breath of the North now grants you 10% melee attack speed, plus an additional 20% when using a two-handed weapon, for 8 seconds."
+          }
+        ],
+        "connections": [
+          34258
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_deathknight_icetouch",
+          "key": "spell_deathknight_icetouch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12153,
+        "name": "Frozen Tankard",
+        "slug": "frozen-tankard",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805815,
+        "spell_ids": [
+          805815
+        ],
+        "description_html": "Throw one of your extra tankards at an enemy, dealing <span class=\"item-number\">107</span> Frost damage and stunning them for <span class=\"item-number\">4</span> seconds. <br /><br />Stunned enemies are considered <span style=\"color: #3399ff; display: inline\">Frozen</span>.",
+        "description": "Throw one of your extra tankards at an enemy, dealing 107 Frost damage and stunning them for 4 seconds.\n\nStunned enemies are considered Frozen.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805815,
+            "description_html": "Throw one of your extra tankards at an enemy, dealing <span class=\"item-number\">107</span> Frost damage and stunning them for <span class=\"item-number\">4</span> seconds. <br /><br />Stunned enemies are considered <span style=\"color: #3399ff; display: inline\">Frozen</span>.",
+            "description": "Throw one of your extra tankards at an enemy, dealing 107 Frost damage and stunning them for 4 seconds.\n\nStunned enemies are considered Frozen."
+          }
+        ],
+        "connections": [
+          29799,
+          31220,
+          34258
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\tankardtoss",
+          "key": "tankardtoss",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29800,
+        "name": "Ancestral Evolution",
+        "slug": "ancestral-evolution",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806229,
+        "spell_ids": [
+          806229
+        ],
+        "description_html": "Honor your ancestor's and gain their blessing, allowing all party and raid members to reflect <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of all damage taken for <span class=\"item-number\">20</span> seconds.",
+        "description": "Honor your ancestor's and gain their blessing, allowing all party and raid members to reflect 20% of all damage taken for 20 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806229,
+            "description_html": "Honor your ancestor's and gain their blessing, allowing all party and raid members to reflect <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of all damage taken for <span class=\"item-number\">20</span> seconds.",
+            "description": "Honor your ancestor's and gain their blessing, allowing all party and raid members to reflect 20% of all damage taken for 20 seconds."
+          }
+        ],
+        "connections": [
+          29799
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_BullRush",
+          "key": "ability_bullrush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30763,
+        "name": "Cheers!",
+        "slug": "cheers",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805810,
+        "spell_ids": [
+          805810
+        ],
+        "description_html": "Designate an ally as your drinking partner for <span class=\"item-number\">30</span> minutes, reducing all damage they take by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, and causing <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of all damage they take to be redirected to you.<br /><br />You can only have <span class=\"item-number\">1</span> ally designated at a time.",
+        "description": "Designate an ally as your drinking partner for 30 minutes, reducing all damage they take by -5%, and causing 10% of all damage they take to be redirected to you.\n\nYou can only have 1 ally designated at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805810,
+            "description_html": "Designate an ally as your drinking partner for <span class=\"item-number\">30</span> minutes, reducing all damage they take by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>, and causing <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of all damage they take to be redirected to you.<br /><br />You can only have <span class=\"item-number\">1</span> ally designated at a time.",
+            "description": "Designate an ally as your drinking partner for 30 minutes, reducing all damage they take by -5%, and causing 10% of all damage they take to be redirected to you.\n\nYou can only have 1 ally designated at a time."
+          }
+        ],
+        "connections": [
+          29799,
+          34259,
+          34260
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\archaeology_5_0_twinsteinsetofbrewfatherquantoukuo",
+          "key": "archaeology_5_0_twinsteinsetofbrewfatherquantoukuo",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34263,
+        "name": "The Finest Ale",
+        "slug": "the-finest-ale",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705218,
+        "spell_ids": [
+          705218
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Ale of The God-King</span> no longer empties your <span style=\"color: #FFFFFF; display: inline\">Tankard</span>.",
+        "description": "Your Ale of The God-King no longer empties your Tankard.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705218,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Ale of The God-King</span> no longer empties your <span style=\"color: #FFFFFF; display: inline\">Tankard</span>.",
+            "description": "Your Ale of The God-King no longer empties your Tankard."
+          }
+        ],
+        "connections": [
+          34260
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Misc_Drink",
+          "key": "spell_misc_drink",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11257,
+        "name": "Crystal Enhancements",
+        "slug": "crystal-enhancements",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 707541,
+        "spell_ids": [
+          707541
+        ],
+        "description_html": "You now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects.",
+        "description": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707541,
+            "description_html": "You now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects.",
+            "description": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          9172,
+          11172
+        ],
+        "choice_group": 723711,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_frostemblem_01",
+          "key": "inv_misc_frostemblem_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 34257,
+        "name": "Uniting Voice",
+        "slug": "uniting-voice",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 705162,
+        "spell_ids": [
+          705162
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Ancestral Roar</span> now increases haste of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects.<br /><br />Critical strikes extend the duration of the buff by <span class=\"item-number\">1</span> sec.",
+        "description": "Casting Ancestral Roar now increases haste of party and raid members by 5% for 20 seconds.\n\nDoes not stack with similar effects.\n\nCritical strikes extend the duration of the buff by 1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705162,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Ancestral Roar</span> now increases haste of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects.<br /><br />Critical strikes extend the duration of the buff by <span class=\"item-number\">1</span> sec.",
+            "description": "Casting Ancestral Roar now increases haste of party and raid members by 5% for 20 seconds.\n\nDoes not stack with similar effects.\n\nCritical strikes extend the duration of the buff by 1 sec."
+          }
+        ],
+        "connections": [
+          9172,
+          11172
+        ],
+        "choice_group": 723711,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_mail_vrykuldragonrider_b_01",
+          "key": "inv_helm_mail_vrykuldragonrider_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 34262,
+        "name": "Icebound Ancestry",
+        "slug": "icebound-ancestry",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705216,
+        "spell_ids": [
+          705216
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Breath of the North</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />In addition, your attacks now ignore Armor against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+        "description": "Increases the critical strike chance of Breath of the North by 10%.\n\nIn addition, your attacks now ignore Armor against Frozen targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705216,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #FFFFFF; display: inline\">Breath of the North</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />In addition, your attacks now ignore Armor against <span style=\"color: #3399ff; display: inline\">Frozen</span> targets.",
+            "description": "Increases the critical strike chance of Breath of the North by 10%.\n\nIn addition, your attacks now ignore Armor against Frozen targets."
+          }
+        ],
+        "connections": [
+          4354,
+          12153
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_forgemaster",
+          "key": "achievement_boss_forgemaster",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34264,
+        "name": "Hodir's Revenge",
+        "slug": "hodirs-revenge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705214,
+        "spell_ids": [
+          705214
+        ],
+        "description_html": "Enemies damaged by your <span style=\"color: #FFFFFF; display: inline\">Frozen Tankard</span> now take <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage from you for <span class=\"item-number\">6</span> seconds.",
+        "description": "Enemies damaged by your Frozen Tankard now take 50% increased damage from you for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705214,
+            "description_html": "Enemies damaged by your <span style=\"color: #FFFFFF; display: inline\">Frozen Tankard</span> now take <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased damage from you for <span class=\"item-number\">6</span> seconds.",
+            "description": "Enemies damaged by your Frozen Tankard now take 50% increased damage from you for 6 seconds."
+          }
+        ],
+        "connections": [
+          12153
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_IceBoundFortitude",
+          "key": "spell_deathknight_iceboundfortitude",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11219,
+        "name": "Thane's Grip",
+        "slug": "thanes-grip",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803798,
+        "spell_ids": [
+          803798
+        ],
+        "description_html": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand.",
+        "description": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803798,
+            "description_html": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand.",
+            "description": "Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand."
+          }
+        ],
+        "connections": [
+          29800
+        ],
+        "choice_group": 803798,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_archerskill33_Border",
+          "key": "_5_archerskill33_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31219,
+        "name": "Thane's Guard",
+        "slug": "thanes-guard",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800132,
+        "spell_ids": [
+          800132
+        ],
+        "description_html": "Gain the <span style=\"color: #ffffff; display: inline\">Shield</span> proficiency and while wearing a shield you gain <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased attack speed and <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased Armor contribution from your shield.",
+        "description": "Gain the Shield proficiency and while wearing a shield you gain 40% increased attack speed and 100% increased Armor contribution from your shield.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800132,
+            "description_html": "Gain the <span style=\"color: #ffffff; display: inline\">Shield</span> proficiency and while wearing a shield you gain <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased attack speed and <span class=\"item-number\">100</span><span class=\"item-number\">%</span> increased Armor contribution from your shield.",
+            "description": "Gain the Shield proficiency and while wearing a shield you gain 40% increased attack speed and 100% increased Armor contribution from your shield."
+          }
+        ],
+        "connections": [
+          29800
+        ],
+        "choice_group": 803798,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievements_zone_stormheim",
+          "key": "achievements_zone_stormheim",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34304,
+        "name": "Liquid Courage",
+        "slug": "liquid-courage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681060,
+        "spell_ids": [
+          681060
+        ],
+        "description_html": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now reduces your damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>.",
+        "description": "Each Fill Level stack now reduces your damage taken by -2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681060,
+            "description_html": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now reduces your damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span>.",
+            "description": "Each Fill Level stack now reduces your damage taken by -2%."
+          }
+        ],
+        "connections": [
+          30763
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_fortifyingale_new",
+          "key": "ability_monk_fortifyingale_new",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12261,
+        "name": "Breaking Morale",
+        "slug": "breaking-morale",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681473,
+        "spell_ids": [
+          681473
+        ],
+        "description_html": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Break</span> by <span class=\"item-number\">-15</span> and increases the damage of <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the Energy cost of Break by -15 and increases the damage of Ancestral Strike and Smash by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681473,
+            "description_html": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Break</span> by <span class=\"item-number\">-15</span> and increases the damage of <span style=\"color: #ffffff; display: inline\">Ancestral Strike</span> and <span style=\"color: #ffffff; display: inline\">Smash</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the Energy cost of Break by -15 and increases the damage of Ancestral Strike and Smash by 25%."
+          }
+        ],
+        "connections": [
+          30763,
+          34263
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_Avatar",
+          "key": "ability_racial_avatar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30386,
+        "name": "Ice Cold Bubbles",
+        "slug": "ice-cold-bubbles",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705161,
+        "spell_ids": [
+          705161,
+          707778
+        ],
+        "description_html": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now also increases Frost damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Each Fill Level stack now also increases Frost damage dealt by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705161,
+            "description_html": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now also increases Frost damage dealt by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Each Fill Level stack now also increases Frost damage dealt by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707778,
+            "description_html": "Each <span style=\"color: #ffffff; display: inline\">Fill Level</span> stack now also increases Frost damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Each Fill Level stack now also increases Frost damage dealt by 4%."
+          }
+        ],
+        "connections": [
+          11219,
+          31219,
+          34262,
+          34264
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_iceswirl_Border",
+          "key": "nhi_iceswirl_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30387,
+        "name": "Unified Rage",
+        "slug": "unified-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705212,
+        "spell_ids": [
+          705212
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now increases your chance to trigger <span style=\"color: #FFFFFF; display: inline\">Ancestral Combat</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Your Unbridled Rage now increases your chance to trigger Ancestral Combat by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705212,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Unbridled Rage</span> now increases your chance to trigger <span style=\"color: #FFFFFF; display: inline\">Ancestral Combat</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Your Unbridled Rage now increases your chance to trigger Ancestral Combat by 25%."
+          }
+        ],
+        "connections": [
+          11219,
+          31219
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_magicspell_(76)_Border",
+          "key": "novart_magicspell__76__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29348,
+        "name": "Blind Stupor",
+        "slug": "blind-stupor",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805811,
+        "spell_ids": [
+          805811
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Keg Smash</span> now reduces enemies' casting speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Damage dealt by Keg Smash now reduces enemies' casting speed by -30% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805811,
+            "description_html": "Damage dealt by <span style=\"color: #FFFFFF; display: inline\">Keg Smash</span> now reduces enemies' casting speed by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Damage dealt by Keg Smash now reduces enemies' casting speed by -30% for 15 seconds."
+          }
+        ],
+        "connections": [
+          11219,
+          12261,
+          31219,
+          34304
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_drunkenhaze",
+          "key": "ability_monk_drunkenhaze",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9861,
+        "name": "To The Bone",
+        "slug": "to-the-bone",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 712673,
+        "spell_ids": [
+          712673
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Breath of the North</span> now reduces enemies' resistances by <span class=\"item-number\">75</span> and increases their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Damage dealt by Breath of the North now reduces enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 712673,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Breath of the North</span> now reduces enemies' resistances by <span class=\"item-number\">75</span> and increases their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Damage dealt by Breath of the North now reduces enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds."
+          }
+        ],
+        "connections": [
+          34257,
+          11257
+        ],
+        "choice_group": 326121,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_frost_bonecrack_Border",
+          "key": "nhi_frost_bonecrack_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 30764,
+        "name": "Splash Zone",
+        "slug": "splash-zone",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 705156,
+        "spell_ids": [
+          705156
+        ],
+        "description_html": "Share a drink from your <span style=\"color: #ffffff; display: inline\">Tankard</span> with all party and raid members, granting <span class=\"item-number\">95</span> increased attack or spell power for <span class=\"item-number\">15</span> seconds.<br /><br />Does not stack with similar effects.",
+        "description": "Share a drink from your Tankard with all party and raid members, granting 95 increased attack or spell power for 15 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705156,
+            "description_html": "Share a drink from your <span style=\"color: #ffffff; display: inline\">Tankard</span> with all party and raid members, granting <span class=\"item-number\">95</span> increased attack or spell power for <span class=\"item-number\">15</span> seconds.<br /><br />Does not stack with similar effects.",
+            "description": "Share a drink from your Tankard with all party and raid members, granting 95 increased attack or spell power for 15 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          34257,
+          11257
+        ],
+        "choice_group": 326121,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_holiday_beerfest_darkiron",
+          "key": "inv_holiday_beerfest_darkiron",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 34305,
+        "name": "Drunken Frenzy",
+        "slug": "drunken-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572799,
+        "spell_ids": [
+          572799
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Unbridled Rage</span> now increases your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span>'s Physical damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Unbridled Rage now increases your Honored Ancestor's Physical damage by 15% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572799,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Unbridled Rage</span> now increases your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span>'s Physical damage by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Unbridled Rage now increases your Honored Ancestor's Physical damage by 15% for 10 seconds."
+          }
+        ],
+        "connections": [
+          34262,
+          30386
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_offhand_1h_draenordungeon_c_02",
+          "key": "inv_offhand_1h_draenordungeon_c_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34261,
+        "name": "Ancestor's Fury",
+        "slug": "ancestors-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 3.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705168,
+        "spell_ids": [
+          705168
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Unbridled Rage</span> now also increases your Frost damage and critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Unbridled Rage now also increases your Frost damage and critical strike chance by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705168,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Unbridled Rage</span> now also increases your Frost damage and critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Unbridled Rage now also increases your Frost damage and critical strike chance by 10%."
+          }
+        ],
+        "connections": [
+          30386,
+          30387
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_generalbjarngrim",
+          "key": "achievement_boss_generalbjarngrim",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30754,
+        "name": "Cold Brew",
+        "slug": "cold-brew",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 5.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705211,
+        "spell_ids": [
+          705211
+        ],
+        "description_html": "Critical strikes with Frost damage now generate a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>. <br /><br />Can only occur once per sec.",
+        "description": "Critical strikes with Frost damage now generate a stack of Fill Level.\n\nCan only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705211,
+            "description_html": "Critical strikes with Frost damage now generate a stack of <span style=\"color: #ffffff; display: inline\">Fill Level</span>. <br /><br />Can only occur once per sec.",
+            "description": "Critical strikes with Frost damage now generate a stack of Fill Level.\n\nCan only occur once per sec."
+          }
+        ],
+        "connections": [
+          29348,
+          30387
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_monk_nimblebrew",
+          "key": "spell_monk_nimblebrew",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34309,
+        "name": "Ancestral Spirit",
+        "slug": "ancestral-spirit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705153,
+        "spell_ids": [
+          705153,
+          705154
+        ],
+        "description_html": "Reduces the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells and increases the duration of your <span style=\"color: #ffffff; display: inline\">Shouts</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the Energy cost of your Spirit spells and increases the duration of your Shouts by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705153,
+            "description_html": "Reduces the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells and increases the duration of your <span style=\"color: #ffffff; display: inline\">Shouts</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the Energy cost of your Spirit spells and increases the duration of your Shouts by -50%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 705154,
+            "description_html": "Reduces the Energy cost of your <span style=\"color: #FFFFFF; display: inline\">Spirit</span> spells and increases the duration of your <span style=\"color: #ffffff; display: inline\">Shouts</span> by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the Energy cost of your Spirit spells and increases the duration of your Shouts by -100%."
+          }
+        ],
+        "connections": [
+          12261,
+          29348
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_druideskill22_Border",
+          "key": "_5_druideskill22_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34311,
+        "name": "The Spins",
+        "slug": "the-spins",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705208,
+        "spell_ids": [
+          705208
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Keg Smash</span> now causes your <span style=\"color: #FFFFFF; display: inline\">Honored Ancestor</span> to perform an <span style=\"color: #ffffff; display: inline\">Ancestral Whirl</span> attack upon nearby enemies.",
+        "description": "Casting Keg Smash now causes your Honored Ancestor to perform an Ancestral Whirl attack upon nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705208,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Keg Smash</span> now causes your <span style=\"color: #FFFFFF; display: inline\">Honored Ancestor</span> to perform an <span style=\"color: #ffffff; display: inline\">Ancestral Whirl</span> attack upon nearby enemies.",
+            "description": "Casting Keg Smash now causes your Honored Ancestor to perform an Ancestral Whirl attack upon nearby enemies."
+          }
+        ],
+        "connections": [
+          34261,
+          34305
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\skill_icon_skill14_Border",
+          "key": "skill_icon_skill14_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29366,
+        "name": "Ramhorn Rage",
+        "slug": "ramhorn-rage",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805804,
+        "spell_ids": [
+          805804
+        ],
+        "description_html": "$55",
+        "description": "$55",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805804,
+            "description_html": "$56",
+            "description": "$56"
+          }
+        ],
+        "connections": [
+          30754,
+          34261
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_holiday_beerfest_maghar",
+          "key": "inv_holiday_beerfest_maghar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29782,
+        "name": "War Cry",
+        "slug": "war-cry",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500995,
+        "spell_ids": [
+          500995
+        ],
+        "description_html": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, and attack power by <span class=\"item-number\">150</span> of party and raid members within <span class=\"item-number\">25</span> yds for <span class=\"item-number\">20</span> seconds.<br /><br />Allies cannot benefit from this spell again for <span class=\"item-number\">5</span> minutes.",
+        "description": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by 20%, and attack power by 150 of party and raid members within 25 yds for 20 seconds.\n\nAllies cannot benefit from this spell again for 5 minutes.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500995,
+            "description_html": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>, and attack power by <span class=\"item-number\">150</span> of party and raid members within <span class=\"item-number\">25</span> yds for <span class=\"item-number\">20</span> seconds.<br /><br />Allies cannot benefit from this spell again for <span class=\"item-number\">5</span> minutes.",
+            "description": "Unleash a blood curdling war cry, increasing melee and ranged attack speed by 20%, and attack power by 150 of party and raid members within 25 yds for 20 seconds.\n\nAllies cannot benefit from this spell again for 5 minutes."
+          }
+        ],
+        "connections": [
+          34309,
+          30754
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_soulrenderdormazain_hellscream",
+          "key": "ability_soulrenderdormazain_hellscream",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12112,
+        "name": "Clanlord's Totem",
+        "slug": "clanlords-totem",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 804737,
+        "spell_ids": [
+          804737
+        ],
+        "description_html": "Drop the <span style=\"color: #FFFFFF; display: inline\">Clanlord's Totem</span> at the target location where it will remain for <span class=\"item-number\">15</span> seconds.<br /><br />The totem emanates an aura for <span class=\"item-number\">15</span> seconds, causing allied players within <span class=\"item-number\">100</span> yds to deal <span class=\"item-number\">35% AP</span> additional damage as Frost damage when they deal direct damage and gain <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased honor.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute.",
+        "description": "Drop the Clanlord's Totem at the target location where it will remain for 15 seconds.\n\nThe totem emanates an aura for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Frost damage when they deal direct damage and gain 50% increased honor.\n\nApplies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804737,
+            "description_html": "Drop the <span style=\"color: #FFFFFF; display: inline\">Clanlord's Totem</span> at the target location where it will remain for <span class=\"item-number\">15</span> seconds.<br /><br />The totem emanates an aura for <span class=\"item-number\">15</span> seconds, causing allied players within <span class=\"item-number\">100</span> yds to deal <span class=\"item-number\">35% AP</span> additional damage as Frost damage when they deal direct damage and gain <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased honor.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute.",
+            "description": "Drop the Clanlord's Totem at the target location where it will remain for 15 seconds.\n\nThe totem emanates an aura for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Frost damage when they deal direct damage and gain 50% increased honor.\n\nApplies Exhaustion, preventing you from benefiting from similar effects for 1 minute."
+          }
+        ],
+        "connections": [
+          30764,
+          9861
+        ],
+        "choice_group": 934111,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_armor_orcclan_d_01",
+          "key": "inv_belt_armor_orcclan_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 13111,
+        "name": "Tavern Brawl!",
+        "slug": "tavern-brawl",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 804456,
+        "spell_ids": [
+          804456
+        ],
+        "description_html": "Enrage all nearby allies, increasing their haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />After being affected by this spell, allies cannot benefit from similar effects for <span class=\"item-number\">5</span> minutes.",
+        "description": "Enrage all nearby allies, increasing their haste by 30% for 20 seconds.\n\nAfter being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804456,
+            "description_html": "Enrage all nearby allies, increasing their haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />After being affected by this spell, allies cannot benefit from similar effects for <span class=\"item-number\">5</span> minutes.",
+            "description": "Enrage all nearby allies, increasing their haste by 30% for 20 seconds.\n\nAfter being affected by this spell, allies cannot benefit from similar effects for 5 minutes."
+          }
+        ],
+        "connections": [
+          30764,
+          9861
+        ],
+        "choice_group": 934111,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_passivemastery_(34)_Border",
+          "key": "novart_passivemastery__34__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 34312,
+        "name": "Might of Utgarde",
+        "slug": "might-of-utgarde",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804768,
+        "spell_ids": [
+          804768
+        ],
+        "description_html": "Attacks from your <span style=\"color: #FFFFFF; display: inline\">Ancestral Combat</span> now heal your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> maximum health and cause it to perform an <span style=\"color: #FFFFFF; display: inline\">Ancestral Whirl</span> attack.",
+        "description": "Attacks from your Ancestral Combat now heal your Honored Ancestor for 5% maximum health and cause it to perform an Ancestral Whirl attack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804768,
+            "description_html": "Attacks from your <span style=\"color: #FFFFFF; display: inline\">Ancestral Combat</span> now heal your <span style=\"color: #ffffff; display: inline\">Honored Ancestor</span> for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> maximum health and cause it to perform an <span style=\"color: #FFFFFF; display: inline\">Ancestral Whirl</span> attack.",
+            "description": "Attacks from your Ancestral Combat now heal your Honored Ancestor for 5% maximum health and cause it to perform an Ancestral Whirl attack."
+          }
+        ],
+        "connections": [
+          34311
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_Normal",
+          "key": "achievement_dungeon_utgardepinnacle_normal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34307,
+        "name": "Rage of the North",
+        "slug": "rage-of-the-north",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 3.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705221,
+        "spell_ids": [
+          705221
+        ],
+        "description_html": "Increases the amount of attacks that can trigger your <span style=\"color: #FFFFFF; display: inline\">Ale of The God-King</span> by <span class=\"item-number\">10</span>.<br /><br />In addition, casting <span style=\"color: #ffffff; display: inline\">Ale of the God-King</span> now casts it on an additional nearby allied player within <span class=\"item-number\">8</span> yds.",
+        "description": "Increases the amount of attacks that can trigger your Ale of The God-King by 10.\n\nIn addition, casting Ale of the God-King now casts it on an additional nearby allied player within 8 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705221,
+            "description_html": "Increases the amount of attacks that can trigger your <span style=\"color: #FFFFFF; display: inline\">Ale of The God-King</span> by <span class=\"item-number\">10</span>.<br /><br />In addition, casting <span style=\"color: #ffffff; display: inline\">Ale of the God-King</span> now casts it on an additional nearby allied player within <span class=\"item-number\">8</span> yds.",
+            "description": "Increases the amount of attacks that can trigger your Ale of The God-King by 10.\n\nIn addition, casting Ale of the God-King now casts it on an additional nearby allied player within 8 yds."
+          }
+        ],
+        "connections": [
+          29366
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_banner_tolbarad_alliance",
+          "key": "inv_banner_tolbarad_alliance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6713,
+        "name": "Fury of the North",
+        "slug": "fury-of-the-north",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 5.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560938,
+        "spell_ids": [
+          560938
+        ],
+        "description_html": "Increases the duration of the enrage effect from your <span style=\"color: #ffffff; display: inline\">Ramhorn Rage</span> by <span class=\"item-number\">6</span> sec and causes it to increase your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for its duration.",
+        "description": "Increases the duration of the enrage effect from your Ramhorn Rage by 6 sec and causes it to increase your movement speed by 40% for its duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560938,
+            "description_html": "Increases the duration of the enrage effect from your <span style=\"color: #ffffff; display: inline\">Ramhorn Rage</span> by <span class=\"item-number\">6</span> sec and causes it to increase your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for its duration.",
+            "description": "Increases the duration of the enrage effect from your Ramhorn Rage by 6 sec and causes it to increase your movement speed by 40% for its duration."
+          }
+        ],
+        "connections": [
+          29366
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_frost_spell_10_Border",
+          "key": "uico_frost_spell_10_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7846,
+        "name": "Rally Behind Me!",
+        "slug": "rally-behind-me",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 12,
+        "tree_id": 33,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 712429,
+        "spell_ids": [
+          712429
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Warband</span> by <span class=\"item-number\">3</span> sec.<br /><br />In addition, your first use of <span style=\"color: #ffffff; display: inline\">Warband</span> will incur no cooldown. Can only occur once every <span class=\"item-number\">1.5</span> min.",
+        "description": "Increases the duration of Warband by 3 sec.\n\nIn addition, your first use of Warband will incur no cooldown. Can only occur once every 1.5 min.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 712429,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Warband</span> by <span class=\"item-number\">3</span> sec.<br /><br />In addition, your first use of <span style=\"color: #ffffff; display: inline\">Warband</span> will incur no cooldown. Can only occur once every <span class=\"item-number\">1.5</span> min.",
+            "description": "Increases the duration of Warband by 3 sec.\n\nIn addition, your first use of Warband will incur no cooldown. Can only occur once every 1.5 min."
+          }
+        ],
+        "connections": [
+          29782
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Hunter_RapidKilling",
+          "key": "ability_hunter_rapidkilling",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

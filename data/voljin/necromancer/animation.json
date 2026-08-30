@@ -1,0 +1,2528 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:21+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:3243d987696a056b8094fc412e54ce2833374e6fe629e5dd55a2d9b1760bf815",
+    "talent_count": 160,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 23,
+    "name": "Necromancer",
+    "slug": "necromancer",
+    "class_file": "necromancer",
+    "color": "rgb(69, 219, 156)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:necromancer",
+      "key": "class-necromancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 35,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 61,
+    "name": "Animation",
+    "slug": "animation",
+    "sort_order": 3,
+    "class_id": 23,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 7345,
+        "name": "Animate: Skeletal Archer",
+        "slug": "animate-skeletal-archer",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805040,
+        "spell_ids": [
+          805040
+        ],
+        "description_html": "Animate <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Skeletal Archers</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.",
+        "description": "Animate 3 Skeletal Archers to aid you in combat for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805040,
+            "description_html": "Animate <span class=\"item-number\">3</span> <span style=\"color: #ffffff; display: inline\">Skeletal Archers</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.",
+            "description": "Animate 3 Skeletal Archers to aid you in combat for 15 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\SkeletalArcher",
+          "key": "skeletalarcher",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4036,
+        "name": "Summoning Adept",
+        "slug": "summoning-adept",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29364
+          ]
+        },
+        "spell_id": 92123,
+        "spell_ids": [
+          92123
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Increases your maximum <span style=\"color: #FFFFFF; display: inline\">Life Force</span> by <span class=\"item-number\">1</span>.",
+        "description": "Level 10 Passive\nIncreases your maximum Life Force by 1.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92123,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Increases your maximum <span style=\"color: #FFFFFF; display: inline\">Life Force</span> by <span class=\"item-number\">1</span>.",
+            "description": "Level 10 Passive\nIncreases your maximum Life Force by 1."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Undead_03",
+          "key": "undead_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 7143,
+        "name": "Bone King",
+        "slug": "bone-king",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707175,
+        "spell_ids": [
+          707175
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Lichfrost</span> or <span style=\"color: #ffffff; display: inline\">Blight</span> free of cost and instant cast.",
+        "description": "Casting Command spells now has a 15% chance to make your next Lichfrost or Blight free of cost and instant cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707175,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to make your next <span style=\"color: #ffffff; display: inline\">Lichfrost</span> or <span style=\"color: #ffffff; display: inline\">Blight</span> free of cost and instant cast.",
+            "description": "Casting Command spells now has a 15% chance to make your next Lichfrost or Blight free of cost and instant cast."
+          }
+        ],
+        "connections": [
+          7345
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_custom_bonetattoo_green",
+          "key": "inv_custom_bonetattoo_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30022,
+        "name": "Graverobber",
+        "slug": "graverobber",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503757,
+        "spell_ids": [
+          503757
+        ],
+        "description_html": "Reduces the mana cost and cast time of your <span style=\"color: #ffffff; display: inline\">Raise</span> and <span style=\"color: #ffffff; display: inline\">Animate</span> spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the mana cost and cast time of your Raise and Animate spells by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503757,
+            "description_html": "Reduces the mana cost and cast time of your <span style=\"color: #ffffff; display: inline\">Raise</span> and <span style=\"color: #ffffff; display: inline\">Animate</span> spells by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the mana cost and cast time of your Raise and Animate spells by -30%."
+          }
+        ],
+        "connections": [
+          7345
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathknight_deathsiphon",
+          "key": "ability_deathknight_deathsiphon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33774,
+        "name": "Summoning Prodigy",
+        "slug": "summoning-prodigy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704682,
+        "spell_ids": [
+          704682
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Skeletal Archers</span> by <span class=\"item-number\">3</span> sec.",
+        "description": "Increases the duration of Skeletal Archers by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704682,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Skeletal Archers</span> by <span class=\"item-number\">3</span> sec.",
+            "description": "Increases the duration of Skeletal Archers by 3 sec."
+          }
+        ],
+        "connections": [
+          7143
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_Requiem",
+          "key": "spell_shadow_requiem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12165,
+        "name": "Sepulchral Might",
+        "slug": "sepulchral-might",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706472,
+        "spell_ids": [
+          706472,
+          572638
+        ],
+        "description_html": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Increases your spell power by an amount equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the total of your <span style=\"color: #ffffff; display: inline\">Raised</span> minion's Stamina.",
+        "description": "Increases your Stamina by 5%.\n\nIncreases your spell power by an amount equal to 15% of the total of your Raised minion's Stamina.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706472,
+            "description_html": "Increases your Stamina by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.<br /><br />Increases your spell power by an amount equal to <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of the total of your <span style=\"color: #ffffff; display: inline\">Raised</span> minion's Stamina.",
+            "description": "Increases your Stamina by 5%.\n\nIncreases your spell power by an amount equal to 15% of the total of your Raised minion's Stamina."
+          },
+          {
+            "rank": 2,
+            "spell_id": 572638,
+            "description_html": "Increases your Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.<br /><br />Increases your spell power by an amount equal to <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of the total of your <span style=\"color: #ffffff; display: inline\">Raised</span> minion's Stamina.",
+            "description": "Increases your Stamina by 10%.\n\nIncreases your spell power by an amount equal to 30% of the total of your Raised minion's Stamina."
+          }
+        ],
+        "connections": [
+          7143,
+          30022
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3markedfordeath",
+          "key": "d3markedfordeath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30497,
+        "name": "Forbidden Technique",
+        "slug": "forbidden-technique",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561215,
+        "spell_ids": [
+          561215
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Animates</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Casting Command spells now reduces the cooldown of your Animates by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561215,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Animates</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Casting Command spells now reduces the cooldown of your Animates by -1 sec."
+          }
+        ],
+        "connections": [
+          30022
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+          "key": "spell_deathknight_empowerruneblade",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4236,
+        "name": "Deadly Bond",
+        "slug": "deadly-bond",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 704724,
+        "spell_ids": [
+          704724
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to cause their next use within <span class=\"item-number\">6</span> seconds to be free of cost.",
+        "description": "Level 20 Passive\nCasting Command spells now has a 30% chance to cause their next use within 6 seconds to be free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704724,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to cause their next use within <span class=\"item-number\">6</span> seconds to be free of cost.",
+            "description": "Level 20 Passive\nCasting Command spells now has a 30% chance to cause their next use within 6 seconds to be free of cost."
+          }
+        ],
+        "connections": [
+          4036
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_QirajIdol_Death",
+          "key": "inv_qirajidol_death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7347,
+        "name": "Scourge Disciple",
+        "slug": "scourge-disciple",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 531126,
+        "spell_ids": [
+          531126
+        ],
+        "description_html": "Each active <span style=\"color: #ffffff; display: inline\">Skeletal Archer</span> now increases your haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Each active Skeletal Archer now increases your haste by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 531126,
+            "description_html": "Each active <span style=\"color: #ffffff; display: inline\">Skeletal Archer</span> now increases your haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Each active Skeletal Archer now increases your haste by 5%."
+          }
+        ],
+        "connections": [
+          33774
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_rottenflesh_Border",
+          "key": "nhi_rottenflesh_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33775,
+        "name": "Raise: Ghoul",
+        "slug": "raise-ghoul",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500971,
+        "spell_ids": [
+          500971
+        ],
+        "description_html": "Raise a <span style=\"color: #ffffff; display: inline\">Ghoul</span> to aid you in combat occupying <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br />Its auto attacks restore <span class=\"item-number\">21</span> + <span class=\"item-number\">3.53% Intellect</span> + <span class=\"item-number\">3.53% SP</span> health to you.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Expels leeching plague that strikes up to <span class=\"item-number\">5</span> nearby enemies, dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">15.68% Intellect</span> + <span class=\"item-number\">15.68% SP</span> Plague damage, and healing you for <span class=\"item-number\">35</span> + <span class=\"item-number\">22% SP</span> + <span class=\"item-number\">50% Intellect</span> for each <span style=\"color: #ffffff; display: inline\">Ghoul</span>.",
+        "description": "Raise a Ghoul to aid you in combat occupying 1 Life Force.\n\nIts auto attacks restore 21 + 3.53% Intellect + 3.53% SP health to you.\n\nCommand: Expels leeching plague that strikes up to 5 nearby enemies, dealing 30 + 15.68% Intellect + 15.68% SP Plague damage, and healing you for 35 + 22% SP + 50% Intellect for each Ghoul.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500971,
+            "description_html": "Raise a <span style=\"color: #ffffff; display: inline\">Ghoul</span> to aid you in combat occupying <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Life Force</span>. <br /><br />Its auto attacks restore <span class=\"item-number\">21</span> + <span class=\"item-number\">3.53% Intellect</span> + <span class=\"item-number\">3.53% SP</span> health to you.<br /><br /><span style=\"color: #90ee90; display: inline\">Command</span>: Expels leeching plague that strikes up to <span class=\"item-number\">5</span> nearby enemies, dealing <span class=\"item-number\">30</span> + <span class=\"item-number\">15.68% Intellect</span> + <span class=\"item-number\">15.68% SP</span> Plague damage, and healing you for <span class=\"item-number\">35</span> + <span class=\"item-number\">22% SP</span> + <span class=\"item-number\">50% Intellect</span> for each <span style=\"color: #ffffff; display: inline\">Ghoul</span>.",
+            "description": "Raise a Ghoul to aid you in combat occupying 1 Life Force.\n\nIts auto attacks restore 21 + 3.53% Intellect + 3.53% SP health to you.\n\nCommand: Expels leeching plague that strikes up to 5 nearby enemies, dealing 30 + 15.68% Intellect + 15.68% SP Plague damage, and healing you for 35 + 22% SP + 50% Intellect for each Ghoul."
+          }
+        ],
+        "connections": [
+          12165,
+          30497,
+          33774
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ghoul",
+          "key": "ghoul",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7145,
+        "name": "Runic Animation",
+        "slug": "runic-animation",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707445,
+        "spell_ids": [
+          707445
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> and <span style=\"color: #ffffff; display: inline\">Command: Hook</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of Animate: Skeletal Archers and Command: Hook by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707445,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> and <span style=\"color: #ffffff; display: inline\">Command: Hook</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of Animate: Skeletal Archers and Command: Hook by -20%."
+          }
+        ],
+        "connections": [
+          30497
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_thenecroticwake_stitchflesh",
+          "key": "achievement_dungeon_thenecroticwake_stitchflesh",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30487,
+        "name": "Summoner",
+        "slug": "summoner",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706953,
+        "spell_ids": [
+          706953
+        ],
+        "description_html": "Reduces the mana cost and cooldown of <span style=\"color: #ffffff; display: inline\">Sacrifice Undead</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the mana cost and cooldown of Sacrifice Undead by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706953,
+            "description_html": "Reduces the mana cost and cooldown of <span style=\"color: #ffffff; display: inline\">Sacrifice Undead</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the mana cost and cooldown of Sacrifice Undead by -20%."
+          }
+        ],
+        "connections": [
+          7347
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_necklacea7",
+          "key": "inv_misc_necklacea7",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 10495,
+        "name": "Animate: Bone Wraith",
+        "slug": "animate-bone-wraith",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805032,
+        "spell_ids": [
+          805032
+        ],
+        "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Bone Wraith</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.<br /><br />While active, it will periodically unleash a <span style=\"color: #ffffff; display: inline\">Bonestorm</span>, striking up to <span class=\"item-number\">5</span> nearby enemies for <span class=\"item-number\">30</span> + <span class=\"item-number\">40% SP</span> Physical damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds.",
+        "description": "Animate a Bone Wraith to aid you in combat for 15 seconds.\n\nWhile active, it will periodically unleash a Bonestorm, striking up to 5 nearby enemies for 30 + 40% SP Physical damage every 1 sec for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805032,
+            "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Bone Wraith</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.<br /><br />While active, it will periodically unleash a <span style=\"color: #ffffff; display: inline\">Bonestorm</span>, striking up to <span class=\"item-number\">5</span> nearby enemies for <span class=\"item-number\">30</span> + <span class=\"item-number\">40% SP</span> Physical damage every <span class=\"item-number\">1</span> sec for <span class=\"item-number\">5</span> seconds.",
+            "description": "Animate a Bone Wraith to aid you in combat for 15 seconds.\n\nWhile active, it will periodically unleash a Bonestorm, striking up to 5 nearby enemies for 30 + 40% SP Physical damage every 1 sec for 5 seconds."
+          }
+        ],
+        "connections": [
+          7347
+        ],
+        "choice_group": 805032,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_lordmarrowgar",
+          "key": "achievement_boss_lordmarrowgar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30495,
+        "name": "Animate: Tomb King",
+        "slug": "animate-tomb-king",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805044,
+        "spell_ids": [
+          805044
+        ],
+        "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Tomb King</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.<br /><br />While active, all of your Undead minion's attacks deal an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt as Plague damage.",
+        "description": "Animate a Tomb King to aid you in combat for 15 seconds.\n\nWhile active, all of your Undead minion's attacks deal an additional 10% of the damage dealt as Plague damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805044,
+            "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Tomb King</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.<br /><br />While active, all of your Undead minion's attacks deal an additional <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt as Plague damage.",
+            "description": "Animate a Tomb King to aid you in combat for 15 seconds.\n\nWhile active, all of your Undead minion's attacks deal an additional 10% of the damage dealt as Plague damage."
+          }
+        ],
+        "connections": [
+          7347
+        ],
+        "choice_group": 805032,
+        "icon": {
+          "source_path": "Interface\\Icons\\KingofTombs1",
+          "key": "kingoftombs1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7119,
+        "name": "Ghoul Mastery",
+        "slug": "ghoul-mastery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503740,
+        "spell_ids": [
+          503740
+        ],
+        "description_html": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Ghouls</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to transform them into a <span style=\"color: #ffffff; display: inline\">Frenzied Ghoul</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_demonhunter_reversemagic\" /><span class=\"name\">Frenzied Ghoul (Proc)</span></div><span class=\"desc\">Transformed into a <span style=\"color: #FFFFFF; display: inline\">Frenzied Ghoul</span>, increasing haste by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. Immune to movement slowing effects.</span></div>",
+        "description": "Damage dealt by your Ghouls now has a 15% chance to transform them into a Frenzied Ghoul.Frenzied Ghoul (Proc)Transformed into a Frenzied Ghoul, increasing haste by 40% for 10 seconds. Immune to movement slowing effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503740,
+            "description_html": "Damage dealt by your <span style=\"color: #ffffff; display: inline\">Ghouls</span> now has a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to transform them into a <span style=\"color: #ffffff; display: inline\">Frenzied Ghoul</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_demonhunter_reversemagic\" /><span class=\"name\">Frenzied Ghoul (Proc)</span></div><span class=\"desc\">Transformed into a <span style=\"color: #FFFFFF; display: inline\">Frenzied Ghoul</span>, increasing haste by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. Immune to movement slowing effects.</span></div>",
+            "description": "Damage dealt by your Ghouls now has a 15% chance to transform them into a Frenzied Ghoul.Frenzied Ghoul (Proc)Transformed into a Frenzied Ghoul, increasing haste by 40% for 10 seconds. Immune to movement slowing effects."
+          }
+        ],
+        "connections": [
+          33775
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_demonhunter_reversemagic",
+          "key": "ability_demonhunter_reversemagic",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7146,
+        "name": "Skeletal Artillery",
+        "slug": "skeletal-artillery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 302518,
+        "spell_ids": [
+          302518,
+          302921
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> now summons <span class=\"item-number\">1</span> additional <span style=\"color: #FFFFFF; display: inline\">Skeletal Archer</span>.",
+        "description": "Your Animate: Skeletal Archers now summons 1 additional Skeletal Archer.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 302518,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> now summons <span class=\"item-number\">1</span> additional <span style=\"color: #FFFFFF; display: inline\">Skeletal Archer</span>.",
+            "description": "Your Animate: Skeletal Archers now summons 1 additional Skeletal Archer."
+          },
+          {
+            "rank": 2,
+            "spell_id": 302921,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Animate: Skeletal Archers</span> now summons <span class=\"item-number\">2</span> additional <span style=\"color: #FFFFFF; display: inline\">Skeletal Archer</span>.",
+            "description": "Your Animate: Skeletal Archers now summons 2 additional Skeletal Archer."
+          }
+        ],
+        "connections": [
+          7145
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_trinket6oog_cyclopianpig1",
+          "key": "inv_misc_trinket6oog_cyclopianpig1",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2174,
+        "name": "Putrifier",
+        "slug": "putrifier",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 302923,
+        "spell_ids": [
+          302923
+        ],
+        "description_html": "Increases the durations of <span style=\"color: #ffffff; display: inline\">Ghoulify</span> and <span style=\"color: #ffffff; display: inline\">Mass Grave</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the durations of Ghoulify and Mass Grave by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 302923,
+            "description_html": "Increases the durations of <span style=\"color: #ffffff; display: inline\">Ghoulify</span> and <span style=\"color: #ffffff; display: inline\">Mass Grave</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the durations of Ghoulify and Mass Grave by 25%."
+          }
+        ],
+        "connections": [
+          7145
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DeathCoil",
+          "key": "spell_shadow_deathcoil",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4237,
+        "name": "Summoning Expert",
+        "slug": "summoning-expert",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 807494,
+        "spell_ids": [
+          807494
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your maximum <span style=\"color: #ffffff; display: inline\">Life Force</span> by <span class=\"item-number\">1</span> and your Undead minion's Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Level 30 Passive\nIncreases your maximum Life Force by 1 and your Undead minion's Stamina by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807494,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your maximum <span style=\"color: #ffffff; display: inline\">Life Force</span> by <span class=\"item-number\">1</span> and your Undead minion's Stamina by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Level 30 Passive\nIncreases your maximum Life Force by 1 and your Undead minion's Stamina by 10%."
+          }
+        ],
+        "connections": [
+          4236
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_BeastTaming_Undead",
+          "key": "beasttaming_undead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 6887,
+        "name": "Unrelenting Army",
+        "slug": "unrelenting-army",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705747,
+        "spell_ids": [
+          705747,
+          707880
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Harvest Plague</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to animate a <span style=\"color: #FFFFFF; display: inline\">Lesser Zombie</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.",
+        "description": "Damage dealt by Harvest Plague now has a 20% chance to animate a Lesser Zombie to aid you in combat for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705747,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Harvest Plague</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to animate a <span style=\"color: #FFFFFF; display: inline\">Lesser Zombie</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.",
+            "description": "Damage dealt by Harvest Plague now has a 20% chance to animate a Lesser Zombie to aid you in combat for 15 seconds."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707880,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Harvest Plague</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to animate a <span style=\"color: #FFFFFF; display: inline\">Lesser Zombie</span> to aid you in combat for <span class=\"item-number\">15</span> seconds.",
+            "description": "Damage dealt by Harvest Plague now has a 40% chance to animate a Lesser Zombie to aid you in combat for 15 seconds."
+          }
+        ],
+        "connections": [
+          10495,
+          30487,
+          30495
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_ArmyOfTheDead",
+          "key": "spell_deathknight_armyofthedead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33748,
+        "name": "Animate: Plaguefather",
+        "slug": "animate-plaguefather",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805048,
+        "spell_ids": [
+          805048
+        ],
+        "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Plaguefather</span> to aid you in combat for <span class=\"item-number\">15</span> seconds. <br /><br />Damage dealt by this minion will emit <span style=\"color: #ffffff; display: inline\">Zombie Plague</span>, dealing <span class=\"item-number\">79</span> + <span class=\"item-number\">10% SP</span> Plague damage to nearby enemies, and reducing their attack power by <span class=\"item-number\">223</span>.",
+        "description": "Animate a Plaguefather to aid you in combat for 15 seconds.\n\nDamage dealt by this minion will emit Zombie Plague, dealing 79 + 10% SP Plague damage to nearby enemies, and reducing their attack power by 223.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805048,
+            "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Plaguefather</span> to aid you in combat for <span class=\"item-number\">15</span> seconds. <br /><br />Damage dealt by this minion will emit <span style=\"color: #ffffff; display: inline\">Zombie Plague</span>, dealing <span class=\"item-number\">79</span> + <span class=\"item-number\">10% SP</span> Plague damage to nearby enemies, and reducing their attack power by <span class=\"item-number\">223</span>.",
+            "description": "Animate a Plaguefather to aid you in combat for 15 seconds.\n\nDamage dealt by this minion will emit Zombie Plague, dealing 79 + 10% SP Plague damage to nearby enemies, and reducing their attack power by 223."
+          }
+        ],
+        "connections": [
+          7119,
+          7146,
+          10495,
+          30495
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_leather_maldraxxus_d_01",
+          "key": "inv_helm_leather_maldraxxus_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29943,
+        "name": "March of the Dead",
+        "slug": "march-of-the-dead",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707007,
+        "spell_ids": [
+          707007
+        ],
+        "description_html": "Beckon the restless dead to rise and march forward.<br /><br />When they reach an enemy they explode, dealing <span class=\"item-number\">700</span> + <span class=\"item-number\">75% SP</span> Plague damage to nearby enemies and slowing their movement speed by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.",
+        "description": "Beckon the restless dead to rise and march forward.\n\nWhen they reach an enemy they explode, dealing 700 + 75% SP Plague damage to nearby enemies and slowing their movement speed by -70% for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707007,
+            "description_html": "Beckon the restless dead to rise and march forward.<br /><br />When they reach an enemy they explode, dealing <span class=\"item-number\">700</span> + <span class=\"item-number\">75% SP</span> Plague damage to nearby enemies and slowing their movement speed by <span class=\"item-number\">-70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.",
+            "description": "Beckon the restless dead to rise and march forward.\n\nWhen they reach an enemy they explode, dealing 700 + 75% SP Plague damage to nearby enemies and slowing their movement speed by -70% for 3 seconds."
+          }
+        ],
+        "connections": [
+          2174,
+          7146
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DeadofNight",
+          "key": "spell_shadow_deadofnight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5766,
+        "name": "Depravity",
+        "slug": "depravity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 638403,
+        "spell_ids": [
+          638403
+        ],
+        "description_html": "Increases the melee haste of your Undead minions by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and gives their critical melee auto attacks an <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #FFFFFF; display: inline\">Bone Club</span>, dealing <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt as Shadow Damage.",
+        "description": "Increases the melee haste of your Undead minions by 5% and gives their critical melee auto attacks an 50% chance to trigger Bone Club, dealing 40% of the damage dealt as Shadow Damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 638403,
+            "description_html": "Increases the melee haste of your Undead minions by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and gives their critical melee auto attacks an <span class=\"item-number\">50</span><span class=\"item-number\">%</span> chance to trigger <span style=\"color: #FFFFFF; display: inline\">Bone Club</span>, dealing <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of the damage dealt as Shadow Damage.",
+            "description": "Increases the melee haste of your Undead minions by 5% and gives their critical melee auto attacks an 50% chance to trigger Bone Club, dealing 40% of the damage dealt as Shadow Damage."
+          }
+        ],
+        "connections": [
+          6887
+        ],
+        "choice_group": 72342,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_1h_warfrontsforsaken_d_01",
+          "key": "inv_mace_1h_warfrontsforsaken_d_01",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33766,
+        "name": "Mindless Fury",
+        "slug": "mindless-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805674,
+        "spell_ids": [
+          805674
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Animate</span> or <span style=\"color: #90ee90; display: inline\">Command</span> spells now increases your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+        "description": "Casting Animate or Command spells now increases your haste by 1% for 10 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805674,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Animate</span> or <span style=\"color: #90ee90; display: inline\">Command</span> spells now increases your haste by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+            "description": "Casting Animate or Command spells now increases your haste by 1% for 10 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          6887
+        ],
+        "choice_group": 72342,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_fiegndead",
+          "key": "ability_fiegndead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7112,
+        "name": "Crypt Keeper",
+        "slug": "crypt-keeper",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560596,
+        "spell_ids": [
+          560596
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now bounces to <span class=\"item-number\">2</span> additional nearby enemies, at <span class=\"item-number\">30</span><span class=\"item-number\">%</span> reduced value per enemy struck.",
+        "description": "Your Crypt Swarm now bounces to 2 additional nearby enemies, at 30% reduced value per enemy struck.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560596,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> now bounces to <span class=\"item-number\">2</span> additional nearby enemies, at <span class=\"item-number\">30</span><span class=\"item-number\">%</span> reduced value per enemy struck.",
+            "description": "Your Crypt Swarm now bounces to 2 additional nearby enemies, at 30% reduced value per enemy struck."
+          }
+        ],
+        "connections": [
+          33748
+        ],
+        "choice_group": 704718,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Undead_02",
+          "key": "undead_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11112,
+        "name": "Unrelenting",
+        "slug": "unrelenting",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704718,
+        "spell_ids": [
+          704718
+        ],
+        "description_html": "Reduces the channel time of your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the channel time of your Crypt Swarm by -25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704718,
+            "description_html": "Reduces the channel time of your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> by <span class=\"item-number\">-25</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the channel time of your Crypt Swarm by -25%."
+          }
+        ],
+        "connections": [
+          33748
+        ],
+        "choice_group": 704718,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_DeathKnight_Subversion",
+          "key": "spell_deathknight_subversion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7298,
+        "name": "Army of the Dead",
+        "slug": "army-of-the-dead",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 525600,
+        "spell_ids": [
+          525600
+        ],
+        "description_html": "While only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Abomination</span> is active, the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Ghouls</span> is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "While only 1 Abomination is active, the critical strike chance of your Ghouls is increased by 10% and haste by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 525600,
+            "description_html": "While only <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Abomination</span> is active, the critical strike chance of your <span style=\"color: #ffffff; display: inline\">Ghouls</span> is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "While only 1 Abomination is active, the critical strike chance of your Ghouls is increased by 10% and haste by 10%."
+          }
+        ],
+        "connections": [
+          33748
+        ],
+        "choice_group": 561232,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3graspofthedead",
+          "key": "d3graspofthedead",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33773,
+        "name": "Unstoppable Frenzy",
+        "slug": "unstoppable-frenzy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 573426,
+        "spell_ids": [
+          573426
+        ],
+        "description_html": "Reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">-60</span> sec.",
+        "description": "Reduces the cooldown of your Unholy Frenzy by -60 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573426,
+            "description_html": "Reduces the cooldown of your <span style=\"color: #FFFFFF; display: inline\">Unholy Frenzy</span> by <span class=\"item-number\">-60</span> sec.",
+            "description": "Reduces the cooldown of your Unholy Frenzy by -60 sec."
+          }
+        ],
+        "connections": [
+          33748
+        ],
+        "choice_group": 561232,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_UnholyStone_Border",
+          "key": "custom_t_nhance_rpg_icons_unholystone_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33772,
+        "name": "Lich's Prodigy",
+        "slug": "lichs-prodigy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 302519,
+        "spell_ids": [
+          302519
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Glacial Tap</span> now generates an additional <span class=\"item-number\">20</span> Runic Power, but its cost is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Your Glacial Tap now generates an additional 20 Runic Power, but its cost is increased by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 302519,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Glacial Tap</span> now generates an additional <span class=\"item-number\">20</span> Runic Power, but its cost is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Your Glacial Tap now generates an additional 20 Runic Power, but its cost is increased by 25%."
+          }
+        ],
+        "connections": [
+          29943
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_herb_ancientlichen",
+          "key": "inv_misc_herb_ancientlichen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4235,
+        "name": "Diabolical",
+        "slug": "diabolical",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 704723,
+        "spell_ids": [
+          704723
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting spells now grants you <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Diabolical</span>, stacking up to <span class=\"item-number\">15</span> times, for <span class=\"item-number\">20</span> seconds.<br /><br />Damage dealt by your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> will consume a stack to deal <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage per stack.",
+        "description": "Level 40 Passive\nCasting spells now grants you 1 stack of Diabolical, stacking up to 15 times, for 20 seconds.\n\nDamage dealt by your Crypt Swarm will consume a stack to deal 10% increased damage per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704723,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting spells now grants you <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Diabolical</span>, stacking up to <span class=\"item-number\">15</span> times, for <span class=\"item-number\">20</span> seconds.<br /><br />Damage dealt by your <span style=\"color: #ffffff; display: inline\">Crypt Swarm</span> will consume a stack to deal <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage per stack.",
+            "description": "Level 40 Passive\nCasting spells now grants you 1 stack of Diabolical, stacking up to 15 times, for 20 seconds.\n\nDamage dealt by your Crypt Swarm will consume a stack to deal 10% increased damage per stack."
+          }
+        ],
+        "connections": [
+          4237
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_necro_inevitableend",
+          "key": "spell_necro_inevitableend",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30488,
+        "name": "Anti-Magic Shell",
+        "slug": "anti-magic-shell",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504866,
+        "spell_ids": [
+          504866
+        ],
+        "description_html": "When you summon a <span style=\"color: #ffffff; display: inline\">Raised</span> minion, it now raises with a shield absorbing Magic damage equal to <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of their maximum health.",
+        "description": "When you summon a Raised minion, it now raises with a shield absorbing Magic damage equal to 40% of their maximum health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504866,
+            "description_html": "When you summon a <span style=\"color: #ffffff; display: inline\">Raised</span> minion, it now raises with a shield absorbing Magic damage equal to <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of their maximum health.",
+            "description": "When you summon a Raised minion, it now raises with a shield absorbing Magic damage equal to 40% of their maximum health."
+          }
+        ],
+        "connections": [
+          5766,
+          33766
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
+          "key": "spell_shadow_antimagicshell",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7141,
+        "name": "Summoning Ritual",
+        "slug": "summoning-ritual",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805038,
+        "spell_ids": [
+          805038
+        ],
+        "description_html": "Summon a ritual circle at your location for <span class=\"item-number\">1</span> minute. While active, you may cast <span style=\"color: #ffffff; display: inline\">Ritual Return</span> to return to it.<br /><br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_necro_undyingrelentlessness\" /><span class=\"name\">Ritual Return</span></div><span class=\"desc\">Teleport back to the position of your <span style=\"color: #ffffff; display: inline\">Scourge Transporter</span> and remove all movement slowing effects from you.</span></div>",
+        "description": "Summon a ritual circle at your location for 1 minute. While active, you may cast Ritual Return to return to it.\n\nRitual ReturnTeleport back to the position of your Scourge Transporter and remove all movement slowing effects from you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805038,
+            "description_html": "Summon a ritual circle at your location for <span class=\"item-number\">1</span> minute. While active, you may cast <span style=\"color: #ffffff; display: inline\">Ritual Return</span> to return to it.<br /><br /><div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_necro_undyingrelentlessness\" /><span class=\"name\">Ritual Return</span></div><span class=\"desc\">Teleport back to the position of your <span style=\"color: #ffffff; display: inline\">Scourge Transporter</span> and remove all movement slowing effects from you.</span></div>",
+            "description": "Summon a ritual circle at your location for 1 minute. While active, you may cast Ritual Return to return to it.\n\nRitual ReturnTeleport back to the position of your Scourge Transporter and remove all movement slowing effects from you."
+          }
+        ],
+        "connections": [
+          5766,
+          33766
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_deathgolem_Border",
+          "key": "nhi_deathgolem_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7350,
+        "name": "Corpse Wagon",
+        "slug": "corpse-wagon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503738,
+        "spell_ids": [
+          503738
+        ],
+        "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases the damage of <span style=\"color: #ffffff; display: inline\">Corpse Explosion</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases the damage of Corpse Explosion by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503738,
+            "description_html": "Increases all damage dealt by party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases the damage of <span style=\"color: #ffffff; display: inline\">Corpse Explosion</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.\n\nIn addition, increases the damage of Corpse Explosion by 25%."
+          }
+        ],
+        "connections": [
+          7112,
+          7298,
+          11112,
+          33773
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_corpseexplode",
+          "key": "spell_shadow_corpseexplode",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7346,
+        "name": "Plague Protection",
+        "slug": "plague-protection",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570046,
+        "spell_ids": [
+          570046,
+          570226
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Wards</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Wards by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570046,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Wards</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Wards by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 570226,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Wards</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Wards by 30%."
+          }
+        ],
+        "connections": [
+          33772
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Deathknight_ClassIcon",
+          "key": "spell_deathknight_classicon",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5290,
+        "name": "Chomp",
+        "slug": "chomp",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707283,
+        "spell_ids": [
+          707283
+        ],
+        "description_html": "Critical strikes dealt by your <span style=\"color: #ffffff; display: inline\">Abominations</span> and <span style=\"color: #ffffff; display: inline\">Decaying Collosi</span> now <span style=\"color: #FFFFFF; display: inline\">Chomp</span> your target, dealing <span class=\"item-number\">150</span> + <span class=\"item-number\">112.5% SP</span> damage to them.",
+        "description": "Critical strikes dealt by your Abominations and Decaying Collosi now Chomp your target, dealing 150 + 112.5% SP damage to them.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707283,
+            "description_html": "Critical strikes dealt by your <span style=\"color: #ffffff; display: inline\">Abominations</span> and <span style=\"color: #ffffff; display: inline\">Decaying Collosi</span> now <span style=\"color: #FFFFFF; display: inline\">Chomp</span> your target, dealing <span class=\"item-number\">150</span> + <span class=\"item-number\">112.5% SP</span> damage to them.",
+            "description": "Critical strikes dealt by your Abominations and Decaying Collosi now Chomp your target, dealing 150 + 112.5% SP damage to them."
+          }
+        ],
+        "connections": [
+          33772
+        ],
+        "choice_group": 72431,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_necrodrain_Border",
+          "key": "nhi_necrodrain_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6290,
+        "name": "Fetid Mark",
+        "slug": "fetid-mark",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706948,
+        "spell_ids": [
+          706948
+        ],
+        "description_html": "Dealing Shadow damage now increases the damage the target takes from your <span style=\"color: #ffffff; display: inline\">Skeletal Warriors</span> by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+        "description": "Dealing Shadow damage now increases the damage the target takes from your Skeletal Warriors by 1% for 10 seconds, stacking 10 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706948,
+            "description_html": "Dealing Shadow damage now increases the damage the target takes from your <span style=\"color: #ffffff; display: inline\">Skeletal Warriors</span> by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">10</span> times.",
+            "description": "Dealing Shadow damage now increases the damage the target takes from your Skeletal Warriors by 1% for 10 seconds, stacking 10 times."
+          }
+        ],
+        "connections": [
+          33772
+        ],
+        "choice_group": 72431,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pet_inquisitoreye",
+          "key": "inv_pet_inquisitoreye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4619,
+        "name": "Flesh Symbiosis",
+        "slug": "flesh-symbiosis",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301207,
+        "spell_ids": [
+          301207
+        ],
+        "description_html": "Each <span style=\"color: #ffffff; display: inline\">Abomination</span> or <span style=\"color: #ffffff; display: inline\">Decaying Colossus</span> active now increases your total Armor and magic resistance by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and causes you to periodically regenerate <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">5</span> sec.",
+        "description": "Each Abomination or Decaying Colossus active now increases your total Armor and magic resistance by 30% and causes you to periodically regenerate 2% maximum health every 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301207,
+            "description_html": "Each <span style=\"color: #ffffff; display: inline\">Abomination</span> or <span style=\"color: #ffffff; display: inline\">Decaying Colossus</span> active now increases your total Armor and magic resistance by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and causes you to periodically regenerate <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">5</span> sec.",
+            "description": "Each Abomination or Decaying Colossus active now increases your total Armor and magic resistance by 30% and causes you to periodically regenerate 2% maximum health every 5 sec."
+          }
+        ],
+        "connections": [
+          7141,
+          30488
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ReforgedAbomination",
+          "key": "reforgedabomination",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4238,
+        "name": "Plague Horde",
+        "slug": "plague-horde",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802986,
+        "spell_ids": [
+          802986
+        ],
+        "description_html": "Damage dealt by your Undead minions now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to cast <span style=\"color: #FFFFFF; display: inline\">Plague Horde</span> on themselves for <span class=\"item-number\">5</span> seconds and emit <span style=\"color: #ffffff; display: inline\">Zombie Plague</span>, dealing <span class=\"item-number\">79</span> + <span class=\"item-number\">10% SP</span> Plague damage to their target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_belt_pvpwarlock_e_01\" /><span class=\"name\">Plague Horde</span></div><span class=\"desc\">Enrage for <span class=\"item-number\">5</span> seconds, increasing their critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Damage dealt by your Undead minions now has a 10% chance to cast Plague Horde on themselves for 5 seconds and emit Zombie Plague, dealing 79 + 10% SP Plague damage to their target.Plague HordeEnrage for 5 seconds, increasing their critical strike chance by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802986,
+            "description_html": "Damage dealt by your Undead minions now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to cast <span style=\"color: #FFFFFF; display: inline\">Plague Horde</span> on themselves for <span class=\"item-number\">5</span> seconds and emit <span style=\"color: #ffffff; display: inline\">Zombie Plague</span>, dealing <span class=\"item-number\">79</span> + <span class=\"item-number\">10% SP</span> Plague damage to their target.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_belt_pvpwarlock_e_01\" /><span class=\"name\">Plague Horde</span></div><span class=\"desc\">Enrage for <span class=\"item-number\">5</span> seconds, increasing their critical strike chance by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Damage dealt by your Undead minions now has a 10% chance to cast Plague Horde on themselves for 5 seconds and emit Zombie Plague, dealing 79 + 10% SP Plague damage to their target.Plague HordeEnrage for 5 seconds, increasing their critical strike chance by 10%."
+          }
+        ],
+        "connections": [
+          7141,
+          7346,
+          7350
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_belt_pvpwarlock_e_01",
+          "key": "inv_belt_pvpwarlock_e_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30238,
+        "name": "Long March",
+        "slug": "long-march",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704717,
+        "spell_ids": [
+          704717
+        ],
+        "description_html": "Removes the cooldown from <span style=\"color: #ffffff; display: inline\">March of the Dead</span>, but gives it a <span class=\"item-number\">1</span> sec cast time.",
+        "description": "Removes the cooldown from March of the Dead, but gives it a 1 sec cast time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704717,
+            "description_html": "Removes the cooldown from <span style=\"color: #ffffff; display: inline\">March of the Dead</span>, but gives it a <span class=\"item-number\">1</span> sec cast time.",
+            "description": "Removes the cooldown from March of the Dead, but gives it a 1 sec cast time."
+          }
+        ],
+        "connections": [
+          5290,
+          6290,
+          7346
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_deathknight_iceboundfortitude",
+          "key": "spell_deathknight_iceboundfortitude",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9934,
+        "name": "Grave Mastery",
+        "slug": "grave-mastery",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 504439,
+        "spell_ids": [
+          504439
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Reduces the cost of all <span style=\"color: #FFFFFF; display: inline\">Animates</span>, <span style=\"color: #ffffff; display: inline\">Raises</span>, and <span style=\"color: #90ee90; display: inline\">Command</span> spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Level 50 Passive\nReduces the cost of all Animates, Raises, and Command spells by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504439,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Reduces the cost of all <span style=\"color: #FFFFFF; display: inline\">Animates</span>, <span style=\"color: #ffffff; display: inline\">Raises</span>, and <span style=\"color: #90ee90; display: inline\">Command</span> spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Level 50 Passive\nReduces the cost of all Animates, Raises, and Command spells by -20%."
+          }
+        ],
+        "connections": [
+          4235
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_deathscythe_Border",
+          "key": "nhi_deathscythe_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7117,
+        "name": "Master Animator",
+        "slug": "master-animator",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504431,
+        "spell_ids": [
+          504431
+        ],
+        "description_html": "Increases your maximum <span style=\"color: #ffffff; display: inline\">Life Force</span> by <span class=\"item-number\">1</span>.",
+        "description": "Increases your maximum Life Force by 1.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504431,
+            "description_html": "Increases your maximum <span style=\"color: #ffffff; display: inline\">Life Force</span> by <span class=\"item-number\">1</span>.",
+            "description": "Increases your maximum Life Force by 1."
+          }
+        ],
+        "connections": [
+          4238,
+          4619
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_death_icon_0004s_0000_shadow_Border",
+          "key": "epic_rpg_icon_pack_death_icon_0004s_0000_shadow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33749,
+        "name": "Underking",
+        "slug": "underking",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704701,
+        "spell_ids": [
+          704701
+        ],
+        "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now grants you a stack of <span style=\"color: #ffffff; display: inline\">Underking</span> for <span class=\"item-number\">20</span> seconds.<br /><br />At <span class=\"item-number\">10</span> stacks, the cooldown of <span style=\"color: #ffffff; display: inline\">Animate: Tomb King</span>, <span style=\"color: #ffffff; display: inline\">Animate: Bone Wraith</span> or <span style=\"color: #ffffff; display: inline\">Animate: Plaguefather</span> is reduced by <span class=\"item-number\">-15</span> sec at random and you animate a <span style=\"color: #ffffff; display: inline\">Greater Zombie</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Casting Command spells now grants you a stack of Underking for 20 seconds.\n\nAt 10 stacks, the cooldown of Animate: Tomb King, Animate: Bone Wraith or Animate: Plaguefather is reduced by -15 sec at random and you animate a Greater Zombie for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704701,
+            "description_html": "Casting <span style=\"color: #90ee90; display: inline\">Command</span> spells now grants you a stack of <span style=\"color: #ffffff; display: inline\">Underking</span> for <span class=\"item-number\">20</span> seconds.<br /><br />At <span class=\"item-number\">10</span> stacks, the cooldown of <span style=\"color: #ffffff; display: inline\">Animate: Tomb King</span>, <span style=\"color: #ffffff; display: inline\">Animate: Bone Wraith</span> or <span style=\"color: #ffffff; display: inline\">Animate: Plaguefather</span> is reduced by <span class=\"item-number\">-15</span> sec at random and you animate a <span style=\"color: #ffffff; display: inline\">Greater Zombie</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Casting Command spells now grants you a stack of Underking for 20 seconds.\n\nAt 10 stacks, the cooldown of Animate: Tomb King, Animate: Bone Wraith or Animate: Plaguefather is reduced by -15 sec at random and you animate a Greater Zombie for 15 seconds."
+          }
+        ],
+        "connections": [
+          4238
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_sumzombie_Border",
+          "key": "_5_sumzombie_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11619,
+        "name": "Animate: Bone Construct",
+        "slug": "animate-bone-construct",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 23,
+        "tree_id": 61,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 531130,
+        "spell_ids": [
+          531130
+        ],
+        "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Bone Construct</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />It moves at a slow speed, but upon reaching an enemy, deals <span class=\"item-number\">1560</span> + <span class=\"item-number\">200% SP</span> + <span class=\"item-number\">50% AP</span> Shadow damage, piercing all invulnerabilities, resistances, and immunities.",
+        "description": "Animate a Bone Construct to aid you in combat for 20 seconds.\n\nIt moves at a slow speed, but upon reaching an enemy, deals 1560 + 200% SP + 50% AP Shadow damage, piercing all invulnerabilities, resistances, and immunities.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 531130,
+            "description_html": "Animate a <span style=\"color: #ffffff; display: inline\">Bone Construct</span> to aid you in combat for <span class=\"item-number\">20</span> seconds.<br /><br />It moves at a slow speed, but upon reaching an enemy, deals <span class=\"item-number\">1560</span> + <span class=\"item-number\">200% SP</span> + <span class=\"item-number\">50% AP</span> Shadow damage, piercing all invulnerabilities, resistances, and immunities.",
+            "description": "Animate a Bone Construct to aid you in combat for 20 seconds.\n\nIt moves at a slow speed, but upon reaching an enemy, deals 1560 + 200% SP + 50% AP Shadow damage, piercing all invulnerabilities, resistances, and immunities."
+          }
+        ],
+        "connections": [
+          4238,
+          7346
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Bone_Construct",
+          "key": "bone_construct",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

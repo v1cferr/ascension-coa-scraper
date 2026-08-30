@@ -1,0 +1,2768 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:22+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:4e5fda361a3601fbc3b7159c2f283fcf6a9a733702db792027cc0b08e3c89337",
+    "talent_count": 203,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 31,
+    "name": "Primalist",
+    "slug": "primalist",
+    "class_file": "wildwalker",
+    "color": "rgb(227, 140, 89)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:wildwalker",
+      "key": "class-wildwalker",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 46,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 84,
+    "name": "Life",
+    "slug": "life",
+    "sort_order": 0,
+    "class_id": 31,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31209,
+        "name": "Hammer of Life",
+        "slug": "hammer-of-life",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            4060,
+            30633
+          ]
+        },
+        "spell_id": 803973,
+        "spell_ids": [
+          803973
+        ],
+        "description_html": "Your melee attacks and abilities now heal up to <span class=\"item-number\">3</span> nearby allies and damage up to <span class=\"item-number\">3</span> nearby enemies equal to <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt.",
+        "description": "Your melee attacks and abilities now heal up to 3 nearby allies and damage up to 3 nearby enemies equal to 20% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803973,
+            "description_html": "Your melee attacks and abilities now heal up to <span class=\"item-number\">3</span> nearby allies and damage up to <span class=\"item-number\">3</span> nearby enemies equal to <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt.",
+            "description": "Your melee attacks and abilities now heal up to 3 nearby allies and damage up to 3 nearby enemies equal to 20% of the damage dealt."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_1h_draenorraid_d_04green",
+          "key": "inv_mace_1h_draenorraid_d_04green",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4060,
+        "name": "Grove Training",
+        "slug": "grove-training",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            30633
+          ]
+        },
+        "spell_id": 92150,
+        "spell_ids": [
+          92150
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />All melee damage, or healing done, now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Aftershock</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthshock_border\" /><span class=\"name\">Aftershock</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Earthquake</span> within <span class=\"item-number\">15</span> seconds is now instant cast and costs <span class=\"item-number\">-75</span><span class=\"item-number\">%</span> less.</span></div>",
+        "description": "Level 10 Passive\nAll melee damage, or healing done, now has a 10% chance to grant you Aftershock for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92150,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />All melee damage, or healing done, now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #ffffff; display: inline\">Aftershock</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_earthshock_border\" /><span class=\"name\">Aftershock</span></div><span class=\"desc\">Your next <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> or <span style=\"color: #ffffff; display: inline\">Earthquake</span> within <span class=\"item-number\">15</span> seconds is now instant cast and costs <span class=\"item-number\">-75</span><span class=\"item-number\">%</span> less.</span></div>",
+            "description": "Level 10 Passive\nAll melee damage, or healing done, now has a 10% chance to grant you Aftershock for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ui_darkshore_warfront_alliance_keeper_of_the_grove",
+          "key": "ui_darkshore_warfront_alliance_keeper_of_the_grove",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29230,
+        "name": "Seismic Wave",
+        "slug": "seismic-wave",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805462,
+        "spell_ids": [
+          805462
+        ],
+        "description_html": "Create a seismic wave of healing water around you, healing for <span class=\"item-number\">67</span> + <span class=\"item-number\">60% healing</span> + <span class=\"item-number\">28% AP</span> health to up to <span class=\"item-number\">8</span> allies and dealing <span class=\"item-number\">47</span> + <span class=\"item-number\">28% AP</span> + <span class=\"item-number\">30% healing</span> Nature damage to enemies in a <span class=\"item-number\">25</span> yd radius.<br /><br />",
+        "description": "Create a seismic wave of healing water around you, healing for 67 + 60% healing + 28% AP health to up to 8 allies and dealing 47 + 28% AP + 30% healing Nature damage to enemies in a 25 yd radius.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805462,
+            "description_html": "Create a seismic wave of healing water around you, healing for <span class=\"item-number\">67</span> + <span class=\"item-number\">60% healing</span> + <span class=\"item-number\">28% AP</span> health to up to <span class=\"item-number\">8</span> allies and dealing <span class=\"item-number\">47</span> + <span class=\"item-number\">28% AP</span> + <span class=\"item-number\">30% healing</span> Nature damage to enemies in a <span class=\"item-number\">25</span> yd radius.<br /><br />",
+            "description": "Create a seismic wave of healing water around you, healing for 67 + 60% healing + 28% AP health to up to 8 allies and dealing 47 + 28% AP + 30% healing Nature damage to enemies in a 25 yd radius."
+          }
+        ],
+        "connections": [
+          31209
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Seismic_Wave",
+          "key": "seismic_wave",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29363,
+        "name": "Spirit Charge",
+        "slug": "spirit-charge",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800144,
+        "spell_ids": [
+          800144
+        ],
+        "description_html": "Charge to an ally's aid, healing them for <span class=\"item-number\">53</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">67</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">20% AP</span> Nature damage to enemies within <span class=\"item-number\">5</span> yds of them.",
+        "description": "Charge to an ally's aid, healing them for 53 + 20% healing + 20% AP and dealing 67 + 20% healing + 20% AP Nature damage to enemies within 5 yds of them.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800144,
+            "description_html": "Charge to an ally's aid, healing them for <span class=\"item-number\">53</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">67</span> + <span class=\"item-number\">20% healing</span> + <span class=\"item-number\">20% AP</span> Nature damage to enemies within <span class=\"item-number\">5</span> yds of them.",
+            "description": "Charge to an ally's aid, healing them for 53 + 20% healing + 20% AP and dealing 67 + 20% healing + 20% AP Nature damage to enemies within 5 yds of them."
+          }
+        ],
+        "connections": [
+          31209
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_pathofmists",
+          "key": "ability_monk_pathofmists",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6509,
+        "name": "Tranquil Mind",
+        "slug": "tranquil-mind",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504223,
+        "spell_ids": [
+          504223,
+          504882
+        ],
+        "description_html": "Increases your damage and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your damage and healing done by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504223,
+            "description_html": "Increases your damage and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your damage and healing done by 4%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504882,
+            "description_html": "Increases your damage and healing done by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your damage and healing done by 8%."
+          }
+        ],
+        "connections": [
+          29230
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_nagrand_02",
+          "key": "achievement_zone_nagrand_02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30785,
+        "name": "Nature's Fury",
+        "slug": "natures-fury",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300742,
+        "spell_ids": [
+          300742
+        ],
+        "description_html": "Auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to deal Weapon Damage and restore <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum mana.",
+        "description": "Auto attacks now have a 20% chance to deal Weapon Damage and restore 5% of your maximum mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300742,
+            "description_html": "Auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to deal Weapon Damage and restore <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of your maximum mana.",
+            "description": "Auto attacks now have a 20% chance to deal Weapon Damage and restore 5% of your maximum mana."
+          }
+        ],
+        "connections": [
+          29230,
+          29363
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_2h_pandariaquest_b_01",
+          "key": "inv_mace_2h_pandariaquest_b_01",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6236,
+        "name": "Spiritual Warrior",
+        "slug": "spiritual-warrior",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504220,
+        "spell_ids": [
+          504220
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Spirit Charge by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504220,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Spirit Charge by 25%."
+          }
+        ],
+        "connections": [
+          29363
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritualarmor_Border",
+          "key": "nhi_spiritualarmor_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6243,
+        "name": "Vitality Surge",
+        "slug": "vitality-surge",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 504214,
+        "spell_ids": [
+          504214
+        ],
+        "description_html": "All effective healing done now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the haste of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects.",
+        "description": "All effective healing done now has a 25% chance to increase the haste of party and raid members by 5% for 20 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504214,
+            "description_html": "All effective healing done now has a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase the haste of party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects.",
+            "description": "All effective healing done now has a 25% chance to increase the haste of party and raid members by 5% for 20 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          4060
+        ],
+        "choice_group": 127887,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_chaoshealing_Border",
+          "key": "nhi_chaoshealing_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 11243,
+        "name": "Grovekeeper's Presence",
+        "slug": "grovekeepers-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 805443,
+        "spell_ids": [
+          805443
+        ],
+        "description_html": "Increases chance to hit with all spells and attacks by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for you and party and raid members.<br /><br />Does not stack with similar effects.",
+        "description": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805443,
+            "description_html": "Increases chance to hit with all spells and attacks by <span class=\"item-number\">1</span><span class=\"item-number\">%</span> for you and party and raid members.<br /><br />Does not stack with similar effects.",
+            "description": "Increases chance to hit with all spells and attacks by 1% for you and party and raid members.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          4060
+        ],
+        "choice_group": 127887,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_druidstone01",
+          "key": "inv_misc_druidstone01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 9687,
+        "name": "Hand of a God",
+        "slug": "hand-of-a-god",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561208,
+        "spell_ids": [
+          561208
+        ],
+        "description_html": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> by <span class=\"item-number\">-5</span>.",
+        "description": "Reduces the Rage cost of Hand of the Earthmother by -5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561208,
+            "description_html": "Reduces the Rage cost of <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> by <span class=\"item-number\">-5</span>.",
+            "description": "Reduces the Rage cost of Hand of the Earthmother by -5."
+          }
+        ],
+        "connections": [
+          6509,
+          30785
+        ],
+        "choice_group": 32211,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_iceelementalprimal_green",
+          "key": "inv_iceelementalprimal_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30508,
+        "name": "Blessing of Neptulon",
+        "slug": "blessing-of-neptulon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560055,
+        "spell_ids": [
+          560055
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Hand of the Earthmother</span> now bounces to <span class=\"item-number\">1</span> ally near the primary target.",
+        "description": "Your Hand of the Earthmother now bounces to 1 ally near the primary target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560055,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Hand of the Earthmother</span> now bounces to <span class=\"item-number\">1</span> ally near the primary target.",
+            "description": "Your Hand of the Earthmother now bounces to 1 ally near the primary target."
+          }
+        ],
+        "connections": [
+          6509,
+          30785
+        ],
+        "choice_group": 32211,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_GhostWater_Border",
+          "key": "custom_t_ghostwater_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7335,
+        "name": "Power Hammer",
+        "slug": "power-hammer",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 303014,
+        "spell_ids": [
+          303014
+        ],
+        "description_html": "You now generate <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more Rage from damage dealt, increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> while a two-handed weapon is equipped.",
+        "description": "You now generate 10% more Rage from damage dealt, increased by 15% while a two-handed weapon is equipped.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 303014,
+            "description_html": "You now generate <span class=\"item-number\">10</span><span class=\"item-number\">%</span> more Rage from damage dealt, increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> while a two-handed weapon is equipped.",
+            "description": "You now generate 10% more Rage from damage dealt, increased by 15% while a two-handed weapon is equipped."
+          }
+        ],
+        "connections": [
+          30785
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_custom_naaru_hammer_yellow",
+          "key": "inv_custom_naaru_hammer_yellow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30346,
+        "name": "Ancient Power",
+        "slug": "ancient-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300740,
+        "spell_ids": [
+          300740,
+          301354
+        ],
+        "description_html": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Strength by 5% and your hit chance by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300740,
+            "description_html": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Strength by 5% and your hit chance by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301354,
+            "description_html": "Increases your Strength by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and your hit chance by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Strength by 10% and your hit chance by 6%."
+          }
+        ],
+        "connections": [
+          6236,
+          30785
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturelighting_Border",
+          "key": "nhi_naturelighting_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6238,
+        "name": "Battleweaver",
+        "slug": "battleweaver",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300733,
+        "spell_ids": [
+          300733
+        ],
+        "description_html": "Effective healing now increases your melee haste and damage by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Effective healing now increases your melee haste and damage by 2% for 5 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300733,
+            "description_html": "Effective healing now increases your melee haste and damage by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Effective healing now increases your melee haste and damage by 2% for 5 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          6509,
+          9687,
+          30508
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureroots_Border",
+          "key": "nhi_natureroots_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30949,
+        "name": "Elemental Cascade",
+        "slug": "elemental-cascade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504196,
+        "spell_ids": [
+          504196
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> now unleash an <span style=\"color: #FFFFFF; display: inline\">Elemental Cascade</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_waterelementalmount\" /><span class=\"name\">Elemental Cascade</span></div><span class=\"desc\">Restores <span class=\"item-number\">32</span> + <span class=\"item-number\">10% AP</span> + <span class=\"item-number\">10% healing</span> health to allies in a <span class=\"item-number\">12</span> yd radius around you.</span></div>",
+        "description": "Critical strikes with Wildclaw now unleash an Elemental Cascade.Elemental CascadeRestores 32 + 10% AP + 10% healing health to allies in a 12 yd radius around you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504196,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> now unleash an <span style=\"color: #FFFFFF; display: inline\">Elemental Cascade</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 inv_waterelementalmount\" /><span class=\"name\">Elemental Cascade</span></div><span class=\"desc\">Restores <span class=\"item-number\">32</span> + <span class=\"item-number\">10% AP</span> + <span class=\"item-number\">10% healing</span> health to allies in a <span class=\"item-number\">12</span> yd radius around you.</span></div>",
+            "description": "Critical strikes with Wildclaw now unleash an Elemental Cascade.Elemental CascadeRestores 32 + 10% AP + 10% healing health to allies in a 12 yd radius around you."
+          }
+        ],
+        "connections": [
+          9687,
+          30508
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_waterelementalmount",
+          "key": "inv_waterelementalmount",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30968,
+        "name": "Thorns",
+        "slug": "thorns",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504732,
+        "spell_ids": [
+          504732
+        ],
+        "description_html": "Physical damage dealt or taken now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #ffffff; display: inline\">Thorns</span> on an enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nature_stranglevines\" /><span class=\"name\">Thorns (Talent)</span></div><span class=\"desc\">Create thorns around an enemy, rooting them and dealing <span class=\"item-number\">270</span> Nature Damage over <span class=\"item-number\">6</span> seconds.<br /><br />Direct damage taken may end this effect.</span></div>",
+        "description": "Physical damage dealt or taken now has a 10% chance to unleash Thorns on an enemy.Thorns (Talent)Create thorns around an enemy, rooting them and dealing 270 Nature Damage over 6 seconds.\n\nDirect damage taken may end this effect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504732,
+            "description_html": "Physical damage dealt or taken now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to unleash <span style=\"color: #ffffff; display: inline\">Thorns</span> on an enemy.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_nature_stranglevines\" /><span class=\"name\">Thorns (Talent)</span></div><span class=\"desc\">Create thorns around an enemy, rooting them and dealing <span class=\"item-number\">270</span> Nature Damage over <span class=\"item-number\">6</span> seconds.<br /><br />Direct damage taken may end this effect.</span></div>",
+            "description": "Physical damage dealt or taken now has a 10% chance to unleash Thorns on an enemy.Thorns (Talent)Create thorns around an enemy, rooting them and dealing 270 Nature Damage over 6 seconds.\n\nDirect damage taken may end this effect."
+          }
+        ],
+        "connections": [
+          7335,
+          9687,
+          30346,
+          30508
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_StrangleVines",
+          "key": "spell_nature_stranglevines",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30966,
+        "name": "Earth's Guidance",
+        "slug": "earths-guidance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706138,
+        "spell_ids": [
+          706138
+        ],
+        "description_html": "Damage and healing done by <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reduce the cooldown of all <span style=\"color: #ffffff; display: inline\">Seismic</span> spells by <span class=\"item-number\">-1</span> sec.",
+        "description": "Damage and healing done by Seismic spells now has a 20% chance to reduce the cooldown of all Seismic spells by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706138,
+            "description_html": "Damage and healing done by <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to reduce the cooldown of all <span style=\"color: #ffffff; display: inline\">Seismic</span> spells by <span class=\"item-number\">-1</span> sec.",
+            "description": "Damage and healing done by Seismic spells now has a 20% chance to reduce the cooldown of all Seismic spells by -1 sec."
+          }
+        ],
+        "connections": [
+          30346
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_ProtectionformNature",
+          "key": "spell_nature_protectionformnature",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7334,
+        "name": "Crashing Out",
+        "slug": "crashing-out",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 574313,
+        "spell_ids": [
+          574313
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Seismic Crash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Seismic Crash by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574313,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Seismic Crash</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Seismic Crash by 30%."
+          }
+        ],
+        "connections": [
+          30346
+        ],
+        "choice_group": 123788,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Druid_NaturalPerfection",
+          "key": "ability_druid_naturalperfection",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11334,
+        "name": "Tears of the Earthmother",
+        "slug": "tears-of-the-earthmother",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 574326,
+        "spell_ids": [
+          574326
+        ],
+        "description_html": "Increases the amount of targets hit by <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> by <span class=\"item-number\">4</span>.",
+        "description": "Increases the amount of targets hit by Seismic Spike by 4.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 574326,
+            "description_html": "Increases the amount of targets hit by <span style=\"color: #ffffff; display: inline\">Seismic Spike</span> by <span class=\"item-number\">4</span>.",
+            "description": "Increases the amount of targets hit by Seismic Spike by 4."
+          }
+        ],
+        "connections": [
+          30346
+        ],
+        "choice_group": 123788,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_assassinskill10_Border",
+          "key": "_5_assassinskill10_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9193,
+        "name": "Infused With Power",
+        "slug": "infused-with-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 503718,
+        "spell_ids": [
+          503718
+        ],
+        "description_html": "Effectively healing allies with <span style=\"color: #FFFFFF; display: inline\">Hammer of Life</span> or <span style=\"color: #FFFFFF; display: inline\">Hand of the Earthmother</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #FFFFFF; display: inline\">Infused With Power</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 epic_rpg_icon_pack_nature_icon_0003s_0000_branch_border\" /><span class=\"name\">Infused With Power</span></div><span class=\"desc\">Increases the critical strike chance of all party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Does not stack with similar effects.</span></div>",
+        "description": "Effectively healing allies with Hammer of Life or Hand of the Earthmother now has a 20% chance to apply Infused With Power.Infused With PowerIncreases the critical strike chance of all party and raid members by 5% for 10 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503718,
+            "description_html": "Effectively healing allies with <span style=\"color: #FFFFFF; display: inline\">Hammer of Life</span> or <span style=\"color: #FFFFFF; display: inline\">Hand of the Earthmother</span> now has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #FFFFFF; display: inline\">Infused With Power</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 epic_rpg_icon_pack_nature_icon_0003s_0000_branch_border\" /><span class=\"name\">Infused With Power</span></div><span class=\"desc\">Increases the critical strike chance of all party and raid members by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Does not stack with similar effects.</span></div>",
+            "description": "Effectively healing allies with Hammer of Life or Hand of the Earthmother now has a 20% chance to apply Infused With Power.Infused With PowerIncreases the critical strike chance of all party and raid members by 5% for 10 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          6243,
+          11243
+        ],
+        "choice_group": 735421,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_nature_icon_0003s_0000_branch_Border",
+          "key": "epic_rpg_icon_pack_nature_icon_0003s_0000_branch_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 11193,
+        "name": "Protector's Hand",
+        "slug": "protectors-hand",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 300730,
+        "spell_ids": [
+          300730
+        ],
+        "description_html": "You now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects.",
+        "description": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300730,
+            "description_html": "You now emanate an aura around you, increasing the Armor of party and raid members by <span class=\"item-number\">390</span>.<br /><br />Does not stack with similar effects.",
+            "description": "You now emanate an aura around you, increasing the Armor of party and raid members by 390.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          6243,
+          11243
+        ],
+        "choice_group": 735421,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_60dungeon_ring5b",
+          "key": "inv_60dungeon_ring5b",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 6651,
+        "name": "Primal Power",
+        "slug": "primal-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 0.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706216,
+        "spell_ids": [
+          706216
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now causes your next <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> within <span class=\"item-number\">8</span> seconds to cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Rage.",
+        "description": "Casting Seismic Wave now causes your next Hand of the Earthmother within 8 seconds to cost -50% less Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706216,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now causes your next <span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> within <span class=\"item-number\">8</span> seconds to cost <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> less Rage.",
+            "description": "Casting Seismic Wave now causes your next Hand of the Earthmother within 8 seconds to cost -50% less Rage."
+          }
+        ],
+        "connections": [
+          6238
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_water_eye_Border",
+          "key": "nhi_water_eye_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 41,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6246,
+        "name": "Ring of Life",
+        "slug": "ring-of-life",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804705,
+        "spell_ids": [
+          804705
+        ],
+        "description_html": "Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> increased healing. Does not stack with similar effects.<br /><br />In addition, your Magic damage taken is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+        "description": "Allies within 40 yds receive 6% increased healing. Does not stack with similar effects.\n\nIn addition, your Magic damage taken is reduced by -10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804705,
+            "description_html": "Allies within <span class=\"item-number\">40</span> yds receive <span class=\"item-number\">6</span><span class=\"item-number\">%</span> increased healing. Does not stack with similar effects.<br /><br />In addition, your Magic damage taken is reduced by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+            "description": "Allies within 40 yds receive 6% increased healing. Does not stack with similar effects.\n\nIn addition, your Magic damage taken is reduced by -10%."
+          }
+        ],
+        "connections": [
+          6238,
+          30949
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturestone_Border",
+          "key": "nhi_naturestone_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29350,
+        "name": "Sacred Grove",
+        "slug": "sacred-grove",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800180,
+        "spell_ids": [
+          800180
+        ],
+        "description_html": "Create a <span style=\"color: #ffffff; display: inline\">Sacred Grove</span> in a <span class=\"item-number\">15</span> yd radius around you for <span class=\"item-number\">16</span> seconds, instantly healing all nearby party and raid members for <span class=\"item-number\">2002</span> + <span class=\"item-number\">100% AP</span>.<br /><br />While active, up to <span class=\"item-number\">12</span> allies in the grove receive <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased healing, and regain <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of their missing health, Rage, and mana every <span class=\"item-number\">2</span> sec.",
+        "description": "Create a Sacred Grove in a 15 yd radius around you for 16 seconds, instantly healing all nearby party and raid members for 2002 + 100% AP.\n\nWhile active, up to 12 allies in the grove receive 25% increased healing, and regain 3% of their missing health, Rage, and mana every 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800180,
+            "description_html": "Create a <span style=\"color: #ffffff; display: inline\">Sacred Grove</span> in a <span class=\"item-number\">15</span> yd radius around you for <span class=\"item-number\">16</span> seconds, instantly healing all nearby party and raid members for <span class=\"item-number\">2002</span> + <span class=\"item-number\">100% AP</span>.<br /><br />While active, up to <span class=\"item-number\">12</span> allies in the grove receive <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased healing, and regain <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of their missing health, Rage, and mana every <span class=\"item-number\">2</span> sec.",
+            "description": "Create a Sacred Grove in a 15 yd radius around you for 16 seconds, instantly healing all nearby party and raid members for 2002 + 100% AP.\n\nWhile active, up to 12 allies in the grove receive 25% increased healing, and regain 3% of their missing health, Rage, and mana every 2 sec."
+          }
+        ],
+        "connections": [
+          30949,
+          30966,
+          30968
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_reputation_guardiansofcenarius",
+          "key": "achievement_reputation_guardiansofcenarius",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6230,
+        "name": "Keeper of the Grove",
+        "slug": "keeper-of-the-grove",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706137,
+        "spell_ids": [
+          706137
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> by <span class=\"item-number\">-30</span> sec.",
+        "description": "Reduces the cooldown of Bramblepatch by -30 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706137,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> by <span class=\"item-number\">-30</span> sec.",
+            "description": "Reduces the cooldown of Bramblepatch by -30 sec."
+          }
+        ],
+        "connections": [
+          7334,
+          11334,
+          30966
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_tradeskillitem_lessersorcerersearth",
+          "key": "inv_tradeskillitem_lessersorcerersearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6654,
+        "name": "Running on Instinct",
+        "slug": "running-on-instinct",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 8.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300744,
+        "spell_ids": [
+          300744
+        ],
+        "description_html": "Passing through allies with <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now heals up to <span class=\"item-number\">5</span> of them for <span class=\"item-number\">166</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">35% SP</span> and grants a stack of <span style=\"color: #FFFFFF; display: inline\">Running on Instinct</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritliquid_border\" /><span class=\"name\">Running on Instinct (Proc)</span></div><span class=\"desc\">Damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> and <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Passing through allies with Primal Rush now heals up to 5 of them for 166 + 25% AP + 35% SP and grants a stack of Running on Instinct.Running on Instinct (Proc)Damage of Wildclaw and Seismic spells is increased by 5% for 20 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300744,
+            "description_html": "Passing through allies with <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now heals up to <span class=\"item-number\">5</span> of them for <span class=\"item-number\">166</span> + <span class=\"item-number\">25% AP</span> + <span class=\"item-number\">35% SP</span> and grants a stack of <span style=\"color: #FFFFFF; display: inline\">Running on Instinct</span>.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 nhi_spiritliquid_border\" /><span class=\"name\">Running on Instinct (Proc)</span></div><span class=\"desc\">Damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> and <span style=\"color: #FFFFFF; display: inline\">Seismic</span> spells is increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Passing through allies with Primal Rush now heals up to 5 of them for 166 + 25% AP + 35% SP and grants a stack of Running on Instinct.Running on Instinct (Proc)Damage of Wildclaw and Seismic spells is increased by 5% for 20 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          7334,
+          11334
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_spiritliquid_Border",
+          "key": "nhi_spiritliquid_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 40,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7107,
+        "name": "Earthmother's Binding",
+        "slug": "earthmothers-binding",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805107,
+        "spell_ids": [
+          805107
+        ],
+        "description_html": "Envelop a target in the Earthmother's love, healing them for <span class=\"item-number\">501</span> + <span class=\"item-number\">100% healing</span> + <span class=\"item-number\">100% AP</span>. <br /><br />If used on an ally, <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of their damage taken is redirected to you for <span class=\"item-number\">6</span> seconds.",
+        "description": "Envelop a target in the Earthmother's love, healing them for 501 + 100% healing + 100% AP.\n\nIf used on an ally, 30% of their damage taken is redirected to you for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805107,
+            "description_html": "Envelop a target in the Earthmother's love, healing them for <span class=\"item-number\">501</span> + <span class=\"item-number\">100% healing</span> + <span class=\"item-number\">100% AP</span>. <br /><br />If used on an ally, <span class=\"item-number\">30</span><span class=\"item-number\">%</span> of their damage taken is redirected to you for <span class=\"item-number\">6</span> seconds.",
+            "description": "Envelop a target in the Earthmother's love, healing them for 501 + 100% healing + 100% AP.\n\nIf used on an ally, 30% of their damage taken is redirected to you for 6 seconds."
+          }
+        ],
+        "connections": [
+          6246,
+          6651
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_druid_symbiosis",
+          "key": "spell_druid_symbiosis",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30628,
+        "name": "Verdant Warrior",
+        "slug": "verdant-warrior",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301299,
+        "spell_ids": [
+          301299,
+          573132
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Wildclaw by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301299,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Wildclaw by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 573132,
+            "description_html": "Increases the damage of <span style=\"color: #FFFFFF; display: inline\">Wildclaw</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Wildclaw by 30%."
+          }
+        ],
+        "connections": [
+          6230,
+          6246,
+          29350
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Druid_Cyclone",
+          "key": "ability_druid_cyclone",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11184,
+        "name": "Earthmother's Warden",
+        "slug": "earthmothers-warden",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707514,
+        "spell_ids": [
+          707514
+        ],
+        "description_html": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">-2</span> sec.",
+        "description": "Reduces the cooldown of your Seismic abilities by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707514,
+            "description_html": "Reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities by <span class=\"item-number\">-2</span> sec.",
+            "description": "Reduces the cooldown of your Seismic abilities by -2 sec."
+          }
+        ],
+        "connections": [
+          6230,
+          6654
+        ],
+        "choice_group": 111687,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Thorns",
+          "key": "spell_nature_thorns",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30784,
+        "name": "Grove Tender",
+        "slug": "grove-tender",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706148,
+        "spell_ids": [
+          706148
+        ],
+        "description_html": "While inside your <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now have a <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> reduced cooldown.<br /><br />In addition, the duration of <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> is doubled.",
+        "description": "While inside your Bramblepatch your Seismic abilities now have a -80% reduced cooldown.\n\nIn addition, the duration of Bramblepatch is doubled.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706148,
+            "description_html": "While inside your <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> your <span style=\"color: #ffffff; display: inline\">Seismic</span> abilities now have a <span class=\"item-number\">-80</span><span class=\"item-number\">%</span> reduced cooldown.<br /><br />In addition, the duration of <span style=\"color: #ffffff; display: inline\">Bramblepatch</span> is doubled.",
+            "description": "While inside your Bramblepatch your Seismic abilities now have a -80% reduced cooldown.\n\nIn addition, the duration of Bramblepatch is doubled."
+          }
+        ],
+        "connections": [
+          6230,
+          6654
+        ],
+        "choice_group": 111687,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_NatureTouchGrow",
+          "key": "spell_nature_naturetouchgrow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9733,
+        "name": "Douse",
+        "slug": "douse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 807558,
+        "spell_ids": [
+          807558
+        ],
+        "description_html": "Striking an enemy with <span style=\"color: #ffffff; display: inline\">Seismic</span> spells now deals an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">8% AP</span> Frost damage and reduces all resistances by <span class=\"item-number\">75</span> and increases their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807558,
+            "description_html": "Striking an enemy with <span style=\"color: #ffffff; display: inline\">Seismic</span> spells now deals an additional <span class=\"item-number\">1</span> + <span class=\"item-number\">8% AP</span> Frost damage and reduces all resistances by <span class=\"item-number\">75</span> and increases their Magic damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds."
+          }
+        ],
+        "connections": [
+          9193,
+          11193
+        ],
+        "choice_group": 856162,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_shawaterelemental_reform",
+          "key": "ability_shawaterelemental_reform",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 11163,
+        "name": "Flourishing Growth",
+        "slug": "flourishing-growth",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 805442,
+        "spell_ids": [
+          805442
+        ],
+        "description_html": "Empower party and raid members within <span class=\"item-number\">40</span> yds with verdant strength, increasing their attack or spell power by <span class=\"item-number\">95</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects.",
+        "description": "Empower party and raid members within 40 yds with verdant strength, increasing their attack or spell power by 95 for 20 seconds.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805442,
+            "description_html": "Empower party and raid members within <span class=\"item-number\">40</span> yds with verdant strength, increasing their attack or spell power by <span class=\"item-number\">95</span> for <span class=\"item-number\">20</span> seconds.<br /><br />Does not stack with similar effects.",
+            "description": "Empower party and raid members within 40 yds with verdant strength, increasing their attack or spell power by 95 for 20 seconds.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          9193,
+          11193
+        ],
+        "choice_group": 856162,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_druid_germination",
+          "key": "spell_druid_germination",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 6240,
+        "name": "Ride the Wave",
+        "slug": "ride-the-wave",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300867,
+        "spell_ids": [
+          300867
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now increases the movement speed of affected allies by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds.",
+        "description": "Seismic Wave now increases the movement speed of affected allies by 30% for 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300867,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now increases the movement speed of affected allies by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">4</span> seconds.",
+            "description": "Seismic Wave now increases the movement speed of affected allies by 30% for 4 seconds."
+          }
+        ],
+        "connections": [
+          6651,
+          7107
+        ],
+        "choice_group": 807466,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturewave_Border",
+          "key": "nhi_naturewave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6662,
+        "name": "Nature's Blessing",
+        "slug": "natures-blessing",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807466,
+        "spell_ids": [
+          807466
+        ],
+        "description_html": "Healing allies with <span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now heals them for an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the healing done every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">9</span> sec.",
+        "description": "Healing allies with Seismic Wave now heals them for an additional 20% of the healing done every 3 sec for 9 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807466,
+            "description_html": "Healing allies with <span style=\"color: #ffffff; display: inline\">Seismic Wave</span> now heals them for an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the healing done every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">9</span> sec.",
+            "description": "Healing allies with Seismic Wave now heals them for an additional 20% of the healing done every 3 sec for 9 sec."
+          }
+        ],
+        "connections": [
+          6651,
+          7107
+        ],
+        "choice_group": 807466,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_nourish",
+          "key": "ability_druid_nourish",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6242,
+        "name": "Infusion of Neptulon",
+        "slug": "infusion-of-neptulon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300731,
+        "spell_ids": [
+          300731
+        ],
+        "description_html": "Critically healing an ally now increases your attack power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for your next <span class=\"item-number\">3</span> attacks. Lasts <span class=\"item-number\">12</span> seconds.",
+        "description": "Critically healing an ally now increases your attack power by 15% for your next 3 attacks. Lasts 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300731,
+            "description_html": "Critically healing an ally now increases your attack power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for your next <span class=\"item-number\">3</span> attacks. Lasts <span class=\"item-number\">12</span> seconds.",
+            "description": "Critically healing an ally now increases your attack power by 15% for your next 3 attacks. Lasts 12 seconds."
+          }
+        ],
+        "connections": [
+          7107
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_frost_summonwaterelemental",
+          "key": "spell_frost_summonwaterelemental",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6234,
+        "name": "Earthmother's Empowerment",
+        "slug": "earthmothers-empowerment",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300738,
+        "spell_ids": [
+          300738
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> now increases the target's dodge chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+        "description": "Hand of the Earthmother now increases the target's dodge chance by 15% for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300738,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Hand of the Earthmother</span> now increases the target's dodge chance by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds.",
+            "description": "Hand of the Earthmother now increases the target's dodge chance by 15% for 5 seconds."
+          }
+        ],
+        "connections": [
+          30628
+        ],
+        "choice_group": 301306,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureambush_Border",
+          "key": "nhi_natureambush_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 14234,
+        "name": "Earthmother's Roar",
+        "slug": "earthmothers-roar",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301306,
+        "spell_ids": [
+          301306
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Protective Roar</span> now also heals allies equal to <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of their missing health.",
+        "description": "Your Protective Roar now also heals allies equal to 20% of their missing health.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301306,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Protective Roar</span> now also heals allies equal to <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of their missing health.",
+            "description": "Your Protective Roar now also heals allies equal to 20% of their missing health."
+          }
+        ],
+        "connections": [
+          30628
+        ],
+        "choice_group": 301306,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_nature_slimeroar_Border",
+          "key": "nhi_nature_slimeroar_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11236,
+        "name": "Druid Training",
+        "slug": "druid-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707560,
+        "spell_ids": [
+          707560
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> now heals all allies within <span class=\"item-number\">20</span> yds equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt.",
+        "description": "Your Geode Barrage now heals all allies within 20 yds equal to 10% of the damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707560,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Geode Barrage</span> now heals all allies within <span class=\"item-number\">20</span> yds equal to <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of the damage dealt.",
+            "description": "Your Geode Barrage now heals all allies within 20 yds equal to 10% of the damage dealt."
+          }
+        ],
+        "connections": [
+          11184,
+          30784
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Druid_EmpoweredRejuvination",
+          "key": "ability_druid_empoweredrejuvination",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30967,
+        "name": "Shaman Training",
+        "slug": "shaman-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805445,
+        "spell_ids": [
+          805445
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Wildclaw</span> now reduces the enemy's armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">5</span> times.",
+        "description": "Damage dealt by Wildclaw now reduces the enemy's armor by -4% for 20 seconds, stacking up to 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805445,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Wildclaw</span> now reduces the enemy's armor by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds, stacking up to <span class=\"item-number\">5</span> times.",
+            "description": "Damage dealt by Wildclaw now reduces the enemy's armor by -4% for 20 seconds, stacking up to 5 times."
+          }
+        ],
+        "connections": [
+          6654,
+          11184,
+          30784
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Shaman_Stormstrike",
+          "key": "ability_shaman_stormstrike",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6235,
+        "name": "Primordial Earth",
+        "slug": "primordial-earth",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806536,
+        "spell_ids": [
+          806536
+        ],
+        "description_html": "Critical strikes with melee attacks now summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Spirit of Life</span> that immediately casts a lesser <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> on a nearby ally, healing them for <span class=\"item-number\">397</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">404</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> Nature damage to nearby enemies.",
+        "description": "Critical strikes with melee attacks now summon 1 Spirit of Life that immediately casts a lesser Spirit Charge on a nearby ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806536,
+            "description_html": "Critical strikes with melee attacks now summon <span class=\"item-number\">1</span> <span style=\"color: #ffffff; display: inline\">Spirit of Life</span> that immediately casts a lesser <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> on a nearby ally, healing them for <span class=\"item-number\">397</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">404</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> Nature damage to nearby enemies.",
+            "description": "Critical strikes with melee attacks now summon 1 Spirit of Life that immediately casts a lesser Spirit Charge on a nearby ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies."
+          }
+        ],
+        "connections": [
+          6234,
+          6240,
+          6242,
+          6662,
+          14234
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ore_Gold_Nugget2",
+          "key": "inv_ore_gold_nugget2",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29664,
+        "name": "Verdant Chase",
+        "slug": "verdant-chase",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560305,
+        "spell_ids": [
+          560305
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now cooldown faster.",
+        "description": "Your Spirit Charge and Primal Rush now cooldown faster.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560305,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now cooldown faster.",
+            "description": "Your Spirit Charge and Primal Rush now cooldown faster."
+          }
+        ],
+        "connections": [
+          6234,
+          11236,
+          14234,
+          30967
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_evoker_spiritbloom",
+          "key": "ability_evoker_spiritbloom",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11134,
+        "name": "Neptulon's Wrath",
+        "slug": "neptulons-wrath",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 807467,
+        "spell_ids": [
+          807467
+        ],
+        "description_html": "Emanate an aura for <span class=\"item-number\">15</span> seconds, causing allied players to deal <span class=\"item-number\">35% AP</span> additional damage as Froststorm Damage when they deal direct damage.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute.",
+        "description": "Emanate an aura for 15 seconds, causing allied players to deal 35% AP additional damage as Froststorm Damage when they deal direct damage.\n\nApplies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807467,
+            "description_html": "Emanate an aura for <span class=\"item-number\">15</span> seconds, causing allied players to deal <span class=\"item-number\">35% AP</span> additional damage as Froststorm Damage when they deal direct damage.<br /><br />Applies <span style=\"color: #FFFFFF; display: inline\">Exhaustion</span>, preventing you from benefiting from similar effects for <span class=\"item-number\">1</span> minute.",
+            "description": "Emanate an aura for 15 seconds, causing allied players to deal 35% AP additional damage as Froststorm Damage when they deal direct damage.\n\nApplies Exhaustion, preventing you from benefiting from similar effects for 1 minute."
+          }
+        ],
+        "connections": [
+          9733,
+          11163
+        ],
+        "choice_group": 856163,
+        "icon": {
+          "source_path": "Interface\\Icons\\_LiquidStone_Water",
+          "key": "liquidstone_water",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 11153,
+        "name": "Primal Awakening",
+        "slug": "primal-awakening",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 807560,
+        "spell_ids": [
+          807560
+        ],
+        "description_html": "Enrage all nearby allies, increasing their haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />After being affected by this spell, allies cannot benefit from similar effects for <span class=\"item-number\">5</span> minutes.",
+        "description": "Enrage all nearby allies, increasing their haste by 30% for 20 seconds.\n\nAfter being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807560,
+            "description_html": "Enrage all nearby allies, increasing their haste by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.<br /><br />After being affected by this spell, allies cannot benefit from similar effects for <span class=\"item-number\">5</span> minutes.",
+            "description": "Enrage all nearby allies, increasing their haste by 30% for 20 seconds.\n\nAfter being affected by this spell, allies cannot benefit from similar effects for 5 minutes."
+          }
+        ],
+        "connections": [
+          9733,
+          11163
+        ],
+        "choice_group": 856163,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_shaman_astralshift",
+          "key": "ability_shaman_astralshift",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8192
+      },
+      {
+        "id": 7333,
+        "name": "Ancient of Lore",
+        "slug": "ancient-of-lore",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805105,
+        "spell_ids": [
+          805105
+        ],
+        "description_html": "Funnel nature's energies into yourself, transforming into an <span style=\"color: #FFFFFF; display: inline\">Ancient of Lore</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While active, your stats are increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and nearby party members have their costs reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />While transformed, your movement speed is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.\n\nWhile active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.\n\nWhile transformed, your movement speed is reduced by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805105,
+            "description_html": "Funnel nature's energies into yourself, transforming into an <span style=\"color: #FFFFFF; display: inline\">Ancient of Lore</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While active, your stats are increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and nearby party members have their costs reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.<br /><br />While transformed, your movement speed is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.\n\nWhile active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.\n\nWhile transformed, your movement speed is reduced by -30%."
+          }
+        ],
+        "connections": [
+          6235
+        ],
+        "choice_group": 504222,
+        "icon": {
+          "source_path": "Interface\\Icons\\AncientofLore",
+          "key": "ancientoflore",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29383,
+        "name": "Ancient of War",
+        "slug": "ancient-of-war",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504222,
+        "spell_ids": [
+          504222
+        ],
+        "description_html": "Funnel nature's fury into yourself, transforming into an <span style=\"color: #FFFFFF; display: inline\">Ancient of War</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While active, your <span style=\"color: #FFFFFF; display: inline\">Hammer of Life</span> effectiveness is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and nearby party members have their critical strike chance increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />While transformed, your movement speed is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+        "description": "Funnel nature's fury into yourself, transforming into an Ancient of War for 20 seconds.\n\nWhile active, your Hammer of Life effectiveness is increased by 30% and nearby party members have their critical strike chance increased by 20%.\n\nWhile transformed, your movement speed is reduced by -30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504222,
+            "description_html": "Funnel nature's fury into yourself, transforming into an <span style=\"color: #FFFFFF; display: inline\">Ancient of War</span> for <span class=\"item-number\">20</span> seconds.<br /><br />While active, your <span style=\"color: #FFFFFF; display: inline\">Hammer of Life</span> effectiveness is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> and nearby party members have their critical strike chance increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />While transformed, your movement speed is reduced by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Funnel nature's fury into yourself, transforming into an Ancient of War for 20 seconds.\n\nWhile active, your Hammer of Life effectiveness is increased by 30% and nearby party members have their critical strike chance increased by 20%.\n\nWhile transformed, your movement speed is reduced by -30%."
+          }
+        ],
+        "connections": [
+          6235
+        ],
+        "choice_group": 504222,
+        "icon": {
+          "source_path": "Interface\\Icons\\AncientofWar",
+          "key": "ancientofwar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30020,
+        "name": "Eternally Chosen",
+        "slug": "eternally-chosen",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 31,
+        "tree_id": 84,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802888,
+        "spell_ids": [
+          802888
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Spirit Charge</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now summons <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Spirits of Life</span> that immediately cast a lesser <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> on the nearest ally, healing them for <span class=\"item-number\">397</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">404</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> Nature damage to nearby enemies.",
+        "description": "Spirit Charge and Primal Rush now summons 2 Spirits of Life that immediately cast a lesser Spirit Charge on the nearest ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802888,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Spirit Charge</span> and <span style=\"color: #ffffff; display: inline\">Primal Rush</span> now summons <span class=\"item-number\">2</span> <span style=\"color: #ffffff; display: inline\">Spirits of Life</span> that immediately cast a lesser <span style=\"color: #ffffff; display: inline\">Spirit Charge</span> on the nearest ally, healing them for <span class=\"item-number\">397</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> and dealing <span class=\"item-number\">404</span> + <span class=\"item-number\">20% nature SP</span> + <span class=\"item-number\">20% AP</span> Nature damage to nearby enemies.",
+            "description": "Spirit Charge and Primal Rush now summons 2 Spirits of Life that immediately cast a lesser Spirit Charge on the nearest ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies."
+          }
+        ],
+        "connections": [
+          29664
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_ability_monk_jadefirestomp",
+          "key": "inv_ability_monk_jadefirestomp",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,2230 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:30+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:ea2fd2f252c0b00bf8ad5e1927b16cb7f63a4621275d3c8821f604112ff2e0ed",
+    "talent_count": 202,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 29,
+    "name": "Venomancer",
+    "slug": "venomancer",
+    "class_file": "prophet",
+    "color": "rgb(107, 166, 0)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:prophet",
+      "key": "class-prophet",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 36,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 87,
+    "name": "Class",
+    "slug": "class",
+    "sort_order": 0,
+    "class_id": 29,
+    "is_shared": true,
+    "talents": [
+      {
+        "id": 7229,
+        "name": "Hive Instinct",
+        "slug": "hive-instinct",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804968,
+        "spell_ids": [
+          804968
+        ],
+        "description_html": "The swarm stirs within you, preparing you for battle, instantly generating <span class=\"item-number\">100</span> Rage or Energy.<br /><br />Usable while <span style=\"color: #ffffff; display: inline\">Skulking</span>.",
+        "description": "The swarm stirs within you, preparing you for battle, instantly generating 100 Rage or Energy.\n\nUsable while Skulking.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804968,
+            "description_html": "The swarm stirs within you, preparing you for battle, instantly generating <span class=\"item-number\">100</span> Rage or Energy.<br /><br />Usable while <span style=\"color: #ffffff; display: inline\">Skulking</span>.",
+            "description": "The swarm stirs within you, preparing you for battle, instantly generating 100 Rage or Energy.\n\nUsable while Skulking."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_pet_shalespider",
+          "key": "inv_pet_shalespider",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 29607,
+        "name": "Envenomed Weapons",
+        "slug": "envenomed-weapons",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300855,
+        "spell_ids": [
+          300855
+        ],
+        "description_html": "Envenoms the weapons of all nearby allies for <span class=\"item-number\">30</span> minutes, giving them a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to launch a jet of poison at their target whenever they deal damage, dealing <span class=\"item-number\">8</span> + <span class=\"item-number\">10% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage.",
+        "description": "Envenoms the weapons of all nearby allies for 30 minutes, giving them a 5% chance to launch a jet of poison at their target whenever they deal damage, dealing 8 + 10% nature SP + 10% AP Nature damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300855,
+            "description_html": "Envenoms the weapons of all nearby allies for <span class=\"item-number\">30</span> minutes, giving them a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to launch a jet of poison at their target whenever they deal damage, dealing <span class=\"item-number\">8</span> + <span class=\"item-number\">10% nature SP</span> + <span class=\"item-number\">10% AP</span> Nature damage.",
+            "description": "Envenoms the weapons of all nearby allies for 30 minutes, giving them a 5% chance to launch a jet of poison at their target whenever they deal damage, dealing 8 + 10% nature SP + 10% AP Nature damage."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_creepingvenom",
+          "key": "ability_rogue_creepingvenom",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 7722,
+        "name": "Green Salve",
+        "slug": "green-salve",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800902,
+        "spell_ids": [
+          800902
+        ],
+        "description_html": "Rapidly heal an ally for <span class=\"item-number\">30</span> over <span class=\"item-number\">6</span> seconds.<br /><br />At the end of the duration, this will seek another nearby ally with the lowest health and heal them for <span class=\"item-number\">47</span> + <span class=\"item-number\">24.46% healing</span>.",
+        "description": "Rapidly heal an ally for 30 over 6 seconds.\n\nAt the end of the duration, this will seek another nearby ally with the lowest health and heal them for 47 + 24.46% healing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800902,
+            "description_html": "Rapidly heal an ally for <span class=\"item-number\">30</span> over <span class=\"item-number\">6</span> seconds.<br /><br />At the end of the duration, this will seek another nearby ally with the lowest health and heal them for <span class=\"item-number\">47</span> + <span class=\"item-number\">24.46% healing</span>.",
+            "description": "Rapidly heal an ally for 30 over 6 seconds.\n\nAt the end of the duration, this will seek another nearby ally with the lowest health and heal them for 47 + 24.46% healing."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_firstaid_healingsalve",
+          "key": "inv_firstaid_healingsalve",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 6082,
+        "name": "Acute Senses",
+        "slug": "acute-senses",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300664,
+        "spell_ids": [
+          300664,
+          300665
+        ],
+        "description_html": "Increases your Intellect and Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Intellect and Agility by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300664,
+            "description_html": "Increases your Intellect and Agility by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Intellect and Agility by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 300665,
+            "description_html": "Increases your Intellect and Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Intellect and Agility by 10%."
+          }
+        ],
+        "connections": [
+          7229,
+          29607
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_bonespider2_slate",
+          "key": "inv_bonespider2_slate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30482,
+        "name": "Playing With Poison",
+        "slug": "playing-with-poison",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707563,
+        "spell_ids": [
+          707563
+        ],
+        "description_html": "Increases your Nature damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and healing done by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Nature damage by 5% and healing done by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707563,
+            "description_html": "Increases your Nature damage by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and healing done by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Nature damage by 5% and healing done by 3%."
+          }
+        ],
+        "connections": [
+          7722,
+          29607
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_NullifyDisease",
+          "key": "spell_nature_nullifydisease",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29588,
+        "name": "Reinforced Shell",
+        "slug": "reinforced-shell",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705966,
+        "spell_ids": [
+          705966
+        ],
+        "description_html": "Increases your total armor by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />In addition, while <span style=\"color: #ffffff; display: inline\">Spider</span> or <span style=\"color: #ffffff; display: inline\">Beetle</span> form is active your attacks are unable to be parried or dodged.",
+        "description": "Increases your total armor by 20%.\n\nIn addition, while Spider or Beetle form is active your attacks are unable to be parried or dodged.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705966,
+            "description_html": "Increases your total armor by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.<br /><br />In addition, while <span style=\"color: #ffffff; display: inline\">Spider</span> or <span style=\"color: #ffffff; display: inline\">Beetle</span> form is active your attacks are unable to be parried or dodged.",
+            "description": "Increases your total armor by 20%.\n\nIn addition, while Spider or Beetle form is active your attacks are unable to be parried or dodged."
+          }
+        ],
+        "connections": [
+          7229
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_leather_shellfragment",
+          "key": "inv_misc_leather_shellfragment",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6117,
+        "name": "Genesis",
+        "slug": "genesis",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705962,
+        "spell_ids": [
+          705962
+        ],
+        "description_html": "Increases your haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your haste by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705962,
+            "description_html": "Increases your haste by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your haste by 4%."
+          }
+        ],
+        "connections": [
+          6082
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_venom_spell_08_Border",
+          "key": "uico_venom_spell_08_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7241,
+        "name": "Hallucinogenic Venom",
+        "slug": "hallucinogenic-venom",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560188,
+        "spell_ids": [
+          560188
+        ],
+        "description_html": "Allows <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your mana to regenerate while in combat.",
+        "description": "Allows 50% of your mana to regenerate while in combat.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560188,
+            "description_html": "Allows <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of your mana to regenerate while in combat.",
+            "description": "Allows 50% of your mana to regenerate while in combat."
+          }
+        ],
+        "connections": [
+          30482
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_inscription_pigment_bug07",
+          "key": "inv_inscription_pigment_bug07",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6118,
+        "name": "Tranquil Essence",
+        "slug": "tranquil-essence",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504799,
+        "spell_ids": [
+          504799,
+          505204
+        ],
+        "description_html": "Reduces the threat generated by your healing spells by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and increases your periodic healing by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the threat generated by your healing spells by -10% and increases your periodic healing by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504799,
+            "description_html": "Reduces the threat generated by your healing spells by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> and increases your periodic healing by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the threat generated by your healing spells by -10% and increases your periodic healing by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 505204,
+            "description_html": "Reduces the threat generated by your healing spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and increases your periodic healing by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the threat generated by your healing spells by -20% and increases your periodic healing by 6%."
+          }
+        ],
+        "connections": [
+          7722
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ui_notoriety_thevizier",
+          "key": "ui_notoriety_thevizier",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6116,
+        "name": "Weakening Venom",
+        "slug": "weakening-venom",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805778,
+        "spell_ids": [
+          805778
+        ],
+        "description_html": "Activate <span style=\"color: #ffffff; display: inline\">Weakening Venom</span> for <span class=\"item-number\">120</span> minutes, giving your casts a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">59</span> + <span class=\"item-number\">12.5% SP</span> Shadow damage and reduce an enemy's attack power by <span class=\"item-number\">234</span> for <span class=\"item-number\">8</span> seconds.<br /><br />You can have a maximum of <span class=\"item-number\">2</span> unique <span style=\"color: #ffffff; display: inline\">Venoms</span> active at a time.",
+        "description": "Activate Weakening Venom for 120 minutes, giving your casts a 35% chance to deal 59 + 12.5% SP Shadow damage and reduce an enemy's attack power by 234 for 8 seconds.\n\nYou can have a maximum of 2 unique Venoms active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805778,
+            "description_html": "Activate <span style=\"color: #ffffff; display: inline\">Weakening Venom</span> for <span class=\"item-number\">120</span> minutes, giving your casts a <span class=\"item-number\">35</span><span class=\"item-number\">%</span> chance to deal <span class=\"item-number\">59</span> + <span class=\"item-number\">12.5% SP</span> Shadow damage and reduce an enemy's attack power by <span class=\"item-number\">234</span> for <span class=\"item-number\">8</span> seconds.<br /><br />You can have a maximum of <span class=\"item-number\">2</span> unique <span style=\"color: #ffffff; display: inline\">Venoms</span> active at a time.",
+            "description": "Activate Weakening Venom for 120 minutes, giving your casts a 35% chance to deal 59 + 12.5% SP Shadow damage and reduce an enemy's attack power by 234 for 8 seconds.\n\nYou can have a maximum of 2 unique Venoms active at a time."
+          }
+        ],
+        "connections": [
+          6117,
+          29588
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_alchemy_dpotion_a23",
+          "key": "trade_alchemy_dpotion_a23",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7252,
+        "name": "Spindlebind",
+        "slug": "spindlebind",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800887,
+        "spell_ids": [
+          800887
+        ],
+        "description_html": "Emit webs at all enemies behind you, rooting them for <span class=\"item-number\">4</span> seconds and inflicting <span class=\"item-number\">61</span> + <span class=\"item-number\">40% nature SP</span> Nature damage.",
+        "description": "Emit webs at all enemies behind you, rooting them for 4 seconds and inflicting 61 + 40% nature SP Nature damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800887,
+            "description_html": "Emit webs at all enemies behind you, rooting them for <span class=\"item-number\">4</span> seconds and inflicting <span class=\"item-number\">61</span> + <span class=\"item-number\">40% nature SP</span> Nature damage.",
+            "description": "Emit webs at all enemies behind you, rooting them for 4 seconds and inflicting 61 + 40% nature SP Nature damage."
+          }
+        ],
+        "connections": [
+          6117,
+          7241
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_poisonweb_Border",
+          "key": "nhi_poisonweb_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7249,
+        "name": "Shadra's Balm",
+        "slug": "shadras-balm",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800901,
+        "spell_ids": [
+          800901
+        ],
+        "description_html": "Envelop an ally with a restorative balm, healing them for <span class=\"item-number\">14</span> + <span class=\"item-number\">25.17% healing</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">21</span> seconds.",
+        "description": "Envelop an ally with a restorative balm, healing them for 14 + 25.17% healing every 3 sec for 21 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800901,
+            "description_html": "Envelop an ally with a restorative balm, healing them for <span class=\"item-number\">14</span> + <span class=\"item-number\">25.17% healing</span> every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">21</span> seconds.",
+            "description": "Envelop an ally with a restorative balm, healing them for 14 + 25.17% healing every 3 sec for 21 seconds."
+          }
+        ],
+        "connections": [
+          6118,
+          7241
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_naturepotion_Border",
+          "key": "nhi_naturepotion_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7237,
+        "name": "Chitinous Spikes",
+        "slug": "chitinous-spikes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504406,
+        "spell_ids": [
+          504406
+        ],
+        "description_html": "Taking direct damage has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to retaliate for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage taken.",
+        "description": "Taking direct damage has a 20% chance to retaliate for 5% of the damage taken.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504406,
+            "description_html": "Taking direct damage has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to retaliate for <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of the damage taken.",
+            "description": "Taking direct damage has a 20% chance to retaliate for 5% of the damage taken."
+          }
+        ],
+        "connections": [
+          6116
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_PoisonSpikes_Border",
+          "key": "custom_t_poisonspikes_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6095,
+        "name": "Versatile and Deadly",
+        "slug": "versatile-and-deadly",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681052,
+        "spell_ids": [
+          681052,
+          681492
+        ],
+        "description_html": "Reduce all damage taken while in <span style=\"color: #ffffff; display: inline\">Beetle Form</span> by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> and increases your movement speed while in <span style=\"color: #ffffff; display: inline\">Spider Form</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Reduce all damage taken while in Beetle Form by -3% and increases your movement speed while in Spider Form by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681052,
+            "description_html": "Reduce all damage taken while in <span style=\"color: #ffffff; display: inline\">Beetle Form</span> by <span class=\"item-number\">-3</span><span class=\"item-number\">%</span> and increases your movement speed while in <span style=\"color: #ffffff; display: inline\">Spider Form</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Reduce all damage taken while in Beetle Form by -3% and increases your movement speed while in Spider Form by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681492,
+            "description_html": "Reduce all damage taken while in <span style=\"color: #ffffff; display: inline\">Beetle Form</span> by <span class=\"item-number\">-6</span><span class=\"item-number\">%</span> and increases your movement speed while in <span style=\"color: #ffffff; display: inline\">Spider Form</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Reduce all damage taken while in Beetle Form by -6% and increases your movement speed while in Spider Form by 10%."
+          }
+        ],
+        "connections": [
+          6116,
+          7252
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_fishing_f_seascorpion3",
+          "key": "inv_fishing_f_seascorpion3",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7248,
+        "name": "Skin Shedder",
+        "slug": "skin-shedder",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705949,
+        "spell_ids": [
+          705949
+        ],
+        "description_html": "Reduces the cost of shapeshift spells by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cost of shapeshift spells by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705949,
+            "description_html": "Reduces the cost of shapeshift spells by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cost of shapeshift spells by -50%."
+          }
+        ],
+        "connections": [
+          7252
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_MoonGlow",
+          "key": "spell_nature_moonglow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7235,
+        "name": "Tome of Ahn'kahet",
+        "slug": "tome-of-ahnkahet",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705993,
+        "spell_ids": [
+          705993
+        ],
+        "description_html": "Damage and effective healing done now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to grant <span style=\"color: #ffffff; display: inline\">Tome of Ahn'kahet</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _book4_purple\" /><span class=\"name\">Tome of Ahn&#39;kahet</span></div><span class=\"desc\">The next spell has its costs reduced by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>.</span></div>",
+        "description": "Damage and effective healing done now has an 8% chance to grant Tome of Ahn'kahet for 15 seconds.Tome of Ahn'kahetThe next spell has its costs reduced by -100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705993,
+            "description_html": "Damage and effective healing done now has an <span class=\"item-number\">8</span><span class=\"item-number\">%</span> chance to grant <span style=\"color: #ffffff; display: inline\">Tome of Ahn'kahet</span> for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 _book4_purple\" /><span class=\"name\">Tome of Ahn&#39;kahet</span></div><span class=\"desc\">The next spell has its costs reduced by <span class=\"item-number\">-100</span><span class=\"item-number\">%</span>.</span></div>",
+            "description": "Damage and effective healing done now has an 8% chance to grant Tome of Ahn'kahet for 15 seconds.Tome of Ahn'kahetThe next spell has its costs reduced by -100%."
+          }
+        ],
+        "connections": [
+          7249,
+          7252
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Book4_Purple",
+          "key": "book4_purple",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6096,
+        "name": "Blightcap Ingestion",
+        "slug": "blightcap-ingestion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560282,
+        "spell_ids": [
+          560282
+        ],
+        "description_html": "Increases your chance to resist poison and disease effects by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your chance to resist poison and disease effects by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560282,
+            "description_html": "Increases your chance to resist poison and disease effects by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to resist poison and disease effects by 30%."
+          }
+        ],
+        "connections": [
+          7249
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_Mushrooms_14",
+          "key": "inv_ascend_mushrooms_14",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6756,
+        "name": "Pinch",
+        "slug": "pinch",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704235,
+        "spell_ids": [
+          704235
+        ],
+        "description_html": "Disarm an enemy's melee weapons with your claws for <span class=\"item-number\">5</span> seconds and apply <span style=\"color: #ffffff; display: inline\">Weakening Venom</span> to them for <span class=\"item-number\">10</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a23\" /><span class=\"name\">Weakening Venom (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">59</span> + <span class=\"item-number\">12.5% SP</span> Shadow Damage and reduces attack power by <span class=\"item-number\">23</span>.</span></div>",
+        "description": "Disarm an enemy's melee weapons with your claws for 5 seconds and apply Weakening Venom to them for 10 sec.Weakening Venom (Proc)Deals 59 + 12.5% SP Shadow Damage and reduces attack power by 23.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704235,
+            "description_html": "Disarm an enemy's melee weapons with your claws for <span class=\"item-number\">5</span> seconds and apply <span style=\"color: #ffffff; display: inline\">Weakening Venom</span> to them for <span class=\"item-number\">10</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a23\" /><span class=\"name\">Weakening Venom (Proc)</span></div><span class=\"desc\">Deals <span class=\"item-number\">59</span> + <span class=\"item-number\">12.5% SP</span> Shadow Damage and reduces attack power by <span class=\"item-number\">23</span>.</span></div>",
+            "description": "Disarm an enemy's melee weapons with your claws for 5 seconds and apply Weakening Venom to them for 10 sec.Weakening Venom (Proc)Deals 59 + 12.5% SP Shadow Damage and reduces attack power by 23."
+          }
+        ],
+        "connections": [
+          6095,
+          7237
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_monsterclaw_10",
+          "key": "inv_misc_monsterclaw_10",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6098,
+        "name": "Fury of Anub'Rekhan",
+        "slug": "fury-of-anubrekhan",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800894,
+        "spell_ids": [
+          800894
+        ],
+        "description_html": "Increases your maximum mana, Energy, and Rage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your maximum mana, Energy, and Rage by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800894,
+            "description_html": "Increases your maximum mana, Energy, and Rage by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum mana, Energy, and Rage by 10%."
+          }
+        ],
+        "connections": [
+          7248
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mechanicalspiderpet",
+          "key": "inv_mechanicalspiderpet",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29576,
+        "name": "Empowering Pheromones",
+        "slug": "empowering-pheromones",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705996,
+        "spell_ids": [
+          705996
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Pheromones</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and their duration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Pheromones by 20% and their duration by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705996,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Pheromones</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and their duration by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Pheromones by 20% and their duration by 50%."
+          }
+        ],
+        "connections": [
+          7248
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_DeadenedNerves",
+          "key": "ability_rogue_deadenednerves",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6086,
+        "name": "Adrenal Venom",
+        "slug": "adrenal-venom",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805775,
+        "spell_ids": [
+          805775
+        ],
+        "description_html": "Activate <span style=\"color: #ffffff; display: inline\">Adrenal Venom</span> for <span class=\"item-number\">120</span> minutes, giving your casts a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.<br /><br />You can have a maximum of <span class=\"item-number\">2</span> unique <span style=\"color: #ffffff; display: inline\">Venoms</span> active at a time.",
+        "description": "Activate Adrenal Venom for 120 minutes, giving your casts a 25% chance to increase your haste by 6% for 6 seconds, stacking 3 times.\n\nYou can have a maximum of 2 unique Venoms active at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805775,
+            "description_html": "Activate <span style=\"color: #ffffff; display: inline\">Adrenal Venom</span> for <span class=\"item-number\">120</span> minutes, giving your casts a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to increase your haste by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.<br /><br />You can have a maximum of <span class=\"item-number\">2</span> unique <span style=\"color: #ffffff; display: inline\">Venoms</span> active at a time.",
+            "description": "Activate Adrenal Venom for 120 minutes, giving your casts a 25% chance to increase your haste by 6% for 6 seconds, stacking 3 times.\n\nYou can have a maximum of 2 unique Venoms active at a time."
+          }
+        ],
+        "connections": [
+          6096,
+          7235
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\trade_alchemy_dpotion_a26",
+          "key": "trade_alchemy_dpotion_a26",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7453,
+        "name": "Runed Carapace",
+        "slug": "runed-carapace",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705961,
+        "spell_ids": [
+          705961
+        ],
+        "description_html": "Whenever you take Magic damage, reduce damage taken by that magic school by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Can only occur once every <span class=\"item-number\">30</span> sec per school of magic.",
+        "description": "Whenever you take Magic damage, reduce damage taken by that magic school by -10% for 10 seconds.\n\nCan only occur once every 30 sec per school of magic.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705961,
+            "description_html": "Whenever you take Magic damage, reduce damage taken by that magic school by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Can only occur once every <span class=\"item-number\">30</span> sec per school of magic.",
+            "description": "Whenever you take Magic damage, reduce damage taken by that magic school by -10% for 10 seconds.\n\nCan only occur once every 30 sec per school of magic."
+          }
+        ],
+        "connections": [
+          6756
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Shield_21",
+          "key": "inv_shield_21",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7147,
+        "name": "Venomancy Expert",
+        "slug": "venomancy-expert",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706027,
+        "spell_ids": [
+          706027
+        ],
+        "description_html": "Reduces the cost of all spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cost of all spells and abilities by -5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706027,
+            "description_html": "Reduces the cost of all spells and abilities by <span class=\"item-number\">-5</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cost of all spells and abilities by -5%."
+          }
+        ],
+        "connections": [
+          6098,
+          6756
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warlock_infernogreen",
+          "key": "ability_warlock_infernogreen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7244,
+        "name": "Mamba Mentality",
+        "slug": "mamba-mentality",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503976,
+        "spell_ids": [
+          503976
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Venom Bolt</span>, <span style=\"color: #ffffff; display: inline\">Hivebreak</span>, or <span style=\"color: #ffffff; display: inline\">Venom Fang</span> now increase your movement speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.",
+        "description": "Critical strikes with Venom Bolt, Hivebreak, or Venom Fang now increase your movement speed by 20% for 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503976,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Venom Bolt</span>, <span style=\"color: #ffffff; display: inline\">Hivebreak</span>, or <span style=\"color: #ffffff; display: inline\">Venom Fang</span> now increase your movement speed by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.",
+            "description": "Critical strikes with Venom Bolt, Hivebreak, or Venom Fang now increase your movement speed by 20% for 3 seconds."
+          }
+        ],
+        "connections": [
+          6098,
+          29576
+        ],
+        "choice_group": 111111,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_giantsnake_green",
+          "key": "inv_giantsnake_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 24,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30465,
+        "name": "Celerity",
+        "slug": "celerity",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804962,
+        "spell_ids": [
+          804962
+        ],
+        "description_html": "Increases your movement speed by <span class=\"item-number\">60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Leaving <span style=\"color: #ffffff; display: inline\">Spider Form</span> will cancel this effect.<br /><br />Usable while <span style=\"color: #ffffff; display: inline\">Skulking</span>.",
+        "description": "Increases your movement speed by 60% for 10 seconds.\n\nLeaving Spider Form will cancel this effect.\n\nUsable while Skulking.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804962,
+            "description_html": "Increases your movement speed by <span class=\"item-number\">60</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Leaving <span style=\"color: #ffffff; display: inline\">Spider Form</span> will cancel this effect.<br /><br />Usable while <span style=\"color: #ffffff; display: inline\">Skulking</span>.",
+            "description": "Increases your movement speed by 60% for 10 seconds.\n\nLeaving Spider Form will cancel this effect.\n\nUsable while Skulking."
+          }
+        ],
+        "connections": [
+          6098,
+          29576
+        ],
+        "choice_group": 111111,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_lifegivingspeed",
+          "key": "spell_lifegivingspeed",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7247,
+        "name": "Master of Venoms",
+        "slug": "master-of-venoms",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504326,
+        "spell_ids": [
+          504326
+        ],
+        "description_html": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Venoms</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the duration of your Venoms by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504326,
+            "description_html": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Venoms</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the duration of your Venoms by 50%."
+          }
+        ],
+        "connections": [
+          6086,
+          29576
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\rogue_venomzest",
+          "key": "rogue_venomzest",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7231,
+        "name": "Venomizer",
+        "slug": "venomizer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680794,
+        "spell_ids": [
+          680794
+        ],
+        "description_html": "Increases the proc chance of all <span style=\"color: #ffffff; display: inline\">Venoms</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the proc chance of all Venoms by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680794,
+            "description_html": "Increases the proc chance of all <span style=\"color: #ffffff; display: inline\">Venoms</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the proc chance of all Venoms by 10%."
+          }
+        ],
+        "connections": [
+          6086
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_venom_spell_06_Border",
+          "key": "uico_venom_spell_06_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5571,
+        "name": "Enduring Exoskeleton",
+        "slug": "enduring-exoskeleton",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503960,
+        "spell_ids": [
+          503960
+        ],
+        "description_html": "Direct damage taken now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">2</span> Rage and <span class=\"item-number\">3</span><span class=\"item-number\">%</span> base mana.<br /><br />Can only occur once per sec.",
+        "description": "Direct damage taken now has a 30% chance to generate 2 Rage and 3% base mana.\n\nCan only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503960,
+            "description_html": "Direct damage taken now has a <span class=\"item-number\">30</span><span class=\"item-number\">%</span> chance to generate <span class=\"item-number\">2</span> Rage and <span class=\"item-number\">3</span><span class=\"item-number\">%</span> base mana.<br /><br />Can only occur once per sec.",
+            "description": "Direct damage taken now has a 30% chance to generate 2 Rage and 3% base mana.\n\nCan only occur once per sec."
+          }
+        ],
+        "connections": [
+          7147,
+          7453
+        ],
+        "choice_group": 33154,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_SkinofEarth",
+          "key": "spell_nature_skinofearth",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7953,
+        "name": "Relentless",
+        "slug": "relentless",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 578320,
+        "spell_ids": [
+          578320
+        ],
+        "description_html": "Increases your Energy and mana regeneration rate by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Energy and mana regeneration rate by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 578320,
+            "description_html": "Increases your Energy and mana regeneration rate by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Energy and mana regeneration rate by 20%."
+          }
+        ],
+        "connections": [
+          7147,
+          7453
+        ],
+        "choice_group": 33154,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_evoker_dreambreath",
+          "key": "ability_evoker_dreambreath",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6079,
+        "name": "Burrow",
+        "slug": "burrow",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806154,
+        "spell_ids": [
+          806154
+        ],
+        "description_html": "Burrow beneath the ground for <span class=\"item-number\">8</span> seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.<br /><br />While burrowed, you can choose a new location within <span class=\"item-number\">30</span> yds to unburrow.",
+        "description": "Burrow beneath the ground for 8 seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.\n\nWhile burrowed, you can choose a new location within 30 yds to unburrow.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806154,
+            "description_html": "Burrow beneath the ground for <span class=\"item-number\">8</span> seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.<br /><br />While burrowed, you can choose a new location within <span class=\"item-number\">30</span> yds to unburrow.",
+            "description": "Burrow beneath the ground for 8 seconds, becoming immune to all physical attacks and spells, but unable to move or act for the duration.\n\nWhile burrowed, you can choose a new location within 30 yds to unburrow."
+          }
+        ],
+        "connections": [
+          7147,
+          7244,
+          7247,
+          30465
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Burrow",
+          "key": "burrow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9590,
+        "name": "Lifeblood",
+        "slug": "lifeblood",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804963,
+        "spell_ids": [
+          804963
+        ],
+        "description_html": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and causing all damage taken to cast <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span>. Lasts for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a21\" /><span class=\"name\">Rejuvenating Venom (Heal)</span></div><span class=\"desc\">Heal a random ally within <span class=\"item-number\">30</span> yds of your target for <span class=\"item-number\">67</span> + <span class=\"item-number\">9.2% healing</span> over <span class=\"item-number\">6</span> seconds.</span></div>",
+        "description": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by -20% and causing all damage taken to cast Rejuvenating Venom. Lasts for 10 seconds.Rejuvenating Venom (Heal)Heal a random ally within 30 yds of your target for 67 + 9.2% healing over 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804963,
+            "description_html": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> and causing all damage taken to cast <span style=\"color: #ffffff; display: inline\">Rejuvenating Venom</span>. Lasts for <span class=\"item-number\">10</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 trade_alchemy_dpotion_a21\" /><span class=\"name\">Rejuvenating Venom (Heal)</span></div><span class=\"desc\">Heal a random ally within <span class=\"item-number\">30</span> yds of your target for <span class=\"item-number\">67</span> + <span class=\"item-number\">9.2% healing</span> over <span class=\"item-number\">6</span> seconds.</span></div>",
+            "description": "Embrace Shadra's lifeblood, reducing your damage taken and pushback from casting spells by -20% and causing all damage taken to cast Rejuvenating Venom. Lasts for 10 seconds.Rejuvenating Venom (Heal)Heal a random ally within 30 yds of your target for 67 + 9.2% healing over 6 seconds."
+          }
+        ],
+        "connections": [
+          7231,
+          7247
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_volatilelife_green",
+          "key": "inv_misc_volatilelife_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6097,
+        "name": "Fury of Shadra",
+        "slug": "fury-of-shadra",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503850,
+        "spell_ids": [
+          503850
+        ],
+        "description_html": "Increases your damage and healing against targets below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your damage and healing against targets below 35% health by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503850,
+            "description_html": "Increases your damage and healing against targets below <span class=\"item-number\">35%</span> health by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your damage and healing against targets below 35% health by 15%."
+          }
+        ],
+        "connections": [
+          5571,
+          6079,
+          7953
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_PoisonCleansingTotem",
+          "key": "spell_nature_poisoncleansingtotem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29574,
+        "name": "Ambush Predator",
+        "slug": "ambush-predator",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800878,
+        "spell_ids": [
+          800878
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Burrow</span> will now apply <span style=\"color: #ffffff; display: inline\">Skulk</span> to you if you are in <span style=\"color: #ffffff; display: inline\">Spider Form</span>.<br /><br />While <span style=\"color: #ffffff; display: inline\">Skulk</span> is active every <span class=\"item-number\">1</span> sec you reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow</span> by <span class=\"item-number\">-1</span> sec.",
+        "description": "Casting Burrow will now apply Skulk to you if you are in Spider Form.\n\nWhile Skulk is active every 1 sec you reduce the cooldown of Burrow by -1 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800878,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Burrow</span> will now apply <span style=\"color: #ffffff; display: inline\">Skulk</span> to you if you are in <span style=\"color: #ffffff; display: inline\">Spider Form</span>.<br /><br />While <span style=\"color: #ffffff; display: inline\">Skulk</span> is active every <span class=\"item-number\">1</span> sec you reduce the cooldown of <span style=\"color: #ffffff; display: inline\">Burrow</span> by <span class=\"item-number\">-1</span> sec.",
+            "description": "Casting Burrow will now apply Skulk to you if you are in Spider Form.\n\nWhile Skulk is active every 1 sec you reduce the cooldown of Burrow by -1 sec."
+          }
+        ],
+        "connections": [
+          6079
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_assassinskill12_Border",
+          "key": "_5_assassinskill12_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6331,
+        "name": "Surprise Strategy",
+        "slug": "surprise-strategy",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706035,
+        "spell_ids": [
+          706035
+        ],
+        "description_html": "Critical strikes now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and make it instant cast for <span class=\"item-number\">10</span> seconds.<br /><br />Can only occur once per <span class=\"item-number\">5</span> sec.",
+        "description": "Critical strikes now have a 15% chance to increase the healing of your next Shadra's Prayer by 20% and make it instant cast for 10 seconds.\n\nCan only occur once per 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706035,
+            "description_html": "Critical strikes now have a <span class=\"item-number\">15</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #ffffff; display: inline\">Shadra's Prayer</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and make it instant cast for <span class=\"item-number\">10</span> seconds.<br /><br />Can only occur once per <span class=\"item-number\">5</span> sec.",
+            "description": "Critical strikes now have a 15% chance to increase the healing of your next Shadra's Prayer by 20% and make it instant cast for 10 seconds.\n\nCan only occur once per 5 sec."
+          }
+        ],
+        "connections": [
+          6079,
+          9590
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_fixated_state_green",
+          "key": "ability_fixated_state_green",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7242,
+        "name": "Shadra's Lair",
+        "slug": "shadras-lair",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804978,
+        "spell_ids": [
+          804978
+        ],
+        "description_html": "Designate the area around you as your <span style=\"color: #FFFFFF; display: inline\">Lair</span> for <span class=\"item-number\">8</span> seconds. <br /><br />Enemies are unable to target into or out of the <span style=\"color: #ffffff; display: inline\">Lair</span> and their movement speed is slowed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span>.",
+        "description": "Designate the area around you as your Lair for 8 seconds.\n\nEnemies are unable to target into or out of the Lair and their movement speed is slowed by -60%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804978,
+            "description_html": "Designate the area around you as your <span style=\"color: #FFFFFF; display: inline\">Lair</span> for <span class=\"item-number\">8</span> seconds. <br /><br />Enemies are unable to target into or out of the <span style=\"color: #ffffff; display: inline\">Lair</span> and their movement speed is slowed by <span class=\"item-number\">-60</span><span class=\"item-number\">%</span>.",
+            "description": "Designate the area around you as your Lair for 8 seconds.\n\nEnemies are unable to target into or out of the Lair and their movement speed is slowed by -60%."
+          }
+        ],
+        "connections": [
+          6097
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_spiderweb_b_01",
+          "key": "inv_ascend_spiderweb_b_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6090,
+        "name": "Avatar of Shadra",
+        "slug": "avatar-of-shadra",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503856,
+        "spell_ids": [
+          503856
+        ],
+        "description_html": "Damage and healing done now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Curse of Shadra</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Dealing damage or healing with <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Claw Strike</span>, or <span style=\"color: #ffffff; display: inline\">Venom Fang</span> on an enemy that is cursed will deal damage or heal them for an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of the value and heal you for <span class=\"item-number\">90</span>.",
+        "description": "Damage and healing done now has a 10% chance to apply Curse of Shadra for 10 seconds.\n\nDealing damage or healing with Serpent's Fang, Claw Strike, or Venom Fang on an enemy that is cursed will deal damage or heal them for an additional 25% of the value and heal you for 90.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503856,
+            "description_html": "Damage and healing done now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to apply <span style=\"color: #ffffff; display: inline\">Curse of Shadra</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Dealing damage or healing with <span style=\"color: #ffffff; display: inline\">Serpent's Fang</span>, <span style=\"color: #ffffff; display: inline\">Claw Strike</span>, or <span style=\"color: #ffffff; display: inline\">Venom Fang</span> on an enemy that is cursed will deal damage or heal them for an additional <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of the value and heal you for <span class=\"item-number\">90</span>.",
+            "description": "Damage and healing done now has a 10% chance to apply Curse of Shadra for 10 seconds.\n\nDealing damage or healing with Serpent's Fang, Claw Strike, or Venom Fang on an enemy that is cursed will deal damage or heal them for an additional 25% of the value and heal you for 90."
+          }
+        ],
+        "connections": [
+          6097,
+          6331,
+          29574
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_monsterspidercarapace_01",
+          "key": "inv_misc_monsterspidercarapace_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6553,
+        "name": "Toxic Stride",
+        "slug": "toxic-stride",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 29,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504347,
+        "spell_ids": [
+          504347
+        ],
+        "description_html": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for <span class=\"item-number\">15</span> seconds.",
+        "description": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504347,
+            "description_html": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for <span class=\"item-number\">15</span> seconds.",
+            "description": "Embrace Shadra's blessing, granting you immunity to all silence and interrupt effects and allowing you to cast your spells while moving for 15 seconds."
+          }
+        ],
+        "connections": [
+          6331
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturepoisonedstep_Border",
+          "key": "nhi_naturepoisonedstep_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

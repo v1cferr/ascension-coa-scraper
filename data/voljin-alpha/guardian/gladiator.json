@@ -1,0 +1,2340 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:20+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:76044ec9d266929a88b1d49c7b81793e0d4719565ba3efc40b332d20d635b6c3",
+    "talent_count": 161,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 18,
+    "name": "Guardian",
+    "slug": "guardian",
+    "class_file": "guardian",
+    "color": "rgb(156, 148, 130)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:guardian",
+      "key": "class-guardian",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 33,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 49,
+    "name": "Gladiator",
+    "slug": "gladiator",
+    "sort_order": 3,
+    "class_id": 18,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31170,
+        "name": "Centurion Strike",
+        "slug": "centurion-strike",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4020
+          ]
+        },
+        "spell_id": 802286,
+        "spell_ids": [
+          802286
+        ],
+        "description_html": "Stab an enemy, dealing <span class=\"item-number\">145</span><span class=\"item-number\">%</span> Weapon Damage plus an additional effect based on your weapon.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Sword:</span> Triggers <span class=\"item-number\">3</span> additional auto attacks.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Axe:</span> Guaranteed to critically strike for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Mace:</span> Ignores <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> of your target's Armor.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Polearm:</span> Stabs the target and enemies behind them an additional time.",
+        "description": "Stab an enemy, dealing 145% Weapon Damage plus an additional effect based on your weapon.\n\nSword: Triggers 3 additional auto attacks.\n\nAxe: Guaranteed to critically strike for 25% increased damage.\n\nMace: Ignores -50% of your target's Armor.\n\nPolearm: Stabs the target and enemies behind them an additional time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802286,
+            "description_html": "Stab an enemy, dealing <span class=\"item-number\">145</span><span class=\"item-number\">%</span> Weapon Damage plus an additional effect based on your weapon.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Sword:</span> Triggers <span class=\"item-number\">3</span> additional auto attacks.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Axe:</span> Guaranteed to critically strike for <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased damage.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Mace:</span> Ignores <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> of your target's Armor.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Polearm:</span> Stabs the target and enemies behind them an additional time.",
+            "description": "Stab an enemy, dealing 145% Weapon Damage plus an additional effect based on your weapon.\n\nSword: Triggers 3 additional auto attacks.\n\nAxe: Guaranteed to critically strike for 25% increased damage.\n\nMace: Ignores -50% of your target's Armor.\n\nPolearm: Stabs the target and enemies behind them an additional time."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Warriorskill_02_Border",
+          "key": "custom_warriorskill_02_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4020,
+        "name": "Glory",
+        "slug": "glory",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 10,
+          "talent_ids": [
+            29430
+          ]
+        },
+        "spell_id": 92106,
+        "spell_ids": [
+          92106
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Ram</span> now grants you a stack of <span style=\"color: #ffffff; display: inline\">Glory</span> for <span class=\"item-number\">30</span> seconds.<br /><br />At <span class=\"item-number\">3</span> stacks, your next <span style=\"color: #ffffff; display: inline\">Ram</span> within <span class=\"item-number\">30</span> seconds deals <span class=\"item-number\">150</span><span class=\"item-number\">%</span> increased damage.",
+        "description": "Level 10 Passive\nYour Ram now grants you a stack of Glory for 30 seconds.\n\nAt 3 stacks, your next Ram within 30 seconds deals 150% increased damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92106,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Ram</span> now grants you a stack of <span style=\"color: #ffffff; display: inline\">Glory</span> for <span class=\"item-number\">30</span> seconds.<br /><br />At <span class=\"item-number\">3</span> stacks, your next <span style=\"color: #ffffff; display: inline\">Ram</span> within <span class=\"item-number\">30</span> seconds deals <span class=\"item-number\">150</span><span class=\"item-number\">%</span> increased damage.",
+            "description": "Level 10 Passive\nYour Ram now grants you a stack of Glory for 30 seconds.\n\nAt 3 stacks, your next Ram within 30 seconds deals 150% increased damage."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_Border",
+          "key": "epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 4410,
+        "name": "Might",
+        "slug": "might",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300538,
+        "spell_ids": [
+          300538,
+          301355
+        ],
+        "description_html": "Increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your attack power by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300538,
+            "description_html": "Increases your attack power by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your attack power by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301355,
+            "description_html": "Increases your attack power by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your attack power by 10%."
+          }
+        ],
+        "connections": [
+          31170
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_crown_c_01_silver",
+          "key": "inv_helm_crown_c_01_silver",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 25,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29426,
+        "name": "Legionnaire",
+        "slug": "legionnaire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504730,
+        "spell_ids": [
+          504730,
+          504883
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Centurion Strike and Reprisal by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504730,
+            "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Centurion Strike and Reprisal by 15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504883,
+            "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Centurion Strike and Reprisal by 30%."
+          }
+        ],
+        "connections": [
+          31170
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_shieldbreak",
+          "key": "ability_warrior_shieldbreak",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30000,
+        "name": "Sword Training",
+        "slug": "sword-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 0.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802297,
+        "spell_ids": [
+          802297,
+          803831,
+          807891
+        ],
+        "description_html": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "While a sword is equipped, your melee haste is increased by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802297,
+            "description_html": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "While a sword is equipped, your melee haste is increased by 10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 803831,
+            "description_html": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "While a sword is equipped, your melee haste is increased by 20%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 807891,
+            "description_html": "While a sword is equipped, your melee haste is increased by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "While a sword is equipped, your melee haste is increased by 30%."
+          }
+        ],
+        "connections": [
+          4410
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Sword_40",
+          "key": "inv_sword_40",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29661,
+        "name": "Supremacy",
+        "slug": "supremacy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504140,
+        "spell_ids": [
+          504140
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now allows the use of and refreshes a charge of <span style=\"color: #ffffff; display: inline\">Reprisal</span>.",
+        "description": "Casting Centurion Strike now allows the use of and refreshes a charge of Reprisal.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504140,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now allows the use of and refreshes a charge of <span style=\"color: #ffffff; display: inline\">Reprisal</span>.",
+            "description": "Casting Centurion Strike now allows the use of and refreshes a charge of Reprisal."
+          }
+        ],
+        "connections": [
+          4410,
+          29426
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_sword_b_07_Border",
+          "key": "custom_sword_b_07_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5433,
+        "name": "Axe Training",
+        "slug": "axe-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 8.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704515,
+        "spell_ids": [
+          704515,
+          707818,
+          712474
+        ],
+        "description_html": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "While an axe is equipped, your critical strike chance is increased by 2% and critical damage increased by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704515,
+            "description_html": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "While an axe is equipped, your critical strike chance is increased by 2% and critical damage increased by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707818,
+            "description_html": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "While an axe is equipped, your critical strike chance is increased by 4% and critical damage increased by 10%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 712474,
+            "description_html": "While an axe is equipped, your critical strike chance is increased by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> and critical damage increased by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "While an axe is equipped, your critical strike chance is increased by 6% and critical damage increased by 15%."
+          }
+        ],
+        "connections": [
+          29426
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Axe_12",
+          "key": "inv_axe_12",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 22,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4220,
+        "name": "Shield Training",
+        "slug": "shield-training",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 524885,
+        "spell_ids": [
+          524885
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your block rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Strength.",
+        "description": "Level 20 Passive\nIncreases your block rating by 20% of your Strength.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524885,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your block rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Strength.",
+            "description": "Level 20 Passive\nIncreases your block rating by 20% of your Strength."
+          }
+        ],
+        "connections": [
+          4020
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Shield_20",
+          "key": "inv_shield_20",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7306,
+        "name": "Polearm Training",
+        "slug": "polearm-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802299,
+        "spell_ids": [
+          802299,
+          803832,
+          807892
+        ],
+        "description_html": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">2</span> yds increased range.",
+        "description": "Allows you to wield polearms and to wield them with a shield equipped.\n\nWhile a polearm is equipped, your melee abilities have 2 yds increased range.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802299,
+            "description_html": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">2</span> yds increased range.",
+            "description": "Allows you to wield polearms and to wield them with a shield equipped.\n\nWhile a polearm is equipped, your melee abilities have 2 yds increased range."
+          },
+          {
+            "rank": 2,
+            "spell_id": 803832,
+            "description_html": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">3</span> yds increased range.",
+            "description": "Allows you to wield polearms and to wield them with a shield equipped.\n\nWhile a polearm is equipped, your melee abilities have 3 yds increased range."
+          },
+          {
+            "rank": 3,
+            "spell_id": 807892,
+            "description_html": "Allows you to wield polearms and to wield them with a shield equipped.<br /><br />While a polearm is equipped, your melee abilities have <span class=\"item-number\">5</span> yds increased range.",
+            "description": "Allows you to wield polearms and to wield them with a shield equipped.\n\nWhile a polearm is equipped, your melee abilities have 5 yds increased range."
+          }
+        ],
+        "connections": [
+          4410
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "interface\\icons\\GladiatorSpearGuy",
+          "key": "gladiatorspearguy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34458,
+        "name": "Upper Hand",
+        "slug": "upper-hand",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 3.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802295,
+        "spell_ids": [
+          802295
+        ],
+        "description_html": "Your melee auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times.",
+        "description": "Your melee auto attacks now have a 20% chance to strike 2 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802295,
+            "description_html": "Your melee auto attacks now have a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to strike <span class=\"item-number\">2</span> additional times.",
+            "description": "Your melee auto attacks now have a 20% chance to strike 2 additional times."
+          }
+        ],
+        "connections": [
+          29661
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Relics_TotemofRage",
+          "key": "inv_relics_totemofrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5349,
+        "name": "Built Different",
+        "slug": "built-different",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 5.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300545,
+        "spell_ids": [
+          300545
+        ],
+        "description_html": "Increases your Strength and Stamina by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Strength and Stamina by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300545,
+            "description_html": "Increases your Strength and Stamina by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Strength and Stamina by 4%."
+          }
+        ],
+        "connections": [
+          29661
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_engineerskill39_Border",
+          "key": "_5_engineerskill39_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34455,
+        "name": "Mace Training",
+        "slug": "mace-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705336,
+        "spell_ids": [
+          705336,
+          707819,
+          712475
+        ],
+        "description_html": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+        "description": "While a mace is equipped, your armor penetration is increased by 8%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705336,
+            "description_html": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "While a mace is equipped, your armor penetration is increased by 8%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707819,
+            "description_html": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">16</span><span class=\"item-number\">%</span>.",
+            "description": "While a mace is equipped, your armor penetration is increased by 16%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 712475,
+            "description_html": "While a mace is equipped, your armor penetration is increased by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "While a mace is equipped, your armor penetration is increased by 25%."
+          }
+        ],
+        "connections": [
+          29426
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_05",
+          "key": "inv_mace_05",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34410,
+        "name": "Double Duty",
+        "slug": "double-duty",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504184,
+        "spell_ids": [
+          504184
+        ],
+        "description_html": "Increases your hit chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">4</span>.",
+        "description": "Increases your hit chance by 5% and expertise by 4.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504184,
+            "description_html": "Increases your hit chance by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> and expertise by <span class=\"item-number\">4</span>.",
+            "description": "Increases your hit chance by 5% and expertise by 4."
+          }
+        ],
+        "connections": [
+          34458
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_1h_artifactskywall_d_06dual",
+          "key": "inv_sword_1h_artifactskywall_d_06dual",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7038,
+        "name": "Champion",
+        "slug": "champion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300972,
+        "spell_ids": [
+          300972
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Raise Shield</span> on you by <span class=\"item-number\">3</span> sec.",
+        "description": "Your Centurion Strike now extends the duration of Raise Shield on you by 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300972,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now extends the duration of <span style=\"color: #ffffff; display: inline\">Raise Shield</span> on you by <span class=\"item-number\">3</span> sec.",
+            "description": "Your Centurion Strike now extends the duration of Raise Shield on you by 3 sec."
+          }
+        ],
+        "connections": [
+          5349,
+          34458
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_ImprovedDisciplines",
+          "key": "ability_warrior_improveddisciplines",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6433,
+        "name": "Crashing Force",
+        "slug": "crashing-force",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705329,
+        "spell_ids": [
+          705329,
+          707820
+        ],
+        "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of your Centurion Strike and Reprisal by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705329,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Centurion Strike and Reprisal by 20%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707820,
+            "description_html": "Increases the damage of your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Reprisal</span> by <span class=\"item-number\">40</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of your Centurion Strike and Reprisal by 40%."
+          }
+        ],
+        "connections": [
+          5349
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_124",
+          "key": "inv_mace_124",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12224,
+        "name": "Experienced Combatant",
+        "slug": "experienced-combatant",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 707633,
+        "spell_ids": [
+          707633
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your attack power by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your Strength.",
+        "description": "Level 30 Passive\nIncreases your attack power by 40% of your Strength.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707633,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Increases your attack power by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> of your Strength.",
+            "description": "Level 30 Passive\nIncreases your attack power by 40% of your Strength."
+          }
+        ],
+        "connections": [
+          4220
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\5_assassinskill06_Border",
+          "key": "_5_assassinskill06_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7307,
+        "name": "Spear Throw",
+        "slug": "spear-throw",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500463,
+        "spell_ids": [
+          500463
+        ],
+        "description_html": "Throw a massive spear at an enemy, dealing <span class=\"item-number\">86</span> + <span class=\"item-number\">66.5% AP</span> Physical damage, reducing the effectiveness of any healing by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+        "description": "Throw a massive spear at an enemy, dealing 86 + 66.5% AP Physical damage, reducing the effectiveness of any healing by -50% for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500463,
+            "description_html": "Throw a massive spear at an enemy, dealing <span class=\"item-number\">86</span> + <span class=\"item-number\">66.5% AP</span> Physical damage, reducing the effectiveness of any healing by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.",
+            "description": "Throw a massive spear at an enemy, dealing 86 + 66.5% AP Physical damage, reducing the effectiveness of any healing by -50% for 10 seconds."
+          }
+        ],
+        "connections": [
+          34410
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3ancientspear",
+          "key": "d3ancientspear",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 17,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6431,
+        "name": "Tactical Combat",
+        "slug": "tactical-combat",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504503,
+        "spell_ids": [
+          504503,
+          504884
+        ],
+        "description_html": "Increases your block value by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and chance to block by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your block value by 10% and chance to block by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504503,
+            "description_html": "Increases your block value by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and chance to block by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your block value by 10% and chance to block by 2%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 504884,
+            "description_html": "Increases your block value by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> and chance to block by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your block value by 20% and chance to block by 4%."
+          }
+        ],
+        "connections": [
+          7038,
+          34410
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",
+          "key": "achievement_bg_killxenemies_generalsroom",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34450,
+        "name": "Heroic Effort",
+        "slug": "heroic-effort",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301057,
+        "spell_ids": [
+          301057
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now grants <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Glory</span>.",
+        "description": "Casting Centurion Strike now grants 1 stack of Glory.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301057,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> now grants <span class=\"item-number\">1</span> stack of <span style=\"color: #ffffff; display: inline\">Glory</span>.",
+            "description": "Casting Centurion Strike now grants 1 stack of Glory."
+          }
+        ],
+        "connections": [
+          6433,
+          7038
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES_A_HERO",
+          "key": "achievement_guildperk_everyones_a_hero",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30003,
+        "name": "No Escape",
+        "slug": "no-escape",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802300,
+        "spell_ids": [
+          802300
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Ram</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Battle Rush</span> by <span class=\"item-number\">-10</span> sec when used against a rooted enemy.",
+        "description": "Ram now reduces the cooldown of your Battle Rush by -10 sec when used against a rooted enemy.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802300,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Ram</span> now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Battle Rush</span> by <span class=\"item-number\">-10</span> sec when used against a rooted enemy.",
+            "description": "Ram now reduces the cooldown of your Battle Rush by -10 sec when used against a rooted enemy."
+          }
+        ],
+        "connections": [
+          6433
+        ],
+        "choice_group": 966669,
+        "icon": {
+          "source_path": "Interface\\icons\\novart_physical_ability_(46)_Border",
+          "key": "novart_physical_ability__46__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34453,
+        "name": "Bulwark Rush",
+        "slug": "bulwark-rush",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300536,
+        "spell_ids": [
+          300536
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Battle Rush</span> increases your block rating by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of Strength for <span class=\"item-number\">6</span> seconds.",
+        "description": "Casting Battle Rush increases your block rating by 25% of Strength for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300536,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Battle Rush</span> increases your block rating by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of Strength for <span class=\"item-number\">6</span> seconds.",
+            "description": "Casting Battle Rush increases your block rating by 25% of Strength for 6 seconds."
+          }
+        ],
+        "connections": [
+          6433
+        ],
+        "choice_group": 966669,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_criticalblock",
+          "key": "ability_warrior_criticalblock",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6434,
+        "name": "No Retreating!",
+        "slug": "no-retreating",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504139,
+        "spell_ids": [
+          504139
+        ],
+        "description_html": "While in combat, every <span class=\"item-number\">2</span> sec, increase the range and Energy cost of your next <span style=\"color: #ffffff; display: inline\">Spear Throw</span> by <span class=\"item-number\">1</span> and its damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">15</span> times.",
+        "description": "While in combat, every 2 sec, increase the range and Energy cost of your next Spear Throw by 1 and its damage dealt by 3%, stacking up to 15 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504139,
+            "description_html": "While in combat, every <span class=\"item-number\">2</span> sec, increase the range and Energy cost of your next <span style=\"color: #ffffff; display: inline\">Spear Throw</span> by <span class=\"item-number\">1</span> and its damage dealt by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>, stacking up to <span class=\"item-number\">15</span> times.",
+            "description": "While in combat, every 2 sec, increase the range and Energy cost of your next Spear Throw by 1 and its damage dealt by 3%, stacking up to 15 times."
+          }
+        ],
+        "connections": [
+          7307
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_iron_hl_b_Border",
+          "key": "custom_iron_hl_b_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6430,
+        "name": "Waste No Movement",
+        "slug": "waste-no-movement",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704516,
+        "spell_ids": [
+          704516
+        ],
+        "description_html": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Broad Sweep</span>, <span style=\"color: #FFFFFF; display: inline\">Spear Throw</span>, and <span style=\"color: #FFFFFF; display: inline\">Centurion Strike</span> by <span class=\"item-number\">-5</span>.",
+        "description": "Reduces the Energy cost of Broad Sweep, Spear Throw, and Centurion Strike by -5.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704516,
+            "description_html": "Reduces the Energy cost of <span style=\"color: #ffffff; display: inline\">Broad Sweep</span>, <span style=\"color: #FFFFFF; display: inline\">Spear Throw</span>, and <span style=\"color: #FFFFFF; display: inline\">Centurion Strike</span> by <span class=\"item-number\">-5</span>.",
+            "description": "Reduces the Energy cost of Broad Sweep, Spear Throw, and Centurion Strike by -5."
+          }
+        ],
+        "connections": [
+          6431,
+          7307
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_sword_35",
+          "key": "inv_sword_35",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 33,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4123,
+        "name": "Overwhelming Presence",
+        "slug": "overwhelming-presence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 712367,
+        "spell_ids": [
+          712367
+        ],
+        "description_html": "Increases the attack power of all party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.\n\nIn addition, increases your Agility by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 712367,
+            "description_html": "Increases the attack power of all party and raid members <span class=\"item-number\">5</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your Agility by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the attack power of all party and raid members 5%. Does not stack with similar effects.\n\nIn addition, increases your Agility by 10%."
+          }
+        ],
+        "connections": [
+          6431,
+          34450
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\novart_shield_(8)_Border",
+          "key": "novart_shield__8__border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 42,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6989,
+        "name": "Momentum",
+        "slug": "momentum",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504531,
+        "spell_ids": [
+          504531
+        ],
+        "description_html": "Melee damage dealt now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Chivalry</span> by <span class=\"item-number\">-2</span> sec.",
+        "description": "Melee damage dealt now reduces the cooldown of your Chivalry by -2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504531,
+            "description_html": "Melee damage dealt now reduces the cooldown of your <span style=\"color: #ffffff; display: inline\">Chivalry</span> by <span class=\"item-number\">-2</span> sec.",
+            "description": "Melee damage dealt now reduces the cooldown of your Chivalry by -2 sec."
+          }
+        ],
+        "connections": [
+          30003,
+          34450,
+          34453
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_ShieldBash",
+          "key": "ability_warrior_shieldbash",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6990,
+        "name": "Myrmidon",
+        "slug": "myrmidon",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504530,
+        "spell_ids": [
+          504530
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Ram</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Ram and Broad Sweep by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504530,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Ram</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Ram and Broad Sweep by 25%."
+          }
+        ],
+        "connections": [
+          30003,
+          34453
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_Border",
+          "key": "epic_rpg_icon_pack_brutal_icon_0007s_0000_warrior_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4224,
+        "name": "Shield Combat",
+        "slug": "shield-combat",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 807297,
+        "spell_ids": [
+          807297
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Ram</span> and <span style=\"color: #ffffff; display: inline\">Pulverize</span> now increases your attack power based on your block rating for <span class=\"item-number\">6</span> seconds.",
+        "description": "Level 40 Passive\nCasting Ram and Pulverize now increases your attack power based on your block rating for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807297,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Casting <span style=\"color: #ffffff; display: inline\">Ram</span> and <span style=\"color: #ffffff; display: inline\">Pulverize</span> now increases your attack power based on your block rating for <span class=\"item-number\">6</span> seconds.",
+            "description": "Level 40 Passive\nCasting Ram and Pulverize now increases your attack power based on your block rating for 6 seconds."
+          }
+        ],
+        "connections": [
+          12224
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_VictoryRush",
+          "key": "ability_warrior_victoryrush",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 4654,
+        "name": "Pinned Down!",
+        "slug": "pinned-down",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301252,
+        "spell_ids": [
+          301252
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Spear Throw</span> now refreshes the duration of <span style=\"color: #ffffff; display: inline\">Net Throw</span> on your target.",
+        "description": "Damage dealt by Spear Throw now refreshes the duration of Net Throw on your target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301252,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Spear Throw</span> now refreshes the duration of <span style=\"color: #ffffff; display: inline\">Net Throw</span> on your target.",
+            "description": "Damage dealt by Spear Throw now refreshes the duration of Net Throw on your target."
+          }
+        ],
+        "connections": [
+          6430,
+          6434
+        ],
+        "choice_group": 235221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Challange",
+          "key": "ability_warrior_challange",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31354,
+        "name": "Clinch Brawler",
+        "slug": "clinch-brawler",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707310,
+        "spell_ids": [
+          707310
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Centurion Strike</span> is now guaranteed to critically strike against enemies affected by <span style=\"color: #ffffff; display: inline\">Net Throw</span>.",
+        "description": "Centurion Strike is now guaranteed to critically strike against enemies affected by Net Throw.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707310,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Centurion Strike</span> is now guaranteed to critically strike against enemies affected by <span style=\"color: #ffffff; display: inline\">Net Throw</span>.",
+            "description": "Centurion Strike is now guaranteed to critically strike against enemies affected by Net Throw."
+          }
+        ],
+        "connections": [
+          6430,
+          6434
+        ],
+        "choice_group": 235221,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_net_Border",
+          "key": "custom_net_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6547,
+        "name": "Deadly Blow",
+        "slug": "deadly-blow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706807,
+        "spell_ids": [
+          706807
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> now bleed an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt over <span class=\"item-number\">2</span> seconds.",
+        "description": "Your Centurion Strike and Broad Sweep now bleed an additional 20% of the damage dealt over 2 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706807,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Centurion Strike</span> and <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> now bleed an additional <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the damage dealt over <span class=\"item-number\">2</span> seconds.",
+            "description": "Your Centurion Strike and Broad Sweep now bleed an additional 20% of the damage dealt over 2 seconds."
+          }
+        ],
+        "connections": [
+          4123,
+          6430,
+          6989
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_mace_2h_draenorcrafted_d_01_b_alliance",
+          "key": "inv_mace_2h_draenorcrafted_d_01_b_alliance",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29998,
+        "name": "Retiarius",
+        "slug": "retiarius",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705338,
+        "spell_ids": [
+          705338
+        ],
+        "description_html": "Increases your maximum Energy by <span class=\"item-number\">25</span>.",
+        "description": "Increases your maximum Energy by 25.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705338,
+            "description_html": "Increases your maximum Energy by <span class=\"item-number\">25</span>.",
+            "description": "Increases your maximum Energy by 25."
+          }
+        ],
+        "connections": [
+          6989,
+          6990
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_Warbringer",
+          "key": "ability_warrior_warbringer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30528,
+        "name": "Close Combat",
+        "slug": "close-combat",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704514,
+        "spell_ids": [
+          704514
+        ],
+        "description_html": "Removes the shared cooldown of your <span style=\"color: #FFFFFF; display: inline\">Standards</span> and reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Guard</span> by <span class=\"item-number\">-10</span> sec.",
+        "description": "Removes the shared cooldown of your Standards and reduces the cooldown of Guard by -10 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704514,
+            "description_html": "Removes the shared cooldown of your <span style=\"color: #FFFFFF; display: inline\">Standards</span> and reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Guard</span> by <span class=\"item-number\">-10</span> sec.",
+            "description": "Removes the shared cooldown of your Standards and reduces the cooldown of Guard by -10 sec."
+          }
+        ],
+        "connections": [
+          4654,
+          6547,
+          31354
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_D3groundstomp",
+          "key": "d3groundstomp",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31352,
+        "name": "Heroism",
+        "slug": "heroism",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705323,
+        "spell_ids": [
+          705323
+        ],
+        "description_html": "Whenever you reach <span class=\"item-number\">3</span> stacks of <span style=\"color: #FFFFFF; display: inline\">Glory</span> or <span class=\"item-number\">20</span> stacks of <span style=\"color: #FFFFFF; display: inline\">Favor</span>, your next <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Pulverizes</span> or <span style=\"color: #FFFFFF; display: inline\">Broad Sweeps</span> within <span class=\"item-number\">10</span> seconds are free of cost.",
+        "description": "Whenever you reach 3 stacks of Glory or 20 stacks of Favor, your next 2 Pulverizes or Broad Sweeps within 10 seconds are free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705323,
+            "description_html": "Whenever you reach <span class=\"item-number\">3</span> stacks of <span style=\"color: #FFFFFF; display: inline\">Glory</span> or <span class=\"item-number\">20</span> stacks of <span style=\"color: #FFFFFF; display: inline\">Favor</span>, your next <span class=\"item-number\">2</span> <span style=\"color: #FFFFFF; display: inline\">Pulverizes</span> or <span style=\"color: #FFFFFF; display: inline\">Broad Sweeps</span> within <span class=\"item-number\">10</span> seconds are free of cost.",
+            "description": "Whenever you reach 3 stacks of Glory or 20 stacks of Favor, your next 2 Pulverizes or Broad Sweeps within 10 seconds are free of cost."
+          }
+        ],
+        "connections": [
+          6547
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_Avatar",
+          "key": "ability_racial_avatar",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6429,
+        "name": "One-Handed Mastery",
+        "slug": "one-handed-mastery",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300541,
+        "spell_ids": [
+          300541
+        ],
+        "description_html": "Increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> while a one-handed weapon is equipped.",
+        "description": "Increases your damage dealt by 10% while a one-handed weapon is equipped.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300541,
+            "description_html": "Increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> while a one-handed weapon is equipped.",
+            "description": "Increases your damage dealt by 10% while a one-handed weapon is equipped."
+          }
+        ],
+        "connections": [
+          6547,
+          29998
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_unrelentingassault",
+          "key": "ability_warrior_unrelentingassault",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4225,
+        "name": "Favor",
+        "slug": "favor",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 704322,
+        "spell_ids": [
+          704322
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Critical strikes and killing blows now grant you <span style=\"color: #ffffff; display: inline\">Favor</span> for <span class=\"item-number\">1</span> minute, stacking <span class=\"item-number\">20</span> times.<br /><br />At <span class=\"item-number\">20</span> stacks, your next auto attack deals an additional <span class=\"item-number\">500%</span> Weapon Damage, consuming the stacks.",
+        "description": "Level 50 Passive\nCritical strikes and killing blows now grant you Favor for 1 minute, stacking 20 times.\n\nAt 20 stacks, your next auto attack deals an additional 500% Weapon Damage, consuming the stacks.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704322,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Critical strikes and killing blows now grant you <span style=\"color: #ffffff; display: inline\">Favor</span> for <span class=\"item-number\">1</span> minute, stacking <span class=\"item-number\">20</span> times.<br /><br />At <span class=\"item-number\">20</span> stacks, your next auto attack deals an additional <span class=\"item-number\">500%</span> Weapon Damage, consuming the stacks.",
+            "description": "Level 50 Passive\nCritical strikes and killing blows now grant you Favor for 1 minute, stacking 20 times.\n\nAt 20 stacks, your next auto attack deals an additional 500% Weapon Damage, consuming the stacks."
+          }
+        ],
+        "connections": [
+          12224
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warrior_talent_icon_angermanagement",
+          "key": "warrior_talent_icon_angermanagement",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 31285,
+        "name": "Calculated Strike",
+        "slug": "calculated-strike",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705341,
+        "spell_ids": [
+          705341
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Reprisal</span>, <span style=\"color: #ffffff; display: inline\">Broad Sweep</span>, and <span style=\"color: #ffffff; display: inline\">Spear Throw</span> now deal an additional <span class=\"item-number\">2%</span> Weapon Damage for each Energy point you have upon casting it.",
+        "description": "Your Reprisal, Broad Sweep, and Spear Throw now deal an additional 2% Weapon Damage for each Energy point you have upon casting it.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705341,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Reprisal</span>, <span style=\"color: #ffffff; display: inline\">Broad Sweep</span>, and <span style=\"color: #ffffff; display: inline\">Spear Throw</span> now deal an additional <span class=\"item-number\">2%</span> Weapon Damage for each Energy point you have upon casting it.",
+            "description": "Your Reprisal, Broad Sweep, and Spear Throw now deal an additional 2% Weapon Damage for each Energy point you have upon casting it."
+          }
+        ],
+        "connections": [
+          30528,
+          31352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_raregarrisonquests_x",
+          "key": "achievement_raregarrisonquests_x",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30019,
+        "name": "Final Verdict",
+        "slug": "final-verdict",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500258,
+        "spell_ids": [
+          500258
+        ],
+        "description_html": "Give the final verdict to your target, dealing <span class=\"item-number\">1195</span> + <span class=\"item-number\">100% AP</span> Physical damage and healing you for <span class=\"item-number\">15%</span> of your maximum health.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health. Killing blows reset the cooldown of this ability.",
+        "description": "Give the final verdict to your target, dealing 1195 + 100% AP Physical damage and healing you for 15% of your maximum health.\n\nOnly usable on enemies below 35% health. Killing blows reset the cooldown of this ability.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500258,
+            "description_html": "Give the final verdict to your target, dealing <span class=\"item-number\">1195</span> + <span class=\"item-number\">100% AP</span> Physical damage and healing you for <span class=\"item-number\">15%</span> of your maximum health.<br /><br />Only usable on enemies below <span class=\"item-number\">35%</span> health. Killing blows reset the cooldown of this ability.",
+            "description": "Give the final verdict to your target, dealing 1195 + 100% AP Physical damage and healing you for 15% of your maximum health.\n\nOnly usable on enemies below 35% health. Killing blows reset the cooldown of this ability."
+          }
+        ],
+        "connections": [
+          31352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_Border",
+          "key": "epic_rpg_icon_pack_brutal_icon_0001s_0000_warrior_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29999,
+        "name": "Earthsplitter",
+        "slug": "earthsplitter",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 18,
+        "tree_id": 49,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805155,
+        "spell_ids": [
+          805155
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> now increases the amount of enemies struck by your next <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">1</span> and reduces its Energy cost by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+        "description": "Casting Broad Sweep now increases the amount of enemies struck by your next Broad Sweep by 1 and reduces its Energy cost by -10% for 6 seconds, stacking 3 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805155,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> now increases the amount of enemies struck by your next <span style=\"color: #ffffff; display: inline\">Broad Sweep</span> by <span class=\"item-number\">1</span> and reduces its Energy cost by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">6</span> seconds, stacking <span class=\"item-number\">3</span> times.",
+            "description": "Casting Broad Sweep now increases the amount of enemies struck by your next Broad Sweep by 1 and reduces its Energy cost by -10% for 6 seconds, stacking 3 times."
+          }
+        ],
+        "connections": [
+          6429,
+          31352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_kilruk_reave",
+          "key": "ability_kilruk_reave",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

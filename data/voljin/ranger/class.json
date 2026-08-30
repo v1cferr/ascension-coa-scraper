@@ -1,0 +1,2352 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:23+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:12a7383d298816b9cf90f184b77715be8a246d4ae3c3b7e35554cb63f498aa9e",
+    "talent_count": 165,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 21,
+    "name": "Ranger",
+    "slug": "ranger",
+    "class_file": "ranger",
+    "color": "rgb(191, 240, 107)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:ranger",
+      "key": "class-ranger",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 38,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 87,
+    "name": "Class",
+    "slug": "class",
+    "sort_order": 0,
+    "class_id": 21,
+    "is_shared": true,
+    "talents": [
+      {
+        "id": 29144,
+        "name": "Crippling Shot",
+        "slug": "crippling-shot",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804725,
+        "spell_ids": [
+          804725
+        ],
+        "description_html": "Fire a crippling shot at an enemy slowing movement speed by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> and knocking them off their mounts, making them unable to mount again for <span class=\"item-number\">5</span> seconds.",
+        "description": "Fire a crippling shot at an enemy slowing movement speed by -50% and knocking them off their mounts, making them unable to mount again for 5 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804725,
+            "description_html": "Fire a crippling shot at an enemy slowing movement speed by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span> and knocking them off their mounts, making them unable to mount again for <span class=\"item-number\">5</span> seconds.",
+            "description": "Fire a crippling shot at an enemy slowing movement speed by -50% and knocking them off their mounts, making them unable to mount again for 5 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Custom_dismounting_Shot",
+          "key": "custom_dismounting_shot",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 30352,
+        "name": "Survival Potion",
+        "slug": "survival-potion",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802839,
+        "spell_ids": [
+          802839
+        ],
+        "description_html": "Drink a survival potion, dispelling all poison and disease effects and removing <span class=\"item-number\">1</span> poison and disease effect every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">9</span> seconds.<br />",
+        "description": "Drink a survival potion, dispelling all poison and disease effects and removing 1 poison and disease effect every 3 sec for 9 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802839,
+            "description_html": "Drink a survival potion, dispelling all poison and disease effects and removing <span class=\"item-number\">1</span> poison and disease effect every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">9</span> seconds.<br />",
+            "description": "Drink a survival potion, dispelling all poison and disease effects and removing 1 poison and disease effect every 3 sec for 9 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturecocktail_Border",
+          "key": "nhi_naturecocktail_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29337,
+        "name": "Knockout",
+        "slug": "knockout",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801435,
+        "spell_ids": [
+          801435
+        ],
+        "description_html": "Knock an enemy out, incapacitating them for <span class=\"item-number\">4</span> seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+        "description": "Knock an enemy out, incapacitating them for 4 seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.\n\nUsable while in Elude.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801435,
+            "description_html": "Knock an enemy out, incapacitating them for <span class=\"item-number\">4</span> seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.<br /><br />Usable while in <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+            "description": "Knock an enemy out, incapacitating them for 4 seconds and removing bleed and poison effects from them. Damage caused will interrupt this effect.\n\nUsable while in Elude."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_blackoutkick",
+          "key": "ability_monk_blackoutkick",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30351,
+        "name": "Improved Waterskins",
+        "slug": "improved-waterskins",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 573057,
+        "spell_ids": [
+          573057
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Waterskins</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Waterskins by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 573057,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Waterskins</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Waterskins by 25%."
+          }
+        ],
+        "connections": [
+          29144,
+          30352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_drink_waterskin_03",
+          "key": "inv_drink_waterskin_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 46,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7258,
+        "name": "Survival Kit",
+        "slug": "survival-kit",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504329,
+        "spell_ids": [
+          504329
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Survival Potion</span> now also heals you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your maximum health with each tick.",
+        "description": "Your Survival Potion now also heals you for 10% of your maximum health with each tick.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504329,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Survival Potion</span> now also heals you for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your maximum health with each tick.",
+            "description": "Your Survival Potion now also heals you for 10% of your maximum health with each tick."
+          }
+        ],
+        "connections": [
+          30352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Ascend_bag_06_b",
+          "key": "inv_ascend_bag_06_b",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6670,
+        "name": "Elusive Character",
+        "slug": "elusive-character",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560340,
+        "spell_ids": [
+          560340
+        ],
+        "description_html": "Increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds after leaving <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+        "description": "Increases your damage dealt by 10% for 12 seconds after leaving Elude.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560340,
+            "description_html": "Increases your damage dealt by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds after leaving <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+            "description": "Increases your damage dealt by 10% for 12 seconds after leaving Elude."
+          }
+        ],
+        "connections": [
+          29337,
+          30352
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_16_shadow_swords_Border",
+          "key": "custom_16_shadow_swords_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34169,
+        "name": "Snapseed",
+        "slug": "snapseed",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804027,
+        "spell_ids": [
+          804027
+        ],
+        "description_html": "Toss a snapseed at an enemy, dealing <span class=\"item-number\">27</span> + <span class=\"item-number\">30% ranged AP</span> Physical damage and knocking them back.",
+        "description": "Toss a snapseed at an enemy, dealing 27 + 30% ranged AP Physical damage and knocking them back.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804027,
+            "description_html": "Toss a snapseed at an enemy, dealing <span class=\"item-number\">27</span> + <span class=\"item-number\">30% ranged AP</span> Physical damage and knocking them back.",
+            "description": "Toss a snapseed at an enemy, dealing 27 + 30% ranged AP Physical damage and knocking them back."
+          }
+        ],
+        "connections": [
+          30351
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\twisted_seed",
+          "key": "twisted_seed",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29416,
+        "name": "Grace",
+        "slug": "grace",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705092,
+        "spell_ids": [
+          705092,
+          707848,
+          712477
+        ],
+        "description_html": "Increases your Agility and movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Agility and movement speed by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705092,
+            "description_html": "Increases your Agility and movement speed by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility and movement speed by 4%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707848,
+            "description_html": "Increases your Agility and movement speed by <span class=\"item-number\">7</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility and movement speed by 7%."
+          },
+          {
+            "rank": 3,
+            "spell_id": 712477,
+            "description_html": "Increases your Agility and movement speed by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Agility and movement speed by 10%."
+          }
+        ],
+        "connections": [
+          6670,
+          7258,
+          30351
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill10_Border",
+          "key": "_5_archerskill10_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34172,
+        "name": "Cutthroat",
+        "slug": "cutthroat",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800359,
+        "spell_ids": [
+          800359
+        ],
+        "description_html": "Shoot a powerful arrow that deals Weapon Damage plus <span class=\"item-number\">40</span> and stuns the target for <span class=\"item-number\">1</span> seconds. <br /><br />Duration increased by <span class=\"item-number\">1</span> sec per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+        "description": "Shoot a powerful arrow that deals Weapon Damage plus 40 and stuns the target for 1 seconds.\n\nDuration increased by 1 sec per stack of Advantage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800359,
+            "description_html": "Shoot a powerful arrow that deals Weapon Damage plus <span class=\"item-number\">40</span> and stuns the target for <span class=\"item-number\">1</span> seconds. <br /><br />Duration increased by <span class=\"item-number\">1</span> sec per stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span>.",
+            "description": "Shoot a powerful arrow that deals Weapon Damage plus 40 and stuns the target for 1 seconds.\n\nDuration increased by 1 sec per stack of Advantage."
+          }
+        ],
+        "connections": [
+          6670
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_Archerskill_04_nobg_Border",
+          "key": "custom_archerskill_04_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34171,
+        "name": "Resourceful",
+        "slug": "resourceful",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504008,
+        "spell_ids": [
+          504008
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> and <span style=\"color: #ffffff; display: inline\">Snapseed</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of Crippling Shot and Snapseed by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504008,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Crippling Shot</span> and <span style=\"color: #ffffff; display: inline\">Snapseed</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of Crippling Shot and Snapseed by -20%."
+          }
+        ],
+        "connections": [
+          34169
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_HealingTouch",
+          "key": "spell_nature_healingtouch",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29331,
+        "name": "Briar Veil",
+        "slug": "briar-veil",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800084,
+        "spell_ids": [
+          800084
+        ],
+        "description_html": "Thorns and leaves swirl around you, masking your movements for <span class=\"item-number\">10</span> seconds, increasing your dodge chance by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and causing dodging attacks to restore <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum health and <span class=\"item-number\">5</span> Focus.",
+        "description": "Thorns and leaves swirl around you, masking your movements for 10 seconds, increasing your dodge chance by 50% and causing dodging attacks to restore 2% maximum health and 5 Focus.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800084,
+            "description_html": "Thorns and leaves swirl around you, masking your movements for <span class=\"item-number\">10</span> seconds, increasing your dodge chance by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and causing dodging attacks to restore <span class=\"item-number\">2</span><span class=\"item-number\">%</span> maximum health and <span class=\"item-number\">5</span> Focus.",
+            "description": "Thorns and leaves swirl around you, masking your movements for 10 seconds, increasing your dodge chance by 50% and causing dodging attacks to restore 2% maximum health and 5 Focus."
+          }
+        ],
+        "connections": [
+          29416,
+          34169,
+          34172
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureempower_Border",
+          "key": "nhi_natureempower_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34159,
+        "name": "Deft Hands",
+        "slug": "deft-hands",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707417,
+        "spell_ids": [
+          707417
+        ],
+        "description_html": "Increases your melee and ranged haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your melee and ranged haste by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707417,
+            "description_html": "Increases your melee and ranged haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your melee and ranged haste by 5%."
+          }
+        ],
+        "connections": [
+          34172
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_handoflight",
+          "key": "ability_paladin_handoflight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34168,
+        "name": "Camper",
+        "slug": "camper",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705026,
+        "spell_ids": [
+          705026
+        ],
+        "description_html": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Bushcraft</span> abilities by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of your Bushcraft abilities by -50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705026,
+            "description_html": "Reduces the cast time of your <span style=\"color: #ffffff; display: inline\">Bushcraft</span> abilities by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of your Bushcraft abilities by -50%."
+          }
+        ],
+        "connections": [
+          34171
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_racial_makecamp",
+          "key": "ability_racial_makecamp",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34157,
+        "name": "Pinpoint Accuracy",
+        "slug": "pinpoint-accuracy",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801468,
+        "spell_ids": [
+          801468
+        ],
+        "description_html": "Critical strikes with direct damaging abilities now generate <span class=\"item-number\">4</span> Focus.",
+        "description": "Critical strikes with direct damaging abilities now generate 4 Focus.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801468,
+            "description_html": "Critical strikes with direct damaging abilities now generate <span class=\"item-number\">4</span> Focus.",
+            "description": "Critical strikes with direct damaging abilities now generate 4 Focus."
+          }
+        ],
+        "connections": [
+          34169
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_weapon_bow_01",
+          "key": "inv_weapon_bow_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7791,
+        "name": "Survival Expert",
+        "slug": "survival-expert",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560959,
+        "spell_ids": [
+          560959
+        ],
+        "description_html": "Increases the dodge chance provided by <span style=\"color: #ffffff; display: inline\">Briar Veil</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the dodge chance provided by Briar Veil by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560959,
+            "description_html": "Increases the dodge chance provided by <span style=\"color: #ffffff; display: inline\">Briar Veil</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the dodge chance provided by Briar Veil by 25%."
+          }
+        ],
+        "connections": [
+          29331
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Druid_NaturalPerfection",
+          "key": "ability_druid_naturalperfection",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30051,
+        "name": "Dirty Fighter",
+        "slug": "dirty-fighter",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705044,
+        "spell_ids": [
+          705044
+        ],
+        "description_html": "Increases the chance for <span style=\"color: #FFFFFF; display: inline\">Flank</span> to critically strike by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and increases your chance to resist root effects by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance for Flank to critically strike by 50% and increases your chance to resist root effects by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705044,
+            "description_html": "Increases the chance for <span style=\"color: #FFFFFF; display: inline\">Flank</span> to critically strike by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and increases your chance to resist root effects by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance for Flank to critically strike by 50% and increases your chance to resist root effects by 25%."
+          }
+        ],
+        "connections": [
+          34172
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_plunderarmor",
+          "key": "ability_rogue_plunderarmor",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6682,
+        "name": "Outlaw",
+        "slug": "outlaw",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706277,
+        "spell_ids": [
+          706277
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Adaptations</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Adaptations by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706277,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #FFFFFF; display: inline\">Adaptations</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Adaptations by 20%."
+          }
+        ],
+        "connections": [
+          34159
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Human_04",
+          "key": "human_04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 20,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30053,
+        "name": "Woodland Adept",
+        "slug": "woodland-adept",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 570015,
+        "spell_ids": [
+          570015
+        ],
+        "description_html": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, and applies <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+        "description": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by 25% for 10 seconds, and applies Elude.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 570015,
+            "description_html": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, and applies <span style=\"color: #ffffff; display: inline\">Elude</span>.",
+            "description": "Slip into the shadows, entering an improved stealth mode, increases your movement speed by 25% for 10 seconds, and applies Elude."
+          }
+        ],
+        "connections": [
+          34157,
+          34168,
+          34171
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_naturepoisonedstep_Border",
+          "key": "nhi_naturepoisonedstep_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5908,
+        "name": "Bloody Focus",
+        "slug": "bloody-focus",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520804,
+        "spell_ids": [
+          520804
+        ],
+        "description_html": "Reduces the Focus cost of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> by <span class=\"item-number\">-15</span>.",
+        "description": "Reduces the Focus cost of Toxic Dart by -15.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520804,
+            "description_html": "Reduces the Focus cost of <span style=\"color: #ffffff; display: inline\">Toxic Dart</span> by <span class=\"item-number\">-15</span>.",
+            "description": "Reduces the Focus cost of Toxic Dart by -15."
+          }
+        ],
+        "connections": [
+          7791,
+          34157
+        ],
+        "choice_group": 842221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Gouge",
+          "key": "ability_gouge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7908,
+        "name": "No Mercy",
+        "slug": "no-mercy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520581,
+        "spell_ids": [
+          520581
+        ],
+        "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Flank</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of Flank by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520581,
+            "description_html": "Increases the critical damage of <span style=\"color: #ffffff; display: inline\">Flank</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of Flank by 10%."
+          }
+        ],
+        "connections": [
+          7791,
+          34157
+        ],
+        "choice_group": 842221,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_BloodyEye",
+          "key": "ability_rogue_bloodyeye",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7790,
+        "name": "Blur",
+        "slug": "blur",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520369,
+        "spell_ids": [
+          520369
+        ],
+        "description_html": "Increases your chance to dodge and parry by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the chance enemies have to detect you while stealthed.",
+        "description": "Increases your chance to dodge and parry by 4% and reduces the chance enemies have to detect you while stealthed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520369,
+            "description_html": "Increases your chance to dodge and parry by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces the chance enemies have to detect you while stealthed.",
+            "description": "Increases your chance to dodge and parry by 4% and reduces the chance enemies have to detect you while stealthed."
+          }
+        ],
+        "connections": [
+          7791,
+          30051
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Invisibilty",
+          "key": "spell_nature_invisibilty",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34188,
+        "name": "Snatch",
+        "slug": "snatch",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803115,
+        "spell_ids": [
+          803115
+        ],
+        "description_html": "Snatch an enemy's melee weapons, disarming them for <span class=\"item-number\">4</span> seconds.<br /><br />If you are disarmed, you also return your weapon to yourself.",
+        "description": "Snatch an enemy's melee weapons, disarming them for 4 seconds.\n\nIf you are disarmed, you also return your weapon to yourself.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803115,
+            "description_html": "Snatch an enemy's melee weapons, disarming them for <span class=\"item-number\">4</span> seconds.<br /><br />If you are disarmed, you also return your weapon to yourself.",
+            "description": "Snatch an enemy's melee weapons, disarming them for 4 seconds.\n\nIf you are disarmed, you also return your weapon to yourself."
+          }
+        ],
+        "connections": [
+          6682,
+          30051,
+          34159
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\rogue_subterfuge",
+          "key": "rogue_subterfuge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 43,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6347,
+        "name": "Sly",
+        "slug": "sly",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560339,
+        "spell_ids": [
+          560339
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Woodland Adept</span> and <span style=\"color: #FFFFFF; display: inline\">Elude</span> now triggers a <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> reduced cooldown for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> active when cast.",
+        "description": "Your Woodland Adept and Elude now triggers a -10% reduced cooldown for each stack of Advantage active when cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560339,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Woodland Adept</span> and <span style=\"color: #FFFFFF; display: inline\">Elude</span> now triggers a <span class=\"item-number\">-10</span><span class=\"item-number\">%</span> reduced cooldown for each stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> active when cast.",
+            "description": "Your Woodland Adept and Elude now triggers a -10% reduced cooldown for each stack of Advantage active when cast."
+          }
+        ],
+        "connections": [
+          30053
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_disgustingpizza",
+          "key": "inv_misc_disgustingpizza",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 28,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5311,
+        "name": "Endurance Training",
+        "slug": "endurance-training",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705039,
+        "spell_ids": [
+          705039
+        ],
+        "description_html": "Increases your maximum Focus by <span class=\"item-number\">20</span>.",
+        "description": "Increases your maximum Focus by 20.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705039,
+            "description_html": "Increases your maximum Focus by <span class=\"item-number\">20</span>.",
+            "description": "Increases your maximum Focus by 20."
+          }
+        ],
+        "connections": [
+          5908,
+          7908,
+          30053
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_recuperate",
+          "key": "ability_rogue_recuperate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 33,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6946,
+        "name": "Adrenaline Rush",
+        "slug": "adrenaline-rush",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520578,
+        "spell_ids": [
+          520578
+        ],
+        "description_html": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Usable while stealthed.",
+        "description": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by 40% for 10 seconds.\n\nUsable while stealthed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520578,
+            "description_html": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by <span class=\"item-number\">40</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds.<br /><br />Usable while stealthed.",
+            "description": "Surge with vitality, dispeling all harmful effects from yourself and increasing your movement speed by 40% for 10 seconds.\n\nUsable while stealthed."
+          }
+        ],
+        "connections": [
+          5908,
+          7790,
+          7908
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill19_Border",
+          "key": "_5_archerskill19_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 1906,
+        "name": "Guise",
+        "slug": "guise",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520753,
+        "spell_ids": [
+          520753
+        ],
+        "description_html": "Instantly generates <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> and allows you to see nearby stealthed enemies for <span class=\"item-number\">15</span> seconds.<br /><br />Usable while stealthed.",
+        "description": "Instantly generates 5 stacks of Advantage and allows you to see nearby stealthed enemies for 15 seconds.\n\nUsable while stealthed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520753,
+            "description_html": "Instantly generates <span class=\"item-number\">5</span> stacks of <span style=\"color: #8fff7a; display: inline\">Advantage</span> and allows you to see nearby stealthed enemies for <span class=\"item-number\">15</span> seconds.<br /><br />Usable while stealthed.",
+            "description": "Instantly generates 5 stacks of Advantage and allows you to see nearby stealthed enemies for 15 seconds.\n\nUsable while stealthed."
+          }
+        ],
+        "connections": [
+          7790,
+          34188
+        ],
+        "choice_group": 243621,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Rogue_StayofExecution",
+          "key": "ability_rogue_stayofexecution",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 44,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4936,
+        "name": "Lethal Cunning",
+        "slug": "lethal-cunning",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704320,
+        "spell_ids": [
+          704320
+        ],
+        "description_html": "Entering <span style=\"color: #ffffff; display: inline\">Elude</span> generates <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> and <span class=\"item-number\">10</span> Focus every <span class=\"item-number\">5</span> sec for <span class=\"item-number\">30</span> seconds.",
+        "description": "Entering Elude generates 1 stack of Advantage and 10 Focus every 5 sec for 30 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704320,
+            "description_html": "Entering <span style=\"color: #ffffff; display: inline\">Elude</span> generates <span class=\"item-number\">1</span> stack of <span style=\"color: #8fff7a; display: inline\">Advantage</span> and <span class=\"item-number\">10</span> Focus every <span class=\"item-number\">5</span> sec for <span class=\"item-number\">30</span> seconds.",
+            "description": "Entering Elude generates 1 stack of Advantage and 10 Focus every 5 sec for 30 seconds."
+          }
+        ],
+        "connections": [
+          7790,
+          34188
+        ],
+        "choice_group": 243621,
+        "icon": {
+          "source_path": "Interface\\Icons\\_AimedShot_Red",
+          "key": "aimedshot_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6782,
+        "name": "Whats Yours Is Mine",
+        "slug": "whats-yours-is-mine",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560495,
+        "spell_ids": [
+          560495
+        ],
+        "description_html": "Removes the Focus cost of <span style=\"color: #ffffff; display: inline\">Snatch</span>.",
+        "description": "Removes the Focus cost of Snatch.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560495,
+            "description_html": "Removes the Focus cost of <span style=\"color: #ffffff; display: inline\">Snatch</span>.",
+            "description": "Removes the Focus cost of Snatch."
+          }
+        ],
+        "connections": [
+          34188
+        ],
+        "choice_group": 754321,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_boss_edwinvancleef",
+          "key": "achievement_boss_edwinvancleef",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 11,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9782,
+        "name": "Grappling Arrows",
+        "slug": "grappling-arrows",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561106,
+        "spell_ids": [
+          561106
+        ],
+        "description_html": "Increases the range of <span style=\"color: #ffffff; display: inline\">Snatch</span> by <span class=\"item-number\">15</span> yds.",
+        "description": "Increases the range of Snatch by 15 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561106,
+            "description_html": "Increases the range of <span style=\"color: #ffffff; display: inline\">Snatch</span> by <span class=\"item-number\">15</span> yds.",
+            "description": "Increases the range of Snatch by 15 yds."
+          }
+        ],
+        "connections": [
+          34188
+        ],
+        "choice_group": 754321,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_21_Light_arrow_Border",
+          "key": "custom_21_light_arrow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4186,
+        "name": "Double The Pace",
+        "slug": "double-the-pace",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705031,
+        "spell_ids": [
+          705031
+        ],
+        "description_html": "Increases all party and raid member's melee and ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+        "description": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 2%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705031,
+            "description_html": "Increases all party and raid member's melee and ranged haste by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br />In addition, increases your critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span>.",
+            "description": "Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.\n\nIn addition, increases your critical strike chance by 2%."
+          }
+        ],
+        "connections": [
+          5311,
+          6347
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_Diablo3_ArrowRain_Hunter",
+          "key": "diablo3_arrowrain_hunter",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 18,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6938,
+        "name": "Surefooted",
+        "slug": "surefooted",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560814,
+        "spell_ids": [
+          560814
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> by <span class=\"item-number\">-30</span> sec.",
+        "description": "Reduces the cooldown of Adrenaline Rush by -30 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560814,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> by <span class=\"item-number\">-30</span> sec.",
+            "description": "Reduces the cooldown of Adrenaline Rush by -30 sec."
+          }
+        ],
+        "connections": [
+          6946
+        ],
+        "choice_group": 561320,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_zone_hillsbradfoothills",
+          "key": "achievement_zone_hillsbradfoothills",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 13,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12938,
+        "name": "Heightened Senses",
+        "slug": "heightened-senses",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 561320,
+        "spell_ids": [
+          561320
+        ],
+        "description_html": "Increases the movement speed granted by <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the movement speed granted by Adrenaline Rush by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 561320,
+            "description_html": "Increases the movement speed granted by <span style=\"color: #ffffff; display: inline\">Adrenaline Rush</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the movement speed granted by Adrenaline Rush by 20%."
+          }
+        ],
+        "connections": [
+          6946
+        ],
+        "choice_group": 561320,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Racial_BearForm",
+          "key": "ability_racial_bearform",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30050,
+        "name": "Woodland Stalker",
+        "slug": "woodland-stalker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705034,
+        "spell_ids": [
+          705034
+        ],
+        "description_html": "While in <span style=\"color: #ffffff; display: inline\">Elude</span>, your critical strike chance is now increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "While in Elude, your critical strike chance is now increased by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705034,
+            "description_html": "While in <span style=\"color: #ffffff; display: inline\">Elude</span>, your critical strike chance is now increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "While in Elude, your critical strike chance is now increased by 20%."
+          }
+        ],
+        "connections": [
+          1906,
+          4936,
+          6782,
+          9782
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_StrangleVines",
+          "key": "spell_nature_stranglevines",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6945,
+        "name": "Natural Disguise",
+        "slug": "natural-disguise",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520585,
+        "spell_ids": [
+          520585
+        ],
+        "description_html": "Instantly dispels all movement slowing effects from allies within <span class=\"item-number\">30</span> yds and transforms them into a bush, stealthing them for <span class=\"item-number\">20</span> seconds.",
+        "description": "Instantly dispels all movement slowing effects from allies within 30 yds and transforms them into a bush, stealthing them for 20 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520585,
+            "description_html": "Instantly dispels all movement slowing effects from allies within <span class=\"item-number\">30</span> yds and transforms them into a bush, stealthing them for <span class=\"item-number\">20</span> seconds.",
+            "description": "Instantly dispels all movement slowing effects from allies within 30 yds and transforms them into a bush, stealthing them for 20 seconds."
+          }
+        ],
+        "connections": [
+          4186,
+          6347
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_natureambush_Border",
+          "key": "nhi_natureambush_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7906,
+        "name": "Guile of the Ranger",
+        "slug": "guile-of-the-ranger",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520353,
+        "spell_ids": [
+          520353
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Instinct</span> now additionally increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility.",
+        "description": "Your Instinct now additionally increases your critical strike rating by 20% of your Agility.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520353,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Instinct</span> now additionally increases your critical strike rating by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of your Agility.",
+            "description": "Your Instinct now additionally increases your critical strike rating by 20% of your Agility."
+          }
+        ],
+        "connections": [
+          4186,
+          6938,
+          12938,
+          30050
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_archerskill27_Border",
+          "key": "_5_archerskill27_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6947,
+        "name": "Forest Dweller",
+        "slug": "forest-dweller",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524864,
+        "spell_ids": [
+          524864
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Elude</span> no longer reduces your movement speed and now regenerates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">3</span> sec.",
+        "description": "Elude no longer reduces your movement speed and now regenerates 3% maximum health every 3 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524864,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Elude</span> no longer reduces your movement speed and now regenerates <span class=\"item-number\">3</span><span class=\"item-number\">%</span> maximum health every <span class=\"item-number\">3</span> sec.",
+            "description": "Elude no longer reduces your movement speed and now regenerates 3% maximum health every 3 sec."
+          }
+        ],
+        "connections": [
+          6782,
+          9782,
+          30050
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_druid_manatree",
+          "key": "ability_druid_manatree",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4156,
+        "name": "Elven Tactics",
+        "slug": "elven-tactics",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560701,
+        "spell_ids": [
+          560701
+        ],
+        "description_html": "You now have a <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> chance to not consume <span style=\"color: #8fff7a; display: inline\">Advantage</span> on cast.",
+        "description": "You now have a -20% chance to not consume Advantage on cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560701,
+            "description_html": "You now have a <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> chance to not consume <span style=\"color: #8fff7a; display: inline\">Advantage</span> on cast.",
+            "description": "You now have a -20% chance to not consume Advantage on cast."
+          }
+        ],
+        "connections": [
+          6945,
+          7906
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ui_darkshore_warfront_alliance_archer",
+          "key": "ui_darkshore_warfront_alliance_archer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34156,
+        "name": "Rapid Strikes",
+        "slug": "rapid-strikes",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560341,
+        "spell_ids": [
+          560341
+        ],
+        "description_html": "Melee and ranged auto attacks now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike an additional time for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.<br /><br />Can only occur once per sec.",
+        "description": "Melee and ranged auto attacks now have a 25% chance to strike an additional time for 50% of the damage dealt.\n\nCan only occur once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560341,
+            "description_html": "Melee and ranged auto attacks now have a <span class=\"item-number\">25</span><span class=\"item-number\">%</span> chance to strike an additional time for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt.<br /><br />Can only occur once per sec.",
+            "description": "Melee and ranged auto attacks now have a 25% chance to strike an additional time for 50% of the damage dealt.\n\nCan only occur once per sec."
+          }
+        ],
+        "connections": [
+          7906
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_CrossingSwords_ColorsGreen",
+          "key": "crossingswords_colorsgreen",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6952,
+        "name": "Onslaught",
+        "slug": "onslaught",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 21,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801951,
+        "spell_ids": [
+          801951
+        ],
+        "description_html": "Your senses heighten, causing you to instantly generate <span class=\"item-number\">5</span> <span style=\"color: #8fff7a; display: inline\">Advantage</span> and granting the benefits of <span style=\"color: #ffffff; display: inline\">Elude</span> without entering stealth for <span class=\"item-number\">15</span> seconds.",
+        "description": "Your senses heighten, causing you to instantly generate 5 Advantage and granting the benefits of Elude without entering stealth for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801951,
+            "description_html": "Your senses heighten, causing you to instantly generate <span class=\"item-number\">5</span> <span style=\"color: #8fff7a; display: inline\">Advantage</span> and granting the benefits of <span style=\"color: #ffffff; display: inline\">Elude</span> without entering stealth for <span class=\"item-number\">15</span> seconds.",
+            "description": "Your senses heighten, causing you to instantly generate 5 Advantage and granting the benefits of Elude without entering stealth for 15 seconds."
+          }
+        ],
+        "connections": [
+          6947,
+          7906
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_FocusedMind",
+          "key": "spell_nature_focusedmind",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 34,
+            "row": 48,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

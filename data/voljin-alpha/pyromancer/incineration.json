@@ -1,0 +1,2295 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 39,
+      "slug": "voljin-alpha",
+      "name": "Vol'Jin Alpha"
+    },
+    "scraped_at": "2026-08-30T22:40:23+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:635f282c7828aef6e1927257ff61af517ab5a61e9b964f22421b356f3c6c19fd",
+    "talent_count": 159,
+    "tree_count": 5
+  },
+  "class": {
+    "id": 24,
+    "name": "Pyromancer",
+    "slug": "pyromancer",
+    "class_file": "pyromancer",
+    "color": "rgb(255, 97, 18)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:pyromancer",
+      "key": "class-pyromancer",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 37,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 62,
+    "name": "Incineration",
+    "slug": "incineration",
+    "sort_order": 1,
+    "class_id": 24,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 6985,
+        "name": "Ignite",
+        "slug": "ignite",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800791,
+        "spell_ids": [
+          800791
+        ],
+        "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">10</span> Heat Per Tick</span><br />Burn an enemy, inflicting <span class=\"item-number\">182</span> Fire damage over <span class=\"item-number\">21</span> seconds. If <span style=\"color: #ffffff; display: inline\">Ignite</span> is dispelled it will cause <span class=\"item-number\">111</span> + <span class=\"item-number\">150% fire SP</span> Fire damage to the dispeller.<br /><br />Castable while moving.",
+        "description": "Generates 10 Heat Per Tick\nBurn an enemy, inflicting 182 Fire damage over 21 seconds. If Ignite is dispelled it will cause 111 + 150% fire SP Fire damage to the dispeller.\n\nCastable while moving.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800791,
+            "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">10</span> Heat Per Tick</span><br />Burn an enemy, inflicting <span class=\"item-number\">182</span> Fire damage over <span class=\"item-number\">21</span> seconds. If <span style=\"color: #ffffff; display: inline\">Ignite</span> is dispelled it will cause <span class=\"item-number\">111</span> + <span class=\"item-number\">150% fire SP</span> Fire damage to the dispeller.<br /><br />Castable while moving.",
+            "description": "Generates 10 Heat Per Tick\nBurn an enemy, inflicting 182 Fire damage over 21 seconds. If Ignite is dispelled it will cause 111 + 150% fire SP Fire damage to the dispeller.\n\nCastable while moving."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Mage_FieryPayback",
+          "key": "ability_mage_fierypayback",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4037,
+        "name": "Infernus",
+        "slug": "infernus",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 1,
+          "talent_ids": [
+            30651
+          ]
+        },
+        "spell_id": 92124,
+        "spell_ids": [
+          92124
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Lava Shard</span> now applies <span style=\"color: #ffffff; display: inline\">Infernus</span>, causing enemies to <span style=\"color: #ff4500; display: inline\">Burn</span>, dealing an additional <span class=\"item-number\">1122</span> + <span class=\"item-number\">120% SP</span> Fire damage over <span class=\"item-number\">18</span> seconds.",
+        "description": "Damage dealt by Lava Shard now applies Infernus, causing enemies to Burn, dealing an additional 1122 + 120% SP Fire damage over 18 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92124,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Lava Shard</span> now applies <span style=\"color: #ffffff; display: inline\">Infernus</span>, causing enemies to <span style=\"color: #ff4500; display: inline\">Burn</span>, dealing an additional <span class=\"item-number\">1122</span> + <span class=\"item-number\">120% SP</span> Fire damage over <span class=\"item-number\">18</span> seconds.",
+            "description": "Damage dealt by Lava Shard now applies Infernus, causing enemies to Burn, dealing an additional 1122 + 120% SP Fire damage over 18 seconds."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_corruptionfire_Border",
+          "key": "nhi_corruptionfire_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 29854,
+        "name": "Combustion",
+        "slug": "combustion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520884,
+        "spell_ids": [
+          520884
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Explode</span> is now increased by <span class=\"item-number\">15%</span> for each of your Pyromancer periodic effects on the target.",
+        "description": "Damage dealt by Explode is now increased by 15% for each of your Pyromancer periodic effects on the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520884,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Explode</span> is now increased by <span class=\"item-number\">15%</span> for each of your Pyromancer periodic effects on the target.",
+            "description": "Damage dealt by Explode is now increased by 15% for each of your Pyromancer periodic effects on the target."
+          }
+        ],
+        "connections": [
+          6985
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Burnout",
+          "key": "spell_fire_burnout",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 45,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6986,
+        "name": "Residual Power",
+        "slug": "residual-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 3.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300751,
+        "spell_ids": [
+          300751
+        ],
+        "description_html": "Each active <span style=\"color: #ff7f7f; display: inline\">Ember</span> now reduces the cast time of <span style=\"color: #ffffff; display: inline\">Explode</span> by <span class=\"item-number\">-8</span><span class=\"item-number\">%</span>.",
+        "description": "Each active Ember now reduces the cast time of Explode by -8%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300751,
+            "description_html": "Each active <span style=\"color: #ff7f7f; display: inline\">Ember</span> now reduces the cast time of <span style=\"color: #ffffff; display: inline\">Explode</span> by <span class=\"item-number\">-8</span><span class=\"item-number\">%</span>.",
+            "description": "Each active Ember now reduces the cast time of Explode by -8%."
+          }
+        ],
+        "connections": [
+          29854
+        ],
+        "choice_group": 845211,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelcrafting_dragonseye05",
+          "key": "inv_jewelcrafting_dragonseye05",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11986,
+        "name": "Arsonist",
+        "slug": "arsonist",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 3.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301286,
+        "spell_ids": [
+          301286
+        ],
+        "description_html": "Increases the critical damage of your <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical damage of your Ember spenders by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301286,
+            "description_html": "Increases the critical damage of your <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical damage of your Ember spenders by 10%."
+          }
+        ],
+        "connections": [
+          29854
+        ],
+        "choice_group": 845211,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_firenova",
+          "key": "spell_shaman_firenova",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5187,
+        "name": "Magnitude 10",
+        "slug": "magnitude-10",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 5.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520485,
+        "spell_ids": [
+          520485,
+          520873
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Flare Bolt by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520485,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Flare Bolt by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 520873,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Flare Bolt by 10%."
+          }
+        ],
+        "connections": [
+          29854
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireRain_Border",
+          "key": "custom_t_nhance_rpg_icons_firerain_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11304,
+        "name": "Scorched",
+        "slug": "scorched",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 704801,
+        "spell_ids": [
+          704801
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Direct critical strikes with <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders now <span style=\"color: #ffffff; display: inline\">Scorch</span> the target, <span style=\"color: #ff4500; display: inline\">Burning</span> them for an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">6</span> seconds.",
+        "description": "Level 20 Passive\nDirect critical strikes with Ember spenders now Scorch the target, Burning them for an additional 30% of the damage dealt over 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704801,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Direct critical strikes with <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders now <span style=\"color: #ffffff; display: inline\">Scorch</span> the target, <span style=\"color: #ff4500; display: inline\">Burning</span> them for an additional <span class=\"item-number\">30%</span> of the damage dealt over <span class=\"item-number\">6</span> seconds.",
+            "description": "Level 20 Passive\nDirect critical strikes with Ember spenders now Scorch the target, Burning them for an additional 30% of the damage dealt over 6 seconds."
+          }
+        ],
+        "connections": [
+          4037
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_fire_spell_09_nobg_Border",
+          "key": "uico_fire_spell_09_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7804,
+        "name": "Cataclysmic Power",
+        "slug": "cataclysmic-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804617,
+        "spell_ids": [
+          804617,
+          807882,
+          807912
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for each periodic effect you have on the target.",
+        "description": "Increases the damage of Flare Bolt by 3% for each periodic effect you have on the target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804617,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for each periodic effect you have on the target.",
+            "description": "Increases the damage of Flare Bolt by 3% for each periodic effect you have on the target."
+          },
+          {
+            "rank": 2,
+            "spell_id": 807882,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">6</span><span class=\"item-number\">%</span> for each periodic effect you have on the target.",
+            "description": "Increases the damage of Flare Bolt by 6% for each periodic effect you have on the target."
+          },
+          {
+            "rank": 3,
+            "spell_id": 807912,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> by <span class=\"item-number\">9</span><span class=\"item-number\">%</span> for each periodic effect you have on the target.",
+            "description": "Increases the damage of Flare Bolt by 9% for each periodic effect you have on the target."
+          }
+        ],
+        "connections": [
+          6986,
+          11986
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_siege_engineer_purification_beam",
+          "key": "ability_siege_engineer_purification_beam",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 9,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30304,
+        "name": "Embrace the Fire",
+        "slug": "embrace-the-fire",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503636,
+        "spell_ids": [
+          503636
+        ],
+        "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blaze</span> and <span style=\"color: #ffffff; display: inline\">Ignite</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the damage of Blaze and Ignite by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503636,
+            "description_html": "Increases the damage of <span style=\"color: #ffffff; display: inline\">Blaze</span> and <span style=\"color: #ffffff; display: inline\">Ignite</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the damage of Blaze and Ignite by 20%."
+          }
+        ],
+        "connections": [
+          5187,
+          6986,
+          11986
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_dragonfirebreath_Border",
+          "key": "_5_dragonfirebreath_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 0,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33877,
+        "name": "Fired Up!",
+        "slug": "fired-up",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704823,
+        "spell_ids": [
+          704823
+        ],
+        "description_html": "Your <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders are now instant and have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund their cost and increases your chance to critically strike by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+        "description": "Your Ember spenders are now instant and have a 40% chance to refund their cost and increases your chance to critically strike by 30% for 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704823,
+            "description_html": "Your <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders are now instant and have a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund their cost and increases your chance to critically strike by <span class=\"item-number\">30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds.",
+            "description": "Your Ember spenders are now instant and have a 40% chance to refund their cost and increases your chance to critically strike by 30% for 15 seconds."
+          }
+        ],
+        "connections": [
+          5187
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_dungeon_ignitionmagevalyri",
+          "key": "achievement_dungeon_ignitionmagevalyri",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29552,
+        "name": "Searing Power",
+        "slug": "searing-power",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680959,
+        "spell_ids": [
+          680959
+        ],
+        "description_html": "Increases the spell power scaling of <span style=\"color: #FFFFFF; display: inline\">Flare Bolt</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the spell power scaling of Flare Bolt by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680959,
+            "description_html": "Increases the spell power scaling of <span style=\"color: #FFFFFF; display: inline\">Flare Bolt</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the spell power scaling of Flare Bolt by 20%."
+          }
+        ],
+        "connections": [
+          7804
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\uico_fire_spell_09_nobg_Border",
+          "key": "uico_fire_spell_09_nobg_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30959,
+        "name": "Pillar of Flame",
+        "slug": "pillar-of-flame",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805496,
+        "spell_ids": [
+          805496
+        ],
+        "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">20</span> Heat Per Target</span><br />Create a pillar of lava beneath an enemy, dealing <span class=\"item-number\">36</span> + <span class=\"item-number\">31.24% fire SP</span> Fire damage.<br /><br />Deals an additional <span class=\"item-number\">92</span> + <span class=\"item-number\">34.36% fire SP</span> Fire damage to enemies near the primary target.",
+        "description": "Generates 20 Heat Per Target\nCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.\n\nDeals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805496,
+            "description_html": "<span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">20</span> Heat Per Target</span><br />Create a pillar of lava beneath an enemy, dealing <span class=\"item-number\">36</span> + <span class=\"item-number\">31.24% fire SP</span> Fire damage.<br /><br />Deals an additional <span class=\"item-number\">92</span> + <span class=\"item-number\">34.36% fire SP</span> Fire damage to enemies near the primary target.",
+            "description": "Generates 20 Heat Per Target\nCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.\n\nDeals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target."
+          }
+        ],
+        "connections": [
+          7804
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fireblow_Border",
+          "key": "nhi_fireblow_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6499,
+        "name": "Wreath of Flames",
+        "slug": "wreath-of-flames",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 802068,
+        "spell_ids": [
+          802068
+        ],
+        "description_html": "Periodic Fire damage now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ffffff; display: inline\">Flamecasting</span>, or <span class=\"item-number\">2</span> stacks if they critically strike.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_playingwithfire\" /><span class=\"name\">Flamecasting</span></div><span class=\"desc\">Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+        "description": "Periodic Fire damage now has a 10% chance to grant a stack of Flamecasting, or 2 stacks if they critically strike.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.\n\nAdditional applications do not refresh duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 802068,
+            "description_html": "Periodic Fire damage now has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ffffff; display: inline\">Flamecasting</span>, or <span class=\"item-number\">2</span> stacks if they critically strike.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_playingwithfire\" /><span class=\"name\">Flamecasting</span></div><span class=\"desc\">Increases your spell haste by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> for <span class=\"item-number\">15</span> seconds. Stacks <span class=\"item-number\">5</span> times.<br /><br />Additional applications do not refresh duration.</span></div>",
+            "description": "Periodic Fire damage now has a 10% chance to grant a stack of Flamecasting, or 2 stacks if they critically strike.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.\n\nAdditional applications do not refresh duration."
+          }
+        ],
+        "connections": [
+          7804,
+          30304,
+          33877
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_InnerFire",
+          "key": "spell_holy_innerfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 21,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33878,
+        "name": "Flamespiller",
+        "slug": "flamespiller",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805468,
+        "spell_ids": [
+          805468
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Explode</span> or <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> now extend the duration of <span style=\"color: #FFFFFF; display: inline\">Fired Up</span> by <span class=\"item-number\">0.5</span> sec.",
+        "description": "Critical strikes with Explode or Flames of Neltharion now extend the duration of Fired Up by 0.5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805468,
+            "description_html": "Critical strikes with <span style=\"color: #FFFFFF; display: inline\">Explode</span> or <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> now extend the duration of <span style=\"color: #FFFFFF; display: inline\">Fired Up</span> by <span class=\"item-number\">0.5</span> sec.",
+            "description": "Critical strikes with Explode or Flames of Neltharion now extend the duration of Fired Up by 0.5 sec."
+          }
+        ],
+        "connections": [
+          33877
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_volatilefire",
+          "key": "inv_misc_volatilefire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 10,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7009,
+        "name": "Melting Point",
+        "slug": "melting-point",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 560525,
+        "spell_ids": [
+          560525
+        ],
+        "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Fired Up!</span> now causes your critical hits with <span style=\"color: #FFFFFF; display: inline\">Explode</span> or <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> to spread your periodic damaging effects from your target. This can only spread to one target per cast.",
+        "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nFired Up! now causes your critical hits with Explode or Flames of Neltharion to spread your periodic damaging effects from your target. This can only spread to one target per cast.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 560525,
+            "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>. Does not stack with similar effects.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Fired Up!</span> now causes your critical hits with <span style=\"color: #FFFFFF; display: inline\">Explode</span> or <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> to spread your periodic damaging effects from your target. This can only spread to one target per cast.",
+            "description": "Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.\n\nFired Up! now causes your critical hits with Explode or Flames of Neltharion to spread your periodic damaging effects from your target. This can only spread to one target per cast."
+          }
+        ],
+        "connections": [
+          33877
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_monk_breathoffire",
+          "key": "ability_monk_breathoffire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2306,
+        "name": "Lighting the Fuse",
+        "slug": "lighting-the-fuse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 807509,
+        "spell_ids": [
+          807509
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Allows your periodic effects to critically strike and increases your spell critical strike rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 30 Passive\nAllows your periodic effects to critically strike and increases your spell critical strike rating by 15% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807509,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">30</span> Passive</span><br />Allows your periodic effects to critically strike and increases your spell critical strike rating by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 30 Passive\nAllows your periodic effects to critically strike and increases your spell critical strike rating by 15% of your Intellect."
+          }
+        ],
+        "connections": [
+          11304
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wildfirebomb_blood",
+          "key": "inv_wildfirebomb_blood",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7008,
+        "name": "Magmatic",
+        "slug": "magmatic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704807,
+        "spell_ids": [
+          704807
+        ],
+        "description_html": "$a3",
+        "description": "$a3",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704807,
+            "description_html": "$a4",
+            "description": "$a4"
+          }
+        ],
+        "connections": [
+          30959
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_fire_0003s_0000_phoenix_Border",
+          "key": "epic_rpg_icon_pack_fire_0003s_0000_phoenix_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29548,
+        "name": "Molten Storm",
+        "slug": "molten-storm",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 3.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805483,
+        "spell_ids": [
+          805483
+        ],
+        "description_html": "Increases the critical strike chance and damage of <span style=\"color: #ffffff; display: inline\">Lava Shard</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance and damage of Lava Shard by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805483,
+            "description_html": "Increases the critical strike chance and damage of <span style=\"color: #ffffff; display: inline\">Lava Shard</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance and damage of Lava Shard by 10%."
+          }
+        ],
+        "connections": [
+          6499,
+          30959
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_01",
+          "key": "inv_offhand_1h_artifactdoomhammer_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 30,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33883,
+        "name": "To Ashes",
+        "slug": "to-ashes",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 5.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300975,
+        "spell_ids": [
+          300975
+        ],
+        "description_html": "Damaging critical strikes now generate <span class=\"item-number\">10</span> <span style=\"color: #ff7f7f; display: inline\">Heat</span> and restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your base mana.",
+        "description": "Damaging critical strikes now generate 10 Heat and restore 3% of your base mana.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300975,
+            "description_html": "Damaging critical strikes now generate <span class=\"item-number\">10</span> <span style=\"color: #ff7f7f; display: inline\">Heat</span> and restore <span class=\"item-number\">3</span><span class=\"item-number\">%</span> of your base mana.",
+            "description": "Damaging critical strikes now generate 10 Heat and restore 3% of your base mana."
+          }
+        ],
+        "connections": [
+          6499,
+          33878
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\nhi_moltensmash_Border",
+          "key": "nhi_moltensmash_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6500,
+        "name": "Roasted Alive",
+        "slug": "roasted-alive",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707482,
+        "spell_ids": [
+          707482
+        ],
+        "description_html": "Increases the chance to trigger <span style=\"color: #FFFFFF; display: inline\">Fired Up</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance to trigger Fired Up by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707482,
+            "description_html": "Increases the chance to trigger <span style=\"color: #FFFFFF; display: inline\">Fired Up</span> by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance to trigger Fired Up by 30%."
+          }
+        ],
+        "connections": [
+          33878
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_misc_herb_cinderbloom_petal",
+          "key": "inv_misc_herb_cinderbloom_petal",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 29,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6987,
+        "name": "Pyromantic Accelerants",
+        "slug": "pyromantic-accelerants",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706889,
+        "spell_ids": [
+          706889
+        ],
+        "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> and <span style=\"color: #FFFFFF; display: inline\">Explode</span> now deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> increased damage to <span style=\"color: #ff4500; display: inline\">Burning</span> targets.",
+        "description": "Your Flames of Neltharion and Explode now deal 15% increased damage to Burning targets.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706889,
+            "description_html": "Your <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> and <span style=\"color: #FFFFFF; display: inline\">Explode</span> now deal <span class=\"item-number\">15</span><span class=\"item-number\">%</span> increased damage to <span style=\"color: #ff4500; display: inline\">Burning</span> targets.",
+            "description": "Your Flames of Neltharion and Explode now deal 15% increased damage to Burning targets."
+          }
+        ],
+        "connections": [
+          7008,
+          29552
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DestructiveSoul",
+          "key": "spell_shadow_destructivesoul",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30644,
+        "name": "Explosive",
+        "slug": "explosive",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 3.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704845,
+        "spell_ids": [
+          704845,
+          707787
+        ],
+        "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Blaze</span> and <span style=\"color: #ffffff; display: inline\">Ignite</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the tick rate of Blaze and Ignite by -10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704845,
+            "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Blaze</span> and <span style=\"color: #ffffff; display: inline\">Ignite</span> by <span class=\"item-number\">-10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the tick rate of Blaze and Ignite by -10%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707787,
+            "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Blaze</span> and <span style=\"color: #ffffff; display: inline\">Ignite</span> by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the tick rate of Blaze and Ignite by -20%."
+          }
+        ],
+        "connections": [
+          7008,
+          29548
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\custom_T_FireInOurHands_Border",
+          "key": "custom_t_fireinourhands_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 20,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7006,
+        "name": "Sizzle",
+        "slug": "sizzle",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 5.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800811,
+        "spell_ids": [
+          800811
+        ],
+        "description_html": "When <span style=\"color: #ffffff; display: inline\">Flamecasting</span> expires you launch a <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> on up to <span class=\"item-number\">12</span> enemies affected by your active Pyromancer periodic effects.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_fireball_border\" /><span class=\"name\">Flare Bolt</span></div><span class=\"desc\"><span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">20</span> Heat</span><br />Invoke flames upon an enemy, dealing <span class=\"item-number\">22</span> + <span class=\"item-number\">57.1% fire SP</span> Fire damage.</span></div>",
+        "description": "When Flamecasting expires you launch a Flare Bolt on up to 12 enemies affected by your active Pyromancer periodic effects.Flare BoltGenerates 20 Heat\nInvoke flames upon an enemy, dealing 22 + 57.1% fire SP Fire damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800811,
+            "description_html": "When <span style=\"color: #ffffff; display: inline\">Flamecasting</span> expires you launch a <span style=\"color: #ffffff; display: inline\">Flare Bolt</span> on up to <span class=\"item-number\">12</span> enemies affected by your active Pyromancer periodic effects.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 custom_t_fireball_border\" /><span class=\"name\">Flare Bolt</span></div><span class=\"desc\"><span style=\"color: #ff7f7f; display: inline\">Generates <span class=\"item-number\">20</span> Heat</span><br />Invoke flames upon an enemy, dealing <span class=\"item-number\">22</span> + <span class=\"item-number\">57.1% fire SP</span> Fire damage.</span></div>",
+            "description": "When Flamecasting expires you launch a Flare Bolt on up to 12 enemies affected by your active Pyromancer periodic effects.Flare BoltGenerates 20 Heat\nInvoke flames upon an enemy, dealing 22 + 57.1% fire SP Fire damage."
+          }
+        ],
+        "connections": [
+          6500,
+          33883
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FlameTounge",
+          "key": "spell_fire_flametounge",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 5,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7171,
+        "name": "Fiery Passion",
+        "slug": "fiery-passion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300757,
+        "spell_ids": [
+          300757
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+        "description": "Increases your critical strike chance by 3% and critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by 3% for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300757,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> for <span class=\"item-number\">12</span> seconds.",
+            "description": "Increases your critical strike chance by 3% and critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by 3% for 12 seconds."
+          }
+        ],
+        "connections": [
+          6500,
+          7009
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_stormearthfire",
+          "key": "spell_shaman_stormearthfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 2305,
+        "name": "Incinerator",
+        "slug": "incinerator",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 807510,
+        "spell_ids": [
+          807510
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">30</span>, scaling with your level.",
+        "description": "Level 40 Passive\nIncreases your spell penetration by 30, scaling with your level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807510,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Increases your spell penetration by <span class=\"item-number\">30</span>, scaling with your level.",
+            "description": "Level 40 Passive\nIncreases your spell penetration by 30, scaling with your level."
+          }
+        ],
+        "connections": [
+          2306
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_tradeskillitem_sorcerersfire_tong",
+          "key": "inv_tradeskillitem_sorcerersfire_tong",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30680,
+        "name": "Rapid Incineration",
+        "slug": "rapid-incineration",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504394,
+        "spell_ids": [
+          504394
+        ],
+        "description_html": "Consuming <span style=\"color: #ff7f7f; display: inline\">Embers</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Lava Shard</span> and <span style=\"color: #ffffff; display: inline\">Pillar of Flame</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+        "description": "Consuming Embers now reduces the cooldown of Lava Shard and Pillar of Flame by 10%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504394,
+            "description_html": "Consuming <span style=\"color: #ff7f7f; display: inline\">Embers</span> now reduces the cooldown of <span style=\"color: #FFFFFF; display: inline\">Lava Shard</span> and <span style=\"color: #ffffff; display: inline\">Pillar of Flame</span> by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Consuming Embers now reduces the cooldown of Lava Shard and Pillar of Flame by 10%."
+          }
+        ],
+        "connections": [
+          6987
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FireBolt02",
+          "key": "spell_fire_firebolt02",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 2,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6807,
+        "name": "Pyromaniac",
+        "slug": "pyromaniac",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500166,
+        "spell_ids": [
+          500166
+        ],
+        "description_html": "Increases the critical strike chance of <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the critical strike chance of Ember spenders by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500166,
+            "description_html": "Increases the critical strike chance of <span style=\"color: #ff7f7f; display: inline\">Ember</span> spenders by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the critical strike chance of Ember spenders by 5%."
+          }
+        ],
+        "connections": [
+          6987,
+          30644
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_ironmaidens_rapidfire",
+          "key": "ability_ironmaidens_rapidfire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 5,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30601,
+        "name": "Flames of Focus",
+        "slug": "flames-of-focus",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680977,
+        "spell_ids": [
+          680977
+        ],
+        "description_html": "Adds <span class=\"item-number\">1</span> additional stack to <span style=\"color: #ffffff; display: inline\">Flamecasting</span> and increases its duration by <span class=\"item-number\">5</span> sec.",
+        "description": "Adds 1 additional stack to Flamecasting and increases its duration by 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680977,
+            "description_html": "Adds <span class=\"item-number\">1</span> additional stack to <span style=\"color: #ffffff; display: inline\">Flamecasting</span> and increases its duration by <span class=\"item-number\">5</span> sec.",
+            "description": "Adds 1 additional stack to Flamecasting and increases its duration by 5 sec."
+          }
+        ],
+        "connections": [
+          7006,
+          30644
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_Nhance_RPG_Icons_FireInYourHand_Border",
+          "key": "custom_t_nhance_rpg_icons_fireinyourhand_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7176,
+        "name": "Stoke",
+        "slug": "stoke",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704856,
+        "spell_ids": [
+          704856
+        ],
+        "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Ignite</span> and <span style=\"color: #ffffff; display: inline\">Infernus</span> now extend their own duration on the target by <span class=\"item-number\">3</span> sec, up to a maximum of <span class=\"item-number\">12</span> sec.",
+        "description": "Critical strikes with Ignite and Infernus now extend their own duration on the target by 3 sec, up to a maximum of 12 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704856,
+            "description_html": "Critical strikes with <span style=\"color: #ffffff; display: inline\">Ignite</span> and <span style=\"color: #ffffff; display: inline\">Infernus</span> now extend their own duration on the target by <span class=\"item-number\">3</span> sec, up to a maximum of <span class=\"item-number\">12</span> sec.",
+            "description": "Critical strikes with Ignite and Infernus now extend their own duration on the target by 3 sec, up to a maximum of 12 sec."
+          }
+        ],
+        "connections": [
+          7006,
+          7171
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_FlameShock",
+          "key": "spell_fire_flameshock",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7803,
+        "name": "Dark Iron Legacy",
+        "slug": "dark-iron-legacy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680970,
+        "spell_ids": [
+          680970
+        ],
+        "description_html": "Targets affected by the disorient from <span style=\"color: #FFFFFF; display: inline\">Meteor</span> take an additional <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased damage from the next <span style=\"color: #FFFFFF; display: inline\">Explode</span> or <span style=\"color: #FFFFFF; display: inline\">Lava Shard</span>.",
+        "description": "Targets affected by the disorient from Meteor take an additional 40% increased damage from the next Explode or Lava Shard.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680970,
+            "description_html": "Targets affected by the disorient from <span style=\"color: #FFFFFF; display: inline\">Meteor</span> take an additional <span class=\"item-number\">40</span><span class=\"item-number\">%</span> increased damage from the next <span style=\"color: #FFFFFF; display: inline\">Explode</span> or <span style=\"color: #FFFFFF; display: inline\">Lava Shard</span>.",
+            "description": "Targets affected by the disorient from Meteor take an additional 40% increased damage from the next Explode or Lava Shard."
+          }
+        ],
+        "connections": [
+          7171
+        ],
+        "choice_group": 704815,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_darkirondwarf_d_01",
+          "key": "inv_staff_2h_darkirondwarf_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11803,
+        "name": "Destroyer's Legacy",
+        "slug": "destroyers-legacy",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704815,
+        "spell_ids": [
+          704815
+        ],
+        "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Lava Shard</span> on enemies affected by <span style=\"color: #FFFFFF; display: inline\">Blaze</span> now blasts nearby enemies for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage.",
+        "description": "Damage dealt by Lava Shard on enemies affected by Blaze now blasts nearby enemies for 50% of the damage dealt as Fire damage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704815,
+            "description_html": "Damage dealt by <span style=\"color: #ffffff; display: inline\">Lava Shard</span> on enemies affected by <span style=\"color: #FFFFFF; display: inline\">Blaze</span> now blasts nearby enemies for <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of the damage dealt as Fire damage.",
+            "description": "Damage dealt by Lava Shard on enemies affected by Blaze now blasts nearby enemies for 50% of the damage dealt as Fire damage."
+          }
+        ],
+        "connections": [
+          7171
+        ],
+        "choice_group": 704815,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shaman_firenova",
+          "key": "spell_shaman_firenova",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30643,
+        "name": "Pyroclastic Flow",
+        "slug": "pyroclastic-flow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524875,
+        "spell_ids": [
+          524875
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Flare Bolt</span> now increases the damage of subsequent <span style=\"color: #ffffff; display: inline\">Flare Bolts</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br /><span style=\"color: #ffffff; display: inline\">Flames of Neltharion</span> and <span style=\"color: #FFFFFF; display: inline\">Explode</span> now increase the damage of subsequent <span style=\"color: #FFFFFF; display: inline\">Explodes</span> or <span style=\"color: #ffffff; display: inline\">Flames of Neltharion</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+        "description": "Flare Bolt now increases the damage of subsequent Flare Bolts by 4% for 10 seconds, stacking 5 times.\n\nFlames of Neltharion and Explode now increase the damage of subsequent Explodes or Flames of Neltharion by 4% for 5 seconds, stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524875,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Flare Bolt</span> now increases the damage of subsequent <span style=\"color: #ffffff; display: inline\">Flare Bolts</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds, stacking <span class=\"item-number\">5</span> times.<br /><br /><span style=\"color: #ffffff; display: inline\">Flames of Neltharion</span> and <span style=\"color: #FFFFFF; display: inline\">Explode</span> now increase the damage of subsequent <span style=\"color: #FFFFFF; display: inline\">Explodes</span> or <span style=\"color: #ffffff; display: inline\">Flames of Neltharion</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> for <span class=\"item-number\">5</span> seconds, stacking <span class=\"item-number\">5</span> times.",
+            "description": "Flare Bolt now increases the damage of subsequent Flare Bolts by 4% for 10 seconds, stacking 5 times.\n\nFlames of Neltharion and Explode now increase the damage of subsequent Explodes or Flames of Neltharion by 4% for 5 seconds, stacking 5 times."
+          }
+        ],
+        "connections": [
+          6807,
+          30680
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_T_FlameWave_Border",
+          "key": "custom_t_flamewave_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 16,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 33879,
+        "name": "Heat Wave",
+        "slug": "heat-wave",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 503804,
+        "spell_ids": [
+          503804
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Flamecasting</span> stacks now also increase the damage of <span style=\"color: #FFFFFF; display: inline\">Explode</span> and <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> per stack.",
+        "description": "Flamecasting stacks now also increase the damage of Explode and Flames of Neltharion by 4% per stack.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 503804,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Flamecasting</span> stacks now also increase the damage of <span style=\"color: #FFFFFF; display: inline\">Explode</span> and <span style=\"color: #FFFFFF; display: inline\">Flames of Neltharion</span> by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> per stack.",
+            "description": "Flamecasting stacks now also increase the damage of Explode and Flames of Neltharion by 4% per stack."
+          }
+        ],
+        "connections": [
+          6807,
+          7176,
+          30601
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fireball_Border",
+          "key": "nhi_fireball_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 19,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7174,
+        "name": "Pyroclasm",
+        "slug": "pyroclasm",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520019,
+        "spell_ids": [
+          520019
+        ],
+        "description_html": "Consumes <span class=\"item-number\">1</span> Ember</span><br />Create a pyroclasm instantly consuming your <span style=\"color: #ff4500; display: inline\">Burning</span> effects on a target to deal the two times total periodic damage plus an additional <span class=\"item-number\">2100</span> to <span class=\"item-number\">2220</span> over <span class=\"item-number\">10</span> seconds, piercing absorption effects and resistances.",
+        "description": "Consumes 1 Ember\nCreate a pyroclasm instantly consuming your Burning effects on a target to deal the two times total periodic damage plus an additional 2100 to 2220 over 10 seconds, piercing absorption effects and resistances.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520019,
+            "description_html": "Consumes <span class=\"item-number\">1</span> Ember</span><br />Create a pyroclasm instantly consuming your <span style=\"color: #ff4500; display: inline\">Burning</span> effects on a target to deal the two times total periodic damage plus an additional <span class=\"item-number\">2100</span> to <span class=\"item-number\">2220</span> over <span class=\"item-number\">10</span> seconds, piercing absorption effects and resistances.",
+            "description": "Consumes 1 Ember\nCreate a pyroclasm instantly consuming your Burning effects on a target to deal the two times total periodic damage plus an additional 2100 to 2220 over 10 seconds, piercing absorption effects and resistances."
+          }
+        ],
+        "connections": [
+          7176,
+          7803
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Incinerate",
+          "key": "spell_fire_incinerate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7954,
+        "name": "Burned",
+        "slug": "burned",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 572582,
+        "spell_ids": [
+          572582
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Direct Fire damage dealt now applies <span style=\"color: #ffffff; display: inline\">Burned</span> to the target for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_immolation\" /><span class=\"name\">Burned (Proc)</span></div><span class=\"desc\">Increases the targets damage taken from your periodic effects by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> stacking <span class=\"item-number\">5</span> times.</span></div>",
+        "description": "Level 50 Passive\nDirect Fire damage dealt now applies Burned to the target for 15 seconds.Burned (Proc)Increases the targets damage taken from your periodic effects by 3% stacking 5 times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572582,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />Direct Fire damage dealt now applies <span style=\"color: #ffffff; display: inline\">Burned</span> to the target for <span class=\"item-number\">15</span> seconds.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 spell_fire_immolation\" /><span class=\"name\">Burned (Proc)</span></div><span class=\"desc\">Increases the targets damage taken from your periodic effects by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> stacking <span class=\"item-number\">5</span> times.</span></div>",
+            "description": "Level 50 Passive\nDirect Fire damage dealt now applies Burned to the target for 15 seconds.Burned (Proc)Increases the targets damage taken from your periodic effects by 3% stacking 5 times."
+          }
+        ],
+        "connections": [
+          2305
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Immolation",
+          "key": "spell_fire_immolation",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 7175,
+        "name": "Flames of the Firelord",
+        "slug": "flames-of-the-firelord",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 538441,
+        "spell_ids": [
+          538441
+        ],
+        "description_html": "Your periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #FFFFFF; display: inline\">Eruption</span> for <span class=\"item-number\">5</span> sec.",
+        "description": "Your periodic damage dealt now has a 5% chance to grant you Eruption for 5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 538441,
+            "description_html": "Your periodic damage dealt now has a <span class=\"item-number\">5</span><span class=\"item-number\">%</span> chance to grant you <span style=\"color: #FFFFFF; display: inline\">Eruption</span> for <span class=\"item-number\">5</span> sec.",
+            "description": "Your periodic damage dealt now has a 5% chance to grant you Eruption for 5 sec."
+          }
+        ],
+        "connections": [
+          30643
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\achievement_firelands_raid_ragnaros",
+          "key": "achievement_firelands_raid_ragnaros",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29561,
+        "name": "Sulfuron Harbinger",
+        "slug": "sulfuron-harbinger",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807146,
+        "spell_ids": [
+          807146
+        ],
+        "description_html": "$a1",
+        "description": "$a1",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807146,
+            "description_html": "$a2",
+            "description": "$a2"
+          }
+        ],
+        "connections": [
+          7174,
+          30643,
+          33879
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Achievement_MC_Lucifron",
+          "key": "achievement_mc_lucifron",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 49,
+            "row": 12,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30403,
+        "name": "Legacy of Ragnaros",
+        "slug": "legacy-of-ragnaros",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 24,
+        "tree_id": 62,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704824,
+        "spell_ids": [
+          704824
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Pyroclasm</span> now causes your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Lava Shards</span> within <span class=\"item-number\">12</span> seconds to trigger no cooldown and be free of cost.",
+        "description": "Pyroclasm now causes your next 3 Lava Shards within 12 seconds to trigger no cooldown and be free of cost.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704824,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Pyroclasm</span> now causes your next <span class=\"item-number\">3</span> <span style=\"color: #FFFFFF; display: inline\">Lava Shards</span> within <span class=\"item-number\">12</span> seconds to trigger no cooldown and be free of cost.",
+            "description": "Pyroclasm now causes your next 3 Lava Shards within 12 seconds to trigger no cooldown and be free of cost."
+          }
+        ],
+        "connections": [
+          7174
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_fire_ragnaros_splittingblow",
+          "key": "spell_fire_ragnaros_splittingblow",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 13,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

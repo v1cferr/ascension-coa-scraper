@@ -1,0 +1,2353 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:27+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:d9414c4f88bc6c01fbf4c0028b8817d2cca3e91cafbb78576cd14f926fe636d2",
+    "talent_count": 200,
+    "tree_count": 6
+  },
+  "class": {
+    "id": 27,
+    "name": "Sun Cleric",
+    "slug": "sun-cleric",
+    "class_file": "suncleric",
+    "color": "rgb(255, 179, 64)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:suncleric",
+      "key": "class-suncleric",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 44,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 71,
+    "name": "Blessings",
+    "slug": "blessings",
+    "sort_order": 2,
+    "class_id": 27,
+    "is_shared": false,
+    "talents": [
+      {
+        "id": 31195,
+        "name": "Bless",
+        "slug": "bless",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            4047,
+            29446
+          ]
+        },
+        "spell_id": 804247,
+        "spell_ids": [
+          804247
+        ],
+        "description_html": "Bless yourself and an ally, restoring <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of their maximum health and <span class=\"item-number\">1</span> to <span class=\"item-number\">0</span><span class=\"item-number\">%</span> of your maximum mana every <span class=\"item-number\">10</span> sec for <span class=\"item-number\">5</span> minutes.<br /><br />Can only affect <span class=\"item-number\">1</span> ally at a time.",
+        "description": "Bless yourself and an ally, restoring 5% of their maximum health and 1 to 0% of your maximum mana every 10 sec for 5 minutes.\n\nCan only affect 1 ally at a time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804247,
+            "description_html": "Bless yourself and an ally, restoring <span class=\"item-number\">5</span><span class=\"item-number\">%</span> of their maximum health and <span class=\"item-number\">1</span> to <span class=\"item-number\">0</span><span class=\"item-number\">%</span> of your maximum mana every <span class=\"item-number\">10</span> sec for <span class=\"item-number\">5</span> minutes.<br /><br />Can only affect <span class=\"item-number\">1</span> ally at a time.",
+            "description": "Bless yourself and an ally, restoring 5% of their maximum health and 1 to 0% of your maximum mana every 10 sec for 5 minutes.\n\nCan only affect 1 ally at a time."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_ascendance",
+          "key": "ability_priest_ascendance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4047,
+        "name": "Sunlight",
+        "slug": "sunlight",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 10.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": [
+            29446
+          ]
+        },
+        "spell_id": 92136,
+        "spell_ids": [
+          92136
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Fulfilling your <span style=\"color: #FFFFFF; display: inline\">Vow</span> now unleashes <span style=\"color: #ffffff; display: inline\">Sunlight</span> restoring <span class=\"item-number\">25</span> + <span class=\"item-number\">15% healing</span> health to up to <span class=\"item-number\">5</span> allies within <span class=\"item-number\">40</span> yds, prioritizing the lowest health allies.",
+        "description": "Level 10 Passive\nFulfilling your Vow now unleashes Sunlight restoring 25 + 15% healing health to up to 5 allies within 40 yds, prioritizing the lowest health allies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 92136,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">10</span> Passive</span><br />Fulfilling your <span style=\"color: #FFFFFF; display: inline\">Vow</span> now unleashes <span style=\"color: #ffffff; display: inline\">Sunlight</span> restoring <span class=\"item-number\">25</span> + <span class=\"item-number\">15% healing</span> health to up to <span class=\"item-number\">5</span> allies within <span class=\"item-number\">40</span> yds, prioritizing the lowest health allies.",
+            "description": "Level 10 Passive\nFulfilling your Vow now unleashes Sunlight restoring 25 + 15% healing health to up to 5 allies within 40 yds, prioritizing the lowest health allies."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\item_holyspark",
+          "key": "item_holyspark",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 35,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 270342
+      },
+      {
+        "id": 30210,
+        "name": "Angelic",
+        "slug": "angelic",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704582,
+        "spell_ids": [
+          704582,
+          707771
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Illumination</span> by <span class=\"item-number\">0.25</span> sec.",
+        "description": "Reduces the cast time of Illumination by 0.25 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704582,
+            "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Illumination</span> by <span class=\"item-number\">0.25</span> sec.",
+            "description": "Reduces the cast time of Illumination by 0.25 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707771,
+            "description_html": "Reduces the cast time of <span style=\"color: #FFFFFF; display: inline\">Illumination</span> by <span class=\"item-number\">0.25</span> sec.",
+            "description": "Reduces the cast time of Illumination by 0.25 sec."
+          }
+        ],
+        "connections": [
+          31195
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell-AP-Orange",
+          "key": "spell-ap-orange",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 44,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29506,
+        "name": "An'she's Guidance",
+        "slug": "anshes-guidance",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 681064,
+        "spell_ids": [
+          681064,
+          681470
+        ],
+        "description_html": "Increases your Holy critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Holy critical strike chance by 2% and reduces spell pushback suffered from damaging attacks by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 681064,
+            "description_html": "Increases your Holy critical strike chance by <span class=\"item-number\">2</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Holy critical strike chance by 2% and reduces spell pushback suffered from damaging attacks by 50%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 681470,
+            "description_html": "Increases your Holy critical strike chance by <span class=\"item-number\">4</span><span class=\"item-number\">%</span> and reduces spell pushback suffered from damaging attacks by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Holy critical strike chance by 4% and reduces spell pushback suffered from damaging attacks by 100%."
+          }
+        ],
+        "connections": [
+          31195
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_SummonLightwell",
+          "key": "spell_holy_summonlightwell",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7718,
+        "name": "Sanctified",
+        "slug": "sanctified",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300344,
+        "spell_ids": [
+          300344
+        ],
+        "description_html": "Healing a target affected by <span style=\"color: #FFFFFF; display: inline\">Bless</span> refunds <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of the mana cost of the spell.",
+        "description": "Healing a target affected by Bless refunds 25% of the mana cost of the spell.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300344,
+            "description_html": "Healing a target affected by <span style=\"color: #FFFFFF; display: inline\">Bless</span> refunds <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of the mana cost of the spell.",
+            "description": "Healing a target affected by Bless refunds 25% of the mana cost of the spell."
+          }
+        ],
+        "connections": [
+          30210
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_divineintervention",
+          "key": "spell_holy_divineintervention",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 51,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30214,
+        "name": "Blessing of Absolution",
+        "slug": "blessing-of-absolution",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804249,
+        "spell_ids": [
+          804249
+        ],
+        "description_html": "Empower a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally to unleash a burst of holy energy in front of them, dealing <span class=\"item-number\">32</span> + <span class=\"item-number\">150% healing</span> Holy damage enemies in a <span class=\"item-number\">10</span> yd frontal cone and generating additional threat.<br /><br />",
+        "description": "Empower a Blessed ally to unleash a burst of holy energy in front of them, dealing 32 + 150% healing Holy damage enemies in a 10 yd frontal cone and generating additional threat.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804249,
+            "description_html": "Empower a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally to unleash a burst of holy energy in front of them, dealing <span class=\"item-number\">32</span> + <span class=\"item-number\">150% healing</span> Holy damage enemies in a <span class=\"item-number\">10</span> yd frontal cone and generating additional threat.<br /><br />",
+            "description": "Empower a Blessed ally to unleash a burst of holy energy in front of them, dealing 32 + 150% healing Holy damage enemies in a 10 yd frontal cone and generating additional threat."
+          }
+        ],
+        "connections": [
+          29506,
+          30210
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_paladin_lightofdawn",
+          "key": "spell_paladin_lightofdawn",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 42,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30817,
+        "name": "Faith",
+        "slug": "faith",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707077,
+        "spell_ids": [
+          707077
+        ],
+        "description_html": "Direct healing done now increases the target's Armor by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.",
+        "description": "Direct healing done now increases the target's Armor by 10% for 20 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707077,
+            "description_html": "Direct healing done now increases the target's Armor by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> for <span class=\"item-number\">20</span> seconds.",
+            "description": "Direct healing done now increases the target's Armor by 10% for 20 seconds."
+          }
+        ],
+        "connections": [
+          29506
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_plate_raidpaladinmythic_q_01",
+          "key": "inv_helm_plate_raidpaladinmythic_q_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 11,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4547,
+        "name": "Sun Worship",
+        "slug": "sun-worship",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 10.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 20,
+          "talent_ids": []
+        },
+        "spell_id": 704910,
+        "spell_ids": [
+          704910
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your healing power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect and your spell haste rating by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Intellect.",
+        "description": "Level 20 Passive\nIncreases your healing power by 15% of your Intellect and your spell haste rating by 25% of your Intellect.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704910,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">20</span> Passive</span><br />Increases your healing power by <span class=\"item-number\">15</span><span class=\"item-number\">%</span> of your Intellect and your spell haste rating by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> of your Intellect.",
+            "description": "Level 20 Passive\nIncreases your healing power by 15% of your Intellect and your spell haste rating by 25% of your Intellect."
+          }
+        ],
+        "connections": [
+          4047
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",
+          "key": "ability_paladin_gaurdedbythelight",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 48,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 33998,
+        "name": "Daybreak",
+        "slug": "daybreak",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500147,
+        "spell_ids": [
+          500147
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br />Make a prayer, healing an ally for <span class=\"item-number\">186</span> + <span class=\"item-number\">59.5% healing</span>.",
+        "description": "2 Charges, 10 sec recharge\nMake a prayer, healing an ally for 186 + 59.5% healing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500147,
+            "description_html": "<span style=\"color: #ffffff; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">10</span> sec recharge</span><br />Make a prayer, healing an ally for <span class=\"item-number\">186</span> + <span class=\"item-number\">59.5% healing</span>.",
+            "description": "2 Charges, 10 sec recharge\nMake a prayer, healing an ally for 186 + 59.5% healing."
+          }
+        ],
+        "connections": [
+          7718,
+          30214
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_lightoftheprotector",
+          "key": "ability_paladin_lightoftheprotector",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 72356,
+        "name": "Mercy",
+        "slug": "mercy",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 504848,
+        "spell_ids": [
+          504848
+        ],
+        "description_html": "Grant mercy to an ally and up to <span class=\"item-number\">5</span> nearby allies, abolishing <span class=\"item-number\">2</span> disease effects, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">12</span> seconds.",
+        "description": "Grant mercy to an ally and up to 5 nearby allies, abolishing 2 disease effects, repeating every 3 sec for 12 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 504848,
+            "description_html": "Grant mercy to an ally and up to <span class=\"item-number\">5</span> nearby allies, abolishing <span class=\"item-number\">2</span> disease effects, repeating every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">12</span> seconds.",
+            "description": "Grant mercy to an ally and up to 5 nearby allies, abolishing 2 disease effects, repeating every 3 sec for 12 seconds."
+          }
+        ],
+        "connections": [
+          30214
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_selflesshealer",
+          "key": "ability_paladin_selflesshealer",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 54,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29183,
+        "name": "Divine Vision",
+        "slug": "divine-vision",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706735,
+        "spell_ids": [
+          706735,
+          707770
+        ],
+        "description_html": "Increases your Holy and Physical damage and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Holy and Physical damage and healing done by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706735,
+            "description_html": "Increases your Holy and Physical damage and healing done by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Holy and Physical damage and healing done by 4%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 707770,
+            "description_html": "Increases your Holy and Physical damage and healing done by <span class=\"item-number\">8</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Holy and Physical damage and healing done by 8%."
+          }
+        ],
+        "connections": [
+          30214,
+          30817
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_powerinfusion",
+          "key": "spell_holy_powerinfusion",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31376,
+        "name": "Hot Spot",
+        "slug": "hot-spot",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 1.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301256,
+        "spell_ids": [
+          301256
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Daybreak</span> causes your next <span class=\"item-number\">2</span> casts of <span style=\"color: #ffffff; display: inline\">Shine</span>, <span style=\"color: #ffffff; display: inline\">Illumination</span>, <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span>, or <span style=\"color: #ffffff; display: inline\">Sunflare</span> within <span class=\"item-number\">10</span> seconds to have a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> reduced cast time.",
+        "description": "Casting Daybreak causes your next 2 casts of Shine, Illumination, Radiant Cascade, or Sunflare within 10 seconds to have a -25% reduced cast time.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301256,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Daybreak</span> causes your next <span class=\"item-number\">2</span> casts of <span style=\"color: #ffffff; display: inline\">Shine</span>, <span style=\"color: #ffffff; display: inline\">Illumination</span>, <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span>, or <span style=\"color: #ffffff; display: inline\">Sunflare</span> within <span class=\"item-number\">10</span> seconds to have a <span class=\"item-number\">-25</span><span class=\"item-number\">%</span> reduced cast time.",
+            "description": "Casting Daybreak causes your next 2 casts of Shine, Illumination, Radiant Cascade, or Sunflare within 10 seconds to have a -25% reduced cast time."
+          }
+        ],
+        "connections": [
+          33998
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_holy_hand_Border",
+          "key": "nhi_holy_hand_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 38,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34037,
+        "name": "Gleaming Light",
+        "slug": "gleaming-light",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704568,
+        "spell_ids": [
+          704568
+        ],
+        "description_html": "Increases healing of <span style=\"color: #ffffff; display: inline\">Illumination</span> and <span style=\"color: #ffffff; display: inline\">Daybreak</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Increases healing of Illumination and Daybreak by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704568,
+            "description_html": "Increases healing of <span style=\"color: #ffffff; display: inline\">Illumination</span> and <span style=\"color: #ffffff; display: inline\">Daybreak</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Increases healing of Illumination and Daybreak by 20%."
+          }
+        ],
+        "connections": [
+          33998
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_jewelry_necklace_75",
+          "key": "inv_jewelry_necklace_75",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7714,
+        "name": "Blessing of Retribution",
+        "slug": "blessing-of-retribution",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804254,
+        "spell_ids": [
+          804254
+        ],
+        "description_html": "Guard a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally, deflecting the next harmful spell cast on them within <span class=\"item-number\">1</span> minute.<br /><br />",
+        "description": "Guard a Blessed ally, deflecting the next harmful spell cast on them within 1 minute.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804254,
+            "description_html": "Guard a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally, deflecting the next harmful spell cast on them within <span class=\"item-number\">1</span> minute.<br /><br />",
+            "description": "Guard a Blessed ally, deflecting the next harmful spell cast on them within 1 minute."
+          }
+        ],
+        "connections": [
+          29183,
+          33998,
+          72356
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_reflectiveshield",
+          "key": "ability_priest_reflectiveshield",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30213,
+        "name": "Savior",
+        "slug": "savior",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300343,
+        "spell_ids": [
+          300343
+        ],
+        "description_html": "Increases your critical strike chance on targets below <span class=\"item-number\">20%</span> health by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your critical strike chance on targets below 20% health by 30%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300343,
+            "description_html": "Increases your critical strike chance on targets below <span class=\"item-number\">20%</span> health by <span class=\"item-number\">30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your critical strike chance on targets below 20% health by 30%."
+          }
+        ],
+        "connections": [
+          29183
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Fanaticism",
+          "key": "spell_holy_fanaticism",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30212,
+        "name": "Hope",
+        "slug": "hope",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": true,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 7.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300349,
+        "spell_ids": [
+          300349
+        ],
+        "description_html": "Your critical heals now reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Solar Invocation</span> spells by <span class=\"item-number\">-1</span> sec.<br /><br />Can occur only once per sec.",
+        "description": "Your critical heals now reduce the cooldown of Solar Invocation spells by -1 sec.\n\nCan occur only once per sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300349,
+            "description_html": "Your critical heals now reduce the cooldown of <span style=\"color: #FFFFFF; display: inline\">Solar Invocation</span> spells by <span class=\"item-number\">-1</span> sec.<br /><br />Can occur only once per sec.",
+            "description": "Your critical heals now reduce the cooldown of Solar Invocation spells by -1 sec.\n\nCan occur only once per sec."
+          }
+        ],
+        "connections": [
+          29183
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_PrayerOfMendingtga",
+          "key": "spell_holy_prayerofmendingtga",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4546,
+        "name": "Holy Form",
+        "slug": "holy-form",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 10.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 30,
+          "talent_ids": []
+        },
+        "spell_id": 805301,
+        "spell_ids": [
+          805301
+        ],
+        "description_html": "Ascend into a holy form, increasing your healing done by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and reducing your threat generated by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.<br /><br />While at or above <span class=\"item-number\">30%</span> mana, you sacrifice additional mana with each heal, healing your ally affected by <span style=\"color: #FFFFFF; display: inline\">Bless</span>. <br /><br />",
+        "description": "Ascend into a holy form, increasing your healing done by 10% and reducing your threat generated by -50%.\n\nWhile at or above 30% mana, you sacrifice additional mana with each heal, healing your ally affected by Bless.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805301,
+            "description_html": "Ascend into a holy form, increasing your healing done by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and reducing your threat generated by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>.<br /><br />While at or above <span class=\"item-number\">30%</span> mana, you sacrifice additional mana with each heal, healing your ally affected by <span style=\"color: #FFFFFF; display: inline\">Bless</span>. <br /><br />",
+            "description": "Ascend into a holy form, increasing your healing done by 10% and reducing your threat generated by -50%.\n\nWhile at or above 30% mana, you sacrifice additional mana with each heal, healing your ally affected by Bless."
+          }
+        ],
+        "connections": [
+          4547
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_AuraMastery",
+          "key": "spell_holy_auramastery",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 37,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34039,
+        "name": "Ancient Rites",
+        "slug": "ancient-rites",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 3,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300351,
+        "spell_ids": [
+          300351,
+          301345,
+          301817
+        ],
+        "description_html": "Increases your mana by <span class=\"item-number\">150</span><span class=\"item-number\">%</span> of your Intellect, and causes you to regenerate mana equal to <span class=\"item-number\">2%</span> of your maximum mana every <span class=\"item-number\">15</span> sec.",
+        "description": "Increases your mana by 150% of your Intellect, and causes you to regenerate mana equal to 2% of your maximum mana every 15 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300351,
+            "description_html": "Increases your mana by <span class=\"item-number\">150</span><span class=\"item-number\">%</span> of your Intellect, and causes you to regenerate mana equal to <span class=\"item-number\">2%</span> of your maximum mana every <span class=\"item-number\">15</span> sec.",
+            "description": "Increases your mana by 150% of your Intellect, and causes you to regenerate mana equal to 2% of your maximum mana every 15 sec."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301345,
+            "description_html": "Increases your mana by <span class=\"item-number\">300</span><span class=\"item-number\">%</span> of your Intellect, and causes you to regenerate mana equal to <span class=\"item-number\">2%</span> of your maximum mana every <span class=\"item-number\">15</span> sec.",
+            "description": "Increases your mana by 300% of your Intellect, and causes you to regenerate mana equal to 2% of your maximum mana every 15 sec."
+          },
+          {
+            "rank": 3,
+            "spell_id": 301817,
+            "description_html": "Increases your mana by <span class=\"item-number\">450</span><span class=\"item-number\">%</span> of your Intellect, and causes you to regenerate mana equal to <span class=\"item-number\">2%</span> of your maximum mana every <span class=\"item-number\">15</span> sec.",
+            "description": "Increases your mana by 450% of your Intellect, and causes you to regenerate mana equal to 2% of your maximum mana every 15 sec."
+          }
+        ],
+        "connections": [
+          7714,
+          31376,
+          34037
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_essence_reapingflames",
+          "key": "ability_essence_reapingflames",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 4,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12832,
+        "name": "Blessing of Purity",
+        "slug": "blessing-of-purity",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804253,
+        "spell_ids": [
+          804253
+        ],
+        "description_html": "Protect a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally, making them immune to all damage for <span class=\"item-number\">6</span> seconds.<br /><br />",
+        "description": "Protect a Blessed ally, making them immune to all damage for 6 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804253,
+            "description_html": "Protect a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally, making them immune to all damage for <span class=\"item-number\">6</span> seconds.<br /><br />",
+            "description": "Protect a Blessed ally, making them immune to all damage for 6 seconds."
+          }
+        ],
+        "connections": [
+          7714
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_angelicbulwark",
+          "key": "ability_priest_angelicbulwark",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6653,
+        "name": "Stalwart",
+        "slug": "stalwart",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300355,
+        "spell_ids": [
+          300355
+        ],
+        "description_html": "Melee critical strikes against you prevent you from being critically struck again for <span class=\"item-number\">4</span> seconds.",
+        "description": "Melee critical strikes against you prevent you from being critically struck again for 4 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300355,
+            "description_html": "Melee critical strikes against you prevent you from being critically struck again for <span class=\"item-number\">4</span> seconds.",
+            "description": "Melee critical strikes against you prevent you from being critically struck again for 4 seconds."
+          }
+        ],
+        "connections": [
+          7714,
+          30212,
+          30213
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_qirajidol_sun",
+          "key": "inv_qirajidol_sun",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 24,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 14001,
+        "name": "Sun Strength",
+        "slug": "sun-strength",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707517,
+        "spell_ids": [
+          707517
+        ],
+        "description_html": "<span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> is now guaranteed to critically strike on allies affected by <span style=\"color: #ffffff; display: inline\">Bless</span>.",
+        "description": "Radiant Cascade is now guaranteed to critically strike on allies affected by Bless.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707517,
+            "description_html": "<span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> is now guaranteed to critically strike on allies affected by <span style=\"color: #ffffff; display: inline\">Bless</span>.",
+            "description": "Radiant Cascade is now guaranteed to critically strike on allies affected by Bless."
+          }
+        ],
+        "connections": [
+          31376
+        ],
+        "choice_group": 175490,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_HolyProtection",
+          "key": "spell_holy_holyprotection",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 17,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34001,
+        "name": "Everglow",
+        "slug": "everglow",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 0.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704565,
+        "spell_ids": [
+          704565
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> now bounces to <span class=\"item-number\">2</span> additional allies.",
+        "description": "Your Radiant Cascade now bounces to 2 additional allies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704565,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> now bounces to <span class=\"item-number\">2</span> additional allies.",
+            "description": "Your Radiant Cascade now bounces to 2 additional allies."
+          }
+        ],
+        "connections": [
+          31376
+        ],
+        "choice_group": 175490,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_artifact_xp04",
+          "key": "inv_artifact_xp04",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 36,
+            "row": 21,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29413,
+        "name": "Heat Wave",
+        "slug": "heat-wave",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 534267,
+        "spell_ids": [
+          534267
+        ],
+        "description_html": "Healing with <span style=\"color: #FFFFFF; display: inline\">Illumination</span>, <span style=\"color: #FFFFFF; display: inline\">Shine</span>, and <span style=\"color: #ffffff; display: inline\">Daybreak</span> and healing done from <span style=\"color: #FFFFFF; display: inline\">Holy Form</span> now additionally heals up to <span class=\"item-number\">5</span> of the target's lowest health nearby allies for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of the value.",
+        "description": "Healing with Illumination, Shine, and Daybreak and healing done from Holy Form now additionally heals up to 5 of the target's lowest health nearby allies for 75% of the value.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 534267,
+            "description_html": "Healing with <span style=\"color: #FFFFFF; display: inline\">Illumination</span>, <span style=\"color: #FFFFFF; display: inline\">Shine</span>, and <span style=\"color: #ffffff; display: inline\">Daybreak</span> and healing done from <span style=\"color: #FFFFFF; display: inline\">Holy Form</span> now additionally heals up to <span class=\"item-number\">5</span> of the target's lowest health nearby allies for <span class=\"item-number\">75</span><span class=\"item-number\">%</span> of the value.",
+            "description": "Healing with Illumination, Shine, and Daybreak and healing done from Holy Form now additionally heals up to 5 of the target's lowest health nearby allies for 75% of the value."
+          }
+        ],
+        "connections": [
+          34039
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_HolyBolt",
+          "key": "spell_holy_holybolt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7719,
+        "name": "Glaring Rays",
+        "slug": "glaring-rays",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804257,
+        "spell_ids": [
+          804257
+        ],
+        "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your spell haste by an additional <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+        "description": "Increases the spell haste of all party and raid members by 3% and your spell haste by an additional 3%.\n\nDoes not stack with similar effects.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804257,
+            "description_html": "Increases the spell haste of all party and raid members by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> and your spell haste by an additional <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.<br /><br />Does not stack with similar effects.",
+            "description": "Increases the spell haste of all party and raid members by 3% and your spell haste by an additional 3%.\n\nDoes not stack with similar effects."
+          }
+        ],
+        "connections": [
+          6653,
+          12832,
+          34039
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Power",
+          "key": "spell_holy_power",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 27,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34038,
+        "name": "Pure Heart",
+        "slug": "pure-heart",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 582832,
+        "spell_ids": [
+          582832
+        ],
+        "description_html": "Melee critical strikes increase your haste and healing done by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> per stack, stacking up to <span class=\"item-number\">3</span> times. Lasts for <span class=\"item-number\">10</span> seconds.",
+        "description": "Melee critical strikes increase your haste and healing done by 5% per stack, stacking up to 3 times. Lasts for 10 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 582832,
+            "description_html": "Melee critical strikes increase your haste and healing done by <span class=\"item-number\">5</span><span class=\"item-number\">%</span> per stack, stacking up to <span class=\"item-number\">3</span> times. Lasts for <span class=\"item-number\">10</span> seconds.",
+            "description": "Melee critical strikes increase your haste and healing done by 5% per stack, stacking up to 3 times. Lasts for 10 seconds."
+          }
+        ],
+        "connections": [
+          6653
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Renew",
+          "key": "spell_holy_renew",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29186,
+        "name": "Solemn Priest",
+        "slug": "solemn-priest",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 8.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804269,
+        "spell_ids": [
+          804269
+        ],
+        "description_html": "Increases your melee attack power by <span class=\"item-number\">125</span><span class=\"item-number\">%</span> of your Intellect and causes <span style=\"color: #ffffff; display: inline\">Gavel of Light</span> to heal you for an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of its damage dealt.",
+        "description": "Increases your melee attack power by 125% of your Intellect and causes Gavel of Light to heal you for an additional 50% of its damage dealt.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804269,
+            "description_html": "Increases your melee attack power by <span class=\"item-number\">125</span><span class=\"item-number\">%</span> of your Intellect and causes <span style=\"color: #ffffff; display: inline\">Gavel of Light</span> to heal you for an additional <span class=\"item-number\">50</span><span class=\"item-number\">%</span> of its damage dealt.",
+            "description": "Increases your melee attack power by 125% of your Intellect and causes Gavel of Light to heal you for an additional 50% of its damage dealt."
+          }
+        ],
+        "connections": [
+          30212
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_SealOfSalvation",
+          "key": "spell_holy_sealofsalvation",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 4747,
+        "name": "Heaven's Appraisal",
+        "slug": "heavens-appraisal",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 10.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 40,
+          "talent_ids": []
+        },
+        "spell_id": 300353,
+        "spell_ids": [
+          300353
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Gavels</span> can no longer be missed, dodged, or parried and they gain an empowered effect when under <span style=\"color: #ffffff; display: inline\">Holy Form</span>.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gavel of Light:</span> Places an absorption shield equal to the amount healed.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gavel of Grace:</span> Restores <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your maximum mana.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gavel of Wrath:</span> Strikes <span class=\"item-number\">5</span> additional nearby enemies.",
+        "description": "Level 40 Passive\nYour Gavels can no longer be missed, dodged, or parried and they gain an empowered effect when under Holy Form.\n\nGavel of Light: Places an absorption shield equal to the amount healed.\n\nGavel of Grace: Restores 10% of your maximum mana.\n\nGavel of Wrath: Strikes 5 additional nearby enemies.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300353,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">40</span> Passive</span><br />Your <span style=\"color: #ffffff; display: inline\">Gavels</span> can no longer be missed, dodged, or parried and they gain an empowered effect when under <span style=\"color: #ffffff; display: inline\">Holy Form</span>.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gavel of Light:</span> Places an absorption shield equal to the amount healed.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gavel of Grace:</span> Restores <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of your maximum mana.<br /><br /><span style=\"color: #FFFFFF; display: inline\">Gavel of Wrath:</span> Strikes <span class=\"item-number\">5</span> additional nearby enemies.",
+            "description": "Level 40 Passive\nYour Gavels can no longer be missed, dodged, or parried and they gain an empowered effect when under Holy Form.\n\nGavel of Light: Places an absorption shield equal to the amount healed.\n\nGavel of Grace: Restores 10% of your maximum mana.\n\nGavel of Wrath: Strikes 5 additional nearby enemies."
+          }
+        ],
+        "connections": [
+          4546
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_wordsofmeaning",
+          "key": "ability_priest_wordsofmeaning",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 23,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 30818,
+        "name": "Sunbeams",
+        "slug": "sunbeams",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 1.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807874,
+        "spell_ids": [
+          807874
+        ],
+        "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cast time of Radiant Cascade by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807874,
+            "description_html": "Reduces the cast time of <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cast time of Radiant Cascade by -15%."
+          }
+        ],
+        "connections": [
+          14001,
+          34001,
+          29413
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_Restoration",
+          "key": "spell_holy_restoration",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12351,
+        "name": "Improved Radiant Cascade",
+        "slug": "improved-radiant-cascade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807963,
+        "spell_ids": [
+          807963
+        ],
+        "description_html": "Increases the healing done and reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the healing done and reduces the mana cost of Radiant Cascade by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807963,
+            "description_html": "Increases the healing done and reduces the mana cost of <span style=\"color: #ffffff; display: inline\">Radiant Cascade</span> by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the healing done and reduces the mana cost of Radiant Cascade by -15%."
+          }
+        ],
+        "connections": [
+          29413
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_SlowingTotem",
+          "key": "spell_nature_slowingtotem",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 12,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 11051,
+        "name": "Blightbreaker",
+        "slug": "blightbreaker",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707433,
+        "spell_ids": [
+          707433
+        ],
+        "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Mercy</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>, but increases its mana cost by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the tick rate of Mercy by -50%, but increases its mana cost by 100%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707433,
+            "description_html": "Increases the tick rate of <span style=\"color: #ffffff; display: inline\">Mercy</span> by <span class=\"item-number\">-50</span><span class=\"item-number\">%</span>, but increases its mana cost by <span class=\"item-number\">100</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the tick rate of Mercy by -50%, but increases its mana cost by 100%."
+          }
+        ],
+        "connections": [
+          7719,
+          29413,
+          34038
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Holy_HarmUndeadAura",
+          "key": "spell_holy_harmundeadaura",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34036,
+        "name": "Holy Knight",
+        "slug": "holy-knight",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 301011,
+        "spell_ids": [
+          301011
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Gavel of Light</span> now additionally heals up to <span class=\"item-number\">5</span> nearby allies for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the amount it heals you.",
+        "description": "Your Gavel of Light now additionally heals up to 5 nearby allies for 100% of the amount it heals you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 301011,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Gavel of Light</span> now additionally heals up to <span class=\"item-number\">5</span> nearby allies for <span class=\"item-number\">100</span><span class=\"item-number\">%</span> of the amount it heals you.",
+            "description": "Your Gavel of Light now additionally heals up to 5 nearby allies for 100% of the amount it heals you."
+          }
+        ],
+        "connections": [
+          34038
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Paladin_DivineStorm",
+          "key": "ability_paladin_divinestorm",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6335,
+        "name": "Touch of Light",
+        "slug": "touch-of-light",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 7.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 8,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 572885,
+        "spell_ids": [
+          572885
+        ],
+        "description_html": "Enemies struck by <span style=\"color: #ffffff; display: inline\">Blessing of Absolution</span> now deal <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> reduced damage for <span class=\"item-number\">5</span> seconds.<br /><br />In addition, increases the critical srtike chance of all <span style=\"color: #ffffff; display: inline\">Gavels</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Enemies struck by Blessing of Absolution now deal -20% reduced damage for 5 seconds.\n\nIn addition, increases the critical srtike chance of all Gavels by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 572885,
+            "description_html": "Enemies struck by <span style=\"color: #ffffff; display: inline\">Blessing of Absolution</span> now deal <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> reduced damage for <span class=\"item-number\">5</span> seconds.<br /><br />In addition, increases the critical srtike chance of all <span style=\"color: #ffffff; display: inline\">Gavels</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Enemies struck by Blessing of Absolution now deal -20% reduced damage for 5 seconds.\n\nIn addition, increases the critical srtike chance of all Gavels by 20%."
+          }
+        ],
+        "connections": [
+          29186,
+          34038
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_holyguidance",
+          "key": "spell_holy_holyguidance",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 47,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34042,
+        "name": "Cultivate Divinity",
+        "slug": "cultivate-divinity",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704920,
+        "spell_ids": [
+          704920
+        ],
+        "description_html": "Effectively healing with <span style=\"color: #FFFFFF; display: inline\">Radiant Cascade</span> has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #FFFFFF; display: inline\">Illumination</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>. <br /><br />Effectively healing with <span style=\"color: #FFFFFF; display: inline\">Illumination</span> has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #FFFFFF; display: inline\">Radiant Cascade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+        "description": "Effectively healing with Radiant Cascade has a 20% chance to increase the healing of your next Illumination by 20%.\n\nEffectively healing with Illumination has a 40% chance to increase the healing of your next Radiant Cascade by 20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704920,
+            "description_html": "Effectively healing with <span style=\"color: #FFFFFF; display: inline\">Radiant Cascade</span> has a <span class=\"item-number\">20</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #FFFFFF; display: inline\">Illumination</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>. <br /><br />Effectively healing with <span style=\"color: #FFFFFF; display: inline\">Illumination</span> has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to increase the healing of your next <span style=\"color: #FFFFFF; display: inline\">Radiant Cascade</span> by <span class=\"item-number\">20</span><span class=\"item-number\">%</span>.",
+            "description": "Effectively healing with Radiant Cascade has a 20% chance to increase the healing of your next Illumination by 20%.\n\nEffectively healing with Illumination has a 40% chance to increase the healing of your next Radiant Cascade by 20%."
+          }
+        ],
+        "connections": [
+          12351,
+          30818
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_bindingprayers",
+          "key": "ability_priest_bindingprayers",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 9,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34043,
+        "name": "Lead Me Not Astray",
+        "slug": "lead-me-not-astray",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300357,
+        "spell_ids": [
+          300357
+        ],
+        "description_html": "Doubles the healing done and mana restored by <span style=\"color: #ffffff; display: inline\">Bless</span>.",
+        "description": "Doubles the healing done and mana restored by Bless.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300357,
+            "description_html": "Doubles the healing done and mana restored by <span style=\"color: #ffffff; display: inline\">Bless</span>.",
+            "description": "Doubles the healing done and mana restored by Bless."
+          }
+        ],
+        "connections": [
+          34036,
+          11051,
+          12351
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_holy_divineprotection",
+          "key": "spell_holy_divineprotection",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 52,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34041,
+        "name": "Solar Invigoration",
+        "slug": "solar-invigoration",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 806123,
+        "spell_ids": [
+          806123
+        ],
+        "description_html": "For <span class=\"item-number\">15</span> seconds, your allies take <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased healing and their direct damage dealt now causes them to cast <span style=\"color: #ffffff; display: inline\">Illumination</span>. Can only occur once every <span class=\"item-number\">3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_priest_clarityofpurpose\" /><span class=\"name\">Illumination (Rank <span class=\"item-number\">10</span>)</span></div><span class=\"desc\">Illuminate an ally, healing them for <span class=\"item-number\">1229</span> + <span class=\"item-number\">105% healing</span>.</span></div>",
+        "description": "For 15 seconds, your allies take 20% increased healing and their direct damage dealt now causes them to cast Illumination. Can only occur once every 3 sec.Illumination (Rank 10)Illuminate an ally, healing them for 1229 + 105% healing.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 806123,
+            "description_html": "For <span class=\"item-number\">15</span> seconds, your allies take <span class=\"item-number\">20</span><span class=\"item-number\">%</span> increased healing and their direct damage dealt now causes them to cast <span style=\"color: #ffffff; display: inline\">Illumination</span>. Can only occur once every <span class=\"item-number\">3</span> sec.<div class=\"pop-inline-spell\"><hr class=\"my-2\" style=\"border-color: #2e2e2e\" /><div class=\"d-flex mb-2\"><img class=\"builder-icon pop-icon mr-2 ability_priest_clarityofpurpose\" /><span class=\"name\">Illumination (Rank <span class=\"item-number\">10</span>)</span></div><span class=\"desc\">Illuminate an ally, healing them for <span class=\"item-number\">1229</span> + <span class=\"item-number\">105% healing</span>.</span></div>",
+            "description": "For 15 seconds, your allies take 20% increased healing and their direct damage dealt now causes them to cast Illumination. Can only occur once every 3 sec.Illumination (Rank 10)Illuminate an ally, healing them for 1229 + 105% healing."
+          }
+        ],
+        "connections": [
+          34036,
+          6335
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_element(fire)_b_01_Border",
+          "key": "custom_element_fire__b_01_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 38,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 9747,
+        "name": "The Redeemer",
+        "slug": "the-redeemer",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": true,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 10.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 50,
+          "talent_ids": []
+        },
+        "spell_id": 300339,
+        "spell_ids": [
+          300339
+        ],
+        "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />When you critically heal your target, they will be healed for <span class=\"item-number\">30%</span> of the amount originally healed the next time they take damage. Lasts <span class=\"item-number\">15</span> seconds.",
+        "description": "Level 50 Passive\nWhen you critically heal your target, they will be healed for 30% of the amount originally healed the next time they take damage. Lasts 15 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300339,
+            "description_html": "<span style=\"color: #66DDFF; display: inline\">Level <span class=\"item-number\">50</span> Passive</span><br />When you critically heal your target, they will be healed for <span class=\"item-number\">30%</span> of the amount originally healed the next time they take damage. Lasts <span class=\"item-number\">15</span> seconds.",
+            "description": "Level 50 Passive\nWhen you critically heal your target, they will be healed for 30% of the amount originally healed the next time they take damage. Lasts 15 seconds."
+          }
+        ],
+        "connections": [
+          4747
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\5_priestskill01_Border",
+          "key": "_5_priestskill01_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 35,
+            "row": 1,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 1056772
+      },
+      {
+        "id": 34035,
+        "name": "Empowered Holy Form",
+        "slug": "empowered-holy-form",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 2.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800602,
+        "spell_ids": [
+          800602
+        ],
+        "description_html": "Doubles the effectiveness of your <span style=\"color: #ffffff; display: inline\">Holy Form</span> and reduces the tick rate of <span style=\"color: #ffffff; display: inline\">Ancient Rites</span> by <span class=\"item-number\">-5</span> sec.",
+        "description": "Doubles the effectiveness of your Holy Form and reduces the tick rate of Ancient Rites by -5 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800602,
+            "description_html": "Doubles the effectiveness of your <span style=\"color: #ffffff; display: inline\">Holy Form</span> and reduces the tick rate of <span style=\"color: #ffffff; display: inline\">Ancient Rites</span> by <span class=\"item-number\">-5</span> sec.",
+            "description": "Doubles the effectiveness of your Holy Form and reduces the tick rate of Ancient Rites by -5 sec."
+          }
+        ],
+        "connections": [
+          34042,
+          34043
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_priest_divinestar_holy",
+          "key": "spell_priest_divinestar_holy",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30211,
+        "name": "Blessing of Triumph",
+        "slug": "blessing-of-triumph",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 804250,
+        "spell_ids": [
+          804250
+        ],
+        "description_html": "Redeem a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally for <span class=\"item-number\">20</span> seconds, granting <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased haste and <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage.<br /><br />If the ally falls below <span class=\"item-number\">35%</span> maximum health they are healed for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of their direct damage dealt for the remaining duration.<br /><br />",
+        "description": "Redeem a Blessed ally for 20 seconds, granting 25% increased haste and 10% increased damage.\n\nIf the ally falls below 35% maximum health they are healed for 10% of their direct damage dealt for the remaining duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 804250,
+            "description_html": "Redeem a <span style=\"color: #ffffff; display: inline\">Blessed</span> ally for <span class=\"item-number\">20</span> seconds, granting <span class=\"item-number\">25</span><span class=\"item-number\">%</span> increased haste and <span class=\"item-number\">10</span><span class=\"item-number\">%</span> increased damage.<br /><br />If the ally falls below <span class=\"item-number\">35%</span> maximum health they are healed for <span class=\"item-number\">10</span><span class=\"item-number\">%</span> of their direct damage dealt for the remaining duration.<br /><br />",
+            "description": "Redeem a Blessed ally for 20 seconds, granting 25% increased haste and 10% increased damage.\n\nIf the ally falls below 35% maximum health they are healed for 10% of their direct damage dealt for the remaining duration."
+          }
+        ],
+        "connections": [
+          34043
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_paladin_holyavenger",
+          "key": "ability_paladin_holyavenger",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30840,
+        "name": "Battle Cleric",
+        "slug": "battle-cleric",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 27,
+        "tree_id": 71,
+        "position": {
+          "x": 6.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 1,
+          "ability_essence": 0
+        },
+        "requirements": {
+          "tree_talent_essence": 23,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300347,
+        "spell_ids": [
+          300347
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\">Paragon</span> now has a <span class=\"item-number\">1</span> min cooldown and empowers your <span style=\"color: #ffffff; display: inline\">Gavels</span>, causing them to have no cooldown and have <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased effectiveness.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Gavels</span> now have a <span class=\"item-number\">40</span> yd range.",
+        "description": "Paragon now has a 1 min cooldown and empowers your Gavels, causing them to have no cooldown and have 50% increased effectiveness.\n\nIn addition, your Gavels now have a 40 yd range.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300347,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\">Paragon</span> now has a <span class=\"item-number\">1</span> min cooldown and empowers your <span style=\"color: #ffffff; display: inline\">Gavels</span>, causing them to have no cooldown and have <span class=\"item-number\">50</span><span class=\"item-number\">%</span> increased effectiveness.<br /><br />In addition, your <span style=\"color: #ffffff; display: inline\">Gavels</span> now have a <span class=\"item-number\">40</span> yd range.",
+            "description": "Paragon now has a 1 min cooldown and empowers your Gavels, causing them to have no cooldown and have 50% increased effectiveness.\n\nIn addition, your Gavels now have a 40 yd range."
+          }
+        ],
+        "connections": [
+          34043,
+          34041
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_priest_ascension",
+          "key": "ability_priest_ascension",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 7,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}

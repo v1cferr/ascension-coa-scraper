@@ -1,0 +1,2223 @@
+{
+  "meta": {
+    "source": "https://ascension.gg/en/v2/coa-builder/voljin",
+    "builder": "coa",
+    "realm": {
+      "id": 40,
+      "slug": "voljin",
+      "name": "Vol'Jin"
+    },
+    "scraped_at": "2026-08-30T22:40:20+00:00",
+    "schema_version": 1,
+    "scraper_version": "0.1.0",
+    "upstream_schema_version": {
+      "talents": 2
+    },
+    "content_hash": "sha256:2e5d361af20aadee290499f21c75d0141405fa7fc2a85bd406f4a8f1f666b000",
+    "talent_count": 156,
+    "tree_count": 4
+  },
+  "class": {
+    "id": 17,
+    "name": "Knight of Xoroth",
+    "slug": "knight-of-xoroth",
+    "class_file": "fleshwarden",
+    "color": "rgb(252, 0, 5)",
+    "max_talent_essence": 25,
+    "max_ability_essence": 26,
+    "icon": {
+      "source_path": "class:fleshwarden",
+      "key": "class-fleshwarden",
+      "sprite": {
+        "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+        "column": 32,
+        "row": 54,
+        "columns": 55,
+        "rows": 55
+      },
+      "file": null
+    }
+  },
+  "tree": {
+    "id": 87,
+    "name": "Class",
+    "slug": "class",
+    "sort_order": 0,
+    "class_id": 17,
+    "is_shared": true,
+    "talents": [
+      {
+        "id": 30176,
+        "name": "Chainwhip",
+        "slug": "chainwhip",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800081,
+        "spell_ids": [
+          800081
+        ],
+        "description_html": "Swing a chain at an enemy dealing <span class=\"item-number\">8</span> + <span class=\"item-number\">45% AP</span> + <span class=\"item-number\">25% SP</span> Physical damage and silencing them for <span class=\"item-number\">2</span> seconds, generating a large amount of threat.<br /><br />If you successfully interrupt an enemy, this will refund <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the cooldown.",
+        "description": "Swing a chain at an enemy dealing 8 + 45% AP + 25% SP Physical damage and silencing them for 2 seconds, generating a large amount of threat.\n\nIf you successfully interrupt an enemy, this will refund 20% of the cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800081,
+            "description_html": "Swing a chain at an enemy dealing <span class=\"item-number\">8</span> + <span class=\"item-number\">45% AP</span> + <span class=\"item-number\">25% SP</span> Physical damage and silencing them for <span class=\"item-number\">2</span> seconds, generating a large amount of threat.<br /><br />If you successfully interrupt an enemy, this will refund <span class=\"item-number\">20</span><span class=\"item-number\">%</span> of the cooldown.",
+            "description": "Swing a chain at an enemy dealing 8 + 45% AP + 25% SP Physical damage and silencing them for 2 seconds, generating a large amount of threat.\n\nIf you successfully interrupt an enemy, this will refund 20% of the cooldown."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_EnslaveSpell_Fire",
+          "key": "enslavespell_fire",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 7099,
+        "name": "Suffuse",
+        "slug": "suffuse",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801063,
+        "spell_ids": [
+          801063
+        ],
+        "description_html": "Embrace your mortal body, restoring <span class=\"item-number\">200</span> + <span class=\"item-number\">10% Stamina</span> + <span class=\"item-number\">5% AP</span> health every <span class=\"item-number\">3</span> sec, scaling with Stamina and defense rating.<br /><br />Lasts <span class=\"item-number\">3</span> sec for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+        "description": "Embrace your mortal body, restoring 200 + 10% Stamina + 5% AP health every 3 sec, scaling with Stamina and defense rating.\n\nLasts 3 sec for each Demonfire consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801063,
+            "description_html": "Embrace your mortal body, restoring <span class=\"item-number\">200</span> + <span class=\"item-number\">10% Stamina</span> + <span class=\"item-number\">5% AP</span> health every <span class=\"item-number\">3</span> sec, scaling with Stamina and defense rating.<br /><br />Lasts <span class=\"item-number\">3</span> sec for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+            "description": "Embrace your mortal body, restoring 200 + 10% Stamina + 5% AP health every 3 sec, scaling with Stamina and defense rating.\n\nLasts 3 sec for each Demonfire consumed."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\diabloanniversary_achievement",
+          "key": "diabloanniversary_achievement",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 6,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 30668,
+        "name": "Chains of Malice",
+        "slug": "chains-of-malice",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 0.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 803185,
+        "spell_ids": [
+          803185
+        ],
+        "description_html": "Lock an enemy down with magical chains, stunning them and dragging them with you for <span class=\"item-number\">5</span> seconds.<br /><br />Every <span class=\"item-number\">1</span> sec, the enemy will suffer <span class=\"item-number\">16</span> Physical damage.<br /><br />Enemies that cannot be stunned or rooted cannot be dragged.",
+        "description": "Lock an enemy down with magical chains, stunning them and dragging them with you for 5 seconds.\n\nEvery 1 sec, the enemy will suffer 16 Physical damage.\n\nEnemies that cannot be stunned or rooted cannot be dragged.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 803185,
+            "description_html": "Lock an enemy down with magical chains, stunning them and dragging them with you for <span class=\"item-number\">5</span> seconds.<br /><br />Every <span class=\"item-number\">1</span> sec, the enemy will suffer <span class=\"item-number\">16</span> Physical damage.<br /><br />Enemies that cannot be stunned or rooted cannot be dragged.",
+            "description": "Lock an enemy down with magical chains, stunning them and dragging them with you for 5 seconds.\n\nEvery 1 sec, the enemy will suffer 16 Physical damage.\n\nEnemies that cannot be stunned or rooted cannot be dragged."
+          }
+        ],
+        "connections": [],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_nightmarechain_Border",
+          "key": "nhi_nightmarechain_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 40,
+            "row": 39,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 8194
+      },
+      {
+        "id": 29437,
+        "name": "Xorothian Strength",
+        "slug": "xorothian-strength",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300382,
+        "spell_ids": [
+          300382,
+          570100
+        ],
+        "description_html": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Strength by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300382,
+            "description_html": "Increases your Strength by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Strength by 5%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 570100,
+            "description_html": "Increases your Strength by <span class=\"item-number\">10</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Strength by 10%."
+          }
+        ],
+        "connections": [
+          30176
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_DemonicPact",
+          "key": "spell_shadow_demonicpact",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 30,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7360,
+        "name": "Demonfire Plating",
+        "slug": "demonfire-plating",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704966,
+        "spell_ids": [
+          704966,
+          302549
+        ],
+        "description_html": "Reduces your damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> and increases your Stamina by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces your damage taken by -2% and increases your Stamina by 3%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704966,
+            "description_html": "Reduces your damage taken by <span class=\"item-number\">-2</span><span class=\"item-number\">%</span> and increases your Stamina by <span class=\"item-number\">3</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces your damage taken by -2% and increases your Stamina by 3%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 302549,
+            "description_html": "Reduces your damage taken by <span class=\"item-number\">-4</span><span class=\"item-number\">%</span> and increases your Stamina by <span class=\"item-number\">6</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces your damage taken by -4% and increases your Stamina by 6%."
+          }
+        ],
+        "connections": [
+          7099
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Shadow_UnholyStrength",
+          "key": "spell_shadow_unholystrength",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 29,
+            "row": 51,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29610,
+        "name": "War Pig",
+        "slug": "war-pig",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 1.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705020,
+        "spell_ids": [
+          705020
+        ],
+        "description_html": "Increases your Physical damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your Physical damage dealt by 4%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705020,
+            "description_html": "Increases your Physical damage dealt by <span class=\"item-number\">4</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your Physical damage dealt by 4%."
+          }
+        ],
+        "connections": [
+          30668
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_deathwing_assualtaspects",
+          "key": "ability_deathwing_assualtaspects",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 3,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34094,
+        "name": "Spiked Chains",
+        "slug": "spiked-chains",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704987,
+        "spell_ids": [
+          704987
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chainwhip</span> now deals <span class=\"item-number\">321</span> + <span class=\"item-number\">30% AP</span> additional Physical damage, increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> on Humanoids.",
+        "description": "Your Chainwhip now deals 321 + 30% AP additional Physical damage, increased by 100% on Humanoids.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704987,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Chainwhip</span> now deals <span class=\"item-number\">321</span> + <span class=\"item-number\">30% AP</span> additional Physical damage, increased by <span class=\"item-number\">100</span><span class=\"item-number\">%</span> on Humanoids.",
+            "description": "Your Chainwhip now deals 321 + 30% AP additional Physical damage, increased by 100% on Humanoids."
+          }
+        ],
+        "connections": [
+          29437
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\creatureportrait_blackrock_chainsofwoe",
+          "key": "creatureportrait_blackrock_chainsofwoe",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 50,
+            "row": 14,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34064,
+        "name": "Boiling Blood",
+        "slug": "boiling-blood",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300395,
+        "spell_ids": [
+          300395
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Suffuse</span> now increases your healing received by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for the first <span class=\"item-number\">6</span> seconds of it's duration.",
+        "description": "Casting Suffuse now increases your healing received by 25% for the first 6 seconds of it's duration.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300395,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Suffuse</span> now increases your healing received by <span class=\"item-number\">25</span><span class=\"item-number\">%</span> for the first <span class=\"item-number\">6</span> seconds of it's duration.",
+            "description": "Casting Suffuse now increases your healing received by 25% for the first 6 seconds of it's duration."
+          }
+        ],
+        "connections": [
+          7360
+        ],
+        "choice_group": 706566,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_bloodboil_Border",
+          "key": "nhi_bloodboil_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34075,
+        "name": "Suffusion of Essence",
+        "slug": "suffusion-of-essence",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706566,
+        "spell_ids": [
+          706566
+        ],
+        "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Suffuse</span> by <span class=\"item-number\">2</span> sec for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+        "description": "Increases the duration of Suffuse by 2 sec for each Demonfire consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706566,
+            "description_html": "Increases the duration of <span style=\"color: #ffffff; display: inline\">Suffuse</span> by <span class=\"item-number\">2</span> sec for each <span style=\"color: #ff9933; display: inline\">Demonfire</span> consumed.",
+            "description": "Increases the duration of Suffuse by 2 sec for each Demonfire consumed."
+          }
+        ],
+        "connections": [
+          7360
+        ],
+        "choice_group": 706566,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_trinket_firelands_03",
+          "key": "inv_trinket_firelands_03",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7364,
+        "name": "Bloodied Blade",
+        "slug": "bloodied-blade",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 2.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 800997,
+        "spell_ids": [
+          800997
+        ],
+        "description_html": "Melee Physical damage dealt now generates a stack of <span style=\"color: #ffffff; display: inline\">Demon's Blood</span>.",
+        "description": "Melee Physical damage dealt now generates a stack of Demon's Blood.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 800997,
+            "description_html": "Melee Physical damage dealt now generates a stack of <span style=\"color: #ffffff; display: inline\">Demon's Blood</span>.",
+            "description": "Melee Physical damage dealt now generates a stack of Demon's Blood."
+          }
+        ],
+        "connections": [
+          29610
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactelune_d_05",
+          "key": "inv_staff_2h_artifactelune_d_05",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 45,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30701,
+        "name": "Black Shield",
+        "slug": "black-shield",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805679,
+        "spell_ids": [
+          805679
+        ],
+        "description_html": "Consume all of your <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stacks to create a demonic shield that absorbs <span class=\"item-number\">860</span> damage, increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> per <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stack, for <span class=\"item-number\">30</span> seconds.",
+        "description": "Consume all of your Demon's Blood stacks to create a demonic shield that absorbs 860 damage, increased by 20% per Demon's Blood stack, for 30 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805679,
+            "description_html": "Consume all of your <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stacks to create a demonic shield that absorbs <span class=\"item-number\">860</span> damage, increased by <span class=\"item-number\">20</span><span class=\"item-number\">%</span> per <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stack, for <span class=\"item-number\">30</span> seconds.",
+            "description": "Consume all of your Demon's Blood stacks to create a demonic shield that absorbs 860 damage, increased by 20% per Demon's Blood stack, for 30 seconds."
+          }
+        ],
+        "connections": [
+          34064,
+          34075,
+          34094
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_warlock_soulburn_haunt",
+          "key": "spell_warlock_soulburn_haunt",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 52,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34114,
+        "name": "Omen of Rage",
+        "slug": "omen-of-rage",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706590,
+        "spell_ids": [
+          706590
+        ],
+        "description_html": "Periodic damage and healing done has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ff9933; display: inline\">Demonfire</span>.",
+        "description": "Periodic damage and healing done has a 10% chance to grant a stack of Demonfire.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706590,
+            "description_html": "Periodic damage and healing done has a <span class=\"item-number\">10</span><span class=\"item-number\">%</span> chance to grant a stack of <span style=\"color: #ff9933; display: inline\">Demonfire</span>.",
+            "description": "Periodic damage and healing done has a 10% chance to grant a stack of Demonfire."
+          }
+        ],
+        "connections": [
+          34064,
+          34075
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\custom_06_summon_demon_Border",
+          "key": "custom_06_summon_demon_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 7,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 31701,
+        "name": "Demon Heart",
+        "slug": "demon-heart",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 3.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 0,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805669,
+        "spell_ids": [
+          805669
+        ],
+        "description_html": "Embrace your inner demon, instantly generating <span class=\"item-number\">6</span> stacks of <span style=\"color: #ff9933; display: inline\">Demonfire</span> and <span class=\"item-number\">50</span> Rage.",
+        "description": "Embrace your inner demon, instantly generating 6 stacks of Demonfire and 50 Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805669,
+            "description_html": "Embrace your inner demon, instantly generating <span class=\"item-number\">6</span> stacks of <span style=\"color: #ff9933; display: inline\">Demonfire</span> and <span class=\"item-number\">50</span> Rage.",
+            "description": "Embrace your inner demon, instantly generating 6 stacks of Demonfire and 50 Rage."
+          }
+        ],
+        "connections": [
+          7364,
+          34064,
+          34075
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_ragnaros_heart",
+          "key": "inv_ragnaros_heart",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 25,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30178,
+        "name": "Brimstone's Blood",
+        "slug": "brimstones-blood",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300387,
+        "spell_ids": [
+          300387
+        ],
+        "description_html": "Increases the chance of gaining a stack of <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the chance of gaining a stack of Demon's Blood by 25%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300387,
+            "description_html": "Increases the chance of gaining a stack of <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> by <span class=\"item-number\">25</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the chance of gaining a stack of Demon's Blood by 25%."
+          }
+        ],
+        "connections": [
+          30701
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_fireghost_Border",
+          "key": "nhi_fireghost_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 26,
+            "row": 37,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34074,
+        "name": "Ragefist",
+        "slug": "ragefist",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 2,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300384,
+        "spell_ids": [
+          300384,
+          301356
+        ],
+        "description_html": "Increases your maximum Rage by <span class=\"item-number\">10</span> and reduces the duration of disarm effects against you by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your maximum Rage by 10 and reduces the duration of disarm effects against you by -15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300384,
+            "description_html": "Increases your maximum Rage by <span class=\"item-number\">10</span> and reduces the duration of disarm effects against you by <span class=\"item-number\">-15</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum Rage by 10 and reduces the duration of disarm effects against you by -15%."
+          },
+          {
+            "rank": 2,
+            "spell_id": 301356,
+            "description_html": "Increases your maximum Rage by <span class=\"item-number\">20</span> and reduces the duration of disarm effects against you by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your maximum Rage by 20 and reduces the duration of disarm effects against you by -30%."
+          }
+        ],
+        "connections": [
+          30701,
+          34114
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_relics_totemofrage",
+          "key": "inv_relics_totemofrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 28,
+            "row": 31,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7365,
+        "name": "Hell Blender",
+        "slug": "hell-blender",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704975,
+        "spell_ids": [
+          704975
+        ],
+        "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Meatsaw</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund <span class=\"item-number\">10</span> Rage.",
+        "description": "Casting Meatsaw now has a 40% chance to refund 10 Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704975,
+            "description_html": "Casting <span style=\"color: #FFFFFF; display: inline\">Meatsaw</span> now has a <span class=\"item-number\">40</span><span class=\"item-number\">%</span> chance to refund <span class=\"item-number\">10</span> Rage.",
+            "description": "Casting Meatsaw now has a 40% chance to refund 10 Rage."
+          }
+        ],
+        "connections": [
+          31701,
+          34114
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_unrelentingassault",
+          "key": "ability_warrior_unrelentingassault",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34117,
+        "name": "Darkrider",
+        "slug": "darkrider",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 4.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704980,
+        "spell_ids": [
+          704980
+        ],
+        "description_html": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Mark</span> spells by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and increases your spell penetration by <span class=\"item-number\">0</span>, scaling with level.",
+        "description": "Increases the duration of your Mark spells by 50% and increases your spell penetration by 0, scaling with level.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704980,
+            "description_html": "Increases the duration of your <span style=\"color: #FFFFFF; display: inline\">Mark</span> spells by <span class=\"item-number\">50</span><span class=\"item-number\">%</span> and increases your spell penetration by <span class=\"item-number\">0</span>, scaling with level.",
+            "description": "Increases the duration of your Mark spells by 50% and increases your spell penetration by 0, scaling with level."
+          }
+        ],
+        "connections": [
+          31701
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\spell_shadow_carrionswarm",
+          "key": "spell_shadow_carrionswarm",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 14,
+            "row": 50,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7359,
+        "name": "Demonic Rage",
+        "slug": "demonic-rage",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 524922,
+        "spell_ids": [
+          524922
+        ],
+        "description_html": "Generating <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stacks now generates <span class=\"item-number\">1</span> additional Rage.",
+        "description": "Generating Demon's Blood stacks now generates 1 additional Rage.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 524922,
+            "description_html": "Generating <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stacks now generates <span class=\"item-number\">1</span> additional Rage.",
+            "description": "Generating Demon's Blood stacks now generates 1 additional Rage."
+          }
+        ],
+        "connections": [
+          30178,
+          34074
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_helm_plate_challengewarrior_d_01",
+          "key": "inv_helm_plate_challengewarrior_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 3,
+            "row": 26,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30016,
+        "name": "Juggernaut",
+        "slug": "juggernaut",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520294,
+        "spell_ids": [
+          520294
+        ],
+        "description_html": "Consume all of your <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> to become a juggernaut, reducing all damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. <br /><br />For the duration, you heal every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">6</span> + <span class=\"item-number\">10% AP</span>, increased per <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stack consumed.",
+        "description": "Consume all of your Demon's Blood to become a juggernaut, reducing all damage taken by -30% for 10 seconds.\n\nFor the duration, you heal every 3 sec for 6 + 10% AP, increased per Demon's Blood stack consumed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520294,
+            "description_html": "Consume all of your <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> to become a juggernaut, reducing all damage taken by <span class=\"item-number\">-30</span><span class=\"item-number\">%</span> for <span class=\"item-number\">10</span> seconds. <br /><br />For the duration, you heal every <span class=\"item-number\">3</span> sec for <span class=\"item-number\">6</span> + <span class=\"item-number\">10% AP</span>, increased per <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> stack consumed.",
+            "description": "Consume all of your Demon's Blood to become a juggernaut, reducing all damage taken by -30% for 10 seconds.\n\nFor the duration, you heal every 3 sec for 6 + 10% AP, increased per Demon's Blood stack consumed."
+          }
+        ],
+        "connections": [
+          7365,
+          34074
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\epic_rpg_icon_pack_fire_0004s_0000_armor_Border",
+          "key": "epic_rpg_icon_pack_fire_0004s_0000_armor_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 19,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6393,
+        "name": "Hellstriker",
+        "slug": "hellstriker",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 5.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704991,
+        "spell_ids": [
+          704991
+        ],
+        "description_html": "Direct critical strikes now increase the duration of <span style=\"color: #ffffff; display: inline\">Hellrider</span> on you by <span class=\"item-number\">2</span> sec.<br /><br />",
+        "description": "Direct critical strikes now increase the duration of Hellrider on you by 2 sec.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704991,
+            "description_html": "Direct critical strikes now increase the duration of <span style=\"color: #ffffff; display: inline\">Hellrider</span> on you by <span class=\"item-number\">2</span> sec.<br /><br />",
+            "description": "Direct critical strikes now increase the duration of Hellrider on you by 2 sec."
+          }
+        ],
+        "connections": [
+          7365,
+          34117
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Mace_80",
+          "key": "inv_mace_80",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34112,
+        "name": "Burning Rage",
+        "slug": "burning-rage",
+        "entry_type": "talent",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 520295,
+        "spell_ids": [
+          520295
+        ],
+        "description_html": "Enrage, generating <span class=\"item-number\">15</span> Rage every <span class=\"item-number\">1</span> sec and making you immune to incapacitate, banish, and polymorph effects for <span class=\"item-number\">6</span> seconds.<br /><br />Usable while incapacitated, banished, or polymorphed.",
+        "description": "Enrage, generating 15 Rage every 1 sec and making you immune to incapacitate, banish, and polymorph effects for 6 seconds.\n\nUsable while incapacitated, banished, or polymorphed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 520295,
+            "description_html": "Enrage, generating <span class=\"item-number\">15</span> Rage every <span class=\"item-number\">1</span> sec and making you immune to incapacitate, banish, and polymorph effects for <span class=\"item-number\">6</span> seconds.<br /><br />Usable while incapacitated, banished, or polymorphed.",
+            "description": "Enrage, generating 15 Rage every 1 sec and making you immune to incapacitate, banish, and polymorph effects for 6 seconds.\n\nUsable while incapacitated, banished, or polymorphed."
+          }
+        ],
+        "connections": [
+          7359
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warrior_talent_icon_angermanagement",
+          "key": "warrior_talent_icon_angermanagement",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 4,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34060,
+        "name": "Demonskin",
+        "slug": "demonskin",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 302581,
+        "spell_ids": [
+          302581
+        ],
+        "description_html": "Each stack of <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> also increases your Armor by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>.",
+        "description": "Each stack of Demon's Blood also increases your Armor by 1%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 302581,
+            "description_html": "Each stack of <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> also increases your Armor by <span class=\"item-number\">1</span><span class=\"item-number\">%</span>.",
+            "description": "Each stack of Demon's Blood also increases your Armor by 1%."
+          }
+        ],
+        "connections": [
+          30016
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_wand_1h_firelandsraid_d_01",
+          "key": "inv_wand_1h_firelandsraid_d_01",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 31,
+            "row": 34,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 5453,
+        "name": "Hellbound Charge",
+        "slug": "hellbound-charge",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 6.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 807247,
+        "spell_ids": [
+          807247
+        ],
+        "description_html": "<span style=\"color: #FFFFFF; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">60</span> sec recharge</span><br />Briefly jump atop your <span style=\"color: #FFFFFF; display: inline\">Xorothian Warsteed</span>, increasing your movement speed by <span class=\"item-number\">70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.<br /><br />Usable while indoors, but you cannot use your <span style=\"color: #FFFFFF; display: inline\">Mounted Combat</span> abilities while riding your <span style=\"color: #FFFFFF; display: inline\">Warsteed</span> in this way.",
+        "description": "2 Charges, 60 sec recharge\nBriefly jump atop your Xorothian Warsteed, increasing your movement speed by 70% for 3 seconds.\n\nUsable while indoors, but you cannot use your Mounted Combat abilities while riding your Warsteed in this way.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 807247,
+            "description_html": "<span style=\"color: #FFFFFF; display: inline\"><span class=\"item-number\">2</span> Charges, <span class=\"item-number\">60</span> sec recharge</span><br />Briefly jump atop your <span style=\"color: #FFFFFF; display: inline\">Xorothian Warsteed</span>, increasing your movement speed by <span class=\"item-number\">70</span><span class=\"item-number\">%</span> for <span class=\"item-number\">3</span> seconds.<br /><br />Usable while indoors, but you cannot use your <span style=\"color: #FFFFFF; display: inline\">Mounted Combat</span> abilities while riding your <span style=\"color: #FFFFFF; display: inline\">Warsteed</span> in this way.",
+            "description": "2 Charges, 60 sec recharge\nBriefly jump atop your Xorothian Warsteed, increasing your movement speed by 70% for 3 seconds.\n\nUsable while indoors, but you cannot use your Mounted Combat abilities while riding your Warsteed in this way."
+          }
+        ],
+        "connections": [
+          6393
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\_CrimsonDeathcharger_64x",
+          "key": "crimsondeathcharger_64x",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 1,
+            "row": 15,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 2097152
+      },
+      {
+        "id": 34071,
+        "name": "Dismemberment",
+        "slug": "dismemberment",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 705018,
+        "spell_ids": [
+          705018
+        ],
+        "description_html": "Damaging abilities that spend <span style=\"color: #ff9933; display: inline\">Demonfire</span> now reduces the target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+        "description": "Damaging abilities that spend Demonfire now reduces the target's healing received by -20% for 8 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 705018,
+            "description_html": "Damaging abilities that spend <span style=\"color: #ff9933; display: inline\">Demonfire</span> now reduces the target's healing received by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span> for <span class=\"item-number\">8</span> seconds.",
+            "description": "Damaging abilities that spend Demonfire now reduces the target's healing received by -20% for 8 seconds."
+          }
+        ],
+        "connections": [
+          34112
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_06",
+          "key": "inv_staff_2h_artifactdeadwind_d_06",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 43,
+            "row": 32,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7366,
+        "name": "Warpath",
+        "slug": "warpath",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 805793,
+        "spell_ids": [
+          805793
+        ],
+        "description_html": "While <span style=\"color: #ffffff; display: inline\">Unleash Pestilence</span> is active it now protects your movement speed from being reduced below <span class=\"item-number\">90</span><span class=\"item-number\">%</span> of normal speed.",
+        "description": "While Unleash Pestilence is active it now protects your movement speed from being reduced below 90% of normal speed.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 805793,
+            "description_html": "While <span style=\"color: #ffffff; display: inline\">Unleash Pestilence</span> is active it now protects your movement speed from being reduced below <span class=\"item-number\">90</span><span class=\"item-number\">%</span> of normal speed.",
+            "description": "While Unleash Pestilence is active it now protects your movement speed from being reduced below 90% of normal speed."
+          }
+        ],
+        "connections": [
+          34060,
+          34112
+        ],
+        "choice_group": 162312,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_warrior_intensifyrage",
+          "key": "ability_warrior_intensifyrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34096,
+        "name": "Hellbreaker",
+        "slug": "hellbreaker",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 2.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680216,
+        "spell_ids": [
+          680216
+        ],
+        "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash Pestilence</span> now removes all active movement impairing effects from you.",
+        "description": "Casting Unleash Pestilence now removes all active movement impairing effects from you.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680216,
+            "description_html": "Casting <span style=\"color: #ffffff; display: inline\">Unleash Pestilence</span> now removes all active movement impairing effects from you.",
+            "description": "Casting Unleash Pestilence now removes all active movement impairing effects from you."
+          }
+        ],
+        "connections": [
+          34060,
+          34112
+        ],
+        "choice_group": 162312,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_blackhand_marked4death",
+          "key": "ability_blackhand_marked4death",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 47,
+            "row": 2,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7885,
+        "name": "Xorothian Finesse",
+        "slug": "xorothian-finesse",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300385,
+        "spell_ids": [
+          300385
+        ],
+        "description_html": "Increases your chance to parry by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+        "description": "Increases your chance to parry by 5%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300385,
+            "description_html": "Increases your chance to parry by <span class=\"item-number\">5</span><span class=\"item-number\">%</span>.",
+            "description": "Increases your chance to parry by 5%."
+          }
+        ],
+        "connections": [
+          34060
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\icons\\nhi_blood_aim_Border",
+          "key": "nhi_blood_aim_border",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 22,
+            "row": 36,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 12620,
+        "name": "Mounted Reaver",
+        "slug": "mounted-reaver",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 707835,
+        "spell_ids": [
+          707835
+        ],
+        "description_html": "Reduces the cooldown of all <span style=\"color: #ffffff; display: inline\">Mounted Combat</span> abilities by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+        "description": "Reduces the cooldown of all Mounted Combat abilities by -20%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 707835,
+            "description_html": "Reduces the cooldown of all <span style=\"color: #ffffff; display: inline\">Mounted Combat</span> abilities by <span class=\"item-number\">-20</span><span class=\"item-number\">%</span>.",
+            "description": "Reduces the cooldown of all Mounted Combat abilities by -20%."
+          }
+        ],
+        "connections": [
+          5453,
+          34060
+        ],
+        "choice_group": 707835,
+        "icon": {
+          "source_path": "Interface\\Icons\\inv_deathelementalmount_red",
+          "key": "inv_deathelementalmount_red",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 41,
+            "row": 23,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29620,
+        "name": "Mounted Champion",
+        "slug": "mounted-champion",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 6.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706295,
+        "spell_ids": [
+          706295
+        ],
+        "description_html": "Your <span style=\"color: #ffffff; display: inline\">Xorothian Warsteed</span> is now instant cast and prevents roots and slows for <span class=\"item-number\">2</span> sec when cast, but now has a <span class=\"item-number\">10</span> sec cooldown.",
+        "description": "Your Xorothian Warsteed is now instant cast and prevents roots and slows for 2 sec when cast, but now has a 10 sec cooldown.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706295,
+            "description_html": "Your <span style=\"color: #ffffff; display: inline\">Xorothian Warsteed</span> is now instant cast and prevents roots and slows for <span class=\"item-number\">2</span> sec when cast, but now has a <span class=\"item-number\">10</span> sec cooldown.",
+            "description": "Your Xorothian Warsteed is now instant cast and prevents roots and slows for 2 sec when cast, but now has a 10 sec cooldown."
+          }
+        ],
+        "connections": [
+          5453,
+          34060
+        ],
+        "choice_group": 707835,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_mount_clockworkhorse",
+          "key": "ability_mount_clockworkhorse",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 32,
+            "row": 6,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 7363,
+        "name": "Taskmaster",
+        "slug": "taskmaster",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 7.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 9,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 500003,
+        "spell_ids": [
+          500003
+        ],
+        "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> plus an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against Demons.",
+        "description": "Increases your critical strike chance by 3% plus an additional 15% against Demons.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 500003,
+            "description_html": "Increases your critical strike chance by <span class=\"item-number\">3</span><span class=\"item-number\">%</span> plus an additional <span class=\"item-number\">15</span><span class=\"item-number\">%</span> against Demons.",
+            "description": "Increases your critical strike chance by 3% plus an additional 15% against Demons."
+          }
+        ],
+        "connections": [
+          5453
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_ImprovedDisciplines",
+          "key": "ability_warrior_improveddisciplines",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 16,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34069,
+        "name": "Rage of Xoroth",
+        "slug": "rage-of-xoroth",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 0.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 300376,
+        "spell_ids": [
+          300376
+        ],
+        "description_html": "Your critical strikes now enrage you, increasing your melee attack speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+        "description": "Your critical strikes now enrage you, increasing your melee attack speed by 15%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 300376,
+            "description_html": "Your critical strikes now enrage you, increasing your melee attack speed by <span class=\"item-number\">15</span><span class=\"item-number\">%</span>.",
+            "description": "Your critical strikes now enrage you, increasing your melee attack speed by 15%."
+          }
+        ],
+        "connections": [
+          7366,
+          34071,
+          34096
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Ability_Warrior_FocusedRage",
+          "key": "ability_warrior_focusedrage",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 15,
+            "row": 10,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34090,
+        "name": "Heart of Xoroth",
+        "slug": "heart-of-xoroth",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 3.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704956,
+        "spell_ids": [
+          704956
+        ],
+        "description_html": "Allows <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> to stack <span class=\"item-number\">5</span> additional times.",
+        "description": "Allows Demon's Blood to stack 5 additional times.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704956,
+            "description_html": "Allows <span style=\"color: #ffffff; display: inline\">Demon's Blood</span> to stack <span class=\"item-number\">5</span> additional times.",
+            "description": "Allows Demon's Blood to stack 5 additional times."
+          }
+        ],
+        "connections": [
+          7366,
+          7885,
+          34096
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\ability_rogue_sanguinaryvein",
+          "key": "ability_rogue_sanguinaryvein",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 39,
+            "row": 8,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 29623,
+        "name": "Brute Strength",
+        "slug": "brute-strength",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 5.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 680723,
+        "spell_ids": [
+          680723
+        ],
+        "description_html": "Increases your critical damage dealt with Physical attacks by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases the range of <span style=\"color: #ffffff; display: inline\">Flesh Hook</span>, <span style=\"color: #ffffff; display: inline\">Chains of Malice</span>, and <span style=\"color: #ffffff; display: inline\">Chainwhip</span> by <span class=\"item-number\">5</span> yds.",
+        "description": "Increases your critical damage dealt with Physical attacks by 10% and increases the range of Flesh Hook, Chains of Malice, and Chainwhip by 5 yds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 680723,
+            "description_html": "Increases your critical damage dealt with Physical attacks by <span class=\"item-number\">10</span><span class=\"item-number\">%</span> and increases the range of <span style=\"color: #ffffff; display: inline\">Flesh Hook</span>, <span style=\"color: #ffffff; display: inline\">Chains of Malice</span>, and <span style=\"color: #ffffff; display: inline\">Chainwhip</span> by <span class=\"item-number\">5</span> yds.",
+            "description": "Increases your critical damage dealt with Physical attacks by 10% and increases the range of Flesh Hook, Chains of Malice, and Chainwhip by 5 yds."
+          }
+        ],
+        "connections": [
+          7885,
+          12620,
+          29620
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Nature_Strength",
+          "key": "spell_nature_strength",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 18,
+            "row": 49,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 34091,
+        "name": "Harbinger of Pestilence",
+        "slug": "harbinger-of-pestilence",
+        "entry_type": "talent",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 8.0,
+          "y": 8.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704182,
+        "spell_ids": [
+          704182
+        ],
+        "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Pestilences</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+        "description": "Increases the effectiveness of your Pestilences by 50%.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704182,
+            "description_html": "Increases the effectiveness of your <span style=\"color: #ffffff; display: inline\">Pestilences</span> by <span class=\"item-number\">50</span><span class=\"item-number\">%</span>.",
+            "description": "Increases the effectiveness of your Pestilences by 50%."
+          }
+        ],
+        "connections": [
+          7363
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_pvp_endlessaffliction",
+          "key": "warlock_pvp_endlessaffliction",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 53,
+            "row": 53,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30013,
+        "name": "Dread",
+        "slug": "dread",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 1.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 706502,
+        "spell_ids": [
+          706502
+        ],
+        "description_html": "$127",
+        "description": "$127",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 706502,
+            "description_html": "$128",
+            "description": "$128"
+          }
+        ],
+        "connections": [
+          34069,
+          34090
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\Spell_Fire_Incinerate",
+          "key": "spell_fire_incinerate",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 8,
+            "row": 46,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 30695,
+        "name": "Xorothian Sigil",
+        "slug": "xorothian-sigil",
+        "entry_type": "ability",
+        "node_shape": "square",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 4.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 801061,
+        "spell_ids": [
+          801061
+        ],
+        "description_html": "Create a demonic sigil that protects party members within <span class=\"item-number\">20</span> yds of you, causing them to deflect the next harmful spell cast against them within <span class=\"item-number\">3</span> seconds.",
+        "description": "Create a demonic sigil that protects party members within 20 yds of you, causing them to deflect the next harmful spell cast against them within 3 seconds.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 801061,
+            "description_html": "Create a demonic sigil that protects party members within <span class=\"item-number\">20</span> yds of you, causing them to deflect the next harmful spell cast against them within <span class=\"item-number\">3</span> seconds.",
+            "description": "Create a demonic sigil that protects party members within 20 yds of you, causing them to deflect the next harmful spell cast against them within 3 seconds."
+          }
+        ],
+        "connections": [
+          29623,
+          34090
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\INV_Misc_AhnQirajTrinket_04",
+          "key": "inv_misc_ahnqirajtrinket_04",
+          "sprite": null,
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      },
+      {
+        "id": 6394,
+        "name": "Chain Warden",
+        "slug": "chain-warden",
+        "entry_type": "ability",
+        "node_shape": "circle",
+        "is_passive": false,
+        "is_starting_node": false,
+        "max_ranks": 1,
+        "class_id": 17,
+        "tree_id": 87,
+        "position": {
+          "x": 7.0,
+          "y": 9.0
+        },
+        "costs": {
+          "talent_essence": 0,
+          "ability_essence": 1
+        },
+        "requirements": {
+          "tree_talent_essence": 0,
+          "tree_ability_essence": 24,
+          "level": 0,
+          "talent_ids": []
+        },
+        "spell_id": 704185,
+        "spell_ids": [
+          704185
+        ],
+        "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Chains of Malice</span> by <span class=\"item-number\">-30</span> sec, and allows <span style=\"color: #ffffff; display: inline\">Flesh Hook</span> and <span style=\"color: #ffffff; display: inline\">Chainwhip</span> to strike up to <span class=\"item-number\">2</span> additional enemies near your primary target.",
+        "description": "Reduces the cooldown of Chains of Malice by -30 sec, and allows Flesh Hook and Chainwhip to strike up to 2 additional enemies near your primary target.",
+        "ranks": [
+          {
+            "rank": 1,
+            "spell_id": 704185,
+            "description_html": "Reduces the cooldown of <span style=\"color: #ffffff; display: inline\">Chains of Malice</span> by <span class=\"item-number\">-30</span> sec, and allows <span style=\"color: #ffffff; display: inline\">Flesh Hook</span> and <span style=\"color: #ffffff; display: inline\">Chainwhip</span> to strike up to <span class=\"item-number\">2</span> additional enemies near your primary target.",
+            "description": "Reduces the cooldown of Chains of Malice by -30 sec, and allows Flesh Hook and Chainwhip to strike up to 2 additional enemies near your primary target."
+          }
+        ],
+        "connections": [
+          29623,
+          34091
+        ],
+        "choice_group": null,
+        "icon": {
+          "source_path": "Interface\\Icons\\warlock_sacrificial_pact",
+          "key": "warlock_sacrificial_pact",
+          "sprite": {
+            "sheet_url": "https://ascension.gg/icon/coa-builder-icon.webp",
+            "column": 0,
+            "row": 54,
+            "columns": 55,
+            "rows": 55
+          },
+          "file": null
+        },
+        "sort_order": 0,
+        "flags": 0
+      }
+    ]
+  }
+}
