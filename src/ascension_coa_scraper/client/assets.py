@@ -16,26 +16,13 @@ stand between it and a file a viewer can load:
 
 from __future__ import annotations
 
-import struct
 from dataclasses import dataclass, field
+
+from .model import M2Error, parse_textures
 
 __all__ = ["M2Error", "ModelFiles", "resolve_path", "parse_textures", "expand"]
 
-_MD20 = b"MD20"
-# Offsets into the WotLK (version 264) M2 header.
-_OFS_N_VIEWS = 0x44
-_OFS_N_TEXTURES = 0x50
-_TEXTURE_RECORD = struct.Struct("<IIII")   # type, flags, lenFilename, ofsFilename
-
-#: Texture type 0 means the filename is baked into the model. Every other type is
-#: supplied by the game at runtime (character skin, hair, item texture) and carries
-#: no filename to extract.
-_HARDCODED = 0
-
-
-class M2Error(RuntimeError):
-    """The bytes are not a WotLK M2, or its texture block is inconsistent."""
-
+# M2Error and parse_textures are re-exported from .model, where the format lives.
 
 @dataclass
 class ModelFiles:
@@ -69,33 +56,6 @@ def resolve_path(path: str, exists) -> str | None:
         if exists(swapped):
             return swapped
     return None
-
-
-def parse_textures(data: bytes) -> tuple[int, list[str]]:
-    """Return ``(view_count, texture_paths)`` from an M2 header.
-
-    Only textures the model names itself are returned; the rest are supplied by the
-    game at runtime and have no file to extract.
-    """
-    if len(data) < 0x58 or data[:4] != _MD20:
-        raise M2Error(f"not a WotLK M2 (magic {data[:4]!r})")
-    (views,) = struct.unpack_from("<I", data, _OFS_N_VIEWS)
-    count, offset = struct.unpack_from("<II", data, _OFS_N_TEXTURES)
-
-    textures: list[str] = []
-    for index in range(count):
-        record = offset + index * _TEXTURE_RECORD.size
-        if record + _TEXTURE_RECORD.size > len(data):
-            raise M2Error(f"texture record {index} runs past the end of the file")
-        kind, _flags, length, name_at = _TEXTURE_RECORD.unpack_from(data, record)
-        if kind != _HARDCODED or not length:
-            continue
-        if name_at + length > len(data):
-            raise M2Error(f"texture name {index} runs past the end of the file")
-        name = data[name_at : name_at + length].split(b"\0")[0]
-        if name:
-            textures.append(name.decode("latin-1").replace("/", "\\"))
-    return views, textures
 
 
 def expand(path: str, exists, read) -> ModelFiles:

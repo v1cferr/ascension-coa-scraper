@@ -44,7 +44,7 @@ const state = {
   trees: new Map(),      // tree slug -> payload
   effects: new Map(),    // spell id -> effect record
   search: null,          // lazily loaded
-  audio: null,
+  selectedTalent: null,
 };
 
 /* Data ---------------------------------------------------------------------- */
@@ -277,6 +277,7 @@ function selectTalent(talent, payload) {
   for (const b of $("nodes").querySelectorAll(".node")) {
     b.setAttribute("aria-pressed", String(b.dataset.id === String(talent.id)));
   }
+  state.selectedTalent = talent.id;
   renderReadout(talent, payload);
   writeHash(talent.id);
 }
@@ -342,6 +343,8 @@ function renderReadout(talent, payload) {
   out.scrollTop = 0;
 
   renderScoreBand(fx, talent);
+  playerLoad(fx, talent.name);
+  $("inspector").hidden = true;
 }
 
 /** The score is the widest thing a talent has to say, so it gets the stage rather than
@@ -452,13 +455,125 @@ function renderEffects(fx, talent) {
 }
 
 function modelChip(path) {
-  const n = el("div", "score-model");
+  const n = el("button", "score-model");
+  n.type = "button";
   const file = path.split(/[\\/]/).pop();
   const dot = file.lastIndexOf(".");
   n.append(el("span", "stem", dot > 0 ? file.slice(0, dot) : file));
   if (dot > 0) n.append(el("span", "ext", file.slice(dot)));
-  n.title = path;
+  n.title = `${path}\nShow what this draws`;
+  n.addEventListener("click", () => inspectModel(path, n));
   return n;
+}
+
+/* The VFX inspector ---------------------------------------------------------- */
+
+/** What a model actually draws: the sprites it composites, and how it is built.
+ *  Nothing renders the model -- the textures are its visual vocabulary, and for a
+ *  particle effect they are very nearly the whole of it. */
+async function inspectModel(path, chip) {
+  const panel = $("inspector");
+  for (const b of document.querySelectorAll(".score-model[aria-expanded='true']")) {
+    b.setAttribute("aria-expanded", "false");
+  }
+  chip.setAttribute("aria-expanded", "true");
+  writeHash(state.selectedTalent, path);
+
+  panel.hidden = false;
+  panel.replaceChildren(el("p", "note", "Reading the model…"));
+
+  const url = `${ROOT}_model/${encodeURI(path.replace(/\\/g, "/"))}`;
+  let info;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(await response.text());
+    info = await response.json();
+  } catch {
+    panel.replaceChildren(el("p", "note",
+      "This model is not in the extracted assets, so there is nothing to show. "
+      + "Run: ascension-coa client extract"));
+    return;
+  }
+
+  const frag = document.createDocumentFragment();
+
+  const head = el("div", "inspect-head");
+  head.append(el("h3", "inspect-name", info.name || path.split(/[\\/]/).pop()));
+  const close = el("button", "inspect-close");
+  close.type = "button";
+  close.textContent = "\u00d7";
+  close.setAttribute("aria-label", "Close");
+  close.addEventListener("click", () => {
+    panel.hidden = true;
+    chip.setAttribute("aria-expanded", "false");
+    writeHash(state.selectedTalent);
+  });
+  head.append(close);
+  frag.append(head);
+  frag.append(el("p", "inspect-path", path));
+
+  frag.append(structureFacts(info));
+
+  const shown = info.textures.filter((t) => t.available);
+  const gallery = el("div", "plates");
+  for (const texture of shown) {
+    const figure = el("figure", "plate");
+    const img = el("img");
+    img.loading = "lazy";
+    img.alt = texture.path;
+    img.src = `${ROOT}_texture/${encodeURI(texture.path)}`;
+    figure.append(img, el("figcaption", null, texture.path.split("/").pop()));
+    gallery.append(figure);
+  }
+  if (shown.length) {
+    frag.append(el("h4", "inspect-sub", `Textures (${shown.length})`));
+    frag.append(gallery);
+    frag.append(el("p", "note",
+      "Sprites are shown on black, which is how the game composites them."));
+  } else {
+    frag.append(el("p", "note", "This model names no textures of its own."));
+  }
+
+  const absent = info.textures.filter((t) => !t.available);
+  if (absent.length) {
+    frag.append(el("p", "note",
+      `${absent.length} texture${absent.length > 1 ? "s are" : " is"} referenced but not extracted.`));
+  }
+
+  panel.replaceChildren(frag);
+  panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
+}
+
+/** The handful of numbers that say how an effect is built. */
+function structureFacts(info) {
+  const c = info.counts || {};
+  const facts = [];
+  if (info.is_particle_only) {
+    facts.push(["built from", "particles only — no geometry"]);
+  } else if (c.vertices) {
+    facts.push(["geometry", `${c.vertices.toLocaleString()} vertices`]);
+  }
+  if (c.particle_emitters) facts.push(["particle emitters", c.particle_emitters]);
+  if (c.ribbon_emitters) facts.push(["ribbon emitters", c.ribbon_emitters]);
+  if (c.lights) facts.push(["lights", c.lights]);
+  if (c.animations) facts.push(["animations", c.animations]);
+  if (c.bones) facts.push(["bones", c.bones]);
+
+  const modes = [...new Set(info.blend_modes || [])];
+  if (modes.length) {
+    facts.push(["blending", modes.join(", ")]);
+  } else if (info.glows === null) {
+    // Particle emitters carry their own blending, which the reader does not parse.
+    facts.push(["blending", "set per emitter — not read here"]);
+  }
+
+  const dl = el("dl", "facts");
+  for (const [term, value] of facts) {
+    const wrap = el("div");
+    wrap.append(el("dt", null, term), el("dd", null, String(value)));
+    dl.append(wrap);
+  }
+  return dl;
 }
 
 function soundChip(sound) {
@@ -489,18 +604,136 @@ function soundChip(sound) {
   return wrap;
 }
 
-function play(url, btn) {
-  if (state.audio) {
-    state.audio.pause();
-    document.querySelectorAll('.play[data-state="playing"]')
-      .forEach((b) => (b.dataset.state = "idle"));
+/* The player ----------------------------------------------------------------- */
+
+/* One audio element for the page. A spell's sounds are a short ordered list -- the
+ * precast, the cast, the impact -- so the player treats them as a playlist and can
+ * walk the cast in order rather than making you click each beat. */
+const player = {
+  audio: new Audio(),
+  queue: [],          // [{ url, label, slot }]
+  index: -1,
+  built: false,
+};
+
+function playerInit() {
+  if (player.built) return;
+  player.built = true;
+  const a = player.audio;
+  a.preload = "none";
+
+  a.addEventListener("timeupdate", playerPaint);
+  a.addEventListener("durationchange", playerPaint);
+  a.addEventListener("play", playerPaint);
+  a.addEventListener("pause", playerPaint);
+  a.addEventListener("ended", () => playerStep(1, { autoplay: true }));
+  a.addEventListener("error", () => {
+    const row = player.queue[player.index];
+    if (row) row.broken = true;
+    playerPaint();
+  });
+
+  $("player-toggle").addEventListener("click", () => {
+    if (player.index < 0) { playerPlay(0); return; }
+    if (a.paused) a.play().catch(() => {}); else a.pause();
+  });
+  $("player-prev").addEventListener("click", () => playerStep(-1, { autoplay: true }));
+  $("player-next").addEventListener("click", () => playerStep(1, { autoplay: true }));
+  $("player-seek").addEventListener("input", (e) => {
+    if (Number.isFinite(a.duration)) a.currentTime = (e.target.value / 1000) * a.duration;
+  });
+  $("player-volume").addEventListener("input", (e) => { a.volume = e.target.value / 100; });
+  a.volume = $("player-volume").value / 100;
+}
+
+/** Give the player a spell's sounds, in cast order. */
+function playerLoad(fx, title) {
+  playerInit();
+  player.audio.pause();
+  player.index = -1;
+  player.queue = [];
+
+  for (const kit of fx?.kits || []) {
+    for (const file of kit.sound?.files || []) {
+      player.queue.push({ url: assetURL(file), slot: kit.slot,
+                          label: file.split(/[\\/]/).pop() });
+    }
   }
-  const audio = new Audio(url);
-  state.audio = audio;
-  btn.dataset.state = "playing";
-  audio.addEventListener("ended", () => (btn.dataset.state = "idle"));
-  audio.addEventListener("error", () => (btn.dataset.state = "missing"));
-  audio.play().catch(() => (btn.dataset.state = "missing"));
+  for (const file of fx?.missile_sound?.files || []) {
+    player.queue.push({ url: assetURL(file), slot: "missile",
+                        label: file.split(/[\\/]/).pop() });
+  }
+
+  const bar = $("player");
+  bar.hidden = player.queue.length === 0;
+  $("player-title").textContent = title;
+  renderQueue();
+  playerPaint();
+}
+
+function renderQueue() {
+  const list = $("player-queue");
+  list.replaceChildren(...player.queue.map((row, i) => {
+    const li = el("li");
+    const b = el("button", "queue-item");
+    b.type = "button";
+    b.setAttribute("aria-current", String(i === player.index));
+    b.append(el("span", "queue-slot", row.slot.replace(/_/g, " ")),
+             el("span", "queue-label", row.label));
+    b.addEventListener("click", () => playerPlay(i));
+    li.append(b);
+    return li;
+  }));
+}
+
+function playerPlay(index) {
+  const row = player.queue[index];
+  if (!row) return;
+  player.index = index;
+  player.audio.src = row.url;
+  player.audio.play().catch(() => { row.broken = true; playerPaint(); });
+  renderQueue();
+  playerPaint();
+}
+
+function playerStep(delta, { autoplay } = {}) {
+  const next = player.index + delta;
+  if (next < 0 || next >= player.queue.length) {
+    if (delta > 0) { player.audio.pause(); playerPaint(); }
+    return;
+  }
+  if (autoplay) playerPlay(next);
+}
+
+const clock = (seconds) => {
+  if (!Number.isFinite(seconds)) return "0:00";
+  const m = Math.floor(seconds / 60);
+  return `${m}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
+};
+
+function playerPaint() {
+  const a = player.audio;
+  const row = player.queue[player.index];
+  $("player-toggle").dataset.state = a.paused ? "paused" : "playing";
+  $("player-toggle").setAttribute("aria-label", a.paused ? "Play" : "Pause");
+  $("player-now").textContent = row
+    ? (row.broken ? `${row.label} — not extracted` : `${row.slot.replace(/_/g, " ")} · ${row.label}`)
+    : `${player.queue.length} sound${player.queue.length === 1 ? "" : "s"}`;
+  $("player-time").textContent = `${clock(a.currentTime)} / ${clock(a.duration)}`;
+  const seek = $("player-seek");
+  seek.value = Number.isFinite(a.duration) && a.duration
+    ? Math.round((a.currentTime / a.duration) * 1000) : 0;
+  $("player-prev").disabled = player.index <= 0;
+  $("player-next").disabled = player.index >= player.queue.length - 1;
+}
+
+function play(url, btn) {
+  const at = player.queue.findIndex((row) => row.url === url);
+  if (at >= 0) { playerPlay(at); return; }
+  playerInit();
+  player.queue.push({ url, slot: "sound", label: url.split("/").pop() });
+  renderQueue();
+  playerPlay(player.queue.length - 1);
 }
 
 function fileList(fx, talent) {
@@ -627,18 +860,25 @@ async function jumpTo(realmSlug, clsSlug, treeSlug, talentId) {
 
 /* Addresses ----------------------------------------------------------------- */
 
-/* #realm/class/tree/talentId -- so a talent can be linked to, and so reloading keeps
- * your place. Written on selection, read on load and on back/forward. */
-function writeHash(talentId) {
+/* #realm/class/tree/talentId[/model] -- so a talent, and even one effect within it,
+ * can be linked to rather than described. Written on selection, read on load and on
+ * back/forward. The model segment is encoded because asset paths contain slashes. */
+function writeHash(talentId, model) {
   const parts = [state.realm.slug, state.cls.slug, state.tree.slug];
   if (talentId) parts.push(talentId);
+  if (talentId && model) parts.push(encodeURIComponent(model));
   const next = "#" + parts.join("/");
   if (location.hash !== next) history.replaceState(null, "", next);
 }
 
 function readHash() {
-  const [realm, cls, tree, talent] = location.hash.replace(/^#/, "").split("/");
-  return realm && cls ? { realm, cls, tree, talent: talent ? Number(talent) : null } : null;
+  const [realm, cls, tree, talent, model] = location.hash.replace(/^#/, "").split("/");
+  if (!realm || !cls) return null;
+  return {
+    realm, cls, tree,
+    talent: talent ? Number(talent) : null,
+    model: model ? decodeURIComponent(model) : null,
+  };
 }
 
 async function applyHash() {
@@ -653,6 +893,11 @@ async function applyHash() {
   if (want.talent) {
     const node = $("nodes").querySelector(`.node[data-id="${want.talent}"]`);
     if (node) { node.click(); node.scrollIntoView({ block: "center", inline: "center" }); }
+  }
+  if (want.model) {
+    const chip = [...document.querySelectorAll(".score-model")]
+      .find((b) => (b.title || "").split("\n")[0] === want.model);
+    if (chip) await inspectModel(want.model, chip);
   }
   return true;
 }

@@ -90,9 +90,17 @@ def test_non_m2_bytes_are_rejected():
         parse_textures(b"BLP2" + bytes(0x100))
 
 
-def test_a_texture_record_past_the_end_is_reported():
+def test_a_texture_block_pointing_outside_the_file_is_reported():
     data = bytearray(build_m2())
-    struct.pack_into("<II", data, 0x50, 4, 0xFFFF)
+    struct.pack_into("<II", data, 0x50, 4, 0xFFFF)      # count, offset
+    with pytest.raises(M2Error, match="points outside the file"):
+        parse_textures(bytes(data))
+
+
+def test_texture_records_running_past_the_end_are_reported():
+    # A block offset that is itself valid, with a count that walks off the end.
+    data = bytearray(build_m2(textures=((0, "a.blp"),)))
+    struct.pack_into("<I", data, 0x50, 400)             # count only
     with pytest.raises(M2Error, match="runs past the end"):
         parse_textures(bytes(data))
 

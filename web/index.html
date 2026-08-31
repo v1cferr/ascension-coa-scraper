@@ -82,6 +82,7 @@
         Sounds play on the beat they fire.
       </p>
       <div id="score-body"></div>
+      <section id="inspector" class="inspector" hidden aria-label="Effect detail"></section>
     </section>
 
   </main>
@@ -96,6 +97,39 @@
     </div>
   </aside>
 
+</div>
+
+<div id="player" class="player" hidden>
+  <div class="player-transport">
+    <button id="player-prev" class="ctl" type="button" aria-label="Previous sound">
+      <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M9 0v10L2 5zM1 0h1.4v10H1z"/></svg>
+    </button>
+    <button id="player-toggle" class="ctl ctl-main" type="button"
+            data-state="paused" aria-label="Play">
+      <svg class="i-play" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l8 5-8 5z"/></svg>
+      <svg class="i-pause" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0h3v10H1zM6 0h3v10H6z"/></svg>
+    </button>
+    <button id="player-next" class="ctl" type="button" aria-label="Next sound">
+      <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0v10l7-5zM7.6 0H9v10H7.6z"/></svg>
+    </button>
+  </div>
+
+  <div class="player-body">
+    <div class="player-line">
+      <span id="player-title" class="player-title">—</span>
+      <span id="player-now" class="player-now">—</span>
+      <span id="player-time" class="player-time mono">0:00 / 0:00</span>
+    </div>
+    <input id="player-seek" class="seek" type="range" min="0" max="1000" value="0"
+           aria-label="Seek">
+  </div>
+
+  <label class="player-volume">
+    <span class="field-label">Vol</span>
+    <input id="player-volume" type="range" min="0" max="100" value="80" aria-label="Volume">
+  </label>
+
+  <ul id="player-queue" class="player-queue"></ul>
 </div>
 
 <script type="module" src="app.js"></script>

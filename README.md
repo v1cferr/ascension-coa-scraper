@@ -240,6 +240,13 @@ Worth knowing:
 - **Icons** come from the builder's sprite sheet, which the dataset addresses by cell.
   The ~79 icons the sheet never defined render as empty nodes — they are broken on the
   site too.
+- **Seeing an effect.** Clicking a model in the score opens it: how it is built
+  (geometry or pure particles, how many emitters, whether it blends additively — which
+  is what makes an effect glow) and every texture it composites, decoded from BLP and
+  shown on black the way the game draws them. Nothing renders the model; for a particle
+  effect its sprites are very nearly the whole of its look.
+- **The player** takes a spell's sounds as a playlist in cast order — precast, cast,
+  impact — so you can walk the whole cast rather than clicking each beat.
 - **Downloads.** Every file in a talent's list is a link, and two buttons bundle them:
   one spell, or a whole class. A bundle is not just the files the dataset names — a
   model alone opens to nothing, so each one brings its `.skin` geometry and the `.blp`
@@ -253,10 +260,17 @@ Bundles are built by `serve` on request:
 |---|---|
 | `/_bundle/<realm>/<class>.zip` | every asset the class references — tens of MB |
 | `/_bundle/<realm>/<class>/<spell id>.zip` | one spell's |
+| `/_texture/<asset path>.blp` | that texture, decoded to PNG |
+| `/_model/<asset path>.m2` | what the model is made of, as JSON |
 
-That is the only dynamic route; everything else is a file on disk. Bundles read
-`data/client/assets/`, so they need `client extract` to have run — no game install or
-StormLib required at serve time.
+Those are the only dynamic routes; everything else is a file on disk. All of them read
+`data/client/assets/`, so they need `client extract` to have run — but no game install
+and no StormLib at serve time. Texture decoding additionally needs Pillow
+(`uv sync --extra assets`); without it that one route reports what to install and the
+rest keep working.
+
+Deep links reach an effect, not just a talent:
+`#voljin/stormbringer/lightning/31163/SPELLS%5Cleishen_lightning_column.m2`.
 
 ## Re-running
 

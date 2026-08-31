@@ -17,13 +17,16 @@ project's own files:
 from __future__ import annotations
 
 import functools
+import json
 import re
 import socket
 from collections.abc import Iterator
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import unquote
 
-from .bundle import BundleError, collect_class, collect_spell, write_zip
+from .bundle import ASSET_ROOT, BundleError, collect_class, collect_spell, write_zip
+from .preview import PreviewError, model_summary, safe_asset, texture_png
 
 __all__ = ["LOOPBACK", "ALL_INTERFACES", "Handler", "lan_addresses", "urls_for", "serve"]
 
@@ -48,6 +51,10 @@ BUNDLE_RE = re.compile(
     r"^/_bundle/(?P<realm>[\w-]+)/(?P<cls>[\w-]+?)(?:/(?P<spell>\d+))?\.zip$"
 )
 
+#: /_texture/<asset path>.blp  -> PNG,  /_model/<asset path>.m2 -> JSON
+TEXTURE_RE = re.compile(r"^/_texture/(?P<path>.+\.blp)$", re.IGNORECASE)
+MODEL_RE = re.compile(r"^/_model/(?P<path>.+\.(?:m2|mdx))$", re.IGNORECASE)
+
 
 class Handler(SimpleHTTPRequestHandler):
     """Static files, threaded, with the extra types and a dotfile guard.
@@ -64,11 +71,47 @@ class Handler(SimpleHTTPRequestHandler):
         return Path(self.directory) / "data"
 
     def do_GET(self) -> None:                       # noqa: N802 (stdlib naming)
-        match = BUNDLE_RE.match(self.path.split("?")[0])
-        if match:
-            self.send_bundle(match)
+        path = unquote(self.path.split("?")[0])
+
+        bundle = BUNDLE_RE.match(path)
+        if bundle:
+            self.send_bundle(bundle)
             return
+
+        texture = TEXTURE_RE.match(path)
+        if texture:
+            self.send_derived(
+                lambda p: texture_png(p), texture["path"], "image/png")
+            return
+
+        model = MODEL_RE.match(path)
+        if model:
+            assets = self.data_root / ASSET_ROOT
+            self.send_derived(
+                lambda p: json.dumps(model_summary(p, assets=assets)).encode("utf-8"),
+                model["path"], "application/json")
+            return
+
         super().do_GET()
+
+    def send_derived(self, convert, relative: str, content_type: str) -> None:
+        """Convert one asset on the fly and send it.
+
+        Derived from a file already on disk, so it is cacheable for as long as the
+        page is open but never written anywhere.
+        """
+        try:
+            payload = convert(safe_asset(self.data_root / ASSET_ROOT, relative))
+        except PreviewError as exc:
+            self.send_error(404, "Not Found", str(exc))
+            return
+
+        self.send_response(200)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(payload)))
+        self.send_header("Cache-Control", "max-age=3600")
+        self.end_headers()
+        self.wfile.write(payload)
 
     def send_bundle(self, match: re.Match[str]) -> None:
         realm, cls, spell = match["realm"], match["cls"], match["spell"]

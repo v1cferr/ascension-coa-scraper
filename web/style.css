@@ -704,6 +704,224 @@ button, input, select { font: inherit; color: inherit; }
 
 .note { font-size: 12.5px; color: var(--dim); margin: 0; }
 
+/* The VFX inspector --------------------------------------------------------- */
+
+.score-model {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--text);
+  word-break: break-all;
+}
+.score-model:hover .stem { color: var(--class); text-decoration: underline; }
+.score-model[aria-expanded="true"] .stem { color: var(--class); font-weight: 600; }
+
+.inspector {
+  margin-top: 20px;
+  padding: 18px 20px 20px;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+.inspect-head { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.inspect-name {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  font-stretch: 114%;
+  letter-spacing: -0.01em;
+}
+.inspect-close {
+  flex: none;
+  width: 24px; height: 24px;
+  border: 1px solid var(--line-2);
+  border-radius: 3px;
+  background: var(--sunk);
+  color: var(--dim);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+.inspect-close:hover { color: var(--text); border-color: var(--class); }
+
+.inspect-path {
+  margin: 4px 0 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.inspect-sub {
+  margin: 20px 0 10px;
+  font-size: 10px;
+  font-weight: 600;
+  font-stretch: 118%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  margin: 16px 0 0;
+}
+.facts div { display: flex; flex-direction: column; gap: 2px; }
+.facts dt {
+  font-size: 9.5px;
+  font-weight: 600;
+  font-stretch: 116%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.facts dd { margin: 0; font-family: var(--mono); font-size: 12.5px; color: var(--text); }
+
+/* Effect sprites are additive and authored against black; anything else lies. */
+.plates {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 10px;
+}
+.plate { margin: 0; }
+.plate img {
+  display: block;
+  width: 100%;
+  height: 116px;
+  object-fit: contain;
+  background: #000;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+.plate figcaption {
+  margin-top: 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--dim);
+  word-break: break-all;
+}
+
+/* The player ---------------------------------------------------------------- */
+
+.player {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "transport body volume" "queue queue queue";
+  align-items: center;
+  gap: 12px 18px;
+  padding: 12px 22px;
+  border-top: 1px solid var(--line-2);
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.player-transport { grid-area: transport; display: flex; align-items: center; gap: 6px; }
+
+.ctl {
+  width: 28px; height: 28px;
+  display: grid; place-items: center;
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+  background: var(--sunk);
+  color: var(--dim);
+  cursor: pointer;
+  padding: 0;
+}
+.ctl:hover:not(:disabled) { color: var(--class); border-color: var(--class); }
+.ctl:disabled { opacity: 0.35; cursor: default; }
+.ctl svg { width: 9px; height: 9px; fill: currentColor; }
+.ctl-main { width: 34px; height: 34px; color: var(--class); border-color: var(--class-dim); }
+.ctl-main svg { width: 11px; height: 11px; }
+.ctl-main[data-state="paused"] .i-pause,
+.ctl-main[data-state="playing"] .i-play { display: none; }
+
+.player-body { grid-area: body; min-width: 0; }
+.player-line { display: flex; align-items: baseline; gap: 12px; margin-bottom: 5px; }
+.player-title { font-size: 12.5px; font-weight: 600; white-space: nowrap; }
+.player-now {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.player-time { margin-left: auto; font-size: 11px; color: var(--faint); white-space: nowrap; }
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line-2);
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--class);
+  border: 0;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--class);
+  border: 0;
+}
+
+.player-volume { grid-area: volume; display: flex; align-items: center; gap: 8px; }
+.player-volume input { width: 74px; }
+
+.player-queue {
+  grid-area: queue;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.queue-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: none;
+  color: var(--dim);
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 10.5px;
+}
+.queue-item:hover { color: var(--text); border-color: var(--line-2); }
+.queue-item[aria-current="true"] {
+  color: var(--text);
+  border-color: var(--class);
+  background: color-mix(in srgb, var(--class) 12%, transparent);
+}
+.queue-slot {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.queue-item[aria-current="true"] .queue-slot { color: var(--class); }
+
 /* Responsive --------------------------------------------------------------- */
 
 @media (max-width: 1240px) {
@@ -718,6 +936,12 @@ button, input, select { font: inherit; color: inherit; }
 }
 
 @media (max-width: 860px) {
+  .player {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "transport body" "queue queue";
+    padding: 10px 14px;
+  }
+  .player-volume { display: none; }
   .masthead { grid-template-columns: 1fr; gap: 16px; }
   .capture { padding-left: 0; border-left: 0; }
   .frame { grid-template-columns: 1fr; }
