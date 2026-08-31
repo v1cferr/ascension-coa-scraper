@@ -1,0 +1,4622 @@
+{
+  "source_archives": {
+    "Spell": "patch-D.MPQ",
+    "SpellVisual": "patch-S.MPQ",
+    "SpellVisualKit": "patch-S.MPQ",
+    "SpellVisualEffectName": "patch-S.MPQ",
+    "SpellIcon": "patch-S.MPQ",
+    "SoundEntries": "patch-M.MPQ"
+  },
+  "spell_count": 167,
+  "missing_spell_ids": [],
+  "distinct_models": 59,
+  "distinct_sounds": 88,
+  "spells": [
+    {
+      "spell_id": 92138,
+      "name": "Napalm",
+      "rank": "Specialization",
+      "talents": [
+        "Napalm"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_bombfire",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 92140,
+      "name": "Build: ZIGGI-6K",
+      "rank": "Specialization",
+      "talents": [
+        "Build: ZIGGI-6K"
+      ],
+      "icon": "Interface\\Icons\\inv_plate_mechagnome_c_01shoulder",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 92141,
+      "name": "Build: Mechsuit",
+      "rank": "Specialization",
+      "talents": [
+        "Build: Mechsuit"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_815_uberspanner",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 300636,
+      "name": "Explosive Inventor",
+      "rank": "Passive",
+      "talents": [
+        "Explosive Inventor"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_bombroot",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 300653,
+      "name": "Trust the Science!",
+      "rank": "Passive",
+      "talents": [
+        "Trust the Science!"
+      ],
+      "icon": "Interface\\Icons\\spell_nature_lightningbolt",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 300877,
+      "name": "Fine Tuning",
+      "rank": null,
+      "talents": [
+        "Fine Tuning"
+      ],
+      "icon": "Interface\\icons\\uico_mecha_spell_09_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 301322,
+      "name": "J27 Upgrade",
+      "rank": "Passive",
+      "talents": [
+        "J27 Upgrade"
+      ],
+      "icon": "Interface\\Icons\\inv_vwmechanostrider_blue",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 500235,
+      "name": "Rocket Launcher",
+      "rank": "Rank 1",
+      "talents": [
+        "Rocket Launcher"
+      ],
+      "icon": "Interface\\Icons\\ability_racial_rocketbarrage",
+      "visual_id": 1370,
+      "models": [
+        "spells\\RocketLauncher_PreCast.mdx",
+        "SPELLS\\cfx_mage_fireball_impact.m2",
+        "spells\\Missle_Rocket.mdx"
+      ],
+      "sounds": [
+        "Sound\\Spells\\PreCastFireHigh.wav",
+        "Sound\\Spells\\RocketMultipleMissilescast.wav",
+        "sound\\spells\\Cannon_Impact_Dust1.wav",
+        "sound\\spells\\Cannon_Impact_Dust2.wav",
+        "sound\\spells\\Cannon_Impact_Dust3.wav",
+        "sound\\spells\\rocketmultiplemissilesloop.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 2057,
+          "anim_id": 110,
+          "models": {
+            "right_weapon": "spells\\RocketLauncher_PreCast.mdx"
+          },
+          "sound": {
+            "id": 303980,
+            "name": "FireBoltPrecast",
+            "files": [
+              "Sound\\Spells\\PreCastFireHigh.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 2058,
+          "anim_id": -1,
+          "models": {},
+          "sound": {
+            "id": 308850,
+            "name": "RocketMultipleMissilesCast",
+            "files": [
+              "Sound\\Spells\\RocketMultipleMissilescast.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 2055,
+          "anim_id": 9,
+          "models": {
+            "chest": "SPELLS\\cfx_mage_fireball_impact.m2"
+          },
+          "sound": {
+            "id": 313413,
+            "name": "CannonImapctDust (Rocket Explosion)",
+            "files": [
+              "sound\\spells\\Cannon_Impact_Dust1.wav",
+              "sound\\spells\\Cannon_Impact_Dust2.wav",
+              "sound\\spells\\Cannon_Impact_Dust3.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\Missle_Rocket.mdx",
+      "missile_sound": {
+        "id": 23820,
+        "name": "rocketmultiplemissilesloop",
+        "files": [
+          "sound\\spells\\rocketmultiplemissilesloop.ogg"
+        ]
+      }
+    },
+    {
+      "spell_id": 500236,
+      "name": "Deathball",
+      "rank": null,
+      "talents": [
+        "Deathball"
+      ],
+      "icon": "Interface\\Icons\\ability_garrosh_siege_engine",
+      "visual_id": 999761,
+      "models": [
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "spells\\smoke_from_fire_fast.m2",
+        "SPELLS\\garrosh_engine_spell.m2",
+        "spells\\blackfuse_partsexplosion_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Doodad\\DoodadCompression\\ZeppelinEngineLoop.wav",
+        "sound\\spells\\Cannon_Impact_Dust1.wav",
+        "sound\\spells\\Cannon_Impact_Dust2.wav",
+        "sound\\spells\\Cannon_Impact_Dust3.wav"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 998806,
+          "anim_id": -1,
+          "models": {
+            "chest": "spells\\smoke_from_fire_fast.m2",
+            "base": "SPELLS\\garrosh_engine_spell.m2"
+          },
+          "sound": {
+            "id": 314860,
+            "name": "ZeppelinEngineLoop",
+            "files": [
+              "Sound\\Doodad\\DoodadCompression\\ZeppelinEngineLoop.wav"
+            ]
+          }
+        },
+        {
+          "slot": "state_done",
+          "kit_id": 3548,
+          "anim_id": -1,
+          "models": {
+            "world": "spells\\blackfuse_partsexplosion_impact.m2"
+          },
+          "sound": {
+            "id": 308832,
+            "name": "Explosion - Loud",
+            "files": [
+              "sound\\spells\\Cannon_Impact_Dust1.wav",
+              "sound\\spells\\Cannon_Impact_Dust2.wav",
+              "sound\\spells\\Cannon_Impact_Dust3.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 500241,
+      "name": "Rocket Boots",
+      "rank": null,
+      "talents": [
+        "Rocket Boots"
+      ],
+      "icon": "Interface\\Icons\\INV_Gizmo_RocketBootExtreme",
+      "visual_id": 999808,
+      "models": [
+        "spells\\SHAMAN_FLAMESHOCK_IMPACT_CHEST.m2",
+        "Spells\\Fire_ImpactDD_High_Chest.mdx"
+      ],
+      "sounds": [
+        "Sound\\Spells\\Ulduar_FlameLeviathan_FlameJets_01.wav",
+        "Sound\\Spells\\Ulduar_FlameLeviathan_FlameJets_02.wav",
+        "Sound\\Spells\\Ulduar_FlameLeviathan_FlameJets_03.wav"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 999108,
+          "anim_id": 37,
+          "models": {
+            "base": "spells\\SHAMAN_FLAMESHOCK_IMPACT_CHEST.m2",
+            "world": "Spells\\Fire_ImpactDD_High_Chest.mdx"
+          },
+          "sound": {
+            "id": 308834,
+            "name": "Ulduar_FlameLeviathan_FlameJets",
+            "files": [
+              "Sound\\Spells\\Ulduar_FlameLeviathan_FlameJets_01.wav",
+              "Sound\\Spells\\Ulduar_FlameLeviathan_FlameJets_02.wav",
+              "Sound\\Spells\\Ulduar_FlameLeviathan_FlameJets_03.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 500242,
+      "name": "Build: Scrapmaw",
+      "rank": null,
+      "talents": [
+        "Build: Scrapmaw"
+      ],
+      "icon": "interface\\icons\\inv_goblinshredderrocketmount",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 500249,
+      "name": "Hyperblast Barrage",
+      "rank": null,
+      "talents": [
+        "Hyperblast Barrage"
+      ],
+      "icon": "Interface\\Icons\\INV_Weapon_Rifle_20",
+      "visual_id": 2098,
+      "models": [
+        "SPELLS\\explosion_fire_impact_rotateme.m2"
+      ],
+      "sounds": [
+        "Sound\\Spells\\PreCastFireHigh.wav",
+        "sound\\spells\\spell_felblast_explosion01.ogg",
+        "sound\\spells\\spell_felblast_explosion02.ogg",
+        "Sound\\Spells\\Firestarter_Impact01.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 3498,
+          "anim_id": 48,
+          "models": {},
+          "sound": {
+            "id": 51,
+            "name": "FireBoltPrecast",
+            "files": [
+              "Sound\\Spells\\PreCastFireHigh.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 3499,
+          "anim_id": 49,
+          "models": {},
+          "sound": {
+            "id": 51271,
+            "name": "spell_felblast_explosion01",
+            "files": [
+              "sound\\spells\\spell_felblast_explosion01.ogg",
+              "sound\\spells\\spell_felblast_explosion02.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 3500,
+          "anim_id": 9,
+          "models": {
+            "base": "SPELLS\\explosion_fire_impact_rotateme.m2"
+          },
+          "sound": {
+            "id": 15010,
+            "name": "Firestarter_Impact",
+            "files": [
+              "Sound\\Spells\\Firestarter_Impact01.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 500535,
+      "name": "Build: Spider Bomb",
+      "rank": null,
+      "talents": [
+        "Build: Spider Bomb"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_detonate",
+      "visual_id": 1881,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Doodad\\JewelCraft_Grinder01Stand1.wav",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 3079,
+          "anim_id": 63,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 9146,
+            "name": "JewelCraft_Grinder01Stand1",
+            "files": [
+              "Sound\\Doodad\\JewelCraft_Grinder01Stand1.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 500600,
+      "name": "Build: Firepot Drone",
+      "rank": null,
+      "talents": [
+        "Build: Firepot Drone"
+      ],
+      "icon": "Interface\\icons\\5_engineerskill25_Border",
+      "visual_id": 1881,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Doodad\\JewelCraft_Grinder01Stand1.wav",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 3079,
+          "anim_id": 63,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 9146,
+            "name": "JewelCraft_Grinder01Stand1",
+            "files": [
+              "Sound\\Doodad\\JewelCraft_Grinder01Stand1.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 502537,
+      "name": "Nanobot Cleanser",
+      "rank": null,
+      "talents": [
+        "Nanobot Cleanser"
+      ],
+      "icon": "Interface\\Icons\\Spell_Holy_Dizzy",
+      "visual_id": 832687,
+      "models": [
+        "SPELLS\\druid_swarm_state.m2",
+        "SPELLS\\druid_swarm_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Spells\\Tradeskills\\Engineering.wav",
+        "Sound\\Doodad\\FlySwarm.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 832863,
+          "anim_id": 51,
+          "models": {
+            "left_hand": "SPELLS\\druid_swarm_state.m2",
+            "right_hand": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": null
+        },
+        {
+          "slot": "cast",
+          "kit_id": 832864,
+          "anim_id": 53,
+          "models": {
+            "left_hand": "SPELLS\\druid_swarm_state.m2",
+            "right_hand": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": {
+            "id": 308866,
+            "name": "Engineering",
+            "files": [
+              "Sound\\Spells\\Tradeskills\\Engineering.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 832865,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\druid_swarm_impact.m2"
+          },
+          "sound": {
+            "id": 313425,
+            "name": "FlySwarm",
+            "files": [
+              "Sound\\Doodad\\FlySwarm.wav"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 832866,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 503534,
+      "name": "I'm The Creator Now",
+      "rank": "Passive",
+      "talents": [
+        "I'm The Creator Now"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_roboticcalm_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 503550,
+      "name": "I Need More Explosions!",
+      "rank": "Passive",
+      "talents": [
+        "I Need More Explosions!"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_bombs_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 503552,
+      "name": "Eureka!",
+      "rank": "Passive",
+      "talents": [
+        "Eureka!"
+      ],
+      "icon": "Interface\\Icons\\achievement_character_gnome_male",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 503568,
+      "name": "Augmechtation",
+      "rank": "Passive",
+      "talents": [
+        "Augmechtation"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_saw_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 503569,
+      "name": "Engine Augmentation",
+      "rank": "Passive",
+      "talents": [
+        "Engine Augmentation"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_superchargedengine",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 504523,
+      "name": "Flame Jets",
+      "rank": "Passive",
+      "talents": [
+        "Flame Jets"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_purification_beam",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 504525,
+      "name": "Cogmaster",
+      "rank": "Passive",
+      "talents": [
+        "Cogmaster"
+      ],
+      "icon": "Interface\\Icons\\_LDACogs",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 504527,
+      "name": "Makeshift Dynamite",
+      "rank": "Rank 1",
+      "talents": [
+        "Makeshift Dynamite"
+      ],
+      "icon": "Interface\\Icons\\custom_Engineerskill_49_Border",
+      "visual_id": 1000138,
+      "models": [
+        "Spells\\DynamiteA_Missile.mdx",
+        "Spells\\Bomb_ExplosionA.mdx"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_ma_revamp_fireball_precast_start_01.ogg",
+        "sound\\spells\\spell_ma_revamp_fireball_precast_start_02.ogg",
+        "sound\\spells\\spell_ma_revamp_fireball_precast_start_03.ogg",
+        "sound\\spells\\spell_ma_revamp_fireball_cast_03.ogg",
+        "sound\\spells\\spell_ma_revamp_fireball_cast_04.ogg",
+        "Sound\\Spells\\DynamiteExplode.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 1863,
+          "anim_id": 108,
+          "models": {
+            "right_hand": "Spells\\DynamiteA_Missile.mdx"
+          },
+          "sound": {
+            "id": 169525,
+            "name": "spell_ma_revamp_fireball_precast_start_01",
+            "files": [
+              "sound\\spells\\spell_ma_revamp_fireball_precast_start_01.ogg",
+              "sound\\spells\\spell_ma_revamp_fireball_precast_start_02.ogg",
+              "sound\\spells\\spell_ma_revamp_fireball_precast_start_03.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 1809,
+          "anim_id": 107,
+          "models": {
+            "right_hand": "Spells\\DynamiteA_Missile.mdx"
+          },
+          "sound": {
+            "id": 87257,
+            "name": "spell_ma_revamp_fireball_cast_03",
+            "files": [
+              "sound\\spells\\spell_ma_revamp_fireball_cast_03.ogg",
+              "sound\\spells\\spell_ma_revamp_fireball_cast_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 1000439,
+          "anim_id": -1,
+          "models": {
+            "base": "Spells\\Bomb_ExplosionA.mdx"
+          },
+          "sound": {
+            "id": 312562,
+            "name": "DynamiteExplode",
+            "files": [
+              "Sound\\Spells\\DynamiteExplode.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "Spells\\DynamiteA_Missile.mdx",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 504918,
+      "name": "Improved Emergency Heal",
+      "rank": "Passive",
+      "talents": [
+        "Improved Emergency Heal"
+      ],
+      "icon": "Interface\\Icons\\Spell_Holy_SealOfSacrifice",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 505230,
+      "name": "Macro Designer",
+      "rank": "Passive",
+      "talents": [
+        "Macro Designer"
+      ],
+      "icon": "Interface\\Icons\\5_atom_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 505327,
+      "name": "Medical Degree",
+      "rank": "Passive",
+      "talents": [
+        "Medical Degree"
+      ],
+      "icon": "Interface\\Icons\\custom_scroll_b_01_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 505336,
+      "name": "Clockwork Ingenuity",
+      "rank": "Passive",
+      "talents": [
+        "Clockwork Ingenuity"
+      ],
+      "icon": "Interface\\Icons\\t_roboticon",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 506632,
+      "name": "Mechanical Enhancements",
+      "rank": "Passive",
+      "talents": [
+        "Mechanical Enhancements"
+      ],
+      "icon": "Interface\\Icons\\inv_plate_mechagnome_c_01chest",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 506818,
+      "name": "Mana Capacitors",
+      "rank": "Rank 1",
+      "talents": [
+        "Mana Capacitors"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_pattern_recognition",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 506819,
+      "name": "Enhanced Procedures",
+      "rank": "Passive",
+      "talents": [
+        "Enhanced Procedures"
+      ],
+      "icon": "Interface\\Icons\\inv_firstaid_bandage2",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 506825,
+      "name": "Mana Capacitors",
+      "rank": "Rank 2",
+      "talents": [
+        "Mana Capacitors"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_pattern_recognition",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520022,
+      "name": "Master Technician",
+      "rank": "Passive",
+      "talents": [
+        "Master Technician"
+      ],
+      "icon": "Interface\\icons\\nhi_arcanebeam_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520131,
+      "name": "Bomb Squad",
+      "rank": "Specialization",
+      "talents": [
+        "Bomb Squad"
+      ],
+      "icon": "Interface\\Icons\\INV_Ascend_bomb_b_02",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520445,
+      "name": "Auto Resuscitation Device",
+      "rank": null,
+      "talents": [
+        "Auto Resuscitation Device"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_enggizmos_15",
+      "visual_id": 1014,
+      "models": [
+        "SPELLS\\monk_chiblast_precast_jade.m2",
+        "SPELLS\\cfx_paladin_handofprotection_statebase.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_pa_revamp_holy_shock_heal_impact_03.ogg",
+        "sound\\spells\\spell_pa_revamp_holy_shock_heal_impact_02.ogg",
+        "sound\\spells\\spell_pa_revamp_holy_shock_heal_impact_01.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 1390,
+          "anim_id": 54,
+          "models": {
+            "left_hand": "SPELLS\\monk_chiblast_precast_jade.m2",
+            "right_hand": "SPELLS\\monk_chiblast_precast_jade.m2"
+          },
+          "sound": {
+            "id": 308932,
+            "name": "spell_pa_revamp_holy_shock_heal_impact_03",
+            "files": [
+              "sound\\spells\\spell_pa_revamp_holy_shock_heal_impact_03.ogg",
+              "sound\\spells\\spell_pa_revamp_holy_shock_heal_impact_02.ogg",
+              "sound\\spells\\spell_pa_revamp_holy_shock_heal_impact_01.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 1391,
+          "anim_id": 0,
+          "models": {
+            "base": "SPELLS\\cfx_paladin_handofprotection_statebase.m2"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520453,
+      "name": "Slam the Cogs!",
+      "rank": "Rank 1",
+      "talents": [
+        "Slam the Cogs!"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_autohammer",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520686,
+      "name": "Flak Guns",
+      "rank": "Passive",
+      "talents": [
+        "Flak Guns"
+      ],
+      "icon": "Interface\\icons\\custom_T_Nhance_RPG_Icons_HolyBullet_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520809,
+      "name": "Turbo Guns",
+      "rank": "Passive",
+      "talents": [
+        "Turbo Guns"
+      ],
+      "icon": "Interface\\Icons\\Spell_Fire_FireBolt",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520811,
+      "name": "Bomb Builder",
+      "rank": "Specialization",
+      "talents": [
+        "Bomb Builder"
+      ],
+      "icon": "Interface\\Icons\\Ability_Mage_LivingBomb",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 520876,
+      "name": "Slam the Cogs!",
+      "rank": "Rank 2",
+      "talents": [
+        "Slam the Cogs!"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_autohammer",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 524834,
+      "name": "Beacon Charging",
+      "rank": "Passive",
+      "talents": [
+        "Beacon Charging"
+      ],
+      "icon": "Interface\\Icons\\inv_plate_mechagnome_c_01helm",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 524979,
+      "name": "Turret Upgrade Z-15",
+      "rank": "Passive",
+      "talents": [
+        "Turret Upgrade Z-15"
+      ],
+      "icon": "Interface\\Icons\\inv_robotpet",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 525039,
+      "name": "Scrapper",
+      "rank": null,
+      "talents": [
+        "Scrapper"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill32_Border",
+      "visual_id": 1462,
+      "models": [
+        "SPELLS\\rewind_time_impact.m2",
+        "Spells\\8fx_loacouncil_stormscales_state.m2"
+      ],
+      "sounds": [
+        "sound\\interface\\ui_tradeskill_scrap.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "channel",
+          "kit_id": 1983,
+          "anim_id": 123,
+          "models": {
+            "base": "SPELLS\\rewind_time_impact.m2",
+            "world": "Spells\\8fx_loacouncil_stormscales_state.m2"
+          },
+          "sound": {
+            "id": 118154,
+            "name": "ui_tradeskill_scrap",
+            "files": [
+              "sound\\interface\\ui_tradeskill_scrap.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560593,
+      "name": "The BIG Guns!",
+      "rank": null,
+      "talents": [
+        "The BIG Guns!"
+      ],
+      "icon": "Interface\\Icons\\ability_vehicle_siegeenginecannon",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560734,
+      "name": "Electromagnetic Resistors",
+      "rank": "Passive",
+      "talents": [
+        "Electromagnetic Resistors"
+      ],
+      "icon": "Interface\\Icons\\inv_manaforgedbarrier_yellow",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560735,
+      "name": "Technician",
+      "rank": "Rank 1",
+      "talents": [
+        "Technician"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_enggizmos_30",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560742,
+      "name": "Inventor's Tool Belt",
+      "rank": "Passive",
+      "talents": [
+        "Inventor's Tool Belt"
+      ],
+      "icon": "Interface\\Icons\\inv_belt_83",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560744,
+      "name": "My Greatest Invention!",
+      "rank": null,
+      "talents": [
+        "My Greatest Invention!"
+      ],
+      "icon": "Interface\\Icons\\achievement_alliedrace_mechagnome",
+      "visual_id": 1000122,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 1000392,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 304014,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 1000393,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308951,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 1000394,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313506,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 1000395,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 315488,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560754,
+      "name": "Build: Alarm Beacon",
+      "rank": null,
+      "talents": [
+        "Build: Alarm Beacon"
+      ],
+      "icon": "Interface\\Icons\\inv_lightforgedmechsuit",
+      "visual_id": 1000122,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 1000392,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 304014,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 1000393,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308951,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 1000394,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313506,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 1000395,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 315488,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560782,
+      "name": "Epiphany!",
+      "rank": "Passive",
+      "talents": [
+        "Epiphany!"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_robot_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560785,
+      "name": "Graftbolts",
+      "rank": "Specialization",
+      "talents": [
+        "Graftbolts"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_90_toolbox_green",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560787,
+      "name": "Emergency Enhancer",
+      "rank": "Passive",
+      "talents": [
+        "Emergency Enhancer"
+      ],
+      "icon": "Interface\\Icons\\Spell_Nature_Purge",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560789,
+      "name": "Field Medic",
+      "rank": "Passive",
+      "talents": [
+        "Field Medic"
+      ],
+      "icon": "Interface\\Icons\\inv_mechagonspidertank_junker",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 560791,
+      "name": "Resourceful Tech",
+      "rank": "Passive",
+      "talents": [
+        "Resourceful Tech"
+      ],
+      "icon": "Interface\\Icons\\INV_Gizmo_FelIronBomb",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 561341,
+      "name": "Technician",
+      "rank": "Rank 2",
+      "talents": [
+        "Technician"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_enggizmos_30",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 572367,
+      "name": "Ventilation",
+      "rank": "Passive",
+      "talents": [
+        "Ventilation"
+      ],
+      "icon": "Interface\\Icons\\nhi_tech_steamdetector_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 572538,
+      "name": "Function Over Form",
+      "rank": "Passive",
+      "talents": [
+        "Function Over Form"
+      ],
+      "icon": "Interface\\Icons\\Spell_Holy_Devotion",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 572545,
+      "name": "Innate Brilliance",
+      "rank": "Passive",
+      "talents": [
+        "Innate Brilliance"
+      ],
+      "icon": "Interface\\Icons\\ability_monk_forcesphere",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 573247,
+      "name": "Rocket Engineering",
+      "rank": "Passive",
+      "talents": [
+        "Rocket Engineering"
+      ],
+      "icon": "Interface\\Icons\\ability_blackhand_slagbombs",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 653239,
+      "name": "Stim Augmentation",
+      "rank": null,
+      "talents": [
+        "Stim Augmentation"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_reavesmodule",
+      "visual_id": 2303,
+      "models": [
+        "SPELLS\\Nature_Cast_Hand.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_gunfoley_loadgun_01.ogg",
+        "sound\\spells\\fx_gunfoley_loadgun_02.ogg",
+        "sound\\spells\\spell_ro_azeritetrait_aceupyoursleeve_proc_03.ogg",
+        "sound\\spells\\spell_ro_azeritetrait_aceupyoursleeve_proc_04.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 3867,
+          "anim_id": -1,
+          "models": {
+            "left_hand": "SPELLS\\Nature_Cast_Hand.m2",
+            "right_hand": "SPELLS\\Nature_Cast_Hand.m2"
+          },
+          "sound": {
+            "id": 126270,
+            "name": "fx_gunfoley_loadgun_01",
+            "files": [
+              "sound\\spells\\fx_gunfoley_loadgun_01.ogg",
+              "sound\\spells\\fx_gunfoley_loadgun_02.ogg",
+              "sound\\spells\\spell_ro_azeritetrait_aceupyoursleeve_proc_03.ogg",
+              "sound\\spells\\spell_ro_azeritetrait_aceupyoursleeve_proc_04.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 653245,
+      "name": "Tracer Augmentation",
+      "rank": null,
+      "talents": [
+        "Tracer Augmentation"
+      ],
+      "icon": "Interface\\icons\\5_engineerskill46_Border",
+      "visual_id": 2305,
+      "models": [
+        "spells\\CFX_Hunter_CoordinatedAssault_Aura.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_gunfoley_loadgun_01.ogg",
+        "sound\\spells\\fx_gunfoley_loadgun_02.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 3877,
+          "anim_id": -1,
+          "models": {
+            "left_hand": "spells\\CFX_Hunter_CoordinatedAssault_Aura.m2",
+            "right_hand": "spells\\CFX_Hunter_CoordinatedAssault_Aura.m2"
+          },
+          "sound": {
+            "id": 113561,
+            "name": "fx_gunfoley_loadgun_01",
+            "files": [
+              "sound\\spells\\fx_gunfoley_loadgun_01.ogg",
+              "sound\\spells\\fx_gunfoley_loadgun_02.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 680196,
+      "name": "Zap!",
+      "rank": "Rank 1",
+      "talents": [
+        "Zap!"
+      ],
+      "icon": "Interface\\icons\\nhi_lightning_empower_Border",
+      "visual_id": 1000306,
+      "models": [
+        "SPELLS\\shaman_ancestralguidance_state_base.m2",
+        "SPELLS\\cfx_shaman_crashlightning_casthand.m2",
+        "SPELLS\\cfx_shaman_crashlightning_statehand.m2",
+        "SPELLS\\Firearm_2H_Rifle_01_SpellObject.M2",
+        "Spells\\LightningBolt_Impact_Chest.mdx",
+        "SPELLS\\leishen_lightning_burst_missile.m2"
+      ],
+      "sounds": [
+        "Sound\\Spells\\Lightning_Fel_Precast_Low_Hand.wav",
+        "sound\\doodad\\fx_lightning_impact_heavy03.ogg",
+        "Sound\\Spells\\LightningBoltImpact.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 1000888,
+          "anim_id": 48,
+          "models": {
+            "base": "SPELLS\\shaman_ancestralguidance_state_base.m2",
+            "left_hand": "SPELLS\\cfx_shaman_crashlightning_casthand.m2",
+            "right_weapon": "SPELLS\\cfx_shaman_crashlightning_statehand.m2"
+          },
+          "sound": {
+            "id": 304019,
+            "name": "Lightning_Fel_Precast_Low_Hand",
+            "files": [
+              "Sound\\Spells\\Lightning_Fel_Precast_Low_Hand.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 1000889,
+          "anim_id": 49,
+          "models": {
+            "left_hand": "SPELLS\\cfx_shaman_crashlightning_casthand.m2",
+            "right_hand": "SPELLS\\cfx_shaman_crashlightning_casthand.m2",
+            "right_weapon": "SPELLS\\Firearm_2H_Rifle_01_SpellObject.M2"
+          },
+          "sound": {
+            "id": 308965,
+            "name": "fx_lightning_impact_heavy03",
+            "files": [
+              "sound\\doodad\\fx_lightning_impact_heavy03.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 1000890,
+          "anim_id": -1,
+          "models": {
+            "chest": "Spells\\LightningBolt_Impact_Chest.mdx"
+          },
+          "sound": {
+            "id": 313515,
+            "name": "Lightning Bolt Impact",
+            "files": [
+              "Sound\\Spells\\LightningBoltImpact.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "SPELLS\\leishen_lightning_burst_missile.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 680200,
+      "name": "Mechanical Synergy",
+      "rank": "Rank 1",
+      "talents": [
+        "Mechanical Synergy"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_mechanicalboomerang",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 680975,
+      "name": "Gear Grind",
+      "rank": "Specialization",
+      "talents": [
+        "Gear Grind"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_gear_05",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 681001,
+      "name": "Blazewrought Titan",
+      "rank": "Passive",
+      "talents": [
+        "Blazewrought Titan"
+      ],
+      "icon": "Interface\\Icons\\INV_Ammo_FireTar",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 681003,
+      "name": "Mechanical Extender",
+      "rank": "Passive",
+      "talents": [
+        "Mechanical Extender"
+      ],
+      "icon": "Interface\\Icons\\inv_mechanicalhandpet",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 681358,
+      "name": "Nano-Repair Tech",
+      "rank": "Passive",
+      "talents": [
+        "Nano-Repair Tech"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_desecrated_platechest",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 681482,
+      "name": "Mechanical Synergy",
+      "rank": "Rank 2",
+      "talents": [
+        "Mechanical Synergy"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_mechanicalboomerang",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 704107,
+      "name": "Concussive Spanner",
+      "rank": "Passive",
+      "talents": [
+        "Concussive Spanner"
+      ],
+      "icon": "Interface\\Icons\\ability_mage_brainfreeze",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 704111,
+      "name": "Explosive Personality",
+      "rank": "Rank 1",
+      "talents": [
+        "Explosive Personality"
+      ],
+      "icon": "Interface\\Icons\\custom_Engineerskill_35_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 704449,
+      "name": "Arclight Core",
+      "rank": "Passive",
+      "talents": [
+        "Arclight Core"
+      ],
+      "icon": "Interface\\Icons\\INV_Gizmo_KhoriumPowerCore",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 704475,
+      "name": "Master Builder",
+      "rank": "Passive",
+      "talents": [
+        "Master Builder"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill50_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705780,
+      "name": "Bandage Gun",
+      "rank": "Passive",
+      "talents": [
+        "Bandage Gun"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_pumpactionbandagegun",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705781,
+      "name": "Refined Gunpowder",
+      "rank": "Rank 1",
+      "talents": [
+        "Refined Gunpowder"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_ammo_gunpowder_02",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705782,
+      "name": "Refined Gunpowder",
+      "rank": "Rank 2",
+      "talents": [
+        "Refined Gunpowder"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_ammo_gunpowder_02",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705786,
+      "name": "Junker",
+      "rank": "Passive",
+      "talents": [
+        "Junker"
+      ],
+      "icon": "Interface\\Icons\\Achievement_dungeon_blackwingdescent_darkironcouncil",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705788,
+      "name": "Arclight Adept",
+      "rank": "Passive",
+      "talents": [
+        "Arclight Adept"
+      ],
+      "icon": "Interface\\Icons\\inv_axe_1h_mechagnome_c_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705789,
+      "name": "Bombs? BOMBS!",
+      "rank": "Passive",
+      "talents": [
+        "Bombs? BOMBS!"
+      ],
+      "icon": "Interface\\Icons\\INV_Misc_Bomb_04",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705792,
+      "name": "Fine Tuned",
+      "rank": "Passive",
+      "talents": [
+        "Fine Tuned"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_trinket6oog_handeye3",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705796,
+      "name": "Hacking the Enemy",
+      "rank": "Passive",
+      "talents": [
+        "Hacking the Enemy"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill17_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705802,
+      "name": "Scientific Nature",
+      "rank": "Specialization",
+      "talents": [
+        "Scientific Nature"
+      ],
+      "icon": "Interface\\Icons\\nhi_chaoshealing_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705803,
+      "name": "Rapid Fire Healing",
+      "rank": "Passive",
+      "talents": [
+        "Rapid Fire Healing"
+      ],
+      "icon": "Interface\\Icons\\_IngenieurBelt",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705805,
+      "name": "Hasty Tech",
+      "rank": "Passive",
+      "talents": [
+        "Hasty Tech"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_food_lunchbox_fel",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705806,
+      "name": "Efficiency",
+      "rank": "Passive",
+      "talents": [
+        "Efficiency"
+      ],
+      "icon": "Interface\\Icons\\inv_bountyhunting",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705810,
+      "name": "Backup Fuel",
+      "rank": "Passive",
+      "talents": [
+        "Backup Fuel"
+      ],
+      "icon": "Interface\\Icons\\achievement_battleground_templeofkotmogu_02_orange",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705811,
+      "name": "Cybernetic Revivification",
+      "rank": "Passive",
+      "talents": [
+        "Cybernetic Revivification"
+      ],
+      "icon": "Interface\\Icons\\ability_racial_skeletonpinkie",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705815,
+      "name": "Sparked and Ready!",
+      "rank": "Specialization",
+      "talents": [
+        "Sparked and Ready!"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_rocket_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705817,
+      "name": "Self-Sustaining Technology",
+      "rank": "Passive",
+      "talents": [
+        "Self-Sustaining Technology"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_gunpack",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705820,
+      "name": "Rocket Pack",
+      "rank": "Passive",
+      "talents": [
+        "Rocket Pack"
+      ],
+      "icon": "Interface\\Icons\\inv_backpack_wrathion_c_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705825,
+      "name": "Flexible Thinking",
+      "rank": "Passive",
+      "talents": [
+        "Flexible Thinking"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_leystone_buoy",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705826,
+      "name": "Flexible Thinking",
+      "rank": "Rank 2",
+      "talents": [
+        "Flexible Thinking"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_leystone_buoy",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705827,
+      "name": "Mechanosoldier",
+      "rank": "Passive",
+      "talents": [
+        "Mechanosoldier"
+      ],
+      "icon": "Interface\\Icons\\INV_Misc_EngGizmos_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705831,
+      "name": "Mechaplating",
+      "rank": "Passive",
+      "talents": [
+        "Mechaplating"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_wartornscrap_plate",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 705846,
+      "name": "Healing Radiator",
+      "rank": "Passive",
+      "talents": [
+        "Healing Radiator"
+      ],
+      "icon": "Interface\\Icons\\ability_monk_chiexplosion",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 706375,
+      "name": "Maniacal",
+      "rank": "Passives",
+      "talents": [
+        "Maniacal"
+      ],
+      "icon": "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_04",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 706379,
+      "name": "Explosives Expert",
+      "rank": "Passive",
+      "talents": [
+        "Explosives Expert"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_bomb_07",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 706632,
+      "name": "Mechanical Enhancements",
+      "rank": "Passive",
+      "talents": [
+        "Mechanical Enhancements"
+      ],
+      "icon": "Interface\\Icons\\inv_shield_1h_mechagnome_c_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 706680,
+      "name": "Junkyard Loiter",
+      "rank": "Passive",
+      "talents": [
+        "Junkyard Loiter"
+      ],
+      "icon": "Interface\\Icons\\inv_mechagon_junkyardtinkeringcrafting",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 706695,
+      "name": "Rocket Bombardment",
+      "rank": "Passive",
+      "talents": [
+        "Rocket Bombardment"
+      ],
+      "icon": "Interface\\icons\\5_engineerskill25_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 706904,
+      "name": "Build: Repulsion Unit",
+      "rank": null,
+      "talents": [
+        "Build: Repulsion Unit"
+      ],
+      "icon": "Interface\\Icons\\RepulsionUnit",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707104,
+      "name": "Macro-Gravity Zone",
+      "rank": null,
+      "talents": [
+        "Macro-Gravity Zone"
+      ],
+      "icon": "Interface\\Icons\\spell_deathknight_antimagiczone",
+      "visual_id": 235252,
+      "models": [
+        "SPELLS\\missile_arcane_bolt.m2",
+        "world\\expansion08\\doodads\\fx\\9fx_raid3_jailer_column_domination_areadenial.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_gravitycrush_channel_loop_01.ogg",
+        "sound\\spells\\spell_gravitycrush_channel_loop_03.ogg",
+        "sound\\spells\\spell_gravitycrush_channel_loop_02.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 2484,
+          "anim_id": 54,
+          "models": {
+            "left_hand": "SPELLS\\missile_arcane_bolt.m2",
+            "right_hand": "SPELLS\\missile_arcane_bolt.m2"
+          },
+          "sound": {
+            "id": 308983,
+            "name": "spell_gravitycrush_channel_loop_01",
+            "files": [
+              "sound\\spells\\spell_gravitycrush_channel_loop_01.ogg",
+              "sound\\spells\\spell_gravitycrush_channel_loop_03.ogg",
+              "sound\\spells\\spell_gravitycrush_channel_loop_02.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "persistent_area",
+          "kit_id": 2485,
+          "anim_id": -1,
+          "models": {
+            "world": "world\\expansion08\\doodads\\fx\\9fx_raid3_jailer_column_domination_areadenial.m2"
+          },
+          "sound": {
+            "id": 315568,
+            "name": "spell_gravitycrush_channel_loop_01",
+            "files": [
+              "sound\\spells\\spell_gravitycrush_channel_loop_01.ogg",
+              "sound\\spells\\spell_gravitycrush_channel_loop_03.ogg",
+              "sound\\spells\\spell_gravitycrush_channel_loop_02.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707115,
+      "name": "Turbo Upgrade!",
+      "rank": "Specialization",
+      "talents": [
+        "Turbo Upgrade!"
+      ],
+      "icon": "Interface\\icons\\uico_mecha_spell_03_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707237,
+      "name": "Flamethrowing",
+      "rank": "Passive",
+      "talents": [
+        "Flamethrowing"
+      ],
+      "icon": "Interface\\Icons\\Spell_Fire_SelfDestruct",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707239,
+      "name": "War Crimes",
+      "rank": "Passive",
+      "talents": [
+        "War Crimes"
+      ],
+      "icon": "Interface\\icons\\nhi_fire_explosion_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707240,
+      "name": "Grenadier",
+      "rank": "Passive",
+      "talents": [
+        "Grenadier"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_mohawkgrenade",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707244,
+      "name": "Surprise Launch!",
+      "rank": "Passive",
+      "talents": [
+        "Surprise Launch!"
+      ],
+      "icon": "Interface\\Icons\\Hos_lunar_rocket",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707246,
+      "name": "Short Fuse",
+      "rank": "Passive",
+      "talents": [
+        "Short Fuse"
+      ],
+      "icon": "Interface\\Icons\\achievement_boss_siegecrafter_blackfuse",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707249,
+      "name": "Boomshot",
+      "rank": "Passive",
+      "talents": [
+        "Boomshot"
+      ],
+      "icon": "Interface\\Icons\\_D3evasivefire",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707252,
+      "name": "Mega Scope",
+      "rank": "Passive",
+      "talents": [
+        "Mega Scope"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_scopeb",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707253,
+      "name": "Buster Scope",
+      "rank": "Passive",
+      "talents": [
+        "Buster Scope"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_snipingscope",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707254,
+      "name": "Tank Buster",
+      "rank": "Passive",
+      "talents": [
+        "Tank Buster"
+      ],
+      "icon": "Interface\\Icons\\Spell_Fire_SealOfFire",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707256,
+      "name": "Drone Striker",
+      "rank": "Passive",
+      "talents": [
+        "Drone Striker"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_missilelarge_red",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707257,
+      "name": "Build: Oil-Spill Pylon",
+      "rank": null,
+      "talents": [
+        "Build: Oil-Spill Pylon"
+      ],
+      "icon": "Interface\\Icons\\ability_vehicle_oiljets",
+      "visual_id": 2140,
+      "models": [
+        "world\\expansion07\\doodads\\fx\\8fx_mechagon_oilfall_02.m2",
+        "spells\\8fx_generic_oil_missile.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_oil_cast_large_01.ogg",
+        "sound\\spells\\fx_oil_cast_large_02.ogg",
+        "sound\\spells\\fx_oil_cast_large_03.ogg",
+        "sound\\spells\\fx_oil_loop_small_03.ogg",
+        "sound\\spells\\fx_oil_loop_small_02.ogg",
+        "sound\\spells\\fx_oil_loop_small_01.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 3534,
+          "anim_id": 107,
+          "models": {},
+          "sound": {
+            "id": 130162,
+            "name": "fx_oil_cast_large_01",
+            "files": [
+              "sound\\spells\\fx_oil_cast_large_01.ogg",
+              "sound\\spells\\fx_oil_cast_large_02.ogg",
+              "sound\\spells\\fx_oil_cast_large_03.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "persistent_area",
+          "kit_id": 3571,
+          "anim_id": -1,
+          "models": {
+            "world": "world\\expansion07\\doodads\\fx\\8fx_mechagon_oilfall_02.m2"
+          },
+          "sound": {
+            "id": 137665,
+            "name": "fx_oil_loop_small_03",
+            "files": [
+              "sound\\spells\\fx_oil_loop_small_03.ogg",
+              "sound\\spells\\fx_oil_loop_small_02.ogg",
+              "sound\\spells\\fx_oil_loop_small_01.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\8fx_generic_oil_missile.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707258,
+      "name": "Duobombers",
+      "rank": "Passive",
+      "talents": [
+        "Duobombers"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_bombfire",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707259,
+      "name": "Rocket Turrets",
+      "rank": "Passive",
+      "talents": [
+        "Rocket Turrets"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_rocketdouble_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707260,
+      "name": "Aftermath",
+      "rank": "Passive",
+      "talents": [
+        "Aftermath"
+      ],
+      "icon": "Interface\\Icons\\INV_Ascend_sticks_b_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707262,
+      "name": "Target Acquired",
+      "rank": "Passive",
+      "talents": [
+        "Target Acquired"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_superheated",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707265,
+      "name": "Frozen Bomb Launcher",
+      "rank": "Passive",
+      "talents": [
+        "Frozen Bomb Launcher"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_bombicestun",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707269,
+      "name": "Incendiary Bullets",
+      "rank": "Rank 1",
+      "talents": [
+        "Incendiary Bullets"
+      ],
+      "icon": "Interface\\Icons\\nhi_holybullet_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707271,
+      "name": "Bombastic",
+      "rank": "Specialization",
+      "talents": [
+        "Bombastic"
+      ],
+      "icon": "Interface\\Icons\\INV_Misc_Bomb_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707273,
+      "name": "Bomber Man",
+      "rank": "Specialization",
+      "talents": [
+        "Bomber Man"
+      ],
+      "icon": "Interface\\Icons\\inv_gizmo_goblinboombox_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707277,
+      "name": "Machine Synergy",
+      "rank": "Passive",
+      "talents": [
+        "Machine Synergy"
+      ],
+      "icon": "Interface\\icons\\nhi_tech_steammachine_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707395,
+      "name": "Haywired State!",
+      "rank": "Passive",
+      "talents": [
+        "Haywired State!"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill21_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707398,
+      "name": "Cutting Edge Technology",
+      "rank": "Passive",
+      "talents": [
+        "Cutting Edge Technology"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_reavesmodule",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707403,
+      "name": "Overload",
+      "rank": "Passive",
+      "talents": [
+        "Overload"
+      ],
+      "icon": "Interface\\Icons\\custom_T_Nhance_RPG_Icons_HolyBeam_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707832,
+      "name": "Modulator",
+      "rank": "Passive",
+      "talents": [
+        "Modulator"
+      ],
+      "icon": "Interface\\Icons\\custom_Engineerskill_21_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707833,
+      "name": "Explosive Personality",
+      "rank": "Rank 2",
+      "talents": [
+        "Explosive Personality"
+      ],
+      "icon": "Interface\\Icons\\custom_Engineerskill_35_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 707841,
+      "name": "Incendiary Bullets",
+      "rank": "Rank 2",
+      "talents": [
+        "Incendiary Bullets"
+      ],
+      "icon": "Interface\\Icons\\nhi_holybullet_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 800347,
+      "name": "Med Pack",
+      "rank": "Rank 1",
+      "talents": [
+        "Med Pack"
+      ],
+      "icon": "Interface\\Icons\\inv_first_aid_70_medicalkit",
+      "visual_id": 23225,
+      "models": [
+        "spells\\Monk_ChiWave_Impact.M2",
+        "SPELLS\\7fx_bandagegun_missile.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_mk_jade_heal_low_base.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 3066,
+          "anim_id": 53,
+          "models": {
+            "left_hand": "spells\\Monk_ChiWave_Impact.M2",
+            "right_hand": "spells\\Monk_ChiWave_Impact.M2"
+          },
+          "sound": {
+            "id": 308985,
+            "name": "spell_mk_jade_heal_low_base",
+            "files": [
+              "sound\\spells\\spell_mk_jade_heal_low_base.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": "SPELLS\\7fx_bandagegun_missile.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 800349,
+      "name": "Upgrade!",
+      "rank": null,
+      "talents": [
+        "Upgrade!"
+      ],
+      "icon": "Interface\\Icons\\garrison_upgrade",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801005,
+      "name": "Bomb Toss",
+      "rank": "Rank 1",
+      "talents": [
+        "Bomb Toss"
+      ],
+      "icon": "Interface\\icons\\5_bomb_Border",
+      "visual_id": 1000156,
+      "models": [
+        "spells\\Xplosion_Fire_Impact.mdx",
+        "Spells\\8fx_jaina_cannonmissile.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fieblast_blue_impacta.ogg",
+        "sound\\spells\\fieblast_blue_impactb.ogg",
+        "sound\\spells\\fieblast_blue_impactc.ogg",
+        "sound\\spells\\spell_felblast_explosion01.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 1000483,
+          "anim_id": 107,
+          "models": {
+            "right_hand": "spells\\Xplosion_Fire_Impact.mdx"
+          },
+          "sound": {
+            "id": 308842,
+            "name": "fieblast_blue_impacta",
+            "files": [
+              "sound\\spells\\fieblast_blue_impacta.ogg",
+              "sound\\spells\\fieblast_blue_impactb.ogg",
+              "sound\\spells\\fieblast_blue_impactc.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 1000484,
+          "anim_id": -1,
+          "models": {
+            "chest": "spells\\Xplosion_Fire_Impact.mdx"
+          },
+          "sound": {
+            "id": 313408,
+            "name": "spell_felblast_explosion01",
+            "files": [
+              "sound\\spells\\spell_felblast_explosion01.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": "Spells\\8fx_jaina_cannonmissile.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801387,
+      "name": "Mechsuit: Combustion",
+      "rank": "Rank 1",
+      "talents": [
+        "Mechsuit: Combustion"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_death_from_above",
+      "visual_id": 2308,
+      "models": [
+        "Spells\\HuntersMark_Impact_Head.mdx",
+        "spells\\mage_livingbomb_state.mdx"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_hu_markedshot_impact.ogg",
+        "sound\\spells\\spell_hu_markedshot_impact01.ogg",
+        "sound\\spells\\spell_hu_markedshot_impact02.ogg",
+        "sound\\spells\\spell_hu_markedshot_impact03.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 3932,
+          "anim_id": 19,
+          "models": {},
+          "sound": {
+            "id": 85009,
+            "name": "spell_hu_markedshot_impact",
+            "files": [
+              "sound\\spells\\spell_hu_markedshot_impact.ogg",
+              "sound\\spells\\spell_hu_markedshot_impact01.ogg",
+              "sound\\spells\\spell_hu_markedshot_impact02.ogg",
+              "sound\\spells\\spell_hu_markedshot_impact03.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 3952,
+          "anim_id": -1,
+          "models": {
+            "head": "Spells\\HuntersMark_Impact_Head.mdx",
+            "base": "spells\\mage_livingbomb_state.mdx"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801389,
+      "name": "Mechsuit: Activate Jets",
+      "rank": null,
+      "talents": [
+        "Mechsuit: Activate Jets"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill10_Border",
+      "visual_id": 15666,
+      "models": [
+        "Spells\\ChargeTrail.mdx",
+        "Spells\\DustCloud_Land.mdx"
+      ],
+      "sounds": [
+        "Sound\\Spells\\HeroricLeap.wav"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 14475,
+          "anim_id": -1,
+          "models": {
+            "chest": "Spells\\ChargeTrail.mdx",
+            "base": "Spells\\DustCloud_Land.mdx"
+          },
+          "sound": {
+            "id": 308998,
+            "name": "HeroicLeap",
+            "files": [
+              "Sound\\Spells\\HeroricLeap.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801706,
+      "name": "Bunker Operative",
+      "rank": "Passive",
+      "talents": [
+        "Bunker Operative"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_sonicenvironmentenhancer",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801709,
+      "name": "Nanobot Swarm",
+      "rank": "Rank 1",
+      "talents": [
+        "Nanobot Swarm"
+      ],
+      "icon": "Interface\\Icons\\inv_eng_miniaturizedplasmashield",
+      "visual_id": 832687,
+      "models": [
+        "SPELLS\\druid_swarm_state.m2",
+        "SPELLS\\druid_swarm_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Spells\\Tradeskills\\Engineering.wav",
+        "Sound\\Doodad\\FlySwarm.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 832863,
+          "anim_id": 51,
+          "models": {
+            "left_hand": "SPELLS\\druid_swarm_state.m2",
+            "right_hand": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": null
+        },
+        {
+          "slot": "cast",
+          "kit_id": 832864,
+          "anim_id": 53,
+          "models": {
+            "left_hand": "SPELLS\\druid_swarm_state.m2",
+            "right_hand": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": {
+            "id": 308866,
+            "name": "Engineering",
+            "files": [
+              "Sound\\Spells\\Tradeskills\\Engineering.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 832865,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\druid_swarm_impact.m2"
+          },
+          "sound": {
+            "id": 313425,
+            "name": "FlySwarm",
+            "files": [
+              "Sound\\Doodad\\FlySwarm.wav"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 832866,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801744,
+      "name": "Air Strike",
+      "rank": null,
+      "talents": [
+        "Air Strike"
+      ],
+      "icon": "Interface\\Icons\\ability_mount_gyrocoptor",
+      "visual_id": 990071,
+      "models": [
+        "SPELLS\\explosivetimer_state_base_02.m2",
+        "spells\\xplosion_fire_impact.m2",
+        "Spells\\Stranglethorn_DiamondMines_Circle_Effect_Solid_Red.mdx",
+        "creature\\flyingbomber\\flyingbomber_02.mdx"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_hu_piercingshot_cast_railgun_03.ogg",
+        "sound\\spells\\gyrocopter_mount_flyidle_04.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 997501,
+          "anim_id": 54,
+          "models": {},
+          "sound": {
+            "id": 309016,
+            "name": "spell_hu_piercingshot_cast_railgun_03",
+            "files": [
+              "sound\\spells\\spell_hu_piercingshot_cast_railgun_03.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 997503,
+          "anim_id": -1,
+          "models": {
+            "head": "SPELLS\\explosivetimer_state_base_02.m2"
+          },
+          "sound": null
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 4139,
+          "anim_id": -1,
+          "models": {
+            "world": "spells\\xplosion_fire_impact.m2"
+          },
+          "sound": null
+        },
+        {
+          "slot": "persistent_area",
+          "kit_id": 997502,
+          "anim_id": -1,
+          "models": {
+            "world": "Spells\\Stranglethorn_DiamondMines_Circle_Effect_Solid_Red.mdx"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": "creature\\flyingbomber\\flyingbomber_02.mdx",
+      "missile_sound": {
+        "id": 74834,
+        "name": "gyrocopter_mount_flyidle_04",
+        "files": [
+          "sound\\spells\\gyrocopter_mount_flyidle_04.ogg"
+        ]
+      }
+    },
+    {
+      "spell_id": 801801,
+      "name": "Build: Restorative Beacon",
+      "rank": null,
+      "talents": [
+        "Build: Restorative Beacon"
+      ],
+      "icon": "Interface\\Icons\\spell_mekkatorque_bot_greenspring",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801809,
+      "name": "Nanobot Reconstruction",
+      "rank": "Rank 1",
+      "talents": [
+        "Nanobot Reconstruction"
+      ],
+      "icon": "Interface\\Icons\\ability_shaman_repulsiontotem",
+      "visual_id": 832687,
+      "models": [
+        "SPELLS\\druid_swarm_state.m2",
+        "SPELLS\\druid_swarm_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Spells\\Tradeskills\\Engineering.wav",
+        "Sound\\Doodad\\FlySwarm.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 832863,
+          "anim_id": 51,
+          "models": {
+            "left_hand": "SPELLS\\druid_swarm_state.m2",
+            "right_hand": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": null
+        },
+        {
+          "slot": "cast",
+          "kit_id": 832864,
+          "anim_id": 53,
+          "models": {
+            "left_hand": "SPELLS\\druid_swarm_state.m2",
+            "right_hand": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": {
+            "id": 308866,
+            "name": "Engineering",
+            "files": [
+              "Sound\\Spells\\Tradeskills\\Engineering.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 832865,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\druid_swarm_impact.m2"
+          },
+          "sound": {
+            "id": 313425,
+            "name": "FlySwarm",
+            "files": [
+              "Sound\\Doodad\\FlySwarm.wav"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 832866,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\druid_swarm_state.m2"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801821,
+      "name": "Augmentor",
+      "rank": "Passive",
+      "talents": [
+        "Augmentor"
+      ],
+      "icon": "Interface\\Icons\\epic_rpg_icon_pack_frost_0000s_0000_figure_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 801827,
+      "name": "Rockadier",
+      "rank": null,
+      "talents": [
+        "Rockadier"
+      ],
+      "icon": "Interface\\Icons\\ability_mount_rocketmount4",
+      "visual_id": 14479,
+      "models": [
+        "spells\\fire_cast_hand.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\rocketmultiplemissilescast.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 2531,
+          "anim_id": 54,
+          "models": {
+            "left_hand": "spells\\fire_cast_hand.m2",
+            "right_hand": "spells\\fire_cast_hand.m2"
+          },
+          "sound": {
+            "id": 309025,
+            "name": "rocketmultiplemissilescast",
+            "files": [
+              "sound\\spells\\rocketmultiplemissilescast.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 802052,
+      "name": "Build: Spider Bomb Factory",
+      "rank": null,
+      "talents": [
+        "Build: Spider Bomb Factory"
+      ],
+      "icon": "Interface\\Icons\\inv_mechagonspidertank_brass",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 802963,
+      "name": "Boom Hour",
+      "rank": "Passive",
+      "talents": [
+        "Boom Hour"
+      ],
+      "icon": "Interface\\Icons\\INV_Misc_Bomb_04",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 803074,
+      "name": "Gazlowe's Wisdom",
+      "rank": "Passive",
+      "talents": [
+        "Gazlowe's Wisdom"
+      ],
+      "icon": "Interface\\Icons\\_Goblin_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 804673,
+      "name": "Build: Destructo-Bot",
+      "rank": null,
+      "talents": [
+        "Build: Destructo-Bot"
+      ],
+      "icon": "interface\\icons\\Little_Bomb_Bro",
+      "visual_id": 1881,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "Sound\\Doodad\\JewelCraft_Grinder01Stand1.wav",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 3079,
+          "anim_id": 63,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 9146,
+            "name": "JewelCraft_Grinder01Stand1",
+            "files": [
+              "Sound\\Doodad\\JewelCraft_Grinder01Stand1.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 805303,
+      "name": "Emergency Circumvented",
+      "rank": "Passive",
+      "talents": [
+        "Emergency Circumvented"
+      ],
+      "icon": "Interface\\Icons\\Spell_Nature_ProtectionformNature",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 805305,
+      "name": "Combat Symbiosis",
+      "rank": null,
+      "talents": [
+        "Combat Symbiosis"
+      ],
+      "icon": "Interface\\icons\\nhi_lightning_soul_Border",
+      "visual_id": 2338,
+      "models": [
+        "spells\\lightning_precast_low_hand.m2",
+        "spells\\lightningshield_state_base_s.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\spell_sh_revamp_chainlightning_precast01.ogg",
+        "sound\\spells\\spell_sh_revamp_chainlightning_precast02.ogg",
+        "sound\\spells\\spell_sh_revamp_chainlightning_precast03.ogg",
+        "sound\\spells\\spell_sh_revamp_chainlightning_precast04.ogg",
+        "sound\\spells\\spell_sh_revamp_chainlightning_precast05.ogg",
+        "sound\\doodad\\fx_lightning_impact_heavy01.ogg",
+        "sound\\doodad\\fx_lightning_impact_heavy04.ogg",
+        "sound\\doodad\\fx_lightning_impact_light02.ogg",
+        "sound\\doodad\\fx_lightning_impact_light04.ogg",
+        "sound\\doodad\\fx_lightning_impact_medium03.ogg",
+        "sound\\doodad\\fx_lightning_impact_medium05.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 3723,
+          "anim_id": 51,
+          "models": {
+            "left_hand": "spells\\lightning_precast_low_hand.m2",
+            "right_hand": "spells\\lightning_precast_low_hand.m2"
+          },
+          "sound": {
+            "id": 267211,
+            "name": "spell_sh_revamp_chainlightning_precast01",
+            "files": [
+              "sound\\spells\\spell_sh_revamp_chainlightning_precast01.ogg",
+              "sound\\spells\\spell_sh_revamp_chainlightning_precast02.ogg",
+              "sound\\spells\\spell_sh_revamp_chainlightning_precast03.ogg",
+              "sound\\spells\\spell_sh_revamp_chainlightning_precast04.ogg",
+              "sound\\spells\\spell_sh_revamp_chainlightning_precast05.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 3722,
+          "anim_id": 54,
+          "models": {
+            "chest": "spells\\lightningshield_state_base_s.m2",
+            "left_hand": "spells\\lightning_precast_low_hand.m2",
+            "right_hand": "spells\\lightning_precast_low_hand.m2"
+          },
+          "sound": {
+            "id": 30034,
+            "name": "fx_lightning_impact_heavy01",
+            "files": [
+              "sound\\doodad\\fx_lightning_impact_heavy01.ogg",
+              "sound\\doodad\\fx_lightning_impact_heavy04.ogg",
+              "sound\\doodad\\fx_lightning_impact_light02.ogg",
+              "sound\\doodad\\fx_lightning_impact_light04.ogg",
+              "sound\\doodad\\fx_lightning_impact_medium03.ogg",
+              "sound\\doodad\\fx_lightning_impact_medium05.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 3778,
+          "anim_id": -1,
+          "models": {
+            "chest": "spells\\lightningshield_state_base_s.m2",
+            "left_hand": "spells\\lightning_precast_low_hand.m2",
+            "right_hand": "spells\\lightning_precast_low_hand.m2"
+          },
+          "sound": {
+            "id": 30034,
+            "name": "fx_lightning_impact_heavy01",
+            "files": [
+              "sound\\doodad\\fx_lightning_impact_heavy01.ogg",
+              "sound\\doodad\\fx_lightning_impact_heavy04.ogg",
+              "sound\\doodad\\fx_lightning_impact_light02.ogg",
+              "sound\\doodad\\fx_lightning_impact_light04.ogg",
+              "sound\\doodad\\fx_lightning_impact_medium03.ogg",
+              "sound\\doodad\\fx_lightning_impact_medium05.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 805306,
+      "name": "Rejuvenating Gadget",
+      "rank": "Passive",
+      "talents": [
+        "Rejuvenating Gadget"
+      ],
+      "icon": "Interface\\Icons\\inv_misc_enggizmos_21",
+      "visual_id": 989923,
+      "models": [
+        "SPELLS\\8fx_generic_spark_channel_hand.m2",
+        "SPELLS\\8fx_discboss_titanspark_impact_player.m2",
+        "SPELLS\\7fx_paladin_powerofthesilverhand_state.m2"
+      ],
+      "sounds": [
+        "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankWoundA.wav",
+        "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankWoundB.wav",
+        "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankWoundC.wav",
+        "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankAggro.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963383,
+          "anim_id": 51,
+          "models": {
+            "left_hand": "SPELLS\\8fx_generic_spark_channel_hand.m2",
+            "right_hand": "SPELLS\\8fx_generic_spark_channel_hand.m2"
+          },
+          "sound": {
+            "id": 304078,
+            "name": "GnomeSpiderTankWound",
+            "files": [
+              "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankWoundA.wav",
+              "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankWoundB.wav",
+              "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankWoundC.wav"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963384,
+          "anim_id": 53,
+          "models": {
+            "left_hand": "SPELLS\\8fx_generic_spark_channel_hand.m2",
+            "right_hand": "SPELLS\\8fx_generic_spark_channel_hand.m2"
+          },
+          "sound": {
+            "id": 309044,
+            "name": "GnomeSpiderTankAggro",
+            "files": [
+              "Sound\\Creature\\GnomeSpiderTank\\GnomeSpiderTankAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963385,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\8fx_discboss_titanspark_impact_player.m2"
+          },
+          "sound": null
+        },
+        {
+          "slot": "state",
+          "kit_id": 963386,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\7fx_paladin_powerofthesilverhand_state.m2"
+          },
+          "sound": null
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 805308,
+      "name": "Build: Battery Recharge Station",
+      "rank": null,
+      "talents": [
+        "Build: Battery Recharge Station"
+      ],
+      "icon": "Interface\\Icons\\inv_engineering_815_uberspanner",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 805314,
+      "name": "Rocket Barrage",
+      "rank": "Passive",
+      "talents": [
+        "Rocket Barrage"
+      ],
+      "icon": "Interface\\Icons\\ability_mount_rocketmount3",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 805372,
+      "name": "Mechsuit: Laser Beam",
+      "rank": "Rank 1",
+      "talents": [
+        "Mechsuit: Laser Beam"
+      ],
+      "icon": "Interface\\Icons\\ability_siege_engineer_superheated",
+      "visual_id": 1549,
+      "models": [
+        "SPELLS\\generic_firearm_nazmirlaserred_castbullet.m2",
+        "Spells\\8fx_generic_spark_novahigh_impact.m2",
+        "SPELLS/cfx_shaman_lavaburst_precasthands.m2",
+        "Spells\\8fx_generic_spark_missile.m2",
+        "spells\\Blackfuse_LaserTurret_GroundBurn_State_Base.M2"
+      ],
+      "sounds": [
+        "Sound\\Spells\\Ingvar_PreResPurpleBeamCast.wav",
+        "sound\\spells\\fx_burninglightbeam_impact_01.ogg",
+        "sound\\spells\\fx_burninglightbeam_impact_02.ogg",
+        "sound\\spells\\fx_burninglightbeam_impact_03.ogg",
+        "sound\\spells\\fx_burninglightbeam_impact_04.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 2435,
+          "anim_id": -1,
+          "models": {
+            "chest": "SPELLS\\generic_firearm_nazmirlaserred_castbullet.m2",
+            "base": "Spells\\8fx_generic_spark_novahigh_impact.m2",
+            "left_hand": "SPELLS/cfx_shaman_lavaburst_precasthands.m2",
+            "right_hand": "SPELLS/cfx_shaman_lavaburst_precasthands.m2",
+            "left_weapon": "Spells\\8fx_generic_spark_missile.m2",
+            "right_weapon": "Spells\\8fx_generic_spark_missile.m2"
+          },
+          "sound": {
+            "id": 14886,
+            "name": "Ingvar_PreResPurpleBeamCast",
+            "files": [
+              "Sound\\Spells\\Ingvar_PreResPurpleBeamCast.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 2436,
+          "anim_id": -1,
+          "models": {
+            "chest": "spells\\Blackfuse_LaserTurret_GroundBurn_State_Base.M2"
+          },
+          "sound": {
+            "id": 18371,
+            "name": "fx_burninglightbeam_impact_01",
+            "files": [
+              "sound\\spells\\fx_burninglightbeam_impact_01.ogg",
+              "sound\\spells\\fx_burninglightbeam_impact_02.ogg",
+              "sound\\spells\\fx_burninglightbeam_impact_03.ogg",
+              "sound\\spells\\fx_burninglightbeam_impact_04.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806224,
+      "name": "Kinetic Shield",
+      "rank": null,
+      "talents": [
+        "Kinetic Shield"
+      ],
+      "icon": "Interface\\Icons\\garrison_bluearmorupgrade",
+      "visual_id": 19555,
+      "models": [
+        "world\\expansion07\\doodads\\fx\\8fx_generic_lightning_impacthigh_chest.m2",
+        "spells\\CFX_Warrior_ShieldWall_StateBase.m2"
+      ],
+      "sounds": [
+        "sound\\item\\weapons\\mace2h\\npc\\2h_mace_npc_crithit_shieldmetal_01.ogg",
+        "sound\\item\\weapons\\mace2h\\npc\\2h_mace_npc_crithit_shieldmetal_02.ogg",
+        "sound\\item\\weapons\\mace2h\\npc\\2h_mace_npc_crithit_shieldmetal_03.ogg",
+        "sound\\spells\\lightningboltimpact.ogg",
+        "sound\\spells\\spell_lightningbolt_impact_01.ogg",
+        "sound\\spells\\spell_lightningbolt_impact_02.ogg",
+        "sound\\spells\\spell_lightningbolt_impact_03.ogg",
+        "sound\\spells\\spell_lightningbolt_impact_04.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "cast",
+          "kit_id": 19555,
+          "anim_id": 55,
+          "models": {
+            "chest": "world\\expansion07\\doodads\\fx\\8fx_generic_lightning_impacthigh_chest.m2"
+          },
+          "sound": {
+            "id": 269783,
+            "name": "2h_mace_npc_crithit_shieldmetal_01",
+            "files": [
+              "sound\\item\\weapons\\mace2h\\npc\\2h_mace_npc_crithit_shieldmetal_01.ogg",
+              "sound\\item\\weapons\\mace2h\\npc\\2h_mace_npc_crithit_shieldmetal_02.ogg",
+              "sound\\item\\weapons\\mace2h\\npc\\2h_mace_npc_crithit_shieldmetal_03.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "state",
+          "kit_id": 19556,
+          "anim_id": -1,
+          "models": {
+            "base": "spells\\CFX_Warrior_ShieldWall_StateBase.m2"
+          },
+          "sound": {
+            "id": 25220,
+            "name": "lightningboltimpact",
+            "files": [
+              "sound\\spells\\lightningboltimpact.ogg",
+              "sound\\spells\\spell_lightningbolt_impact_01.ogg",
+              "sound\\spells\\spell_lightningbolt_impact_02.ogg",
+              "sound\\spells\\spell_lightningbolt_impact_03.ogg",
+              "sound\\spells\\spell_lightningbolt_impact_04.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806627,
+      "name": "Scrapshielding",
+      "rank": "Passive",
+      "talents": [
+        "Scrapshielding"
+      ],
+      "icon": "Interface\\icons\\uico_mecha_spell_02_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806629,
+      "name": "Battle Engineer",
+      "rank": "Specialization",
+      "talents": [
+        "Battle Engineer"
+      ],
+      "icon": "Interface\\Icons\\INV_Misc_EngGizmos_20",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806631,
+      "name": "Defensive Utility",
+      "rank": "Passive",
+      "talents": [
+        "Defensive Utility"
+      ],
+      "icon": "Interface\\Icons\\inv_plate_mechagnome_c_01shoulder",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806757,
+      "name": "Overclocked Machine",
+      "rank": null,
+      "talents": [
+        "Overclocked Machine"
+      ],
+      "icon": "Interface\\Icons\\nhi_tech_steammachine_Border",
+      "visual_id": 989924,
+      "models": [
+        "Spells\\SpellObject_Wrench.mdx",
+        "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+        "SPELLS\\new_windfury_vertical.m2",
+        "SPELLS\\rewind_time_impact.m2",
+        "spells\\pb_gear_impact.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg",
+        "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav",
+        "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 963387,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\SpellObject_Wrench.mdx",
+            "right_hand": "Spells\\SpellObject_Wrench.mdx"
+          },
+          "sound": {
+            "id": 303971,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        },
+        {
+          "slot": "cast",
+          "kit_id": 963388,
+          "anim_id": 107,
+          "models": {
+            "left_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2",
+            "right_hand": "SPELLS\\cfx_priest_holyprecast_casthand.m2"
+          },
+          "sound": {
+            "id": 308835,
+            "name": "MechaStriderAggro",
+            "files": [
+              "Sound\\Creature\\MechaStrider\\MechaStriderAggro.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        },
+        {
+          "slot": "impact_area",
+          "kit_id": 963389,
+          "anim_id": -1,
+          "models": {
+            "base": "SPELLS\\new_windfury_vertical.m2",
+            "world": "SPELLS\\rewind_time_impact.m2"
+          },
+          "sound": {
+            "id": 313399,
+            "name": "DeathThudGiantStone",
+            "files": [
+              "Sound\\Effects\\DeathImpacts\\mDeathImpactGiantStoneA.wav"
+            ]
+          }
+        }
+      ],
+      "missile_model": "spells\\pb_gear_impact.m2",
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806758,
+      "name": "Clockwork Guardians",
+      "rank": "Passive",
+      "talents": [
+        "Clockwork Guardians"
+      ],
+      "icon": "Interface\\Icons\\INV_Misc_Head_ClockworkGnome_01",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 806762,
+      "name": "Goblin Depravity",
+      "rank": "Passive",
+      "talents": [
+        "Goblin Depravity"
+      ],
+      "icon": "Interface\\Icons\\ability_mount_gyrocoptorelite",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807388,
+      "name": "Offensive Utility",
+      "rank": "Passive",
+      "talents": [
+        "Offensive Utility"
+      ],
+      "icon": "Interface\\Icons\\achievement_alliedrace_mechagnome",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807498,
+      "name": "Over-Repaired",
+      "rank": "Rank 1",
+      "talents": [
+        "Over-Repaired"
+      ],
+      "icon": "Interface\\Icons\\ability_repair",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807499,
+      "name": "Combat Crafter",
+      "rank": "Specialization",
+      "talents": [
+        "Combat Crafter"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill01_Border",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807500,
+      "name": "Sprocket Loaded",
+      "rank": "Passive",
+      "talents": [
+        "Sprocket Loaded"
+      ],
+      "icon": "Interface\\icons\\INV_Ascend_RpgLoot_167",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807531,
+      "name": "Stim Pack",
+      "rank": null,
+      "talents": [
+        "Stim Pack"
+      ],
+      "icon": "Interface\\Icons\\inv_jewelry_mech_ring_green",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807635,
+      "name": "Regeneration Enhancement",
+      "rank": null,
+      "talents": [
+        "Regeneration Enhancement"
+      ],
+      "icon": "Interface\\Icons\\inv_mechagnome_powercell_broken",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807723,
+      "name": "Build: Noise Box",
+      "rank": null,
+      "talents": [
+        "Build: Noise Box"
+      ],
+      "icon": "Interface\\Icons\\5_engineerskill23_Border",
+      "visual_id": 2601,
+      "models": [
+        "Spells\\cfx_mechagnome_racial_buff_base.m2"
+      ],
+      "sounds": [
+        "sound\\spells\\fx_goblinmetalpops_01.ogg",
+        "sound\\spells\\fx_goblinmetalpops_02.ogg",
+        "sound\\spells\\fx_goblinmetalpops_03.ogg",
+        "sound\\spells\\fx_goblinmetalpops_04.ogg"
+      ],
+      "kits": [
+        {
+          "slot": "precast",
+          "kit_id": 4306,
+          "anim_id": 62,
+          "models": {
+            "left_hand": "Spells\\cfx_mechagnome_racial_buff_base.m2",
+            "right_hand": "Spells\\cfx_mechagnome_racial_buff_base.m2"
+          },
+          "sound": {
+            "id": 304014,
+            "name": "fx_goblinmetalpops_01",
+            "files": [
+              "sound\\spells\\fx_goblinmetalpops_01.ogg",
+              "sound\\spells\\fx_goblinmetalpops_02.ogg",
+              "sound\\spells\\fx_goblinmetalpops_03.ogg",
+              "sound\\spells\\fx_goblinmetalpops_04.ogg"
+            ]
+          }
+        }
+      ],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807748,
+      "name": "Improved Graftbolts",
+      "rank": "Specialization",
+      "talents": [
+        "Cybernetic Shield"
+      ],
+      "icon": "Interface\\Icons\\INV_Gizmo_03",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807897,
+      "name": "Over-Repaired",
+      "rank": "Rank 2",
+      "talents": [
+        "Over-Repaired"
+      ],
+      "icon": "Interface\\Icons\\ability_repair",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 807966,
+      "name": "Master Builder",
+      "rank": "Passive",
+      "talents": [
+        "Master Builder"
+      ],
+      "icon": "Interface\\Icons\\Spell_Frost_FrostWard",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    },
+    {
+      "spell_id": 808009,
+      "name": "Stim Shots",
+      "rank": null,
+      "talents": [
+        "Stim Shots"
+      ],
+      "icon": "Interface\\Icons\\Spell_Shadow_SoothingKiss",
+      "visual_id": 0,
+      "models": [],
+      "sounds": [],
+      "kits": [],
+      "missile_model": null,
+      "missile_sound": null
+    }
+  ]
+}

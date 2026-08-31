@@ -12,6 +12,7 @@ adding support for a new class is a matter of naming it.
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -23,6 +24,9 @@ from .export import write_dataset
 from .fetch import DEFAULT_REALM, Fetcher, FetchError
 from .flight import FlightParseError, parse_html
 from .icons import SpriteError, load_sprite_sheet
+from .index import IndexError_, build_search
+from .index import build as build_index
+from .index import write as write_index
 from .normalize import NormalizeError, list_classes, normalize_class
 
 DEFAULT_OUT_DIR = Path("data")
@@ -37,6 +41,7 @@ _EXPECTED_ERRORS = (
     FlightParseError,
     NormalizeError,
     SpriteError,
+    IndexError_,
     *client_commands.CLIENT_ERRORS,
 )
 
@@ -97,6 +102,22 @@ def build_parser() -> argparse.ArgumentParser:
     subcommands.add_parser(
         "list-classes", parents=[common], help="list the classes available in a realm"
     )
+
+    index = subcommands.add_parser(
+        "build-index", help="write the manifest the web viewer reads"
+    )
+    index.add_argument(
+        "--data", type=Path, default=DEFAULT_OUT_DIR,
+        help=f"directory of <realm>/<class>/ datasets (default: {DEFAULT_OUT_DIR})",
+    )
+    index.add_argument(
+        "--effects", type=Path, default=Path("data/client/effects"),
+        help="directory of resolved effects JSON",
+    )
+    index.add_argument("--sprite-sheet", type=Path,
+                       default=Path("data/_assets/coa-builder-icon.webp"),
+                       help="icon sprite sheet the talent data addresses by cell")
+    index.add_argument("--out", type=Path, default=Path("data/index.json"))
 
     client_commands.add_parser(subcommands)
 
@@ -163,6 +184,31 @@ def main(argv: list[str] | None = None) -> int:
 
     # The client subcommands read local archives; they need no HTTP session, and
     # building one would make an offline run fail for no reason.
+    if args.command == "build-index":
+        try:
+            index = build_index(
+                args.data, effects_dir=args.effects, sprite_sheet=args.sprite_sheet,
+                asset_root=Path("data/client/assets"),
+            )
+            path = write_index(index, args.out)
+            search = build_search(index, args.data)
+            search_path = args.out.with_name("search.json")
+            search_path.write_text(
+                json.dumps(search, ensure_ascii=False, separators=(",", ":")),
+                encoding="utf-8",
+            )
+        except _EXPECTED_ERRORS as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        classes = sum(len(r.classes) for r in index.realms)
+        with_effects = sum(1 for r in index.realms for c in r.classes if c.effects_file)
+        print(f"{len(index.realms)} realms, {classes} class datasets "
+              f"({with_effects} with effects) -> {path}")
+        print(f"{len(search['rows']):,} talents indexed for search -> {search_path}")
+        if index.sprite_sheet is None:
+            _warn("no icon sprite sheet found; the viewer will show placeholders")
+        return 0
+
     if args.command == "client":
         try:
             return args.func(args)

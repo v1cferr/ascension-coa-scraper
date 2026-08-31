@@ -18,6 +18,8 @@ and the launcher rewrites its archives on patch day.
 | Talent trees | `ascension.gg`, one HTTP GET, no browser | [`docs/DATA_SOURCE.md`](docs/DATA_SOURCE.md) |
 | Spells, effects, sounds, icons | The installed client's MPQ archives | [`docs/CLIENT_DATA.md`](docs/CLIENT_DATA.md) |
 
+There is also a viewer for reading all of it — see [Viewer](#viewer).
+
 Tracked in [V1C-74](https://v1cferr.atlassian.net/browse/V1C-74).
 
 ## Install
@@ -190,6 +192,35 @@ output and are not versioned.
 `slot` is the moment of the cast (`precast`, `cast`, `impact`, `channel`, `state`,
 `persistent_area`, …) and the keys under `models` are attachment points. Kits that
 resolve to neither a model nor a sound are dropped rather than padding every spell.
+
+## Viewer
+
+`web/` is a static page that reads the JSON above: talent trees drawn from their real
+grid positions and connections, icons cut from the sprite sheet, and for any talent the
+models and sounds the client plays for it. No build step and no dependencies — the fonts
+are vendored, so it keeps working offline.
+
+```bash
+uv run ascension-coa build-index      # writes data/index.json and data/search.json
+python -m http.server 8000            # from the repository root
+# then open http://localhost:8000/web/
+```
+
+Re-run `build-index` after scraping a new class or resolving new effects; it records
+what is on disk and nothing else.
+
+Worth knowing:
+
+- **The cast score** is the point of the thing. Effect slots are moments in a cast, so
+  they are laid out as time: columns are moments (`precast`, `cast`, `impact`, …), rows
+  are attachment points (hands, chest, world, …), and each sound plays on the beat it
+  fires — provided `client extract` has written it.
+- **Deep links.** `#voljin/stormbringer/lightning/31163` addresses one talent, so a
+  find can be sent to someone rather than described.
+- **Search** covers every talent in both realms by name or spell id. Press `/` to focus it.
+- **Icons** come from the builder's sprite sheet, which the dataset addresses by cell.
+  The ~79 icons the sheet never defined render as empty nodes — they are broken on the
+  site too.
 
 ## Re-running
 

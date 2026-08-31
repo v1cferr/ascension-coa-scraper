@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conquest of Azeroth — talent and effect record</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="mark">
+    <span class="mark-name">Conquest of Azeroth</span>
+    <span class="mark-role">talent and effect record</span>
+  </div>
+
+  <div class="masthead-controls">
+    <label class="field">
+      <span class="field-label">Realm</span>
+      <select id="realm" class="select"></select>
+    </label>
+    <label class="field field-search">
+      <span class="field-label">Find a talent</span>
+      <input id="search" class="input" type="search" autocomplete="off"
+             placeholder="name or spell id" aria-describedby="search-note">
+    </label>
+  </div>
+
+  <dl class="capture">
+    <div><dt>Captured</dt><dd id="captured">—</dd></div>
+    <div><dt>Classes</dt><dd id="stat-classes">—</dd></div>
+    <div><dt>Talents</dt><dd id="stat-talents">—</dd></div>
+  </dl>
+</header>
+
+<div id="results" class="results" hidden>
+  <p id="search-note" class="results-note"></p>
+  <ul id="results-list" class="results-list"></ul>
+</div>
+
+<div class="frame">
+
+  <nav class="roster" aria-label="Classes">
+    <h2 class="rail-title">Classes</h2>
+    <ul id="roster" class="roster-list"></ul>
+  </nav>
+
+  <main class="stage">
+    <div class="classhead">
+      <h1 id="class-name" class="class-name">—</h1>
+      <dl class="class-stats">
+        <div><dt>Talents</dt><dd id="class-talents">—</dd></div>
+        <div><dt>Talent essence</dt><dd id="class-te">—</dd></div>
+        <div><dt>Ability essence</dt><dd id="class-ae">—</dd></div>
+        <div><dt>Spells with effects</dt><dd id="class-fx">—</dd></div>
+      </dl>
+    </div>
+
+    <nav id="trees" class="trees" aria-label="Talent trees"></nav>
+
+    <div class="canvas-wrap">
+      <div id="canvas" class="canvas" role="group" aria-label="Talent tree">
+        <svg id="wires" class="wires" aria-hidden="true"></svg>
+        <div id="nodes" class="nodes"></div>
+      </div>
+    </div>
+
+    <p class="legend">
+      <span class="key"><i class="glyph glyph-circle"></i>Talent</span>
+      <span class="key"><i class="glyph glyph-square"></i>Ability</span>
+      <span class="key"><i class="glyph glyph-hex"></i>Capstone</span>
+      <span class="key"><i class="glyph glyph-choice"></i>Choice pair — pick one</span>
+      <span class="key"><i class="glyph glyph-passive"></i>Passive</span>
+    </p>
+
+    <section id="score-band" class="score-band" hidden>
+      <h2 class="section-title">Cast score</h2>
+      <p class="score-hint">
+        Columns are moments in the cast, rows are where the effect attaches.
+        Sounds play on the beat they fire.
+      </p>
+      <div id="score-body"></div>
+    </section>
+
+  </main>
+
+  <aside id="readout" class="readout" aria-live="polite">
+    <div class="readout-empty">
+      <p class="readout-empty-title">Pick a talent</p>
+      <p class="readout-empty-body">
+        Its description, cost and prerequisites appear here, with the models and sounds
+        the client plays for it.
+      </p>
+    </div>
+  </aside>
+
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
