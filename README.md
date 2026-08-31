@@ -202,12 +202,31 @@ are vendored, so it keeps working offline.
 
 ```bash
 uv run ascension-coa build-index      # writes data/index.json and data/search.json
-python -m http.server 8000            # from the repository root
-# then open http://localhost:8000/web/
+uv run ascension-coa serve            # then open http://localhost:8000/web/
 ```
 
 Re-run `build-index` after scraping a new class or resolving new effects; it records
 what is on disk and nothing else.
+
+`serve` binds loopback. `--lan` binds every interface so another machine can reach it,
+and prints the address to hand over:
+
+```bash
+uv run ascension-coa serve --lan
+#   http://192.168.1.10:8000/web/
+```
+
+Two things that has to get past. The bind, which `--lan` handles, and the host firewall,
+which it cannot. On NixOS, transiently:
+
+```bash
+sudo nixos-firewall-tool open tcp 8000   # lasts until reboot or the next rebuild
+```
+
+Serving to a network publishes the whole directory to anyone who can reach the host,
+with no authentication. Dot-prefixed paths are refused, which keeps `.git` off the wire;
+nothing else is filtered. Fine for a home network you trust, and worth stopping when you
+are done rather than leaving up.
 
 Worth knowing:
 

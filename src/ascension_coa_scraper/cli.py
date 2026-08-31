@@ -4,6 +4,7 @@
     ascension-coa list-classes
     ascension-coa client inventory
     ascension-coa client effects --dataset data/voljin/stormbringer
+    ascension-coa serve --lan
 
 `scrape` is class-agnostic: any class name, slug, or id present in the payload works, so
 adding support for a new class is a matter of naming it.
@@ -28,6 +29,7 @@ from .index import IndexError_, build_search
 from .index import build as build_index
 from .index import write as write_index
 from .normalize import NormalizeError, list_classes, normalize_class
+from .serve import ALL_INTERFACES, LOOPBACK, describe, serve
 
 DEFAULT_OUT_DIR = Path("data")
 DEFAULT_CACHE_DIR = Path(".cache")
@@ -119,6 +121,22 @@ def build_parser() -> argparse.ArgumentParser:
                        help="icon sprite sheet the talent data addresses by cell")
     index.add_argument("--out", type=Path, default=Path("data/index.json"))
 
+    viewer = subcommands.add_parser(
+        "serve", help="serve the repository so the viewer can read its datasets"
+    )
+    viewer.add_argument("--port", type=int, default=8000)
+    viewer.add_argument(
+        "--root", type=Path, default=Path("."),
+        help="directory to serve (default: the current one, which should hold web/ and data/)",
+    )
+    binding = viewer.add_mutually_exclusive_group()
+    binding.add_argument(
+        "--lan", action="store_true",
+        help="bind every interface so other machines on the network can reach it; "
+             "the default is loopback only",
+    )
+    binding.add_argument("--host", default=None, help="bind one specific address")
+
     client_commands.add_parser(subcommands)
 
     return parser
@@ -184,6 +202,29 @@ def main(argv: list[str] | None = None) -> int:
 
     # The client subcommands read local archives; they need no HTTP session, and
     # building one would make an offline run fail for no reason.
+    if args.command == "serve":
+        root = args.root.resolve()
+        if not (root / "web").is_dir():
+            _warn(f"{root} has no web/ directory; the viewer will 404")
+        host = args.host or (ALL_INTERFACES if args.lan else LOOPBACK)
+        try:
+            httpd = serve(root, host=host, port=args.port)
+        except OSError as exc:
+            print(f"error: cannot bind {host}:{args.port} ({exc})", file=sys.stderr)
+            return 1
+        for line in describe(host, args.port, root):
+            print(line)
+        # The address is the whole point of the command and the process then blocks,
+        # so it has to leave the buffer now; piped output would otherwise show nothing.
+        print("\nCtrl-C to stop.", flush=True)
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print()
+        finally:
+            httpd.server_close()
+        return 0
+
     if args.command == "build-index":
         try:
             index = build_index(
