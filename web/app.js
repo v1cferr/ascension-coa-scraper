@@ -6,7 +6,8 @@
  * an archive should keep working long after its toolchain would have rotted.
  */
 
-const DATA = "../data/";
+const ROOT = "../";
+const DATA = ROOT + "data/";
 
 /* Effect slots are moments in a cast. This is their order in time, which is what the
  * score is laid out along; anything the client emits outside this list is appended so
@@ -145,6 +146,18 @@ function renderClassHead() {
   $("class-te").textContent = c.max_talent_essence;
   $("class-ae").textContent = c.max_ability_essence;
   $("class-fx").textContent = c.effects_spell_count || "0";
+
+  const slot = $("class-download");
+  slot.replaceChildren();
+  if (c.effects_file) {
+    const a = el("a", "bundle-button bundle-button-quiet");
+    a.href = `${ROOT}_bundle/${state.realm.slug}/${c.slug}.zip`;
+    a.append(el("span", "bundle-icon", "\u2193"),
+             el("span", null, `Every ${c.name} asset`));
+    a.title = "One zip: every model, texture, sound and icon this class references. "
+            + "Tens of megabytes, and it takes a moment to build.";
+    slot.append(a);
+  }
 }
 
 function renderTreeTabs() {
@@ -324,7 +337,7 @@ function renderReadout(talent, payload) {
   const ids = [...new Set([talent.spell_id, ...(talent.spell_ids || [])].filter(Boolean))];
   const fx = ids.map((id) => state.effects.get(id)).find(Boolean);
 
-  if (fx) frag.append(fileList(fx));
+  if (fx) frag.append(fileList(fx, talent));
   out.replaceChildren(frag);
   out.scrollTop = 0;
 
@@ -490,26 +503,65 @@ function play(url, btn) {
   audio.play().catch(() => (btn.dataset.state = "missing"));
 }
 
-function fileList(fx) {
+function fileList(fx, talent) {
   const s = el("section", "section");
   s.append(el("h3", "section-title", "Files"));
-  const ul = el("ul", "files");
+
   const paths = [...(fx.models || []), ...(fx.sounds || [])];
+  if (fx.icon) paths.push(fx.icon + ".blp");
+
+  if (paths.length) {
+    s.append(bundleLink(
+      `${ROOT}_bundle/${state.realm.slug}/${state.cls.slug}/${fx.spell_id}.zip`,
+      "Download this spell's assets",
+      "Models with their .skin geometry and .blp textures, the sounds, and the icon.",
+    ));
+  }
+
+  const ul = el("ul", "files");
   for (const p of paths) {
     const li = el("li", "file");
-    li.append(el("span", null, p));
+    const label = el("span", null, p);
+    li.append(label);
     const badge = el("span", "file-state", "checking");
     badge.dataset.have = "false";
     li.append(badge);
     resolveAsset(p).then((url) => {
-      badge.textContent = url ? "extracted" : "not extracted";
+      badge.textContent = url ? "download" : "not extracted";
       badge.dataset.have = String(!!url);
+      if (!url) return;
+      // Only linked once it is known to be there, so a link never leads to a 404.
+      const link = el("a", "file-link");
+      link.href = url;
+      link.download = p.split(/[\\/]/).pop();
+      link.textContent = p;
+      label.replaceWith(link);
+      badge.replaceWith(withHref(badge, url, link.download));
     });
     ul.append(li);
   }
   if (!paths.length) ul.append(el("li", "file", "none"));
   s.append(ul);
   return s;
+}
+
+function withHref(badge, url, filename) {
+  const a = el("a", "file-state", badge.textContent);
+  a.dataset.have = badge.dataset.have;
+  a.href = url;
+  a.download = filename;
+  return a;
+}
+
+/** A prominent download, with what it contains said plainly beneath it. */
+function bundleLink(href, label, note) {
+  const wrap = el("div", "bundle");
+  const a = el("a", "bundle-button");
+  a.href = href;
+  a.append(el("span", "bundle-icon", "\u2193"), el("span", null, label));
+  wrap.append(a);
+  if (note) wrap.append(el("p", "bundle-note", note));
+  return wrap;
 }
 
 /* Search -------------------------------------------------------------------- */

@@ -11,6 +11,7 @@ import pytest
 
 from ascension_coa_scraper.serve import (
     ALL_INTERFACES,
+    BUNDLE_RE,
     LOOPBACK,
     Handler,
     describe,
@@ -100,6 +101,69 @@ def test_serves_files_with_the_right_types_and_refuses_a_dotfile(tmp_path):
             assert r.headers["Content-Type"] == "application/octet-stream"
         with pytest.raises(urllib.error.HTTPError) as caught:
             urllib.request.urlopen(f"http://{LOOPBACK}:{port}/.git/config")
+        assert caught.value.code == 404
+    finally:
+        httpd.shutdown()
+        httpd.server_close()
+        thread.join(timeout=5)
+
+
+# --- the bundle route -------------------------------------------------------------
+
+
+@pytest.mark.parametrize("path,realm,cls,spell", [
+    ("/_bundle/voljin/stormbringer.zip", "voljin", "stormbringer", None),
+    ("/_bundle/voljin/stormbringer/801847.zip", "voljin", "stormbringer", "801847"),
+    ("/_bundle/voljin-alpha/knight-of-xoroth.zip", "voljin-alpha", "knight-of-xoroth", None),
+])
+def test_bundle_urls_are_recognised(path, realm, cls, spell):
+    match = BUNDLE_RE.match(path)
+    assert match is not None
+    assert (match["realm"], match["cls"], match["spell"]) == (realm, cls, spell)
+
+
+@pytest.mark.parametrize("path", [
+    "/_bundle/voljin.zip",                    # no class
+    "/_bundle/voljin/stormbringer",           # no extension
+    "/_bundle/voljin/stormbringer/abc.zip",   # spell must be numeric
+    "/_bundle/../etc/passwd.zip",             # no traversal
+    "/data/index.json",
+])
+def test_other_paths_are_not_bundle_urls(path):
+    assert BUNDLE_RE.match(path) is None
+
+
+def test_a_bundle_request_returns_a_zip_with_counts(tmp_path):
+    import io
+    import json
+    import zipfile
+
+    effects = tmp_path / "data" / "client" / "effects" / "voljin" / "s.json"
+    effects.parent.mkdir(parents=True)
+    effects.write_text(json.dumps({"spells": [
+        {"spell_id": 5, "name": "Bolt", "models": [], "sounds": ["Sound\\a.ogg"], "icon": None}
+    ]}), encoding="utf-8")
+    sound = tmp_path / "data" / "client" / "assets" / "Sound" / "a.ogg"
+    sound.parent.mkdir(parents=True)
+    sound.write_bytes(b"OggS-ish")
+
+    httpd = serve(tmp_path, host=LOOPBACK, port=0)
+    port = httpd.server_address[1]
+    thread = threading.Thread(target=httpd.serve_forever, daemon=True)
+    thread.start()
+    try:
+        url = f"http://{LOOPBACK}:{port}/_bundle/voljin/s/5.zip"
+        with closing(urllib.request.urlopen(url)) as response:
+            assert response.headers["Content-Type"] == "application/zip"
+            assert response.headers["X-Bundle-Files"] == "1"
+            assert response.headers["X-Bundle-Missing"] == "0"
+            assert "attachment" in response.headers["Content-Disposition"]
+            body = response.read()
+        with zipfile.ZipFile(io.BytesIO(body)) as archive:
+            assert archive.namelist() == ["s-5-bolt/Sound/a.ogg"]
+
+        with pytest.raises(urllib.error.HTTPError) as caught:
+            urllib.request.urlopen(f"http://{LOOPBACK}:{port}/_bundle/voljin/ghost.zip")
         assert caught.value.code == 404
     finally:
         httpd.shutdown()

@@ -240,6 +240,23 @@ Worth knowing:
 - **Icons** come from the builder's sprite sheet, which the dataset addresses by cell.
   The ~79 icons the sheet never defined render as empty nodes — they are broken on the
   site too.
+- **Downloads.** Every file in a talent's list is a link, and two buttons bundle them:
+  one spell, or a whole class. A bundle is not just the files the dataset names — a
+  model alone opens to nothing, so each one brings its `.skin` geometry and the `.blp`
+  textures it names inside itself. Arm of Thorim lists 13 files and bundles 52.
+  Anything the extracted tree does not hold is listed in a `MISSING.txt` inside the zip
+  rather than quietly left out.
+
+Bundles are built by `serve` on request:
+
+| | |
+|---|---|
+| `/_bundle/<realm>/<class>.zip` | every asset the class references — tens of MB |
+| `/_bundle/<realm>/<class>/<spell id>.zip` | one spell's |
+
+That is the only dynamic route; everything else is a file on disk. Bundles read
+`data/client/assets/`, so they need `client extract` to have run — no game install or
+StormLib required at serve time.
 
 ## Re-running
 

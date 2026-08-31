@@ -17,10 +17,13 @@ project's own files:
 from __future__ import annotations
 
 import functools
+import re
 import socket
 from collections.abc import Iterator
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+
+from .bundle import BundleError, collect_class, collect_spell, write_zip
 
 __all__ = ["LOOPBACK", "ALL_INTERFACES", "Handler", "lan_addresses", "urls_for", "serve"]
 
@@ -40,11 +43,54 @@ EXTRA_TYPES = {
 }
 
 
+#: /_bundle/<realm>/<class>.zip and /_bundle/<realm>/<class>/<spell id>.zip
+BUNDLE_RE = re.compile(
+    r"^/_bundle/(?P<realm>[\w-]+)/(?P<cls>[\w-]+?)(?:/(?P<spell>\d+))?\.zip$"
+)
+
+
 class Handler(SimpleHTTPRequestHandler):
-    """Static files, threaded, with the extra types and a dotfile guard."""
+    """Static files, threaded, with the extra types and a dotfile guard.
+
+    One dynamic route: /_bundle/... zips a talent's or a class's extracted assets so a
+    reader can take them away. Everything else is a file on disk.
+    """
 
     protocol_version = "HTTP/1.1"
     extensions_map = {**SimpleHTTPRequestHandler.extensions_map, **EXTRA_TYPES}
+
+    @property
+    def data_root(self) -> Path:
+        return Path(self.directory) / "data"
+
+    def do_GET(self) -> None:                       # noqa: N802 (stdlib naming)
+        match = BUNDLE_RE.match(self.path.split("?")[0])
+        if match:
+            self.send_bundle(match)
+            return
+        super().do_GET()
+
+    def send_bundle(self, match: re.Match[str]) -> None:
+        realm, cls, spell = match["realm"], match["cls"], match["spell"]
+        try:
+            bundle = (
+                collect_spell(self.data_root, realm, cls, int(spell)) if spell
+                else collect_class(self.data_root, realm, cls)
+            )
+            payload = write_zip(bundle)
+        except BundleError as exc:
+            self.send_error(404, "Not Found", str(exc))
+            return
+
+        self.send_response(200)
+        self.send_header("Content-Type", "application/zip")
+        self.send_header("Content-Length", str(len(payload)))
+        self.send_header("Content-Disposition", f'attachment; filename="{bundle.name}.zip"')
+        # So the viewer can show what it just handed over without opening the archive.
+        self.send_header("X-Bundle-Files", str(len(bundle)))
+        self.send_header("X-Bundle-Missing", str(len(bundle.missing)))
+        self.end_headers()
+        self.wfile.write(payload)
 
     def log_message(self, fmt: str, *args: object) -> None:  # noqa: A002
         # One line per request would bury the address the user is waiting to see.

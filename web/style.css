@@ -251,7 +251,7 @@ button, input, select { font: inherit; color: inherit; }
   color: var(--class);
 }
 
-.class-stats { display: flex; gap: 26px; margin: 0; }
+.class-stats { display: flex; gap: 26px; margin: 0; flex-wrap: wrap; }
 .class-stats div { display: flex; flex-direction: column; gap: 2px; }
 .class-stats dd { margin: 0; font-family: var(--mono); font-size: 14px; }
 
@@ -629,6 +629,51 @@ button, input, select { font: inherit; color: inherit; }
   color: var(--faint);
 }
 
+/* Downloads --------------------------------------------------------------- */
+
+.bundle { margin: 0 0 14px; }
+
+.bundle-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px 8px 11px;
+  border: 1px solid var(--class-dim);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--class) 9%, var(--sunk));
+  color: var(--text);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 120ms var(--ease), border-color 120ms var(--ease);
+}
+.bundle-button:hover {
+  background: color-mix(in srgb, var(--class) 18%, var(--sunk));
+  border-color: var(--class);
+}
+.bundle-icon {
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1;
+  color: var(--class);
+}
+.bundle-button-quiet {
+  padding: 6px 11px 6px 9px;
+  font-size: 11.5px;
+  font-weight: 500;
+  background: var(--sunk);
+  border-color: var(--line-2);
+}
+.bundle-note {
+  margin: 7px 0 0;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--dim);
+  max-width: 38ch;
+}
+
+.class-download { margin-left: auto; align-self: center; }
+
 .files { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .file {
   display: grid;
@@ -643,9 +688,19 @@ button, input, select { font: inherit; color: inherit; }
   word-break: break-all;
 }
 .file:last-child { border-bottom: 0; }
-.file-state { font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.file-state {
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
 .file-state[data-have="true"] { color: var(--class); }
+.file-state[data-have="true"]:hover { text-decoration: underline; }
 .file-state[data-have="false"] { color: var(--faint); }
+
+.file-link { color: var(--dim); text-decoration: none; }
+.file-link:hover { color: var(--text); text-decoration: underline; }
 
 .note { font-size: 12.5px; color: var(--dim); margin: 0; }
 
