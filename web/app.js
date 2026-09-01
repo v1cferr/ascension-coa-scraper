@@ -522,6 +522,12 @@ async function inspectModel(path, chip) {
     img.loading = "lazy";
     img.alt = texture.path;
     img.src = `${ROOT}_texture/${encodeURI(texture.path)}`;
+    // A few Shadowlands-era BLP variants are beyond the decoder. Say so, rather than
+    // leaving a broken image that reads as a fault in the page.
+    img.addEventListener("error", () => {
+      const stand = el("div", "plate-missing", "format not decodable");
+      img.replaceWith(stand);
+    });
     figure.append(img, el("figcaption", null, texture.path.split("/").pop()));
     gallery.append(figure);
   }

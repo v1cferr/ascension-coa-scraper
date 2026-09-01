@@ -15,7 +15,9 @@ from pathlib import Path
 
 from .client.model import M2Error, describe
 
-__all__ = ["PreviewError", "safe_asset", "texture_png", "model_summary"]
+__all__ = [
+    "PreviewError", "UnsupportedAsset", "safe_asset", "texture_png", "model_summary",
+]
 
 #: Pillow reads BLP1 and BLP2, which covers everything this client ships. It is an
 #: optional dependency, so its absence is reported rather than raised as ImportError.
@@ -26,7 +28,16 @@ except ImportError:  # pragma: no cover
 
 
 class PreviewError(RuntimeError):
-    """The asset is missing, outside the tree, or cannot be converted."""
+    """The asset is missing or outside the tree."""
+
+
+class UnsupportedAsset(PreviewError):
+    """The file is there and readable, but this cannot convert it.
+
+    Kept apart from a plain miss because they call for different answers: one means
+    re-run the extraction, the other means the format is beyond the decoder. A handful
+    of Shadowlands-era textures use BLP alpha encodings Pillow does not implement.
+    """
 
 
 def safe_asset(assets: Path, relative: str) -> Path:
@@ -34,14 +45,32 @@ def safe_asset(assets: Path, relative: str) -> Path:
 
     The path arrives from a URL, so ``..`` and absolute paths have to be rejected on
     the resolved result rather than by inspecting the string.
+
+    A model named ``.mdx`` is looked up as ``.m2`` when the literal name misses, the
+    swap the client itself makes. The tables name a tenth of their models with the
+    Warcraft III extension for files stored as M2, and without this those are reported
+    as un-extracted while sitting right there on disk.
     """
     root = assets.resolve()
-    candidate = (root / relative.replace("\\", "/").lstrip("/")).resolve()
-    if not candidate.is_relative_to(root):
-        raise PreviewError("path escapes the asset tree")
-    if not candidate.is_file():
-        raise PreviewError(f"{relative} is not in the extracted assets")
-    return candidate
+    cleaned = relative.replace("\\", "/").lstrip("/")
+
+    for candidate_name in _name_candidates(cleaned):
+        candidate = (root / candidate_name).resolve()
+        if not candidate.is_relative_to(root):
+            raise PreviewError("path escapes the asset tree")
+        if candidate.is_file():
+            return candidate
+
+    raise PreviewError(f"{relative} is not in the extracted assets")
+
+
+def _name_candidates(name: str) -> list[str]:
+    lowered = name.lower()
+    if lowered.endswith(".mdx"):
+        return [name, name[:-4] + ".m2"]
+    if lowered.endswith(".m2"):
+        return [name, name[:-3] + ".mdx"]
+    return [name]
 
 
 def texture_png(path: Path) -> bytes:
@@ -61,7 +90,7 @@ def texture_png(path: Path) -> bytes:
             out = io.BytesIO()
             image.convert("RGBA").save(out, format="PNG", optimize=False)
     except (OSError, ValueError, NotImplementedError) as exc:
-        raise PreviewError(f"cannot decode {path.name}: {exc}") from exc
+        raise UnsupportedAsset(f"cannot decode {path.name}: {exc}") from exc
     return out.getvalue()
 
 
@@ -70,7 +99,7 @@ def model_summary(path: Path, *, assets: Path) -> dict:
     try:
         info = describe(path.read_bytes())
     except (M2Error, OSError) as exc:
-        raise PreviewError(f"cannot read {path.name}: {exc}") from exc
+        raise UnsupportedAsset(f"cannot read {path.name}: {exc}") from exc
 
     textures = []
     for reference in info.textures:

@@ -26,7 +26,13 @@ from pathlib import Path
 from urllib.parse import unquote
 
 from .bundle import ASSET_ROOT, BundleError, collect_class, collect_spell, write_zip
-from .preview import PreviewError, model_summary, safe_asset, texture_png
+from .preview import (
+    PreviewError,
+    UnsupportedAsset,
+    model_summary,
+    safe_asset,
+    texture_png,
+)
 
 __all__ = ["LOOPBACK", "ALL_INTERFACES", "Handler", "lan_addresses", "urls_for", "serve"]
 
@@ -102,6 +108,11 @@ class Handler(SimpleHTTPRequestHandler):
         """
         try:
             payload = convert(safe_asset(self.data_root / ASSET_ROOT, relative))
+        except UnsupportedAsset as exc:
+            # Present but beyond the decoder: not the same answer as missing, and the
+            # page says something different for each.
+            self.send_error(415, "Unsupported Media Type", str(exc))
+            return
         except PreviewError as exc:
             self.send_error(404, "Not Found", str(exc))
             return

@@ -9,6 +9,7 @@ import pytest
 
 from ascension_coa_scraper.preview import (
     PreviewError,
+    UnsupportedAsset,
     model_summary,
     safe_asset,
     texture_png,
@@ -77,6 +78,30 @@ def test_paths_escaping_the_tree_are_refused(tmp_path, escape):
         safe_asset(tmp_path, escape)
 
 
+def test_an_mdx_name_finds_the_m2_on_disk(tmp_path):
+    # The tables name roughly a tenth of their models .mdx for files stored as .m2.
+    (tmp_path / "spells").mkdir()
+    (tmp_path / "spells" / "bolt.m2").write_bytes(b"x")
+    assert safe_asset(tmp_path, "spells\\bolt.mdx").name == "bolt.m2"
+
+
+def test_an_m2_name_finds_the_mdx_on_disk(tmp_path):
+    (tmp_path / "old.mdx").write_bytes(b"x")
+    assert safe_asset(tmp_path, "old.m2").name == "old.mdx"
+
+
+def test_the_literal_name_wins_when_both_exist(tmp_path):
+    (tmp_path / "both.m2").write_bytes(b"m2")
+    (tmp_path / "both.mdx").write_bytes(b"mdx")
+    assert safe_asset(tmp_path, "both.mdx").name == "both.mdx"
+
+
+def test_the_swap_does_not_apply_to_other_extensions(tmp_path):
+    (tmp_path / "a.png").write_bytes(b"x")
+    with pytest.raises(PreviewError, match="not in the extracted assets"):
+        safe_asset(tmp_path, "a.blp")
+
+
 def test_a_missing_file_is_reported(tmp_path):
     with pytest.raises(PreviewError, match="not in the extracted assets"):
         safe_asset(tmp_path, "gone.blp")
@@ -95,11 +120,19 @@ def test_a_decodable_texture_becomes_a_png_with_alpha(tmp_path):
         assert decoded.size == (8, 4)
 
 
-def test_bytes_that_are_not_an_image_are_reported(tmp_path):
+def test_a_texture_the_decoder_cannot_read_is_distinguished_from_a_missing_one(tmp_path):
+    # Present but undecodable is a different answer from absent: one says re-extract,
+    # the other says the format is beyond the decoder. The routes map them to
+    # different statuses, so the types have to differ too.
     bad = tmp_path / "bad.blp"
     bad.write_bytes(b"not an image at all")
-    with pytest.raises(PreviewError, match="cannot decode"):
+    with pytest.raises(UnsupportedAsset, match="cannot decode"):
         texture_png(bad)
+    with pytest.raises(PreviewError):                 # still a PreviewError
+        texture_png(bad)
+    with pytest.raises(PreviewError) as absent:
+        safe_asset(tmp_path, "nothere.blp")
+    assert not isinstance(absent.value, UnsupportedAsset)
 
 
 # --- models -----------------------------------------------------------------------
@@ -139,5 +172,5 @@ def test_glow_is_unknown_when_no_render_flags_are_declared(tmp_path):
 def test_bytes_that_are_not_a_model_are_reported(tmp_path):
     bad = tmp_path / "bad.m2"
     bad.write_bytes(b"nope")
-    with pytest.raises(PreviewError, match="cannot read"):
+    with pytest.raises(UnsupportedAsset, match="cannot read"):
         model_summary(bad, assets=tmp_path)
