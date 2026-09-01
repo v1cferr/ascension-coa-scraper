@@ -21,11 +21,15 @@ from pathlib import Path
 
 from .client.assets import M2Error, parse_textures
 
-__all__ = ["BundleError", "Bundle", "collect_spell", "collect_class", "write_zip"]
+__all__ = [
+    "BundleError", "Bundle", "collect_spell", "collect_class", "collect_any_spell",
+    "write_zip",
+]
 
 #: Where the viewer's asset paths live, relative to the served data directory.
 ASSET_ROOT = Path("client") / "assets"
 EFFECTS_ROOT = Path("client") / "effects"
+SPELLBOOK = Path("client") / "spellbook.sqlite"
 
 
 class BundleError(RuntimeError):
@@ -153,6 +157,38 @@ def collect_class(data_root: Path, realm: str, class_slug: str) -> Bundle:
     for spell in payload["spells"]:
         for ref in _refs(spell):
             _add(bundle, assets, ref)
+    return bundle
+
+
+def collect_any_spell(data_root: Path, spell_id: int) -> Bundle:
+    """Every file one spell references, for any spell in the client.
+
+    Reads the spellbook rather than a class's effects file, so this reaches the
+    232,000 spells that belong to no talent tree.
+    """
+    from .client.spellbook import connect, fetch
+
+    book = data_root / SPELLBOOK
+    if not book.is_file():
+        raise BundleError(
+            "no spellbook; run: ascension-coa client spellbook"
+        )
+    record = fetch(connect(book), spell_id)
+    if record is None:
+        raise BundleError(f"spell {spell_id} is not in the client")
+    if not record["effects"]:
+        raise BundleError(f"spell {spell_id} draws nothing")
+
+    assets = data_root / ASSET_ROOT
+    if not assets.is_dir():
+        raise BundleError(
+            "no extracted assets; run: ascension-coa client extract --from-effects ..."
+        )
+
+    slug = "".join(c if c.isalnum() else "-" for c in record["name"]).strip("-")
+    bundle = Bundle(name=f"spell-{spell_id}-{slug}".rstrip("-").lower())
+    for ref in _refs(record["effects"]):
+        _add(bundle, assets, ref)
     return bundle
 
 

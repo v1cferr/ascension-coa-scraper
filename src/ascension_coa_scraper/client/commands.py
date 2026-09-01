@@ -14,7 +14,7 @@ from collections import Counter
 from dataclasses import asdict
 from pathlib import Path
 
-from . import schema
+from . import schema, spellbook
 from .assets import expand
 from .dbc import DbcError
 from .effects import EffectResolver, SpellEffects
@@ -206,6 +206,25 @@ def run_effects(args: argparse.Namespace) -> int:
     return 0
 
 
+# --- spellbook --------------------------------------------------------------------
+
+
+def run_spellbook(args: argparse.Namespace) -> int:
+    _, client = _open(args)
+
+    def tick(stats: spellbook.BuildStats) -> None:
+        print(f"\r  {stats.named:>7,} named, {stats.with_effects:>7,} with effects",
+              end="", flush=True)
+
+    stats = spellbook.build(client, args.out, progress=tick)
+    print(f"\r  {stats.total:,} spells, {stats.named:,} named, "
+          f"{stats.with_effects:,} with a visual" + " " * 20)
+    print(f"  {stats.models:,} model and {stats.sounds:,} sound references")
+    print(f"  -> {args.out} ({args.out.stat().st_size / 2**20:.1f} MB)")
+    client.close()
+    return 0
+
+
 # --- extract ----------------------------------------------------------------------
 
 
@@ -223,6 +242,19 @@ def run_extract(args: argparse.Namespace) -> int:
             others.extend(spell.get("sounds") or [])
             if args.icons and spell.get("icon"):
                 others.append(spell["icon"] + ".blp")
+
+    if args.from_spellbook:
+        # Every asset any spell in the client draws. Far smaller than it sounds:
+        # 122,000 spells share fewer than 15,000 distinct files between them.
+        import sqlite3
+        db = sqlite3.connect(f"file:{args.from_spellbook}?mode=ro", uri=True)
+        for (blob,) in db.execute("SELECT effects FROM spells WHERE effects IS NOT NULL"):
+            spell = json.loads(blob)
+            models.extend(spell.get("models") or [])
+            others.extend(spell.get("sounds") or [])
+            if args.icons and spell.get("icon"):
+                others.append(spell["icon"] + ".blp")
+        db.close()
 
     # Order-preserving dedup: the same model is referenced by many spells.
     seen: dict[str, None] = {}
@@ -328,12 +360,24 @@ def add_parser(subcommands: argparse._SubParsersAction) -> None:
     effects.add_argument("--out", type=Path, default=Path("data/client/effects.json"))
     effects.set_defaults(func=run_effects)
 
+    book = verbs.add_parser(
+        "spellbook", parents=[common],
+        help="resolve every spell in the client into a queryable database",
+    )
+    book.add_argument("--out", type=Path, default=Path("data/client/spellbook.sqlite"))
+    book.set_defaults(func=run_spellbook)
+
     extract = verbs.add_parser("extract", parents=[common],
                                help="write asset files out of the archives")
     extract.add_argument("path", nargs="*", help="in-archive path (repeatable)")
     extract.add_argument("--from-effects", type=Path, action="append",
                          help="extract every model and sound named by an effects.json "
                               "(repeatable)")
+    extract.add_argument(
+        "--from-spellbook", type=Path, default=None, metavar="DB",
+        help="extract every asset any spell in the client draws, from a spellbook "
+             "built by `client spellbook`",
+    )
     extract.add_argument("--bare", action="store_true",
                          help="write only the named model files, without resolving "
                               "their .skin geometry and .blp textures")

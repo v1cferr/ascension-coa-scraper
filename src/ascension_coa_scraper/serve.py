@@ -23,9 +23,20 @@ import socket
 from collections.abc import Iterator
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import parse_qs, unquote, urlparse
 
-from .bundle import ASSET_ROOT, BundleError, collect_class, collect_spell, write_zip
+from .bundle import (
+    ASSET_ROOT,
+    SPELLBOOK,
+    BundleError,
+    collect_any_spell,
+    collect_class,
+    collect_spell,
+    write_zip,
+)
+from .client.spellbook import connect as open_book
+from .client.spellbook import fetch as fetch_spell
+from .client.spellbook import search as search_spells
 from .preview import (
     PreviewError,
     UnsupportedAsset,
@@ -61,6 +72,11 @@ BUNDLE_RE = re.compile(
 TEXTURE_RE = re.compile(r"^/_texture/(?P<path>.+\.blp)$", re.IGNORECASE)
 MODEL_RE = re.compile(r"^/_model/(?P<path>.+\.(?:m2|mdx))$", re.IGNORECASE)
 
+#: The spellbook: every spell in the client, not only those a talent names.
+SPELL_RE = re.compile(r"^/_spell/(?P<id>\d+)$")
+SPELL_BUNDLE_RE = re.compile(r"^/_bundle/spell/(?P<id>\d+)\.zip$")
+SEARCH_PATH = "/_spells"
+
 
 class Handler(SimpleHTTPRequestHandler):
     """Static files, threaded, with the extra types and a dotfile guard.
@@ -72,16 +88,48 @@ class Handler(SimpleHTTPRequestHandler):
     protocol_version = "HTTP/1.1"
     extensions_map = {**SimpleHTTPRequestHandler.extensions_map, **EXTRA_TYPES}
 
+    #: One read-only connection per server, opened on first use. SQLite is safe to
+    #: share across threads for reads with check_same_thread off, which `connect` sets.
+    _book = None
+
     @property
     def data_root(self) -> Path:
         return Path(self.directory) / "data"
 
+    def book(self):
+        """The spellbook, or None when it has not been built."""
+        cls = type(self)
+        if cls._book is None:
+            path = self.data_root / SPELLBOOK
+            if not path.is_file():
+                return None
+            cls._book = open_book(path)
+        return cls._book
+
     def do_GET(self) -> None:                       # noqa: N802 (stdlib naming)
         path = unquote(self.path.split("?")[0])
+
+        # Checked before the realm/class pattern, which would otherwise read
+        # /_bundle/spell/50796.zip as realm "spell" holding a class called "50796".
+        spell_bundle = SPELL_BUNDLE_RE.match(path)
+        if spell_bundle:
+            self.send_zip(
+                lambda: collect_any_spell(self.data_root, int(spell_bundle["id"]))
+            )
+            return
 
         bundle = BUNDLE_RE.match(path)
         if bundle:
             self.send_bundle(bundle)
+            return
+
+        spell = SPELL_RE.match(path)
+        if spell:
+            self.send_spell(int(spell["id"]))
+            return
+
+        if path == SEARCH_PATH:
+            self.send_search()
             return
 
         texture = TEXTURE_RE.match(path)
@@ -99,6 +147,39 @@ class Handler(SimpleHTTPRequestHandler):
             return
 
         super().do_GET()
+
+    def send_json(self, payload: object, *, cache: str = "no-store") -> None:
+        body = json.dumps(payload).encode("utf-8")
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", cache)
+        self.end_headers()
+        self.wfile.write(body)
+
+    def send_spell(self, spell_id: int) -> None:
+        book = self.book()
+        if book is None:
+            self.send_error(404, "Not Found", "no spellbook; run: client spellbook")
+            return
+        record = fetch_spell(book, spell_id)
+        if record is None:
+            self.send_error(404, "Not Found", f"spell {spell_id} is not in the client")
+            return
+        self.send_json(record, cache="max-age=3600")
+
+    def send_search(self) -> None:
+        book = self.book()
+        if book is None:
+            self.send_error(404, "Not Found", "no spellbook; run: client spellbook")
+            return
+        params = parse_qs(urlparse(self.path).query)
+        query = (params.get("q") or [""])[0]
+        try:
+            limit = min(int((params.get("limit") or ["60"])[0]), 200)
+        except ValueError:
+            limit = 60
+        self.send_json({"query": query, "results": search_spells(book, query, limit=limit)})
 
     def send_derived(self, convert, relative: str, content_type: str) -> None:
         """Convert one asset on the fly and send it.
@@ -126,14 +207,17 @@ class Handler(SimpleHTTPRequestHandler):
 
     def send_bundle(self, match: re.Match[str]) -> None:
         realm, cls, spell = match["realm"], match["cls"], match["spell"]
+        self.send_zip(lambda: (
+            collect_spell(self.data_root, realm, cls, int(spell)) if spell
+            else collect_class(self.data_root, realm, cls)
+        ))
+
+    def send_zip(self, collect) -> None:
         try:
-            bundle = (
-                collect_spell(self.data_root, realm, cls, int(spell)) if spell
-                else collect_class(self.data_root, realm, cls)
-            )
+            bundle = collect()
             payload = write_zip(bundle)
         except BundleError as exc:
-            self.send_error(404, "Not Found", str(exc))
+            self.send_error(404, str(exc))
             return
 
         self.send_response(200)

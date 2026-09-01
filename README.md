@@ -67,7 +67,15 @@ uv run ascension-coa client effects  --dataset data/voljin/stormbringer \
                                      --out data/client/effects/stormbringer.json
 uv run ascension-coa client extract  --from-effects data/client/effects/stormbringer.json \
                                      --icons --out data/client/assets
+
+uv run ascension-coa client spellbook                 # every spell -> data/client/spellbook.sqlite
+uv run ascension-coa client extract --from-spellbook data/client/spellbook.sqlite --icons
 ```
+
+`spellbook` resolves all 239,062 spells in about twenty seconds into a 170 MB SQLite
+file the viewer queries. Extracting everything it references is smaller than it sounds:
+122,000 spells share fewer than 15,000 distinct files between them, which expand with
+geometry and textures to 41,000 files and 1.5 GB.
 
 `effects` takes its spell ids from a scraped dataset, which is what joins the two
 halves: the builder says which spells a class has, the client says what they look and
@@ -236,7 +244,13 @@ Worth knowing:
   fires — provided `client extract` has written it.
 - **Deep links.** `#voljin/stormbringer/lightning/31163` addresses one talent, so a
   find can be sent to someone rather than described.
-- **Search** covers every talent in both realms by name or spell id. Press `/` to focus it.
+- **Every spell, not only talents.** The trees name about 3,900 spells; the client
+  holds 232,000 named ones, of which 122,000 draw something. Search reaches all of
+  them — talents first, then the rest of the spell table — and a spell that belongs to
+  no tree opens in the same cast score, inspector and player. Build the index with
+  `ascension-coa client spellbook`.
+- **Search** covers every talent in both realms and every spell in the client, by name
+  or id. Press `/` to focus it.
 - **Icons** come from the builder's sprite sheet, which the dataset addresses by cell.
   The ~79 icons the sheet never defined render as empty nodes — they are broken on the
   site too.
@@ -262,6 +276,9 @@ Bundles are built by `serve` on request:
 | `/_bundle/<realm>/<class>/<spell id>.zip` | one spell's |
 | `/_texture/<asset path>.blp` | that texture, decoded to PNG |
 | `/_model/<asset path>.m2` | what the model is made of, as JSON |
+| `/_spells?q=` | search every spell in the client |
+| `/_spell/<id>` | one spell, with its resolved cast |
+| `/_bundle/spell/<id>.zip` | that spell's assets, for any spell |
 
 Those are the only dynamic routes; everything else is a file on disk. All of them read
 `data/client/assets/`, so they need `client extract` to have run — but no game install

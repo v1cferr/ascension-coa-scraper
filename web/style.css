@@ -149,7 +149,7 @@ button, input, select { font: inherit; color: inherit; }
 
 .result {
   display: grid;
-  grid-template-columns: 26px minmax(0, 1fr) auto auto;
+  grid-template-columns: 26px minmax(0, 1fr) auto auto auto;
   gap: 12px;
   align-items: center;
   width: 100%;
@@ -168,6 +168,15 @@ button, input, select { font: inherit; color: inherit; }
   color: var(--dim);
 }
 .result-swatch { width: 3px; height: 18px; border-radius: 2px; }
+.result-kind {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  border: 1px solid var(--line-2);
+  border-radius: 2px;
+  padding: 1px 5px;
+}
 
 /* Frame -------------------------------------------------------------------- */
 

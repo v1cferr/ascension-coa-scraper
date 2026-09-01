@@ -338,22 +338,27 @@ function renderReadout(talent, payload) {
   const ids = [...new Set([talent.spell_id, ...(talent.spell_ids || [])].filter(Boolean))];
   const fx = ids.map((id) => state.effects.get(id)).find(Boolean);
 
-  if (fx) frag.append(fileList(fx, talent));
+  if (fx) {
+    frag.append(fileList(fx, {
+      bundleHref:
+        `${ROOT}_bundle/${state.realm.slug}/${state.cls.slug}/${fx.spell_id}.zip`,
+    }));
+  }
   out.replaceChildren(frag);
   out.scrollTop = 0;
 
-  renderScoreBand(fx, talent);
+  renderScoreBand(fx, { passive: talent.is_passive });
   playerLoad(fx, talent.name);
   $("inspector").hidden = true;
 }
 
 /** The score is the widest thing a talent has to say, so it gets the stage rather than
  *  the side panel, where five moments would have to scroll through a 400px column. */
-function renderScoreBand(fx, talent) {
+function renderScoreBand(fx, options) {
   const band = $("score-band");
   const body = $("score-body");
   band.hidden = false;
-  body.replaceChildren(renderEffects(fx, talent));
+  body.replaceChildren(renderEffects(fx, options));
 }
 
 /** Upstream ships pre-rendered tooltip HTML. Render it, but only the inline formatting
@@ -393,11 +398,11 @@ function safeStyle(value) {
 
 /* The cast score ------------------------------------------------------------ */
 
-function renderEffects(fx, talent) {
+function renderEffects(fx, { passive } = {}) {
   const out = document.createDocumentFragment();
 
   if (!fx || !fx.kits.length) {
-    out.append(el("p", "note", talent.is_passive
+    out.append(el("p", "note", passive
       ? "Passive — the client plays no visual or sound for it."
       : "No visual or sound data for this spell in the client."));
     return out;
@@ -742,16 +747,16 @@ function play(url, btn) {
   playerPlay(player.queue.length - 1);
 }
 
-function fileList(fx, talent) {
+function fileList(fx, { bundleHref } = {}) {
   const s = el("section", "section");
   s.append(el("h3", "section-title", "Files"));
 
   const paths = [...(fx.models || []), ...(fx.sounds || [])];
   if (fx.icon) paths.push(fx.icon + ".blp");
 
-  if (paths.length) {
+  if (paths.length && bundleHref) {
     s.append(bundleLink(
-      `${ROOT}_bundle/${state.realm.slug}/${state.cls.slug}/${fx.spell_id}.zip`,
+      bundleHref,
       "Download this spell's assets",
       "Models with their .skin geometry and .blp textures, the sounds, and the icon.",
     ));
@@ -803,8 +808,91 @@ function bundleLink(href, label, note) {
   return wrap;
 }
 
+/* Any spell in the client ---------------------------------------------------- */
+
+/* The talent trees name about 3,900 spells. The client holds 232,000, of which
+ * 122,000 draw something. Those are reachable here even though no tree points at
+ * them -- searched in the server's spellbook, shown through the same cast score and
+ * inspector a talent uses. */
+async function showSpell(spellId) {
+  const out = $("readout");
+  out.replaceChildren(el("p", "note", "Reading the spell…"));
+
+  let record;
+  try {
+    const response = await fetch(`${ROOT}_spell/${spellId}`);
+    if (!response.ok) throw new Error(String(response.status));
+    record = await response.json();
+  } catch {
+    out.replaceChildren(el("p", "note",
+      `Spell ${spellId} is not in the client, or no spellbook has been built. `
+      + "Run: ascension-coa client spellbook"));
+    return;
+  }
+
+  // A bare spell belongs to no tree, so the tree keeps whatever it was showing and
+  // nothing in it is marked as chosen.
+  for (const b of $("nodes").querySelectorAll(".node")) {
+    b.setAttribute("aria-pressed", "false");
+  }
+  state.selectedTalent = null;
+
+  const fx = record.effects;
+  const frag = document.createDocumentFragment();
+
+  const head = el("div", "talent-head");
+  // The sprite sheet only covers icons the builder used. Any spell in the client can
+  // name any icon, so these come through the texture route instead -- which reaches
+  // every icon the client ships, not the three thousand the sheet holds.
+  const icon = el("div", "talent-icon");
+  if (record.icon) {
+    icon.style.backgroundImage =
+      `url("${ROOT}_texture/${encodeURI(record.icon.replace(/\\/g, "/"))}.blp")`;
+    icon.style.backgroundSize = "cover";
+    icon.style.backgroundPosition = "center";
+  }
+  const titles = el("div");
+  titles.append(el("h2", "talent-name", record.name));
+  titles.append(el("p", "talent-kind",
+    [record.rank, "from the client's spell table"].filter(Boolean).join(" · ")));
+  head.append(icon, titles);
+  frag.append(head);
+
+  const chips = el("div", "chips");
+  const chip = (label, value, accent) => {
+    const c = el("span", accent ? "chip accent" : "chip");
+    c.append(document.createTextNode(label + " "), el("strong", null, String(value)));
+    return c;
+  };
+  chips.append(chip("spell", record.id, true));
+  if (record.visual_id) chips.append(chip("visual", record.visual_id));
+  frag.append(chips);
+
+  if (record.description) {
+    const section = el("section", "section");
+    section.append(el("h3", "section-title", "Description"));
+    section.append(el("div", "desc", record.description));
+    frag.append(section);
+  }
+
+  if (fx) {
+    frag.append(fileList(fx, { bundleHref: `${ROOT}_bundle/spell/${record.id}.zip` }));
+  }
+  out.replaceChildren(frag);
+  out.scrollTop = 0;
+
+  renderScoreBand(fx, {});
+  playerLoad(fx, record.name);
+  $("inspector").hidden = true;
+  const address = `#spell/${record.id}`;
+  if (location.hash !== address) history.replaceState(null, "", address);
+}
+
 /* Search -------------------------------------------------------------------- */
 
+/* One box, two kinds of answer: talents, which sit in a tree, and any spell in the
+ * client, which does not. Talents come first because a name that is both is almost
+ * always being looked for as a talent. */
 async function runSearch(query) {
   const box = $("results");
   const note = $("search-note");
@@ -821,31 +909,65 @@ async function runSearch(query) {
   }
 
   const numeric = /^\d+$/.test(q);
-  const hits = state.search.rows.filter(([name, , spell]) =>
-    numeric ? String(spell).startsWith(q) : name.toLowerCase().includes(q)).slice(0, 60);
+  const talents = state.search.rows.filter(([name, , spell]) =>
+    numeric ? String(spell).startsWith(q) : name.toLowerCase().includes(q)).slice(0, 40);
 
-  note.textContent = hits.length
-    ? `${hits.length}${hits.length === 60 ? "+" : ""} matches across both realms`
-    : `Nothing matches “${query}”.`;
-
-  list.replaceChildren(...hits.map(([name, talentId, spell, realm, cls, tree]) => {
+  const rows = talents.map(([name, talentId, spell, realm, cls, tree]) => {
     const entry = state.index.realms.find((r) => r.slug === realm)
       ?.classes.find((c) => c.slug === cls);
-    const li = el("li");
-    const b = el("button", "result");
-    b.type = "button";
-    const sw = el("span", "result-swatch");
-    sw.style.background = entry?.color || "var(--faint)";
-    b.append(
-      sw,
-      el("span", "result-name", name),
-      el("span", "result-where", `${entry?.name || cls} · ${tree}`),
-      el("span", "result-id", spell || "—"),
-    );
-    b.addEventListener("click", () => jumpTo(realm, cls, tree, talentId));
-    li.append(b);
-    return li;
-  }));
+    return {
+      name, id: spell || "—", swatch: entry?.color,
+      where: `${entry?.name || cls} · ${tree}`,
+      open: () => jumpTo(realm, cls, tree, talentId),
+    };
+  });
+
+  render(rows, `${rows.length} talent${rows.length === 1 ? "" : "s"}`);
+
+  // The spellbook lives on the server; ask it in parallel and fold the answers in.
+  let spells = [];
+  try {
+    const response = await fetch(`${ROOT}_spells?q=${encodeURIComponent(query)}&limit=40`);
+    if (response.ok) spells = (await response.json()).results;
+  } catch { /* no spellbook: talents alone are still a useful answer */ }
+
+  const seen = new Set(talents.map((t) => t[2]));
+  for (const spell of spells) {
+    if (seen.has(spell.id)) continue;      // already shown as a talent
+    rows.push({
+      name: spell.name,
+      id: spell.id,
+      where: [spell.rank, `${spell.model_count} models · ${spell.sound_count} sounds`]
+        .filter(Boolean).join(" · "),
+      kind: "spell",
+      open: () => { $("results").hidden = true; $("search").value = ""; showSpell(spell.id); },
+    });
+  }
+
+  render(rows, [
+    talents.length && `${talents.length} talent${talents.length === 1 ? "" : "s"}`,
+    spells.length && `${rows.length - talents.length} more in the client's spell table`,
+  ].filter(Boolean).join(", ") || `Nothing matches “${query}”.`);
+
+  function render(items, summary) {
+    note.textContent = summary;
+    list.replaceChildren(...items.map((row) => {
+      const li = el("li");
+      const b = el("button", "result");
+      b.type = "button";
+      const sw = el("span", "result-swatch");
+      sw.style.background = row.swatch || "var(--line-2)";
+      b.append(sw, el("span", "result-name", row.name));
+      if (row.kind === "spell") b.append(el("span", "result-kind", "spell"));
+      b.append(
+        el("span", "result-where", row.where),
+        el("span", "result-id", String(row.id)),
+      );
+      b.addEventListener("click", row.open);
+      li.append(b);
+      return li;
+    }));
+  }
 }
 
 async function jumpTo(realmSlug, clsSlug, treeSlug, talentId) {
@@ -888,6 +1010,15 @@ function readHash() {
 }
 
 async function applyHash() {
+  const direct = location.hash.match(/^#spell\/(\d+)$/);
+  if (direct) {
+    // A bare spell belongs to no class, but arriving at an empty page reads as a
+    // fault, so the default class is loaded behind it.
+    if (!state.cls) await selectClass(state.realm.classes[0]);
+    await showSpell(Number(direct[1]));
+    return true;
+  }
+
   const want = readHash();
   if (!want) return false;
   const realm = state.index.realms.find((r) => r.slug === want.realm);
