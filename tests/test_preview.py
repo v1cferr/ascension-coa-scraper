@@ -161,11 +161,11 @@ def test_a_model_with_no_geometry_is_marked_particle_only(tmp_path):
     assert model_summary(model, assets=tmp_path)["is_particle_only"] is True
 
 
-def test_glow_is_unknown_when_no_render_flags_are_declared(tmp_path):
-    # Particle emitters carry their own blending, which is not parsed; saying "no"
-    # would be a claim the data does not support.
+def test_glow_is_unknown_only_when_the_model_declares_nothing(tmp_path):
+    # No render flags and no emitters: there is genuinely nothing to read, and saying
+    # "no" would be a claim the data does not support.
     model = tmp_path / "fx.m2"
-    model.write_bytes(m2(particles=2))
+    model.write_bytes(m2())
     assert model_summary(model, assets=tmp_path)["glows"] is None
 
 

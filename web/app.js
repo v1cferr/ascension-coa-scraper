@@ -359,6 +359,16 @@ function renderScoreBand(fx, options) {
   const body = $("score-body");
   band.hidden = false;
   body.replaceChildren(renderEffects(fx, options));
+
+  castStop();
+  $("cast-stage").hidden = true;
+  const playable = !!(fx && fx.kits.length);
+  const button = $("cast-play");
+  button.hidden = !playable;
+  button.onclick = playable ? () => castPlay(fx) : null;
+
+  // ?play on the address starts it on arrival, so a link can be "open this and watch".
+  if (playable && new URLSearchParams(location.search).has("play")) castPlay(fx);
 }
 
 /** Upstream ships pre-rendered tooltip HTML. Render it, but only the inline formatting
@@ -425,7 +435,9 @@ function renderEffects(fx, { passive } = {}) {
 
   grid.append(el("div", "score-cell rowhead score-moment", ""));
   for (const slot of slots) {
-    grid.append(el("div", "score-cell score-moment", slot.replace(/_/g, " ")));
+    const head = el("div", "score-cell score-moment", slot.replace(/_/g, " "));
+    head.dataset.slot = slot;
+    grid.append(head);
   }
 
   for (const attach of rows) {
@@ -433,6 +445,7 @@ function renderEffects(fx, { passive } = {}) {
     for (const slot of slots) {
       const model = kitFor(slot)?.models[attach];
       const cell = el("div", model ? "score-cell filled" : "score-cell");
+      cell.dataset.slot = slot;
       if (model) cell.append(modelChip(model));
       grid.append(cell);
     }
@@ -442,6 +455,7 @@ function renderEffects(fx, { passive } = {}) {
   for (const slot of slots) {
     const sound = kitFor(slot)?.sound;
     const cell = el("div", sound ? "score-cell filled" : "score-cell");
+    cell.dataset.slot = slot;
     if (sound) cell.append(soundChip(sound));
     grid.append(cell);
   }
@@ -469,6 +483,125 @@ function modelChip(path) {
   n.title = `${path}\nShow what this draws`;
   n.addEventListener("click", () => inspectModel(path, n));
   return n;
+}
+
+/* Playing the cast ----------------------------------------------------------- */
+
+/* Not a render. The client's effects are particle systems, and drawing those properly
+ * means writing a renderer. What this does instead is play the cast as the data
+ * describes it: step the moments in order, show the sprites each moment's models draw,
+ * blend them the way those models declare, and put each sound on its own beat. For a
+ * particle effect the sprites are most of what you would see anyway. */
+
+const cast = { timer: null, playing: false, models: new Map() };
+
+/** A model's textures and blending, fetched once and kept. */
+async function modelInfo(path) {
+  if (!cast.models.has(path)) {
+    cast.models.set(path, (async () => {
+      try {
+        const r = await fetch(`${ROOT}_model/${encodeURI(path.replace(/\\/g, "/"))}`);
+        return r.ok ? await r.json() : null;
+      } catch { return null; }
+    })());
+  }
+  return cast.models.get(path);
+}
+
+function castStop() {
+  cast.playing = false;
+  clearTimeout(cast.timer);
+  player.audio.pause();
+  $("cast-play").querySelector("span:last-child").textContent = "Play the cast";
+  $("cast-play").querySelector(".bundle-icon").textContent = "▶";
+  for (const cell of document.querySelectorAll(".score-cell.beat")) {
+    cell.classList.remove("beat");
+  }
+}
+
+async function castPlay(fx) {
+  if (cast.playing) { castStop(); return; }
+  if (!fx || !fx.kits.length) return;
+
+  cast.playing = true;
+  $("cast-play").querySelector("span:last-child").textContent = "Stop";
+  $("cast-play").querySelector(".bundle-icon").textContent = "■";
+  $("cast-stage").hidden = false;
+
+  const beats = fx.kits.filter((k) => Object.keys(k.models).length || k.sound);
+  let index = 0;
+
+  const step = async () => {
+    if (!cast.playing) return;
+    if (index >= beats.length) { castStop(); return; }
+
+    const kit = beats[index++];
+    await showBeat(kit);
+    if (!cast.playing) return;
+
+    // The sound sets the beat's length where there is one, so the visual keeps step
+    // with what you hear; otherwise a steady beat.
+    let ms = 900;
+    const file = kit.sound?.files?.[0];
+    if (file) {
+      const at = player.queue.findIndex((row) => row.url === assetURL(file));
+      if (at >= 0) {
+        playerPlay(at);
+        await new Promise((done) => {
+          const a = player.audio;
+          const settle = () => { a.removeEventListener("durationchange", settle); done(); };
+          a.addEventListener("durationchange", settle);
+          setTimeout(settle, 400);
+        });
+        if (Number.isFinite(player.audio.duration)) {
+          ms = Math.max(500, Math.min(player.audio.duration * 1000, 4000));
+        }
+      }
+    }
+    cast.timer = setTimeout(step, ms);
+  };
+  step();
+}
+
+/** Light the moment's column, and put its sprites on the stage. */
+async function showBeat(kit) {
+  for (const cell of document.querySelectorAll(".score-cell.beat")) {
+    cell.classList.remove("beat");
+  }
+  for (const cell of document.querySelectorAll(`.score-cell[data-slot="${kit.slot}"]`)) {
+    cell.classList.add("beat");
+  }
+  $("cast-moment").textContent = kit.slot.replace(/_/g, " ");
+
+  const frames = $("cast-frames");
+  frames.replaceChildren();
+
+  const paths = [...new Set(Object.values(kit.models))];
+  const infos = await Promise.all(paths.map(modelInfo));
+  const seen = new Set();
+  for (const info of infos) {
+    if (!info) continue;
+    // An emitter names the texture it throws, so each sprite is shown with the
+    // blending the model actually gives it.
+    const blendFor = new Map(
+      (info.emitters || []).map((e) => [info.textures[e.texture]?.path, e.blend]),
+    );
+    for (const texture of info.textures) {
+      if (!texture.available || seen.has(texture.path)) continue;
+      seen.add(texture.path);
+      const img = el("img", "cast-frame");
+      img.src = `${ROOT}_texture/${encodeURI(texture.path)}`;
+      img.alt = texture.path;
+      img.title = texture.path;
+      const blend = blendFor.get(texture.path) || info.blend_modes?.[0] || "";
+      if (blend.includes("additive")) img.classList.add("is-additive");
+      img.addEventListener("error", () => img.remove());
+      frames.append(img);
+    }
+  }
+  if (!frames.childElementCount) {
+    frames.append(el("p", "note", "This moment plays a sound and draws nothing."));
+  }
 }
 
 /* The VFX inspector ---------------------------------------------------------- */
@@ -520,6 +653,9 @@ async function inspectModel(path, chip) {
   frag.append(structureFacts(info));
 
   const shown = info.textures.filter((t) => t.available);
+  const blendFor = new Map(
+    (info.emitters || []).map((e) => [info.textures[e.texture]?.path, e.blend]),
+  );
   const gallery = el("div", "plates");
   for (const texture of shown) {
     const figure = el("figure", "plate");
@@ -533,7 +669,10 @@ async function inspectModel(path, chip) {
       const stand = el("div", "plate-missing", "format not decodable");
       img.replaceWith(stand);
     });
-    figure.append(img, el("figcaption", null, texture.path.split("/").pop()));
+    const caption = el("figcaption", null, texture.path.split("/").pop());
+    figure.append(img, caption);
+    const blend = blendFor.get(texture.path);
+    if (blend) figure.append(el("span", "plate-blend", blend));
     gallery.append(figure);
   }
   if (shown.length) {
@@ -570,13 +709,13 @@ function structureFacts(info) {
   if (c.animations) facts.push(["animations", c.animations]);
   if (c.bones) facts.push(["bones", c.bones]);
 
-  const modes = [...new Set(info.blend_modes || [])];
-  if (modes.length) {
-    facts.push(["blending", modes.join(", ")]);
-  } else if (info.glows === null) {
-    // Particle emitters carry their own blending, which the reader does not parse.
-    facts.push(["blending", "set per emitter — not read here"]);
-  }
+  const modes = [...new Set([
+    ...(info.blend_modes || []),
+    ...(info.emitters || []).map((e) => e.blend),
+  ])];
+  if (modes.length) facts.push(["blending", modes.join(", ")]);
+  const kinds = [...new Set((info.emitters || []).map((e) => e.kind))];
+  if (kinds.length) facts.push(["emitter shape", kinds.join(", ")]);
 
   const dl = el("dl", "facts");
   for (const [term, value] of facts) {
@@ -640,7 +779,7 @@ function playerInit() {
   a.addEventListener("ended", () => playerStep(1, { autoplay: true }));
   a.addEventListener("error", () => {
     const row = player.queue[player.index];
-    if (row) row.broken = true;
+    if (row) row.unplayable = true;
     playerPaint();
   });
 
@@ -702,7 +841,7 @@ function playerPlay(index) {
   if (!row) return;
   player.index = index;
   player.audio.src = row.url;
-  player.audio.play().catch(() => { row.broken = true; playerPaint(); });
+  player.audio.play().catch(() => { row.unplayable = true; playerPaint(); });
   renderQueue();
   playerPaint();
 }
@@ -728,7 +867,9 @@ function playerPaint() {
   $("player-toggle").dataset.state = a.paused ? "paused" : "playing";
   $("player-toggle").setAttribute("aria-label", a.paused ? "Play" : "Pause");
   $("player-now").textContent = row
-    ? (row.broken ? `${row.label} — not extracted` : `${row.slot.replace(/_/g, " ")} · ${row.label}`)
+    ? (row.unplayable
+        ? `${row.label} — this browser could not play it`
+        : `${row.slot.replace(/_/g, " ")} · ${row.label}`)
     : `${player.queue.length} sound${player.queue.length === 1 ? "" : "s"}`;
   $("player-time").textContent = `${clock(a.currentTime)} / ${clock(a.duration)}`;
   const seek = $("player-seek");
@@ -857,6 +998,7 @@ async function showSpell(spellId) {
     [record.rank, "from the client's spell table"].filter(Boolean).join(" · ")));
   head.append(icon, titles);
   frag.append(head);
+  frag.append(ownerList(record.owners));
 
   const chips = el("div", "chips");
   const chip = (label, value, accent) => {
@@ -871,7 +1013,7 @@ async function showSpell(spellId) {
   if (record.description) {
     const section = el("section", "section");
     section.append(el("h3", "section-title", "Description"));
-    section.append(el("div", "desc", record.description));
+    section.append(gameText(record.description));
     frag.append(section);
   }
 
@@ -886,6 +1028,74 @@ async function showSpell(spellId) {
   $("inspector").hidden = true;
   const address = `#spell/${record.id}`;
   if (location.hash !== address) history.replaceState(null, "", address);
+}
+
+/** Render the client's own tooltip text.
+ *
+ * Spell.dbc stores colour as |cAARRGGBB ... |r and breaks as |n, and refers to the
+ * caster's stats with $-variables the server substitutes at runtime. The escapes are
+ * turned into real markup; the variables are left visible, because inventing values
+ * for them would be making the number up. */
+function gameText(raw) {
+  const out = el("div", "desc");
+  let colour = null;
+  for (const piece of raw.split(/(\|c[0-9a-fA-F]{8}|\|r|\|n)/g)) {
+    if (!piece) continue;
+    if (piece === "|n") { out.append(document.createElement("br")); continue; }
+    if (piece === "|r") { colour = null; continue; }
+    const start = piece.match(/^\|c[0-9a-fA-F]{2}([0-9a-fA-F]{6})$/);
+    if (start) { colour = `#${start[1]}`; continue; }
+
+    const text = piece.replace(/\|[Hh][^|]*\|h/g, "").replace(/\|[Hh]/g, "");
+    if (!colour) { out.append(document.createTextNode(text)); continue; }
+    const span = el("span", null, text);
+    span.style.color = colour;
+    out.append(span);
+  }
+  // What is left of a $-variable is the client's, not ours; mark it as unresolved
+  // rather than letting it read as a typo.
+  for (const node of [...out.childNodes]) {
+    if (node.nodeType !== Node.TEXT_NODE || !/\$/.test(node.textContent)) continue;
+    const frag = document.createDocumentFragment();
+    for (const bit of node.textContent.split(/(\$\{[^}]*\}|\$[a-zA-Z0-9]+)/g)) {
+      if (!bit) continue;
+      if (bit.startsWith("$")) frag.append(el("code", "unresolved", bit));
+      else frag.append(document.createTextNode(bit));
+    }
+    node.replaceWith(frag);
+  }
+  return out;
+}
+
+/** Who grants a spell, and as what.
+ *
+ * The same effect is often a class's own ability and again a talent that upgrades it.
+ * Both are worth seeing: one says the class has it from the start, the other that it
+ * is something you choose. */
+function ownerList(owners) {
+  const section = el("section", "section owners");
+  section.append(el("h3", "section-title", "Granted by"));
+  if (!owners || !owners.length) {
+    section.append(el("p", "note",
+      "No class grants this spell — it belongs to a creature, an item, or the "
+      + "server's own machinery."));
+    return section;
+  }
+  const ul = el("ul", "owner-list");
+  for (const owner of owners) {
+    const li = el("li", "owner");
+    li.append(el("span", `owner-type owner-${(owner.type || "").toLowerCase()}`,
+                 owner.type || "?"));
+    li.append(el("span", "owner-class", owner.class));
+    if (owner.tab) li.append(el("span", "owner-tab", owner.tab));
+    if (owner.level) li.append(el("span", "owner-level", `level ${owner.level}`));
+    if (owner.name && owner.name !== owner.class) {
+      li.append(el("span", "owner-name", owner.name));
+    }
+    ul.append(li);
+  }
+  section.append(ul);
+  return section;
 }
 
 /* Search -------------------------------------------------------------------- */
@@ -934,12 +1144,16 @@ async function runSearch(query) {
   const seen = new Set(talents.map((t) => t[2]));
   for (const spell of spells) {
     if (seen.has(spell.id)) continue;      // already shown as a talent
+    const owner = (spell.owners || [])[0];
     rows.push({
       name: spell.name,
       id: spell.id,
-      where: [spell.rank, `${spell.model_count} models · ${spell.sound_count} sounds`]
-        .filter(Boolean).join(" · "),
-      kind: "spell",
+      where: [
+        owner && `${owner.class}${owner.tab ? " · " + owner.tab : ""}`,
+        spell.rank,
+        `${spell.model_count} models · ${spell.sound_count} sounds`,
+      ].filter(Boolean).join(" · "),
+      kind: owner ? (owner.type || "spell").toLowerCase() : "spell",
       open: () => { $("results").hidden = true; $("search").value = ""; showSpell(spell.id); },
     });
   }

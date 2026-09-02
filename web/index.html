@@ -81,6 +81,21 @@
         Columns are moments in the cast, rows are where the effect attaches.
         Sounds play on the beat they fire.
       </p>
+      <div class="cast-controls">
+        <button id="cast-play" class="bundle-button" type="button">
+          <span class="bundle-icon">▶</span><span>Play the cast</span>
+        </button>
+        <p class="cast-note">
+          Not a render — the client's own sprites, shown at the moment each one is
+          drawn and blended the way the model declares, with the sound on its beat.
+        </p>
+      </div>
+
+      <div id="cast-stage" class="cast-stage" hidden aria-live="off">
+        <div class="cast-slot"><span id="cast-moment">—</span></div>
+        <div id="cast-frames" class="cast-frames"></div>
+      </div>
+
       <div id="score-body"></div>
       <section id="inspector" class="inspector" hidden aria-label="Effect detail"></section>
     </section>

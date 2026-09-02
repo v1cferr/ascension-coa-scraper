@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import json
 import sqlite3
+from pathlib import Path
 
 import pytest
 
@@ -15,12 +17,20 @@ from ascension_coa_scraper.client.spellbook import (
 )
 
 
+class FakeInstall:
+    """Only the part the builder reads: where the plain-JSON content sits."""
+
+    def __init__(self, content):
+        self.content = content
+
+
 class FakeClient:
     """Stands in for a client, serving prepared table rows."""
 
-    def __init__(self, spells, **tables):
+    def __init__(self, spells, content=None, **tables):
         self._spells = spells
         self._tables = tables
+        self.install = FakeInstall(content or Path("/nonexistent"))
 
     def table(self, name, _schema):
         return self._tables.get(name, [])
@@ -43,12 +53,12 @@ def spell(id_, name, *, rank="", description="", visual=0, icon=0):
             "spell_visual": [visual, 0], "spell_icon_id": icon}
 
 
-def client_with(spells, **tables):
+def client_with(spells, content=None, **tables):
     base = {
         "SpellVisual": [], "SpellVisualKit": [], "SpellVisualEffectName": [],
         "SpellIcon": [], "SoundEntries": [],
     }
-    return FakeClient(spells, **{**base, **tables})
+    return FakeClient(spells, content=content, **{**base, **tables})
 
 
 def visual_row(id_, cast_kit=0):
@@ -168,3 +178,69 @@ def test_the_connection_is_read_only(tmp_path):
     build(client_with([spell(1, "Fireball")]), path)
     with pytest.raises(sqlite3.OperationalError):
         connect(path).execute("DELETE FROM spells")
+
+
+# --- class attribution ------------------------------------------------------------
+
+
+def advancement(root, entries):
+    """Ascension's own class catalogue, as it ships beside the archives."""
+    root.mkdir(parents=True, exist_ok=True)
+    (root / "CharacterAdvancementData.json").write_text(
+        json.dumps(entries), encoding="utf-8")
+    return root
+
+
+def test_a_spell_a_class_grants_records_who_grants_it(tmp_path):
+    content = advancement(tmp_path / "content", [
+        {"Name": "Blizzard", "Class": "Mage", "Tab": "Frost", "Type": "Ability",
+         "RequiredLevel": 20, "Spells": [10]},
+    ])
+    path = tmp_path / "book.sqlite"
+    stats = build(client_with([spell(10, "Blizzard")], content=content), path)
+
+    assert stats.with_owner == 1
+    owners = fetch(connect(path), 10)["owners"]
+    assert owners == [{"name": "Blizzard", "class": "Mage", "tab": "Frost",
+                       "type": "Ability", "level": 20}]
+
+
+def test_a_spell_granted_twice_keeps_both_ways(tmp_path):
+    # The same effect is often a class ability and again a talent that upgrades it;
+    # collapsing that would hide exactly the distinction worth seeing.
+    content = advancement(tmp_path / "content", [
+        {"Name": "Arm of Thorim", "Class": "Stormbringer", "Tab": "Lightning",
+         "Type": "Ability", "Spells": [801847]},
+        {"Name": "Arm of Thorim", "Class": "Stormbringer", "Tab": "Lightning",
+         "Type": "Talent", "Spells": [801847]},
+    ])
+    path = tmp_path / "book.sqlite"
+    build(client_with([spell(801847, "Arm of Thorim")], content=content), path)
+    assert [o["type"] for o in fetch(connect(path), 801847)["owners"]] == [
+        "Ability", "Talent",
+    ]
+
+
+def test_spells_no_class_grants_have_no_owner(tmp_path):
+    content = advancement(tmp_path / "content", [])
+    path = tmp_path / "book.sqlite"
+    stats = build(client_with([spell(1, "Internal Thing")], content=content), path)
+    assert stats.with_owner == 0
+    assert fetch(connect(path), 1)["owners"] == []
+
+
+def test_search_puts_a_spell_a_class_grants_first(tmp_path):
+    content = advancement(tmp_path / "content", [
+        {"Name": "Blizzard", "Class": "Mage", "Tab": "Frost", "Type": "Ability",
+         "Spells": [10]},
+    ])
+    path = tmp_path / "book.sqlite"
+    build(client_with([spell(254633, "Blizzard"), spell(10, "Blizzard")],
+                      content=content), path)
+    assert search(connect(path), "Blizzard")[0]["id"] == 10
+
+
+def test_a_missing_advancement_file_is_not_an_error(tmp_path):
+    path = tmp_path / "book.sqlite"
+    stats = build(client_with([spell(1, "Fireball")], content=tmp_path / "gone"), path)
+    assert stats.with_owner == 0

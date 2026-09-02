@@ -259,6 +259,12 @@ Worth knowing:
   is what makes an effect glow) and every texture it composites, decoded from BLP and
   shown on black the way the game draws them. Nothing renders the model; for a particle
   effect its sprites are very nearly the whole of its look.
+- **Playing the cast.** Not a render: the client's effects are particle systems, and
+  drawing those properly means writing a renderer. What this plays instead is the cast
+  as the data describes it — the moments in order, each one's sprites shown and blended
+  the way its emitters declare, with the sound on its own beat and the score column lit
+  as it fires. For a particle effect those sprites are most of what you would see.
+  Append `?play` to an address to start it on arrival.
 - **The player** takes a spell's sounds as a playlist in cast order — precast, cast,
   impact — so you can walk the whole cast rather than clicking each beat.
 - **Downloads.** Every file in a talent's list is a link, and two buttons bundle them:
