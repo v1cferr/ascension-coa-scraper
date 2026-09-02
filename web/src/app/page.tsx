@@ -14,6 +14,7 @@ import { GrantedBy } from "@/components/granted-by";
 import { SpriteIcon, TextureIcon } from "@/components/icon";
 import { SoundPlayer, type PlayerHandle } from "@/components/sound-player";
 import { SpellPalette, type TalentHit } from "@/components/spell-palette";
+import * as address from "@/lib/address";
 import { gameText } from "@/lib/game-text";
 import { cn } from "@/lib/utils";
 import {
@@ -43,13 +44,32 @@ export default function Viewer() {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const player = useRef<PlayerHandle>(null);
 
+  const arrival = useRef<address.Address>(null);
+
   useEffect(() => {
     viewerIndex().then((i) => {
       setIndex(i);
-      const first = i.realms[0];
-      setRealm(first);
-      setCls(first.classes.find((c) => c.slug === "stormbringer") ?? first.classes[0]);
+      const want = address.read(window.location.hash);
+      arrival.current = want;
+
+      if (want?.kind === "spell") {
+        const first = i.realms[0];
+        setRealm(first);
+        setCls(first.classes[0]);
+        void openSpell(want.id);
+        return;
+      }
+
+      const realm = (want && i.realms.find((r) => r.slug === want.realm)) ?? i.realms[0];
+      setRealm(realm);
+      setCls(
+        (want && realm.classes.find((c) => c.slug === want.cls))
+        ?? realm.classes.find((c) => c.slug === "stormbringer")
+        ?? realm.classes[0],
+      );
     }, () => {});
+    // openSpell is stable; re-running this would re-read a hash we have moved on from.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // The class colour ships in the dataset and is the only saturated thing on screen.
@@ -59,7 +79,8 @@ export default function Viewer() {
 
   useEffect(() => {
     if (!cls) return;
-    setTreeRef(cls.trees[0] ?? null);
+    const want = arrival.current?.kind === "tree" ? arrival.current : null;
+    setTreeRef(cls.trees.find((t) => t.slug === want?.tree) ?? cls.trees[0] ?? null);
     setSubject(null);
     setInspecting(null);
     if (!cls.effects_file) { setEffects(new Map()); return; }
@@ -71,8 +92,24 @@ export default function Viewer() {
 
   useEffect(() => {
     if (!cls || !treeRef) return;
-    fetchTree(cls.dir, treeRef.file).then(setPayload, () => setPayload(null));
-  }, [cls, treeRef]);
+    fetchTree(cls.dir, treeRef.file).then((loaded) => {
+      setPayload(loaded);
+
+      // Only the address the page was opened with is honoured, and only once —
+      // afterwards the URL follows the reader rather than steering them.
+      const want = arrival.current;
+      if (want?.kind !== "tree" || !want.talent) return;
+      arrival.current = null;
+      const talent = loaded.tree.talents.find((t) => t.id === want.talent);
+      if (!talent) return;
+      const ids = [...new Set([talent.spell_id, ...talent.spell_ids].filter(Boolean))] as number[];
+      setSubject({
+        kind: "talent", talent, tree: loaded,
+        fx: ids.map((id) => effects.get(id)).find(Boolean) ?? null,
+      });
+      if (want.model) setInspecting(want.model);
+    }, () => setPayload(null));
+  }, [cls, treeRef, effects]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -124,6 +161,21 @@ export default function Viewer() {
       fx: ids.map((id) => map.get(id)).find(Boolean) ?? null,
     });
   }, [index]);
+
+  // A talent, an effect within it, or a bare spell is a place; keep the URL on it so
+  // a finding can be sent rather than described.
+  useEffect(() => {
+    if (!realm || !cls) return;
+    if (subject?.kind === "spell") {
+      address.put({ kind: "spell", id: subject.record.id });
+    } else if (treeRef) {
+      address.put({
+        kind: "tree", realm: realm.slug, cls: cls.slug, tree: treeRef.slug,
+        talent: subject?.kind === "talent" ? subject.talent.id : undefined,
+        model: inspecting ?? undefined,
+      });
+    }
+  }, [realm, cls, treeRef, subject, inspecting]);
 
   const fx = subject?.kind === "talent" ? subject.fx
            : subject?.kind === "spell" ? subject.record.effects
