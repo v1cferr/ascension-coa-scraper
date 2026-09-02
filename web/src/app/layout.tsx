@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-/* Signage grotesque and an institutional mono: the register of a records system,
- * not of the game it records. */
-const archivo = Archivo({
-  variable: "--font-archivo",
+/* Inter carries the interface. JetBrains Mono carries the data, and it is not
+ * decoration: this page is full of file paths, spell ids and blend modes, where a
+ * fixed advance keeps columns aligned and a slashed zero keeps 0 from reading as O. */
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin", "latin-ext"],
-  axes: ["wdth"],
+  display: "swap",
 });
 
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
+const mono = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${archivo.variable} ${plexMono.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${mono.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

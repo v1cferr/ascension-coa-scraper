@@ -74,8 +74,8 @@
   --color-faint: var(--faint);
   --color-class: var(--class);
 
-  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
 
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
@@ -92,14 +92,16 @@
 }
 
 @layer components {
-  /* Signage-grotesque labels, used for every eyebrow and column head. */
+  /* Every eyebrow and column head. Inter has no width axis, so the weight and the
+     tracking do the work the stretched grotesque used to. */
   .eyebrow {
-    @apply text-[10px] font-semibold uppercase tracking-[0.14em] text-faint;
-    font-stretch: 118%;
+    @apply text-[10px] font-semibold uppercase tracking-[0.13em] text-faint;
   }
+  /* Inter needs negative tracking to hold together at display sizes; the larger the
+     size the tighter it wants to be. */
   .display {
-    @apply tracking-[-0.02em];
-    font-stretch: 122%;
+    @apply tracking-[-0.021em];
+    font-feature-settings: "cv05" 1, "cv08" 1;  /* single-storey l, disambiguated i */
   }
 }
 
