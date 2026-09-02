@@ -16,7 +16,7 @@ test("board with two accents", async ({ page }) => {
   await page.setViewportSize({ width: 1700, height: 1200 });
   await page.goto("/");
   await pinFrom(page, /^Stormbringer/, /^Lightning/);
-  await pinFrom(page, /^Pyromancer/, /^\w+\s+\d+$/);
+  await pinFrom(page, /^Pyromancer/, /^Incineration\s+\d+$/);
   await page.getByRole("navigation", { name: "View" }).getByRole("tab", { name: /Compare/ }).click();
   await page.waitForTimeout(2500);          // let the sprite thumbnails decode
   await page.screenshot({ path: process.env.SHOT!, fullPage: false });

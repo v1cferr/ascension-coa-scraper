@@ -41,20 +41,25 @@ test("pinning from the navigator puts a card on the board", async ({ page }) => 
   await expect(card.getByText(/cast|impact|precast/i).first()).toBeVisible();
 });
 
-test("each card keeps the accent it was pinned with", async ({ page }) => {
-  // Pin from two classes, whose dataset colours differ.
-  await page.getByRole("button", { name: /^Stormbringer/ }).click();
-  await page.getByRole("button", { name: /^Lightning/ }).first().click();
-  const first = page.locator("button[aria-current]").filter({ hasText: /\d{4,}/ }).first();
-  const firstName = (await first.textContent())?.replace(/\d+\s*$/, "").trim() ?? "";
-  await page.getByRole("button", { name: new RegExp(`Pin ${firstName}`, "i") }).click();
+/** Pin a named talent from a named class and tree.
+ *
+ *  Named rather than "whatever is first": reading a name out of the list and then
+ *  clicking its pin races the list itself, which swaps as the next tree lands, and the
+ *  button detaches between the read and the click. */
+async function pinTalent(page: Page, cls: RegExp, tree: RegExp, talent: string) {
+  await page.getByRole("button", { name: cls }).click();
+  const treeRow = page.getByRole("button", { name: tree });
+  await treeRow.click();
+  await expect(treeRow).toHaveAttribute("aria-expanded", "true");
+  const pin = page.getByRole("button", { name: `Pin ${talent} to the board` });
+  await expect(pin).toBeVisible();
+  await pin.click();
+}
 
-  await page.getByRole("button", { name: /^Pyromancer/ }).click();
-  const tree = page.getByRole("button", { name: /^\w+\s+\d+$/ }).first();
-  await tree.click();
-  const second = page.locator("button[aria-current]").filter({ hasText: /\d{4,}/ }).first();
-  const secondName = (await second.textContent())?.replace(/\d+\s*$/, "").trim() ?? "";
-  await page.getByRole("button", { name: new RegExp(`Pin ${secondName}`, "i") }).click();
+test("each card keeps the accent it was pinned with", async ({ page }) => {
+  // Two classes whose dataset colours differ.
+  await pinTalent(page, /^Stormbringer/, /^Lightning\s+\d+$/, "Arm of Thorim");
+  await pinTalent(page, /^Pyromancer/, /^Incineration\s+\d+$/, "Ignite");
 
   await nav(page).getByRole("tab", { name: /Compare/ }).click();
   await expect(cards(page)).toHaveCount(2);
