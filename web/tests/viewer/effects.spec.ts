@@ -36,9 +36,13 @@ test("a model opens to the sprites it draws and how it is built", async ({ page 
   await expect(page.getByText("Textures (", { exact: false })).toBeVisible();
   await expect(page.getByText(/blending/i).first()).toBeVisible();
   const plate = page.locator("figure img").first();
+  await plate.scrollIntoViewIfNeeded();          // the plates are lazily loaded
   await expect(plate).toBeVisible();
-  // A decoded BLP, actually loaded rather than a broken image.
-  expect(await plate.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+  // A decoded BLP, actually loaded rather than a broken image. Visible is not loaded,
+  // so this polls rather than reading the moment the element appears.
+  await expect
+    .poll(() => plate.evaluate((img: HTMLImageElement) => img.naturalWidth))
+    .toBeGreaterThan(0);
 });
 
 test("playing the cast lights each moment in turn", async ({ page }) => {
