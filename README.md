@@ -24,16 +24,21 @@ Tracked in [V1C-74](https://v1cferr.atlassian.net/browse/V1C-74).
 
 ## Install
 
+Everything is pinned in the flake, so the machine needs nothing installed:
+
 ```bash
-uv sync                  # core
-uv sync --extra assets   # adds Pillow, required for --download-assets
+nix develop              # Python, uv, StormLib, Node, pnpm, Playwright browsers
+uv sync --extra assets   # Pillow, for icon cropping and BLP decoding
+pnpm -C web install      # the viewer
 ```
 
-Reading the game client additionally needs StormLib, which is loaded at runtime and
-never compiled here:
+Without nix: Python 3.13 and uv for the extraction, Node 22 and pnpm for the viewer,
+and StormLib built somewhere `$ASCENSION_STORMLIB` can point at.
+
+Or skip all of it and run the two containers:
 
 ```bash
-export ASCENSION_STORMLIB=$(nix build --no-link --print-out-paths nixpkgs#stormlib)/lib/libstorm.so
+docker compose up        # → http://localhost:3000
 ```
 
 ## Usage
@@ -203,38 +208,42 @@ resolve to neither a model nor a sound are dropped rather than padding every spe
 
 ## Viewer
 
-`web/` is a static page that reads the JSON above: talent trees drawn from their real
-grid positions and connections, icons cut from the sprite sheet, and for any talent the
-models and sounds the client plays for it. No build step and no dependencies — the fonts
-are vendored, so it keeps working offline.
+`web/` is a Next.js app over the JSON and the routes above. The Python service stays
+the engine — it reads the archives, decodes textures, parses models and answers the
+spellbook — and `web/src/middleware.ts` forwards its paths, so the browser sees one
+origin and the two stay separately deployable.
 
 ```bash
 uv run ascension-coa build-index      # writes data/index.json and data/search.json
-uv run ascension-coa serve            # then open http://localhost:8000/web/
+docker compose up                     # → http://localhost:3000
+```
+
+Or the two halves by hand, which is what you want while changing either:
+
+```bash
+uv run ascension-coa serve            # the API on 8000
+pnpm -C web dev                       # the viewer on 3000, proxying to it
 ```
 
 Re-run `build-index` after scraping a new class or resolving new effects; it records
 what is on disk and nothing else.
 
-`serve` binds loopback. `--lan` binds every interface so another machine can reach it,
-and prints the address to hand over:
+### Reaching it from another machine
+
+Compose publishes port 3000 on every interface. The API is not published at all — it
+is reachable only on the compose network, so the archive is not served twice. Set
+`ASCENSION_PORT` to move the published port.
+
+The host firewall is the other half, and nothing here can do it for you. On NixOS,
+transiently:
 
 ```bash
-uv run ascension-coa serve --lan
-#   http://192.168.1.10:8000/web/
+sudo nixos-firewall-tool open tcp 3000   # lasts until reboot or the next rebuild
 ```
 
-Two things that has to get past. The bind, which `--lan` handles, and the host firewall,
-which it cannot. On NixOS, transiently:
-
-```bash
-sudo nixos-firewall-tool open tcp 8000   # lasts until reboot or the next rebuild
-```
-
-Serving to a network publishes the whole directory to anyone who can reach the host,
-with no authentication. Dot-prefixed paths are refused, which keeps `.git` off the wire;
-nothing else is filtered. Fine for a home network you trust, and worth stopping when you
-are done rather than leaving up.
+Serving to a network publishes the archive to anyone who can reach the host, with no
+authentication. Fine for a home network you trust, and worth stopping when you are
+done rather than leaving up.
 
 Worth knowing:
 
@@ -305,9 +314,18 @@ data actually changed.
 ## Development
 
 ```bash
-uv run pytest
+uv run pytest                  # 204 tests over the extraction and the service
 uv run ruff check src tests
+
+pnpm -C web test               # Playwright: the API and the viewer
+pnpm -C web test:api           # request-level, no browser
+pnpm -C web test:viewer        # drives the page
+pnpm -C web test:ui            # the same, watchable
 ```
+
+The Playwright suites need the stack running (`docker compose up`, or the two halves
+by hand) and read a live archive rather than fixtures, so they assert on shape and on
+invariants that survive a re-extraction rather than on counts.
 
 ## License
 
