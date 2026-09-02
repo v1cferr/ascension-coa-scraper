@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback } from "react";
 import { X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { modelInfo, textureUrl } from "@/lib/api";
+import { useLoaded } from "@/lib/use-loaded";
 import type { ModelInfo } from "@/lib/types";
 
 /**
@@ -15,19 +16,8 @@ import type { ModelInfo } from "@/lib/types";
  * is built. For a particle effect the sprites are very nearly the whole of it.
  */
 export function EffectInspector({ path, onClose }: { path: string; onClose: () => void }) {
-  const [info, setInfo] = useState<ModelInfo | null>(null);
-  const [failed, setFailed] = useState(false);
-
-  useEffect(() => {
-    let live = true;
-    setInfo(null);
-    setFailed(false);
-    modelInfo(path).then(
-      (i) => live && setInfo(i),
-      () => live && setFailed(true),
-    );
-    return () => { live = false; };
-  }, [path]);
+  const load = useCallback((p: string) => modelInfo(p), []);
+  const { value: info, failed } = useLoaded<ModelInfo>(path, load);
 
   const facts: [string, string][] = [];
   if (info) {
