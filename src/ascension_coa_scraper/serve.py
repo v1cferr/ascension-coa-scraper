@@ -20,6 +20,7 @@ import functools
 import json
 import re
 import socket
+import threading
 from collections.abc import Iterator
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -88,23 +89,26 @@ class Handler(SimpleHTTPRequestHandler):
     protocol_version = "HTTP/1.1"
     extensions_map = {**SimpleHTTPRequestHandler.extensions_map, **EXTRA_TYPES}
 
-    #: One read-only connection per server, opened on first use. SQLite is safe to
-    #: share across threads for reads with check_same_thread off, which `connect` sets.
-    _book = None
+    #: One connection per thread. check_same_thread=False lets a connection cross
+    #: threads, but it does not make one safe to use from two at once -- concurrent
+    #: reads on a shared handle raise "bad parameter or other API misuse", which under
+    #: a threading server means an occasional 500 that no single request reproduces.
+    _books = threading.local()
 
     @property
     def data_root(self) -> Path:
         return Path(self.directory) / "data"
 
     def book(self):
-        """The spellbook, or None when it has not been built."""
-        cls = type(self)
-        if cls._book is None:
-            path = self.data_root / SPELLBOOK
-            if not path.is_file():
-                return None
-            cls._book = open_book(path)
-        return cls._book
+        """The spellbook for this thread, or None when it has not been built."""
+        existing = getattr(self._books, "connection", None)
+        if existing is not None:
+            return existing
+        path = self.data_root / SPELLBOOK
+        if not path.is_file():
+            return None
+        self._books.connection = open_book(path)
+        return self._books.connection
 
     def do_GET(self) -> None:                       # noqa: N802 (stdlib naming)
         path = unquote(self.path.split("?")[0])

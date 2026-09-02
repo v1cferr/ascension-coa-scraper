@@ -169,3 +169,48 @@ def test_a_bundle_request_returns_a_zip_with_counts(tmp_path):
         httpd.shutdown()
         httpd.server_close()
         thread.join(timeout=5)
+
+
+def test_the_spellbook_survives_concurrent_requests(tmp_path):
+    """A shared SQLite handle raises under concurrent reads even with
+    check_same_thread off, which showed up as an occasional 500 that no single
+    request could reproduce."""
+    import json
+    import sqlite3
+    from concurrent.futures import ThreadPoolExecutor
+
+    book = tmp_path / "data" / "client" / "spellbook.sqlite"
+    book.parent.mkdir(parents=True)
+    db = sqlite3.connect(book)
+    db.executescript(
+        "CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);"
+        "CREATE TABLE spells (id INTEGER PRIMARY KEY, name TEXT NOT NULL, rank TEXT,"
+        " description TEXT, icon TEXT, visual_id INTEGER DEFAULT 0,"
+        " model_count INTEGER DEFAULT 0, sound_count INTEGER DEFAULT 0,"
+        " owners TEXT, effects TEXT);"
+    )
+    db.executemany(
+        "INSERT INTO spells (id, name, effects) VALUES (?,?,?)",
+        [(i, f"Spell {i}", json.dumps({"kits": []})) for i in range(1, 60)],
+    )
+    db.commit()
+    db.close()
+
+    httpd = serve(tmp_path, host=LOOPBACK, port=0)
+    port = httpd.server_address[1]
+    thread = threading.Thread(target=httpd.serve_forever, daemon=True)
+    thread.start()
+    try:
+        def fetch(spell_id: int) -> int:
+            with closing(urllib.request.urlopen(
+                f"http://{LOOPBACK}:{port}/_spell/{spell_id}", timeout=10,
+            )) as r:
+                return r.status
+
+        with ThreadPoolExecutor(max_workers=12) as pool:
+            statuses = list(pool.map(fetch, [(i % 59) + 1 for i in range(120)]))
+        assert set(statuses) == {200}
+    finally:
+        httpd.shutdown()
+        httpd.server_close()
+        thread.join(timeout=5)
