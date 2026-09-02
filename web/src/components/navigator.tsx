@@ -209,11 +209,14 @@ function Row({
         onClick={onPin}
         aria-label={pinned ? `${label} is on the board` : `Pin ${label} to the board`}
         aria-pressed={pinned}
+        // Always present, only quieter when the row is not hovered. Hiding it with
+        // opacity made it unreachable by touch, awkward from the keyboard, and a
+        // click target that intercepts its own pointer events.
         className={cn(
-          "grid size-5 shrink-0 place-items-center rounded-full border transition-all",
+          "grid size-5 shrink-0 place-items-center rounded-full border transition-colors",
           pinned
             ? "border-class bg-[color-mix(in_srgb,var(--class)_18%,transparent)] text-class"
-            : "border-transparent text-faint opacity-0 group-hover:border-line2 group-hover:opacity-100 hover:!text-class focus-visible:opacity-100",
+            : "border-transparent text-line2 group-hover:border-line2 group-hover:text-dim hover:!text-class",
         )}
       >
         <Pin className="size-2.5" />
