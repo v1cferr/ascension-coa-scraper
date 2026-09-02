@@ -16,17 +16,22 @@ export type Beat = { slot: string; sound: string | null };
  * its beat setting how long that beat lasts.
  */
 export function CastStage({
-  fx, onBeat, onSound, soundDuration, autoPlay,
+  fx, onBeat, onSound, soundDuration,
 }: {
   fx: Effects;
   onBeat: (slot: string | null) => void;
   onSound: (file: string) => Promise<number>;
   soundDuration: () => number;
-  autoPlay?: boolean;
 }) {
-  const [playing, setPlaying] = useState(false);
-  const [slot, setSlot] = useState<string | null>(null);
-  const [frames, setFrames] = useState<{ path: string; additive: boolean }[]>([]);
+  // One piece of state, carrying the spell it belongs to. A different spell makes it
+  // stale, so "stopped and empty" is derived rather than set — which is what kept
+  // tripping react-hooks/set-state-in-effect.
+  const [stage, setStage] = useState<{
+    spellId: number;
+    playing: boolean;
+    slot: string | null;
+    frames: { path: string; additive: boolean }[];
+  } | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const alive = useRef(true);
 
@@ -34,12 +39,11 @@ export function CastStage({
 
   const stop = useCallback(() => {
     if (timer.current) clearTimeout(timer.current);
-    setPlaying(false);
+    setStage((s) => (s ? { ...s, playing: false } : s));
     onBeat(null);
   }, [onBeat]);
 
   const showBeat = useCallback(async (kit: Kit) => {
-    setSlot(kit.slot);
     onBeat(kit.slot);
 
     const paths = [...new Set(Object.values(kit.models))];
@@ -58,13 +62,16 @@ export function CastStage({
         next.push({ path: texture.path, additive: blend.includes("additive") });
       }
     }
-    setFrames(next);
-  }, [onBeat]);
+    setStage((s) => ({
+      spellId: fx.spell_id, playing: s?.spellId === fx.spell_id ? s.playing : true,
+      slot: kit.slot, frames: next,
+    }));
+  }, [onBeat, fx.spell_id]);
 
   const play = useCallback(async () => {
     const beats = fx.kits.filter((k) => Object.keys(k.models).length || k.sound);
     if (!beats.length) return;
-    setPlaying(true);
+    setStage({ spellId: fx.spell_id, playing: true, slot: null, frames: [] });
 
     let index = 0;
     const step = async () => {
@@ -87,17 +94,18 @@ export function CastStage({
     step();
   }, [fx, onSound, showBeat, soundDuration, stop]);
 
+  // A new spell stops the clock. The stage itself needs no clearing: it carries the
+  // spell it was built for, so it is already stale.
   useEffect(() => {
-    stop();
-    setSlot(null);
-    setFrames([]);
-    if (autoPlay) void play();
-    // Re-arming on every spell would restart the cast mid-watch.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [fx.spell_id]);
+    if (timer.current) clearTimeout(timer.current);
+    onBeat(null);
+  }, [fx.spell_id, onBeat]);
 
   const playable = fx.kits.some((k) => Object.keys(k.models).length || k.sound);
   if (!playable) return null;
+
+  const shown = stage?.spellId === fx.spell_id ? stage : null;
+  const playing = !!shown?.playing;
 
   return (
     <div className="mb-4">
@@ -116,14 +124,14 @@ export function CastStage({
         </p>
       </div>
 
-      {slot && (
+      {shown?.slot && (
         <div className="rounded border border-line2 bg-black p-4">
-          <div className="eyebrow mb-3 !text-class !tracking-[0.16em]">{label(slot)}</div>
+          <div className="eyebrow mb-3 !text-class !tracking-[0.16em]">{label(shown.slot)}</div>
           <div className="flex min-h-[132px] flex-wrap items-center gap-2.5">
-            {frames.length === 0 && (
+            {shown.frames.length === 0 && (
               <p className="text-[12.5px] text-dim">This moment plays a sound and draws nothing.</p>
             )}
-            {frames.map((frame) => (
+            {shown.frames.map((frame) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 key={frame.path}

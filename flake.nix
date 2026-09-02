@@ -58,14 +58,19 @@
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1";
           PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
 
+          # Written to stderr, not stdout: `nix develop --command <cmd>` passes stdout
+          # through, and a greeting there corrupts the output of anything that emits
+          # JSON — which cost a confusing parse failure to work out.
           shellHook = ''
-            echo "ascension archive — $(python --version), node $(node --version)"
-            echo "  ASCENSION_STORMLIB=$ASCENSION_STORMLIB"
-            echo
-            echo "  uv sync --extra assets      set up the Python side"
-            echo "  pnpm -C web install         set up the viewer"
-            echo "  docker compose up           run both, isolated"
-            echo "  pnpm -C web test            drive them with Playwright"
+            {
+              echo "ascension archive — $(python --version), node $(node --version)"
+              echo "  ASCENSION_STORMLIB=$ASCENSION_STORMLIB"
+              echo
+              echo "  uv sync --extra assets      set up the Python side"
+              echo "  pnpm -C web install         set up the viewer"
+              echo "  docker compose up           run both, isolated"
+              echo "  pnpm -C web test            drive them with Playwright"
+            } >&2
           '';
         };
 

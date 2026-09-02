@@ -31,22 +31,29 @@ export function SpellPalette({
 }) {
   const [query, setQuery] = useState("");
   const [talentIndex, setTalentIndex] = useState<SearchIndex | null>(null);
-  const [spells, setSpells] = useState<SpellHit[]>([]);
+  const [answer, setAnswer] = useState<{ query: string; hits: SpellHit[] } | null>(null);
 
   // The talent index is the largest thing the viewer reads, so it waits for a search.
   useEffect(() => {
     if (open && !talentIndex) searchIndex().then(setTalentIndex, () => {});
   }, [open, talentIndex]);
 
+  // Results carry the query they answer, so a stale set is filtered out by comparison
+  // rather than cleared with a synchronous setState inside the effect.
   useEffect(() => {
     const q = query.trim();
-    if (q.length < 2) { setSpells([]); return; }
+    if (q.length < 2) return;
     let live = true;
     const t = setTimeout(() => {
-      searchSpells(q, 40).then((r) => live && setSpells(r), () => {});
+      searchSpells(q, 40).then(
+        (r) => { if (live) setAnswer({ query: q, hits: r }); },
+        () => { if (live) setAnswer({ query: q, hits: [] }); },
+      );
     }, 140);
     return () => { live = false; clearTimeout(t); };
   }, [query]);
+
+  const spells = answer?.query === query.trim() ? answer.hits : [];
 
   const classesBySlug = useMemo(() => {
     const map = new Map<string, { name: string; color: string }>();
