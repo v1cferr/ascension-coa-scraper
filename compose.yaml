@@ -1,0 +1,37 @@
+# Two services: the Python engine over the archive, and the viewer in front of it.
+#
+# Only the viewer's port is published. The API is reachable on the compose network,
+# which is what the viewer proxies to, so the archive is not served twice.
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    volumes:
+      # The extracted archive. Read-only: this is the copy of a server that is closing,
+      # and nothing in the container has any business writing to it.
+      - ./data:/data/data:ro
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/data/index.json')\""]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+    environment:
+      # Where the server-side proxy forwards; the browser only ever talks to the viewer.
+      ASCENSION_API: http://api:8000
+    ports:
+      - "${ASCENSION_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped

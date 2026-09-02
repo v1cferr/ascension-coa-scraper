@@ -32,6 +32,11 @@
             nodejs_22
             pnpm               # the viewer's package manager
 
+            # End-to-end tests. Playwright's own installer fetches binaries that will
+            # not run on NixOS, so the browsers come from nixpkgs and the driver is
+            # pointed at them.
+            playwright-driver.browsers
+
             # Running the whole thing as it is deployed.
             docker-compose
 
@@ -49,6 +54,10 @@
 
           ASCENSION_STORMLIB = stormPath;
 
+          PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1";
+          PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
+
           shellHook = ''
             echo "ascension archive — $(python --version), node $(node --version)"
             echo "  ASCENSION_STORMLIB=$ASCENSION_STORMLIB"
@@ -56,6 +65,7 @@
             echo "  uv sync --extra assets      set up the Python side"
             echo "  pnpm -C web install         set up the viewer"
             echo "  docker compose up           run both, isolated"
+            echo "  pnpm -C web test            drive them with Playwright"
           '';
         };
 
