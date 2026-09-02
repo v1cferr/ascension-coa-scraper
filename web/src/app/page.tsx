@@ -225,8 +225,8 @@ export default function Viewer() {
   }
 
   return (
-    <div className="[--masthead:65px]">
-      <header className="flex h-[65px] items-center gap-6 border-b border-line bg-panel px-5">
+    <div className="flex h-dvh flex-col overflow-hidden">
+      <header className="flex h-[65px] shrink-0 items-center gap-6 border-b border-line bg-panel px-5">
         <div className="min-w-0">
           <p className="display text-[15px] font-bold leading-none">Conquest of Azeroth</p>
           <p className="eyebrow !text-[9.5px]">talent and effect record</p>
@@ -266,7 +266,7 @@ export default function Viewer() {
         </dl>
       </header>
 
-      <div className="grid items-start lg:grid-cols-[320px_minmax(0,1fr)]">
+      <div className="grid min-h-0 flex-1 lg:grid-cols-[320px_minmax(0,1fr)]">
         <Navigator
           realm={realm} cls={cls} treeRef={treeRef} payload={payload}
           selectedKey={currentKey} pinnedKeys={pinnedKeys}
@@ -277,7 +277,7 @@ export default function Viewer() {
           onPin={pinFromNavigator}
         />
 
-        <ScrollArea className="h-[calc(100vh-var(--masthead))]">
+        <ScrollArea className="h-full min-h-0">
           <main className="min-w-0 px-6 pb-12 pt-5">
             <nav aria-label="View" className="mb-5 inline-flex rounded-sm border border-line2 bg-sunk p-0.5">
               {VIEWS.map(({ id, label, icon: Glyph }) => (

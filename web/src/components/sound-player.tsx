@@ -75,7 +75,7 @@ export const SoundPlayer = forwardRef<PlayerHandle, {
   const current = tracks[index];
 
   return (
-    <div className="sticky bottom-0 z-30 border-t border-line2 bg-panel/90 px-6 py-3 backdrop-blur">
+    <div className="shrink-0 border-t border-line2 bg-panel/90 px-6 py-3 backdrop-blur">
       <audio
         ref={audio}
         preload="none"

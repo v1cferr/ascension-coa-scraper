@@ -66,7 +66,7 @@ export function Navigator({
   }, [payload, needle]);
 
   return (
-    <div className="flex h-[calc(100vh-var(--masthead))] flex-col border-r border-line">
+    <div className="flex h-full min-h-0 flex-col border-r border-line">
       <div className="border-b border-line p-3">
         <div className="relative">
           <Search className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-faint" />
@@ -80,7 +80,7 @@ export function Navigator({
         </div>
       </div>
 
-      <ScrollArea className="flex-1">
+      <ScrollArea className="min-h-0 flex-1">
         <div className="pb-6">
           <h2 className="eyebrow px-4 pb-1.5 pt-4">{realm.name}</h2>
 
