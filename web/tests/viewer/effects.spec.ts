@@ -2,18 +2,15 @@ import { expect, test } from "@playwright/test";
 
 /** Seeing an effect, hearing it, and taking it away. */
 
-/** Open a spell that is known to draw and sound: Chaos Bolt belongs to no CoA tree,
- *  which also proves the spellbook reaches past the talent trees. */
+/** Open a spell known to draw and sound. Chaos Bolt belongs to no Conquest of Azeroth
+ *  tree, so reaching it at all proves the spellbook goes past the talent trees — and
+ *  the address form proves deep links still resolve. */
 async function openChaosBolt(page: import("@playwright/test").Page) {
   await page.goto("/#spell/50796");
-  await page.goto("/");
-  await page.getByRole("button", { name: /Find a talent or spell/ }).click();
-  await page.getByPlaceholder(/Name or spell id/).fill("Chaos Bolt");
-  await page.getByRole("option", { name: /Chaos Bolt/ }).first().click();
-  await expect(page.getByRole("heading", { name: "Chaos Bolt" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Chaos Bolt" })).toBeVisible();
 }
 
-test("the palette reaches spells no talent tree names", async ({ page }) => {
+test("a spell no talent tree names opens with who grants it", async ({ page }) => {
   await openChaosBolt(page);
   // The distinction the interface exists to draw: this is a class's own spell.
   await expect(page.getByRole("heading", { name: "Granted by" })).toBeVisible();
@@ -24,6 +21,14 @@ test("the palette opens on its keyboard shortcut", async ({ page }) => {
   await page.goto("/");
   await page.keyboard.press("ControlOrMeta+k");
   await expect(page.getByPlaceholder(/Name or spell id/)).toBeFocused();
+});
+
+test("the palette finds a talent and lands on it", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: /Find anything/ }).click();
+  await page.getByPlaceholder(/Name or spell id/).fill("Arm of Thorim");
+  await page.getByRole("option", { name: /Arm of Thorim/ }).first().click();
+  await expect(page.getByRole("heading", { level: 2, name: "Arm of Thorim" })).toBeVisible();
 });
 
 test("a model opens to the sprites it draws and how it is built", async ({ page }) => {
