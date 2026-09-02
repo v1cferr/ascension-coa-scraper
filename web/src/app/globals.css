@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* The subject is not the game but the record of it, assembled days before the realms
+ * close. So: instrument housing rather than gold filigree — a near-black with a faint
+ * cold-green cast, low saturation throughout — and the class colour shipped in the
+ * dataset as the only saturated thing on screen. Every class repaints --class and
+ * nothing else changes. */
+:root {
+  --radius: 0.25rem;
+
+  --ink: #0b0f0e;
+  --panel: #101614;
+  --raise: #151d1a;
+  --sunk: #080b0a;
+  --line: #212c28;
+  --line-2: #2d3a35;
+  --text: #dce4df;
+  --dim: #84948c;
+  --faint: #56645e;
+
+  /* Replaced per class from the dataset's own rgb() value. */
+  --class: #9aa8a1;
+
+  --background: var(--ink);
+  --foreground: var(--text);
+  --card: var(--panel);
+  --card-foreground: var(--text);
+  --popover: var(--panel);
+  --popover-foreground: var(--text);
+  --primary: var(--class);
+  --primary-foreground: var(--ink);
+  --secondary: var(--raise);
+  --secondary-foreground: var(--text);
+  --muted: var(--raise);
+  --muted-foreground: var(--dim);
+  --accent: var(--raise);
+  --accent-foreground: var(--text);
+  --destructive: #b4453a;
+  --border: var(--line);
+  --input: var(--line-2);
+  --ring: var(--class);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-panel: var(--panel);
+  --color-raise: var(--raise);
+  --color-sunk: var(--sunk);
+  --color-line: var(--line);
+  --color-line2: var(--line-2);
+  --color-dim: var(--dim);
+  --color-faint: var(--faint);
+  --color-class: var(--class);
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body {
+    @apply bg-background text-foreground;
+    font-variant-numeric: tabular-nums;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  /* Signage-grotesque labels, used for every eyebrow and column head. */
+  .eyebrow {
+    @apply text-[10px] font-semibold uppercase tracking-[0.14em] text-faint;
+    font-stretch: 118%;
+  }
+  .display {
+    @apply tracking-[-0.02em];
+    font-stretch: 122%;
+  }
+}
+
+/* Effect sprites are premultiplied and authored against black; screen is the browser's
+ * nearest match to how the game adds them to the frame. */
+.additive { mix-blend-mode: screen; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

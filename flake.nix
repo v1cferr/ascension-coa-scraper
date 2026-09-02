@@ -29,7 +29,8 @@
 
             # The web half. Pinned here so the machine needs none of it installed;
             # `nix develop` is the only prerequisite.
-            nodejs_22          # npm ships with it
+            nodejs_22
+            pnpm               # the viewer's package manager
 
             # Running the whole thing as it is deployed.
             docker-compose
@@ -53,7 +54,7 @@
             echo "  ASCENSION_STORMLIB=$ASCENSION_STORMLIB"
             echo
             echo "  uv sync --extra assets      set up the Python side"
-            echo "  npm --prefix web install    set up the viewer"
+            echo "  pnpm -C web install         set up the viewer"
             echo "  docker compose up           run both, isolated"
           '';
         };
