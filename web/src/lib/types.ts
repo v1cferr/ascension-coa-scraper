@@ -155,6 +155,46 @@ export type ModelInfo = {
   emitters: Emitter[];
   is_particle_only: boolean;
   glows: boolean | null;
+  /** Every emitter, read far enough to run it. Empty when the file could not be read. */
+  particles: ParticleEmitter[];
+};
+
+/** A key on a curve sampled across one particle's life, 0 at birth and 1 at death. */
+export type Key<T> = [number, T];
+
+/**
+ * One emitter's full description. The motion fields are nullable because the reader
+ * reports a track it could not resolve as null rather than substituting a default —
+ * an invented gravity is indistinguishable from a real one once it is on screen.
+ */
+export type ParticleEmitter = {
+  index: number;
+  position: [number, number, number];
+  bone: number;
+  kind: string;
+  blend: string;
+  /** Already resolved to a fetchable path; null when the index names nothing. */
+  texture: string | null;
+  rows: number;
+  cols: number;
+  tiles: number;
+  speed: number | null;
+  speed_variation: number | null;
+  vertical_range: number | null;
+  horizontal_range: number | null;
+  gravity: number | null;
+  lifespan: number | null;
+  lifespan_variation: number;
+  emission_rate: number | null;
+  emission_rate_variation: number;
+  area_length: number | null;
+  area_width: number | null;
+  z_source: number | null;
+  /** Colour channels arrive 0..255, not 0..1. */
+  colors: Key<[number, number, number]>[];
+  alphas: Key<number>[];
+  scales: Key<[number, number]>[];
+  resolved: boolean;
 };
 
 export type SearchIndex = {

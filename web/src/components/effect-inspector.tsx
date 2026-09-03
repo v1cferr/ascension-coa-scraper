@@ -6,14 +6,21 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { modelInfo, textureUrl } from "@/lib/api";
+import { ParticleStage } from "@/components/particle-stage";
 import { useLoaded } from "@/lib/use-loaded";
 import type { ModelInfo } from "@/lib/types";
 
 /**
- * What a model actually draws. Not a render — the client's effects are particle
- * systems, and drawing those properly means writing a renderer. These are the two
- * things that do say what an effect looks like: the sprites it composites, and how it
- * is built. For a particle effect the sprites are very nearly the whole of it.
+ * What a model actually draws — now by drawing it.
+ *
+ * The client's effects are particle systems, so this runs them: each emitter's own
+ * speed, gravity, lifespan and its colour, alpha and size curves, read out of the
+ * model. Below the stage sit the parts a moving image cannot hold still enough to
+ * read — the sprites it composites and how it is built.
+ *
+ * What the stage does NOT have is the caster. There is no character model, no skeleton
+ * and no animation here: emitters are placed at their own model-space positions, not on
+ * a bone of someone casting. It is the effect, not the scene.
  */
 export function EffectInspector({ path, onClose }: { path: string; onClose: () => void }) {
   const load = useCallback((p: string) => modelInfo(p), []);
@@ -40,6 +47,9 @@ export function EffectInspector({ path, onClose }: { path: string; onClose: () =
     (info?.emitters ?? []).map((e) => [info?.textures[e.texture]?.path, e.blend]),
   );
   const shown = info?.textures.filter((t) => t.available) ?? [];
+  // Emitters the reader could not fully resolve. Named rather than hidden: a stage that
+  // quietly invents the missing half looks exactly like one that read it.
+  const unresolved = (info?.particles ?? []).filter((e) => e.texture && !e.resolved).length;
   const absent = info?.textures.filter((t) => !t.available) ?? [];
 
   return (
@@ -79,6 +89,20 @@ export function EffectInspector({ path, onClose }: { path: string; onClose: () =
             ))}
           </dl>
 
+          {(info.particles ?? []).some((e) => e.texture) && (
+            <>
+              <h4 className="eyebrow mt-6 mb-2.5">Running</h4>
+              <ParticleStage emitters={info.particles} />
+              <p className="mt-2 text-[12.5px] text-dim">
+                {unresolved > 0
+                  ? `Driven by each emitter's own motion, except ${unresolved} of ${info.particles.length}
+                     whose tracks did not resolve — those fall back to a plain throw and are not
+                     the client's numbers.`
+                  : "Driven by each emitter's own speed, gravity, lifespan and colour, straight out of the model."}
+              </p>
+            </>
+          )}
+
           {shown.length > 0 ? (
             <>
               <h4 className="eyebrow mt-6 mb-2.5">Textures ({shown.length})</h4>
@@ -114,7 +138,7 @@ export function EffectInspector({ path, onClose }: { path: string; onClose: () =
                 ))}
               </div>
               <p className="mt-3 text-[12.5px] text-dim">
-                Sprites are shown on black, which is how the game composites them.
+                The frames above, held still. Shown on black, which is how the game composites them.
               </p>
             </>
           ) : (

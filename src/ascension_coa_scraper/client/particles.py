@@ -191,20 +191,28 @@ def _track_values(data: bytes, at: int, width: int) -> tuple[int, int] | None:
     return inner_count, inner_at
 
 
-def _track_float(data: bytes, at: int) -> float | None:
-    """The first value of a scalar track.
+def _track_float(data: bytes, at: int, *, peak: bool = False) -> float | None:
+    """A scalar track's value.
 
-    Spell emitters overwhelmingly hold one constant per track, so the first value is
-    the value. Where a track really does animate, this is its starting point.
+    Most tracks hold one constant, so the first value is the value. Emission rate is
+    the exception and it matters: an emitter is switched on by the spell's animation,
+    so its rate track starts at zero and climbs when the effect fires. Reading the
+    first key there reports every effect in the archive as emitting nothing at all.
+    `peak` takes the track's largest value instead, which is the effect at full flow --
+    the state worth showing when there is no animation driving it.
     """
     found = _track_values(data, at, 4)
     if found is None:
         return None
+    count, offset = found
     try:
-        (value,) = struct.unpack_from("<f", data, found[1])
+        values = struct.unpack_from(f"<{count}f", data, offset)
     except struct.error:
         return None
-    return value if value == value else None  # reject NaN
+    usable = [v for v in values if v == v]  # reject NaN
+    if not usable:
+        return None
+    return max(usable) if peak else usable[0]
 
 
 def _keyed(
@@ -250,7 +258,8 @@ def _one_emitter(data: bytes, at: int, index: int) -> Emitter:
     emitter.rows, emitter.cols = max(1, rows), max(1, cols)
 
     for name, offset in _MOTION_TRACKS.items():
-        setattr(emitter, name, _track_float(data, at + offset))
+        # Emission rate is the one track read at its peak; see _track_float.
+        setattr(emitter, name, _track_float(data, at + offset, peak=name == "emission_rate"))
 
     (emitter.lifespan_variation,) = struct.unpack_from("<f", data, at + _OFS_LIFESPAN_VARY)
     (emitter.emission_rate_variation,) = struct.unpack_from(
