@@ -178,6 +178,8 @@ export type ParticleEmitter = {
   rows: number;
   cols: number;
   tiles: number;
+  /** How many rotations the sheet declares; not a tile count. */
+  tile_rotation: number;
   speed: number | null;
   speed_variation: number | null;
   vertical_range: number | null;
@@ -194,6 +196,8 @@ export type ParticleEmitter = {
   colors: Key<[number, number, number]>[];
   alphas: Key<number>[];
   scales: Key<[number, number]>[];
+  /** Which cell of the sprite sheet to show, keyed across the particle's life. */
+  head_cells: Key<number>[];
   resolved: boolean;
 };
 

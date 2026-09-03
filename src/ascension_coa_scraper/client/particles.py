@@ -50,9 +50,19 @@ _OFS_BLEND = 0x28
 _OFS_KIND = 0x29
 
 #: The sprite sheet. Every one of the 27,586 emitters reports a power of two in 1..8
-#: for both, which is the signature of a tile grid and not of a misread offset.
+#: for both, which is the signature of a tile grid and not of a misread offset. The
+#: uint16 before them is NOT part of the grid: it takes 3 and 5 as readily as 4, so it
+#: counts rotations rather than tiles.
+_OFS_TILE_ROTATION = 0x2E
 _OFS_ROWS = 0x30
 _OFS_COLS = 0x32
+
+#: Which cell of the sheet a particle shows, keyed across its life. Four M2Arrays sit
+#: here at a flat 8-byte spacing, all four resolving in every record; the pair after the
+#: head cell is the tail, which nothing here draws. 85% of the indices land inside their
+#: own emitter's rows x cols, so the rest are clamped rather than dropped -- a cell that
+#: overruns its sheet is still a cell, and picking the last one beats showing none.
+_OFS_HEAD_CELL_TIMES, _OFS_HEAD_CELL_VALUES = 0x13C, 0x144
 
 #: The motion tracks, in the order the format lays them out. The stride is 20 except
 #: where a loose "variation" float follows a track, which is the +4 at `lifespan` and
@@ -134,6 +144,7 @@ class Emitter:
     blend: str = ""
     rows: int = 1
     cols: int = 1
+    tile_rotation: int = 0
 
     # How they move. `None` means the track did not resolve.
     speed: float | None = None
@@ -153,6 +164,7 @@ class Emitter:
     colors: list[tuple[float, tuple[float, float, float]]] = field(default_factory=list)
     alphas: list[tuple[float, float]] = field(default_factory=list)
     scales: list[tuple[float, tuple[float, float]]] = field(default_factory=list)
+    head_cells: list[tuple[float, int]] = field(default_factory=list)
 
     @property
     def tiles(self) -> int:
@@ -287,6 +299,7 @@ def _one_emitter(data: bytes, at: int, index: int) -> Emitter:
     emitter.kind = EMITTER_TYPES.get(kind, f"type {kind}")
     rows, cols = struct.unpack_from("<HH", data, at + _OFS_ROWS)
     emitter.rows, emitter.cols = max(1, rows), max(1, cols)
+    (emitter.tile_rotation,) = struct.unpack_from("<H", data, at + _OFS_TILE_ROTATION)
 
     (flags,) = struct.unpack_from("<I", data, at + _OFS_FLAGS)
     for name, offset in _MOTION_TRACKS.items():
@@ -317,6 +330,13 @@ def _one_emitter(data: bytes, at: int, index: int) -> Emitter:
         (t, (w, h))
         for t, (w, h) in _keyed(
             data, at + _OFS_SCALE_TIMES, at + _OFS_SCALE_VALUES, 8, "<ff"
+        )
+    ]
+    last = emitter.tiles - 1
+    emitter.head_cells = [
+        (t, min(last, int(cell[0])))
+        for t, cell in _keyed(
+            data, at + _OFS_HEAD_CELL_TIMES, at + _OFS_HEAD_CELL_VALUES, 2, "<H"
         )
     ]
     return emitter

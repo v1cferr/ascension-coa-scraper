@@ -153,6 +153,7 @@ def _particles(path: Path, textures: list[dict]) -> list[dict]:
             "rows": emitter.rows,
             "cols": emitter.cols,
             "tiles": emitter.tiles,
+            "tile_rotation": emitter.tile_rotation,
             "speed": emitter.speed,
             "speed_variation": emitter.speed_variation,
             "vertical_range": emitter.vertical_range,
@@ -168,6 +169,7 @@ def _particles(path: Path, textures: list[dict]) -> list[dict]:
             "colors": [[t, list(c)] for t, c in emitter.colors],
             "alphas": [[t, a] for t, a in emitter.alphas],
             "scales": [[t, list(s)] for t, s in emitter.scales],
+            "head_cells": [[t, c] for t, c in emitter.head_cells],
             "resolved": emitter.resolved,
         })
     return out

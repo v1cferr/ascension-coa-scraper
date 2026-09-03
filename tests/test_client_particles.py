@@ -59,6 +59,7 @@ def build_m2(emitters: list[dict] | None = None) -> bytes:
         struct.pack_into("<H", rec, 0x14, spec.get("bone", 0))
         struct.pack_into("<H", rec, 0x16, spec.get("texture", 0))
         struct.pack_into("<BB", rec, 0x28, spec.get("blend", 3), spec.get("kind", 1))
+        struct.pack_into("<H", rec, 0x2E, spec.get("tile_rotation", 0))
         struct.pack_into("<HH", rec, 0x30, spec.get("rows", 1), spec.get("cols", 1))
 
         for name, offset in (
@@ -90,6 +91,12 @@ def build_m2(emitters: list[dict] | None = None) -> bytes:
             tuple(t for t, _ in scales),
             b"".join(struct.pack("<ff", *s) for _, s in scales),
             len(scales),
+        )
+        cells = spec.get("head_cells", ())
+        rec[0x13C:0x14C] = keys(
+            tuple(t for t, _ in cells),
+            b"".join(struct.pack("<H", c) for _, c in cells),
+            len(cells),
         )
         records.extend(rec)
 
@@ -263,3 +270,35 @@ def test_packed_gravity_carrying_a_value_is_left_unresolved():
 def test_gravity_without_the_flag_is_still_read_as_a_float():
     (emitter,) = read_emitters(build_m2([{"gravity": -9.8}]))
     assert emitter.gravity == pytest.approx(-9.8)
+
+
+# --- the sprite cell across a life -------------------------------------------------
+
+
+def test_the_cell_track_is_placed_across_a_normalised_life():
+    (emitter,) = read_emitters(build_m2([{
+        "rows": 2, "cols": 2, "head_cells": [(0, 0), (50, 1), (100, 3)],
+    }]))
+    assert [t for t, _ in emitter.head_cells] == pytest.approx([0.0, 0.5, 1.0])
+    assert [c for _, c in emitter.head_cells] == [0, 1, 3]
+
+
+def test_a_cell_beyond_the_sheet_is_clamped_not_dropped():
+    # 15% of the client's cell indices overrun their own grid. A cell that overruns is
+    # still a cell, and the last one beats showing nothing.
+    (emitter,) = read_emitters(build_m2([{
+        "rows": 1, "cols": 2, "head_cells": [(0, 9)],
+    }]))
+    assert emitter.head_cells == [(0.0, 1)]
+
+
+def test_no_cell_track_is_empty_so_the_renderer_can_hold_one_frame():
+    (emitter,) = read_emitters(build_m2([{"rows": 2, "cols": 2}]))
+    assert emitter.head_cells == []
+
+
+def test_tile_rotation_is_read_and_is_not_part_of_the_grid():
+    # It takes 3 and 5 as readily as 4, which is how it was told apart from the grid.
+    (emitter,) = read_emitters(build_m2([{"tile_rotation": 5, "rows": 2, "cols": 4}]))
+    assert emitter.tile_rotation == 5
+    assert emitter.tiles == 8

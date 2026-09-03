@@ -182,7 +182,14 @@ export function seed(emitter: ParticleEmitter, rand: () => number): Particle[] {
   return pool;
 }
 
-/** What one particle looks like right now: colour, opacity and size for its age. */
+/**
+ * What one particle looks like right now: colour, opacity, size and which cell of the
+ * sprite sheet it is showing, all for its age.
+ *
+ * The cell is keyed like the rest, not fixed at birth. A sheet is a flipbook — smoke
+ * billowing, a spark guttering — so freezing one frame per particle throws away the
+ * animation the artist drew and leaves a field of stuck stamps.
+ */
 export function appearance(emitter: ParticleEmitter, p: Particle) {
   const t = Math.min(1, p.age / p.life);
   const [r, g, b] = sample<[number, number, number]>(
@@ -192,12 +199,19 @@ export function appearance(emitter: ParticleEmitter, p: Particle) {
   const [w, h] = sample<[number, number]>(
     emitter.scales as [number, [number, number]][], t, [0.05, 0.05],
   );
+  // No cell track means the sheet is not a flipbook, so the particle keeps whichever
+  // cell it was born with — that is what `tile` is for.
+  const cell = emitter.head_cells.length
+    ? Math.round(sample<number>(emitter.head_cells as [number, number][], t, 0))
+    : p.tile;
+
   return {
     r: Math.min(CHANNEL, Math.max(0, r)) / CHANNEL,
     g: Math.min(CHANNEL, Math.max(0, g)) / CHANNEL,
     b: Math.min(CHANNEL, Math.max(0, b)) / CHANNEL,
     alpha: Math.min(1, Math.max(0, alpha)),
     w, h,
+    cell: Math.min(Math.max(0, cell), Math.max(0, emitter.tiles - 1)),
   };
 }
 

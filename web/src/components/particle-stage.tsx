@@ -120,8 +120,8 @@ export function ParticleStage({
           ctx.globalAlpha = look.alpha;
           const sprite = tinted(image, look.r, look.g, look.b, tints);
 
-          const sx = (p.tile % cols) * tileW;
-          const sy = Math.floor(p.tile / cols) % rows * tileH;
+          const sx = (look.cell % cols) * tileW;
+          const sy = Math.floor(look.cell / cols) % rows * tileH;
           ctx.drawImage(sprite, sx, sy, tileW, tileH, x - w / 2, y - h / 2, w, h);
         }
       });
