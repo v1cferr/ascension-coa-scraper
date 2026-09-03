@@ -98,6 +98,21 @@ _OFS_FLAGS = 0x04
 #: divisor would paper over. Reporting nothing is worse to look at and better to trust.
 _FLAG_COMPRESSED_GRAVITY = 0x800000
 
+#: The scalar tail. Its position is not guessed: reading the record in this order puts
+#: an M2Array of spline points at 0x1C0 and the `enabledIn` track at 0x1C8, both
+#: resolving in every one of the 27,586 emitters, and 0x1C8 + 20 lands on 0x1DC -- the
+#: 476-byte stride exactly, with nothing left over. The same test one field earlier
+#: matches nothing at all, so the alignment is the record's and not the validator's.
+#:
+#: The values confirm it again: `base_spin_variation` has a median of 3.142 and a 95th
+#: percentile of 6.283, which are pi and two pi, and `burst_multiplier` sits at exactly
+#: 1.0 -- the neutral value of a multiplier. Misaligned bytes do not produce pi.
+_OFS_DRAG = 0x174
+_OFS_BASE_SPIN = 0x178
+_OFS_BASE_SPIN_VARY = 0x17C
+_OFS_SPIN = 0x180
+_OFS_SPIN_VARY = 0x184
+
 #: Colour, opacity and size across one particle's life, as (times, values) pairs.
 _OFS_COLOR_TIMES, _OFS_COLOR_VALUES = 0x104, 0x10C
 _OFS_ALPHA_TIMES, _OFS_ALPHA_VALUES = 0x114, 0x11C
@@ -159,6 +174,13 @@ class Emitter:
     area_length: float | None = None
     area_width: float | None = None
     z_source: float | None = None
+
+    # Plain floats in the record's tail, not tracks, so they are always readable.
+    drag: float = 0.0
+    base_spin: float = 0.0
+    base_spin_variation: float = 0.0
+    spin: float = 0.0
+    spin_variation: float = 0.0
 
     # How they look across that life, as (fraction, value) from birth to death.
     colors: list[tuple[float, tuple[float, float, float]]] = field(default_factory=list)
@@ -308,6 +330,16 @@ def _one_emitter(data: bytes, at: int, index: int) -> Emitter:
             continue
         # Emission rate is the one track read at its peak; see _track_float.
         setattr(emitter, name, _track_float(data, at + offset, peak=name == "emission_rate"))
+
+    for name, offset in (
+        ("drag", _OFS_DRAG),
+        ("base_spin", _OFS_BASE_SPIN),
+        ("base_spin_variation", _OFS_BASE_SPIN_VARY),
+        ("spin", _OFS_SPIN),
+        ("spin_variation", _OFS_SPIN_VARY),
+    ):
+        (value,) = struct.unpack_from("<f", data, at + offset)
+        setattr(emitter, name, value if value == value else 0.0)  # reject NaN
 
     (emitter.lifespan_variation,) = struct.unpack_from("<f", data, at + _OFS_LIFESPAN_VARY)
     (emitter.emission_rate_variation,) = struct.unpack_from(

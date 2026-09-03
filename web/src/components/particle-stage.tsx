@@ -122,7 +122,19 @@ export function ParticleStage({
 
           const sx = (look.cell % cols) * tileW;
           const sy = Math.floor(look.cell / cols) % rows * tileH;
-          ctx.drawImage(sprite, sx, sy, tileW, tileH, x - w / 2, y - h / 2, w, h);
+
+          // Only pay for a transform when the sprite is actually turned: two thirds of
+          // emitters never spin, and save/rotate/restore per particle is the expensive
+          // part of this loop.
+          if (p.angle) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.rotate(p.angle);
+            ctx.drawImage(sprite, sx, sy, tileW, tileH, -w / 2, -h / 2, w, h);
+            ctx.restore();
+          } else {
+            ctx.drawImage(sprite, sx, sy, tileW, tileH, x - w / 2, y - h / 2, w, h);
+          }
         }
       });
 

@@ -30,6 +30,9 @@ export type Particle = {
   age: number;
   life: number;
   tile: number;
+  /** Where the sprite is turned to, and how fast it keeps turning. Radians. */
+  angle: number;
+  spin: number;
 };
 
 /** Sample a curve of keys at `t` in 0..1, interpolating between the two around it. */
@@ -147,6 +150,10 @@ export function spawn(p: Particle, emitter: ParticleEmitter, rand: () => number)
   p.age = 0;
   p.life = life;
   p.tile = Math.floor(rand() * Math.max(1, emitter.tiles));
+  // Both spins are radians: the variations come out at pi and two pi, which is how the
+  // fields were identified in the first place.
+  p.angle = emitter.base_spin + emitter.base_spin_variation * (rand() - 0.5) * 2;
+  p.spin = emitter.spin + emitter.spin_variation * (rand() - 0.5) * 2;
 }
 
 /** Advance a pool by `dt` seconds, respawning whatever died. */
@@ -154,6 +161,9 @@ export function step(
   pool: Particle[], emitter: ParticleEmitter, dt: number, rand: () => number,
 ): void {
   const gravity = emitter.gravity ?? 0;
+  // Drag bleeds off speed in proportion to it. Clamped at zero so a large coefficient
+  // and a long frame cannot flip the velocity and fling particles backwards.
+  const keep = Math.max(0, 1 - emitter.drag * dt);
   for (const p of pool) {
     p.age += dt;
     if (p.age >= p.life) {
@@ -162,8 +172,10 @@ export function step(
     }
     // Model gravity pulls along -Z, which is down the canvas.
     p.vy += gravity * dt;
+    if (emitter.drag) { p.vx *= keep; p.vy *= keep; }
     p.x += p.vx * dt;
     p.y += p.vy * dt;
+    p.angle += p.spin * dt;
   }
 }
 
@@ -171,7 +183,9 @@ export function step(
 export function seed(emitter: ParticleEmitter, rand: () => number): Particle[] {
   const pool: Particle[] = [];
   for (let i = 0; i < population(emitter); i++) {
-    const p: Particle = { x: 0, y: 0, vx: 0, vy: 0, age: 0, life: 1, tile: 0 };
+    const p: Particle = {
+      x: 0, y: 0, vx: 0, vy: 0, age: 0, life: 1, tile: 0, angle: 0, spin: 0,
+    };
     spawn(p, emitter, rand);
     // Start each one part-way through its life, or the first frame is an empty burst.
     p.age = rand() * p.life;

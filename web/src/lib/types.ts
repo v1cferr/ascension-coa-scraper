@@ -192,6 +192,12 @@ export type ParticleEmitter = {
   area_length: number | null;
   area_width: number | null;
   z_source: number | null;
+  /** Plain floats in the record's tail, so these are never null. */
+  drag: number;
+  base_spin: number;
+  base_spin_variation: number;
+  spin: number;
+  spin_variation: number;
   /** Colour channels arrive 0..255, not 0..1. */
   colors: Key<[number, number, number]>[];
   alphas: Key<number>[];
