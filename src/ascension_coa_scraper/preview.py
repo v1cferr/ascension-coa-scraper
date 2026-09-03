@@ -14,6 +14,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from .client.model import M2Error, describe
+from .client.particles import ParticleError, read_emitters
 
 __all__ = [
     "PreviewError", "UnsupportedAsset", "safe_asset", "texture_png", "model_summary",
@@ -117,4 +118,56 @@ def model_summary(path: Path, *, assets: Path) -> dict:
     payload["textures"] = textures
     payload["is_particle_only"] = info.is_particle_only
     payload["glows"] = info.glows
+    payload["particles"] = _particles(path, textures)
     return payload
+
+
+def _particles(path: Path, textures: list[dict]) -> list[dict]:
+    """Every emitter, with enough of its motion to be replayed.
+
+    Each emitter names its texture by index into the model's own list, which is
+    meaningless to anything outside this file, so it is swapped here for the path the
+    viewer can actually fetch. An emitter whose index points nowhere keeps a null
+    rather than borrowing a neighbour's texture.
+    """
+    try:
+        emitters = read_emitters(path.read_bytes())
+    except (ParticleError, OSError):
+        # An effect that cannot be replayed is still worth describing, so this is a
+        # missing section and not a failed request.
+        return []
+
+    out = []
+    for emitter in emitters:
+        texture = None
+        if 0 <= emitter.texture < len(textures):
+            entry = textures[emitter.texture]
+            texture = entry["path"] if entry["available"] else None
+        out.append({
+            "index": emitter.index,
+            "position": list(emitter.position),
+            "bone": emitter.bone,
+            "kind": emitter.kind,
+            "blend": emitter.blend,
+            "texture": texture,
+            "rows": emitter.rows,
+            "cols": emitter.cols,
+            "tiles": emitter.tiles,
+            "speed": emitter.speed,
+            "speed_variation": emitter.speed_variation,
+            "vertical_range": emitter.vertical_range,
+            "horizontal_range": emitter.horizontal_range,
+            "gravity": emitter.gravity,
+            "lifespan": emitter.lifespan,
+            "lifespan_variation": emitter.lifespan_variation,
+            "emission_rate": emitter.emission_rate,
+            "emission_rate_variation": emitter.emission_rate_variation,
+            "area_length": emitter.area_length,
+            "area_width": emitter.area_width,
+            "z_source": emitter.z_source,
+            "colors": [[t, list(c)] for t, c in emitter.colors],
+            "alphas": [[t, a] for t, a in emitter.alphas],
+            "scales": [[t, list(s)] for t, s in emitter.scales],
+            "resolved": emitter.resolved,
+        })
+    return out
