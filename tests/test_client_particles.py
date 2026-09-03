@@ -55,6 +55,7 @@ def build_m2(emitters: list[dict] | None = None) -> bytes:
     for spec in emitters:
         rec = bytearray(_STRIDE)
         struct.pack_into("<fff", rec, 0x08, *spec.get("position", (0.0, 0.0, 0.0)))
+        struct.pack_into("<I", rec, 0x04, spec.get("flags", 0))
         struct.pack_into("<H", rec, 0x14, spec.get("bone", 0))
         struct.pack_into("<H", rec, 0x16, spec.get("texture", 0))
         struct.pack_into("<BB", rec, 0x28, spec.get("blend", 3), spec.get("kind", 1))
@@ -239,3 +240,26 @@ def test_a_count_that_overruns_the_file_yields_nothing():
     data = bytearray(build_m2([{"speed": 1.0}]))
     struct.pack_into("<II", data, 0x128, 9999, _BODY)
     assert read_emitters(bytes(data)) == []
+
+
+# --- gravity that is packed rather than stored as a float ---------------------------
+
+_PACKED = 0x800000
+
+
+def test_packed_gravity_of_all_zeroes_is_simply_no_gravity():
+    # Zero unpacks to zero whichever way the bytes are read, so this one is knowable.
+    (emitter,) = read_emitters(build_m2([{"flags": _PACKED, "gravity": 0.0}]))
+    assert emitter.gravity == 0.0
+
+
+def test_packed_gravity_carrying_a_value_is_left_unresolved():
+    # The direction is fixed-point over 32767 but the magnitude's scale is not in the
+    # file, and a guessed divisor would read as the client's own number. Better nothing.
+    (emitter,) = read_emitters(build_m2([{"flags": _PACKED, "gravity": 1.5}]))
+    assert emitter.gravity is None
+
+
+def test_gravity_without_the_flag_is_still_read_as_a_float():
+    (emitter,) = read_emitters(build_m2([{"gravity": -9.8}]))
+    assert emitter.gravity == pytest.approx(-9.8)

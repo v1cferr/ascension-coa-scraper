@@ -13,7 +13,7 @@ the effect.
 
 Every offset here was found by scanning the records rather than trusting a
 specification. The layout is a run of ten M2Tracks at a fixed 20-byte stride broken by
-two 4-byte gaps, and it resolves at 100% across the 24,980 emitters this client ships
+two 4-byte gaps, and it resolves at 100% across the 27,586 emitters this client ships
 -- including the two gaps landing exactly where a loose `lifespanVary` and
 `emissionRateVary` float belong. The six colour/alpha/scale arrays that follow confirm
 their own types by the spacing between the blocks they point at: 2 bytes a key for the
@@ -49,7 +49,7 @@ _OFS_TEXTURE = 0x16
 _OFS_BLEND = 0x28
 _OFS_KIND = 0x29
 
-#: The sprite sheet. Every one of the 24,980 emitters reports a power of two in 1..8
+#: The sprite sheet. Every one of the 27,586 emitters reports a power of two in 1..8
 #: for both, which is the signature of a tile grid and not of a misread offset.
 _OFS_ROWS = 0x30
 _OFS_COLS = 0x32
@@ -73,6 +73,20 @@ _MOTION_TRACKS = {
 #: The two loose floats sitting in the gaps, each right after the track it varies.
 _OFS_LIFESPAN_VARY = 0xAC
 _OFS_EMISSION_RATE_VARY = 0xC4
+
+#: The emitter's flags, and the one bit that changes how a field is read.
+_OFS_FLAGS = 0x04
+
+#: Gravity is not always a float. With this bit set the track holds a packed direction
+#: and magnitude as two int16s instead, and reading those four bytes as a float gives
+#: approximately zero -- a wrong answer that looks exactly like the common right one.
+#: 62.6% of this client's 27,586 emitters set it, though all but 78 of those pack zero,
+#: which is unambiguous whichever way it is read. The 78 that do carry a value are left
+#: unresolved: the direction is plainly fixed-point over 32767, but the magnitude's
+#: scale is not derivable from the file, and the scalar gravities it would have to match
+#: sit around 6.7 while these decode to 0.47 -- a factor of fourteen that guessing a
+#: divisor would paper over. Reporting nothing is worse to look at and better to trust.
+_FLAG_COMPRESSED_GRAVITY = 0x800000
 
 #: Colour, opacity and size across one particle's life, as (times, values) pairs.
 _OFS_COLOR_TIMES, _OFS_COLOR_VALUES = 0x104, 0x10C
@@ -215,6 +229,23 @@ def _track_float(data: bytes, at: int, *, peak: bool = False) -> float | None:
     return max(usable) if peak else usable[0]
 
 
+def _packed_gravity(data: bytes, at: int) -> float | None:
+    """Gravity from a track that packs it rather than storing a float.
+
+    Only one answer can be given honestly here. All-zero bytes mean no gravity whichever
+    way they are unpacked, so that is reported as 0.0. Anything else needs a scale this
+    file does not carry, so it is reported as unresolved -- see _FLAG_COMPRESSED_GRAVITY.
+    """
+    found = _track_values(data, at, 4)
+    if found is None:
+        return None
+    count, offset = found
+    blob = data[offset : offset + count * 4]
+    if len(blob) >= 4 and not any(blob):
+        return 0.0
+    return None
+
+
 def _keyed(
     data: bytes, times_at: int, values_at: int, width: int, unpack: str
 ) -> list[tuple[float, tuple[float, ...]]]:
@@ -257,7 +288,11 @@ def _one_emitter(data: bytes, at: int, index: int) -> Emitter:
     rows, cols = struct.unpack_from("<HH", data, at + _OFS_ROWS)
     emitter.rows, emitter.cols = max(1, rows), max(1, cols)
 
+    (flags,) = struct.unpack_from("<I", data, at + _OFS_FLAGS)
     for name, offset in _MOTION_TRACKS.items():
+        if name == "gravity" and flags & _FLAG_COMPRESSED_GRAVITY:
+            emitter.gravity = _packed_gravity(data, at + offset)
+            continue
         # Emission rate is the one track read at its peak; see _track_float.
         setattr(emitter, name, _track_float(data, at + offset, peak=name == "emission_rate"))
 
