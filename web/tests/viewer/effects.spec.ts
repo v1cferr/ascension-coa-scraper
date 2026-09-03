@@ -62,7 +62,10 @@ test("playing the cast lights each moment in turn", async ({ page }) => {
 test("a spell's sounds arrive as a playlist in cast order", async ({ page }) => {
   await openChaosBolt(page);
   const queue = page.locator("button[aria-current]").filter({ hasText: /\.(ogg|wav)$/ });
-  expect(await queue.count()).toBeGreaterThan(0);
+  // Auto-retrying, not a one-shot count: the heading renders from the spell payload but
+  // the queue fills from the effects one, so counting the moment the title appears races
+  // a request that has not landed. It passed alone and failed beside five other workers.
+  await expect(queue).not.toHaveCount(0);
   await expect(page.getByRole("button", { name: /^(Play|Pause)$/ })).toBeVisible();
 });
 

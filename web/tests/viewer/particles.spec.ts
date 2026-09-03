@@ -30,6 +30,19 @@ async function pixels(canvas: Locator) {
   });
 }
 
+/**
+ * Wait until the stage has actually painted something.
+ *
+ * A fixed sleep races the sprites: the textures are decoded from BLP on first request,
+ * and cold that takes longer than any number worth hardcoding. Polling turns "wait long
+ * enough" into "wait until true", which is both faster warm and correct cold.
+ */
+async function litUp(canvas: Locator, atLeast = 200) {
+  await expect(async () => {
+    expect((await pixels(canvas)).lit).toBeGreaterThan(atLeast);
+  }).toPass({ timeout: 20_000 });
+}
+
 /** Open a talent, then the first model its cast score names. */
 async function openEffect(page: Page, talent: RegExp) {
   await page.goto("/#voljin/templar/class/34353");
@@ -45,8 +58,7 @@ async function openEffect(page: Page, talent: RegExp) {
 
 test("an effect's emitters are run, not just listed", async ({ page }) => {
   const canvas = await openEffect(page, /Testament of Hope/);
-  // Give the loop time to load its sprites and paint a few frames.
-  await page.waitForTimeout(2500);
+  await litUp(canvas);
 
   const shot = await pixels(canvas);
   expect(shot.total).toBeGreaterThan(0);
@@ -58,7 +70,7 @@ test("an effect's emitters are run, not just listed", async ({ page }) => {
 
 test("the particles carry the model's own colour, not the interface's accent", async ({ page }) => {
   const canvas = await openEffect(page, /Testament of Hope/);
-  await page.waitForTimeout(2500);
+  await litUp(canvas);
 
   const shot = await pixels(canvas);
   expect(shot.hue).not.toBeNull();
@@ -74,8 +86,9 @@ test("the particles carry the model's own colour, not the interface's accent", a
 
 test("the effect keeps running rather than painting one frame", async ({ page }) => {
   const canvas = await openEffect(page, /Testament of Hope/);
-  await page.waitForTimeout(2000);
+  await litUp(canvas);
   const first = await pixels(canvas);
+  // A real interval, not a poll: the point is that the picture CHANGES over time.
   await page.waitForTimeout(900);
   const second = await pixels(canvas);
 
