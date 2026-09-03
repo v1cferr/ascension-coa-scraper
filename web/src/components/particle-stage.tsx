@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { textureUrl } from "@/lib/api";
 import type { ParticleEmitter } from "@/lib/types";
 import {
   appearance, compositeFor, fitScale, seed, seededRandom, settle, step, tinted,
-  type Particle,
 } from "@/lib/particles";
 
 /**
@@ -31,8 +30,10 @@ export function ParticleStage({
   const canvas = useRef<HTMLCanvasElement | null>(null);
   const [loaded, setLoaded] = useState<Map<string, HTMLImageElement>>(new Map());
 
-  // Only emitters that name a texture can be drawn at all.
-  const drawable = emitters.filter((e) => e.texture);
+  // Only emitters that name a texture can be drawn at all. Memoised because both
+  // effects below depend on it, and a fresh array each render would restart the
+  // simulation on every unrelated repaint.
+  const drawable = useMemo(() => emitters.filter((e) => e.texture), [emitters]);
 
   // Load each distinct sprite once. A texture that fails to decode simply drops its
   // emitter rather than taking the whole stage down with it.
@@ -53,8 +54,7 @@ export function ParticleStage({
     });
 
     return () => { alive = false; };
-    // The set of texture paths is what matters, not the emitter objects' identity.
-  }, [drawable.map((e) => e.texture).join("|")]);
+  }, [drawable]);
 
   useEffect(() => {
     const element = canvas.current;
@@ -132,7 +132,7 @@ export function ParticleStage({
 
     frame = requestAnimationFrame(draw);
     return () => cancelAnimationFrame(frame);
-  }, [loaded, height, playing, drawable.length]);
+  }, [loaded, height, playing, drawable]);
 
   if (!drawable.length) {
     return (
