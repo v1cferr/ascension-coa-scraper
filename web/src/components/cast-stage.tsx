@@ -5,7 +5,8 @@ import { Play, Square } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { label, modelInfo, textureUrl } from "@/lib/api";
-import type { Effects, Kit, ModelInfo } from "@/lib/types";
+import type { Effects, Kit, ModelInfo, ParticleEmitter } from "@/lib/types";
+import { ParticleStage } from "@/components/particle-stage";
 
 export type Beat = { slot: string; sound: string | null };
 
@@ -31,6 +32,7 @@ export function CastStage({
     playing: boolean;
     slot: string | null;
     frames: { path: string; additive: boolean }[];
+    emitters: ParticleEmitter[];
   } | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const alive = useRef(true);
@@ -52,8 +54,10 @@ export function CastStage({
     );
     const seen = new Set<string>();
     const next: { path: string; additive: boolean }[] = [];
+    const emitters: ParticleEmitter[] = [];
     for (const info of infos) {
       if (!info) continue;
+      emitters.push(...(info.particles ?? []).filter((e) => e.texture));
       const blendFor = new Map(info.emitters.map((e) => [info.textures[e.texture]?.path, e.blend]));
       for (const texture of info.textures) {
         if (!texture.available || seen.has(texture.path)) continue;
@@ -64,14 +68,14 @@ export function CastStage({
     }
     setStage((s) => ({
       spellId: fx.spell_id, playing: s?.spellId === fx.spell_id ? s.playing : true,
-      slot: kit.slot, frames: next,
+      slot: kit.slot, frames: next, emitters,
     }));
   }, [onBeat, fx.spell_id]);
 
   const play = useCallback(async () => {
     const beats = fx.kits.filter((k) => Object.keys(k.models).length || k.sound);
     if (!beats.length) return;
-    setStage({ spellId: fx.spell_id, playing: true, slot: null, frames: [] });
+    setStage({ spellId: fx.spell_id, playing: true, slot: null, frames: [], emitters: [] });
 
     let index = 0;
     const step = async () => {
@@ -119,15 +123,19 @@ export function CastStage({
           {playing ? "Stop" : "Play the cast"}
         </Button>
         <p className="max-w-[52ch] text-[11.5px] text-dim">
-          Not a render — the client&apos;s own sprites, shown at the moment each one is
-          drawn and blended the way the model declares, with the sound on its beat.
+          Each moment&apos;s emitters, run from their own speed, gravity, lifespan and
+          colour, with the sound on its beat. The effect, not the caster: there is no
+          character here, only what the spell draws.
         </p>
       </div>
 
       {shown?.slot && (
         <div className="rounded border border-line2 bg-black p-4">
           <div className="eyebrow mb-3 !text-class !tracking-[0.16em]">{label(shown.slot)}</div>
-          <div className="flex min-h-[132px] flex-wrap items-center gap-2.5">
+          {shown.emitters.length > 0 && (
+            <ParticleStage emitters={shown.emitters} height={240} playing={playing} />
+          )}
+          <div className="mt-3 flex min-h-[132px] flex-wrap items-center gap-2.5">
             {shown.frames.length === 0 && (
               <p className="text-[12.5px] text-dim">This moment plays a sound and draws nothing.</p>
             )}
